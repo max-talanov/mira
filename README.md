@@ -12,12 +12,12 @@ Schematics in this repository do not imply that the corresponding circuits have 
 
 ## Repository contents
 
-The KiCad project is located in [hardware/MIRA](hardware/MIRA).
+The KiCad project is located in [hardware/MIRA](hardware/MIRA_Power).
 
 | File or directory | Purpose |
 | --- | --- |
-| `MIRA.kicad_pro` | KiCad project file |
-| `MIRA.kicad_sch` | Top-level schematic and hierarchy navigation |
+| `MIRA_Power.kicad_pro` | KiCad project file |
+| `MIRA_Power.kicad_sch` | Top-level schematic and hierarchy navigation |
 | `POWER_SYSTEM.kicad_sch` | Power system overview |
 | `POWER_INPUT.kicad_sch` | Power input and primary protection |
 | `PRIMARY_POWER.kicad_sch` | Primary power converters |
@@ -47,8 +47,8 @@ These blocks describe the planned development direction. Their implementation st
    git clone https://github.com/max-talanov/mira.git
    ```
 
-2. Open `hardware/MIRA/MIRA.kicad_pro` in KiCad.
-3. Open the top-level schematic, `MIRA.kicad_sch`, and use the sheet hierarchy to navigate to the required block.
+2. Open `hardware/MIRA_Power/MIRA_Power.kicad_pro` in KiCad.
+3. Open the top-level schematic, `MIRA_Power.kicad_sch`, and use the sheet hierarchy to navigate to the required block.
 
 Keep the directory structure intact. The `sym-lib-table` and `fp-lib-table` files are stored alongside the project and reference its local libraries.
 
