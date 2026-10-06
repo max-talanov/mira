@@ -1,0 +1,10568 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "ccf83d0e-238c-472f-bad4-e005f7332b1d")
+	(paper "A4")
+	(lib_symbols
+		(symbol "MIRA_RevA:Capacitor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 3.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Capacitor"
+				(at 0 -3.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Capacitor_1_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy 1.905 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -0.635) (xy 1.905 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.905)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.905)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MIRA_RevA:Resistor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 3.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Resistor"
+				(at 0 -3.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Resistor_1_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MIRA_RevA:STM32H745IIT6_MIRA"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "STM32H745IIT6"
+				(at 0 -5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "MIRA_RevA:LQFP-176_24x24mm_P0.5mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32h745ii.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Dual-core STM32H745, 2MB internal flash, LQFP176; complete 176-pin symbol grouped by function"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "STM32H745IIT6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Manufacturer" "STMicroelectronics"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "STM32H745IIT6_MIRA_1_1"
+				(rectangle
+					(start -17.78 17.78)
+					(end 17.78 -17.78)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at -20.32 13.97 0)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 11.43 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 8.89 0)
+					(length 2.54)
+					(name "VBAT"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 13.97 0)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 11.43 0)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 6.35 0)
+					(length 2.54)
+					(name "VSSSMPS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -20.32 3.81 0)
+					(length 2.54)
+					(name "VLXSMPS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 1.27 0)
+					(length 2.54)
+					(name "VDDSMPS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -1.27 0)
+					(length 2.54)
+					(name "VFBSMPS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 13.97 0)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 11.43 0)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 -3.81 0)
+					(length 2.54)
+					(name "VSSA"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -6.35 0)
+					(length 2.54)
+					(name "VREF+"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 -8.89 0)
+					(length 2.54)
+					(name "VDDA"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 11.43 0)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 13.97 0)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 13.97 0)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 11.43 0)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 13.97 0)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "64"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 11.43 0)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "65"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 13.97 0)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "70"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 11.43 0)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "71"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -20.32 -11.43 0)
+					(length 2.54)
+					(name "VCAP"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "80"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 13.97 0)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "81"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 -13.97 0)
+					(length 2.54)
+					(name "VDDLDO"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "82"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 13.97 0)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "83"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 11.43 0)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "84"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 7.62 180)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "92"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 5.08 180)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "93"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 7.62 180)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "99"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "100"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 7.62 180)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "105"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "106"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "112"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 7.62 180)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "113"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "119"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 2.54 180)
+					(length 2.54)
+					(name "VDD50_USB"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "120"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 0 180)
+					(length 2.54)
+					(name "VDD33_USB"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "121"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 7.62 180)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "126"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 20.32 -2.54 180)
+					(length 2.54)
+					(name "VCAP"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "133"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "134"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 -5.08 180)
+					(length 2.54)
+					(name "VDDLDO"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "135"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 7.62 180)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "136"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "137"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "151"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 7.62 180)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "152"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "159"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 7.62 180)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "160"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 20.32 -2.54 180)
+					(length 2.54)
+					(hide yes)
+					(name "VCAP"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "172"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "173"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -7.62 180)
+					(length 2.54)
+					(name "PDR_ON"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "174"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 -5.08 180)
+					(length 2.54)
+					(hide yes)
+					(name "VDDLDO"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "175"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 7.62 180)
+					(length 2.54)
+					(hide yes)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "176"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "STM32H745IIT6_MIRA_2_1"
+				(rectangle
+					(start -22.86 27.94)
+					(end 22.86 -27.94)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin output line
+					(at -25.4 22.86 0)
+					(length 2.54)
+					(name "PF0_/_FMC_A0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 20.32 0)
+					(length 2.54)
+					(name "PF1_/_FMC_A1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 17.78 0)
+					(length 2.54)
+					(name "PF2_/_FMC_A2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 15.24 0)
+					(length 2.54)
+					(name "PF3_/_FMC_A3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 12.7 0)
+					(length 2.54)
+					(name "PF4_/_FMC_A4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 10.16 0)
+					(length 2.54)
+					(name "PF5_/_FMC_A5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 -17.78 0)
+					(length 2.54)
+					(name "PC0_/_FMC_SDNWE"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 25.4 -21.59 180)
+					(length 2.54)
+					(name "PC4_/_FMC_SDNE0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "53"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 25.4 -24.13 180)
+					(length 2.54)
+					(name "PC5_/_FMC_SDCKE0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "54"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 -20.32 0)
+					(length 2.54)
+					(name "PF11_/_FMC_SDNRAS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "58"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 7.62 0)
+					(length 2.54)
+					(name "PF12_/_FMC_A6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "59"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 5.08 0)
+					(length 2.54)
+					(name "PF13_/_FMC_A7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "60"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 2.54 0)
+					(length 2.54)
+					(name "PF14_/_FMC_A8"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "61"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 0 0)
+					(length 2.54)
+					(name "PF15_/_FMC_A9"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "62"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 -2.54 0)
+					(length 2.54)
+					(name "PG0_/_FMC_A10"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "63"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 -5.08 0)
+					(length 2.54)
+					(name "PG1_/_FMC_A11"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "66"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 13.97 180)
+					(length 2.54)
+					(name "PE7_/_FMC_D4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "67"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 11.43 180)
+					(length 2.54)
+					(name "PE8_/_FMC_D5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "68"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 8.89 180)
+					(length 2.54)
+					(name "PE9_/_FMC_D6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "69"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 6.35 180)
+					(length 2.54)
+					(name "PE10_/_FMC_D7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "72"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 3.81 180)
+					(length 2.54)
+					(name "PE11_/_FMC_D8"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "73"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 1.27 180)
+					(length 2.54)
+					(name "PE12_/_FMC_D9"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "74"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -1.27 180)
+					(length 2.54)
+					(name "PE13_/_FMC_D10"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "75"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -3.81 180)
+					(length 2.54)
+					(name "PE14_/_FMC_D11"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "76"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -6.35 180)
+					(length 2.54)
+					(name "PE15_/_FMC_D12"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "77"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -8.89 180)
+					(length 2.54)
+					(name "PD8_/_FMC_D13"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "89"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -11.43 180)
+					(length 2.54)
+					(name "PD9_/_FMC_D14"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "90"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -13.97 180)
+					(length 2.54)
+					(name "PD10_/_FMC_D15"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "91"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 24.13 180)
+					(length 2.54)
+					(name "PD14_/_FMC_D0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "97"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 21.59 180)
+					(length 2.54)
+					(name "PD15_/_FMC_D1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "98"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 -7.62 0)
+					(length 2.54)
+					(name "PG2_/_FMC_A12"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "110"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 -10.16 0)
+					(length 2.54)
+					(name "PG4_/_FMC_BA0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "114"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 -12.7 0)
+					(length 2.54)
+					(name "PG5_/_FMC_BA1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "115"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 -15.24 0)
+					(length 2.54)
+					(name "PG8_/_FMC_SDCLK"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "118"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 19.05 180)
+					(length 2.54)
+					(name "PD0_/_FMC_D2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "143"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 16.51 180)
+					(length 2.54)
+					(name "PD1_/_FMC_D3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "144"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 -22.86 0)
+					(length 2.54)
+					(name "PG15_/_FMC_SDNCAS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "161"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 25.4 -16.51 180)
+					(length 2.54)
+					(name "PE0_/_FMC_NBL0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "170"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 25.4 -19.05 180)
+					(length 2.54)
+					(name "PE1_/_FMC_NBL1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "171"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "STM32H745IIT6_MIRA_3_1"
+				(rectangle
+					(start -22.86 19.05)
+					(end 22.86 -19.05)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 5.08 180)
+					(length 2.54)
+					(name "PE2_/_QSPI_IO2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 0 0)
+					(length 2.54)
+					(name "PA0_/_RESET_FPGA_N"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 -2.54 0)
+					(length 2.54)
+					(name "PA2_/_HOST_UART_TX"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -25.4 -5.08 0)
+					(length 2.54)
+					(name "PA3_/_PM_UART_TX_HOST"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 15.24 0)
+					(length 2.54)
+					(name "PA4_/_FPGA_CS_N"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 12.7 0)
+					(length 2.54)
+					(name "PA5_/_FPGA_SCK"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "50"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -25.4 10.16 0)
+					(length 2.54)
+					(name "PA6_/_FPGA_MISO"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "51"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 7.62 0)
+					(length 2.54)
+					(name "PA7_/_FPGA_MOSI"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "52"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -25.4 5.08 0)
+					(length 2.54)
+					(name "PB0_/_FPGA_IRQ"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "55"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 2.54 0)
+					(length 2.54)
+					(name "PB1_/_HOST_ALIVE"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "56"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 25.4 15.24 180)
+					(length 2.54)
+					(name "PB2_/_QSPI_CLK"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "57"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 10.16 180)
+					(length 2.54)
+					(name "PD11_/_QSPI_IO0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "94"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 7.62 180)
+					(length 2.54)
+					(name "PD12_/_QSPI_IO1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "95"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 2.54 180)
+					(length 2.54)
+					(name "PD13_/_QSPI_IO3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "96"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 25.4 -15.24 180)
+					(length 2.54)
+					(name "PG6_/_SD_CD_N"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "116"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -5.08 180)
+					(length 2.54)
+					(name "PC8_/_SD_D0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "124"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -7.62 180)
+					(length 2.54)
+					(name "PC9_/_SD_D1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "125"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -25.4 -10.16 0)
+					(length 2.54)
+					(name "PA8_/_ALL_RAILS_PG_HOST"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "127"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -25.4 -12.7 0)
+					(length 2.54)
+					(name "PA9_/_GLOBAL_PWR_PERMIT_HOST"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "128"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -25.4 -15.24 0)
+					(length 2.54)
+					(name "PA10_/_MATRIX_PERMIT_HOST"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "129"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -10.16 180)
+					(length 2.54)
+					(name "PC10_/_SD_D2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "140"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -12.7 180)
+					(length 2.54)
+					(name "PC11_/_SD_D3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "141"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 25.4 0 180)
+					(length 2.54)
+					(name "PC12_/_SD_CLK"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "142"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 25.4 -2.54 180)
+					(length 2.54)
+					(name "PD2_/_SD_CMD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "145"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 25.4 12.7 180)
+					(length 2.54)
+					(name "PB6_/_QSPI_CS_N"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "165"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -25.4 -7.62 0)
+					(length 2.54)
+					(name "PB7_/_HOST_WDI"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "166"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "STM32H745IIT6_MIRA_4_1"
+				(rectangle
+					(start -17.78 8.89)
+					(end 17.78 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -20.32 5.08 0)
+					(length 2.54)
+					(name "PC14"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 2.54 0)
+					(length 2.54)
+					(name "PC15"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 0 0)
+					(length 2.54)
+					(name "PH0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -2.54 0)
+					(length 2.54)
+					(name "PH1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -5.08 0)
+					(length 2.54)
+					(name "NRST"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 3.81 180)
+					(length 2.54)
+					(name "PA13"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "132"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 1.27 180)
+					(length 2.54)
+					(name "PA14"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "138"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -1.27 180)
+					(length 2.54)
+					(name "PB3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "162"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -3.81 180)
+					(length 2.54)
+					(name "BOOT0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "167"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "STM32H745IIT6_MIRA_5_1"
+				(rectangle
+					(start -17.78 34.29)
+					(end 17.78 -34.29)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 30.48 0)
+					(length 2.54)
+					(name "PE3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 27.94 0)
+					(length 2.54)
+					(name "PE4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 25.4 0)
+					(length 2.54)
+					(name "PE5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 22.86 0)
+					(length 2.54)
+					(name "PE6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 20.32 0)
+					(length 2.54)
+					(name "PC13"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 17.78 0)
+					(length 2.54)
+					(name "PF6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 15.24 0)
+					(length 2.54)
+					(name "PF7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 12.7 0)
+					(length 2.54)
+					(name "PF8"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 10.16 0)
+					(length 2.54)
+					(name "PF9"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 7.62 0)
+					(length 2.54)
+					(name "PF10"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 5.08 0)
+					(length 2.54)
+					(name "PC1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 2.54 0)
+					(length 2.54)
+					(name "PC2_C"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 0 0)
+					(length 2.54)
+					(name "PC3_C"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -2.54 0)
+					(length 2.54)
+					(name "PA1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -5.08 0)
+					(length 2.54)
+					(name "PB10"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "78"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -7.62 0)
+					(length 2.54)
+					(name "PB11"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "79"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -10.16 0)
+					(length 2.54)
+					(name "PB12"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "85"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -12.7 0)
+					(length 2.54)
+					(name "PB13"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "86"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -15.24 0)
+					(length 2.54)
+					(name "PB14"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "87"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -17.78 0)
+					(length 2.54)
+					(name "PB15"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "88"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -20.32 0)
+					(length 2.54)
+					(name "PJ8"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "101"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -22.86 0)
+					(length 2.54)
+					(name "PJ9"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "102"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -25.4 0)
+					(length 2.54)
+					(name "PJ10"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "103"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -27.94 0)
+					(length 2.54)
+					(name "PJ11"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "104"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -30.48 0)
+					(length 2.54)
+					(name "PK0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "107"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 29.21 180)
+					(length 2.54)
+					(name "PK1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "108"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 26.67 180)
+					(length 2.54)
+					(name "PK2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "109"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 24.13 180)
+					(length 2.54)
+					(name "PG3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "111"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 21.59 180)
+					(length 2.54)
+					(name "PG7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "117"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 19.05 180)
+					(length 2.54)
+					(name "PC6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "122"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 16.51 180)
+					(length 2.54)
+					(name "PC7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "123"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 13.97 180)
+					(length 2.54)
+					(name "PA11"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "130"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 11.43 180)
+					(length 2.54)
+					(name "PA12"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "131"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 8.89 180)
+					(length 2.54)
+					(name "PA15"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "139"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 6.35 180)
+					(length 2.54)
+					(name "PD3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "146"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 3.81 180)
+					(length 2.54)
+					(name "PD4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "147"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 1.27 180)
+					(length 2.54)
+					(name "PD5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "148"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -1.27 180)
+					(length 2.54)
+					(name "PD6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "149"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -3.81 180)
+					(length 2.54)
+					(name "PD7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "150"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -6.35 180)
+					(length 2.54)
+					(name "PG9"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "153"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -8.89 180)
+					(length 2.54)
+					(name "PG10"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "154"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -11.43 180)
+					(length 2.54)
+					(name "PG11"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "155"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -13.97 180)
+					(length 2.54)
+					(name "PG12"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "156"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -16.51 180)
+					(length 2.54)
+					(name "PG13"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "157"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -19.05 180)
+					(length 2.54)
+					(name "PG14"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "158"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -21.59 180)
+					(length 2.54)
+					(name "PB4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "163"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -24.13 180)
+					(length 2.54)
+					(name "PB5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "164"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -26.67 180)
+					(length 2.54)
+					(name "PB8"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "168"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -29.21 180)
+					(length 2.54)
+					(name "PB9"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "169"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 149.86 13.97)
+		(end 281.94 163.83)
+		(stroke
+			(width 0.13)
+			(type default)
+			(color 120 128 138 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "48db388b-4d1d-4045-8006-66ed49234e43")
+	)
+	(rectangle
+		(start 13.97 13.97)
+		(end 147.32 188.73)
+		(stroke
+			(width 0.13)
+			(type default)
+			(color 120 128 138 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "531fed6d-1718-4076-b4fa-ef8f5d08c69c")
+	)
+	(text "Do not load MCU_VCAP or connect it to SYS3V3. Check VCAP, NRST and SWD\nfirst. USB regulator is disabled; USB pins use SYS3V3."
+		(exclude_from_sim no)
+		(at 154.94 144.45 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+				(color 33 43 55 1)
+			)
+			(justify left top)
+		)
+		(uuid "05b99393-e4fe-4b76-87f3-95b9025838f9")
+	)
+	(text "Main MCU supply and core regulator | Rev.A"
+		(exclude_from_sim no)
+		(at 19.05 28.19 0)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 70 190 1)
+			)
+			(justify left top)
+		)
+		(uuid "15f54e91-7652-4345-9c3e-7456273a5848")
+	)
+	(text "VCAP 80,133,172: join directly with short copper.\nTwo 2.2u capacitors share the core domain (ST AN4938)."
+		(exclude_from_sim no)
+		(at 17.78 101.6 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left top)
+		)
+		(uuid "24021c6b-980f-4b27-8795-57d5cbda2c5f")
+	)
+	(text "Protection and fault response"
+		(exclude_from_sim no)
+		(at 154.94 139.37 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+				(color 0 100 110 1)
+			)
+			(justify left top)
+		)
+		(uuid "2c2cfdfb-5fe6-452c-a645-6be5c284afe4")
+	)
+	(text "SHEET GUIDE / 4100_MCU_POWER_CORE"
+		(exclude_from_sim no)
+		(at 154.94 17.97 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+				(color 86 96 108 1)
+			)
+			(justify left top)
+		)
+		(uuid "3c042d9d-f01f-408e-a87e-0a4fb0d7f0af")
+	)
+	(text "VDD, VDDLDO and VBAT use SYS3V3. R4101 feeds VDDA/VREF+. Repeated\nsupply pins are stacked; every physical pin is retained."
+		(exclude_from_sim no)
+		(at 154.94 69.45 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+				(color 33 43 55 1)
+			)
+			(justify left top)
+		)
+		(uuid "4626f22b-f57a-49a6-8d55-f330e925c16c")
+	)
+	(text "Timing and settings"
+		(exclude_from_sim no)
+		(at 154.94 114.37 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+				(color 0 100 110 1)
+			)
+			(justify left top)
+		)
+		(uuid "5ce0d939-9cb7-4a35-805f-7d9da615f981")
+	)
+	(text "Backup and USB supply bypass"
+		(exclude_from_sim no)
+		(at 81.28 151.83 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "667bf2c1-8880-4caa-8f8a-395c4c089a0c")
+	)
+	(text "Main MCU supply bypass capacitors | Rev.A"
+		(exclude_from_sim no)
+		(at 17.78 116.56 0)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 70 190 1)
+			)
+			(justify left top)
+		)
+		(uuid "746454f7-7d19-4a56-9213-df77f8a5c8c6")
+	)
+	(text "Main MCU supply and core regulator"
+		(exclude_from_sim no)
+		(at 19.05 23.23 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+				(bold yes)
+				(color 25 47 72 1)
+			)
+			(justify left top)
+		)
+		(uuid "74f0c30f-0a3d-4535-a25d-006708034844")
+	)
+	(text "Inputs and outputs"
+		(exclude_from_sim no)
+		(at 154.94 64.37 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+				(color 0 100 110 1)
+			)
+			(justify left top)
+		)
+		(uuid "7c1c176b-e551-46f9-868e-e98dc72e31eb")
+	)
+	(text "VCAP 80/133/172 share two 2.2u capacitors. Select PWR_LDO_SUPPLY\nbefore voltage scaling/PLLs. 480MHz requires VOS0."
+		(exclude_from_sim no)
+		(at 154.94 119.45 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+				(color 33 43 55 1)
+			)
+			(justify left top)
+		)
+		(uuid "92c79537-f0ed-40fe-8f44-1cd7610559a7")
+	)
+	(text "4100_MCU_POWER_CORE"
+		(exclude_from_sim no)
+		(at 19.05 17.97 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+				(color 86 96 108 1)
+			)
+			(justify left top)
+		)
+		(uuid "ab2cf677-d1c2-4107-8d8d-c792d1f3d9a9")
+	)
+	(text "LDO-only: VDDSMPS, VFBSMPS and VSSSMPS are GND; VLXSMPS is open. All\nthree VDDLDO pins are connected."
+		(exclude_from_sim no)
+		(at 154.94 94.45 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+				(color 33 43 55 1)
+			)
+			(justify left top)
+		)
+		(uuid "b1921a8e-d261-4e20-996a-28d133b322e2")
+	)
+	(text "Control logic"
+		(exclude_from_sim no)
+		(at 154.94 89.37 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+				(color 0 100 110 1)
+			)
+			(justify left top)
+		)
+		(uuid "bec83010-b94f-4b0d-b373-a1057a174f2c")
+	)
+	(text "VDD and LDO reservoir capacitors"
+		(exclude_from_sim no)
+		(at 17.78 153.1 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "c02c3e39-12d2-43b3-b46e-a8c26709c4f2")
+	)
+	(text "Purpose and role"
+		(exclude_from_sim no)
+		(at 154.94 39.37 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+				(color 0 100 110 1)
+			)
+			(justify left top)
+		)
+		(uuid "cddcd10d-2cb4-4b82-a76c-7bbcd523eae8")
+	)
+	(text "Core regulation and analog supply bypass"
+		(exclude_from_sim no)
+		(at 19.05 77.47 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "cec3295f-616d-4f97-a5dc-6f284cb6d4da")
+	)
+	(text "Main MCU supply and core regulator"
+		(exclude_from_sim no)
+		(at 154.94 26.67 0)
+		(effects
+			(font
+				(size 2.2 2.2)
+				(bold yes)
+				(color 25 47 72 1)
+			)
+			(justify left top)
+		)
+		(uuid "d55768f5-9c4e-413a-80d2-3e3dc811fb6e")
+	)
+	(text "U4101 runs experiment control and neuron models. The independent AON\nSTM32G0 remains the power manager."
+		(exclude_from_sim no)
+		(at 154.94 44.45 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+				(color 33 43 55 1)
+			)
+			(justify left top)
+		)
+		(uuid "f4eda207-0fd4-46de-bead-c75b810a1ed5")
+	)
+	(junction
+		(at 46.99 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "005a4c1b-0f68-46ab-8375-8a7777033474")
+	)
+	(junction
+		(at 87.63 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00b91365-8e67-41e2-a8f8-6b564d81c3bf")
+	)
+	(junction
+		(at 93.98 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ac59d5d-701b-4dae-b226-f48d7e4a20a0")
+	)
+	(junction
+		(at 46.99 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0fd0cfd1-254d-4ce3-b47a-335946435518")
+	)
+	(junction
+		(at 68.58 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11eba63a-0520-484c-bb7e-e166a170da28")
+	)
+	(junction
+		(at 49.53 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "192cf382-0f9c-407f-90e5-c20d6c661d36")
+	)
+	(junction
+		(at 118.11 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23f43194-14a7-4da6-a0f3-f9d5fdb5cbc7")
+	)
+	(junction
+		(at 46.99 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2483ba58-3739-408d-82db-105cfee199da")
+	)
+	(junction
+		(at 62.23 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "387e4525-cd37-4bbd-b5ee-15f2372e3ffd")
+	)
+	(junction
+		(at 36.83 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41f3650e-4490-497f-8389-3fe708794781")
+	)
+	(junction
+		(at 104.14 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "45d0bc2a-5772-4c9c-8b7e-ab4cd1194c6a")
+	)
+	(junction
+		(at 40.64 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49fcd38c-f714-4ba8-a115-d0fe4165463c")
+	)
+	(junction
+		(at 74.93 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55218cc1-195d-4627-a06a-60b11c4d6d2b")
+	)
+	(junction
+		(at 43.18 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b1c054c-05c9-4296-a654-b7946eb2b31e")
+	)
+	(junction
+		(at 113.03 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ccc10ff-47d9-4c56-8c26-46f7173c7168")
+	)
+	(junction
+		(at 106.68 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f67e73c-e0a0-4e74-b6e3-cb6767022352")
+	)
+	(junction
+		(at 68.58 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67f244bc-ccec-4f2a-9907-845d99a4004b")
+	)
+	(junction
+		(at 53.34 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68af19da-fa83-40a4-b138-c17d017067e6")
+	)
+	(junction
+		(at 106.68 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c70dddf-fc5b-46f6-93b9-5849ac605447")
+	)
+	(junction
+		(at 53.34 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70666024-b32b-42aa-9a1e-d120b9450b97")
+	)
+	(junction
+		(at 116.84 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "707ad6e5-9aea-4ebb-aeb5-c1abeea71cd6")
+	)
+	(junction
+		(at 87.63 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d32c1b3-444c-4a6d-947c-37c05a1e827f")
+	)
+	(junction
+		(at 81.28 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89e44e16-a33a-49f1-a0d9-fbb79f55ead9")
+	)
+	(junction
+		(at 100.33 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a270d6f-b891-44e5-a521-1365e0550d8b")
+	)
+	(junction
+		(at 100.33 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c1700f7-426c-487d-9015-93e291439838")
+	)
+	(junction
+		(at 116.84 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8fd46c15-31b0-48e3-a6b6-8f12cb424cc8")
+	)
+	(junction
+		(at 81.28 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ab05e81-326e-4db0-8879-15a9034dcb30")
+	)
+	(junction
+		(at 119.38 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9deb7e1e-e4b4-48fb-91c1-f955ab18f47b")
+	)
+	(junction
+		(at 62.23 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f4a04bd-1203-4507-b2bc-a9194a0a2041")
+	)
+	(junction
+		(at 119.38 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a17ce299-b7a7-4067-b3fb-6e493a3ff0f0")
+	)
+	(junction
+		(at 125.73 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a97ba48d-9a5f-4784-9a68-9bee8c7a7943")
+	)
+	(junction
+		(at 93.98 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "adeae870-3fbe-4b65-9889-1e740c97b41a")
+	)
+	(junction
+		(at 55.88 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6a7b648-1a93-4d26-8e3e-9ea5eb1393c0")
+	)
+	(junction
+		(at 49.53 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be8b4cc8-8d67-4ad4-9775-a6092de9b32c")
+	)
+	(junction
+		(at 74.93 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bebbcd50-c1c1-4ba3-9b97-6ed782a8afe4")
+	)
+	(junction
+		(at 36.83 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c02c947e-1c5e-46db-98fb-29764b7302dc")
+	)
+	(junction
+		(at 74.93 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca28cc17-95d5-49f5-ac80-3678f298eb39")
+	)
+	(junction
+		(at 43.18 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca8d9b50-4b9d-49ee-b95f-1f09eba7c6bd")
+	)
+	(junction
+		(at 113.03 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d25ff67c-47fc-4ad9-966f-4ca5d5778bfb")
+	)
+	(junction
+		(at 125.73 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfd6afa8-4512-4929-bfa8-fccc40ce2e35")
+	)
+	(junction
+		(at 31.75 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4926fc6-3704-4e8c-a462-13fb9bad6a86")
+	)
+	(junction
+		(at 55.88 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e70595e9-884e-479c-80eb-afe691277cd3")
+	)
+	(junction
+		(at 30.48 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb077f72-f6b1-474f-b967-ac9061952641")
+	)
+	(no_connect
+		(at 60.96 46.99)
+		(uuid "247afdab-0cde-4427-b63d-83a4205f82d0")
+	)
+	(wire
+		(pts
+			(xy 93.98 127) (xy 93.98 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0049714a-f64b-40a0-b187-c3eca6e86535")
+	)
+	(wire
+		(pts
+			(xy 74.93 132.08) (xy 74.93 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00e2e57f-a2d0-4cb4-92b8-bd240741df13")
+	)
+	(wire
+		(pts
+			(xy 118.11 83.82) (xy 130.81 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "014c8955-cbf6-4036-9a17-f70071e1816b")
+	)
+	(wire
+		(pts
+			(xy 68.58 127) (xy 68.58 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01b1ee4a-746c-483a-8565-e7cd23bfb855")
+	)
+	(wire
+		(pts
+			(xy 130.81 91.44) (xy 130.81 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "028cddd7-cf63-4b68-8159-504dd31c9a18")
+	)
+	(wire
+		(pts
+			(xy 40.64 160.02) (xy 53.34 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04cd60cf-3161-4bb9-975d-89cc981e714e")
+	)
+	(wire
+		(pts
+			(xy 101.6 48.26) (xy 106.68 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08be61fd-2eac-43c0-84e9-c3621f0cd6c0")
+	)
+	(wire
+		(pts
+			(xy 74.93 124.46) (xy 81.28 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "090b8a47-feed-4ed0-9c80-a893c4a43111")
+	)
+	(wire
+		(pts
+			(xy 100.33 132.08) (xy 100.33 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a95417d-cb53-41b4-b2c8-d1e760ca40a0")
+	)
+	(wire
+		(pts
+			(xy 68.58 124.46) (xy 74.93 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "103a8004-10c1-4212-9eab-a02d2e091195")
+	)
+	(wire
+		(pts
+			(xy 74.93 134.62) (xy 81.28 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "141aa286-ac6c-4f7d-a65f-98fb061694a6")
+	)
+	(wire
+		(pts
+			(xy 53.34 162.56) (xy 53.34 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "196cb15c-f707-4a45-8344-fcfdd3ee5672")
+	)
+	(wire
+		(pts
+			(xy 30.48 127) (xy 30.48 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19b2956c-afd0-4338-94de-76b78fa0aa92")
+	)
+	(wire
+		(pts
+			(xy 62.23 134.62) (xy 68.58 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a7f0bd5-9a97-4517-a5cb-e7adee8fc2a4")
+	)
+	(wire
+		(pts
+			(xy 81.28 124.46) (xy 87.63 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dd04c98-683e-4d12-9e12-0ea95c887ec3")
+	)
+	(wire
+		(pts
+			(xy 106.68 127) (xy 106.68 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ec0e861-6281-40cb-a37f-f4fa44cad814")
+	)
+	(wire
+		(pts
+			(xy 100.33 127) (xy 100.33 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22c15a93-45d5-4de2-9a44-64cdf5cba036")
+	)
+	(wire
+		(pts
+			(xy 30.48 132.08) (xy 30.48 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24a6b024-8727-4a90-9aa1-7ded970ba6fc")
+	)
+	(wire
+		(pts
+			(xy 31.75 83.82) (xy 44.45 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28778c8d-d9b2-45c7-a9f2-15d578d4db95")
+	)
+	(wire
+		(pts
+			(xy 55.88 124.46) (xy 62.23 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "341b7c98-eec7-463c-a26b-6b44d596e815")
+	)
+	(wire
+		(pts
+			(xy 66.04 167.64) (xy 66.04 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3583bc70-0dfc-4759-96af-537854529e6e")
+	)
+	(wire
+		(pts
+			(xy 49.53 134.62) (xy 55.88 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3829e385-3798-4bd9-8cd7-a1b9f27bce19")
+	)
+	(wire
+		(pts
+			(xy 49.53 127) (xy 49.53 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "395e2c23-32d9-4586-a552-9216b0b65c49")
+	)
+	(wire
+		(pts
+			(xy 104.14 166.37) (xy 104.14 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3990b13a-37ad-426d-a670-2d35ccf89979")
+	)
+	(wire
+		(pts
+			(xy 81.28 132.08) (xy 81.28 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ceaec33-9f98-431d-ac8a-43ca572075e5")
+	)
+	(wire
+		(pts
+			(xy 81.28 127) (xy 81.28 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d7ab99a-e1a1-4e73-9896-5737ccf09514")
+	)
+	(wire
+		(pts
+			(xy 49.53 132.08) (xy 49.53 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43b8a2d8-71b1-4f60-a19a-b6de1f103b9a")
+	)
+	(wire
+		(pts
+			(xy 119.38 134.62) (xy 125.73 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c76aec-c4df-4f59-8161-ba61d80d02c0")
+	)
+	(wire
+		(pts
+			(xy 106.68 124.46) (xy 113.03 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47be73aa-83d9-45eb-8ded-d586f34f096c")
+	)
+	(wire
+		(pts
+			(xy 46.99 44.45) (xy 60.96 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ae61177-7865-45ba-a91a-5912592cdb35")
+	)
+	(wire
+		(pts
+			(xy 40.64 170.18) (xy 53.34 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e736133-57e6-4fb3-abbf-8eea51962a2b")
+	)
+	(wire
+		(pts
+			(xy 101.6 45.72) (xy 114.3 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ea82e29-509e-4f16-852e-97463038b176")
+	)
+	(wire
+		(pts
+			(xy 66.04 162.56) (xy 66.04 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f17615c-97c1-4336-839e-e9f95f9898c0")
+	)
+	(wire
+		(pts
+			(xy 93.98 134.62) (xy 100.33 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5027dcc9-291e-41cc-870f-53d5bf037d3a")
+	)
+	(wire
+		(pts
+			(xy 130.81 46.99) (xy 130.81 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50b67e99-cfb7-472e-8441-30d61e88f55b")
+	)
+	(wire
+		(pts
+			(xy 113.03 124.46) (xy 119.38 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54edd063-725b-4348-b566-8120b61a20db")
+	)
+	(wire
+		(pts
+			(xy 101.6 58.42) (xy 106.68 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bcb6dbc-c12b-4a83-bad4-9fe5d36e35e7")
+	)
+	(wire
+		(pts
+			(xy 132.08 127) (xy 132.08 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bf1a1e0-882b-4bf0-8447-2fa93ce67b61")
+	)
+	(wire
+		(pts
+			(xy 40.64 167.64) (xy 40.64 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cd75b3c-fb18-43c2-bd88-210a90639608")
+	)
+	(wire
+		(pts
+			(xy 31.75 93.98) (xy 44.45 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f2d97ec-d06c-41f2-9d89-f76cf1f53de6")
+	)
+	(wire
+		(pts
+			(xy 60.96 59.69) (xy 55.88 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6009aab8-aa22-439e-a238-397646a6f999")
+	)
+	(wire
+		(pts
+			(xy 129.54 166.37) (xy 129.54 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60beccc7-8e6b-4a43-ac7f-0aed77664a30")
+	)
+	(wire
+		(pts
+			(xy 113.03 127) (xy 113.03 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6434389c-6430-428b-9375-f6000dad5768")
+	)
+	(wire
+		(pts
+			(xy 43.18 134.62) (xy 49.53 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "660f9483-f8d1-4a44-8b55-44087c4d2e7e")
+	)
+	(wire
+		(pts
+			(xy 87.63 127) (xy 87.63 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6964805d-75bb-4498-a96c-f2b04ef38cdb")
+	)
+	(wire
+		(pts
+			(xy 43.18 132.08) (xy 43.18 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69aebd98-f927-4cd3-86b6-8d0c61ee31c2")
+	)
+	(wire
+		(pts
+			(xy 60.96 41.91) (xy 55.88 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d97a8ce-dc85-4d5c-ab7d-ec94ba656b97")
+	)
+	(wire
+		(pts
+			(xy 130.81 86.36) (xy 130.81 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dc1ea2e-13cf-4b24-9934-510e9bc0ab52")
+	)
+	(wire
+		(pts
+			(xy 119.38 124.46) (xy 125.73 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "757db8b8-754b-4b58-ad73-4c0f70824914")
+	)
+	(wire
+		(pts
+			(xy 36.83 124.46) (xy 43.18 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75edca02-be12-4a63-afd5-dd014bfeafa1")
+	)
+	(wire
+		(pts
+			(xy 60.96 62.23) (xy 55.88 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7687974f-077e-49ff-a417-520c9dd54b9b")
+	)
+	(wire
+		(pts
+			(xy 46.99 52.07) (xy 46.99 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76d7a264-8762-4109-804e-f955836d82df")
+	)
+	(wire
+		(pts
+			(xy 60.96 64.77) (xy 55.88 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "776bdd93-215d-43aa-b752-023e1742fd7e")
+	)
+	(wire
+		(pts
+			(xy 68.58 132.08) (xy 68.58 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a0d759c-4d19-4e40-9b14-8cbe53b1666c")
+	)
+	(wire
+		(pts
+			(xy 60.96 57.15) (xy 55.88 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a88aab7-bc8b-465b-a531-b4b5204e0573")
+	)
+	(wire
+		(pts
+			(xy 46.99 36.83) (xy 46.99 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7adae1b8-d6f9-4f0f-bfcb-ab53a740d1c5")
+	)
+	(polyline
+		(pts
+			(xy 154.94 34.29) (xy 276.86 34.29)
+		)
+		(stroke
+			(width 0.18)
+			(type default)
+		)
+		(uuid "7bce5c15-936c-4fc6-bf1f-ef61326568a6")
+	)
+	(wire
+		(pts
+			(xy 74.93 86.36) (xy 74.93 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c652f84-acb9-412b-b51f-eaae8c9b1d9a")
+	)
+	(wire
+		(pts
+			(xy 53.34 160.02) (xy 66.04 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e7f485c-ecbc-41be-9a8c-185f3d190d5a")
+	)
+	(wire
+		(pts
+			(xy 74.93 83.82) (xy 87.63 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f54bca6-785c-4e6b-a36b-80269f439a05")
+	)
+	(wire
+		(pts
+			(xy 116.84 166.37) (xy 116.84 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "819d30fd-8eaa-46d9-8ad2-9d8bba664263")
+	)
+	(wire
+		(pts
+			(xy 101.6 43.18) (xy 106.68 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "828a1581-1e15-44f6-af12-7d0b522a839d")
+	)
+	(wire
+		(pts
+			(xy 113.03 134.62) (xy 119.38 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82c63bd4-5e77-4994-844f-ac20e2ca5124")
+	)
+	(wire
+		(pts
+			(xy 87.63 134.62) (xy 93.98 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86512b1a-5629-448c-9fbe-096f49a09963")
+	)
+	(wire
+		(pts
+			(xy 116.84 161.29) (xy 116.84 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88475b3c-4930-4ecc-a745-5dee09518bf4")
+	)
+	(wire
+		(pts
+			(xy 116.84 158.75) (xy 129.54 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89ddc7b4-9605-43f8-8fbd-f642e56250ee")
+	)
+	(wire
+		(pts
+			(xy 132.08 132.08) (xy 132.08 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b143c08-6b74-477a-a0d9-be6e7fdbaa97")
+	)
+	(wire
+		(pts
+			(xy 30.48 124.46) (xy 36.83 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b378a65-ed33-453c-bc8d-0d933833a6fe")
+	)
+	(wire
+		(pts
+			(xy 101.6 55.88) (xy 106.68 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cb9db77-03c6-4d4b-b5a6-a7d85bb89e96")
+	)
+	(wire
+		(pts
+			(xy 101.6 53.34) (xy 106.68 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f0f7963-e56c-4144-9012-14518cf8c148")
+	)
+	(wire
+		(pts
+			(xy 101.6 50.8) (xy 106.68 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f8b67ad-5f11-4b56-bea3-c7e37fd54104")
+	)
+	(wire
+		(pts
+			(xy 46.99 49.53) (xy 46.99 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91d1ceac-fca4-4b62-921b-8fcbeb88692b")
+	)
+	(wire
+		(pts
+			(xy 46.99 52.07) (xy 60.96 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9221c99f-070c-4b89-9ac2-a53e7f6522d9")
+	)
+	(wire
+		(pts
+			(xy 125.73 127) (xy 125.73 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92cced94-f8c1-4fb3-915d-f481409b33ab")
+	)
+	(wire
+		(pts
+			(xy 106.68 132.08) (xy 106.68 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "931b69f2-c4a5-4c5f-a245-e85485d19f3f")
+	)
+	(wire
+		(pts
+			(xy 55.88 132.08) (xy 55.88 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94d4cee2-f314-495c-9ec1-ccf8b65a9b72")
+	)
+	(wire
+		(pts
+			(xy 62.23 132.08) (xy 62.23 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "967fd1e6-eff8-4e4c-985a-a92e7189cbae")
+	)
+	(wire
+		(pts
+			(xy 118.11 86.36) (xy 118.11 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9714ca6c-2ccb-4889-aa99-75d41d178b81")
+	)
+	(wire
+		(pts
+			(xy 93.98 132.08) (xy 93.98 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "989f7a7f-197d-41fb-b083-3f2e3b26e7ba")
+	)
+	(wire
+		(pts
+			(xy 62.23 124.46) (xy 68.58 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "995df526-0eab-45a1-963d-3d7d8e6df405")
+	)
+	(wire
+		(pts
+			(xy 55.88 127) (xy 55.88 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a6a8a74-2229-468c-9520-1f941e6fa7eb")
+	)
+	(wire
+		(pts
+			(xy 44.45 91.44) (xy 44.45 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ac33678-4613-4c6b-99ed-fddc1f058970")
+	)
+	(wire
+		(pts
+			(xy 31.75 86.36) (xy 31.75 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b671927-11c0-4cef-a749-6888a05ac9c8")
+	)
+	(wire
+		(pts
+			(xy 100.33 134.62) (xy 106.68 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d95a2d3-f6de-4491-9ed1-da3bf360fe6f")
+	)
+	(wire
+		(pts
+			(xy 118.11 93.98) (xy 130.81 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ea447e9-c781-4138-9e3f-c966a1895fdd")
+	)
+	(wire
+		(pts
+			(xy 130.81 54.61) (xy 130.81 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ef02c90-f4a4-4d51-9a59-1964582bcf22")
+	)
+	(wire
+		(pts
+			(xy 31.75 91.44) (xy 31.75 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a01d5ea5-7962-4e2d-938e-54cac2e19526")
+	)
+	(wire
+		(pts
+			(xy 60.96 39.37) (xy 55.88 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1b9c74b-7a1e-4f57-b9e8-bcc3ee35937a")
+	)
+	(wire
+		(pts
+			(xy 106.68 134.62) (xy 113.03 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4a38c3e-ac59-4bc6-8473-cd98e4a94cf3")
+	)
+	(wire
+		(pts
+			(xy 43.18 124.46) (xy 49.53 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8ab4313-c992-4522-994e-a957f3655f44")
+	)
+	(wire
+		(pts
+			(xy 125.73 124.46) (xy 132.08 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa644752-1c07-4a88-a7aa-4d3dce758b81")
+	)
+	(wire
+		(pts
+			(xy 87.63 132.08) (xy 87.63 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa721380-8357-4428-805b-158c6b03cce5")
+	)
+	(wire
+		(pts
+			(xy 68.58 134.62) (xy 74.93 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab8a9b04-ad1b-40bd-bfdc-09e29d657ef2")
+	)
+	(wire
+		(pts
+			(xy 118.11 91.44) (xy 118.11 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adfb8df5-0bc6-4622-80cc-5a3f4040e6e5")
+	)
+	(wire
+		(pts
+			(xy 129.54 161.29) (xy 129.54 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af6517ca-d328-4f26-9066-f4344f4503f3")
+	)
+	(wire
+		(pts
+			(xy 46.99 44.45) (xy 45.72 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b023ce05-e718-4c76-8a22-ab468475c6da")
+	)
+	(wire
+		(pts
+			(xy 46.99 49.53) (xy 60.96 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0c66ea7-6521-4f09-9125-88311954ad2b")
+	)
+	(wire
+		(pts
+			(xy 36.83 132.08) (xy 36.83 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b12c9c12-8404-472c-ad38-7719af91c64a")
+	)
+	(wire
+		(pts
+			(xy 87.63 86.36) (xy 87.63 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6815846-2d81-41d5-97fe-4408f121b01d")
+	)
+	(wire
+		(pts
+			(xy 53.34 167.64) (xy 53.34 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b88d2d37-822f-4693-a92e-e034037e0d30")
+	)
+	(wire
+		(pts
+			(xy 87.63 91.44) (xy 87.63 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7fef3e5-eac4-431b-b000-e3c6df0a10b2")
+	)
+	(wire
+		(pts
+			(xy 104.14 168.91) (xy 116.84 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb9036ad-96be-490b-a404-1ccd49646191")
+	)
+	(wire
+		(pts
+			(xy 87.63 124.46) (xy 93.98 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc013731-780a-4b59-9eaa-519cb6fdae68")
+	)
+	(wire
+		(pts
+			(xy 53.34 170.18) (xy 66.04 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc82d912-2a66-437d-9164-8429d472f1c3")
+	)
+	(wire
+		(pts
+			(xy 74.93 91.44) (xy 74.93 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd31c4ba-396c-4bbe-8e73-76a9f7cebe57")
+	)
+	(wire
+		(pts
+			(xy 74.93 93.98) (xy 87.63 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd6a9f25-5c2c-48cb-82ce-61b9561937d6")
+	)
+	(wire
+		(pts
+			(xy 125.73 134.62) (xy 132.08 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d03852c5-cd82-4011-a6ea-76da7d360dfd")
+	)
+	(wire
+		(pts
+			(xy 119.38 127) (xy 119.38 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d07ad3f7-c8ff-4023-8cd0-677105a4aa85")
+	)
+	(wire
+		(pts
+			(xy 46.99 54.61) (xy 60.96 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0d7f085-6382-454d-bfca-eb422a1230a3")
+	)
+	(wire
+		(pts
+			(xy 36.83 134.62) (xy 43.18 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d299d844-6b50-465a-ae27-c597bba323db")
+	)
+	(wire
+		(pts
+			(xy 55.88 134.62) (xy 62.23 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d30ef15d-971c-4748-8fdb-52d843db7246")
+	)
+	(wire
+		(pts
+			(xy 44.45 86.36) (xy 44.45 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5bed2d2-3d51-4ff6-a019-b6867edd3f3b")
+	)
+	(wire
+		(pts
+			(xy 30.48 134.62) (xy 36.83 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d68d6d47-deed-4b38-9ac7-ca6c06ebab2d")
+	)
+	(wire
+		(pts
+			(xy 36.83 127) (xy 36.83 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9dd722c-6db6-4708-bb0a-8ae16f72ccd4")
+	)
+	(wire
+		(pts
+			(xy 62.23 127) (xy 62.23 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd028c22-3d8f-49ac-ab90-62ad2289be2b")
+	)
+	(wire
+		(pts
+			(xy 104.14 158.75) (xy 116.84 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de156799-2537-499b-967c-efa188044852")
+	)
+	(wire
+		(pts
+			(xy 49.53 124.46) (xy 55.88 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de9c7929-ef39-416e-b27b-579943327342")
+	)
+	(wire
+		(pts
+			(xy 125.73 132.08) (xy 125.73 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df90ba0a-2154-4d69-9dfb-3e4c8451459e")
+	)
+	(wire
+		(pts
+			(xy 46.99 54.61) (xy 46.99 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e242e6a9-0158-4f50-8862-128b80552de0")
+	)
+	(wire
+		(pts
+			(xy 43.18 127) (xy 43.18 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e52339bf-2440-4829-983c-a0fb925fabff")
+	)
+	(wire
+		(pts
+			(xy 74.93 127) (xy 74.93 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e63a9982-de4a-46c2-93d8-7dea4fd6f6a0")
+	)
+	(wire
+		(pts
+			(xy 116.84 168.91) (xy 129.54 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edbd9514-a59b-497f-8a33-c063d03b10cf")
+	)
+	(wire
+		(pts
+			(xy 119.38 132.08) (xy 119.38 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f00a9312-3629-418c-bff5-a3e623010640")
+	)
+	(wire
+		(pts
+			(xy 113.03 132.08) (xy 113.03 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f08395fc-5034-4f00-9cc9-77f6ac3ed57b")
+	)
+	(wire
+		(pts
+			(xy 104.14 161.29) (xy 104.14 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7893ab2-0d8c-488a-85da-c6b49e5cc26a")
+	)
+	(wire
+		(pts
+			(xy 81.28 134.62) (xy 87.63 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8a6f2ea-1ffe-4a7e-8175-faf1d73af32c")
+	)
+	(wire
+		(pts
+			(xy 40.64 162.56) (xy 40.64 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f990cacb-d936-4880-8973-0845e0733e43")
+	)
+	(wire
+		(pts
+			(xy 93.98 124.46) (xy 100.33 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9fd0c80-f90b-44cf-92eb-2dc74a7ae9f0")
+	)
+	(wire
+		(pts
+			(xy 100.33 124.46) (xy 106.68 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa1e73e3-c618-4f25-911a-95ab806021d5")
+	)
+	(wire
+		(pts
+			(xy 46.99 36.83) (xy 60.96 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe37aa49-7266-4cfb-883b-5a4147d5112e")
+	)
+	(global_label "MCU_VDDA"
+		(shape bidirectional)
+		(at 55.88 59.69 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "048f1f00-0192-41d2-84eb-09d96fa7d4b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 55.88 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_VDDA"
+		(shape bidirectional)
+		(at 130.81 44.45 90)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "0de09bb3-a70b-4cb2-b770-b3c14e98b81f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.81 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 106.68 50.8 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "135f6ba2-e0f7-4fc9-b51e-9ba6de790139")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 55.88 41.91 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "205d4588-9884-4160-ac41-0766a7592d99")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 55.88 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 55.88 64.77 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "28c98fdc-96a4-4200-8de6-2628d569879d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 55.88 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 55.88 39.37 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "40e2d615-cfe6-4191-b1b4-aafaf7d0a579")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 55.88 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 106.68 43.18 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "5ffbdfce-abbf-4eaa-b554-2daefbb239b6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_VCAP"
+		(shape bidirectional)
+		(at 31.75 83.82 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "831e10d9-85e2-4063-b00e-57e06b079edf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.75 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_VCAP"
+		(shape bidirectional)
+		(at 106.68 53.34 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "8d299a4d-4745-4289-b1a9-06c29fa8b069")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 104.14 158.75 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "9a48889a-ba8d-4873-95d5-912d588d0145")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 104.14 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 130.81 57.15 270)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "9e83dde9-5f03-4f8a-a996-428caf44d2b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 130.81 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 106.68 55.88 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "adcbee55-9908-4eda-bbbe-f87dc480c8de")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 106.68 48.26 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "d16e6a61-1f7f-4d1e-a901-60672e8d3f94")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_VDDA"
+		(shape bidirectional)
+		(at 55.88 57.15 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "d73d02f9-210a-4a7a-b5fc-d360351f54f7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 55.88 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 30.48 124.46 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "daf1f7e4-66de-4e50-aba9-57626405e729")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_VDDA"
+		(shape bidirectional)
+		(at 118.11 83.82 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "df8099e1-aedd-4a1d-a9ec-38fc13207639")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.11 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_VDDA"
+		(shape bidirectional)
+		(at 74.93 83.82 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "e12a17bc-0d07-4742-8c51-c881998ca475")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 74.93 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 40.64 160.02 180)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify right)
+		)
+		(uuid "e39325cc-2d9e-43b3-b380-6fb6a712bb86")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.64 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 106.68 58.42 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "ea6e8f76-422d-4dca-bf07-e68571d6b0bf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_VCAP"
+		(shape bidirectional)
+		(at 55.88 62.23 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "fc5a78ea-9b3b-4c47-8e6b-f113ba83a4fb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 55.88 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 40.64 170.18 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02d295a3-f380-4d68-89e1-b12a9522acae")
+		(property "Reference" "#PWR05"
+			(at 34.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 36.83 170.1799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 40.64 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4c3012f9-7a8a-41e5-a64e-99e21ddd6e26")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 104.14 168.91 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b095335-d1be-44be-9e92-61a58aeb502b")
+		(property "Reference" "#PWR06"
+			(at 97.79 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 100.33 168.9099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "329ea670-a9d8-4223-b73a-a88f365f8812")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 68.58 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0b3f04dd-872b-4fe4-9fbc-c834acfc9988")
+		(property "Reference" "C4107"
+			(at 71.12 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 71.12 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 68.58 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 68.58 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 68.58 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 68.58 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 68.58 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 71\nVDD"
+			(at 68.58 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "770b8b18-b4d4-461a-96ca-547b198e47c4")
+		)
+		(pin "2"
+			(uuid "1a8e7796-b9bf-48b1-97f3-22107954b21d")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 30.48 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2078a248-df0d-44fc-a7ea-57a177eb0267")
+		(property "Reference" "C4101"
+			(at 33.02 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 33.02 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 30.48 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 30.48 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 30.48 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 30.48 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 30.48 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 7\nVDD"
+			(at 30.48 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8ff0dafc-93c1-4a58-ab82-00e743157752")
+		)
+		(pin "2"
+			(uuid "86dcb636-54a0-4eb2-9b8a-a652f61500ac")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 43.18 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "22ff7537-f07f-4dfe-b4a2-454eaad91a3b")
+		(property "Reference" "C4103"
+			(at 45.72 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 45.72 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 43.18 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 43.18 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 43.18 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 43.18 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 43.18 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 25\nVDD"
+			(at 43.18 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "84a6f894-e991-4b66-936c-070cb2f24ac2")
+		)
+		(pin "2"
+			(uuid "5da50f98-5200-4ead-b0b3-fbf4778a2bb8")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 53.34 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "29077c95-df30-4286-a503-967ade675498")
+		(property "Reference" "C4119"
+			(at 57.44 163.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "4.7u"
+			(at 57.44 166.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 53.34 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4.7u C, see BOM"
+			(at 53.34 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM188R61A475KE15D"
+			(at 53.34 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 53.34 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pins 82,135,175\nVDDLDO bulk"
+			(at 53.34 157.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f8bc56e5-3ce6-4a0a-a66e-15b500eb276e")
+		)
+		(pin "2"
+			(uuid "1430ddde-365b-43ad-b21e-0947339a22e0")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 130.81 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2cf11938-8a1b-4f47-ac4b-828820dccfe1")
+		(property "Reference" "C4125"
+			(at 134.91 87.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 134.91 90.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0402_1005Metric"
+			(at 130.81 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "1u C, see BOM"
+			(at 130.81 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM155R61A105KE15D"
+			(at 130.81 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 130.81 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 40\nVDDA"
+			(at 133.81 98.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c63da9db-4573-491f-97b7-a335677f8cb6")
+		)
+		(pin "2"
+			(uuid "6e853e85-46a6-4e21-99a5-3e6148e0c4d1")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 93.98 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "318c6687-390f-4134-a990-e5fa29efa6c7")
+		(property "Reference" "#PWR01"
+			(at 25.4 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 93.9799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ae2b227c-f784-4bda-8c0c-8073d5b90b16")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 74.93 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "34ca2442-0638-43e9-8b46-08e6c04f5cfe")
+		(property "Reference" "C4122"
+			(at 79.03 87.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 79.03 90.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 74.93 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 74.93 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 74.93 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 74.93 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 74.93 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 39\nVREF+"
+			(at 77.93 98.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99acb6bc-7298-4123-a930-c7658bad88b3")
+		)
+		(pin "2"
+			(uuid "b4f6e316-9a30-4774-a856-3fbdab48a197")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 113.03 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3d5770bb-45af-4907-a149-1d87d59837da")
+		(property "Reference" "C4114"
+			(at 115.57 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 115.57 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 113.03 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 113.03 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 113.03 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 113.03 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 113.03 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 136\nVDD"
+			(at 113.03 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d5fd7b7c-c300-437c-8f19-7ac8bb218ad2")
+		)
+		(pin "2"
+			(uuid "6e9b4c18-83a4-4bfb-bd01-2fb878523e69")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 118.11 93.98 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e389eb0-d4ef-46d6-b44b-56a59d8c3f59")
+		(property "Reference" "#PWR03"
+			(at 111.76 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 93.9799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "47942101-8da7-43d8-9b0c-62544a00c692")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 44.45 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40805182-cf3f-4899-894b-229f08165aa1")
+		(property "Reference" "#PWR09"
+			(at 39.37 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 44.4499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "67b2507c-260a-44c5-97a6-5c6315a5e414")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 62.23 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "41b3bba3-a89d-4c95-b348-c4ee38d7cc98")
+		(property "Reference" "C4106"
+			(at 64.77 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 64.77 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 62.23 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 62.23 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 62.23 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 62.23 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 62.23 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 65\nVDD"
+			(at 62.23 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4774d26b-639a-4c25-a3bc-2af0495066e7")
+		)
+		(pin "2"
+			(uuid "5bb17c33-f795-412d-a7ff-624768182565")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 100.33 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4a3f3114-053c-4ba1-ac5a-2260f74db627")
+		(property "Reference" "C4112"
+			(at 102.87 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 102.87 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 100.33 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 100.33 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 100.33 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 100.33 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 100.33 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 113\nVDD"
+			(at 100.33 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba5d5f21-b8f4-4fe6-89f0-4696b9eaebbc")
+		)
+		(pin "2"
+			(uuid "0021adcc-9380-42c1-b38d-fef6b457a2d3")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 93.98 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b7a261a-1c55-4065-8d76-3fe1579ac139")
+		(property "Reference" "C4111"
+			(at 96.52 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 96.52 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 93.98 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 93.98 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 93.98 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 93.98 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 93.98 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 105\nVDD"
+			(at 93.98 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dcb962bd-d5cd-45c2-9d38-3a86d93968ea")
+		)
+		(pin "2"
+			(uuid "c5e2044a-f1d8-4779-9ad4-63cb21175f1f")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 74.93 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7028f601-a48c-4a57-b842-37decda70d61")
+		(property "Reference" "C4108"
+			(at 77.47 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 77.47 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 74.93 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 74.93 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 74.93 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 74.93 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 74.93 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 84\nVDD"
+			(at 74.93 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89181491-6d12-4a55-b446-223987bd5737")
+		)
+		(pin "2"
+			(uuid "08c70134-96bf-4420-b751-7738865f47d8")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 106.68 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "70a0aef7-4e14-4ac8-b408-6de8e208d8e5")
+		(property "Reference" "C4113"
+			(at 109.22 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 109.22 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 106.68 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 106.68 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 106.68 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 106.68 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 106.68 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 126\nVDD"
+			(at 106.68 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a28cafa4-6ce4-45ae-93a8-af74b86e7f85")
+		)
+		(pin "2"
+			(uuid "931607bb-1df9-44b9-8cbc-b9cdbeaef08a")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.3 45.72 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75ccf97c-138c-4558-a765-27060d47f05c")
+		(property "Reference" "#PWR010"
+			(at 120.65 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 118.11 45.7199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7812d8e5-9efc-466e-9242-b6c3c3ff82f0")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 36.83 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "795ec62f-39b6-44b0-852f-dce83271f560")
+		(property "Reference" "C4102"
+			(at 39.37 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 39.37 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 36.83 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 36.83 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 36.83 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 36.83 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 36.83 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 13\nVDD"
+			(at 36.83 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ef733b5b-d8e3-46cb-97ec-cf6f657c4736")
+		)
+		(pin "2"
+			(uuid "dba9f417-4468-430f-ae46-cc7606a9002a")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 31.75 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c3d6c99-55c9-4709-84e3-10d2235e5a4f")
+		(property "Reference" "C4120"
+			(at 35.85 87.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "2.2u"
+			(at 35.85 90.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 31.75 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "2.2u C, see BOM"
+			(at 31.75 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM188R60J225KE19D"
+			(at 31.75 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 31.75 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 80\nVCAP"
+			(at 34.75 98.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c9c47abb-9f68-4a79-ac8a-f6a6ae40ff01")
+		)
+		(pin "2"
+			(uuid "380c4c29-358f-4d74-948a-ca2ed0c225bf")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 87.63 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c50518c-1d7b-432e-8b18-5acb6716685c")
+		(property "Reference" "C4123"
+			(at 91.73 87.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 91.73 90.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0402_1005Metric"
+			(at 87.63 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "1u C, see BOM"
+			(at 87.63 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM155R61A105KE15D"
+			(at 87.63 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 87.63 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 39\nVREF+"
+			(at 90.63 98.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6a5c3ada-8f84-456f-98f6-09de2c93424d")
+		)
+		(pin "2"
+			(uuid "33f87fb4-dfb4-4902-b733-6217e9f98801")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 55.88 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "804b1887-4767-4ed4-b757-6aba11a3f162")
+		(property "Reference" "C4105"
+			(at 58.42 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 58.42 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 55.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 55.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 55.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 55.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 55.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 48\nVDD"
+			(at 55.88 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "006beda8-ab10-4503-8f82-18313b1b4d83")
+		)
+		(pin "2"
+			(uuid "f74fc81b-c6d4-4b93-9f5b-890c703b126d")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 118.11 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "80997808-b20c-4a7c-b396-c7b0b73a7084")
+		(property "Reference" "C4124"
+			(at 122.21 87.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 122.21 90.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 118.11 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 118.11 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 118.11 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 118.11 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 118.11 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 40\nVDDA"
+			(at 121.11 98.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f196003a-4cb5-4254-a43c-f5109fd5b542")
+		)
+		(pin "2"
+			(uuid "c2ce232f-1bb2-4d4f-a1e1-87372743bba4")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 130.81 50.8 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "915f9f3e-2e00-4bed-9296-32ef71930ded")
+		(property "Reference" "R4101"
+			(at 128.27 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 133.35 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0402_1005Metric"
+			(at 130.81 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "0 R, see BOM"
+			(at 130.81 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0402JR-070RL"
+			(at 130.81 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 130.81 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45a15852-47dd-4bad-9732-795e2023ddcd")
+		)
+		(pin "2"
+			(uuid "2e8c2d85-747a-4e35-b240-52dce6ee169a")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "R4101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 44.45 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "95ad76bc-b5b4-4128-9a86-3a9df7671ee8")
+		(property "Reference" "C4121"
+			(at 48.55 87.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "2.2u"
+			(at 48.55 90.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 44.45 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "2.2u C, see BOM"
+			(at 44.45 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM188R60J225KE19D"
+			(at 44.45 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 44.45 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pins 133,172\nVCAP group"
+			(at 47.45 98.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9eed81e7-b658-4681-95cc-5e9c453743f2")
+		)
+		(pin "2"
+			(uuid "256660bf-25f9-4757-bd7d-d25f704f1d34")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 87.63 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "981ca21f-55e1-431b-89af-4cb52b2a8305")
+		(property "Reference" "C4110"
+			(at 90.17 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 90.17 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 87.63 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 87.63 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 87.63 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 87.63 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 87.63 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 99\nVDD"
+			(at 87.63 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d54aba79-93ee-4e16-a44c-76e179b0db22")
+		)
+		(pin "2"
+			(uuid "bc7f9eaa-3189-4c3a-8b4a-f787b8f8f5ee")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 129.54 163.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9aacc34b-2993-4e50-ab13-21f44c108fda")
+		(property "Reference" "C4129"
+			(at 133.64 162.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 133.64 165.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0402_1005Metric"
+			(at 129.54 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "1u C, see BOM"
+			(at 129.54 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM155R61A105KE15D"
+			(at 129.54 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 129.54 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 121\nVDD33_USB"
+			(at 132.54 173.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "14c73a01-28f7-4782-9567-c47626e0ac1f")
+		)
+		(pin "2"
+			(uuid "42f9a907-f815-48a9-a9b1-f2f6af063c6a")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 40.64 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a8ed87c1-93be-40a7-806d-a58dbb2cf386")
+		(property "Reference" "C4118"
+			(at 44.74 163.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "4.7u"
+			(at 44.74 166.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 40.64 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "4.7u C, see BOM"
+			(at 40.64 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM188R61A475KE15D"
+			(at 40.64 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 40.64 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 VDD\nBulk reservoir"
+			(at 43.64 174.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f58fbf97-b9db-49a2-ab3c-2e0cd98c970c")
+		)
+		(pin "2"
+			(uuid "966fcfc6-6917-49de-94b4-1bf2fb678ba0")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 125.73 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aa8724c6-a0c0-45f4-ab4b-9668975a806a")
+		(property "Reference" "C4116"
+			(at 128.27 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 128.27 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 125.73 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 125.73 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 125.73 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 125.73 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 125.73 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 160\nVDD"
+			(at 125.73 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aa9785c5-914e-4493-87ef-01b158330ff8")
+		)
+		(pin "2"
+			(uuid "37df1386-66d2-490e-b243-7479f385778a")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 119.38 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b3903a0e-5f6f-47c3-87aa-4f44705a6c2f")
+		(property "Reference" "C4115"
+			(at 121.92 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 121.92 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 119.38 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 119.38 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 119.38 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 119.38 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 119.38 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 152\nVDD"
+			(at 119.38 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d8aa9a7-c9fe-48db-bf5c-8b530da28104")
+		)
+		(pin "2"
+			(uuid "2a599fa8-382a-4551-883b-4fa81a5b2eaf")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 116.84 163.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b9b7b21e-0974-461f-a469-d6648447ccae")
+		(property "Reference" "C4128"
+			(at 120.94 162.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 120.94 165.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 116.84 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 116.84 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 116.84 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 116.84 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 116.84 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pins 120,121\nUSB supply"
+			(at 119.84 173.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "faa0874b-50c0-4f2f-9344-3b74855e1e0c")
+		)
+		(pin "2"
+			(uuid "cff60347-035f-4b9d-8e12-83b72b71005f")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 66.04 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bcb8bce7-7525-4f16-b30c-57b7cd63fd0e")
+		(property "Reference" "C4126"
+			(at 70.14 163.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 70.14 166.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 66.04 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 66.04 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 66.04 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 66.04 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 66.04 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pins 82,135,175\nVDDLDO bypass"
+			(at 66.04 173.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f017e32c-0fcd-45c6-b6da-86d3e9d81d04")
+		)
+		(pin "2"
+			(uuid "1b91f06f-5f66-41a8-853b-8567bb776f5a")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 30.48 134.62 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c58015b1-3859-4cca-b786-43da596699cb")
+		(property "Reference" "#PWR04"
+			(at 24.13 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.67 134.6199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "270106a4-1eb4-4cb0-834f-4cc95ac28548")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 74.93 93.98 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c73b666d-5bd3-4218-a438-40dd489410a8")
+		(property "Reference" "#PWR02"
+			(at 68.58 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 71.12 93.9799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 74.93 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "53ea96c9-6787-42bd-a9c5-306a3ff6b13d")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 104.14 163.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d1db2bd4-3749-4ad1-b323-b03ea0966116")
+		(property "Reference" "C4127"
+			(at 108.24 162.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 108.24 165.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 104.14 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 104.14 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 104.14 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 104.14 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 104.14 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 8\nVBAT"
+			(at 107.14 173.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "17b2a960-8333-455e-bdef-ff3b79817921")
+		)
+		(pin "2"
+			(uuid "f02837f5-3a7c-4df4-a7cc-2551873356a5")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 49.53 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e708fedf-c083-4008-944c-79b541d16ed5")
+		(property "Reference" "C4104"
+			(at 52.07 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 52.07 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 49.53 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 49.53 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 49.53 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 49.53 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 49.53 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 44\nVDD"
+			(at 49.53 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a169954d-1035-49e3-801d-f6f565674ca5")
+		)
+		(pin "2"
+			(uuid "8493d853-4d78-411b-90c7-32714e8e63c2")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:STM32H745IIT6_MIRA")
+		(at 81.28 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e81a8598-5a8b-4a8d-b21f-c0f931678b99")
+		(property "Reference" "U4101"
+			(at 66.04 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "STM32H745IIT6"
+			(at 81.28 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:LQFP-176_24x24mm_P0.5mm"
+			(at 81.28 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32h745ii.pdf"
+			(at 81.28 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Dual-core STM32H745, 2MB internal flash, LQFP176; complete 176-pin symbol grouped by function"
+			(at 81.28 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "STM32H745IIT6"
+			(at 81.28 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 81.28 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "f057d4e7-e0fe-4ca7-b760-5286e11a4a68")
+		)
+		(pin "7"
+			(uuid "5d3b4831-ec95-479d-8135-9eed00f679f5")
+		)
+		(pin "8"
+			(uuid "873510f5-2262-42da-adea-64786b3a9f05")
+		)
+		(pin "12"
+			(uuid "f6dd706f-290f-4c98-a86f-daa5c6d89ce9")
+		)
+		(pin "13"
+			(uuid "80ddd96f-997a-4f38-9eb5-ae818a56a0ed")
+		)
+		(pin "14"
+			(uuid "316088f2-7c89-4543-a8a0-a53a677bada0")
+		)
+		(pin "15"
+			(uuid "de7d7897-2e2e-4b45-bf61-765306202efe")
+		)
+		(pin "16"
+			(uuid "c79b457d-59e3-4866-a711-5d5fa5f1d31e")
+		)
+		(pin "17"
+			(uuid "a9e6cea3-4ca4-4b2f-95fa-e1df3343dd2a")
+		)
+		(pin "24"
+			(uuid "fbfbcf83-7389-4a25-8b8a-68a175d527b3")
+		)
+		(pin "25"
+			(uuid "9defd591-f5cf-4d2c-bfaf-e7f9b58d41fe")
+		)
+		(pin "38"
+			(uuid "5b0f2859-2d74-492c-958d-8067386fd65d")
+		)
+		(pin "39"
+			(uuid "ef612866-4cae-4281-a4e4-afd4df3748f0")
+		)
+		(pin "40"
+			(uuid "7317e09c-db66-4a73-9ebf-f30b54cbecd7")
+		)
+		(pin "44"
+			(uuid "08ceffee-62cf-4bfa-b0ec-d4dc461ac602")
+		)
+		(pin "45"
+			(uuid "c586f6d8-f589-4b31-8aaa-5cb098d07ae6")
+		)
+		(pin "47"
+			(uuid "02f0e0df-49b1-4aed-855b-0cfe0ae112e7")
+		)
+		(pin "48"
+			(uuid "0024899f-2aef-4793-9c0b-1ba6f8c6db23")
+		)
+		(pin "64"
+			(uuid "19da04b6-fa31-4fc1-9a04-630a9ba4c91c")
+		)
+		(pin "65"
+			(uuid "3be939df-2e30-4da1-8156-c853c9b67320")
+		)
+		(pin "70"
+			(uuid "f8944e38-90e4-4dd7-a1fb-8d539e5c6369")
+		)
+		(pin "71"
+			(uuid "ea41cd50-8cae-4508-a954-dd7a8502b1d9")
+		)
+		(pin "80"
+			(uuid "ea3ef826-9d96-4d18-8832-ae20c496afb3")
+		)
+		(pin "81"
+			(uuid "cab5db99-5bfc-46aa-81f2-88670e1b5d6e")
+		)
+		(pin "82"
+			(uuid "60dad839-4f85-4e44-907e-163c878c045c")
+		)
+		(pin "83"
+			(uuid "09beae98-64e0-47ae-91a8-4c47fc97f524")
+		)
+		(pin "84"
+			(uuid "06d4afa4-9070-4475-9e25-9608b5718e10")
+		)
+		(pin "92"
+			(uuid "6a5034bc-98e4-452d-9913-0d74c454a18d")
+		)
+		(pin "93"
+			(uuid "bcaa2dda-fde1-4c1f-aaf4-211d77d71c8b")
+		)
+		(pin "99"
+			(uuid "4da776a8-e244-41b8-b78e-2800018f1f8e")
+		)
+		(pin "100"
+			(uuid "08e864b4-7954-44d3-b279-db7ba15c00a0")
+		)
+		(pin "105"
+			(uuid "a7ab8161-dff2-468c-a43e-e021ed6bc749")
+		)
+		(pin "106"
+			(uuid "d42919b8-5add-4ff7-bba3-9670493a19c5")
+		)
+		(pin "112"
+			(uuid "a52311c9-4b65-4f2d-9785-f4555d9479c0")
+		)
+		(pin "113"
+			(uuid "eb95d9a0-064c-4d7f-9e25-3c214974625e")
+		)
+		(pin "119"
+			(uuid "03871e1c-4faf-4dec-9273-b70bbfbc879a")
+		)
+		(pin "120"
+			(uuid "ccae3dd3-09ab-469e-833b-549dcd14e1f3")
+		)
+		(pin "121"
+			(uuid "79aaa0b3-7d0e-495b-a957-f2ad76b33dca")
+		)
+		(pin "126"
+			(uuid "6dd4b054-4eac-4423-9d3a-01797dd6acf6")
+		)
+		(pin "133"
+			(uuid "c27b7217-340a-46ee-afb5-78b9c1447469")
+		)
+		(pin "134"
+			(uuid "557b354b-d5ef-4171-9e0e-b11473312a7f")
+		)
+		(pin "135"
+			(uuid "78a0cf15-c4d5-4df5-a45c-e07c5d84947a")
+		)
+		(pin "136"
+			(uuid "d9ed1c8d-fec1-4c8b-88d6-df5f83ff6510")
+		)
+		(pin "137"
+			(uuid "1f5549e0-1aab-4bb5-a881-0cf694fd5245")
+		)
+		(pin "151"
+			(uuid "8441c741-29d5-4ff5-adf5-45dd6ca54846")
+		)
+		(pin "152"
+			(uuid "5738d3a8-ef66-4bf8-9cad-bdddc9850b91")
+		)
+		(pin "159"
+			(uuid "686e1a1f-2d04-4e31-b018-c400ff8eae5b")
+		)
+		(pin "160"
+			(uuid "5e1d0037-1607-4109-ab5e-3af7967866f5")
+		)
+		(pin "172"
+			(uuid "61af7b44-99d9-48e1-abec-0c827b0a3521")
+		)
+		(pin "173"
+			(uuid "988e5152-690d-4374-8ad0-6d298ef6de70")
+		)
+		(pin "174"
+			(uuid "29b44cb8-890d-4375-903b-adc108a4de4c")
+		)
+		(pin "175"
+			(uuid "2886aebf-b149-41ab-a9a3-91ce1ea6c2cf")
+		)
+		(pin "176"
+			(uuid "66b4eb0d-277f-4544-b984-58e114bc0f2a")
+		)
+		(pin "18"
+			(uuid "d1423f12-1838-4f09-9d46-dd33f79a2b71")
+		)
+		(pin "19"
+			(uuid "a0b5fca6-09d5-472b-a17f-c75122f549e7")
+		)
+		(pin "20"
+			(uuid "fc04af48-b69c-478e-a580-b80816580eac")
+		)
+		(pin "21"
+			(uuid "a0cd2dce-6096-4e58-b1ca-c727294d83b1")
+		)
+		(pin "22"
+			(uuid "474642d7-3ca4-4151-b408-92860c0672b2")
+		)
+		(pin "23"
+			(uuid "b9cb38de-b639-4c10-bccf-5be53fa0e4a6")
+		)
+		(pin "34"
+			(uuid "965adb11-2ff1-4aca-8b0a-24ebc669b1ee")
+		)
+		(pin "53"
+			(uuid "82d89e61-bc31-4d09-b249-d5c5d1ac54a8")
+		)
+		(pin "54"
+			(uuid "7723f917-917e-4395-8996-f147b8aec3ec")
+		)
+		(pin "58"
+			(uuid "f6f8e18d-7782-4511-831e-d06e6afee0f8")
+		)
+		(pin "59"
+			(uuid "59ea202d-6f29-4616-a368-64941b1b86a4")
+		)
+		(pin "60"
+			(uuid "9e532058-58b1-477a-8a4a-72d398c6f3dd")
+		)
+		(pin "61"
+			(uuid "b272ca11-d757-445d-807b-c1c2a4f36458")
+		)
+		(pin "62"
+			(uuid "5a34ae3a-4633-4226-b683-efc6959aec2a")
+		)
+		(pin "63"
+			(uuid "12454342-08bd-4be4-a1d0-7c93ee3a75c2")
+		)
+		(pin "66"
+			(uuid "740e2636-3671-401c-8112-43fb46ad1fa7")
+		)
+		(pin "67"
+			(uuid "f9091654-56e2-4294-a76d-d57efbf7d6b8")
+		)
+		(pin "68"
+			(uuid "be810b62-012c-42e5-a004-922d6742a299")
+		)
+		(pin "69"
+			(uuid "9ac7ffe2-1d9b-412c-921a-d27495679794")
+		)
+		(pin "72"
+			(uuid "06d8cd4b-1cad-4265-9dcd-f4f334a29042")
+		)
+		(pin "73"
+			(uuid "8a42dbf9-2bac-40e7-a713-19a43ecd2657")
+		)
+		(pin "74"
+			(uuid "84687f12-c900-43d1-b63c-115af61dc5bf")
+		)
+		(pin "75"
+			(uuid "a963f34c-e567-4660-b1ca-aa574190b2af")
+		)
+		(pin "76"
+			(uuid "ea69c69f-d69c-421b-b43e-6a35cf29a31b")
+		)
+		(pin "77"
+			(uuid "1d3a2fb3-9f5a-4216-a084-681fbfeffc15")
+		)
+		(pin "89"
+			(uuid "2247316b-1f64-4fa0-ba68-c61f27328ab1")
+		)
+		(pin "90"
+			(uuid "4ce3382d-561e-4e2a-a3ca-b27c0ded5b69")
+		)
+		(pin "91"
+			(uuid "a3dfe952-a92e-4087-a478-733bdbc7a921")
+		)
+		(pin "97"
+			(uuid "52ad3ced-2681-4c87-a4fe-00ac4e04ae3e")
+		)
+		(pin "98"
+			(uuid "63cab52d-568c-480a-b65a-5bdd0a7a1e9c")
+		)
+		(pin "110"
+			(uuid "d5011a83-348a-4a2d-9ee7-8261de6e95ee")
+		)
+		(pin "114"
+			(uuid "21dd64e0-c4c4-4e78-9623-ca7008eddee5")
+		)
+		(pin "115"
+			(uuid "9d6210bc-4c18-446b-a205-76b12673bb46")
+		)
+		(pin "118"
+			(uuid "70518bd0-16c3-41b3-b843-a7fd05b2f99f")
+		)
+		(pin "143"
+			(uuid "dfc6d830-4455-412a-8344-91647046be38")
+		)
+		(pin "144"
+			(uuid "c6678fbc-256a-445a-9c79-7d5b71e0c0db")
+		)
+		(pin "161"
+			(uuid "abb357eb-3d3a-43d1-a783-7367353eaab0")
+		)
+		(pin "170"
+			(uuid "7044dc2a-4725-42de-a83a-545157bd02e9")
+		)
+		(pin "171"
+			(uuid "245db52c-01ba-403c-93ee-6a60b71abae5")
+		)
+		(pin "1"
+			(uuid "6bc5c9db-76f7-4ca8-b970-b1f56156db4c")
+		)
+		(pin "41"
+			(uuid "2222a6d4-2c54-493a-a5d8-696c811be60c")
+		)
+		(pin "43"
+			(uuid "cc5f485f-33fc-4977-a9c7-caef352e2a85")
+		)
+		(pin "46"
+			(uuid "16e21c21-0ff8-471c-89f6-e5739b432caa")
+		)
+		(pin "49"
+			(uuid "0544baae-9573-4c7c-b0a9-cb8bc3d6dee1")
+		)
+		(pin "50"
+			(uuid "b0015c00-a7be-46a2-bc86-9236d53504ba")
+		)
+		(pin "51"
+			(uuid "52807f8a-755b-483d-abe5-3d7247cc61e9")
+		)
+		(pin "52"
+			(uuid "7518c55a-b1d7-4cd2-a0bd-e99e77555e3d")
+		)
+		(pin "55"
+			(uuid "90c9321a-ac45-4ef7-ab59-1c1c02ef420f")
+		)
+		(pin "56"
+			(uuid "d7cd0615-334a-4650-8eba-7830bab389cf")
+		)
+		(pin "57"
+			(uuid "ec1754be-3c5c-4529-9e22-4d9610c12e16")
+		)
+		(pin "94"
+			(uuid "2cd3a25b-2d61-4681-bd00-1e41c4bf3355")
+		)
+		(pin "95"
+			(uuid "bcdcd224-4322-4b6d-8ef9-2fc687dfc22a")
+		)
+		(pin "96"
+			(uuid "15746912-26a8-4c21-a5e7-5925b5e2fc66")
+		)
+		(pin "116"
+			(uuid "f11feb4d-1c43-4676-a363-d327ac2517d8")
+		)
+		(pin "124"
+			(uuid "4cf55ba3-1ed5-4774-8501-505757057480")
+		)
+		(pin "125"
+			(uuid "a90ad206-4c26-45b5-9b37-13bfe6f274f0")
+		)
+		(pin "127"
+			(uuid "2e051c58-cba7-48da-896e-11722127ec6b")
+		)
+		(pin "128"
+			(uuid "941fb62a-16bd-4df7-97b1-c210c6030233")
+		)
+		(pin "129"
+			(uuid "cfe97c86-ddd2-45e0-b6b3-7afb927a63c4")
+		)
+		(pin "140"
+			(uuid "369f20ba-1eb6-413a-b74b-94b0275bd8d3")
+		)
+		(pin "141"
+			(uuid "c38371e5-d990-4231-8041-b22edb81f8ec")
+		)
+		(pin "142"
+			(uuid "33c0ccc0-2821-43b4-a963-9bb089488bee")
+		)
+		(pin "145"
+			(uuid "1b64d12a-a892-4fbb-b530-f0a7ab63a55a")
+		)
+		(pin "165"
+			(uuid "6f90e713-2149-4801-b008-baabee974b1c")
+		)
+		(pin "166"
+			(uuid "fe3dde07-ccc3-4a1c-afce-f77d5f8a9115")
+		)
+		(pin "10"
+			(uuid "fb6d6ee9-790e-483c-8ba0-cf75e1aae0a4")
+		)
+		(pin "11"
+			(uuid "8938eda5-6c60-4f29-b310-0d6944d545b4")
+		)
+		(pin "31"
+			(uuid "9c2eef21-5c4b-42eb-b3fa-4c763e96d999")
+		)
+		(pin "32"
+			(uuid "823ef8c5-c7f8-4024-93e2-456b66fc4f7f")
+		)
+		(pin "33"
+			(uuid "838c8bce-3eb3-4ad7-8395-339325ed311f")
+		)
+		(pin "132"
+			(uuid "5cecd3ee-f484-44d0-a47f-f2e0d9ca803d")
+		)
+		(pin "138"
+			(uuid "18feacf9-c414-4c17-b81d-ab5612691ed2")
+		)
+		(pin "162"
+			(uuid "77882a28-c278-4da8-a2e9-67dc81f7472b")
+		)
+		(pin "167"
+			(uuid "9de69fc4-a065-4570-8c79-88b3c09f76c1")
+		)
+		(pin "2"
+			(uuid "99735fd4-7730-48ca-a401-14ca897c73a8")
+		)
+		(pin "3"
+			(uuid "96609690-780e-4886-b46f-3262369454a4")
+		)
+		(pin "4"
+			(uuid "8ba045a1-a0a8-434d-9c9c-72e9b8a77a99")
+		)
+		(pin "5"
+			(uuid "b7604dc4-e705-4852-b8c5-1a19f0e2dc98")
+		)
+		(pin "9"
+			(uuid "b6514cdf-a788-4828-9299-20075e5d4234")
+		)
+		(pin "26"
+			(uuid "14e7ab4b-a395-4a92-9b0c-c338ac23a4be")
+		)
+		(pin "27"
+			(uuid "d430af28-93b5-45c0-8d0a-1e020f567acf")
+		)
+		(pin "28"
+			(uuid "fc12be3d-2ffa-4b7d-a8f2-af10931b2788")
+		)
+		(pin "29"
+			(uuid "28793fe4-066d-481b-91ed-f31e4e04c9f8")
+		)
+		(pin "30"
+			(uuid "ba2ed175-d840-4c17-84e5-1743eaae3dc5")
+		)
+		(pin "35"
+			(uuid "81a79b76-7ad0-44ea-83db-d4438d7c7185")
+		)
+		(pin "36"
+			(uuid "5f8172f1-61ae-41d0-ad84-9ff392490c69")
+		)
+		(pin "37"
+			(uuid "1407ea76-0451-49ca-b8a6-775947b83519")
+		)
+		(pin "42"
+			(uuid "2a68b14c-1981-4726-ad45-4d8c89f6bf8b")
+		)
+		(pin "78"
+			(uuid "5562d85b-077b-47a7-b002-7536ea5c2411")
+		)
+		(pin "79"
+			(uuid "98f561cf-349d-4e45-ae76-8eb5c5cb2da9")
+		)
+		(pin "85"
+			(uuid "4898ef2f-eb9b-47f7-acb9-c123055f6353")
+		)
+		(pin "86"
+			(uuid "8bd1f502-3e60-4847-b006-7dd33857bc76")
+		)
+		(pin "87"
+			(uuid "bd2b1c8c-295d-4910-956f-cf0386766cb1")
+		)
+		(pin "88"
+			(uuid "c3731565-a269-4a7d-9188-f3294c10564f")
+		)
+		(pin "101"
+			(uuid "0d15035b-9c45-42ec-aa37-d89e32a53939")
+		)
+		(pin "102"
+			(uuid "eb41c1e9-38ed-490c-bbd2-e567c0df72ed")
+		)
+		(pin "103"
+			(uuid "974717e0-bdbd-45ca-b831-39cf18a66034")
+		)
+		(pin "104"
+			(uuid "c490f331-1acf-4ea6-8f17-755157cffc57")
+		)
+		(pin "107"
+			(uuid "993abd6b-9a28-4403-a28d-8addb1dee5c0")
+		)
+		(pin "108"
+			(uuid "627f8b74-65bb-4876-b563-d247d95f978e")
+		)
+		(pin "109"
+			(uuid "ffbc55be-d070-4523-b574-c495030101b5")
+		)
+		(pin "111"
+			(uuid "cfde02e3-54cd-4387-bfb4-a3faaa8cc4c6")
+		)
+		(pin "117"
+			(uuid "4b5ddba7-5739-46ce-bb1e-06eddf201538")
+		)
+		(pin "122"
+			(uuid "46c9a2fc-2531-42ed-976a-d95f767226ac")
+		)
+		(pin "123"
+			(uuid "e351f6a5-529b-4352-9949-189bcdf60302")
+		)
+		(pin "130"
+			(uuid "83b18e7b-9382-4a96-810e-6e4f6affb7eb")
+		)
+		(pin "131"
+			(uuid "0bcfcc44-9c3a-4b33-980a-3d326bbb23fd")
+		)
+		(pin "139"
+			(uuid "9098e010-3289-4755-a2a4-6888da571861")
+		)
+		(pin "146"
+			(uuid "733cb4e0-7673-47de-a8fb-05caf657dc47")
+		)
+		(pin "147"
+			(uuid "ff5249a5-fa63-45b4-8ea7-55dcb955cc00")
+		)
+		(pin "148"
+			(uuid "9cc716d6-70d6-4f95-a804-dbff8c85d15b")
+		)
+		(pin "149"
+			(uuid "b224015c-578b-449f-8123-cf4dddafd24d")
+		)
+		(pin "150"
+			(uuid "3b201215-8423-4355-b529-272179741a6a")
+		)
+		(pin "153"
+			(uuid "ab17796c-ab0e-4e9a-b63a-b772644236bf")
+		)
+		(pin "154"
+			(uuid "f01b5dad-84c6-4738-a79f-b8bbde447f61")
+		)
+		(pin "155"
+			(uuid "e9fb6cb4-1110-47aa-b0c5-aa73a5fe6aac")
+		)
+		(pin "156"
+			(uuid "b72f5bbb-2c3a-432e-963f-0343ec9d2339")
+		)
+		(pin "157"
+			(uuid "43e07e5a-84dc-4b2f-9310-34d0900bce1f")
+		)
+		(pin "158"
+			(uuid "88eccdae-6255-41c7-882f-08ce0d222e32")
+		)
+		(pin "163"
+			(uuid "d540200b-7c08-467e-ae2c-09b7022defdc")
+		)
+		(pin "164"
+			(uuid "c4fe1a37-f451-4825-bc94-fa6491ef0f92")
+		)
+		(pin "168"
+			(uuid "5d8b6c4e-9d89-4ca9-978d-09ff6e5f8822")
+		)
+		(pin "169"
+			(uuid "164ccc1a-60bd-4926-acb0-e2a86289896e")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "U4101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 81.28 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eb349bd6-b228-42ea-91aa-73eb0510e6b4")
+		(property "Reference" "C4109"
+			(at 83.82 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 83.82 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 81.28 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 81.28 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 81.28 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 81.28 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 81.28 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 92\nVDD"
+			(at 81.28 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2ab97abc-1a5c-4332-be05-0595c6495ae8")
+		)
+		(pin "2"
+			(uuid "8daa0e3e-4400-40a9-8cc9-5466d9e3c0ed")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 132.08 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ebd595a5-e92c-4b64-8bd5-db430521add3")
+		(property "Reference" "C4117"
+			(at 134.62 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 136.18 130.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 132.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 132.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 132.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 132.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 132.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 176\nVDD"
+			(at 132.08 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bbafac9a-53d4-44e8-a278-5855e2e96ee3")
+		)
+		(pin "2"
+			(uuid "93308f98-52a1-40b7-a237-4998fc76a639")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
+					(reference "C4117")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
