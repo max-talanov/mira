@@ -1,0 +1,174 @@
+MIRA Rev.A — Power Control connection review
+2026-10-05
+
+Scope and validation
+
+Reviewed POWER_CONTROL and all ten attached child schematics, 2400 through
+3300. The electrical graph was reconstructed from native embedded symbol
+pins, wires, junctions, scoped local labels and global labels. KiCad instance
+rotation and screen-axis mirroring were included. Manufacturer pinouts and
+logic functions were checked against the documents listed below.
+
+Four confirmed connection defects were corrected. A separate final comparison
+verified every original pin position, symbol orientation, pin identity and net
+partition against the source plus the four explicit repairs. The parent UUID,
+all ten child sheet UUIDs, filenames and hierarchy paths were preserved.
+The existing MIRA_RevA embedded definitions were retained. R3203 reuses the
+existing Panasonic 10 kOhm resistor definition and footprint.
+
+The English guides use the same five headings on every child sheet. The parent
+has an individual description of every block and a logical interconnection
+overview. Blue annotations distinguish circuit groups. The parent graphics
+show signal relationships; the leaf global nets provide the actual electrical
+connections. Preview images are approximate renders of native geometry rather
+than KiCad plots. All eleven previews were visually inspected and annotations
+checked against their drawing frames.
+
+Native KiCad ERC, simulation, firmware validation, PCB checks and bench tests
+were not performed. Missing monitor circuits limit whole-system conclusions.
+
+Confirmed defects and completed repairs
+
+1. 2600: U2601 pin 8 (global protection AND output) was unconnected, as was
+   U2603 pin 1 (global permit asynchronous clear). Added the local
+   GLOBAL_CLEAR_N connection between them. A LOW protection condition now
+   reaches the global latch clear instead of leaving that input floating.
+
+2. 2600: U2602 pin 8 (matrix readiness AND output) and U2603 pin 13 (matrix
+   permit asynchronous clear) were unconnected. Added MATRIX_CLEAR_N between
+   them. These local labels are on one sheet and do not change other nets.
+
+3. 3100: U3103 pin 6 was globally labeled ALL_RAILS_PG. This joined it to
+   the push-pull U3018 pin 6 output on 3000 and left the existing
+   ALL_COMMANDS_ON input on U2602 pin 4 without its intended driver.
+   Renamed the 3100 output to ALL_COMMANDS_ON. Its four local groups were
+   renamed CMD_GROUP_0 through CMD_GROUP_3 and the copied hidden logic
+   metadata was updated to match the actual CMD inputs.
+
+4. 3200: U3201 pin 2 is open collector, but OC_OK_N had no external pull-up
+   in any available schematic. Added R3203 = 10 kOhm from OC_OK_N to AON.
+   At AON = 3.28 V its approximate fault sink current is 0.328 mA. The
+   comparator output, resistor branch and global label share one continuous
+   wire with a visible junction. A firmware-selected internal pull-up is not
+   required to establish the released hardware level during MCU reset.
+
+Documentation correction: J2502 now reads HOST MANUAL RESET CONTACT because
+it connects to the host supervisor MR input. Its electrical pins did not move.
+Several label/field positions were adjusted solely for legibility.
+
+Verified circuit relationships
+
+2400 — Dedicated power sequencer
+U2401 is STM32G0B1RBT6, GP LQFP64. Its embedded supply and GPIO pin mapping
+matches the GP part, including PD8/PD9 at pins 40/41. USART3 AF0 can use
+these UART pins. PA0/PA1/PA2/PA3 receive ADC_I/ADC_V/ADC_VTT/PROG_V_P15.
+Permits and externally driven status signals must be firmware inputs; enable,
+arm and kill requests must initialize safely. Use internal clocking because
+PF0 drives EN_REQ_USB. Keep NRST and SWD enabled and VREFBUF disabled while
+VREF+ is tied to AON. FPGA matrix timing and STM32H745 neuron computation
+remain outside this power sequencer.
+
+2500 — Independent supervision
+U2501 uses AON; U2502 uses SYS3V3. Both have SET1 HIGH and CWD unconnected:
+watchdog timeout is 1.60 s nominal (1.36–1.84 s specified). Falling WDI edges
+service the timers. Reset release delay and WDO LOW pulse are 200 ms nominal.
+D2501 common-anode BAT54A correctly combines AON_RESET_N and PM_WDO_N into
+PM_RESET_N. No diode rotation was needed. Host watchdog expiry inhibits the
+matrix but does not locally combine WDO into the host RESET output.
+
+2600 — Hardware permission and fault memory
+The restored clear chains implement these conditions (AND of every item):
+
+GLOBAL_CLEAR_N:
+  AON_RESET_N, PM_WDO_N, PG_INPUT, FLT_INPUT_N, OC_OK_N,
+  global stop/kill healthy node, PM_RESET_N.
+
+MATRIX_CLEAR_N:
+  GLOBAL_PWR_PERMIT, ALL_RAILS_PG, ALL_COMMANDS_ON, HOST_WDO_N,
+  HOST_RESET_N, matrix stop/kill healthy node.
+
+U2603 D inputs are HIGH and presets inactive. A rising arm edge can set a
+permit only while its clear is HIGH. Any LOW clear asynchronously removes
+that permit. Recovery alone does not re-arm. A global fault also removes the
+matrix condition. Stops are CLOSE TO TRIP; an open cable is not detected.
+Startup AON reset and clean arm timing still require system verification.
+
+2700 / 2800 — Fifteen qualified enable commands
+All eight primary and seven auxiliary channels use:
+  CMD_x = EN_REQ_x AND GLOBAL_PWR_PERMIT.
+Request and command pull-downs are present. The auxiliary spare gate has
+grounded inputs and an NC output. Clearing the global permit suppresses all
+commands independently of requests. Converter shutdown and discharge times
+belong to their connected rail circuits.
+
+2900 — Four analog readiness channels
+Outputs PG_USB, PG_ANA, PG_P15 and PG_N15 have 10 kOhm AON pull-ups.
+For AON = 3.28 V, the reference thresholds at the MON inputs are:
+  MON_V_USB:   2.2313 V
+  MON_V_ANA6:  2.6885 V
+  MON_V_P15:   2.3597 V
+  MON_V_N15:   1.3120 V
+C2901–C2904 filter REFERENCES, with nominal time constants approximately
+32, 18, 28 and 60 us. They do not filter the MON inputs or specify a fixed
+power-good qualification delay. No analog feedback hysteresis is drawn.
+Actual rail thresholds require the missing monitor scaling and polarity.
+
+3000 / 3100 — Separate readiness and command aggregates
+3000 ANDs fifteen measured PG/PGR signals into ALL_RAILS_PG.
+3100 ANDs fifteen qualified CMD signals into ALL_COMMANDS_ON.
+Each corrected global has one explicit push-pull driver. The local group
+labels on the two sheets are independent. Global startup permission does
+not depend on switched-rail readiness, allowing startup without a logical
+deadlock. Matrix permission requires both aggregates; intentionally disabling
+any included rail prevents matrix authorization. Neither tree contains a
+timer or latch.
+
+3200 — Negative-current check
+Reference = AON x 10 / 57 = 0.57544 V at AON = 3.28 V.
+C3201 filters this reference; (47 kOhm || 10 kOhm) x 10 nF = 82.46 us.
+OC_I_N15 above the reference pulls OC_OK_N LOW and clears the global permit.
+The conditioned current-sense producer is missing from the supplied scope,
+so a trip current in amperes cannot be calculated or validated.
+
+3300 — Debug and host interface
+J3301: 1 AON reference, 2 GND, 3 SWDIO, 4 SWCLK, 5 PM_RESET_N.
+J3302: 1 SYS3V3 reference, 2/9/10 GND, 3 buffered PM UART TX,
+4 HOST_UART_TX, 5 HOST_WDI, 6 buffered MATRIX_PERMIT,
+7 buffered ALL_RAILS_PG, 8 buffered GLOBAL_PWR_PERMIT.
+HOST_RESET_N is not on J3302. U3301 supplies the four host-facing outputs
+from SYS3V3 and supports partial power down. Host receive is pulled LOW
+when undriven; firmware must handle this UART break/off condition.
+R3304/C3301 form the nominal 10 us VTT ADC filter, with BAT54S rail clamps.
+
+Remaining integration checks
+
+- No producer for OC_I_N15 or MON_V_USB/ANA6/P15/N15 exists in the available
+  native schematics. Do not attach raw negative voltage to the AON inputs.
+  Restore or supply the documented conditioning circuits before relying on
+  these protections. Current gain/offset and real rail thresholds are unknown.
+- ADC_I/ADC_V and the telemetry multiplexer continue to unprovided circuitry.
+  The available file named 1200_POWER_MONITOR contains a CORE regulator,
+  not the required monitor/multiplexer. Do not infer its function from its name.
+- SYS3V3 does have a producer on the earlier 700_SYS_3V3 sheet. The host
+  supervisor output below its POR level is undefined; AON pull-ups can make
+  off-rail status look HIGH. Independent measured readiness must inhibit arm.
+- Confirm the external host supplies HOST_WDI and receives reset through a
+  separately defined path. Verify firmware recovery policy for host expiry.
+- Verify all fifteen rails are intentionally required for matrix operations,
+  ADC input settling and clamp injection, reset LOW margins, AON startup,
+  comparator noise, arm/clear timing and actual shutdown on hardware.
+
+Manufacturer references
+
+ST STM32G0B1 GP pinout and alternate functions:
+https://www.st.com/resource/en/datasheet/stm32g0b1ve.pdf
+TI TPS3851 pinout, output behavior and watchdog settings:
+https://www.ti.com/lit/ds/symlink/tps3851.pdf
+TI SN74HC74 clear/preset and latch behavior:
+https://www.ti.com/lit/ds/symlink/sn74hc74.pdf
+TI SN74HCS21 AND gates and Schmitt inputs:
+https://www.ti.com/lit/ds/symlink/sn74hcs21.pdf
+TI TLV1704 comparator pinout and output pull-up requirement:
+https://www.ti.com/lit/ds/symlink/tlv1704.pdf
+Nexperia 74LVC125A buffering and partial power down:
+https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf

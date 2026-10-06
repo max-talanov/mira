@@ -1,0 +1,180 @@
+(footprint "L_Wurth_7447709101_12x12mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Wuerth7447709101 manufacturer recommended land5.4x2.9 mm gap7.0; body12x12x10 mm; no vias or sensitive traces under inductor; https://www.we-online.com/components/products/datasheet/7447709101.pdf")
+	(property "Reference" "REF**"
+		(at 0 -7.3 0)
+		(layer "F.SilkS")
+		(uuid "e3ff2179-9286-4e46-84a6-b9188f3ea85f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Wurth_7447709101_12x12mm"
+		(at 0 7.3 0)
+		(layer "F.Fab")
+		(uuid "9e33ef3e-9b60-409a-88cd-ea94838ba7a4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a543d216-da93-4474-b570-3b7a18852107")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "06db3a8f-db55-4de2-9c95-4ff29f11a5a8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "37aaa13d-1351-42b1-b236-7a13bed622ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -6.5 -6.65)
+		(end 6.5 -6.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0f0fc3d5-7d09-41c9-9d99-20685cac25c2")
+	)
+	(fp_line
+		(start -6.5 6.65)
+		(end -6.5 -6.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b3aa5f60-220e-4ca4-b767-21af4529a0dd")
+	)
+	(fp_line
+		(start 6.5 -6.65)
+		(end 6.5 6.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "be1f8a8a-40f8-44e5-b509-4070c22b9073")
+	)
+	(fp_line
+		(start 6.5 6.65)
+		(end -6.5 6.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fd053381-1afc-4905-81d7-a629b1ff1790")
+	)
+	(fp_line
+		(start -6 -6)
+		(end 6 -6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f6010bc0-10d0-43a3-9bec-539c309cc4e1")
+	)
+	(fp_line
+		(start -6 6)
+		(end -6 -6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a414ac71-d70d-4b36-b354-c4c4398129b9")
+	)
+	(fp_line
+		(start 6 -6)
+		(end 6 6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "826efd6f-f36c-47ca-86ce-f1a26af2dd9a")
+	)
+	(fp_line
+		(start 6 6)
+		(end -6 6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1198adc5-baf2-4414-8a60-29530ab58214")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "a93e03fd-1383-4131-bd65-ec83396ace5c")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -4.95)
+		(size 5.4 2.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "3cd8cf1c-866f-4c25-b88a-618a64f9c12b")
+	)
+	(pad "2" smd rect
+		(at 0 4.95)
+		(size 5.4 2.9)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "362ca23b-4eee-4fd0-8b6e-3e0cd4f610b3")
+	)
+	(model "${KIPRJMOD}/libraries/MIRA_RevA.3dshapes/L_Wurth_7447709101_12x12mm_BODY_ENVELOPE.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

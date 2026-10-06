@@ -1,0 +1,178 @@
+MIRA Rev.A — Power Monitor connection review
+2026-10-05
+
+Scope and validation
+
+Reviewed POWER_MONITOR and its seven active child sheets, 3400 through 4000.
+Connections were reconstructed from the native embedded symbol definitions,
+rotation/mirror-aware pin geometry, wires, junctions and scoped labels. The
+monitor signals were traced through the previously reviewed rail, programming
+and Power Control sheets. Manufacturer pinouts and functions were checked.
+
+An independent final comparison verified 242 symbol identities and all pin
+positions and net partitions. Wires, labels, junctions and no-connect markers
+are unchanged. The sole component change is R3609, described below. Parent and
+child UUIDs, hierarchy paths, filenames and MIRA_RevA definitions are preserved.
+
+The overall sheet contains an E4-style logical interconnection overview and
+individual descriptions of all seven blocks. The graphical collector denotes
+16 separate signal pairs; it is not an electrical short or a KiCad bus. Actual
+connections remain the global nets in the native leaves. The leaf guides use
+the same five headings. Blue notes distinguish repeated circuits. All eight
+previews were visually checked and all new text fits the existing drawing
+frames. Previews are approximate renders of native geometry, not KiCad plots.
+
+The empty, unreferenced 3600_MONITOR_INPUT_AON_USB_SYS attachment shares the
+3500 root UUID. It was left unchanged and excluded from the active bundle.
+
+Native KiCad ERC, simulation, firmware/PCB validation and bench measurements
+were not performed. This review confirms the stated schematic relationships,
+not validated whole-system protection or shutdown timing.
+
+Confirmed defect and completed correction
+
+3600: R3609 = 10 kOhm and R3610 = 10 kOhm demanded MON_V_P15 = 7.5 V
+at a 15 V rail, continuously loading the AON clamp and corrupting telemetry.
+R3609 is now 47 kOhm. MON_V_P15 = P15 / 5.7, giving 2.6316 V at 15 V.
+The native library ID, value, MPN and description now consistently identify
+Panasonic ERJ1GNF4702C; the existing 0201 footprint and pin locations remain.
+This scale also gives a nominal PG_P15 threshold of 13.4504 V at AON = 3.28 V.
+
+Verified current sensing and nominal thresholds
+
+The positive-rail INA301A1 channels have gain 20 V/V. Their 10 kOhm LIMIT
+resistors set a nominal 0.800 V threshold from the nominal 80 uA source.
+Grounded RESET selects transparent alerts. Current filters follow OUT and
+do not delay the internal overcurrent comparator. Nominal values below omit
+amplifier, limit-source, shunt, resistor and temperature errors.
+
+Rail        External shunt       Current scale     Nominal trip
+INPUT       stated 20 mOhm       0.400 V/A         no local alert
+AON         R503, 100 mOhm       2.000 V/A         0.400 A
+USB         R604, 50 mOhm        1.000 V/A         0.800 A
+SYS         R705, 10 mOhm        0.200 V/A         4.000 A
+FPGA        R805, 10 mOhm        0.200 V/A         4.000 A
+ANA6        R904, 50 mOhm        1.000 V/A         0.800 A
+P15         R1004, 100 mOhm      2.000 V/A         0.400 A
+N15         R1107, 100 mOhm      2.000 V/A         0.288 A at AON 3.28 V
+CORE        R1205, 2 mOhm        0.040 V/A        20.000 A
+AUX18       R1305, 20 mOhm       0.400 V/A         2.000 A
+AUX25       R1405, 20 mOhm       0.400 V/A         2.000 A
+IO33        R1505, 20 mOhm       0.400 V/A         2.000 A
+DDR         R1605, 10 mOhm       0.200 V/A         4.000 A
+PHY         R1705, 20 mOhm       0.400 V/A         2.000 A
+ANA5        R1905, 50 mOhm       1.000 V/A         0.800 A
+ANA33       R2005, 50 mOhm       1.000 V/A         0.800 A
+
+U3501 INA293 supplies input-current telemetry. Its IN+ is BUS24_PRE_SHUNT
+and IN- is BUS24. The current 400_INPUT_FILTER_SENSE leaf was not supplied.
+The stated 20 mOhm input shunt is corroborated by the historical input-filter
+reference (R203 between those same nets), but its current reference/value and
+the PG_INPUT producer still require the actual current input subsystem.
+All fifteen other shunt polarities and net names match the supplied rail sheets.
+
+3400: U3401 OPA2991 uses AON for V+ and N15_RAW for V-. Channel A gives
+20 x (N15 - N15_RAW), a positive return-current signal. MON_I_N15 uses a
+10 kOhm/100 nF filter; OC_I_N15 uses a separate 10 kOhm branch without that
+telemetry capacitor. Channel B gives MON_V_N15 = -0.1 x N15; -15 V becomes
++1.50 V. Both telemetry time constants are nominally 1 ms. BAT54S clamp
+polarities are correct. The four differential gain-network resistors specify
+0.1% tolerance. Their resistor-only worst-case common-mode leakage at -15 V
+is approximately +/-57 mV, or +/-28.6 mA equivalent; the complete error budget
+must also include amplifier, shunt, comparator, reference and layout errors.
+
+Voltage scales and hardware power-good
+
+INPUT uses (75k + 75k) / 10k, giving rail/16. P15 now uses rail/5.7.
+N15 uses -rail/10. All other selected voltage channels use rail/2.
+The positive current filters have nominal RC = 10 us. The half-scale voltage
+filters have RC = 50 us; INPUT is 93.75 us and repaired P15 is 82.46 us.
+
+MON_V_USB, MON_V_ANA6, MON_V_P15 and MON_V_N15 directly feed the four
+2900 comparator channels as well as telemetry. At AON = 3.28 V their nominal
+physical rail readiness thresholds are USB 4.4626 V, ANA6 5.3770 V,
+P15 13.4504 V and |N15| 13.1200 V. These follow AON and upstream ratios;
+they are not precision absolute thresholds. There is no local hysteresis.
+
+Shared overcurrent and interlocks
+
+Fourteen INA301 open-drain ALERT outputs and the 3200 negative-current
+comparator share OC_OK_N. A fault pulls it LOW and reaches the hardware permit
+clear on 2600 independently of telemetry scanning. It also reaches 2400 PA12.
+The 3200 reference is AON x 10/57 = 0.57544 V at 3.28 V. With the 3400
+2 V/A scale, its nominal trip is 0.28772 A. The comparator reference RC is
+82.46 us; this is not a specified complete fault-to-shutdown delay.
+
+R4008 already provides 10 kOhm to AON. Retained R3203 on the reviewed Power
+Control sheet adds a parallel 10 kOhm, making the assembled pullup 5 kOhm
+and approximately 0.656 mA fault sink current at AON = 3.28 V. These pullups
+are compatible; OC_OK_N does not depend on a firmware internal pullup.
+
+Verified paired telemetry channel map
+
+Both selectors use this exact order. A0 is the least significant address bit.
+The pin column is the physical channel pin on each CD74HC4067.
+
+Channel  A3..A0  Pin  Current net      Voltage net      Source sheet
+      0  0000     9   MON_I_INPUT      MON_V_INPUT      3500
+      1  0001     8   MON_I_AON        MON_V_AON        3500
+      2  0010     7   MON_I_USB        MON_V_USB        3500
+      3  0011     6   MON_I_SYS        MON_V_SYS        3500
+      4  0100     5   MON_I_FPGA       MON_V_FPGA       3600
+      5  0101     4   MON_I_ANA6       MON_V_ANA6       3600
+      6  0110     3   MON_I_P15        MON_V_P15        3600
+      7  0111     2   MON_I_N15        MON_V_N15        3400
+      8  1000    23   MON_I_CORE       MON_V_CORE       3700
+      9  1001    22   MON_I_AUX18      MON_V_AUX18      3700
+     10  1010    21   MON_I_AUX25      MON_V_AUX25      3700
+     11  1011    20   MON_I_IO33       MON_V_IO33       3700
+     12  1100    19   MON_I_DDR        MON_V_DDR        3800
+     13  1101    18   MON_I_PHY        MON_V_PHY        3800
+     14  1110    17   MON_I_ANA5       MON_V_ANA5       3800
+     15  1111    16   MON_I_ANA33      MON_V_ANA33      3800
+
+3900: Both devices share MUX_A0..A3 and MUX_DISABLE. HIGH disconnects
+both COM outputs; LOW enables the chosen current/voltage pair. R4001-R4004
+hold address zero and R4007 holds disable HIGH at controller reset. Disabled
+COM inputs float, so the buffer/ADC outputs are not valid measurements.
+
+4000: U4001A follows MUX_I_COM; output pin 1 feeds back to IN- pin 2.
+U4001B follows MUX_V_COM; output pin 7 feeds back to IN- pin 6. R4005/C4002
+and R4006/C4003 use 100 Ohm/1 nF (0.10 us nominal RC). Feedback is taken
+before these resistors. ADC_I reaches 2400 PA0/pin 17 and ADC_V PA1/pin 18.
+MUX_A0/A1/A2/A3/DISABLE reach PB15/PA8/PA9/PC6/PC7 respectively.
+
+Firmware should disable, update the address, enable and wait for the source,
+selector, buffer and ADC acquisition to settle before accepting samples.
+The 0.10 us output RC alone does not define this wait. Current and voltage
+are a selected pair; the STM32 ADC samples them sequentially. ADC_VTT is a
+separate 3300-to-PA2 route; PROG_V_P15 is a separate 2300-to-PA3 route.
+
+Remaining design decisions and verification
+
+- CORE nominal trip 20 A exceeds the TPS568215 8 A converter rating. DDR
+  nominal trip 4 A exceeds the TPS62130A 3 A converter rating. The converters'
+  own limits may act first. Establish load, inrush and thermal budgets, then
+  coordinate external trips with the regulator limits; their resistor values
+  were retained rather than selecting an unsupported load budget.
+- ANA5 current includes its downstream ANA3V3 load. Coordinate these nested
+  thresholds instead of treating them as independent available load budgets.
+- Confirm the current input-filter/eFuse leaves, PG_INPUT/FLT_INPUT_N and
+  input shunt identity before claiming complete startup-path validation.
+- Qualify telemetry and arm logic during AON loss, rail ramp/discharge and
+  negative-supply transitions. Check clamp injection and all analog input
+  operating limits when adjacent supplies are absent.
+- Verify Kelvin shunt routing, gain/offset calibration, comparator noise,
+  safe firmware pin defaults, ADC acquisition and actual shutdown on hardware.
+
+Manufacturer references
+
+TI OPA2991: https://www.ti.com/lit/ds/symlink/opa2991.pdf
+TI INA301: https://www.ti.com/lit/ds/symlink/ina301.pdf
+TI INA293: https://www.ti.com/lit/ds/symlink/ina293.pdf
+TI CD74HC4067: https://www.ti.com/lit/ds/symlink/cd74hc4067.pdf
+TI TLV9002: https://www.ti.com/lit/ds/symlink/tlv9002.pdf
+TI TLV1704: https://www.ti.com/lit/ds/symlink/tlv1704.pdf
+TI TPS568215: https://www.ti.com/lit/ds/symlink/tps568215.pdf
+TI TPS62130A: https://www.ti.com/lit/ds/symlink/tps62130a.pdf
+ST STM32G0B1: https://www.st.com/resource/en/datasheet/stm32g0b1ve.pdf

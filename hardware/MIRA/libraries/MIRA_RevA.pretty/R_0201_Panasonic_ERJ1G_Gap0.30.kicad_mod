@@ -1,0 +1,180 @@
+(footprint "R_0201_Panasonic_ERJ1G_Gap0.30"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Panasonic Fixed Resistors catalog land pattern p83: a=0.30 b=0.90 c=0.35 mm; 0201 imperial / 0603 metric; ERJ1G series")
+	(property "Reference" "REF**"
+		(at 0 -1.05 0)
+		(layer "F.SilkS")
+		(uuid "5b4c65f1-8689-402e-854d-5f1e4ea0cb9d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "R_0201_Panasonic_ERJ1G_Gap0.30"
+		(at 0 1.05 0)
+		(layer "F.Fab")
+		(uuid "bd93e466-6d9c-4d9f-b366-fc549d0ac3eb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1521b26e-ca6b-4781-a16d-3f52ea7182aa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b86e24ff-3493-466b-8bb5-54b25e31faa0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d156420b-3b5d-47ae-9b5a-1107a158c0a1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.7 -0.425)
+		(end 0.7 -0.425)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3d7a9b76-7911-41cd-ab26-8e49803b4045")
+	)
+	(fp_line
+		(start -0.7 0.425)
+		(end -0.7 -0.425)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bd7c6584-a512-4109-99c9-dc6f379396ae")
+	)
+	(fp_line
+		(start 0.7 -0.425)
+		(end 0.7 0.425)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7eefe35f-c825-42e7-87cd-04fc05784f15")
+	)
+	(fp_line
+		(start 0.7 0.425)
+		(end -0.7 0.425)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cb876cdb-3eb2-426c-b559-5cc58df8b23f")
+	)
+	(fp_line
+		(start -0.3 -0.15)
+		(end 0.3 -0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "425012bc-9a18-4892-aad7-390122fcb95c")
+	)
+	(fp_line
+		(start -0.3 0.15)
+		(end -0.3 -0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cb33c08d-ace0-4294-b3d4-e84dd0c1e3ec")
+	)
+	(fp_line
+		(start 0.3 -0.15)
+		(end 0.3 0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a3d6029b-6741-461d-aeee-0df676aeeb84")
+	)
+	(fp_line
+		(start 0.3 0.15)
+		(end -0.3 0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d91bd9e8-5257-444d-b5d1-ca955c7e6b70")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "72ecc934-9fbe-4928-9897-fa1029e8ba99")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.3 0)
+		(size 0.3 0.35)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "0723157d-1067-4970-b2c3-a956c5c71dd2")
+	)
+	(pad "2" smd rect
+		(at 0.3 0)
+		(size 0.3 0.35)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "bf3eeefc-17ef-4ada-b821-c5f9bbd6b3af")
+	)
+	(model "${KIPRJMOD}/libraries/MIRA_RevA.3dshapes/R_0201_0603Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
