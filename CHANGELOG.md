@@ -2,6 +2,16 @@
 
 Repository milestones are separate from hardware revisions. Both projects currently use **RevA**.
 
+## Unreleased
+
+### 2026-10-27 — Power–Control inter-board review
+
+- Record the 26 required inter-board nets and the observed pins of J400 and the relevant Power connectors.
+- Document 3 P0 and 5 P1 open questions, each with evidence, a next action, and a closure criterion.
+- Close the checklist item for documenting inter-board connections and discrepancies. Electrical corrections and fresh ERC runs remain open.
+- Verify all 78 active schematic files against baseline commit `b457c20e4a20e0389fd8b2b06486e559891e3b48` and record their SHA-256 hashes.
+- Update the root README to describe the populated 30-page Control project and link the review. No schematics, PCB files, or libraries are changed by this documentation update.
+
 ## v0.2.0 — 2026-10-06
 
 - Separate `hardware/MIRA_Power` and `hardware/MIRA_Control` projects.

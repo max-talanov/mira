@@ -6,9 +6,11 @@ The project aims to bring array control, an analog front end, digital processing
 
 ## Current status
 
-**RevA** is currently in development. The repository contains two independent KiCad projects: the power schematics and an empty control project with local libraries.
+**RevA** is currently in development. The repository contains two independent KiCad projects with local libraries: **MIRA_Control (30 active schematic pages)** and **MIRA_Power (48 active schematic pages)**.
 
-Power development is focused on connection review, protection, sequencing, and monitoring. The control project is the starting point for drawing the MCU, FPGA, communications, and matrix circuits.
+Control includes MCU, FPGA, communications, matrix, analog, and protection circuits. Both projects are undergoing review before PCB placement and routing.
+
+The [Power–Control inter-board review](docs/pcb-preparation/README.md) was completed on **2026-10-27**: 26 required connections were recorded, with 3 P0 and 5 P1 questions left open. Completion of this review means the connections and discrepancies are documented; it does not mean the interface is ready for fabrication.
 
 Schematics in this repository do not imply that the corresponding circuits have been built or validated in hardware.
 
@@ -17,7 +19,7 @@ Schematics in this repository do not imply that the corresponding circuits have 
 | Project | Current contents | Open in KiCad |
 | --- | --- | --- |
 | [MIRA_Power](hardware/MIRA_Power) | Power schematics, hierarchy, and local libraries | `hardware/MIRA_Power/MIRA_Power.kicad_pro` |
-| [MIRA_Control](hardware/MIRA_Control) | One empty A4 schematic, an empty PCB, and local symbol, footprint, and STEP libraries | `hardware/MIRA_Control/MIRA_Control.kicad_pro` |
+| [MIRA_Control](hardware/MIRA_Control) | 30-page schematic hierarchy, an empty PCB, and local symbol, footprint, and STEP libraries | `hardware/MIRA_Control/MIRA_Control.kicad_pro` |
 
 Each project has its own library tables and project-relative library paths. Keep its complete folder together.
 
@@ -65,7 +67,7 @@ These blocks describe the planned development direction. Their implementation st
    kicad hardware/MIRA_Control/MIRA_Control.kicad_pro
    ```
 
-3. In `MIRA_Power`, use the schematic hierarchy to navigate between blocks. In `MIRA_Control`, start with the empty A4 sheet and add circuits as development progresses.
+3. In both projects, use the schematic hierarchy to navigate between blocks. Open the root schematic through the project manager so the project-relative libraries are available.
 
 Keep the directory structure intact. The `sym-lib-table` and `fp-lib-table` files are stored alongside the project and reference its local libraries.
 
@@ -88,8 +90,9 @@ See [LICENSE](LICENSE) and the third-party library and model notices included un
 
 ## Next steps
 
-- Verify electrical connections and coordinate protection thresholds with load requirements.
-- Draw and review the control and matrix circuits in `MIRA_Control`.
+- Run ERC separately for Control and Power, save both reports, and group messages by cause.
+- Resolve the [inter-board P0 questions](docs/pcb-preparation/README.md#open-questions): physical connector mapping, matrix inhibit return, and host reset output.
+- Calculate rail currents, voltage drops, and connector requirements; coordinate protection thresholds with load requirements.
 - Complete consistent schematic formatting and descriptions.
 - Review component suitability and availability.
 - Prepare component placement and PCB routing.
