@@ -1,0 +1,77 @@
+{
+  "review_date": "2026-10-27",
+  "analysis_source_commit": "ae1d9205f282e48af45e8cc4ad50d54232a76be5",
+  "report_source_commit": null,
+  "report_kicad_version": null,
+  "provenance_note": "Reports were supplied by the user. Their exact local source revision and KiCad version are not recorded in the reports. Source references below use the analysis commit; native ERC was not run by the reviewer.",
+  "source_attribution_note": "Source candidates match report paths, component references, or coordinates and wire lengths. Coordinate matches alone can be ambiguous. They do not replace native KiCad connectivity.",
+  "reports": {
+    "Control": {
+      "file": "MIRA_Control_erc.rpt",
+      "original_upload_name": "ERC.rpt",
+      "sha256": "4e9f8f2004941c718a5a017dd57bcc6d12b6c918f74450163cc5a173bd10bc6c",
+      "size_bytes": 20247,
+      "header": [
+        "ERC report (2026-10-27T22:12:15, Encoding UTF8)",
+        "Report includes: Errors, Warnings"
+      ],
+      "sheet_sections": 30,
+      "message_count": 122,
+      "severity_counts": {
+        "warning": 118,
+        "error": 4
+      },
+      "rule_counts": {
+        "endpoint_off_grid": 72,
+        "unconnected_wire_endpoint": 2,
+        "multiple_net_names": 10,
+        "ground_pin_not_ground": 34,
+        "pin_not_connected": 2,
+        "pin_not_driven": 2
+      },
+      "ignored_checks": [
+        "- Global label only appears once in the schematic",
+        "    - Four connection points are joined together",
+        "    - SPICE model issue",
+        "    - Assigned footprint doesn't match footprint filters"
+      ],
+      "excluded_message_count": null
+    },
+    "Power": {
+      "file": "MIRA_Power_erc.rpt",
+      "original_upload_name": "ERC(1).rpt",
+      "sha256": "ffb1a4e7f2ad39847ff207271b67c7e772a715b292d833506157427272272bb9",
+      "size_bytes": 6753,
+      "header": [
+        "ERC report (2026-10-27T22:11:28, Encoding UTF8)",
+        "Report includes: Errors, Warnings"
+      ],
+      "sheet_sections": 48,
+      "message_count": 24,
+      "severity_counts": {
+        "error": 11,
+        "warning": 13
+      },
+      "rule_counts": {
+        "pin_not_connected": 1,
+        "endpoint_off_grid": 13,
+        "power_pin_not_driven": 10
+      },
+      "ignored_checks": [
+        "- Global label only appears once in the schematic",
+        "    - Four connection points are joined together",
+        "    - SPICE model issue",
+        "    - Assigned footprint doesn't match footprint filters"
+      ],
+      "excluded_message_count": null
+    }
+  },
+  "group_message_counts": {
+    "E01": 6,
+    "E02": 85,
+    "E03": 34,
+    "E04": 10,
+    "E05": 10,
+    "E06": 1
+  }
+}

@@ -4,6 +4,14 @@ Repository milestones are separate from hardware revisions. Both projects curren
 
 ## Unreleased
 
+### 2026-10-27 — Initial ERC report review
+
+- Preserve user-generated Control and Power ERC reports byte-for-byte: 4 errors / 118 warnings and 11 errors / 13 warnings respectively.
+- Group all 146 messages into six cause groups and add a seventh question for report provenance and check coverage, each with priority, next action, and closure criterion.
+- Identify the two U1903 feedback joins as the first Control correction to verify; document Power source-model checks, the unresolved GND flag, off-grid objects, VSS warnings, and hidden power-pin aliases.
+- Record report hashes and all messages. Close the report-documentation checklist item while keeping schematic corrections and the report-to-source revision match open.
+- Update the shared issue list and project status. No schematics, PCB files, or libraries are changed.
+
 ### 2026-10-27 — Power–Control inter-board review
 
 - Record the 26 required inter-board nets and the observed pins of J400 and the relevant Power connectors.

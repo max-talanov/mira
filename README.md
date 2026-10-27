@@ -12,6 +12,8 @@ Control includes MCU, FPGA, communications, matrix, analog, and protection circu
 
 The [Power–Control inter-board review](docs/pcb-preparation/README.md) was completed on **2026-10-27**: 26 required connections were recorded, with 3 P0 and 5 P1 questions left open. Completion of this review means the connections and discrepancies are documented; it does not mean the interface is ready for fabrication.
 
+The [initial ERC review](docs/pcb-preparation/erc/README.md) records user-generated reports from **2026-10-27**: Control has **4 errors / 118 warnings**, and Power has **11 errors / 13 warnings**. All 146 messages are grouped by cause with next actions. Schematic fixes and reproducibility details remain open; this update does not claim a clean ERC run.
+
 Schematics in this repository do not imply that the corresponding circuits have been built or validated in hardware.
 
 ## Repository contents
@@ -90,7 +92,7 @@ See [LICENSE](LICENSE) and the third-party library and model notices included un
 
 ## Next steps
 
-- Run ERC separately for Control and Power, save both reports, and group messages by cause.
+- Resolve [ERC questions E01–E07](docs/pcb-preparation/erc/README.md), starting with the two U1903 feedback connections; record the KiCad version and check settings, then save fresh reports after corrections.
 - Resolve the [inter-board P0 questions](docs/pcb-preparation/README.md#open-questions): physical connector mapping, matrix inhibit return, and host reset output.
 - Calculate rail currents, voltage drops, and connector requirements; coordinate protection thresholds with load requirements.
 - Complete consistent schematic formatting and descriptions.
