@@ -3,8 +3,434 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "7712be45-81b1-4bc3-bd57-23fa09a25d32")
-	(paper "A4")
+	(paper "A3")
 	(lib_symbols
+		(symbol "MIRA_RevA:Capacitor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 3.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Capacitor"
+				(at 0 -3.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Capacitor_1_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy 1.905 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -0.635) (xy 1.905 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.905)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.905)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MIRA_RevA:DM3AT_SF_PEJM5_MIRA"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "DM3AT-SF-PEJM5"
+				(at 0 -5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "MIRA_RevA:microSD_HC_Hirose_DM3AT-SF-PEJM5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.hirose.com/product/document?clcode=CL0609-0035-0-00&productname=DM3AT-SF-PEJM5&series=DM3&documenttype=2DDrawing&lang=en&documentid=D49371_en"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "microSD push-push socket, two isolated detect-switch pins 9/10, grounded shield pad11"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "DM3AT-SF-PEJM5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Manufacturer" "Hirose"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "DM3AT_SF_PEJM5_MIRA_1_1"
+				(rectangle
+					(start -15.24 11.43)
+					(end 15.24 -11.43)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 7.62 0)
+					(length 2.54)
+					(name "DAT2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 5.08 0)
+					(length 2.54)
+					(name "DAT3_/_CD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 2.54 0)
+					(length 2.54)
+					(name "CMD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -17.78 0 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -2.54 0)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 3.81 180)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -5.08 0)
+					(length 2.54)
+					(name "DAT0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -7.62 0)
+					(length 2.54)
+					(name "DAT1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 1.27 180)
+					(length 2.54)
+					(name "DETECT1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -1.27 180)
+					(length 2.54)
+					(name "DETECT2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -3.81 180)
+					(length 2.54)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MIRA_RevA:Resistor"
 			(pin_numbers
 				(hide yes)
@@ -3474,6 +3900,474 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MIRA_RevA:USBLC6_2SC6_MIRA"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "USBLC6-2SC6"
+				(at 0 -5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "MIRA_RevA:SOT-23-6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Two-channel low-capacitance ESD protection; both ends of each protected channel tied to the same SD signal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "USBLC6-2SC6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Manufacturer" "STMicroelectronics"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "USBLC6_2SC6_MIRA_1_1"
+				(rectangle
+					(start -15.24 7.62)
+					(end 15.24 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -17.78 1.27 0)
+					(length 2.54)
+					(name "IO1_A"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 3.81 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -17.78 -1.27 0)
+					(length 2.54)
+					(name "IO2_A"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 1.27 180)
+					(length 2.54)
+					(name "IO2_B"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 -1.27 180)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -3.81 180)
+					(length 2.54)
+					(name "IO1_B"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MIRA_RevA:W25Q512JVEIQ_MIRA"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "W25Q512JVEIQ"
+				(at 0 -5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "MIRA_RevA:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.winbond.com/resource-files/W25Q512JV%20SPI%20RevG%2001122022Plus.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "512 Mbit / 64 MiB 3.3V Quad-SPI NOR flash, WSON8 EP; Q code Quad Enable preset"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "W25Q512JVEIQ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Manufacturer" "Winbond"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "W25Q512JVEIQ_MIRA_1_1"
+				(rectangle
+					(start -15.24 8.89)
+					(end 15.24 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -17.78 3.81 0)
+					(length 2.54)
+					(name "CS_N"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 5.08 180)
+					(length 2.54)
+					(name "DO_/_IO1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 2.54 180)
+					(length 2.54)
+					(name "WP_N_/_IO2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -17.78 1.27 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 0 180)
+					(length 2.54)
+					(name "DI_/_IO0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -1.27 0)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 -2.54 180)
+					(length 2.54)
+					(name "HOLD_N_/_IO3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -17.78 -3.81 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -5.08 180)
+					(length 2.54)
+					(name "EP"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -3604,8 +4498,8 @@
 		(uuid "59bd0746-be73-4362-8f53-47c232e6830d")
 	)
 	(rectangle
-		(start 149.86 13.52)
-		(end 281.94 168.28)
+		(start 299.72 21.59)
+		(end 405.13 248.92)
 		(stroke
 			(width 0.13)
 			(type default)
@@ -3614,11 +4508,11 @@
 		(fill
 			(type none)
 		)
-		(uuid "de065fe3-578d-4797-bafa-913eeab39972")
+		(uuid "9256fd7a-0f95-4f6f-b691-8391bb32c629")
 	)
-	(text "Protection and fault response"
+	(text "Control logic"
 		(exclude_from_sim no)
-		(at 154.94 138.92 0)
+		(at 304.8 87.16 0)
 		(effects
 			(font
 				(size 1.8 1.8)
@@ -3627,31 +4521,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "07051d1c-23c4-4c02-bc1c-e7c81c3f264d")
-	)
-	(text "FPGA-side Ioff buffers prevent back-powering across SYS3V3/IO3V3. Feed\nHOST_WDI only after required health checks pass."
-		(exclude_from_sim no)
-		(at 154.94 144 0)
-		(effects
-			(font
-				(size 1.35 1.35)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "18e7b955-db83-4eae-99b4-a940ed60b63f")
-	)
-	(text "USART2 PA2/PA3 uses AF7. PM_UART_TX_HOST and status inputs must be\nSYS3V3-buffered. HOST_WDI feeds the host watchdog."
-		(exclude_from_sim no)
-		(at 154.94 94 0)
-		(effects
-			(font
-				(size 1.35 1.35)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "211751fa-eeb4-4f08-9d5d-7236aabd8a8d")
+		(uuid "15abcda8-ee2b-4d62-b759-e69902e69b50")
 	)
 	(text "Main MCU serial memory and control | Rev.A"
 		(exclude_from_sim no)
@@ -3665,21 +4535,9 @@
 		)
 		(uuid "26f56649-5fea-4054-997d-bbc703f7a702")
 	)
-	(text "SHEET GUIDE / 4300_MCU_SERIAL_CONTROL"
+	(text "Timing and settings"
 		(exclude_from_sim no)
-		(at 154.94 17.52 0)
-		(effects
-			(font
-				(size 1.15 1.15)
-				(color 86 96 108 1)
-			)
-			(justify left top)
-		)
-		(uuid "51133fcb-c303-4801-a457-cfa1ce754830")
-	)
-	(text "Control logic"
-		(exclude_from_sim no)
-		(at 154.94 88.92 0)
+		(at 304.8 112.16 0)
 		(effects
 			(font
 				(size 1.8 1.8)
@@ -3688,11 +4546,49 @@
 			)
 			(justify left top)
 		)
-		(uuid "6b52ad20-1f4b-464a-9cb6-3e6914df7be1")
+		(uuid "32d1adcf-cfc1-42c5-99fe-84dbc8680454")
 	)
-	(text "CS defaults HIGH; SCK/HOST_ALIVE LOW. MCU_RESET_FPGA_N is open-drain.\nSet safe GPIO states before peripherals."
+	(text "Protection and fault response"
 		(exclude_from_sim no)
-		(at 154.94 119 0)
+		(at 304.8 137.16 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+				(color 0 100 110 1)
+			)
+			(justify left top)
+		)
+		(uuid "38f8d56d-a68f-457a-b3c0-b7666a32c94c")
+	)
+	(text "4600_MCU_QSPI_FLASH"
+		(exclude_from_sim no)
+		(at 198.12 25.59 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+				(color 86 96 108 1)
+			)
+			(justify left top)
+		)
+		(uuid "41fd0ece-28a5-4554-9371-4ea6883e09a0")
+	)
+	(text "Main MCU microSD connector"
+		(exclude_from_sim no)
+		(at 184.15 91.81 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+				(bold yes)
+				(color 25 47 72 1)
+			)
+			(justify left top)
+		)
+		(uuid "57786df7-afce-4bce-8f64-d63068d85ac6")
+	)
+	(text "VDD, VDDLDO and VBAT use SYS3V3. R4101 feeds VDDA/VREF+. Repeated\nsupply pins are stacked; every physical pin is retained."
+		(exclude_from_sim no)
+		(at 304.8 67.24 0)
 		(effects
 			(font
 				(size 1.35 1.35)
@@ -3700,7 +4596,44 @@
 			)
 			(justify left top)
 		)
-		(uuid "83ea2cf3-637f-493d-a3bb-34a550c59102")
+		(uuid "6600f559-8566-4412-bb10-6d9f39990f9c")
+	)
+	(text "U4101 runs experiment control and neuron models. The independent AON\nSTM32G0 remains the power manager."
+		(exclude_from_sim no)
+		(at 304.8 42.24 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+				(color 33 43 55 1)
+			)
+			(justify left top)
+		)
+		(uuid "68616826-3b46-4c53-8ca5-3725f9577a39")
+	)
+	(text "Main MCU microSD connector | Rev.A"
+		(exclude_from_sim no)
+		(at 184.15 95.5 0)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 70 190 1)
+			)
+			(justify left top)
+		)
+		(uuid "8581a4e3-b189-432b-96e8-e7f909bb50df")
+	)
+	(text "Inputs and outputs"
+		(exclude_from_sim no)
+		(at 304.8 62.16 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+				(color 0 100 110 1)
+			)
+			(justify left top)
+		)
+		(uuid "8b9ec6db-ac49-4d9d-8d15-edb12ea28c4f")
 	)
 	(text "4300_MCU_SERIAL_CONTROL"
 		(exclude_from_sim no)
@@ -3727,21 +4660,9 @@
 		)
 		(uuid "987570c7-6fdf-46e2-8e90-17c0f5f0ccd5")
 	)
-	(text "SPI1: PA4/5/6/7 (AF5). QSPI: PB2 AF9, PB6 AF10, PD11/12/13 and PE2\nAF9. SDMMC1: PC8..12/PD2 AF12."
+	(text "Main MCU supply and core regulator"
 		(exclude_from_sim no)
-		(at 154.94 69 0)
-		(effects
-			(font
-				(size 1.35 1.35)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "9c9058ea-912a-4f39-83cf-9521706d635a")
-	)
-	(text "Main MCU serial memory and control"
-		(exclude_from_sim no)
-		(at 154.94 26.22 0)
+		(at 304.8 24.46 0)
 		(effects
 			(font
 				(size 2.2 2.2)
@@ -3750,11 +4671,36 @@
 			)
 			(justify left top)
 		)
-		(uuid "b13f6900-1deb-4222-8446-38236759035d")
+		(uuid "ab8b8d81-2d04-4114-ba42-c42639d44451")
 	)
-	(text "The MCU manages experiments, storage and FPGA commands. USB3/Ethernet\nterminate in the FPGA."
+	(text "Main MCU microSD bias and ESD | Rev.A"
 		(exclude_from_sim no)
-		(at 154.94 44 0)
+		(at 158.75 132.08 0)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 70 190 1)
+			)
+			(justify left top)
+		)
+		(uuid "af8bf439-8408-424d-9295-2728038a39a4")
+	)
+	(text "Purpose and role"
+		(exclude_from_sim no)
+		(at 304.8 37.16 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+				(color 0 100 110 1)
+			)
+			(justify left top)
+		)
+		(uuid "b194b476-3d06-4376-9f6f-c95bf3abd1cf")
+	)
+	(text "VCAP 80/133/172 share two 2.2u capacitors. Select PWR_LDO_SUPPLY\nbefore voltage scaling/PLLs. 480MHz requires VOS0."
+		(exclude_from_sim no)
+		(at 304.8 117.24 0)
 		(effects
 			(font
 				(size 1.35 1.35)
@@ -3762,52 +4708,162 @@
 			)
 			(justify left top)
 		)
-		(uuid "d0a4619e-f73b-4ee0-8b56-38d6fe0c498c")
+		(uuid "bca7bb9c-267b-4a18-94f2-b3a8ba54690f")
 	)
-	(text "Timing and settings"
+	(text "Main MCU 64 MiB QSPI NOR flash | Rev.A"
 		(exclude_from_sim no)
-		(at 154.94 113.92 0)
+		(at 198.12 38.35 0)
 		(effects
 			(font
-				(size 1.8 1.8)
-				(bold yes)
-				(color 0 100 110 1)
+				(size 1 1)
+				(color 0 70 190 1)
 			)
 			(justify left top)
 		)
-		(uuid "dc25fb61-5b2c-4976-b23c-fc01a946138f")
+		(uuid "ca135eeb-ec4c-4e3c-b2f5-cb3e1bdaa644")
 	)
-	(text "Purpose and role"
+	(text "LDO-only: VDDSMPS, VFBSMPS and VSSSMPS are GND; VLXSMPS is open. All\nthree VDDLDO pins are connected."
 		(exclude_from_sim no)
-		(at 154.94 38.92 0)
+		(at 304.8 92.24 0)
 		(effects
 			(font
-				(size 1.8 1.8)
-				(bold yes)
-				(color 0 100 110 1)
+				(size 1.35 1.35)
+				(color 33 43 55 1)
 			)
 			(justify left top)
 		)
-		(uuid "ef0c696a-4c10-4cb9-afff-b8550abc2f95")
+		(uuid "d4b612f4-222d-4d11-91f0-008c8cf43465")
 	)
-	(text "Inputs and outputs"
+	(text "Do not load MCU_VCAP or connect it to SYS3V3. Check VCAP, NRST and SWD\nfirst. USB regulator is disabled; USB pins use SYS3V3."
 		(exclude_from_sim no)
-		(at 154.94 63.92 0)
+		(at 304.8 142.24 0)
 		(effects
 			(font
-				(size 1.8 1.8)
-				(bold yes)
-				(color 0 100 110 1)
+				(size 1.35 1.35)
+				(color 33 43 55 1)
 			)
 			(justify left top)
 		)
-		(uuid "f23b44bf-66bd-4da1-ad4f-4f36f86c77e9")
+		(uuid "e860647a-4044-4b96-af50-310046f6bb6c")
+	)
+	(text "Main MCU 64 MiB QSPI NOR flash"
+		(exclude_from_sim no)
+		(at 198.12 30.85 0)
+		(effects
+			(font
+				(size 1.65 1.65)
+				(bold yes)
+				(color 25 47 72 1)
+			)
+			(justify left top)
+		)
+		(uuid "f5fa25cf-1f61-423b-bd9a-0d41b5ef9c35")
+	)
+	(text "SHEET GUIDE / 4100_MCU_POWER_CORE"
+		(exclude_from_sim no)
+		(at 304.8 15.76 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+				(color 86 96 108 1)
+			)
+			(justify left top)
+		)
+		(uuid "f6e0c332-d598-4703-93b1-f8ebde8f77ff")
 	)
 	(junction
-		(at 45.72 118.11)
+		(at 180.34 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "942e1163-161c-4f62-9593-1672f18350ca")
+		(uuid "0d5c1a3b-cc45-4158-8b72-d3463d38c843")
+	)
+	(junction
+		(at 205.74 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3fc1bb8e-dcf7-4abd-9855-5fcc23f6b91e")
+	)
+	(junction
+		(at 255.27 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52b2b4f9-e63f-4692-9ddc-b5dfda143e7b")
+	)
+	(junction
+		(at 248.92 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5cabb732-ce95-4b46-b0d6-145dc6fe86bc")
+	)
+	(junction
+		(at 248.92 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5cae5a8f-1fd8-4ae2-95e9-cc6a86e9e731")
+	)
+	(junction
+		(at 187.96 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c5ca212-ee33-473a-a5ae-8e35368b414e")
+	)
+	(junction
+		(at 246.38 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c49a934-357a-468e-81c8-c327f1925ea2")
+	)
+	(junction
+		(at 269.24 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d7fd689-39b5-4208-85cf-0967abc7c093")
+	)
+	(junction
+		(at 199.39 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f8886fd-3e3f-4ea4-8f5a-992756a2b5e6")
+	)
+	(junction
+		(at 237.49 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aed34b0d-98eb-4b6f-9a3e-f5e0d9e0bb78")
+	)
+	(junction
+		(at 264.16 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4ec7272-d7ca-4b5b-8422-1659459fa42b")
+	)
+	(junction
+		(at 167.64 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b584e4b6-fe04-4017-a715-7dc8faa8c1ba")
+	)
+	(junction
+		(at 180.34 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dae9c2b7-9356-4315-a943-9db3f6104545")
+	)
+	(junction
+		(at 199.39 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e345a227-88a2-4b35-880c-7810ba42c220")
+	)
+	(wire
+		(pts
+			(xy 269.24 113.03) (xy 269.24 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "028f0ebc-e76b-450a-8e96-3651a9564dbb")
 	)
 	(wire
 		(pts
@@ -3821,6 +4877,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 171.45) (xy 264.16 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "065d4176-f862-44c6-bed6-56bb71e49c71")
+	)
+	(wire
+		(pts
 			(xy 111.76 118.11) (xy 110.49 118.11)
 		)
 		(stroke
@@ -3828,6 +4894,26 @@
 			(type default)
 		)
 		(uuid "069510ab-3093-4f12-9880-4f85598da47a")
+	)
+	(wire
+		(pts
+			(xy 204.47 149.86) (xy 205.74 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09349720-eb16-4f28-ac6a-c7e7b52db19c")
+	)
+	(wire
+		(pts
+			(xy 237.49 171.45) (xy 237.49 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a4d41a6-0d1f-43e9-b3bd-028e1ee0606b")
 	)
 	(wire
 		(pts
@@ -3841,6 +4927,66 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 114.3) (xy 228.6 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b3d5503-52f7-46d2-9ee0-8694622042fe")
+	)
+	(wire
+		(pts
+			(xy 186.69 104.14) (xy 228.6 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba82c26-fcff-408c-bd9b-529e85385177")
+	)
+	(wire
+		(pts
+			(xy 199.39 63.5) (xy 199.39 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d178fd9-f689-48ac-b067-82a6d8434fde")
+	)
+	(wire
+		(pts
+			(xy 270.51 147.32) (xy 271.78 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d8d4e15-3df9-4e30-b555-242e990e6282")
+	)
+	(wire
+		(pts
+			(xy 259.08 52.07) (xy 275.59 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dcf28ea-0941-480e-8517-07f67c57699c")
+	)
+	(wire
+		(pts
+			(xy 255.27 163.83) (xy 255.27 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12f33192-0bd0-459b-80a9-fe88cd43ddc7")
+	)
+	(wire
+		(pts
 			(xy 55.88 81.28) (xy 50.8 81.28)
 		)
 		(stroke
@@ -3848,6 +4994,16 @@
 			(type default)
 		)
 		(uuid "164325d7-d98b-48f1-8311-753e95058ff9")
+	)
+	(wire
+		(pts
+			(xy 187.96 53.34) (xy 208.28 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c37f4cd-6a09-4c1b-b456-67a93977948a")
 	)
 	(wire
 		(pts
@@ -3861,6 +5017,76 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 59.69) (xy 275.59 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23bec90d-9d72-4f7e-aa62-bc1b31227967")
+	)
+	(wire
+		(pts
+			(xy 186.69 106.68) (xy 176.53 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27af347e-807e-4b51-bda6-a7b581903b03")
+	)
+	(wire
+		(pts
+			(xy 187.96 43.18) (xy 187.96 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28159d9e-91cf-41b8-aa37-47cd3e00424c")
+	)
+	(wire
+		(pts
+			(xy 199.39 71.12) (xy 205.74 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "294bebf5-640d-4d12-b920-8daca66248d0")
+	)
+	(wire
+		(pts
+			(xy 182.88 53.34) (xy 187.96 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a34006c-c949-46b5-bbec-223896724ff3")
+	)
+	(wire
+		(pts
+			(xy 194.31 106.68) (xy 228.6 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c059e04-e8e3-4478-bbdb-e8775298a123")
+	)
+	(wire
+		(pts
+			(xy 243.84 54.61) (xy 248.92 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eabd0f0-be6d-49cf-9525-bffb2cf1fe2a")
+	)
+	(wire
+		(pts
 			(xy 106.68 93.98) (xy 111.76 93.98)
 		)
 		(stroke
@@ -3868,6 +5094,16 @@
 			(type default)
 		)
 		(uuid "2ffd30ab-8856-4079-ac2f-6c60bc33181e")
+	)
+	(wire
+		(pts
+			(xy 245.11 64.77) (xy 245.11 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "316a515f-7c26-416b-aab1-f885505a62d9")
 	)
 	(wire
 		(pts
@@ -3881,6 +5117,56 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 104.14) (xy 267.97 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34ac3a17-3a69-45da-ba98-34490984d707")
+	)
+	(wire
+		(pts
+			(xy 264.16 110.49) (xy 269.24 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34e87c0e-5bd3-4b28-9702-41a53a559ce7")
+	)
+	(wire
+		(pts
+			(xy 204.47 168.91) (xy 205.74 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3657cb40-45a5-4170-9863-1e502cb4454a")
+	)
+	(wire
+		(pts
+			(xy 270.51 144.78) (xy 271.78 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b140038-0474-4218-b295-a306b1dbe1e6")
+	)
+	(wire
+		(pts
+			(xy 248.92 59.69) (xy 248.92 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bb24baa-7ac9-4266-ae75-37b93fafbfd4")
+	)
+	(wire
+		(pts
 			(xy 55.88 76.2) (xy 50.8 76.2)
 		)
 		(stroke
@@ -3888,6 +5174,26 @@
 			(type default)
 		)
 		(uuid "3e256def-ad7b-4553-9895-6ae64ce608bd")
+	)
+	(wire
+		(pts
+			(xy 248.92 59.69) (xy 251.46 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40419542-67b1-4b4c-926a-ef69d7e69f41")
+	)
+	(wire
+		(pts
+			(xy 185.42 43.18) (xy 187.96 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41ea695a-33b8-47f5-826b-5c90ada157a0")
 	)
 	(wire
 		(pts
@@ -3901,6 +5207,56 @@
 	)
 	(wire
 		(pts
+			(xy 269.24 115.57) (xy 284.48 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4280c2a7-5a1e-4268-b6c5-8f3ec3a96df4")
+	)
+	(wire
+		(pts
+			(xy 168.91 144.78) (xy 167.64 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43bd8c6f-6726-4a75-a585-4894d1191152")
+	)
+	(wire
+		(pts
+			(xy 248.92 68.58) (xy 248.92 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cdf8fff-c29f-4cf3-90dc-dd9d2b38678b")
+	)
+	(wire
+		(pts
+			(xy 248.92 54.61) (xy 259.08 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e16d6c1-f799-4f7c-be7e-0f4ee8de2771")
+	)
+	(wire
+		(pts
+			(xy 248.92 50.8) (xy 248.92 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50434224-0c0d-4122-a93c-9b14c7505e2f")
+	)
+	(wire
+		(pts
 			(xy 111.76 128.27) (xy 111.76 130.81)
 		)
 		(stroke
@@ -3908,6 +5264,46 @@
 			(type default)
 		)
 		(uuid "50ea24fc-6900-4caf-97be-0a23093b33c3")
+	)
+	(wire
+		(pts
+			(xy 204.47 173.99) (xy 205.74 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51d96656-a1a9-4023-b07d-1ce1aec77004")
+	)
+	(wire
+		(pts
+			(xy 246.38 161.29) (xy 255.27 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5296d6fa-faf4-4492-a9a9-a69967ea64ae")
+	)
+	(wire
+		(pts
+			(xy 168.91 147.32) (xy 167.64 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "564ccbe8-99a2-491e-afa7-9fa0b118b221")
+	)
+	(wire
+		(pts
+			(xy 234.95 147.32) (xy 233.68 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57c9992c-48b8-4656-a533-38a9ff4ebd06")
 	)
 	(wire
 		(pts
@@ -3931,6 +5327,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 59.69) (xy 248.92 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "628d17d4-3cbd-41db-86c3-93910b630ed8")
+	)
+	(wire
+		(pts
 			(xy 55.88 91.44) (xy 50.8 91.44)
 		)
 		(stroke
@@ -3938,6 +5344,26 @@
 			(type default)
 		)
 		(uuid "68addae2-6774-46cb-bc2d-ea80131df907")
+	)
+	(wire
+		(pts
+			(xy 245.11 62.23) (xy 243.84 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a82a312-e66c-4541-b8a7-53d631457359")
+	)
+	(wire
+		(pts
+			(xy 199.39 71.12) (xy 199.39 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c60c122-f2be-44a8-8bc9-2558ca5a370f")
 	)
 	(wire
 		(pts
@@ -3961,6 +5387,26 @@
 	)
 	(wire
 		(pts
+			(xy 271.78 163.83) (xy 271.78 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70dfa269-cd4f-4b43-9024-6f340589321b")
+	)
+	(wire
+		(pts
+			(xy 243.84 57.15) (xy 266.7 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77aecd83-4998-481f-831b-bcec59af612a")
+	)
+	(wire
+		(pts
 			(xy 55.88 68.58) (xy 50.8 68.58)
 		)
 		(stroke
@@ -3968,6 +5414,26 @@
 			(type default)
 		)
 		(uuid "7828fc1a-b241-47ff-868c-cb63fc433642")
+	)
+	(wire
+		(pts
+			(xy 167.64 118.11) (xy 167.64 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7930fcbf-29d6-4675-b9b7-216062f3297e")
+	)
+	(wire
+		(pts
+			(xy 204.47 171.45) (xy 205.74 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "796c446f-7fcb-4e73-86c6-aee960228476")
 	)
 	(wire
 		(pts
@@ -3981,6 +5447,46 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 41.91) (xy 250.19 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79da6491-03b6-4fbe-a117-d569728f86e9")
+	)
+	(wire
+		(pts
+			(xy 266.7 54.61) (xy 276.86 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83fd37b2-6473-4af2-b78b-6ee8667eb326")
+	)
+	(wire
+		(pts
+			(xy 180.34 111.76) (xy 167.64 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "852dc814-d41e-428d-93de-ccd25e8760b4")
+	)
+	(wire
+		(pts
+			(xy 196.85 60.96) (xy 208.28 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "890d3376-912e-460e-8fc6-96d67cac15f1")
+	)
+	(wire
+		(pts
 			(xy 106.68 96.52) (xy 111.76 96.52)
 		)
 		(stroke
@@ -3988,6 +5494,26 @@
 			(type default)
 		)
 		(uuid "89480956-bce2-4a55-8f78-aec1c280a0f0")
+	)
+	(wire
+		(pts
+			(xy 237.49 161.29) (xy 237.49 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a0ed2f8-cae2-416b-9e3d-472e1d67b40c")
+	)
+	(wire
+		(pts
+			(xy 180.34 118.11) (xy 180.34 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bab6a9c-bb54-461a-8701-9812ce10c0e2")
 	)
 	(wire
 		(pts
@@ -4001,13 +5527,33 @@
 	)
 	(polyline
 		(pts
-			(xy 154.94 33.84) (xy 276.86 33.84)
+			(xy 304.8 32.08) (xy 400.05 32.08)
 		)
 		(stroke
 			(width 0.18)
 			(type default)
 		)
-		(uuid "91200bd7-8927-449b-a572-c41d66b5b8cb")
+		(uuid "8f8707d8-97de-4d41-a9b6-1f64c9161251")
+	)
+	(wire
+		(pts
+			(xy 180.34 111.76) (xy 228.6 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91861b9d-0c4f-44e1-a4c0-876f462a1077")
+	)
+	(wire
+		(pts
+			(xy 167.64 111.76) (xy 161.29 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93f854ff-b1a5-4c4d-8a57-133a14589c56")
 	)
 	(wire
 		(pts
@@ -4018,6 +5564,16 @@
 			(type default)
 		)
 		(uuid "94f66a02-908b-461e-bbca-b377a680e71d")
+	)
+	(wire
+		(pts
+			(xy 182.88 58.42) (xy 173.99 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a32524d-d4a1-43ae-8c61-08167287f775")
 	)
 	(wire
 		(pts
@@ -4041,6 +5597,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 68.58) (xy 199.39 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0107bc1-0655-4e59-9fc3-4769c92c126d")
+	)
+	(wire
+		(pts
 			(xy 55.88 73.66) (xy 50.8 73.66)
 		)
 		(stroke
@@ -4061,6 +5627,16 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 161.29) (xy 271.78 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a687a96c-8a6e-40dc-8fc7-b70e6b41d516")
+	)
+	(wire
+		(pts
 			(xy 55.88 93.98) (xy 50.8 93.98)
 		)
 		(stroke
@@ -4068,6 +5644,46 @@
 			(type default)
 		)
 		(uuid "a8d2d991-3e3d-49cb-adb5-627a2dc07062")
+	)
+	(wire
+		(pts
+			(xy 205.74 68.58) (xy 205.74 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae0027da-afe1-4b42-b02e-f093b4e6d102")
+	)
+	(wire
+		(pts
+			(xy 175.26 53.34) (xy 173.99 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aff0e566-89bd-45ab-a78f-b5353e336873")
+	)
+	(wire
+		(pts
+			(xy 194.31 109.22) (xy 176.53 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b259a334-7805-43e7-9fb0-78634b69678a")
+	)
+	(wire
+		(pts
+			(xy 234.95 144.78) (xy 233.68 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2a3a12f-5591-4c28-8b39-478a6b63d05b")
 	)
 	(wire
 		(pts
@@ -4101,6 +5717,116 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 142.24) (xy 205.74 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4683461-8e29-4664-a74c-aa2146c63411")
+	)
+	(wire
+		(pts
+			(xy 212.09 116.84) (xy 203.2 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b526b6c3-462b-4bc6-af5a-3153fb0f40dd")
+	)
+	(wire
+		(pts
+			(xy 212.09 119.38) (xy 228.6 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b62c2289-31dc-400e-a950-9ac28f7008bb")
+	)
+	(wire
+		(pts
+			(xy 168.91 171.45) (xy 167.64 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b77486c9-8267-4483-b0ef-abc9a00e19be")
+	)
+	(wire
+		(pts
+			(xy 264.16 107.95) (xy 267.97 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b867f45a-4ffe-4fc3-9b9e-80d9140aaf38")
+	)
+	(wire
+		(pts
+			(xy 187.96 52.07) (xy 187.96 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9c0a72f-94f3-4969-90a7-21b3f7bdbb19")
+	)
+	(wire
+		(pts
+			(xy 180.34 113.03) (xy 180.34 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bce406c4-222d-4284-ab2b-b973b951c9d1")
+	)
+	(wire
+		(pts
+			(xy 255.27 161.29) (xy 264.16 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be65bd0e-efbf-4c12-9b3e-faa9cc14040a")
+	)
+	(wire
+		(pts
+			(xy 255.27 171.45) (xy 255.27 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beb33a70-f598-4afe-8769-4558fdd368fe")
+	)
+	(wire
+		(pts
+			(xy 271.78 171.45) (xy 271.78 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d74a67-8acc-4661-a337-04bc71141c06")
+	)
+	(wire
+		(pts
+			(xy 248.92 69.85) (xy 250.19 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2158f9c-3294-40af-8205-f6e839e27195")
+	)
+	(wire
+		(pts
 			(xy 106.68 86.36) (xy 111.76 86.36)
 		)
 		(stroke
@@ -4121,6 +5847,86 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 113.03) (xy 167.64 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c870aa85-4f6c-4df7-a058-0a314b23891f")
+	)
+	(wire
+		(pts
+			(xy 204.47 166.37) (xy 205.74 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8834cc0-08fb-4e2b-a8d3-0062eae0ad44")
+	)
+	(wire
+		(pts
+			(xy 180.34 119.38) (xy 167.64 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9836193-5942-45fb-8b2a-5ebc8c56f426")
+	)
+	(wire
+		(pts
+			(xy 219.71 114.3) (xy 203.2 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9efe5c3-7e7b-419d-8761-669fe5998a7b")
+	)
+	(wire
+		(pts
+			(xy 205.74 63.5) (xy 205.74 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca2fc48d-5236-46b1-9ae7-da9520980f26")
+	)
+	(wire
+		(pts
+			(xy 204.47 144.78) (xy 205.74 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb85d250-f308-4928-94f6-75fb0374ee12")
+	)
+	(wire
+		(pts
+			(xy 204.47 119.38) (xy 203.2 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbff34f6-ff2a-4ed3-af70-fbb78296f6bd")
+	)
+	(wire
+		(pts
+			(xy 219.71 116.84) (xy 228.6 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd73e32c-36fa-4eab-976b-c5667382a167")
+	)
+	(wire
+		(pts
 			(xy 55.88 66.04) (xy 50.8 66.04)
 		)
 		(stroke
@@ -4128,6 +5934,76 @@
 			(type default)
 		)
 		(uuid "d0187940-261a-4820-97bd-5c7a9d432510")
+	)
+	(wire
+		(pts
+			(xy 243.84 52.07) (xy 251.46 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d02f1fe7-1b5e-436b-a256-d5eb7d0d4a20")
+	)
+	(wire
+		(pts
+			(xy 248.92 41.91) (xy 248.92 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5069bc5-0eba-4ee1-8d3b-87d5e61b6c1b")
+	)
+	(wire
+		(pts
+			(xy 190.5 58.42) (xy 208.28 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6272005-14aa-4e17-afda-53298643ec21")
+	)
+	(wire
+		(pts
+			(xy 264.16 113.03) (xy 269.24 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d64edead-63a7-421b-999f-29e2fbea8057")
+	)
+	(wire
+		(pts
+			(xy 276.86 110.49) (xy 279.4 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d65ec2b0-f1a1-4986-8792-15c90c5c350e")
+	)
+	(wire
+		(pts
+			(xy 168.91 168.91) (xy 167.64 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbb13a65-2610-4c80-9519-dee63df415a5")
+	)
+	(wire
+		(pts
+			(xy 274.32 57.15) (xy 275.59 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dde9de11-cc39-46ef-b16f-fc3013ebadea")
 	)
 	(wire
 		(pts
@@ -4141,13 +6017,13 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 118.11) (xy 58.42 118.11)
+			(xy 264.16 115.57) (xy 269.24 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e3c36556-91fa-4d24-a178-b47621494ac1")
+		(uuid "e6d0213a-1ed3-4e65-b5e7-d3c4a85cdea1")
 	)
 	(wire
 		(pts
@@ -4161,23 +6037,83 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 120.65) (xy 58.42 118.11)
+			(xy 246.38 171.45) (xy 246.38 173.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e91dff1d-72ae-4b85-922d-c0b33f0ede6c")
+		(uuid "e7f4692b-d6b2-4932-a88b-54372ee19a34")
 	)
 	(wire
 		(pts
-			(xy 58.42 128.27) (xy 58.42 130.81)
+			(xy 204.47 147.32) (xy 205.74 147.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f36e6614-430e-4477-af49-b93bf0e45c8d")
+		(uuid "e94cfe90-7ea6-43a2-8aa3-c2a6e9c315d4")
+	)
+	(wire
+		(pts
+			(xy 201.93 109.22) (xy 228.6 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efdfdace-129d-4549-9f86-7757de7596fb")
+	)
+	(wire
+		(pts
+			(xy 264.16 163.83) (xy 264.16 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3ccd2ee-ec48-498e-b318-d9ac4d47a3f9")
+	)
+	(wire
+		(pts
+			(xy 246.38 163.83) (xy 246.38 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f628d900-d916-44ed-87da-e9fda51ff5c5")
+	)
+	(wire
+		(pts
+			(xy 270.51 149.86) (xy 271.78 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f655cdb5-39a4-45a1-b76c-209a2341b98c")
+	)
+	(wire
+		(pts
+			(xy 270.51 142.24) (xy 271.78 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f81ab59a-114c-4377-be6e-13198b08f727")
+	)
+	(wire
+		(pts
+			(xy 237.49 161.29) (xy 246.38 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fab1abc2-f9fd-4304-b547-adb6e05caac7")
 	)
 	(wire
 		(pts
@@ -4191,6 +6127,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 104.14) (xy 176.53 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd6f7c85-af83-46e6-9cf9-05db05950144")
+	)
+	(wire
+		(pts
 			(xy 106.68 78.74) (xy 111.76 78.74)
 		)
 		(stroke
@@ -4198,6 +6144,148 @@
 			(type default)
 		)
 		(uuid "fdc87907-36f4-43de-8af9-6315c311fa4f")
+	)
+	(wire
+		(pts
+			(xy 237.49 161.29) (xy 236.22 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe54c2ca-75de-4625-ae99-5fa47311a3da")
+	)
+	(global_label "MCU_SD_D3"
+		(shape bidirectional)
+		(at 176.53 106.68 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "07909126-076f-41e6-a4a9-34c56922bf57")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 250.19 69.85 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "083ff160-1bf2-4f99-9871-92b897440d8d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.19 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 250.19 41.91 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "140fae1e-c614-4579-99aa-c4227203dd9e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 250.19 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 196.85 60.96 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "1a31a8c7-e224-40b3-bc54-b586cf1c25b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 196.85 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_QSPI_IO0"
+		(shape bidirectional)
+		(at 275.59 57.15 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "2081f7de-3141-4595-ad2b-fab71ecd1469")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 275.59 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_CLK_CARD"
+		(shape bidirectional)
+		(at 167.64 171.45 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "23aff9a3-3b74-46bb-aacb-690c4dd2ce10")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 	)
 	(global_label "MCU_FPGA_MOSI"
 		(shape bidirectional)
@@ -4221,6 +6309,28 @@
 			)
 		)
 	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 236.22 161.29 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2cbd3b82-8e43-49f5-ac16-a45001294787")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 236.22 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
 	(global_label "FPGA_IRQ"
 		(shape bidirectional)
 		(at 50.8 76.2 180)
@@ -4233,6 +6343,28 @@
 		(uuid "3868f32b-56af-448a-b58d-e424751f743d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 50.8 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_SD_D2"
+		(shape bidirectional)
+		(at 176.53 104.14 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "3966a598-f3ec-41dc-9ddd-7b50f9bf9d66")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4277,6 +6409,28 @@
 		(uuid "3b71dc4c-a70a-4861-b631-b54d4ef84715")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 50.8 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_CMD_CARD"
+		(shape bidirectional)
+		(at 167.64 168.91 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "3b951e79-fb80-4a6c-895d-6dd5054973fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4353,6 +6507,28 @@
 			)
 		)
 	)
+	(global_label "SD_D3_CARD"
+		(shape bidirectional)
+		(at 264.16 173.99 270)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "489912aa-78cc-4c3e-81b7-eba2b105a260")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 264.16 173.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
 	(global_label "MCU_QSPI_CLK"
 		(shape bidirectional)
 		(at 111.76 66.04 0)
@@ -4419,6 +6595,72 @@
 			)
 		)
 	)
+	(global_label "MCU_QSPI_CLK"
+		(shape bidirectional)
+		(at 173.99 58.42 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "539f058b-ba0e-4d7d-9baa-b7572d679f64")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.99 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_D3_CARD"
+		(shape bidirectional)
+		(at 233.68 147.32 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5c672997-e0f1-4909-8784-9766d66e6ad4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.68 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_CLK_CARD"
+		(shape bidirectional)
+		(at 205.74 168.91 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "5cef9efd-8fe2-49ff-b65b-ebab1c1c2ac6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.74 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
 	(global_label "HOST_ALIVE"
 		(shape bidirectional)
 		(at 50.8 78.74 180)
@@ -4431,6 +6673,50 @@
 		(uuid "5f07c452-d5ff-4495-a7fd-52adea96fc91")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 50.8 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "QSPI_IO2_M"
+		(shape bidirectional)
+		(at 276.86 54.61 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "6789aaf0-1820-4760-bbd9-6de63e66cf0c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 276.86 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_QSPI_CS_N"
+		(shape bidirectional)
+		(at 173.99 53.34 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "6bf187d8-b0ec-4652-a39b-ad8dee41fd9e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.99 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4487,6 +6773,94 @@
 	)
 	(global_label "MCU_QSPI_IO3"
 		(shape bidirectional)
+		(at 275.59 59.69 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "7ded8a86-c4dc-433e-b083-84a308cc7435")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 275.59 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_SD_CLK"
+		(shape bidirectional)
+		(at 203.2 114.3 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "80820b28-8ed9-4a99-bf53-81d402007908")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_D2_CARD"
+		(shape bidirectional)
+		(at 271.78 149.86 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "81c940bc-bf67-4c20-bea0-595f46e695af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 271.78 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 161.29 111.76 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "83494ad0-0697-4dfb-af82-ff063205ac93")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.29 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_QSPI_IO3"
+		(shape bidirectional)
 		(at 111.76 78.74 0)
 		(effects
 			(font
@@ -4497,6 +6871,72 @@
 		(uuid "8b0b0107-e793-4d8d-8cd2-0e235f6385c0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 111.76 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_D1_CARD"
+		(shape bidirectional)
+		(at 167.64 147.32 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "9c5a6224-cbad-45b2-ad20-949648d39173")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_SD_D1"
+		(shape bidirectional)
+		(at 203.2 119.38 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "a2213ea9-522f-4864-a8be-bd48eb002b51")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.2 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 271.78 147.32 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "a4941301-b751-462b-a19c-854705210307")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 271.78 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4519,6 +6959,72 @@
 		(uuid "a57753af-34e7-47b0-ac5f-f23100eaaae9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 111.76 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_D3_CARD"
+		(shape bidirectional)
+		(at 271.78 144.78 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "abb57bba-c379-46ae-9e79-295759f807f2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 271.78 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 205.74 171.45 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "b05822ee-1b57-4438-9b8c-bfca902af942")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.74 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_SD_D0"
+		(shape bidirectional)
+		(at 203.2 116.84 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "b31ee72d-2c07-415b-8f62-aa477c064da4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.2 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4573,6 +7079,94 @@
 			)
 		)
 	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 185.42 43.18 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "b6f7dc2e-826a-4250-b129-102025664ce1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.42 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 205.74 147.32 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "b7542cbb-2570-47fb-90d2-bb100092dd6c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.74 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MCU_QSPI_IO1"
+		(shape bidirectional)
+		(at 275.59 52.07 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "b788af28-5f1e-4d08-bf92-5624fab20c57")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 275.59 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SYS3V3"
+		(shape bidirectional)
+		(at 279.4 110.49 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "bb3d0c1d-dedb-4393-a3a1-3b99d5875d1d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 279.4 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
 	(global_label "HOST_WDI"
 		(shape bidirectional)
 		(at 50.8 88.9 180)
@@ -4585,6 +7179,28 @@
 		(uuid "bb8829be-a276-4033-aea4-e34c3b4b8560")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 50.8 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_D2_CARD"
+		(shape bidirectional)
+		(at 233.68 144.78 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c43e01eb-439b-49bf-b5b7-4eaa757952f8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.68 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4629,6 +7245,28 @@
 		(uuid "d22ceb7a-4d5a-4a76-955c-11ff998e58dd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 111.76 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_D1_CARD"
+		(shape bidirectional)
+		(at 246.38 173.99 270)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "d29b4bd9-6208-4567-984f-9ed879c00356")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 246.38 173.99 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4705,6 +7343,72 @@
 			)
 		)
 	)
+	(global_label "SD_D0_CARD"
+		(shape bidirectional)
+		(at 167.64 144.78 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "db90e90e-6d53-4ab2-bb76-b823a8196fff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_CMD_CARD"
+		(shape bidirectional)
+		(at 271.78 173.99 270)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "dc0e1647-9098-4c0c-a12f-dc0a0310c9cd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 271.78 173.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_D0_CARD"
+		(shape bidirectional)
+		(at 237.49 173.99 270)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "dc11e6bc-ea96-4ed2-b4bb-05fbe99c69e0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.49 173.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
 	(global_label "GLOBAL_PWR_PERMIT_HOST"
 		(shape bidirectional)
 		(at 50.8 93.98 180)
@@ -4771,6 +7475,28 @@
 			)
 		)
 	)
+	(global_label "SD_D0_CARD"
+		(shape bidirectional)
+		(at 205.74 149.86 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "e51119a9-fcc4-463c-a6c2-75627c534690")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.74 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
 	(global_label "HOST_UART_TX"
 		(shape bidirectional)
 		(at 50.8 83.82 180)
@@ -4783,6 +7509,28 @@
 		(uuid "e5869cb5-2264-4707-bbeb-09708839fb54")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 50.8 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_D1_CARD"
+		(shape bidirectional)
+		(at 205.74 144.78 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "e7b73ffa-a5e5-405d-b263-e47978425dc3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4815,18 +7563,40 @@
 			)
 		)
 	)
-	(global_label "MCU_RESET_FPGA_N"
+	(global_label "SD_D2_CARD"
 		(shape bidirectional)
-		(at 58.42 130.81 270)
+		(at 255.27 173.99 270)
 		(effects
 			(font
 				(size 0.9 0.9)
 			)
 			(justify right)
 		)
-		(uuid "eed25167-7825-41a4-ac07-84ad2427a325")
+		(uuid "ebbdba61-4b8e-4b4d-bc89-0bfcbf48fd6d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.42 130.81 90)
+			(at 255.27 173.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "SD_CMD_CARD"
+		(shape bidirectional)
+		(at 205.74 173.99 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "edc2f402-1f80-467b-8c26-4e04b2cc4d94")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.74 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4859,6 +7629,28 @@
 			)
 		)
 	)
+	(global_label "MCU_SD_CMD"
+		(shape bidirectional)
+		(at 176.53 109.22 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "fd55c4e6-2b27-4b6e-93cf-6a0413302e35")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
 	(global_label "MCU_FPGA_SCK"
 		(shape bidirectional)
 		(at 110.49 118.11 180)
@@ -4877,6 +7669,1555 @@
 			(effects
 				(font
 					(size 1 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74 166.37 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "069c0366-7c79-4df1-8300-de78cba015af")
+		(property "Reference" "#PWR021"
+			(at 212.09 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 209.55 166.3699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 205.74 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f7e6c053-6336-4d9a-8144-70acb2a505e8")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 271.78 167.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0a4d359a-2dad-4a2a-81ea-0c1314571e55")
+		(property "Reference" "R4711"
+			(at 275.78 166.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 275.78 168.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 271.78 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0747KL"
+			(at 271.78 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "47k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 271.78 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0747KL"
+			(at 271.78 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 271.78 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6344dc8f-8bbc-452b-b0f4-42581a77aa29")
+		)
+		(pin "2"
+			(uuid "8b06ca71-aed8-4c45-831e-f340ca8d5658")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4711")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:W25Q512JVEIQ_MIRA")
+		(at 226.06 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0d48d923-21c1-4e7c-82eb-56c8b312e003")
+		(property "Reference" "U4601"
+			(at 213.36 46.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "W25Q512JVEIQ"
+			(at 226.06 68.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm"
+			(at 226.06 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.winbond.com/resource-files/W25Q512JV%20SPI%20RevG%2001122022Plus.pdf"
+			(at 226.06 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "512 Mbit / 64 MiB 3.3V Quad-SPI NOR flash, WSON8 EP; Q code Quad Enable preset"
+			(at 226.06 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "W25Q512JVEIQ"
+			(at 226.06 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Winbond"
+			(at 226.06 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9a243ebd-ae0c-4850-8392-0fdd2ba3f8f6")
+		)
+		(pin "2"
+			(uuid "f8b1f2db-a0f9-4403-b07a-e3cd31a4edb8")
+		)
+		(pin "3"
+			(uuid "c1462118-90fb-4d4f-a387-8e06d01d6f8e")
+		)
+		(pin "4"
+			(uuid "b423cd51-63c6-404f-9922-c846d70afdec")
+		)
+		(pin "5"
+			(uuid "7eaef4f4-71fa-4b98-80c9-d750c19eced1")
+		)
+		(pin "6"
+			(uuid "5bc249e5-dae5-443b-b6ba-f3d0c6dbee87")
+		)
+		(pin "7"
+			(uuid "9abdefa3-394e-47e3-ad6c-820dbb666a56")
+		)
+		(pin "8"
+			(uuid "0171c9d4-a839-426e-ba3e-5e9fd2a8dbaf")
+		)
+		(pin "9"
+			(uuid "c09e1ec8-df5f-40b3-b548-bbe041ed5764")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "U4601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 237.49 167.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "12d4ee51-4de3-413b-b4ca-7726ea313ed4")
+		(property "Reference" "R4707"
+			(at 241.49 166.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 241.49 168.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 237.49 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0747KL"
+			(at 237.49 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "47k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 237.49 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0747KL"
+			(at 237.49 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 237.49 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "23cfc53f-0a68-4519-8ebe-cf06dc755974")
+		)
+		(pin "2"
+			(uuid "5a013676-46c0-4b7a-a0de-3a0a6cc25047")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4707")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74 142.24 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "196e4d05-d126-4ad1-ae67-86f5d1feb045")
+		(property "Reference" "#PWR020"
+			(at 212.09 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 209.55 142.2399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 205.74 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8167db98-5f44-4178-828a-b31d16872874")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:DM3AT_SF_PEJM5_MIRA")
+		(at 246.38 111.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "19c88edc-1eec-4521-9b50-171e0df557ea")
+		(property "Reference" "J4701"
+			(at 233.68 98.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "DM3AT-SF-PEJM5"
+			(at 246.38 125.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:microSD_HC_Hirose_DM3AT-SF-PEJM5"
+			(at 246.38 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.hirose.com/product/document?clcode=CL0609-0035-0-00&productname=DM3AT-SF-PEJM5&series=DM3&documenttype=2DDrawing&lang=en&documentid=D49371_en"
+			(at 246.38 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "microSD push-push socket, two isolated detect-switch pins 9/10, grounded shield pad11"
+			(at 246.38 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "DM3AT-SF-PEJM5"
+			(at 246.38 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Hirose"
+			(at 246.38 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4453c691-cd36-4858-a7fc-502d384a13bd")
+		)
+		(pin "2"
+			(uuid "a90a7d4c-0b5b-400f-a5e8-96c794ee74f2")
+		)
+		(pin "3"
+			(uuid "49ff422c-5b5e-47a4-8265-c4f4fdaa7fb0")
+		)
+		(pin "4"
+			(uuid "2faf94dc-0f9d-4262-9df9-4bf97f112d74")
+		)
+		(pin "5"
+			(uuid "299b4fe5-57a6-483c-9c6b-cc50eff024b5")
+		)
+		(pin "6"
+			(uuid "eb4b9f74-9a4e-4042-8a8f-d2c5036c7837")
+		)
+		(pin "7"
+			(uuid "a5867cf2-c696-4755-ba05-bb4480aff5ee")
+		)
+		(pin "8"
+			(uuid "696d3e96-e372-429b-99b3-5c67f8625af2")
+		)
+		(pin "9"
+			(uuid "d5687aa9-62fe-41c6-adfe-93a93a00e65d")
+		)
+		(pin "10"
+			(uuid "1cb59d57-ad72-45d7-91c8-0fce80c70ff7")
+		)
+		(pin "11"
+			(uuid "53beb499-8240-4720-bd98-4b226a74e6fd")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "J4701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 199.39 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "305574ed-3f58-4b3f-a132-f0ca5bb07e47")
+		(property "Reference" "C4601"
+			(at 201.93 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 201.93 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 199.39 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 199.39 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 199.39 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 199.39 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 199.39 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4601 pin 8\nVCC"
+			(at 202.39 75.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b9097de3-741e-41c4-ad27-31eb3e4509af")
+		)
+		(pin "2"
+			(uuid "cc475953-5662-4faf-9336-7039a2aef54f")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "C4601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 267.97 104.14 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33871410-d6b0-4229-af51-d6fc5a11a613")
+		(property "Reference" "#PWR018"
+			(at 267.97 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 267.97 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.97 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 267.97 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4c9e770-229f-4549-9fd2-6c9cc83e0f76")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 186.69 58.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "33d9f7ef-4041-458a-bccd-419a0d61a484")
+		(property "Reference" "R4601"
+			(at 186.6634 56.6908 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 186.6796 60.2998 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 186.69 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0733RL"
+			(at 186.69 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "33 ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 186.69 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 186.69 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 186.69 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 57"
+			(at 154.94 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ea74f9ca-1ffc-441a-9622-7390a2436454")
+		)
+		(pin "2"
+			(uuid "de242510-7408-41e0-93e6-7d2d3d8da037")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 167.64 115.57 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "38963366-ea53-4ff9-b92e-eb0532319954")
+		(property "Reference" "C4704"
+			(at 163.54 114.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 163.54 116.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "10u C, see BOM"
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM188R60J106ME47D"
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "J4701 pin 4\nVDD reservoir"
+			(at 163.83 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0bb51b9f-cfda-42a0-85ef-aa65596a4072")
+		)
+		(pin "2"
+			(uuid "a15b5324-b774-4cfc-b076-9a95ba1ef54d")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "C4704")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 190.5 106.68 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3e15807d-e9df-4296-a658-2861db7bc685")
+		(property "Reference" "R4704"
+			(at 190.5644 104.9655 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 190.5168 108.5143 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 190.5 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0733RL"
+			(at 190.5 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "33 ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 190.5 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 190.5 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 190.5 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 141"
+			(at 160.02 106.68 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "84a324de-4db2-4a76-aa51-3719a6c6c6b5")
+		)
+		(pin "2"
+			(uuid "ba1df97f-21e6-4f20-a6cc-8c048ef72a8e")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4704")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:USBLC6_2SC6_MIRA")
+		(at 252.73 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "44079804-d444-4c0e-83de-d1175244c3fd")
+		(property "Reference" "U4702"
+			(at 240.03 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "USBLC6-2SC6"
+			(at 252.73 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:SOT-23-6"
+			(at 252.73 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
+			(at 252.73 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Two-channel low-capacitance ESD protection; both ends of each protected channel tied to the same SD signal"
+			(at 252.73 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "USBLC6-2SC6"
+			(at 252.73 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 252.73 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "59e29564-eb37-49b3-b7d5-817f18cdb4e3")
+		)
+		(pin "2"
+			(uuid "b138380c-0d8e-430f-ad2b-b8303614fcbe")
+		)
+		(pin "3"
+			(uuid "07ed7331-b791-4c1a-a839-10db847263e4")
+		)
+		(pin "4"
+			(uuid "c30d3118-82b6-42c2-af04-988f20c475e2")
+		)
+		(pin "5"
+			(uuid "e1dbeeb2-4d43-4849-9446-d542c92705f4")
+		)
+		(pin "6"
+			(uuid "0c0cf859-5fc4-4357-86a5-ffd165dc307d")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "U4702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 271.78 142.24 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "498d7a8e-c492-4425-969c-00a3a59edffb")
+		(property "Reference" "#PWR019"
+			(at 278.13 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 275.59 142.2399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 271.78 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "444b6325-ab98-48a0-a056-c6a437b8a6f8")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 255.27 59.69 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4db23e9b-4733-4c1b-ac3b-78ab33f70c82")
+		(property "Reference" "R4606"
+			(at 255.2842 57.8815 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 255.2842 61.6856 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 255.27 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0733RL"
+			(at 255.27 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "33 ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 255.27 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 255.27 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 255.27 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 96"
+			(at 293.37 59.69 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "27b94bc7-c90d-4512-89e5-0ce8b1486da8")
+		)
+		(pin "2"
+			(uuid "4e2dd50a-cb42-4882-b190-8d422e2448b0")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4606")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 223.52 114.3 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "534afbef-036f-4b70-9932-3de720bcffce")
+		(property "Reference" "R4706"
+			(at 223.4849 112.4956 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 223.5629 116.1826 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 223.52 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0733RL"
+			(at 223.52 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "33 ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 223.52 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 223.52 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 223.52 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 142"
+			(at 187.96 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b2bed78-fad4-4793-aea5-3204a82da564")
+		)
+		(pin "2"
+			(uuid "d2f7a9a8-f9f0-4dd4-9f0d-d17f3455206f")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4706")
+					(unit 1)
 				)
 			)
 		)
@@ -4954,6 +9295,442 @@
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 215.9 116.84 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "61de1d7f-3a94-4046-bfab-fe75812c9886")
+		(property "Reference" "R4701"
+			(at 215.8864 115.0237 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 215.8669 118.7303 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 215.9 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0733RL"
+			(at 215.9 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "33 ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 215.9 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 215.9 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 215.9 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 124"
+			(at 187.96 116.84 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8ae0578b-bafd-477b-9133-d9f75f243eb5")
+		)
+		(pin "2"
+			(uuid "8ed24406-02f2-48c6-a9e9-0040c0adaf4e")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 205.74 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6793a630-07fa-41a1-a80e-1dd4f906563b")
+		(property "Reference" "C4602"
+			(at 208.28 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 207.01 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0402_1005Metric"
+			(at 205.74 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "1u C, see BOM"
+			(at 205.74 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM155R61A105KE15D"
+			(at 205.74 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 205.74 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4601 pin 8\nVCC"
+			(at 208.74 75.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9f1cc321-23ae-41dd-ba13-31afd7949d75")
+		)
+		(pin "2"
+			(uuid "75c00480-dfad-4aff-ae83-c5996cde7b0a")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "C4602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 273.05 110.49 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "68651859-8b93-4e90-9c87-29ed14ef4d83")
+		(property "Reference" "R4712"
+			(at 273.05 107.95 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 273.05 113.03 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 273.05 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0710KL"
+			(at 273.05 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "10k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 273.05 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0710KL"
+			(at 273.05 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 273.05 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "J4701 pin 9 / CD"
+			(at 264.16 113.03 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99a39fcb-79c1-41f6-928e-9f1f5f2a0cba")
+		)
+		(pin "2"
+			(uuid "48aa498d-a54d-470b-94fa-3418ed253744")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4712")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 264.16 167.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b24777e-4057-4623-86b4-0755a0256158")
+		(property "Reference" "R4710"
+			(at 268.16 166.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 268.16 168.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 264.16 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0747KL"
+			(at 264.16 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "47k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 264.16 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0747KL"
+			(at 264.16 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 264.16 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ed5711a4-3d18-4c2b-a904-2f5c86282c1c")
+		)
+		(pin "2"
+			(uuid "f5489eac-ab73-4e88-b96e-2fbe99f82bac")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4710")
 					(unit 1)
 				)
 			)
@@ -5072,6 +9849,306 @@
 	)
 	(symbol
 		(lib_id "MIRA_RevA:Resistor")
+		(at 179.07 53.34 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78fbcc7a-4c4a-4289-84d2-6956a2e09cf8")
+		(property "Reference" "R4602"
+			(at 179.0993 51.3502 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 179.0759 55.2362 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 179.07 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0733RL"
+			(at 179.07 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "33 ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 179.07 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 179.07 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 179.07 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 165"
+			(at 154.94 53.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0c8881ee-0ac4-4ba9-ae89-9d6cdbe621be")
+		)
+		(pin "2"
+			(uuid "e1bc1473-a276-4844-8618-67bdb9695c7d")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 245.11 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8118897a-0622-4379-a2a2-1e3cb4f419a5")
+		(property "Reference" "#PWR016"
+			(at 245.11 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 245.11 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 245.11 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8b8252ad-4290-45eb-8c36-aa1946ca7689")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 255.27 52.07 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8481bdd5-dfb4-43e8-a7b8-103e2abfeeac")
+		(property "Reference" "R4604"
+			(at 255.2699 50.2597 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 255.2309 54.0052 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 255.27 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0733RL"
+			(at 255.27 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "33 ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 255.27 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 255.27 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 255.27 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 95"
+			(at 293.37 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "af7ebaa9-20b0-4d7a-a573-dbf0c28a6f33")
+		)
+		(pin "2"
+			(uuid "478197d7-eeac-40e2-804e-d2f2dd5b5f3e")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4604")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
 		(at 88.9 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -5176,6 +10253,933 @@
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
 					(reference "R4303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 208.28 119.38 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "96ab3f4c-dfcb-4501-bea9-923481f4ea5a")
+		(property "Reference" "R4702"
+			(at 208.2731 117.6154 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 208.2866 121.246 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 208.28 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0733RL"
+			(at 208.28 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "33 ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 208.28 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 208.28 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 208.28 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 125"
+			(at 187.96 119.38 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9cb5facb-7b02-435c-96ce-9995ec99992f")
+		)
+		(pin "2"
+			(uuid "7eb4c7d2-01b1-481c-a842-e18fd2d520fa")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 182.88 104.14 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9e8d8bd6-c3f9-4b9c-866e-af54636c61ba")
+		(property "Reference" "R4703"
+			(at 182.9444 102.4255 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 182.8976 106.1008 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 182.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0733RL"
+			(at 182.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "33 ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 182.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 182.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 182.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 140"
+			(at 160.02 104.14 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "363942a5-838f-433c-ae3a-41d3a04aa258")
+		)
+		(pin "2"
+			(uuid "fd1a6a02-4f37-433c-8bf4-4f575f7c50a6")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4703")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 255.27 167.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9f1f8a4b-9b29-4d43-8842-ab3bb72ab5e1")
+		(property "Reference" "R4709"
+			(at 259.27 166.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 259.27 168.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 255.27 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0747KL"
+			(at 255.27 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "47k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 255.27 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0747KL"
+			(at 255.27 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 255.27 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "31188e2f-4823-4ccd-88f4-f45a3d623d9e")
+		)
+		(pin "2"
+			(uuid "a1689755-f885-479b-9796-8325526dbaad")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4709")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 180.34 119.38 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f6458f5-7d9b-4d42-b386-3efb14158ad8")
+		(property "Reference" "#PWR028"
+			(at 180.34 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 180.34 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 180.34 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2adf24cd-8f09-41f1-b8fd-4a509ebd080f")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 199.39 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a0aa5d11-d1e0-4417-a514-5b0696aa7e22")
+		(property "Reference" "#PWR014"
+			(at 199.39 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 195.58 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 199.39 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9aa1cc6f-12f8-4471-af85-57c9ac995bac")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 248.92 64.77 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a4706e34-5a98-4827-821b-dd462930c499")
+		(property "Reference" "R4609"
+			(at 252.73 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 252.73 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 248.92 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0710KL"
+			(at 248.92 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "10k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 248.92 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0710KL"
+			(at 248.92 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 248.92 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4601 pin 7"
+			(at 251.46 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec08616c-ed7c-4889-b46f-2b0a1fba0e02")
+		)
+		(pin "2"
+			(uuid "26a2b1d8-7e9b-44ba-a367-897e73281854")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4609")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 270.51 57.15 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a5f2e79d-ece9-4cd8-9922-c693eca7d3bd")
+		(property "Reference" "R4603"
+			(at 270.5237 55.4127 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 270.4831 59.0433 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 270.51 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0733RL"
+			(at 270.51 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "33 ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 270.51 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 270.51 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 270.51 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 94"
+			(at 293.37 57.15 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec3d8d48-dd06-45f8-a8cc-d8978b12a96b")
+		)
+		(pin "2"
+			(uuid "8132a395-580a-4945-8354-7d0a6b879258")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4603")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:USBLC6_2SC6_MIRA")
+		(at 186.69 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a91d3193-e11c-44a8-87f1-7a7eb73dd483")
+		(property "Reference" "U4701"
+			(at 173.99 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "USBLC6-2SC6"
+			(at 186.69 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:SOT-23-6"
+			(at 186.69 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
+			(at 186.69 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Two-channel low-capacitance ESD protection; both ends of each protected channel tied to the same SD signal"
+			(at 186.69 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "USBLC6-2SC6"
+			(at 186.69 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 186.69 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66023247-f18d-4f43-be4d-7f08f9810208")
+		)
+		(pin "2"
+			(uuid "6f340dab-d073-4c9c-88f4-0f8983fec1a5")
+		)
+		(pin "3"
+			(uuid "5f432617-868f-4811-979a-3cba7158c0b9")
+		)
+		(pin "4"
+			(uuid "8c1148de-0235-42be-8d4c-11f8ba179e4d")
+		)
+		(pin "5"
+			(uuid "5eb71c6a-f6da-4c68-8513-6e17345ed47c")
+		)
+		(pin "6"
+			(uuid "f048e184-9754-40c2-b358-3223c1ccc44b")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "U4701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 187.96 48.26 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a9390612-ad49-40e1-bf27-75c0034d8d75")
+		(property "Reference" "R4607"
+			(at 191.77 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 191.77 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 187.96 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0710KL"
+			(at 187.96 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "10k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 187.96 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0710KL"
+			(at 187.96 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 187.96 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4601 pin 1"
+			(at 190.5 41.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e7d4acc7-99c6-48bc-bfe4-aacab84e0fa0")
+		)
+		(pin "2"
+			(uuid "1812a1fc-63fa-4995-bc92-e8188929981e")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4607")
 					(unit 1)
 				)
 			)
@@ -5294,7 +11298,7 @@
 	)
 	(symbol
 		(lib_id "MIRA_RevA:Resistor")
-		(at 58.42 124.46 0)
+		(at 198.12 109.22 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5302,9 +11306,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ab8cc129-f8cb-4450-811f-5c827703ea61")
-		(property "Reference" "R4304"
-			(at 62.42 123.26 0)
+		(uuid "aa9f2396-1e24-491b-981c-7541473d485c")
+		(property "Reference" "R4705"
+			(at 198.1844 107.5055 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5313,8 +11317,8 @@
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 62.42 125.66 0)
+		(property "Value" "33"
+			(at 198.1376 111.1808 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5324,7 +11328,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
-			(at 58.42 124.46 0)
+			(at 198.12 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5334,8 +11338,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0710KL"
-			(at 58.42 124.46 0)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0733RL"
+			(at 198.12 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5345,8 +11349,8 @@
 				)
 			)
 		)
-		(property "Description" "10k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
-			(at 58.42 124.46 0)
+		(property "Description" "33 ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 198.12 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5356,8 +11360,8 @@
 				)
 			)
 		)
-		(property "MPN" "RC0201FR-0710KL"
-			(at 58.42 124.46 0)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 198.12 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5368,7 +11372,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 58.42 124.46 0)
+			(at 198.12 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5378,8 +11382,121 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U4101 pin 41"
-			(at 63.5 129.54 0)
+		(property "Pin assignment" "U4101 pin 145"
+			(at 160.02 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bbabb56e-02e4-4d75-a87e-73afa2a5265b")
+		)
+		(pin "2"
+			(uuid "16465481-2709-4ccc-a465-10e06d512aa4")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4705")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 180.34 115.57 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b25b3ba4-11b0-48a1-8761-a7cb53281e17")
+		(property "Reference" "C4703"
+			(at 176.24 114.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 176.24 116.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_0603Metric"
+			(at 180.34 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB"
+			(at 180.34 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%"
+			(at 180.34 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "C0603X7S1C104K030BB"
+			(at 180.34 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 180.34 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "J4701 pin 4\nVDD"
+			(at 175.26 121.92 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5389,15 +11506,205 @@
 			)
 		)
 		(pin "1"
-			(uuid "50783ecc-8433-4ca6-ba1a-5c1f5d490dde")
+			(uuid "828e910f-0766-43d0-9f2f-ce16de80af47")
 		)
 		(pin "2"
-			(uuid "d7f77914-b891-464d-9491-ccdd2b576f9e")
+			(uuid "8f9ca6e9-3bbb-4f1a-9dab-841840886d1d")
 		)
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
-					(reference "R4304")
+					(reference "C4703")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 284.48 115.57 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2ef2c45-c4d4-4539-bc7e-ad35d22c7dd7")
+		(property "Reference" "#PWR017"
+			(at 290.83 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 288.29 115.5699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 284.48 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 284.48 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 284.48 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cbc26ec9-277c-4ae5-940b-64edfb797110")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 262.89 54.61 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b2ef315f-638f-41b7-bf4b-b062ea538a86")
+		(property "Reference" "R4605"
+			(at 262.7534 52.8582 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 262.89 56.4867 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 262.89 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0733RL"
+			(at 262.89 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "33 ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 262.89 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0733RL"
+			(at 262.89 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 262.89 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4101 pin 1"
+			(at 293.37 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07603c49-f626-48f1-be93-8291bbd15dd5")
+		)
+		(pin "2"
+			(uuid "ac2386dd-d948-482c-a766-ebccbb799beb")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4605")
 					(unit 1)
 				)
 			)
@@ -6027,6 +12334,299 @@
 		)
 	)
 	(symbol
+		(lib_id "MIRA_RevA:USBLC6_2SC6_MIRA")
+		(at 186.69 170.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d5ffdf98-12b8-4047-8edf-a797f62a34e8")
+		(property "Reference" "U4703"
+			(at 173.99 161.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "USBLC6-2SC6"
+			(at 186.69 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:SOT-23-6"
+			(at 186.69 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
+			(at 186.69 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Two-channel low-capacitance ESD protection; both ends of each protected channel tied to the same SD signal"
+			(at 186.69 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "USBLC6-2SC6"
+			(at 186.69 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 186.69 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ed98c9f-0a60-485a-85d9-7e8f97ee633a")
+		)
+		(pin "2"
+			(uuid "6c064abb-1b70-4bd3-9ba0-f317938579e9")
+		)
+		(pin "3"
+			(uuid "4f75f815-a74f-4845-8fe7-34b629a555be")
+		)
+		(pin "4"
+			(uuid "6dde5ed1-9576-4b72-9c13-9099d7ff08bb")
+		)
+		(pin "5"
+			(uuid "5bffa3d7-0ab0-4827-99b7-983a4a21c8cc")
+		)
+		(pin "6"
+			(uuid "2766e980-d9ee-445f-a96f-5866845c40c5")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "U4703")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 246.38 167.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e2a15863-db70-4adf-9d45-322ab21e6c72")
+		(property "Reference" "R4708"
+			(at 250.38 166.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 250.38 168.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 246.38 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0747KL"
+			(at 246.38 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "47k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 246.38 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0747KL"
+			(at 246.38 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 246.38 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "885b16b3-df32-46b5-b525-e5e07c0b52b4")
+		)
+		(pin "2"
+			(uuid "d59a2b59-7cf6-4f73-b1de-217060a09528")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4708")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 208.28 55.88 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f146bcf7-d247-4341-b600-1d471d717fd2")
+		(property "Reference" "#PWR015"
+			(at 201.93 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 204.47 55.8799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 208.28 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3c5aaef-f93e-4502-8fb5-18b4a3432275")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 88.9 130.81 0)
 		(unit 1)
@@ -6099,6 +12699,118 @@
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 248.92 46.99 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ffae0cf5-8b32-4158-9287-624fca776fb9")
+		(property "Reference" "R4608"
+			(at 252.73 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 252.73 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 248.92 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0710KL"
+			(at 248.92 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "10k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 248.92 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0710KL"
+			(at 248.92 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 248.92 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Pin assignment" "U4601 pin 3"
+			(at 251.46 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "265b4cc8-8bc6-4cc6-be8d-64b7fbe1f79c")
+		)
+		(pin "2"
+			(uuid "7dc4c936-e6ad-41a6-b8f0-04c73d20a14b")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1"
+					(reference "R4608")
 					(unit 1)
 				)
 			)

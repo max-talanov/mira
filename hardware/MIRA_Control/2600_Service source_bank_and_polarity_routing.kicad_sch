@@ -1,0 +1,8730 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "e7c8795a-4414-4732-99eb-63b9b5a329aa")
+	(paper "A3")
+	(lib_symbols
+		(symbol "MIRA_RevA:ADG5408_MIRA_MAT"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "ADG5408"
+				(at 0 -5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "MIRA_RevA:TSSOP-16_4.4x5mm_P0.65mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "ADG5408"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "ADG5408BRUZ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Manufacturer" "Analog Devices"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "ADG5408_MIRA_MAT_1_1"
+				(rectangle
+					(start -11.43 12.7)
+					(end 11.43 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at 13.97 6.35 180)
+					(length 2.54)
+					(name "A0"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 13.97 -1.27 180)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 13.97 -6.35 180)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 8.89 0)
+					(length 2.54)
+					(name "S1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 6.35 0)
+					(length 2.54)
+					(name "S2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 3.81 0)
+					(length 2.54)
+					(name "S3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 1.27 0)
+					(length 2.54)
+					(name "S4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 8.89 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 -8.89 0)
+					(length 2.54)
+					(name "S8"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 -6.35 0)
+					(length 2.54)
+					(name "S7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 -3.81 0)
+					(length 2.54)
+					(name "S6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 -1.27 0)
+					(length 2.54)
+					(name "S5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 13.97 -3.81 180)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 13.97 -8.89 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 13.97 1.27 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 13.97 3.81 180)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MIRA_RevA:ADG5412_MIRA_MAT"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "ADG5412"
+				(at 0 -5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "MIRA_RevA:TSSOP-16_4.4x5mm_P0.65mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "ADG5412"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "ADG5412BRUZ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Manufacturer" "Analog Devices"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "ADG5412_MIRA_MAT_1_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -1.27) (xy -1.27 -1.27) (xy 3.81 1.27)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADG5412_MIRA_MAT_2_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -1.27) (xy -1.27 -1.27) (xy 3.81 1.27)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADG5412_MIRA_MAT_3_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -1.27) (xy -1.27 -1.27) (xy 3.81 1.27)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADG5412_MIRA_MAT_4_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -1.27) (xy -1.27 -1.27) (xy 3.81 1.27)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADG5412_MIRA_MAT_5_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 10.16 1.27 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 10.16 -1.27 180)
+					(length 2.54)
+					(name "NIC"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MIRA_RevA:ADG5434_MIRA_MAT"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "ADG5434"
+				(at 0 -5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "MIRA_RevA:TSSOP-20_4.4x6.5mm_P0.65mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5433_5434.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "ADG5434"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "ADG5434BRUZ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Manufacturer" "Analog Devices"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "ADG5434_MIRA_MAT_1_1"
+				(rectangle
+					(start -7.62 6.35)
+					(end 7.62 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -1.27 -2.54)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 1.27 0) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "S_A"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "S_B"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADG5434_MIRA_MAT_2_1"
+				(rectangle
+					(start -7.62 6.35)
+					(end 7.62 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -1.27 -2.54)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 1.27 0) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "S_B"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "S_A"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADG5434_MIRA_MAT_3_1"
+				(rectangle
+					(start -7.62 6.35)
+					(end 7.62 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -1.27 -2.54)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 1.27 0) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "S_A"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "S_B"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADG5434_MIRA_MAT_4_1"
+				(rectangle
+					(start -7.62 6.35)
+					(end 7.62 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -1.27 -2.54)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 1.27 0) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0.18)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "S_B"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "S_A"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ADG5434_MIRA_MAT_5_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 10.16 1.27 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 10.16 -1.27 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MIRA_RevA:Capacitor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 3.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Capacitor"
+				(at 0 -3.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Capacitor_1_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy 1.905 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -0.635) (xy 1.905 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.905)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.905)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MIRA_RevA:Resistor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 3.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Resistor"
+				(at 0 -3.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Resistor_1_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "READ / SET / RESET / FORMING SOURCE"
+		(exclude_from_sim no)
+		(at 22.86 39.37 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "035d4230-8fe5-45e4-83bd-4b8f070fdb5d")
+	)
+	(text "U8061 / POWER AND UNUSED CHANNELS"
+		(exclude_from_sim no)
+		(at 93.73 159.87 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "0a59c7a3-77f0-40ac-b049-0b48f0f455d2")
+	)
+	(text "BL / NL POLARITY BRANCHES"
+		(exclude_from_sim no)
+		(at 92.46 104.92 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "28f9dede-a2a3-4066-9a53-9d95312f5fc0")
+	)
+	(text "BL BANK SELECTOR / UPPER ADDRESS"
+		(exclude_from_sim no)
+		(at 22.62 104.92 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "314b9cba-e1f0-48ce-bc09-e4d63a54567f")
+	)
+	(text "Service source, bank and polarity routing"
+		(exclude_from_sim no)
+		(at 20.32 17.78 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left)
+		)
+		(uuid "3dd2995c-5e33-4437-9f37-b477a158331c")
+	)
+	(text "MIRA Control Rev.A  |  2600  |  Named nets connect functional blocks"
+		(exclude_from_sim no)
+		(at 20.32 24.13 0)
+		(effects
+			(font
+				(size 0.95 0.95)
+			)
+			(justify left)
+		)
+		(uuid "76b61b7a-1a61-4984-bccb-dd7a059f16c9")
+	)
+	(text "U8062 / POWER AND UNUSED CHANNEL"
+		(exclude_from_sim no)
+		(at 157.48 160.02 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "a49daf53-1e47-4699-881f-bde458e7572d")
+	)
+	(text "SOURCE WINDOW"
+		(exclude_from_sim no)
+		(at 88.9 39.37 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "ac77d8a7-8dad-48ee-a4c5-ecb7a481e286")
+	)
+	(text "SEPARATE READ / WRITE RETURNS"
+		(exclude_from_sim no)
+		(at 152.77 102.38 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "b9fa49ad-4284-4946-9b6e-ee80db3968f8")
+	)
+	(junction
+		(at 105.41 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01738353-b49a-44b8-9840-cbb8f2a71098")
+	)
+	(junction
+		(at 105.41 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05902010-035d-4ec2-a8a1-024bc484ca3c")
+	)
+	(junction
+		(at 36.83 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06f15fbd-eef1-4942-a26e-a8a8d739cfdc")
+	)
+	(junction
+		(at 166.37 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "184d390d-8136-4e6a-b8be-b55561374e3b")
+	)
+	(junction
+		(at 36.83 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26c80968-040d-463b-8910-2d87f6b0fadb")
+	)
+	(junction
+		(at 39.37 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a1943c2-0f6b-4c34-a338-f89b9806024c")
+	)
+	(junction
+		(at 105.41 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b7fa6d0-84d3-40f2-aec2-d3cbf8e48146")
+	)
+	(junction
+		(at 36.83 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2bf8eef3-7bd5-4e91-b489-3dbee10a5709")
+	)
+	(junction
+		(at 39.37 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "327365aa-bf1e-4456-a3eb-5fbf144a1d3b")
+	)
+	(junction
+		(at 167.64 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "853226d7-c1a9-429d-b158-11a4a3129b61")
+	)
+	(junction
+		(at 106.68 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "977dde08-bb0f-4404-86f4-44b9723451ec")
+	)
+	(junction
+		(at 39.37 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a3ea707-aaa4-4f9e-86b0-2f9de12f153c")
+	)
+	(junction
+		(at 36.83 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d0fc50c-19c9-4c72-94e5-5c561eddaedb")
+	)
+	(junction
+		(at 106.68 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a815c58e-237f-4184-a72e-7e23c8a033cb")
+	)
+	(junction
+		(at 36.83 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6ef35a4-1691-4073-8aca-c1ba00014e5d")
+	)
+	(junction
+		(at 105.41 205.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bae4d74a-70f5-4cc6-b562-d20fc6aaec12")
+	)
+	(junction
+		(at 167.64 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dce6dbf2-4a7a-43f0-aa5c-372a52ede6f7")
+	)
+	(no_connect
+		(at 127 208.28)
+		(uuid "21b44654-a54f-42ef-b35e-74cb55f76135")
+	)
+	(no_connect
+		(at 127 189.23)
+		(uuid "9817bd3b-c756-42dd-b9ee-42a92dfd3741")
+	)
+	(no_connect
+		(at 127 171.45)
+		(uuid "dc0acf74-0743-462e-859e-11c32abbd40b")
+	)
+	(no_connect
+		(at 187.96 187.96)
+		(uuid "e616457e-4680-4cbb-bfd9-ae8fb90ddaf8")
+	)
+	(no_connect
+		(at 187.96 171.45)
+		(uuid "ead90591-0c66-4a0a-aa7c-edc0f0921433")
+	)
+	(wire
+		(pts
+			(xy 39.37 130.81) (xy 39.37 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00141107-39fe-455b-bb22-1e6ca258cd43")
+	)
+	(wire
+		(pts
+			(xy 36.83 147.32) (xy 35.56 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05d0c0ef-cbf6-45a4-83a0-5b6002976de7")
+	)
+	(wire
+		(pts
+			(xy 36.83 147.32) (xy 36.83 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0691540b-a666-4783-98b2-3aa17058efeb")
+	)
+	(wire
+		(pts
+			(xy 165.1 186.69) (xy 166.37 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16296df1-5ccb-426c-9f57-c12f6ec5fd2c")
+	)
+	(wire
+		(pts
+			(xy 120.65 73.66) (xy 123.19 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1717f2a1-b68d-4580-a103-9ee3d0c98068")
+	)
+	(wire
+		(pts
+			(xy 105.41 205.74) (xy 106.68 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27039330-d9f0-4b49-b40a-12e305f19c2b")
+	)
+	(wire
+		(pts
+			(xy 36.83 154.94) (xy 36.83 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28a04c39-216c-4177-841a-8231608f51d6")
+	)
+	(wire
+		(pts
+			(xy 36.83 78.74) (xy 36.83 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c18167b-c273-40d2-aedd-dd07b5a23311")
+	)
+	(wire
+		(pts
+			(xy 36.83 68.58) (xy 35.56 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37a1ee2d-dce2-41a7-a3a4-9b01a8ad6e79")
+	)
+	(wire
+		(pts
+			(xy 40.64 130.81) (xy 39.37 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39c5ed1f-c6e3-4729-b987-74360c2f789c")
+	)
+	(wire
+		(pts
+			(xy 166.37 166.37) (xy 167.64 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a54da21-d47c-46b7-8619-911e2aa4421f")
+	)
+	(wire
+		(pts
+			(xy 105.41 208.28) (xy 105.41 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dad098f-be2c-4786-bad2-2e20b5964e1b")
+	)
+	(wire
+		(pts
+			(xy 106.68 208.28) (xy 105.41 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fb4ca86-aae0-4e80-b30b-c3a01dc9b276")
+	)
+	(wire
+		(pts
+			(xy 45.72 154.94) (xy 45.72 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48274c73-7273-4730-a42d-2a0ff3982c9b")
+	)
+	(wire
+		(pts
+			(xy 106.68 171.45) (xy 106.68 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "484679bf-8815-4859-b6e5-5d4880c49301")
+	)
+	(wire
+		(pts
+			(xy 185.42 135.89) (xy 182.88 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "510e9bd4-1759-4a2b-8b86-eef1545640e2")
+	)
+	(wire
+		(pts
+			(xy 104.14 186.69) (xy 105.41 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51702c8c-109f-498f-b6d7-86696b9d40d2")
+	)
+	(wire
+		(pts
+			(xy 39.37 128.27) (xy 39.37 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5199bce6-e2a2-4d01-9bfe-54198ff70643")
+	)
+	(wire
+		(pts
+			(xy 105.41 166.37) (xy 106.68 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52dd21e7-f6ec-4781-8568-9b74ec452ad1")
+	)
+	(wire
+		(pts
+			(xy 38.1 68.58) (xy 36.83 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "571f5508-a1b4-4587-a801-20628be66195")
+	)
+	(wire
+		(pts
+			(xy 36.83 66.04) (xy 36.83 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "575f51ad-4e71-4551-af99-82222e87c139")
+	)
+	(wire
+		(pts
+			(xy 162.56 171.45) (xy 167.64 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58a9845a-fe84-45f6-aa3c-55cadcbc6a21")
+	)
+	(wire
+		(pts
+			(xy 167.64 171.45) (xy 167.64 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58f92234-5edd-4d5e-96b1-6182223d2780")
+	)
+	(wire
+		(pts
+			(xy 36.83 63.5) (xy 36.83 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59252854-5707-46c6-abba-c3d458f9e6c0")
+	)
+	(wire
+		(pts
+			(xy 45.72 81.28) (xy 45.72 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ab0906f-766f-4a5d-bb8d-753bd5d742c0")
+	)
+	(wire
+		(pts
+			(xy 36.83 60.96) (xy 36.83 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d1f75bb-7599-4a0f-85fa-8ee6707ea51a")
+	)
+	(wire
+		(pts
+			(xy 105.41 205.74) (xy 105.41 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d5b1b63-d721-4b00-b9bb-2a452b942384")
+	)
+	(wire
+		(pts
+			(xy 40.64 133.35) (xy 39.37 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63bbe050-704b-4750-97ae-870d6ec32867")
+	)
+	(wire
+		(pts
+			(xy 113.03 133.35) (xy 110.49 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d75899b-db3e-4916-9c3b-4fc4dadbff6d")
+	)
+	(wire
+		(pts
+			(xy 120.65 133.35) (xy 123.19 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7213b5d9-1228-4b50-922f-dc2b7bf0c5bf")
+	)
+	(wire
+		(pts
+			(xy 105.41 186.69) (xy 105.41 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75756f73-b00d-4db0-9283-21e22b85a490")
+	)
+	(wire
+		(pts
+			(xy 106.68 189.23) (xy 105.41 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7642d47b-1b6e-4127-aa6e-6d4be591c03d")
+	)
+	(wire
+		(pts
+			(xy 193.04 128.27) (xy 195.58 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76bf2db8-d304-46ba-abd9-8af0cfbc0d22")
+	)
+	(wire
+		(pts
+			(xy 101.6 168.91) (xy 106.68 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "830a1587-9e9b-439e-a47b-10f31cab09c4")
+	)
+	(wire
+		(pts
+			(xy 39.37 135.89) (xy 38.1 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84808c2f-2f4d-43ef-a3b7-2019cfaa99c6")
+	)
+	(wire
+		(pts
+			(xy 162.56 168.91) (xy 167.64 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89fbccdd-d2a2-457d-83f1-289a9a37e5c1")
+	)
+	(wire
+		(pts
+			(xy 106.68 210.82) (xy 105.41 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9083448c-a26b-43ac-a33d-d69aad36c9e5")
+	)
+	(wire
+		(pts
+			(xy 120.65 64.77) (xy 123.19 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9086b2ea-1769-49af-ae82-9b6196192af6")
+	)
+	(wire
+		(pts
+			(xy 35.56 157.48) (xy 36.83 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90d587b9-d4f3-4629-99fd-190a30a4d89c")
+	)
+	(wire
+		(pts
+			(xy 105.41 186.69) (xy 106.68 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94ee40b6-8ee4-49ef-a02c-aa90ff720bbe")
+	)
+	(wire
+		(pts
+			(xy 167.64 166.37) (xy 167.64 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "960b525b-1db5-4a49-bb11-ca7bd0df2cdd")
+	)
+	(wire
+		(pts
+			(xy 185.42 128.27) (xy 182.88 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "991a2bf1-1a17-480c-964d-1e70c1ccf568")
+	)
+	(wire
+		(pts
+			(xy 113.03 73.66) (xy 110.49 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e3edb79-b528-495e-b978-64a6f7b55669")
+	)
+	(wire
+		(pts
+			(xy 166.37 186.69) (xy 167.64 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0286870-5b2e-4b9a-bccd-c8abf4b2e631")
+	)
+	(wire
+		(pts
+			(xy 39.37 133.35) (xy 39.37 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1852dbe-3fc3-4312-adf9-cf407f334bc1")
+	)
+	(wire
+		(pts
+			(xy 40.64 135.89) (xy 39.37 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5ac48a8-c3b5-4232-b777-e64731e80a16")
+	)
+	(wire
+		(pts
+			(xy 106.68 166.37) (xy 106.68 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a60656ea-9d4c-4053-8c6c-0d2f2df6db02")
+	)
+	(wire
+		(pts
+			(xy 45.72 149.86) (xy 45.72 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8504420-9cc2-4126-9e7e-3f2413435a7c")
+	)
+	(wire
+		(pts
+			(xy 36.83 88.9) (xy 45.72 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14663fa-94d2-4c55-b452-7d9288376ab1")
+	)
+	(wire
+		(pts
+			(xy 36.83 157.48) (xy 45.72 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b366e9cf-13ba-4654-b26d-97277294d656")
+	)
+	(wire
+		(pts
+			(xy 38.1 60.96) (xy 36.83 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b85e6c5d-1fb4-4ff3-ae59-67d99c1711ce")
+	)
+	(wire
+		(pts
+			(xy 35.56 88.9) (xy 36.83 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdd0d7f1-9508-48be-bbcf-b4ce1e515445")
+	)
+	(wire
+		(pts
+			(xy 40.64 128.27) (xy 39.37 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c620f623-e01c-4b2b-8392-fa03125f18bb")
+	)
+	(wire
+		(pts
+			(xy 45.72 86.36) (xy 45.72 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c69f8e94-73e6-4acd-b50f-4fac11d5c10e")
+	)
+	(wire
+		(pts
+			(xy 166.37 173.99) (xy 167.64 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc880f2d-50e4-4c5c-beda-5be25ab4c543")
+	)
+	(wire
+		(pts
+			(xy 36.83 78.74) (xy 35.56 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0919d1f-9abf-48df-92ad-214f89d25a00")
+	)
+	(wire
+		(pts
+			(xy 38.1 63.5) (xy 36.83 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1e7beba-7f95-43c4-b8a3-67b6a21d1db0")
+	)
+	(wire
+		(pts
+			(xy 104.14 205.74) (xy 105.41 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d74885d4-bbcb-44ea-8742-379abe26c0f7")
+	)
+	(wire
+		(pts
+			(xy 101.6 171.45) (xy 106.68 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd68f67d-8616-4c45-909b-2070b10de26d")
+	)
+	(wire
+		(pts
+			(xy 38.1 66.04) (xy 36.83 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfb55b21-d01c-4755-a205-724bdfd4376a")
+	)
+	(wire
+		(pts
+			(xy 193.04 135.89) (xy 195.58 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2046922-b248-487f-bb66-27f46a392aff")
+	)
+	(wire
+		(pts
+			(xy 167.64 189.23) (xy 166.37 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3df5fea-6e81-4589-a45c-cab7fadc1e8d")
+	)
+	(wire
+		(pts
+			(xy 166.37 186.69) (xy 166.37 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e707a6c9-131d-4840-8b59-538150f8857f")
+	)
+	(wire
+		(pts
+			(xy 106.68 191.77) (xy 105.41 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e710f34a-ad04-45bb-a1a2-e5b497065198")
+	)
+	(wire
+		(pts
+			(xy 105.41 173.99) (xy 106.68 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed36d0c0-3b5a-4563-8d6d-4cb35d134669")
+	)
+	(wire
+		(pts
+			(xy 105.41 189.23) (xy 105.41 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee1fcf9a-1506-4476-835f-a59cbbd56fc4")
+	)
+	(wire
+		(pts
+			(xy 36.83 86.36) (xy 36.83 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f93c7f49-47dd-4f3d-b553-bfd9058b63e9")
+	)
+	(wire
+		(pts
+			(xy 113.03 64.77) (xy 110.49 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcedaac4-41f5-4686-8c12-dc108263e8cf")
+	)
+	(global_label "MAT_SOURCE"
+		(shape bidirectional)
+		(at 106.68 149.86 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "001c8348-760d-4295-bd4b-ada8afa9769b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_TIA_IN"
+		(shape bidirectional)
+		(at 187.96 118.11 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "041b52e4-e56a-4042-b201-90a19ff3af62")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.96 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_RETURN"
+		(shape bidirectional)
+		(at 106.68 147.32 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "0602a07a-8862-4755-be12-1404989f6d3e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_SRC_A1"
+		(shape bidirectional)
+		(at 66.04 55.88 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "09b9d561-ee0d-484a-b659-600521b4cf09")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "P15"
+		(shape bidirectional)
+		(at 35.56 147.32 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "0a50f3cc-625c-4141-9a99-4a819c68a217")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 35.56 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "P15"
+		(shape bidirectional)
+		(at 35.56 78.74 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "107bac9e-0919-40e2-9eee-01eb91eeb166")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 35.56 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_SOURCE"
+		(shape bidirectional)
+		(at 123.19 64.77 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "15132076-b3f7-4b1c-8c72-d4625477db91")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.19 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_RETURN"
+		(shape bidirectional)
+		(at 106.68 121.92 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "1c54e77b-2aea-419d-a77b-b57091718687")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "N15"
+		(shape bidirectional)
+		(at 68.58 133.35 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "23d76d70-dc35-4b83-bbf7-87ca9eb34402")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_BL_BANK_2"
+		(shape bidirectional)
+		(at 40.64 123.19 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "34d6f10d-345f-43f0-8efd-b464225ccb15")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.64 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_READ_SAFE"
+		(shape bidirectional)
+		(at 182.88 128.27 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "3f2f0880-fd14-435b-9784-f7401258c973")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.88 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_BL_A4"
+		(shape bidirectional)
+		(at 68.58 123.19 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "49f7961b-2e52-4fd4-a593-517dcc85276c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_SERVICE_SAFE"
+		(shape bidirectional)
+		(at 68.58 128.27 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "4bf57b3c-c061-4c05-bd01-b81aa9545ef9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_BL_BANK_1"
+		(shape bidirectional)
+		(at 40.64 120.65 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "50014f8f-b94c-43b0-82d8-9944125e1396")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.64 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_SRC_A0"
+		(shape bidirectional)
+		(at 66.04 53.34 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "50b2d916-6399-46d6-bc09-6d60995b7ff5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_POLARITY"
+		(shape bidirectional)
+		(at 106.68 116.84 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "53d9bd86-c906-42a2-af17-7c312079bd0b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_SRC_SELECTED"
+		(shape bidirectional)
+		(at 106.68 53.34 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5c4be3e6-a3b7-4be7-a6d2-e43d3dd6f437")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_WRITE_RETURN"
+		(shape bidirectional)
+		(at 187.96 146.05 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "61f35f52-5684-46b1-be4d-aea6c2951c4a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.96 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_RETURN"
+		(shape bidirectional)
+		(at 123.19 73.66 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "753b4209-0bab-4285-b83e-f1c8fe386d07")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.19 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_BL_SERVICE"
+		(shape bidirectional)
+		(at 127 119.38 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "7852e6f5-f8c5-4edb-8ea6-368d3b0c5873")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 127 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_SOURCE_SAFE"
+		(shape bidirectional)
+		(at 106.68 50.8 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "7f507c5b-6696-4789-ae5e-cf7eda8566c9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_SERVICE_SAFE"
+		(shape bidirectional)
+		(at 66.04 60.96 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "84cbc891-e22f-40b5-8686-f36d6e08ed0f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_NL_SERVICE"
+		(shape bidirectional)
+		(at 127 147.32 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "8821b221-1c14-4ee4-963e-e6707f11a5e8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 127 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_BL_A3"
+		(shape bidirectional)
+		(at 68.58 120.65 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "8bfab182-4778-42a7-b967-098a86834d41")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "VSET_SRC"
+		(shape bidirectional)
+		(at 38.1 53.34 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "8fdcf54b-26f2-405d-a5de-e50ea72c8921")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.1 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_SOURCE"
+		(shape bidirectional)
+		(at 106.68 119.38 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "906cca38-5d57-422b-8b9b-11fc0b681264")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "VRESET_SRC"
+		(shape bidirectional)
+		(at 38.1 55.88 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "9509b1b3-0543-4cb1-9a7c-65be61b84234")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.1 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "VFORM_SRC"
+		(shape bidirectional)
+		(at 38.1 58.42 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "958cafcc-434a-4f9d-8227-c9f4add9557a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.1 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_WRITE_SAFE"
+		(shape bidirectional)
+		(at 167.64 144.78 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "9db47656-38a0-46a3-96cc-afa3991f7ada")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_RETURN"
+		(shape bidirectional)
+		(at 167.64 119.38 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "9ed6f531-94cc-4eb3-810d-f28919037980")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_POLARITY"
+		(shape bidirectional)
+		(at 106.68 144.78 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "9f8e396a-3134-4d2e-a2e6-6ddc95c1b7e1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.68 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_SOURCE"
+		(shape bidirectional)
+		(at 127 52.07 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "a060235f-4e2c-480b-b281-56bdba699e22")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 127 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "P15"
+		(shape bidirectional)
+		(at 66.04 63.5 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "ab64d68a-2164-43eb-8dbc-551b37500abd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_WRITE_SAFE"
+		(shape bidirectional)
+		(at 182.88 135.89 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "b56a9df5-97fd-4159-bb61-1a58542ddfe0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.88 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_BL_BANK_0"
+		(shape bidirectional)
+		(at 40.64 118.11 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "bcdf597e-a8e4-48bd-bf4e-eefa43983522")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.64 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "N15"
+		(shape bidirectional)
+		(at 45.72 78.74 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c5335d3d-cad3-4c6e-a8dd-6aa4db8a0347")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.72 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_SRC_SELECTED"
+		(shape bidirectional)
+		(at 66.04 50.8 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "cdddb854-d090-480d-9ce6-5f08d2e9c10c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "N15"
+		(shape bidirectional)
+		(at 101.6 171.45 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "d52dce8d-38d2-4c5f-8a12-73d1a59a4104")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "VREAD_SRC"
+		(shape bidirectional)
+		(at 38.1 50.8 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "d54074dd-2ea0-48a4-a49a-7fa3e63c5458")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.1 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "N15"
+		(shape bidirectional)
+		(at 45.72 147.32 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "db8a64a3-6f9e-447b-959e-67f383292439")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.72 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_BL_SERVICE"
+		(shape bidirectional)
+		(at 68.58 118.11 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "dbd3faac-ec4e-4fc1-b277-e1a91314df79")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "P15"
+		(shape bidirectional)
+		(at 101.6 168.91 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "dee89eee-b868-44a5-a7bc-9a15984339b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "P15"
+		(shape bidirectional)
+		(at 162.56 168.91 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "df05964a-fbfe-46d9-9793-36101f6faf17")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 162.56 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_BL_BANK_3"
+		(shape bidirectional)
+		(at 40.64 125.73 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "e2fbdf83-7ec6-4a5b-98f4-7dc9c7de2dd7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 40.64 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_READ_SAFE"
+		(shape bidirectional)
+		(at 167.64 116.84 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "e6dcca61-fd9c-4073-bb5f-20992fc4835d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_POLARITY"
+		(shape bidirectional)
+		(at 110.49 133.35 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "eca44283-6fdc-4c09-af42-416e2fcd30d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 110.49 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_RETURN"
+		(shape bidirectional)
+		(at 167.64 147.32 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "ecb5a717-1a1e-46ef-94ac-72c05e68a4f6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "P15"
+		(shape bidirectional)
+		(at 68.58 130.81 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "f400abc9-1f28-4b07-b2c1-dad8cf855dad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.58 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "N15"
+		(shape bidirectional)
+		(at 66.04 66.04 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "f4df8942-ff56-4d0a-b067-92a80e70cc2f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "N15"
+		(shape bidirectional)
+		(at 162.56 171.45 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "fe2edabd-dd78-47c5-814a-0a61aa5a100a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 162.56 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 189.23 128.27 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00814eb0-dc5e-43d3-ad21-7c3c376b41ac")
+		(property "Reference" "R8963"
+			(at 189.23 125.73 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 189.23 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 189.23 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0710KL"
+			(at 189.23 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "10k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 189.23 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0710KL"
+			(at 189.23 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 189.23 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b4ae879-d72d-486e-a612-47c63cceecb7")
+		)
+		(pin "2"
+			(uuid "250f5353-8450-43d2-9776-ec38e0b98051")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "R8963")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 100.33 166.37 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "04a6e8ea-bc31-4beb-92c8-d7ac68e11689")
+		(property "Reference" "#PWR0311"
+			(at 93.98 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 166.37 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 100.33 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "184756bc-41c7-4428-aefd-94b24340f509")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR0311")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 100.33 173.99 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "07b4fe27-a700-4fe4-bb2e-c8f8344f709a")
+		(property "Reference" "#PWR0312"
+			(at 93.98 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 173.99 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 100.33 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "354d3a2a-f1a7-40ea-97ce-7b490b0dd14f")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR0312")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 68.58 125.73 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0b5b1f5b-7544-4f2a-af5a-d2aada0ae217")
+		(property "Reference" "#PWR02300055"
+			(at 74.93 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 125.73 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0188f8b4-bd82-4451-82c1-f553e2a6d6b0")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR02300055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 35.56 157.48 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0e228436-510e-4cd2-8c2c-e9881600c632")
+		(property "Reference" "#PWR02300053"
+			(at 29.21 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 157.48 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 35.56 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "978610f3-129f-44a4-a10a-48cb9720ee5f")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR02300053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 102.87 166.37 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "10f7b081-dc87-4155-9b96-a357a25291cd")
+		(property "Reference" "C8092"
+			(at 105.41 163.83 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 105.41 165.1 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 102.87 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100n rail bypass, 35 V minimum"
+			(at 102.87 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 102.87 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 102.87 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f74bdf02-63f8-482d-8395-56dc5f1de2c5")
+		)
+		(pin "2"
+			(uuid "86103f8b-e968-4fb3-9af6-d39ae85b89b6")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "C8092")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 110.49 73.66 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1faaa62f-7824-47fa-8194-adaccfba54d6")
+		(property "Reference" "#PWR02300058"
+			(at 104.14 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 73.66 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "37587dc3-3690-4122-bfdd-ce77537c1891")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR02300058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 104.14 205.74 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "21bc1eee-2677-45eb-b1d4-28d36b63591f")
+		(property "Reference" "#PWR0314"
+			(at 97.79 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 205.74 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 205.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "acd82381-3646-4fb5-829d-25f27a3f4f46")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR0314")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 36.83 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "26540d22-0790-4605-a4e1-3b659a8bd745")
+		(property "Reference" "C8090"
+			(at 40.64 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 40.64 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 36.83 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100n rail bypass, 35 V minimum"
+			(at 36.83 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 36.83 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 36.83 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "efeb30a1-d712-4337-a459-3dd23c5dceaf")
+		)
+		(pin "2"
+			(uuid "1e11e061-a960-496e-ba58-30955f4b1f67")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "C8090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:ADG5434_MIRA_MAT")
+		(at 116.84 189.23 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "32227225-84d7-4957-ab3e-4ae62994c5f4")
+		(property "Reference" "U8061"
+			(at 111.76 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "ADG5434"
+			(at 116.84 196.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 116.84 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5433_5434.pdf"
+			(at 116.84 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "ADG5434"
+			(at 116.84 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ADG5434BRUZ"
+			(at 116.84 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 116.84 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "11"
+			(uuid "8f370ac2-217f-408c-9ad3-1de5c19f67e8")
+		)
+		(pin "12"
+			(uuid "2e0617de-1869-4e49-a07f-45ebac532a96")
+		)
+		(pin "14"
+			(uuid "7391b45b-353b-4d6e-81dc-45c450b4ac3b")
+		)
+		(pin "13"
+			(uuid "a8ac4cf9-910e-44c4-922b-ddcd6cbbe9eb")
+		)
+		(pin "1"
+			(uuid "03e2316a-e73c-4b6b-b453-089cce2a83e5")
+		)
+		(pin "2"
+			(uuid "0326a866-413b-44d5-ae5b-f26e7be47dd5")
+		)
+		(pin "3"
+			(uuid "c5d703c3-31c0-4280-9598-d7fb0835d49d")
+		)
+		(pin "4"
+			(uuid "3a0cd9e7-917f-4d4f-985c-e58a6ab329ff")
+		)
+		(pin "7"
+			(uuid "8c588f5c-3a74-4470-a3ed-912c77438728")
+		)
+		(pin "8"
+			(uuid "7a0203fa-cfff-4768-a291-c5b01b40afb2")
+		)
+		(pin "9"
+			(uuid "fc57db24-60cf-4201-a71f-caea9b8583fa")
+		)
+		(pin "10"
+			(uuid "43677a47-e0f7-4653-ad69-cc7b31f13310")
+		)
+		(pin "17"
+			(uuid "c56dce29-ee53-4d71-89f0-34c322522dad")
+		)
+		(pin "18"
+			(uuid "fd5ab038-672e-43ce-8761-b5b536dd30c3")
+		)
+		(pin "19"
+			(uuid "b291c4d6-968b-4cb5-b375-7bf9a82ac3f3")
+		)
+		(pin "20"
+			(uuid "64f59ce5-0aed-4e8b-b149-466b27676b45")
+		)
+		(pin "5"
+			(uuid "f9d2d2d6-f04f-4b2d-a737-fc46ebb1ac9c")
+		)
+		(pin "6"
+			(uuid "03562f6e-bd03-43d9-aa54-d0651992cf09")
+		)
+		(pin "15"
+			(uuid "11bd4c00-172b-464e-9b0e-e998936761eb")
+		)
+		(pin "16"
+			(uuid "8cdd6aa3-6282-4189-9f18-6d1da38b096d")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "U8061")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:ADG5434_MIRA_MAT")
+		(at 116.84 147.32 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "386b81dc-9f99-42fc-a246-40b3630f1e55")
+		(property "Reference" "U8061"
+			(at 111.76 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "ADG5434"
+			(at 116.84 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 116.84 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5433_5434.pdf"
+			(at 116.84 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "ADG5434"
+			(at 116.84 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ADG5434BRUZ"
+			(at 116.84 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 116.84 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "10"
+			(uuid "9b5e6d6a-1441-431c-bbea-beaaf7ddb46e")
+		)
+		(pin "9"
+			(uuid "bf0ebba9-4a3e-4512-a303-2f723f890feb")
+		)
+		(pin "7"
+			(uuid "222ebe46-d43d-42fb-b306-bd24bc28b676")
+		)
+		(pin "8"
+			(uuid "f509d486-d49f-43d3-bdf3-ccbd8158b92c")
+		)
+		(pin "1"
+			(uuid "d9488236-0a6e-4c76-8db5-1e1f2999be0d")
+		)
+		(pin "2"
+			(uuid "9359003e-b53c-4d2a-aa30-43a707250651")
+		)
+		(pin "3"
+			(uuid "75b420e6-f5df-4a07-a74d-bd386ee2b050")
+		)
+		(pin "4"
+			(uuid "0c143a4a-f9cd-4420-8b62-2094d9a05611")
+		)
+		(pin "11"
+			(uuid "f605b0a8-d005-4ac5-a296-4620a42daf4c")
+		)
+		(pin "12"
+			(uuid "6a861807-e1f4-493b-b862-456d10d2fe79")
+		)
+		(pin "13"
+			(uuid "75363ef5-4a48-43f7-b001-19c945c2c3ec")
+		)
+		(pin "14"
+			(uuid "5c1fbd0f-457a-4076-b529-262a6176b11e")
+		)
+		(pin "17"
+			(uuid "f0193799-1815-4679-bfac-32118ced8ac0")
+		)
+		(pin "18"
+			(uuid "5ed30336-58a5-4581-8d20-44c648f16eaf")
+		)
+		(pin "19"
+			(uuid "5c5ed46b-9a11-4d1a-b1e2-e7ff7d19dd56")
+		)
+		(pin "20"
+			(uuid "15efcb53-c00c-40a6-bb7d-07e42c256e77")
+		)
+		(pin "5"
+			(uuid "fed878f1-2721-44d6-8e07-6035196fd016")
+		)
+		(pin "6"
+			(uuid "cd22f5fa-0b7b-46ce-9a0d-17a7ad62de55")
+		)
+		(pin "15"
+			(uuid "b322044e-ea10-4543-9e1a-55a0d6e817ae")
+		)
+		(pin "16"
+			(uuid "1a0f0621-030a-4364-bb87-9889e16e55b8")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "U8061")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 102.87 173.99 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "464fa9b8-90ee-4fa2-9bf1-8cae073f7c0d")
+		(property "Reference" "C8093"
+			(at 105.41 175.26 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 105.41 176.53 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 102.87 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100n rail bypass, 35 V minimum"
+			(at 102.87 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 102.87 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 102.87 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4fd24be4-994c-4d92-b0c8-634379748c14")
+		)
+		(pin "2"
+			(uuid "b4859e66-d9c6-481a-a592-eee9d6be6269")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "C8093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 163.83 166.37 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "538e0b4b-c353-4906-b84f-a7d93ada177c")
+		(property "Reference" "C8094"
+			(at 166.37 163.83 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 166.37 165.1 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 163.83 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100n rail bypass, 35 V minimum"
+			(at 163.83 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 163.83 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 163.83 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c22b78e8-ce53-4cfd-868b-de550ff9909d")
+		)
+		(pin "2"
+			(uuid "375fc163-d2fd-406a-86f5-5d816f99f760")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "C8094")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:ADG5434_MIRA_MAT")
+		(at 116.84 170.18 0)
+		(unit 5)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5c9c7271-cef0-499d-90ed-24f7f4fcc82a")
+		(property "Reference" "U8061"
+			(at 111.76 163.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "ADG5434"
+			(at 116.84 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 116.84 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5433_5434.pdf"
+			(at 116.84 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "ADG5434"
+			(at 116.84 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ADG5434BRUZ"
+			(at 116.84 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 116.84 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "16"
+			(uuid "a1b98ee9-8b00-4c47-adc0-77bcbc2b2f42")
+		)
+		(pin "5"
+			(uuid "ea0ac92f-2cdd-4b30-957e-9e20d60fb34f")
+		)
+		(pin "6"
+			(uuid "44e57e22-376b-4563-be29-3816a7d7f551")
+		)
+		(pin "15"
+			(uuid "f99e7cdb-550e-4c10-a5d6-b6fbede9bbd3")
+		)
+		(pin "1"
+			(uuid "f98ead65-592d-425a-8115-dd916a82c7a4")
+		)
+		(pin "2"
+			(uuid "c3442d40-a304-4b4e-ae5a-b900f2bab947")
+		)
+		(pin "3"
+			(uuid "7d91ca31-1704-4edc-9e8b-78fb3cee14b1")
+		)
+		(pin "4"
+			(uuid "2760de96-6cfd-4332-8bc3-a9f683a7d001")
+		)
+		(pin "7"
+			(uuid "2bc9645d-2fdd-4bea-8966-9d0fe5cf8fe2")
+		)
+		(pin "8"
+			(uuid "d0f7eab0-885f-45e5-9928-9313270de357")
+		)
+		(pin "9"
+			(uuid "638afa51-1f44-41f0-a209-fb4638329c97")
+		)
+		(pin "10"
+			(uuid "d84ab34b-b1ec-4f6e-a8a2-f9f16cdfcae3")
+		)
+		(pin "11"
+			(uuid "23a8e69c-699f-4b3f-9bd4-ffacbbc8a61e")
+		)
+		(pin "12"
+			(uuid "01d8a598-ed52-4829-bfb1-ccb2c33f890a")
+		)
+		(pin "13"
+			(uuid "6a09012c-9e23-4181-bf0e-d0d8fdf39768")
+		)
+		(pin "14"
+			(uuid "f1927a9f-0fba-4f00-b633-3eb8c25e4464")
+		)
+		(pin "17"
+			(uuid "843279e7-6fd5-4dea-8a03-6e57e5b6179d")
+		)
+		(pin "18"
+			(uuid "79852319-d745-4dfe-9b8b-e93beda9a211")
+		)
+		(pin "19"
+			(uuid "398ba24a-5fa1-4959-bb4f-bdd9dd173a81")
+		)
+		(pin "20"
+			(uuid "32a0124c-0e19-4e61-bb8f-364144b73f93")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "U8061")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 36.83 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5f6c179c-7470-45e4-9312-be28d8c7ea84")
+		(property "Reference" "C8086"
+			(at 40.64 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 40.64 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 36.83 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100n rail bypass, 35 V minimum"
+			(at 36.83 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 36.83 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 36.83 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07a48a22-d1c8-4e3c-95bb-aa0fd791dff0")
+		)
+		(pin "2"
+			(uuid "70d06e67-7746-4a2d-9371-ff40acb9d1e4")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "C8086")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 195.58 135.89 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "61ed560d-6760-47b1-b8a7-28bfcf7d0ff1")
+		(property "Reference" "#PWR0316"
+			(at 201.93 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 135.89 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 195.58 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f3ca3348-3061-4c4d-9991-07ac29028780")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR0316")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 186.69 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "640f72be-058a-42e3-9e19-ff2dfd0143c0")
+		(property "Reference" "#PWR0320"
+			(at 158.75 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 186.69 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df9ab2bd-f702-43e0-bb03-86e50d214e2b")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR0320")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:ADG5412_MIRA_MAT")
+		(at 177.8 187.96 0)
+		(unit 4)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "69451473-97dd-45f6-bea0-cf141d3a3f62")
+		(property "Reference" "U8062"
+			(at 172.72 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "ADG5412"
+			(at 177.8 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:TSSOP-16_4.4x5mm_P0.65mm"
+			(at 177.8 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf"
+			(at 177.8 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "ADG5412"
+			(at 177.8 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ADG5412BRUZ"
+			(at 177.8 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 177.8 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "8"
+			(uuid "5e72163d-bcec-445b-b40e-108b84c7bc7f")
+		)
+		(pin "6"
+			(uuid "11c20d0f-44e6-49cd-9b64-e1f828ce5a32")
+		)
+		(pin "7"
+			(uuid "acc782e0-48db-4286-a4b2-d85da5fed43f")
+		)
+		(pin "1"
+			(uuid "05678d25-5f77-4bcd-955c-0a62ecc383ce")
+		)
+		(pin "2"
+			(uuid "614403f3-0e47-40fd-a0e8-4319f0fbe92e")
+		)
+		(pin "3"
+			(uuid "54e201d4-d44e-4550-9059-b54d82e963e6")
+		)
+		(pin "14"
+			(uuid "30a03057-870b-4680-ae97-63b311247275")
+		)
+		(pin "15"
+			(uuid "96806e8f-d0fe-4180-a8a3-782a71ebc5cd")
+		)
+		(pin "16"
+			(uuid "3e7810a3-dd7a-459b-bf20-67b95b5c1687")
+		)
+		(pin "9"
+			(uuid "40799f72-0620-4f2f-adc0-e1dc81160cc1")
+		)
+		(pin "10"
+			(uuid "16939665-7fa1-4a7b-99ae-466dce892421")
+		)
+		(pin "11"
+			(uuid "f94232f3-4984-467b-adb0-7d6e062deea2")
+		)
+		(pin "4"
+			(uuid "3467012a-63a1-4dd1-8874-1a4f7cab174e")
+		)
+		(pin "5"
+			(uuid "b0da71cb-3dba-4a4f-8ca8-b09f9e6e43c2")
+		)
+		(pin "12"
+			(uuid "db639c12-b3bc-47ec-bd5c-4217601fabc9")
+		)
+		(pin "13"
+			(uuid "73b80478-f92c-4036-8621-ac0c6e21e1b5")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "U8062")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 123.19 133.35 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6a3641e8-184e-451c-a893-508a7451f36d")
+		(property "Reference" "#PWR02300059"
+			(at 129.54 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.27 133.35 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.19 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e130e904-b52a-41ce-8536-50c2af16752d")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR02300059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 116.84 64.77 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b06aeaa-383c-46a6-9f44-a6d78ee2d4a1")
+		(property "Reference" "R8149"
+			(at 116.84 62.23 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "1M"
+			(at 116.84 67.31 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 116.84 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-071ML"
+			(at 116.84 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "1M ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 116.84 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-071ML"
+			(at 116.84 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 116.84 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9e3f118d-a447-4751-96a3-a52ccfc2bf16")
+		)
+		(pin "2"
+			(uuid "0fe05a8e-7ee1-4c81-852f-610089b060e2")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "R8149")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:ADG5408_MIRA_MAT")
+		(at 52.07 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6c47d941-b5e1-43ef-818e-98d99b15a8f3")
+		(property "Reference" "U8060"
+			(at 43.18 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "ADG5408"
+			(at 52.07 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:TSSOP-16_4.4x5mm_P0.65mm"
+			(at 52.07 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf"
+			(at 52.07 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "ADG5408"
+			(at 52.07 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ADG5408BRUZ"
+			(at 52.07 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 52.07 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "fddf6ec9-eda1-4e50-a79a-1e15823513bf")
+		)
+		(pin "5"
+			(uuid "0adbb7af-0d49-4f42-9669-9342ac37b5ee")
+		)
+		(pin "6"
+			(uuid "8af87487-321e-47af-87ca-2e93dcccbc35")
+		)
+		(pin "7"
+			(uuid "ce93cc1d-b7d2-4f67-b794-bc42e7ad37e9")
+		)
+		(pin "12"
+			(uuid "d906718f-18fb-4dba-bbfa-cbfbbf4b625d")
+		)
+		(pin "11"
+			(uuid "450a9fc2-4b0f-464f-844e-a48c52fc3640")
+		)
+		(pin "10"
+			(uuid "b5176c02-fcb9-4130-ad42-427325117fe6")
+		)
+		(pin "9"
+			(uuid "c2648472-1271-456a-bf0b-1809635a0cbf")
+		)
+		(pin "8"
+			(uuid "a8877e01-a210-4d88-b6cf-96e40519feb2")
+		)
+		(pin "1"
+			(uuid "4c44ce53-214d-40d3-bd83-d426625a9b03")
+		)
+		(pin "16"
+			(uuid "edf264c6-e6f1-4460-b182-860f98695643")
+		)
+		(pin "15"
+			(uuid "5d33a01c-0f3a-4222-9f8e-9d4baa13fdb3")
+		)
+		(pin "2"
+			(uuid "c74b326a-ab18-482b-8038-91a3f6c04448")
+		)
+		(pin "13"
+			(uuid "b1795cea-2439-418a-a2b2-5e40b5ef7b7b")
+		)
+		(pin "3"
+			(uuid "97cc3329-927f-4d99-a0b9-a6c31866d2ef")
+		)
+		(pin "14"
+			(uuid "3bb5685f-ea14-4f41-8d5d-bc933460f0be")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "U8060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:ADG5412_MIRA_MAT")
+		(at 177.8 170.18 0)
+		(unit 5)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "71edb0d8-c726-48ec-8b0f-bc24d183ad06")
+		(property "Reference" "U8062"
+			(at 172.72 163.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "ADG5412"
+			(at 177.8 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:TSSOP-16_4.4x5mm_P0.65mm"
+			(at 177.8 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf"
+			(at 177.8 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "ADG5412"
+			(at 177.8 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ADG5412BRUZ"
+			(at 177.8 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 177.8 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "13"
+			(uuid "cdbef6ca-5408-4701-bdaf-40c5898984f9")
+		)
+		(pin "4"
+			(uuid "3037e6f5-abfc-46bf-bed7-2fc37922c04e")
+		)
+		(pin "5"
+			(uuid "a2fa6ff5-f897-42db-8d31-e8dac725b572")
+		)
+		(pin "12"
+			(uuid "6d49a4da-23bd-4c23-bb4c-1166d8474b1a")
+		)
+		(pin "1"
+			(uuid "7d7a5e84-b7e4-4a89-be96-3c88647c9272")
+		)
+		(pin "2"
+			(uuid "8c1b0c1e-fb69-41b7-85ea-63c6cfe2b446")
+		)
+		(pin "3"
+			(uuid "2e3befaf-1157-4f61-b354-d09fb0c0bcab")
+		)
+		(pin "14"
+			(uuid "35fe8714-ddf1-46bd-9517-316337989420")
+		)
+		(pin "15"
+			(uuid "6c48cf24-a01a-42d1-bfb8-9dcefc1569e9")
+		)
+		(pin "16"
+			(uuid "d639ebcc-a678-4b1c-b47a-f2c7eb54a3c7")
+		)
+		(pin "9"
+			(uuid "4a219862-b2ef-4466-8911-6db84d7021c3")
+		)
+		(pin "10"
+			(uuid "bd19859b-124b-449c-b64e-03f66adb4d52")
+		)
+		(pin "11"
+			(uuid "787979e7-21d7-4317-951b-dc13fc5d09d0")
+		)
+		(pin "6"
+			(uuid "bb54e8f0-4970-42e0-a6ee-8891e0125933")
+		)
+		(pin "7"
+			(uuid "32aaa070-d6bd-44b4-a7ed-0d353c5842bb")
+		)
+		(pin "8"
+			(uuid "5cc008a6-f083-49fe-8c9e-09ff95d30c42")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "U8062")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 189.23 135.89 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "77a9da28-a944-4755-846d-59d6c0d61b28")
+		(property "Reference" "R8964"
+			(at 189.23 133.35 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 189.23 138.43 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 189.23 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0710KL"
+			(at 189.23 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "10k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 189.23 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0710KL"
+			(at 189.23 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 189.23 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e1fe807c-6810-4184-b035-aa92f1d772b6")
+		)
+		(pin "2"
+			(uuid "7bca2b29-c493-4221-b4f2-36654a7b150c")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "R8964")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 45.72 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "783b55d8-2fce-483f-b433-d5cc4e7f9393")
+		(property "Reference" "C8087"
+			(at 49.53 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 49.53 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100n rail bypass, 35 V minimum"
+			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 45.72 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f4f47945-5e09-49b5-a686-5b7247feea92")
+		)
+		(pin "2"
+			(uuid "02457d3d-6650-4659-98cc-6863d4da06b1")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "C8087")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:ADG5434_MIRA_MAT")
+		(at 116.84 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7da99f9d-b944-4c25-a8b6-05cbaa95956d")
+		(property "Reference" "U8061"
+			(at 111.76 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "ADG5434"
+			(at 116.84 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 116.84 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5433_5434.pdf"
+			(at 116.84 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "ADG5434"
+			(at 116.84 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ADG5434BRUZ"
+			(at 116.84 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 116.84 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5bea93cf-8bf2-49bc-8d33-10dcf17324e8")
+		)
+		(pin "2"
+			(uuid "d31bb6d1-5bb1-4713-bc78-4df9ae49bc56")
+		)
+		(pin "4"
+			(uuid "617e08bb-ffef-4b36-87ac-c06d039cccbc")
+		)
+		(pin "3"
+			(uuid "b603c146-2f5d-4f34-914e-61c8d25c830c")
+		)
+		(pin "7"
+			(uuid "fc8adcac-2118-4c74-abc8-aa48ac406c86")
+		)
+		(pin "8"
+			(uuid "95c42a1c-480b-48e9-9199-c875b5f16c15")
+		)
+		(pin "9"
+			(uuid "151d2771-1e90-4770-9dca-345a8a327a60")
+		)
+		(pin "10"
+			(uuid "098da49e-6556-4fa7-8f29-691dc4328282")
+		)
+		(pin "11"
+			(uuid "52713c57-5c3d-4826-8ea9-ef429793a164")
+		)
+		(pin "12"
+			(uuid "210c72a1-a9c6-45cd-ab90-c6868d4007d3")
+		)
+		(pin "13"
+			(uuid "5977b260-bbd6-4933-8f76-cb8d00dc4f10")
+		)
+		(pin "14"
+			(uuid "05113600-33c0-4d6e-89cf-a1f3ce3ab4a4")
+		)
+		(pin "17"
+			(uuid "fba56da3-e373-48f4-acae-f1dbe1cc3e60")
+		)
+		(pin "18"
+			(uuid "744e9b1b-7bf3-4556-b93c-a2b8359d8674")
+		)
+		(pin "19"
+			(uuid "cbd286c6-3d68-4ea6-b8a9-567f85632c98")
+		)
+		(pin "20"
+			(uuid "8097ce5a-1a21-49e0-a046-540d232acc9d")
+		)
+		(pin "5"
+			(uuid "3c2f5233-b2eb-4b26-9961-0f07420a29f8")
+		)
+		(pin "6"
+			(uuid "721425d3-9955-420a-8a42-29de35b5bf9b")
+		)
+		(pin "15"
+			(uuid "507905ce-41a4-4b94-9665-6c2f80d68531")
+		)
+		(pin "16"
+			(uuid "fb2df6b8-4f30-407c-9bf0-8a7477917d08")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "U8061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 110.49 64.77 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7daea6df-041a-4c96-a0c7-a1428a13c373")
+		(property "Reference" "#PWR02300057"
+			(at 104.14 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 64.77 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b97dc994-7b42-47a8-ac95-eea7bbca4d64")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR02300057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:ADG5408_MIRA_MAT")
+		(at 54.61 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e871095-d054-4f86-9a40-b00c29cc134c")
+		(property "Reference" "U8053"
+			(at 45.72 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "ADG5408"
+			(at 54.61 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:TSSOP-16_4.4x5mm_P0.65mm"
+			(at 54.61 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf"
+			(at 54.61 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "ADG5408"
+			(at 54.61 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ADG5408BRUZ"
+			(at 54.61 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 54.61 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "fd60a3df-7d36-4661-8f98-590b0d04c8f6")
+		)
+		(pin "5"
+			(uuid "3ba10757-b19a-4d38-b6dc-d232561ef57d")
+		)
+		(pin "6"
+			(uuid "9c73a4d3-9c23-413c-9adf-70723a9c93dd")
+		)
+		(pin "7"
+			(uuid "b0777997-5805-4590-949a-bb7af44f736a")
+		)
+		(pin "12"
+			(uuid "3a192206-ec20-4532-a35a-948b076eb54d")
+		)
+		(pin "11"
+			(uuid "83231072-dbce-401c-9598-337c4a18c594")
+		)
+		(pin "10"
+			(uuid "2d2986b9-dde7-4311-a2b1-dfd86f8f03cb")
+		)
+		(pin "9"
+			(uuid "9fade564-175d-42e5-aeb3-49bf8c763a6d")
+		)
+		(pin "8"
+			(uuid "357f1f3f-e92f-4061-bd55-be591adb272c")
+		)
+		(pin "1"
+			(uuid "2d5929ad-377f-4684-9dda-0d926bdc6e28")
+		)
+		(pin "16"
+			(uuid "790ccd76-5e35-49bd-a87d-a1950b267e20")
+		)
+		(pin "15"
+			(uuid "7b89b263-3698-452f-ac4d-6e4d05fc1896")
+		)
+		(pin "2"
+			(uuid "50203a61-ad82-4e10-9246-83d744418a0e")
+		)
+		(pin "13"
+			(uuid "3f00e382-8159-4899-bb15-ff21978a4c34")
+		)
+		(pin "3"
+			(uuid "304cbcad-1030-4e02-9edc-d2c94413b472")
+		)
+		(pin "14"
+			(uuid "b9cfcd18-2821-4f64-91ad-83814a9440b0")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "U8053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 35.56 88.9 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "835295d2-3a34-4264-83f6-c6f64d6535be")
+		(property "Reference" "#PWR02300052"
+			(at 29.21 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 35.56 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5dabfbbd-93d8-4a46-8a07-a0e526ba2b10")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR02300052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 45.72 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "84dff40e-fddd-46f7-848e-4821b02456d4")
+		(property "Reference" "C8091"
+			(at 49.53 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 49.53 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 45.72 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100n rail bypass, 35 V minimum"
+			(at 45.72 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 45.72 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 45.72 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3b1ec5f9-7fcc-4129-971b-8490030a3309")
+		)
+		(pin "2"
+			(uuid "62445aa8-7b91-4fe3-9771-4a9ab8b33305")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "C8091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Capacitor")
+		(at 163.83 173.99 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8518060a-e619-4a77-bbb0-f7618a209a95")
+		(property "Reference" "C8095"
+			(at 166.37 175.26 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 166.37 176.53 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0603_1608Metric"
+			(at 163.83 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100n rail bypass, 35 V minimum"
+			(at 163.83 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 163.83 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 163.83 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5ebdf57b-a14e-44a4-a9f7-62dac4d345c1")
+		)
+		(pin "2"
+			(uuid "037339b2-8834-43fb-829e-b13f34fadcad")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "C8095")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 104.14 186.69 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "89d1bfda-8bd1-4512-8fae-616af2fd9be1")
+		(property "Reference" "#PWR0313"
+			(at 97.79 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 186.69 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6ebc5528-b0d8-4c2e-b991-8d758a9fec66")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR0313")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.29 166.37 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "993fcf7a-d881-4392-bc75-55d6ed8323f5")
+		(property "Reference" "#PWR0317"
+			(at 154.94 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 156.21 166.37 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 161.29 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b6cf3e59-b077-4fdd-a050-6fcb76ac4529")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR0317")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 68.58 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a6c3fb90-50ac-448b-83cc-a6c129cf5db1")
+		(property "Reference" "#PWR02300051"
+			(at 72.39 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 71.12 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.04 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8f487aaa-df1e-4cb6-9627-162213591f6d")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR02300051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 168.91 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ad77cb5c-c965-4ead-89dc-8c4c0dfe2da6")
+		(property "Reference" "#PWR02300060"
+			(at 133.35 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 168.91 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73b4e598-8d23-468b-8e60-bd196a0990ec")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR02300060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 135.89 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "af5378df-c970-4075-ac5d-44459e603404")
+		(property "Reference" "#PWR02300054"
+			(at 31.75 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.02 135.89 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3c774364-3457-47e6-9304-c1cf6c90422d")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR02300054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 58.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bb9951fe-06d4-40af-9845-5416edfdf244")
+		(property "Reference" "#PWR02300050"
+			(at 72.39 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 71.12 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.04 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "93a29653-2173-4966-879d-2b11de0cc15e")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR02300050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 116.84 133.35 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bfbfe860-706b-453b-8522-7ff445d86a78")
+		(property "Reference" "R8965"
+			(at 116.84 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 116.84 135.89 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 116.84 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0710KL"
+			(at 116.84 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "10k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 116.84 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-0710KL"
+			(at 116.84 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 116.84 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "275481bb-1da4-4a71-9cfe-98d48c533b7e")
+		)
+		(pin "2"
+			(uuid "2d9caa88-6129-4a67-9d51-fe4247858cb2")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "R8965")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:ADG5412_MIRA_MAT")
+		(at 177.8 118.11 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c11d4a0e-1290-4be4-a97f-e6012d876b91")
+		(property "Reference" "U8062"
+			(at 172.72 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "ADG5412"
+			(at 177.8 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:TSSOP-16_4.4x5mm_P0.65mm"
+			(at 177.8 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf"
+			(at 177.8 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "ADG5412"
+			(at 177.8 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ADG5412BRUZ"
+			(at 177.8 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 177.8 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "16"
+			(uuid "a43f7e43-9107-45c5-8791-c0a95deac4e7")
+		)
+		(pin "14"
+			(uuid "e0647446-defa-4e7c-900f-d1872b91442b")
+		)
+		(pin "15"
+			(uuid "2cd3b708-8606-41df-b65d-d54e418bef05")
+		)
+		(pin "1"
+			(uuid "d0dc7442-497b-4eb8-825b-9512dc04d2e7")
+		)
+		(pin "2"
+			(uuid "fb3ee1c0-b809-4881-a750-4d882930da1b")
+		)
+		(pin "3"
+			(uuid "e0bd365e-705f-4a2d-9966-8287e00ea283")
+		)
+		(pin "9"
+			(uuid "34673028-4c49-4d93-b24e-890fa7dec94a")
+		)
+		(pin "10"
+			(uuid "5818e157-6889-4729-8ed5-f6c499ac722d")
+		)
+		(pin "11"
+			(uuid "75b71a89-46ab-440f-a743-512c63d6e4a9")
+		)
+		(pin "6"
+			(uuid "1ee11b7d-3285-46d7-9f95-055af66f57e8")
+		)
+		(pin "7"
+			(uuid "f669a224-690d-4952-8965-5deff4c4db4f")
+		)
+		(pin "8"
+			(uuid "4b12a0cf-05c4-4389-897e-c574a33ae394")
+		)
+		(pin "4"
+			(uuid "fc28effc-2e7a-4071-a504-3b35edefcf67")
+		)
+		(pin "5"
+			(uuid "2498a115-9ef4-41ea-aade-2153ad173fa0")
+		)
+		(pin "12"
+			(uuid "356f97a7-b949-4802-87c3-c0b3d5950aa1")
+		)
+		(pin "13"
+			(uuid "1d62dbe0-a504-479a-8df4-db4f7267dae2")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "U8062")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 116.84 73.66 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c935a2c2-2807-4149-8445-8518ea72fbbe")
+		(property "Reference" "R8150"
+			(at 116.84 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "1M"
+			(at 116.84 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 116.84 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-071ML"
+			(at 116.84 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "1M ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 116.84 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-071ML"
+			(at 116.84 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 116.84 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "205ae065-d691-4540-8328-e55354c3ac7e")
+		)
+		(pin "2"
+			(uuid "6375d6a5-89f5-44d2-8a5f-fe8130c19a4a")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "R8150")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 68.58 135.89 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ca9bc197-8d39-4be9-9d09-e463cd1f0182")
+		(property "Reference" "#PWR02300056"
+			(at 74.93 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 135.89 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "896dd5fd-ef18-48b7-88cd-07de3f7a9c05")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR02300056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.96 168.91 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cb2bc292-0478-4ce7-b720-8615e50a5055")
+		(property "Reference" "#PWR0319"
+			(at 194.31 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 193.04 168.91 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 187.96 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fd80d278-198d-44c2-8452-dd5727f7d692")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR0319")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:ADG5412_MIRA_MAT")
+		(at 177.8 146.05 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d4977627-3ebc-4637-9853-282159d29c5b")
+		(property "Reference" "U8062"
+			(at 172.72 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "ADG5412"
+			(at 177.8 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:TSSOP-16_4.4x5mm_P0.65mm"
+			(at 177.8 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf"
+			(at 177.8 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "ADG5412"
+			(at 177.8 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ADG5412BRUZ"
+			(at 177.8 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 177.8 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "7b31732f-a809-4ed6-918a-20d2e65722df")
+		)
+		(pin "11"
+			(uuid "cabdeae4-1313-46c9-a7f7-daa92fa6b2a0")
+		)
+		(pin "10"
+			(uuid "66fa37ad-3556-45c4-9a08-17123a6cdd0a")
+		)
+		(pin "1"
+			(uuid "1e119dd4-5a20-4201-80f3-e8a4c427fd1a")
+		)
+		(pin "2"
+			(uuid "9241ad96-00b0-4bda-9b1b-93145134f083")
+		)
+		(pin "3"
+			(uuid "5baca190-961c-4e6b-b040-fca9c732c5eb")
+		)
+		(pin "14"
+			(uuid "37bcd1bd-e2c8-4c21-beba-b2cc2545717f")
+		)
+		(pin "15"
+			(uuid "8505c97b-f9bd-4ba8-8816-5883d7e1c88e")
+		)
+		(pin "16"
+			(uuid "02fd966c-b057-4a6b-adf9-91e1e485e7d1")
+		)
+		(pin "6"
+			(uuid "e53a8d9b-4904-4f22-a048-7ce25fb0ba53")
+		)
+		(pin "7"
+			(uuid "b82f8d3b-10d6-422a-b70f-1c9dd1dbadaf")
+		)
+		(pin "8"
+			(uuid "f05e3f3a-5161-4b40-9dee-9f4f21bd1ed6")
+		)
+		(pin "4"
+			(uuid "1bd48356-4564-4a3b-8ec9-22e16b1b7cc8")
+		)
+		(pin "5"
+			(uuid "ef6786a5-e092-43d4-af9b-d176b84e9a94")
+		)
+		(pin "12"
+			(uuid "8315464b-dff6-49bc-adb9-e6153c8f2d2a")
+		)
+		(pin "13"
+			(uuid "c9904689-2dd0-4343-8ef5-52d7b27a711e")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "U8062")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.29 173.99 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d50dbd41-7a5d-4afc-89c9-9d0332be80ac")
+		(property "Reference" "#PWR0318"
+			(at 154.94 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 156.21 173.99 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 161.29 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e1b2f40-9165-4cb6-bea1-d180ed0abef0")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR0318")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:ADG5434_MIRA_MAT")
+		(at 116.84 208.28 0)
+		(unit 4)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ed9dba69-d08f-41cb-a9d9-4520a48775ec")
+		(property "Reference" "U8061"
+			(at 111.76 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "ADG5434"
+			(at 116.84 215.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 116.84 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5433_5434.pdf"
+			(at 116.84 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "ADG5434"
+			(at 116.84 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ADG5434BRUZ"
+			(at 116.84 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 116.84 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "20"
+			(uuid "19748698-e99a-4098-a011-0f6abdf2bf6a")
+		)
+		(pin "19"
+			(uuid "b882a37b-8ad1-41a8-9794-ffa666484c7a")
+		)
+		(pin "17"
+			(uuid "afff0d61-4457-41c1-a3e0-41b75ffb5833")
+		)
+		(pin "18"
+			(uuid "6a1e9567-e775-4d44-8bbd-60cd9586ff62")
+		)
+		(pin "1"
+			(uuid "6b74ef1d-2755-4639-b55c-3f8114391304")
+		)
+		(pin "2"
+			(uuid "0701b495-4aed-448e-8f07-89aab70ad757")
+		)
+		(pin "3"
+			(uuid "702c85fd-99ec-4de9-9c05-92925d6cfe27")
+		)
+		(pin "4"
+			(uuid "f312eb38-068f-4da4-923f-028e9d394087")
+		)
+		(pin "7"
+			(uuid "fc141afd-c31a-49ed-80b8-ce1f15915c15")
+		)
+		(pin "8"
+			(uuid "51d5d63e-d655-4f03-8c0e-ad32deda5289")
+		)
+		(pin "9"
+			(uuid "fa780ef8-a993-41a7-9d60-ef8fbcc52df0")
+		)
+		(pin "10"
+			(uuid "a0a235e2-7820-4baf-a59d-191af66fcd9d")
+		)
+		(pin "11"
+			(uuid "18863ba7-bbbf-4d4b-9698-bc1e14ff8960")
+		)
+		(pin "12"
+			(uuid "ec33c89b-42d3-4fc4-bed8-d558c21e2f45")
+		)
+		(pin "13"
+			(uuid "ef6ce6e3-de65-4b0a-a839-1b883500d69d")
+		)
+		(pin "14"
+			(uuid "1823b982-152d-48cd-b969-8c8c725cd0ed")
+		)
+		(pin "5"
+			(uuid "0a6dbac9-ca23-4900-80c0-62d7a3836748")
+		)
+		(pin "6"
+			(uuid "c493a200-d110-49b7-bc63-bc88b293d859")
+		)
+		(pin "15"
+			(uuid "f4b857d6-e39b-45d9-83ce-34e7e23f9bc6")
+		)
+		(pin "16"
+			(uuid "39a04f76-695e-4e5a-a77e-fd6aa3668a5c")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "U8061")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 195.58 128.27 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ee542c6c-9d29-4a7d-8d4a-5d64275fae8d")
+		(property "Reference" "#PWR0315"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 128.27 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 195.58 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb723d78-9591-48a4-8348-cec6f2c69f0c")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR0315")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 35.56 68.58 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f8176437-b8d7-4e02-a4a0-57fbc19e293a")
+		(property "Reference" "#PWR02300049"
+			(at 29.21 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 35.56 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2cd3ed87-fdcd-4c6d-934c-f4260f23d597")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "#PWR02300049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:ADG5412_MIRA_MAT")
+		(at 116.84 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fff0aae8-8ce7-4980-bcba-c45b5dd77dca")
+		(property "Reference" "U8062"
+			(at 111.76 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "ADG5412"
+			(at 116.84 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:TSSOP-16_4.4x5mm_P0.65mm"
+			(at 116.84 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf"
+			(at 116.84 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "ADG5412"
+			(at 116.84 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ADG5412BRUZ"
+			(at 116.84 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Analog Devices"
+			(at 116.84 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "25e42250-ae0e-4888-b1f8-5b604a3b4053")
+		)
+		(pin "3"
+			(uuid "55a5cd27-ab40-4ce4-a2bc-d07bb77edd0b")
+		)
+		(pin "2"
+			(uuid "3caef91f-ce1e-4454-b855-a54559f5513f")
+		)
+		(pin "14"
+			(uuid "be20cfc2-269f-4449-846d-12039645141e")
+		)
+		(pin "15"
+			(uuid "87aee832-90ef-4737-9fe2-ff967a9791b8")
+		)
+		(pin "16"
+			(uuid "e98002c1-6b76-4b52-a835-c8f6db561d9a")
+		)
+		(pin "9"
+			(uuid "8d8b891c-d682-4a23-89dc-d7df613342e5")
+		)
+		(pin "10"
+			(uuid "6bccde0e-98a7-44a1-9ebe-154420f8bb99")
+		)
+		(pin "11"
+			(uuid "9534873d-6257-4d23-b73b-840f8eb0ae53")
+		)
+		(pin "6"
+			(uuid "4739608d-082c-429a-99bc-d514fd867bf8")
+		)
+		(pin "7"
+			(uuid "3141b98a-2be4-4953-a533-8da58934ef63")
+		)
+		(pin "8"
+			(uuid "128e9e9d-a468-4053-b870-4acf11f1da05")
+		)
+		(pin "4"
+			(uuid "b672212d-601d-4fad-98fc-ea9a81ba040e")
+		)
+		(pin "5"
+			(uuid "0bee1c3e-e96e-4131-a68e-7ffefd496e12")
+		)
+		(pin "12"
+			(uuid "3057b130-3720-4961-8820-4a30535ddadc")
+		)
+		(pin "13"
+			(uuid "2d6be2da-4ed2-4a42-acf1-a16d583bba86")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/0d8739bf-c5d1-4e27-8610-4094c4c8abcd"
+					(reference "U8062")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

@@ -1,0 +1,4362 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "2c7a2d5e-ac87-4211-a28c-d393e10d12ce")
+	(paper "A3")
+	(lib_symbols
+		(symbol "MIRA_RevA:Bias_jumper_MIRA_MAT"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Bias jumper"
+				(at 0 -5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "MIRA_RevA:PinHeader_1x03_P2.54mm_Vertical"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Bias jumper"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "Generic1x3header"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Manufacturer" "Generic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "Bias_jumper_MIRA_MAT_1_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "MATRIX_CONTACT"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "BIAS"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MIRA_RevA:Matrix_adapter_2x32_MIRA_MAT"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Matrix adapter 2x32"
+				(at 0 -5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "MIRA_RevA:PinHeader_2x32_P2.54mm_Vertical"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Standard 2x32 carrier interface; source-map numbering, no invented matrix package"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "Generic2x32header"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Manufacturer" "Generic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "Matrix_adapter_2x32_MIRA_MAT_1_1"
+				(rectangle
+					(start -7.62 43.18)
+					(end 7.62 -43.18)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -10.16 39.37 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 36.83 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 34.29 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 31.75 0)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 29.21 0)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 26.67 0)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 24.13 0)
+					(length 2.54)
+					(name "7"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 21.59 0)
+					(length 2.54)
+					(name "8"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 19.05 0)
+					(length 2.54)
+					(name "9"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 16.51 0)
+					(length 2.54)
+					(name "10"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 13.97 0)
+					(length 2.54)
+					(name "11"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 11.43 0)
+					(length 2.54)
+					(name "12"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 8.89 0)
+					(length 2.54)
+					(name "13"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 6.35 0)
+					(length 2.54)
+					(name "14"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 3.81 0)
+					(length 2.54)
+					(name "15"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "16"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "17"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -3.81 0)
+					(length 2.54)
+					(name "18"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -6.35 0)
+					(length 2.54)
+					(name "19"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -8.89 0)
+					(length 2.54)
+					(name "20"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -11.43 0)
+					(length 2.54)
+					(name "21"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -13.97 0)
+					(length 2.54)
+					(name "22"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -16.51 0)
+					(length 2.54)
+					(name "23"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -19.05 0)
+					(length 2.54)
+					(name "24"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -21.59 0)
+					(length 2.54)
+					(name "25"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -24.13 0)
+					(length 2.54)
+					(name "26"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -26.67 0)
+					(length 2.54)
+					(name "27"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -29.21 0)
+					(length 2.54)
+					(name "28"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -31.75 0)
+					(length 2.54)
+					(name "29"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -34.29 0)
+					(length 2.54)
+					(name "30"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -36.83 0)
+					(length 2.54)
+					(name "31"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -39.37 0)
+					(length 2.54)
+					(name "32"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Matrix_adapter_2x32_MIRA_MAT_2_1"
+				(rectangle
+					(start -7.62 43.18)
+					(end 7.62 -43.18)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -10.16 39.37 0)
+					(length 2.54)
+					(name "33"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 36.83 0)
+					(length 2.54)
+					(name "34"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 34.29 0)
+					(length 2.54)
+					(name "35"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 31.75 0)
+					(length 2.54)
+					(name "36"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 29.21 0)
+					(length 2.54)
+					(name "37"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 26.67 0)
+					(length 2.54)
+					(name "38"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 24.13 0)
+					(length 2.54)
+					(name "39"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 21.59 0)
+					(length 2.54)
+					(name "40"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 19.05 0)
+					(length 2.54)
+					(name "41"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 16.51 0)
+					(length 2.54)
+					(name "42"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 13.97 0)
+					(length 2.54)
+					(name "43"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 11.43 0)
+					(length 2.54)
+					(name "44"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 8.89 0)
+					(length 2.54)
+					(name "45"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 6.35 0)
+					(length 2.54)
+					(name "46"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 3.81 0)
+					(length 2.54)
+					(name "47"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "48"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "49"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -3.81 0)
+					(length 2.54)
+					(name "50"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "50"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -6.35 0)
+					(length 2.54)
+					(name "51"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "51"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -8.89 0)
+					(length 2.54)
+					(name "52"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "52"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -11.43 0)
+					(length 2.54)
+					(name "53"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "53"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -13.97 0)
+					(length 2.54)
+					(name "54"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "54"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -16.51 0)
+					(length 2.54)
+					(name "55"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "55"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -19.05 0)
+					(length 2.54)
+					(name "56"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "56"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -21.59 0)
+					(length 2.54)
+					(name "57"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "57"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -24.13 0)
+					(length 2.54)
+					(name "58"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "58"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -26.67 0)
+					(length 2.54)
+					(name "59"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "59"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -29.21 0)
+					(length 2.54)
+					(name "60"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "60"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -31.75 0)
+					(length 2.54)
+					(name "61"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "61"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -34.29 0)
+					(length 2.54)
+					(name "62"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "62"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -36.83 0)
+					(length 2.54)
+					(name "63"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "63"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -39.37 0)
+					(length 2.54)
+					(name "64"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "64"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MIRA_RevA:Resistor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 3.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Resistor"
+				(at 0 -3.5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Resistor_1_1"
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "Matrix adapter and bias configuration"
+		(exclude_from_sim no)
+		(at 22.86 20.955 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+			)
+			(justify left)
+		)
+		(uuid "026b4804-6df0-4f0f-a35c-d068caecc9ad")
+	)
+	(text "J8001 / Contacts 33-64"
+		(exclude_from_sim no)
+		(at 86.36 37.465 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "54d32c4f-292e-4ccb-b2f2-cb4907cfcdf8")
+	)
+	(text "Case / Select GND or bias"
+		(exclude_from_sim no)
+		(at 142.24 76.835 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "5c91da57-85d9-443f-b64e-d9295ca2eb50")
+	)
+	(text "BL routing: 2200-2500\nWL drivers: 2700   |   NL selection / clamps: 2800\nMATRIX_BIAS_SRC: 1800\n\nJ8001A and J8001B are units of the same connector.\nBL0-BL15 use contacts 64-49 in reverse contact order.\nVSUB: contact 40   |   CASE: contact 48\nUnused NC contacts are not permanent GND."
+		(exclude_from_sim no)
+		(at 142.24 125.73 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "a453485d-1b64-45d3-a1a0-a4fcf5074f9b")
+	)
+	(text "J8001 / Contacts 1-32"
+		(exclude_from_sim no)
+		(at 22.86 37.465 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "a532471e-a890-4233-bbb0-f94a9f7b609b")
+	)
+	(text "MIRA Control Rev.A  |  3300  |  Named nets connect functional blocks"
+		(exclude_from_sim no)
+		(at 22.86 27.305 0)
+		(effects
+			(font
+				(size 0.95 0.95)
+			)
+			(justify left)
+		)
+		(uuid "cc3fef5c-3435-478e-a379-fe1b1d34186a")
+	)
+	(text "Substrate / Select GND or bias"
+		(exclude_from_sim no)
+		(at 142.24 37.465 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left)
+		)
+		(uuid "f8f4637a-1d93-4080-b258-5c067afc324d")
+	)
+	(junction
+		(at 182.88 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49a9508a-2612-48db-b58b-8f54272081ad")
+	)
+	(junction
+		(at 182.88 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "830a2e16-0274-4a3c-b0d6-4613101ff500")
+	)
+	(no_connect
+		(at 36.83 86.36)
+		(uuid "0268c3d1-e8cc-42d7-9242-3e6d9cec20d4")
+	)
+	(no_connect
+		(at 36.83 76.2)
+		(uuid "15ad74cd-aaf2-44c0-85eb-5f65c0021b0b")
+	)
+	(no_connect
+		(at 36.83 83.82)
+		(uuid "358e5335-a754-4f0d-84c2-7fa7c654ceb4")
+	)
+	(no_connect
+		(at 100.33 50.8)
+		(uuid "4029d160-b30a-42d2-b4de-7d2cd9344521")
+	)
+	(no_connect
+		(at 36.83 78.74)
+		(uuid "64bc7d38-877c-4a62-a736-b83f349275ea")
+	)
+	(no_connect
+		(at 100.33 53.34)
+		(uuid "732a3e98-41f6-4897-9833-f685671e6507")
+	)
+	(no_connect
+		(at 36.83 48.26)
+		(uuid "893f18e2-957a-4c17-b401-f94484dae152")
+	)
+	(no_connect
+		(at 100.33 83.82)
+		(uuid "aef3800b-875f-471a-980a-63bec27d624e")
+	)
+	(no_connect
+		(at 36.83 73.66)
+		(uuid "b56b0e87-87a4-4bcf-a781-ce02b4e683de")
+	)
+	(no_connect
+		(at 100.33 55.88)
+		(uuid "bc04b656-d157-48f6-b645-e1d65ed17680")
+	)
+	(no_connect
+		(at 100.33 48.26)
+		(uuid "c02f8f07-f5b7-44a2-aae1-7c715e6e427e")
+	)
+	(no_connect
+		(at 36.83 50.8)
+		(uuid "c169d2ef-ca7a-4e18-844b-4fd0e7900484")
+	)
+	(no_connect
+		(at 36.83 81.28)
+		(uuid "cd706991-8982-470c-91c0-72e48edc0ac2")
+	)
+	(no_connect
+		(at 100.33 58.42)
+		(uuid "d4f02d91-3371-408c-ad80-12c15ced07e1")
+	)
+	(wire
+		(pts
+			(xy 182.88 57.15) (xy 184.15 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "007ca0a4-b0ce-406b-9dfd-3848ccca2c26")
+	)
+	(wire
+		(pts
+			(xy 181.61 96.52) (xy 182.88 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "248a29e3-a604-4ac6-afb1-7f6f9297f20e")
+	)
+	(wire
+		(pts
+			(xy 182.88 57.15) (xy 182.88 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "266e0fce-1594-4f07-a2f8-9169c3ba1380")
+	)
+	(wire
+		(pts
+			(xy 182.88 68.58) (xy 182.88 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d4fadb4-1b46-4202-97bc-da247dfcea02")
+	)
+	(wire
+		(pts
+			(xy 182.88 107.95) (xy 182.88 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e76b54a-3364-45d6-b449-1fbd4562f913")
+	)
+	(wire
+		(pts
+			(xy 182.88 96.52) (xy 182.88 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "815592c6-cfc6-4d7c-8541-942af6738f0d")
+	)
+	(wire
+		(pts
+			(xy 182.88 57.15) (xy 181.61 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba9cbee1-823b-4364-b521-a275cc9673a3")
+	)
+	(wire
+		(pts
+			(xy 182.88 96.52) (xy 184.15 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe46efc8-83c6-4305-a599-6cc2a176b19d")
+	)
+	(global_label "MAT_ADAPTER_VSUB"
+		(shape bidirectional)
+		(at 184.15 57.15 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "00e4bfbd-0350-4870-a4a8-fbeaeeeb0f07")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL29"
+		(shape bidirectional)
+		(at 36.83 121.92 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "01298188-a3c9-4338-ab26-184daa85fd54")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_ADAPTER_VSUB"
+		(shape bidirectional)
+		(at 100.33 66.04 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "146df652-2180-4b7c-81be-838e5501348f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_ADAPTER_CASE"
+		(shape bidirectional)
+		(at 100.33 86.36 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "165b0402-edde-437a-a162-8482885da8a9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "NL2"
+		(shape bidirectional)
+		(at 36.83 58.42 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "1ed823a1-5680-43a4-9875-d0ae048eef14")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL17"
+		(shape bidirectional)
+		(at 36.83 91.44 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "200eef2f-01de-493f-9702-71629b6d3d9c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "NL0"
+		(shape bidirectional)
+		(at 36.83 53.34 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2024baa9-555d-44f4-8ad7-188e728a9f61")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "NL4"
+		(shape bidirectional)
+		(at 36.83 63.5 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "265dd985-08dd-4e50-b22f-47d598aa44df")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MATRIX_BIAS_SRC"
+		(shape bidirectional)
+		(at 161.29 97.79 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2b525046-7efc-447a-8d4c-74aaf230f8b8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.29 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL5"
+		(shape bidirectional)
+		(at 100.33 114.3 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2c0e5c6d-c19a-4c0f-bdf4-19201233ea4e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MAT_ADAPTER_CASE"
+		(shape bidirectional)
+		(at 184.15 96.52 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "2c4c84bc-ac8c-4a1f-a817-fa0d7578c0a4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.15 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL7"
+		(shape bidirectional)
+		(at 100.33 109.22 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "2efb4c38-2bbc-4db1-893a-535b4acc1d52")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL21"
+		(shape bidirectional)
+		(at 36.83 101.6 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "41c62bc1-e075-49cb-958e-a2ecbc18cd6b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL13"
+		(shape bidirectional)
+		(at 100.33 93.98 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "427afab6-95b5-4e9f-8529-6beef0364212")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL20"
+		(shape bidirectional)
+		(at 36.83 99.06 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "539f282a-f04d-4428-aab9-a0dd180218c2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL9"
+		(shape bidirectional)
+		(at 100.33 104.14 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "54f7edc5-75da-4d5c-ae88-83b577e3289f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL31"
+		(shape bidirectional)
+		(at 36.83 127 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "570657a8-d38c-4438-b71b-27bc092b5c63")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "WL0"
+		(shape bidirectional)
+		(at 100.33 81.28 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5a43c330-4e83-4927-9f5f-8030bc9bc076")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "MATRIX_BIAS_SRC"
+		(shape bidirectional)
+		(at 161.29 58.42 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5c64a1fc-233d-4744-9ff9-423d3ff4688f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.29 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL25"
+		(shape bidirectional)
+		(at 36.83 111.76 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "6324dbe7-7137-4bd7-9e8d-34e739c6eca2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL23"
+		(shape bidirectional)
+		(at 36.83 106.68 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "66aaac15-cc13-4bdf-b600-2961582c4998")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL27"
+		(shape bidirectional)
+		(at 36.83 116.84 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "6af65f4e-4bc8-48bb-83fc-7cd3c5b5af57")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL19"
+		(shape bidirectional)
+		(at 36.83 96.52 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "6becf444-ca12-4770-947b-980066899b60")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL10"
+		(shape bidirectional)
+		(at 100.33 101.6 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "6fb0dc14-43f8-4d89-aca4-2a3fa092eee1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL30"
+		(shape bidirectional)
+		(at 36.83 124.46 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "833d296d-14ad-4dfd-a469-0a245f82ce79")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL14"
+		(shape bidirectional)
+		(at 100.33 91.44 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "8b09bbd2-a5c4-468a-bf58-5500db1ec214")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "NL7"
+		(shape bidirectional)
+		(at 36.83 71.12 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "8b4eafda-d444-4203-a05d-71a577f39577")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL2"
+		(shape bidirectional)
+		(at 100.33 121.92 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "8c4a1fc8-4dcd-439d-a1b4-ad5b68597601")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL11"
+		(shape bidirectional)
+		(at 100.33 99.06 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "93452fa4-3faf-4262-aaf3-8e428945a39a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL8"
+		(shape bidirectional)
+		(at 100.33 106.68 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "9c201c41-b198-4ae9-a2ec-5a0653fe7032")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "WL2"
+		(shape bidirectional)
+		(at 100.33 76.2 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "9e4449ac-6845-4fb6-9741-503f1abaa5af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL15"
+		(shape bidirectional)
+		(at 100.33 88.9 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "a278c1e3-d057-4d03-b740-3f36b8bd6ae0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "WL1"
+		(shape bidirectional)
+		(at 100.33 78.74 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "a6648bc7-cd4d-4648-ba29-a5960af31384")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL16"
+		(shape bidirectional)
+		(at 36.83 88.9 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "a98cc0fc-4819-4a71-9230-b0e27a3131ea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "NL3"
+		(shape bidirectional)
+		(at 36.83 60.96 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "ac00f522-4332-4bc4-895e-848f271937c5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL6"
+		(shape bidirectional)
+		(at 100.33 111.76 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "ae3a855d-7dbb-4497-8071-53e6ea25a73f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL28"
+		(shape bidirectional)
+		(at 36.83 119.38 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "afcbed03-0d28-497f-b811-dd88da0a3c83")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL18"
+		(shape bidirectional)
+		(at 36.83 93.98 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "b6756c6b-c484-418a-9714-c6514c2fa927")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL12"
+		(shape bidirectional)
+		(at 100.33 96.52 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "bf6b8936-2376-4ab0-8ff3-8f19073ea95a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL24"
+		(shape bidirectional)
+		(at 36.83 109.22 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c2270058-ac75-448b-862b-c5bff8f3131f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "NL5"
+		(shape bidirectional)
+		(at 36.83 66.04 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c7a9d024-fda0-4719-a1e0-4f8fb3e4aef7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "WL3"
+		(shape bidirectional)
+		(at 100.33 73.66 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c8418aae-124b-4a9a-9e23-4b5ff406e90d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "NL1"
+		(shape bidirectional)
+		(at 36.83 55.88 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c87f5866-4684-4c8b-9107-e92cb94f6287")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL4"
+		(shape bidirectional)
+		(at 100.33 116.84 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "cf855122-cc4d-49c2-8350-8fdb47fc6ff9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "NL6"
+		(shape bidirectional)
+		(at 36.83 68.58 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "d977ddfd-dc66-4e32-bcb0-852fc15b20ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "WL7"
+		(shape bidirectional)
+		(at 100.33 60.96 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "de8e2475-9791-48d4-ad2a-b9f266a575ee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "WL5"
+		(shape bidirectional)
+		(at 100.33 68.58 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "e466637f-ad62-4d8b-af25-b99be221c527")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "WL6"
+		(shape bidirectional)
+		(at 100.33 63.5 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "e71392cd-2103-41b6-9c0d-e8b031bbcd8f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL3"
+		(shape bidirectional)
+		(at 100.33 119.38 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "e79a5c5b-5731-4cee-9102-8a997530ba67")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "WL4"
+		(shape bidirectional)
+		(at 100.33 71.12 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "e89b8561-0b2c-4f91-99c4-6c5b2f0c3db8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL22"
+		(shape bidirectional)
+		(at 36.83 104.14 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "e96ffb74-f5fb-452a-af06-b9bf73af051a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL1"
+		(shape bidirectional)
+		(at 100.33 124.46 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "efabd7fb-7f6d-4f0d-a924-b4f76dd19a51")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL26"
+		(shape bidirectional)
+		(at 36.83 114.3 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f10286a4-96ff-44b8-bc81-4b764826e656")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.83 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(global_label "BL0"
+		(shape bidirectional)
+		(at 100.33 127 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "fec86744-d52d-4add-9ed2-563da8a5a2ae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.33 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 182.88 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "14df312a-3243-4fe8-893f-893d332c219d")
+		(property "Reference" "R8188"
+			(at 180.34 104.14 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 185.42 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 182.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-07100KL"
+			(at 182.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 182.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-07100KL"
+			(at 182.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 182.88 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "edc45100-c1d6-4232-8001-d568d4ae4b3d")
+		)
+		(pin "2"
+			(uuid "5676f172-36f2-4155-87cf-c1ea7472a410")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/65122252-1631-4d3b-aa34-05c472ad61c2"
+					(reference "R8188")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Matrix_adapter_2x32_MIRA_MAT")
+		(at 46.99 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "21bc022d-b119-4afb-9155-16e2e58568dd")
+		(property "Reference" "J8001"
+			(at 41.91 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "Matrix adapter 2x32"
+			(at 46.99 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:PinHeader_2x32_P2.54mm_Vertical"
+			(at 46.99 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Standard 2x32 carrier interface; source-map numbering, no invented matrix package"
+			(at 46.99 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "Generic2x32header"
+			(at 46.99 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 46.99 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "09626aec-3175-4af3-bea9-cff41643f0b2")
+		)
+		(pin "2"
+			(uuid "492be8a6-2952-471b-956c-b772a5e59cc2")
+		)
+		(pin "3"
+			(uuid "ec2745cb-1759-478d-a8bb-dbc2bcef6706")
+		)
+		(pin "4"
+			(uuid "0f278486-ea18-4b18-aa0d-3b1c3993567c")
+		)
+		(pin "5"
+			(uuid "9ccd5392-4ee9-4f58-872f-b29d5c86f216")
+		)
+		(pin "6"
+			(uuid "d991c3ab-d4d5-43b2-b03b-abbedc6383e6")
+		)
+		(pin "7"
+			(uuid "f3caa425-7776-49d2-b4e1-a25cf3539220")
+		)
+		(pin "8"
+			(uuid "28151b46-138d-4372-919f-19c8a4f1e415")
+		)
+		(pin "9"
+			(uuid "ac945af3-15b7-4bf4-9ede-3ff85f66ac73")
+		)
+		(pin "10"
+			(uuid "a1402d2e-15a9-4142-a435-b3128e9e06bb")
+		)
+		(pin "11"
+			(uuid "e7bb4279-602a-46d4-95bd-5417e0ada591")
+		)
+		(pin "12"
+			(uuid "47aa9cec-697c-4867-a30c-a64c33ad01ed")
+		)
+		(pin "13"
+			(uuid "7c3fd16f-bce4-46a6-9cf8-e4a5f57d68ac")
+		)
+		(pin "14"
+			(uuid "270bf44e-f11f-4c87-9dd0-8ac893ed209a")
+		)
+		(pin "15"
+			(uuid "f8186a4d-afc8-4c83-a6ae-b8c2b2564a23")
+		)
+		(pin "16"
+			(uuid "38ba99b5-c9f3-4a8a-a939-dcaca5ca7664")
+		)
+		(pin "17"
+			(uuid "53589914-ce94-4cb5-9600-f9ba21ec1cef")
+		)
+		(pin "18"
+			(uuid "1d876201-2761-4c6f-9f3e-861a5ffd4642")
+		)
+		(pin "19"
+			(uuid "567f2b8c-219c-4f96-a30e-e82ba4814113")
+		)
+		(pin "20"
+			(uuid "4f31184a-6edc-4064-b363-de5aa55bd906")
+		)
+		(pin "21"
+			(uuid "f5d9d8e1-4ff9-4845-974f-3ff0ff8330d2")
+		)
+		(pin "22"
+			(uuid "66159615-5b3d-45e3-a5ec-49b185228992")
+		)
+		(pin "23"
+			(uuid "5501bd18-7be9-4986-8ac9-362b0aab2cf5")
+		)
+		(pin "24"
+			(uuid "6a09f627-66ad-480e-808c-df7e32b1f48d")
+		)
+		(pin "25"
+			(uuid "fb5f84a9-6fe7-4c14-8659-6ed130b33c8d")
+		)
+		(pin "26"
+			(uuid "c807d2e6-47ac-45f0-926d-3e0550c9d550")
+		)
+		(pin "27"
+			(uuid "20fda1d5-4c59-4154-8fb7-d04fab0b2e69")
+		)
+		(pin "28"
+			(uuid "b9fa0dac-2ff8-44b2-8486-c853eb95a04f")
+		)
+		(pin "29"
+			(uuid "eed121e7-eb5e-4ce7-8380-648210a5e437")
+		)
+		(pin "30"
+			(uuid "67aa0534-e9a2-427a-b8c1-996a106073f6")
+		)
+		(pin "31"
+			(uuid "5deb6729-c795-46ef-b01a-07e7664703f5")
+		)
+		(pin "32"
+			(uuid "9f5d787e-683b-41d0-8dbd-1009db296440")
+		)
+		(pin "33"
+			(uuid "d0035c62-9230-4b66-ad1d-72e085bb5691")
+		)
+		(pin "34"
+			(uuid "cb7a455e-b237-44ed-b416-6dc1775ec94a")
+		)
+		(pin "35"
+			(uuid "ffc4f425-8a75-4afe-8f98-618d44b0601a")
+		)
+		(pin "36"
+			(uuid "4cce1e4e-e2a7-4a16-a01d-e55f7ad20999")
+		)
+		(pin "49"
+			(uuid "4d68858a-0548-4b1e-ad79-05ff3c499382")
+		)
+		(pin "50"
+			(uuid "26f34ed2-c0da-4c01-ad19-461f32843e91")
+		)
+		(pin "51"
+			(uuid "6ba1f752-46a0-4dbb-94ce-d249323c8138")
+		)
+		(pin "52"
+			(uuid "fef410b0-8f24-45aa-aa06-1790199b399b")
+		)
+		(pin "53"
+			(uuid "ba9e7ef2-b840-4c1c-840d-947d0d64c181")
+		)
+		(pin "54"
+			(uuid "bf074970-1885-4b84-89e2-15763dc8126e")
+		)
+		(pin "55"
+			(uuid "39485ee3-7fe4-4a73-8358-cfeabc199819")
+		)
+		(pin "56"
+			(uuid "cccecd87-b0ff-4ed3-9c6d-7728c5670ae9")
+		)
+		(pin "57"
+			(uuid "ed2a652e-ff00-43d7-ad86-3f548ccd52d4")
+		)
+		(pin "58"
+			(uuid "1ce511c7-915f-4992-9968-07c12f9d439e")
+		)
+		(pin "59"
+			(uuid "af8c6952-d200-4ebb-9610-f89e2d4b816c")
+		)
+		(pin "60"
+			(uuid "eb832fab-69d0-4f65-b3d5-3de77bf6be4e")
+		)
+		(pin "61"
+			(uuid "f823b780-e531-49ac-b5d6-e1627ffac702")
+		)
+		(pin "62"
+			(uuid "1f10c9c2-e5c7-427a-baca-0681620389e7")
+		)
+		(pin "37"
+			(uuid "aaf5ba11-d458-40ed-b1a4-95abacafca6d")
+		)
+		(pin "38"
+			(uuid "90316380-64bd-497e-9a7d-f208a9bf3c79")
+		)
+		(pin "39"
+			(uuid "096513d1-55b7-4e6c-9129-20db7a596481")
+		)
+		(pin "40"
+			(uuid "570d6e9b-aa79-4f5d-b437-fab863806b4c")
+		)
+		(pin "41"
+			(uuid "e58105f2-603a-4292-b442-2504314a837e")
+		)
+		(pin "42"
+			(uuid "fd79d223-f1d1-4cce-9e6c-24b6aebd3332")
+		)
+		(pin "63"
+			(uuid "17d3f5a2-b80c-4c0f-a43a-df36a2e1df27")
+		)
+		(pin "64"
+			(uuid "527b655c-7d33-4b45-85c8-70589073458f")
+		)
+		(pin "43"
+			(uuid "f549ae57-ae06-405c-a0e4-e55eff22db4c")
+		)
+		(pin "44"
+			(uuid "162cf708-25c5-4271-b1ae-d28f40ecb7cf")
+		)
+		(pin "45"
+			(uuid "c0e29c4d-cecd-407e-8244-64a353261bc8")
+		)
+		(pin "46"
+			(uuid "26d7fa9d-511c-4d98-8cb4-50d0057fd75d")
+		)
+		(pin "47"
+			(uuid "8a66e05f-283d-4c9c-9261-bdddd1c3113b")
+		)
+		(pin "48"
+			(uuid "5b4a155a-d7b2-4c9e-95ae-c3094df30155")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/65122252-1631-4d3b-aa34-05c472ad61c2"
+					(reference "J8001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.29 95.25 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "226006b0-3cc6-4b2a-9b8d-0194bf1b54d2")
+		(property "Reference" "#PWR03300003"
+			(at 154.94 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 156.21 95.25 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 161.29 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4444bcc-a03b-4e06-94b4-4dbf2c0fdc28")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/65122252-1631-4d3b-aa34-05c472ad61c2"
+					(reference "#PWR03300003")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 182.88 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2ba8b965-c9f0-4bea-86e9-a4fe4e004f8d")
+		(property "Reference" "#PWR03300004"
+			(at 182.88 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 182.88 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 182.88 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8a54d4ca-0c60-4cf0-b75c-abe61529bf8d")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/65122252-1631-4d3b-aa34-05c472ad61c2"
+					(reference "#PWR03300004")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Bias_jumper_MIRA_MAT")
+		(at 171.45 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "62589cee-3082-4552-8f4a-99c756d9e138")
+		(property "Reference" "J8003"
+			(at 166.37 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "Bias jumper"
+			(at 171.45 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:PinHeader_1x03_P2.54mm_Vertical"
+			(at 171.45 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Bias jumper"
+			(at 171.45 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "Generic1x3header"
+			(at 171.45 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 171.45 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a8b47bbb-d7d7-40bc-a08d-b712f6ba812a")
+		)
+		(pin "2"
+			(uuid "4972b732-f1bb-4da9-979f-cc3929e4474a")
+		)
+		(pin "3"
+			(uuid "ee424efa-51bf-4650-a6ae-d071d1d4a394")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/65122252-1631-4d3b-aa34-05c472ad61c2"
+					(reference "J8003")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Resistor")
+		(at 182.88 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "a3f5ed13-b1d3-47e3-ab5d-62de5dabb3a7")
+		(property "Reference" "R8187"
+			(at 180.34 64.77 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 185.42 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_0603Metric"
+			(at 182.88 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-07100KL"
+			(at 182.88 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "100k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)"
+			(at 182.88 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "RC0201FR-07100KL"
+			(at 182.88 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 182.88 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fa0b76ce-ee66-4228-a57f-8547277ff9d2")
+		)
+		(pin "2"
+			(uuid "db893d8a-a032-4856-a507-2660025ac139")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/65122252-1631-4d3b-aa34-05c472ad61c2"
+					(reference "R8187")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 182.88 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bfb1ac3c-79f1-44ad-9513-b338ed684207")
+		(property "Reference" "#PWR03300002"
+			(at 182.88 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 182.88 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 182.88 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c3572b22-175c-46aa-8a24-131ad50b2bf3")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/65122252-1631-4d3b-aa34-05c472ad61c2"
+					(reference "#PWR03300002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Bias_jumper_MIRA_MAT")
+		(at 171.45 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d173c19c-058a-4307-8d04-9a7e0837e329")
+		(property "Reference" "J8002"
+			(at 166.37 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "Bias jumper"
+			(at 171.45 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:PinHeader_1x03_P2.54mm_Vertical"
+			(at 171.45 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Bias jumper"
+			(at 171.45 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "Generic1x3header"
+			(at 171.45 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 171.45 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4049930b-102b-4f03-8e94-48918ea8a1c1")
+		)
+		(pin "2"
+			(uuid "343535c5-023a-4909-b8f6-08deebdf6f8b")
+		)
+		(pin "3"
+			(uuid "4a20ec09-89dd-4add-81b5-d5a5f6e71c7a")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/65122252-1631-4d3b-aa34-05c472ad61c2"
+					(reference "J8002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MIRA_RevA:Matrix_adapter_2x32_MIRA_MAT")
+		(at 110.49 87.63 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e68c14f9-19c3-45ac-96fe-3e3c6d8a1ff4")
+		(property "Reference" "J8001"
+			(at 105.41 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Value" "Matrix adapter 2x32"
+			(at 110.49 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.95 0.95)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:PinHeader_2x32_P2.54mm_Vertical"
+			(at 110.49 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Standard 2x32 carrier interface; source-map numbering, no invented matrix package"
+			(at 110.49 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "Generic2x32header"
+			(at 110.49 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Generic"
+			(at 110.49 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "33"
+			(uuid "5ef7be90-5b73-4060-887a-639a15bfc972")
+		)
+		(pin "34"
+			(uuid "9ff2ff5d-e916-4a4e-b26d-8c7700efd15e")
+		)
+		(pin "35"
+			(uuid "ce7402c0-c2b7-472a-b88c-97a1d70c8214")
+		)
+		(pin "36"
+			(uuid "e427d679-625a-49fb-b81c-3b81b065722d")
+		)
+		(pin "37"
+			(uuid "32226d16-8e09-4c36-bea1-0448aa343670")
+		)
+		(pin "38"
+			(uuid "84c698a6-4ef2-473f-8010-3d7fccb26348")
+		)
+		(pin "39"
+			(uuid "d9646503-49db-4627-9b1b-1d99e82e1599")
+		)
+		(pin "40"
+			(uuid "3e1d26c0-d804-4bd2-9db6-14988fa4fd52")
+		)
+		(pin "41"
+			(uuid "881b1851-9765-4bfa-bc24-d06095304da7")
+		)
+		(pin "42"
+			(uuid "20366806-614e-4c34-bf90-98291bd4bd5a")
+		)
+		(pin "43"
+			(uuid "71dd37c5-caef-4024-9019-bce643b97dc7")
+		)
+		(pin "44"
+			(uuid "e8f46a39-9942-4570-aad6-bf3ad2a33886")
+		)
+		(pin "45"
+			(uuid "53511430-dcfe-4b84-accf-0022d67a525c")
+		)
+		(pin "46"
+			(uuid "b836af2f-d093-49b7-ab91-29a3960ee21a")
+		)
+		(pin "47"
+			(uuid "a64b686f-11ff-401b-a05e-2dc0bad3bb4a")
+		)
+		(pin "48"
+			(uuid "ce9b7bb7-280d-47d0-a83e-8df1e18a7d99")
+		)
+		(pin "49"
+			(uuid "5867e928-50e7-4605-a35b-101e0ad2b58a")
+		)
+		(pin "50"
+			(uuid "b584e865-a70b-4ae4-bb0f-20e72e234a43")
+		)
+		(pin "51"
+			(uuid "f31feb15-8b99-4f7e-8311-7ad50c3857b8")
+		)
+		(pin "52"
+			(uuid "4e34ab25-fa43-4955-84d7-56788e02ba5e")
+		)
+		(pin "53"
+			(uuid "7f42faa0-8d79-4ef2-ade1-ff90f307ab37")
+		)
+		(pin "54"
+			(uuid "7aebea6a-ea01-4b0c-aab2-3dd3cf6d577e")
+		)
+		(pin "55"
+			(uuid "6a5866eb-f199-4c04-9bdc-cc2098012d76")
+		)
+		(pin "56"
+			(uuid "ac11f20a-44e5-412c-9b67-2d718906ebf4")
+		)
+		(pin "57"
+			(uuid "77851995-d705-4478-ba92-61aae7f8b35e")
+		)
+		(pin "58"
+			(uuid "dde3600e-6239-40be-9984-48e1d0f44db7")
+		)
+		(pin "59"
+			(uuid "c88b0d09-d737-4147-9362-5c0197680228")
+		)
+		(pin "60"
+			(uuid "f48785b4-0680-46d1-8e0a-107f7171abc5")
+		)
+		(pin "61"
+			(uuid "1f29ce41-c6d2-4920-8813-ccf1e50ed264")
+		)
+		(pin "62"
+			(uuid "2140f776-5da7-4369-81dd-233960c9ec31")
+		)
+		(pin "63"
+			(uuid "cd0bde9f-28bd-47a2-9464-96f41ed0fec6")
+		)
+		(pin "64"
+			(uuid "118da4d2-4f13-4443-ae7d-9873ea330408")
+		)
+		(pin "11"
+			(uuid "08b680bb-9de1-41db-a5a4-957517b501d5")
+		)
+		(pin "12"
+			(uuid "50ab798b-0b8d-456f-9209-69325d7c7f46")
+		)
+		(pin "13"
+			(uuid "e85df242-192a-4d73-8542-a83670078175")
+		)
+		(pin "14"
+			(uuid "e16c7f3a-052b-4dbc-9a8a-4e13856bc29a")
+		)
+		(pin "15"
+			(uuid "b8156c4c-998e-44eb-81c6-e089098070de")
+		)
+		(pin "16"
+			(uuid "6a3215dc-fbf6-4601-8d13-1a8058913a7c")
+		)
+		(pin "17"
+			(uuid "6892df7a-7148-47d1-8e50-a06c5026b1a3")
+		)
+		(pin "18"
+			(uuid "b5ea85a6-5a99-4f65-a2b1-5044b1bee4f7")
+		)
+		(pin "19"
+			(uuid "4503c866-a093-453a-a78d-df3ab0ce175d")
+		)
+		(pin "20"
+			(uuid "c63d0780-9f73-40ac-87da-73055a10d6cb")
+		)
+		(pin "1"
+			(uuid "a03e5594-1f5b-410c-9c99-3281f07aace4")
+		)
+		(pin "2"
+			(uuid "07a31c55-ea52-4e37-8ae1-32377c0c162c")
+		)
+		(pin "3"
+			(uuid "76d4b76a-0a02-4bf1-b6cb-374885712a1a")
+		)
+		(pin "4"
+			(uuid "bb82ab50-758e-47d4-bada-b5863274c1e8")
+		)
+		(pin "5"
+			(uuid "73f99cfd-15dd-44da-97bd-17d35a7b4dc8")
+		)
+		(pin "6"
+			(uuid "3a91a940-4a93-48b8-bd1d-45071a5292b7")
+		)
+		(pin "7"
+			(uuid "1826952d-48bc-4792-b658-0dfbe0fecea8")
+		)
+		(pin "8"
+			(uuid "f99f363f-e0ee-4083-a673-f703c4e9632e")
+		)
+		(pin "9"
+			(uuid "d5e815db-634f-4e94-ac91-4d3e90197d81")
+		)
+		(pin "10"
+			(uuid "2c2ebc9b-6fe7-45db-83fc-7431ce3282b8")
+		)
+		(pin "21"
+			(uuid "14d05f32-1bf5-463d-991e-6d9fe61a6b9c")
+		)
+		(pin "22"
+			(uuid "695f6132-1ad1-4074-a2f0-66b8d3ed3ea6")
+		)
+		(pin "23"
+			(uuid "62b6b2df-d064-4916-8028-2c4c815b1693")
+		)
+		(pin "24"
+			(uuid "e61f9d44-6b2c-4a0d-a13b-7ccddf2b1199")
+		)
+		(pin "25"
+			(uuid "afedc77b-d127-44fd-ac54-cd7576578706")
+		)
+		(pin "26"
+			(uuid "f00927f8-d721-40d9-aa25-23c828f8f43f")
+		)
+		(pin "27"
+			(uuid "81a33aaf-7d84-48a5-a39a-24d614c31593")
+		)
+		(pin "28"
+			(uuid "b64765da-b697-480b-bd37-a0daaa842078")
+		)
+		(pin "29"
+			(uuid "b4f37685-c6bf-4d00-ad9a-af0ca4ad0b65")
+		)
+		(pin "30"
+			(uuid "18d27ae0-6ab2-46c8-b853-219588c9de59")
+		)
+		(pin "31"
+			(uuid "f9b048d4-69aa-4e73-ab71-69256a471040")
+		)
+		(pin "32"
+			(uuid "68d06822-2757-4519-95fd-bb890e2fc5c4")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/65122252-1631-4d3b-aa34-05c472ad61c2"
+					(reference "J8001")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.29 55.88 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e6efbab5-b82d-4a4d-984f-aa1a4ee71ee1")
+		(property "Reference" "#PWR03300001"
+			(at 154.94 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 156.21 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 161.29 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2f27142-43f3-4d61-8e2e-2d3d048340e0")
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/24fa026d-a804-4a6e-8e1a-8090b9f60549/65122252-1631-4d3b-aa34-05c472ad61c2"
+					(reference "#PWR03300001")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
