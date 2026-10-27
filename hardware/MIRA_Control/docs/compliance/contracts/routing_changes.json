@@ -1,0 +1,235 @@
+{
+  "modified": {
+    "U1601": {
+      "8": {
+        "from": "MAT_SRC_SELECTED",
+        "to": "MAT_VTARGET"
+      }
+    },
+    "U1602": {
+      "11": {
+        "from": "MAT_WRITE_PULSE",
+        "to": "MAT_SOURCE_SAFE"
+      },
+      "12": {
+        "from": "MAT_CC_SENSE",
+        "to": "MAT_DRV_OUTPUT"
+      },
+      "13": {
+        "from": "MAT_CC_FB",
+        "to": "MAT_RSH_POWER"
+      },
+      "14": {
+        "from": "MAT_CC_GATE_RAW",
+        "to": "GND"
+      },
+      "18": {
+        "from": "NC",
+        "to": "MAT_REG_ERROR_SELECTED"
+      },
+      "19": {
+        "from": "GND",
+        "to": "MAT_REG_ERROR"
+      },
+      "20": {
+        "from": "GND",
+        "to": "MAT_SOURCE_SAFE"
+      }
+    },
+    "U1603": {
+      "10": {
+        "from": "MAT_WRITE_RETURN",
+        "to": "GND"
+      },
+      "1": {
+        "from": "MAT_SOURCE_SAFE",
+        "to": "MAT_SOURCE_OFF"
+      },
+      "2": {
+        "from": "MAT_SOURCE",
+        "to": "MAT_PI_RAW"
+      },
+      "3": {
+        "from": "MAT_SRC_SELECTED",
+        "to": "MAT_PI_SUM"
+      },
+      "6": {
+        "from": "MAT_CC_GATE_RAW",
+        "to": "MAT_PI_RESET_C"
+      },
+      "7": {
+        "from": "Net-(U1603D-D)",
+        "to": "MAT_PI_C"
+      },
+      "8": {
+        "from": "MAT_WRITE_PULSE",
+        "to": "MAT_SOURCE_OFF"
+      }
+    }
+  },
+  "added": {
+    "R1605": {
+      "value": "220",
+      "pins": {
+        "1": "MAT_PI_SUM",
+        "2": "MAT_PI_RESET_C"
+      },
+      "footprint": "MIRA_RevA:R_0603_1608Metric",
+      "mpn": "CRCW0603220RFKEA",
+      "manufacturer": "Vishay"
+    }
+  },
+  "removed": [],
+  "dnp": {
+    "R1600": {
+      "from": false,
+      "to": true
+    }
+  },
+  "metadata_changes": {
+    "R1600": {
+      "Description": {
+        "from": "1M ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)",
+        "to": "DNP: no 1 Mohm load on the measured CV/CC source; populated load would consume 10 uA at 10 V."
+      }
+    }
+  },
+  "file": "1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING.kicad_sch",
+  "expected_pins": {
+    "U1601": {
+      "1": "MAT_SRC_A0",
+      "2": "MAT_SERVICE_SAFE",
+      "3": "N15",
+      "4": "VREAD_SRC",
+      "5": "VSET_SRC",
+      "6": "VRESET_SRC",
+      "7": "VFORM_SRC",
+      "8": "MAT_VTARGET",
+      "9": "GND",
+      "10": "GND",
+      "11": "GND",
+      "12": "GND",
+      "13": "P15",
+      "14": "GND",
+      "15": "GND",
+      "16": "MAT_SRC_A1"
+    },
+    "U1600": {
+      "1": "MAT_BL_A3",
+      "2": "MAT_SERVICE_SAFE",
+      "3": "N15",
+      "4": "MAT_BL_BANK_0",
+      "5": "MAT_BL_BANK_1",
+      "6": "MAT_BL_BANK_2",
+      "7": "MAT_BL_BANK_3",
+      "8": "MAT_BL_SERVICE",
+      "9": "GND",
+      "10": "GND",
+      "11": "GND",
+      "12": "GND",
+      "13": "P15",
+      "14": "GND",
+      "15": "GND",
+      "16": "MAT_BL_A4"
+    },
+    "U1602": {
+      "1": "MAT_POLARITY",
+      "2": "MAT_SOURCE",
+      "3": "MAT_BL_SERVICE",
+      "4": "MAT_RETURN",
+      "7": "MAT_SOURCE",
+      "8": "MAT_NL_SERVICE",
+      "9": "MAT_RETURN",
+      "10": "MAT_POLARITY",
+      "11": "MAT_SOURCE_SAFE",
+      "12": "MAT_DRV_OUTPUT",
+      "13": "MAT_RSH_POWER",
+      "14": "GND",
+      "17": "GND",
+      "18": "MAT_REG_ERROR_SELECTED",
+      "19": "MAT_REG_ERROR",
+      "20": "MAT_SOURCE_SAFE",
+      "5": "N15",
+      "6": "GND",
+      "15": "NC",
+      "16": "P15"
+    },
+    "U1603": {
+      "14": "MAT_RETURN",
+      "15": "MAT_TIA_IN",
+      "16": "MAT_READ_SAFE",
+      "9": "MAT_WRITE_SAFE",
+      "10": "GND",
+      "11": "MAT_RETURN",
+      "1": "MAT_SOURCE_OFF",
+      "2": "MAT_PI_RAW",
+      "3": "MAT_PI_SUM",
+      "6": "MAT_PI_RESET_C",
+      "7": "MAT_PI_C",
+      "8": "MAT_SOURCE_OFF",
+      "4": "N15",
+      "5": "GND",
+      "12": "NC",
+      "13": "P15"
+    },
+    "C1600": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C1601": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C1602": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C1603": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C1604": {
+      "1": "GND",
+      "2": "P15"
+    },
+    "C1605": {
+      "1": "GND",
+      "2": "N15"
+    },
+    "C1606": {
+      "1": "GND",
+      "2": "P15"
+    },
+    "C1607": {
+      "1": "GND",
+      "2": "N15"
+    },
+    "R1600": {
+      "1": "MAT_SOURCE",
+      "2": "GND"
+    },
+    "R1601": {
+      "1": "MAT_RETURN",
+      "2": "GND"
+    },
+    "R1602": {
+      "1": "MAT_READ_SAFE",
+      "2": "GND"
+    },
+    "R1603": {
+      "1": "MAT_WRITE_SAFE",
+      "2": "GND"
+    },
+    "R1604": {
+      "1": "MAT_POLARITY",
+      "2": "GND"
+    },
+    "R1605": {
+      "1": "MAT_PI_SUM",
+      "2": "MAT_PI_RESET_C"
+    }
+  },
+  "preserved_component_uuids": true,
+  "removed_power_markers_only": true,
+  "added_reset_resistor_reason": "Limit 4.7nF / 12V capacitor reset surge to ~52mA; no ON loop change"
+}

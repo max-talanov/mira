@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "pdf": "output/pdf/MIRA_Control_How_It_Works_RU.pdf",
+  "pdf_sha256": "e68d7cbfe483860a852ce3b38302af135155fe3ce1c38d9fe08bcbebe7aadf73",
+  "page_count": 59,
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "issues": [],
+  "visual_review": {
+    "all_pages": "All28 pages viewed in seven4-page contact sheets.",
+    "full_resolution_pages": [
+      2,
+      3,
+      15,
+      17,
+      24
+    ],
+    "results": [
+      "No overlap, clipping, broken glyphs or footer collisions.",
+      "Single-page TOC is readable and aligned.",
+      "Architecture onp3 is readable with correct signal directions and new sheet numbers.",
+      "Numbering and startup have separate complete pages; prose spacing corrected.",
+      "Two-page leaf chapters use balanced2+3/3+2 sections with continuation labels; no one-paragraph stranded continuation remains in reviewed range."
+    ]
+  },
+  "content_checks": [
+    "All component-reference tokens>=100 onp1-28 exist in repair/final.net.xml.",
+    "p25 correctly references DAC sheets1000 and1100.",
+    "p22 now states BL6→BL_DAC6 andBL7→BL_DAC7; old BL_DAC2/3 binding is explicitly identified as corrected.",
+    "Digital corrected pin/net descriptions remain consistent with final references and native nets.",
+    "No obsolete2.083V or fixed-common-mode -0.2 ADC gain claim found in reviewed active leaf prose."
+  ],
+  "links": {
+    "toc_entries": 31,
+    "toc_link_annotations": 62,
+    "toc_destinations": "All62 annotations resolve exactly to matching TOC/bookmark page objects.",
+    "architecture_link_annotations": 9,
+    "architecture_target_pages": [
+      6,
+      13,
+      16,
+      11,
+      21,
+      36,
+      38,
+      40,
+      44
+    ],
+    "architecture_result": "All destinations correct."
+  },
+  "programmatic_bounds": "No spans outside body/page safety bounds; no replacement characters or black-square glyphs.",
+  "scope_limit": "Pages29-59 are outside this review assignment.",
+  "source_unchanged": true,
+  "artifacts": "repair/research/pdf_release_first_contacts/ and pdf_release_first28_text.txt"
+}

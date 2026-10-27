@@ -1,0 +1,445 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "c8d9a9a4-26c1-4629-8d8f-37c9979f5e47")
+	(paper "A3")
+	(title_block
+		(title "Held routing, line drivers and crossbar socket")
+		(rev "B")
+		(company "MIRA")
+	)
+	(lib_symbols)
+	(text "Each numeric child contains its own circuit\nexplanation. Identical global labels connect\nbetween leaves. A shared U reference denotes one\nphysical multi-unit device."
+		(exclude_from_sim no)
+		(at 315 106.68 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "2d222cae-ef42-4acf-8948-4c75dcabe6ab")
+	)
+	(text "Physical references follow the first circuit leaf containing the component; multi-unit devices are not duplicated."
+		(exclude_from_sim no)
+		(at 22.86 277 0)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "3de7eebf-3e10-43ce-8364-f9870df3e836")
+	)
+	(text "Consecutive circuit order; select a child sheet to inspect its circuit and sheet-specific explanation."
+		(exclude_from_sim no)
+		(at 22.86 25.4 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "5a4f1683-4c0c-4f0d-b023-3ab207555d5a")
+	)
+	(text "BL0-31 switch paths; BL6/7 source identities corrected; return bleeders DNP."
+		(exclude_from_sim no)
+		(at 22.86 133.98 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "861afdd2-53a4-451b-a939-9f62ae26bbe2")
+	)
+	(text "Capture mode and route, compare active requests, pair voltage/current selection and qualify RUN; DAC updates\nduring WRITE trip."
+		(exclude_from_sim no)
+		(at 22.86 60.32 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "8e4d756e-7ed6-4467-aa89-b8ee56d45e97")
+	)
+	(text "WL drivers and NL clamp/return selection; return bleeders DNP."
+		(exclude_from_sim no)
+		(at 22.86 207.64 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "a0c2981a-01e8-480c-ad4c-cccf10b66399")
+	)
+	(text "Reading guide"
+		(exclude_from_sim no)
+		(at 315 97.79 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "b62ec33b-5953-44d6-b5cd-16d6f7f91630")
+	)
+	(text "High-impedance voltage command, service/polarity/return routing, upstream source OFF-to-GND and complete PI\nreset."
+		(exclude_from_sim no)
+		(at 22.86 170.81 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "d3e9d801-215e-42cd-8597-b66f9280ffb6")
+	)
+	(text "MATRIX - Held routing, line drivers and crossbar socket"
+		(exclude_from_sim no)
+		(at 22.86 15.24 0)
+		(effects
+			(font
+				(size 2.1 2.1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "e9edc52a-b627-47ed-abbc-16ccaf892718")
+	)
+	(text "Captured mode and address fields, 80-bit image,\nservice bank, polarity and READ/WRITE return\npaths. Any active request mismatch inhibits RUN\nand raises configuration trip."
+		(exclude_from_sim no)
+		(at 315 54.61 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "efec2cef-cf67-4ea4-861d-476c69725d0b")
+	)
+	(text "80-bit serial image; commit only while outputs are disabled; captured address fields and frame-valid arm\ncontract."
+		(exclude_from_sim no)
+		(at 22.86 97.15 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "f67fba0b-b5b9-4970-8b90-3920ebd2a0c4")
+	)
+	(text "64-contact crossbar socket, case/substrate adapter nets and DNP options."
+		(exclude_from_sim no)
+		(at 22.86 244.47 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "fad388b8-00db-46d2-83a9-595715dbf399")
+	)
+	(text "Group scope"
+		(exclude_from_sim no)
+		(at 315 45.72 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "fb6e48f5-6499-4beb-83f0-dcd1e44a07e2")
+	)
+	(sheet
+		(at 22.86 156.21)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0d8739bf-c5d1-4e27-8610-4094c4c8abcd")
+		(property "Sheetname" "1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING"
+			(at 22.86 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING.kicad_sch"
+			(at 22.86 167.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d"
+					(page "22")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 45.72)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "287bbd79-0316-4114-a3ae-c82f07e335c4")
+		(property "Sheetname" "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS"
+			(at 22.86 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch"
+			(at 22.86 56.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d"
+					(page "19")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 82.55)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "563543ff-1813-4a65-9a21-19412a404c5e")
+		(property "Sheetname" "1400_MATRIX_SERIAL_CONTROL_REGISTERS"
+			(at 22.86 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch"
+			(at 22.86 93.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d"
+					(page "20")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 229.87)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "65122252-1631-4d3b-aa34-05c472ad61c2")
+		(property "Sheetname" "1800_MATRIX_CROSSBAR_SOCKET_AND_BIAS"
+			(at 22.86 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "1800_MATRIX_CROSSBAR_SOCKET_AND_BIAS.kicad_sch"
+			(at 22.86 241.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d"
+					(page "24")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 119.38)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8be588c0-db78-4795-bb6a-aa2a49e6533a")
+		(property "Sheetname" "1500_MATRIX_BL0_31_SWITCHING"
+			(at 22.86 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "1500_MATRIX_BL0_31_SWITCHING.kicad_sch"
+			(at 22.86 130.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d"
+					(page "21")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 193.04)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a99177be-59ea-4574-b82f-3db01362f81c")
+		(property "Sheetname" "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR"
+			(at 22.86 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch"
+			(at 22.86 204.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d"
+					(page "23")
+				)
+			)
+		)
+	)
+)

@@ -1,0 +1,37 @@
+[
+  {
+    "file": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+    "uuid": "9794fbdc-9666-49e8-a37b-6c5ef631842f",
+    "before": "U1103 generates VFORM_DAC_RAW; U1104A buffers it to VFORM_SRC.\nU1104B powers the same OPA192 from PROG_P15/PROG_N15 (pins 5/2).\nFor the low-side write sink, configure FORMING to unipolar 0...+10 V.\nSelect the DUT voltage sign with MAT_POLARITY, not a bipolar DAC range.",
+    "after": "U1103 generates VFORM_DAC_RAW; U1104A buffers it to VFORM_SRC.\nU1104B powers the same OPA192 from PROG_P15/PROG_N15 (pins 5/2).\nConfigure FORMING to unipolar 0...+10 V for the shared CV/CC source.\nSelect the DUT voltage sign with MAT_POLARITY, not a bipolar DAC range.",
+    "electrical_change": false
+  },
+  {
+    "file": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+    "uuid": "f4d5d228-e311-4fa4-8341-2be9e52ca88b",
+    "before": "The source router chooses among VREAD_SRC, VSET_SRC, VRESET_SRC and\nVFORM_SRC. Current-compliance circuitry uses the ILIM outputs; the socket bias\nselectors use MATRIX_BIAS_SRC. Setting a DAC voltage alone does not enable a\nmatrix pulse.",
+    "after": "U1601 selects the high-impedance voltage target MAT_VTARGET. The CV/CC\nsource on sheet 2100 supplies DUT power. SRC also selects matching ILIM: READ\nand SET share ILIM_SET; RESET and FORM use their own current DAC outputs.\nChanging a service DAC during a WRITE pulse disables RUN and records a fault.",
+    "electrical_change": false
+  },
+  {
+    "file": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+    "uuid": "8f57f381-8fe2-4e6b-a161-7f2149e21683",
+    "before": "WRITE sources: 0...+10 V only.\nUse MAT_POLARITY for the voltage sign across the DUT.\nDo not use bipolar FORMING ranges with the low-side current sink.",
+    "after": "WRITE sources: 0...+10 V only.\nUse MAT_POLARITY for the voltage sign across the DUT.\nVoltage targets feed the shared CV/CC source on sheet 2100.\nREAD shares ILIM_SET; reload current targets with outputs disabled.",
+    "electrical_change": false
+  },
+  {
+    "file": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
+    "uuid": "cc5d06f6-2285-4066-9c8f-70ad7fb913da",
+    "before": "U1902 selects TIA, BL service, NL service, buffered CC sense or\nbuffered ILIM. Codes 5-7 select GND. U1903A/B isolate the raw\ncompliance nodes from both the trip dividers and monitor-switch\ncharge. The post-mux buffer on sheet 2000 removes the ADC gain-\nnetwork DC load.",
+    "after": "U1902 selects TIA, BL service, NL service, buffered current sense or\nbuffered ILIM. Codes 5-7 select GND. U1903A isolates the INA821\noutput; U1903B buffers the target for the controller, trip divider and\nmonitor mux. The sheet 2000 buffer isolates the ADC gain network.",
+    "electrical_change": false
+  },
+  {
+    "file": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
+    "uuid": "2753dcd2-06ab-4dc1-913f-617169fdc4c5",
+    "before": "U1903: P15 / N15; raw nodes remain in the regulation loop",
+    "after": "U1903: P15 / N15. Channel B also feeds the source regulator.",
+    "electrical_change": false
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "status": "BLOCKING",
+  "references": "Existing pre-renumber references",
+  "transient_model": {
+    "vendor_amplifier": "Unchanged TI OPAx197 Final1.3 23JUN2022",
+    "MOSFET": "Explicit approximate LEVEL1: VTO2, KP0.14, RD2, RS0.2; nonlinear/temperature/subthreshold behavior not qualified",
+    "source_V": 10,
+    "ILIM_DAC_V": 2.5,
+    "DUT_ohm": 100,
+    "DUT_parallel_pF": 10,
+    "return_ground_cap_pF": 50,
+    "source_ground_cap_pF": 200,
+    "sense_cap_pF": 150,
+    "Ccomp_pF": 100,
+    "Rgate_ohm": 100,
+    "RON_mux_typ_ohm": 13.5,
+    "temperature_C": 25
+  },
+  "DC_and_1ms": [
+    {
+      "RSH_ohm": 100,
+      "DC_DUT_A": 0.004394093926739256,
+      "DC_Q_A": 0.004394093926720188,
+      "actual_DUT_settle_1pct_us": 0.6675108109076305,
+      "resistive_DUT_peak_A": 0.0231897874406202,
+      "direct_DUT_cap_peak_A": 0.00468118894520728,
+      "total_DUT_peak_A": 0.023378801099848426,
+      "resistive_DUT_excess_charge_C": 6.423290415266953e-10,
+      "total_DUT_excess_charge_C": 6.442405401951444e-10
+    },
+    {
+      "RSH_ohm": 1000.0,
+      "DC_DUT_A": 0.0004925293143208803,
+      "DC_Q_A": 0.0004925293143003273,
+      "actual_DUT_settle_1pct_us": 1.05825169881158,
+      "resistive_DUT_peak_A": 0.02317558263782524,
+      "direct_DUT_cap_peak_A": 0.004681306039757169,
+      "total_DUT_peak_A": 0.023362308755923506,
+      "resistive_DUT_excess_charge_C": 5.598286924897182e-10,
+      "total_DUT_excess_charge_C": 5.601672504454379e-10
+    },
+    {
+      "RSH_ohm": 10000.0,
+      "DC_DUT_A": 5.029871534166508e-05,
+      "DC_Q_A": 5.029871532169494e-05,
+      "actual_DUT_settle_1pct_us": 4.960880044798357,
+      "resistive_DUT_peak_A": 0.02317319178861202,
+      "direct_DUT_cap_peak_A": 0.004681560505574226,
+      "total_DUT_peak_A": 0.0233591216315145,
+      "resistive_DUT_excess_charge_C": 5.608005165836619e-10,
+      "total_DUT_excess_charge_C": 5.608246719869945e-10
+    },
+    {
+      "RSH_ohm": 100000.0,
+      "DC_DUT_A": 5.484696541852019e-06,
+      "DC_Q_A": 5.484696521840249e-06,
+      "actual_DUT_settle_1pct_us": 39.60007318856672,
+      "resistive_DUT_peak_A": 0.02317288315905057,
+      "direct_DUT_cap_peak_A": 0.004681606281083002,
+      "total_DUT_peak_A": 0.023358764428142758,
+      "resistive_DUT_excess_charge_C": 5.632119742394518e-10,
+      "total_DUT_excess_charge_C": 5.631673227788945e-10
+    }
+  ],
+  "old_return_bleeders": {
+    "name": "dc_old_100k",
+    "parameters": {
+      "RSH": 100000.0,
+      "BLEED": 1
+    },
+    "target_A": 5.484516895494864e-06,
+    "Idut_A": 2.547371945249566e-05,
+    "Iq_A": 5.484697031654662e-06,
+    "sense_V": 0.4986731013990473,
+    "rawout_V": 2.51221076991603,
+    "gate_V": 2.50945538762408,
+    "actual_target_error_pct": 364.46605850408605
+  },
+  "source_ramp_results_file": "ramp_sequence_results.json",
+  "AC_results_files": [
+    "ac_loop_results.json",
+    "ac_compromise_results.json"
+  ],
+  "no_electrical_compensation_change": true
+}

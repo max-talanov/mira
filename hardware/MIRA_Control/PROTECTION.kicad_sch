@@ -1,0 +1,225 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "9f520045-9bba-4c68-91a5-f015eb30ab38")
+	(paper "A3")
+	(title_block
+		(title "Shared CV/CC source and hardware fault memory")
+		(rev "B")
+		(company "MIRA")
+	)
+	(lib_symbols)
+	(text "Model limits: downstream stored charge can still\ndischarge through the DUT. Use the documented\ncurrent, capacitance, settling and\nreconfiguration contract; qualify final PCB\ntransients on the bench."
+		(exclude_from_sim no)
+		(at 315 160.02 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "036cfaae-011a-4ded-9410-e46e0a93e0b9")
+	)
+	(text "Backup overcurrent threshold with offset margin; configuration-trip OR, fault latch, qualified clear and\nexternal inhibit."
+		(exclude_from_sim no)
+		(at 22.86 97.15 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "11de5501-e0b9-4496-9876-b102013d2511")
+	)
+	(text "Source-side Kelvin current sensing, shared PI\ncontrol with bounded command and reset,\nindependent backup overcurrent trip,\nconfiguration fault latch and external inhibit."
+		(exclude_from_sim no)
+		(at 315 54.61 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "38ca86ec-ab49-4ec0-b747-1e01a2b679b9")
+	)
+	(text "PROTECTION - Shared CV/CC source and hardware fault memory"
+		(exclude_from_sim no)
+		(at 22.86 15.24 0)
+		(effects
+			(font
+				(size 2.1 2.1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "42292a24-8f63-4d6e-9da1-a38065af3a89")
+	)
+	(text "Group scope"
+		(exclude_from_sim no)
+		(at 315 45.72 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "47af2399-bb80-4114-8d92-09065b7bc394")
+	)
+	(text "Physical references follow the first circuit leaf containing the component; multi-unit devices are not duplicated."
+		(exclude_from_sim no)
+		(at 22.86 277 0)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "623b3519-a12c-4d08-b0c1-ab541d1cd6a7")
+	)
+	(text "Source-side CV/CC PI, four Kelvin shunt ranges, current/voltage errors, command clamps and back-calculation\nanti-windup."
+		(exclude_from_sim no)
+		(at 22.86 60.32 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "691df2b0-3c08-4755-8ca3-7add1e106e39")
+	)
+	(text "Consecutive circuit order; select a child sheet to inspect its circuit and sheet-specific explanation."
+		(exclude_from_sim no)
+		(at 22.86 25.4 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "815275da-1020-431b-9c87-e2a1a2f1f30a")
+	)
+	(text "Reading guide"
+		(exclude_from_sim no)
+		(at 315 97.79 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "add64a3d-81f4-4337-aa7b-2795eac984f4")
+	)
+	(text "Each numeric child contains its own circuit\nexplanation. Identical global labels connect\nbetween leaves. A shared U reference denotes one\nphysical multi-unit device."
+		(exclude_from_sim no)
+		(at 315 106.68 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "c54812ae-dbe6-4793-9a72-c38c79020290")
+	)
+	(sheet
+		(at 22.86 82.55)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c17b5599-39dd-494c-ad64-99a5847f5793")
+		(property "Sheetname" "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE"
+			(at 22.86 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch"
+			(at 22.86 93.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/75a2aa70-81cd-4543-a50c-e295d4f5a68c"
+					(page "30")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 45.72)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ee7089d0-2fa4-4736-bdd0-a5754b4b5039")
+		(property "Sheetname" "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE"
+			(at 22.86 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch"
+			(at 22.86 56.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/75a2aa70-81cd-4543-a50c-e295d4f5a68c"
+					(page "29")
+				)
+			)
+		)
+	)
+)

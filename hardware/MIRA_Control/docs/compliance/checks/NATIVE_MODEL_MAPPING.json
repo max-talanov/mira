@@ -1,0 +1,1183 @@
+{
+  "pass": true,
+  "scope": "Pin/node/value boundary comparison against native KiCad XML, final source loop; switch dynamic behavior remains an approximation; not bench verification",
+  "native_netlist_sha256": "0cb3f8998e2d4852899de386578b6efb1c80b9d7c8a895b694c18497fad0163e",
+  "OPA_channels": 13,
+  "INA_G1": 2,
+  "assertions": 123,
+  "errors": [],
+  "checks": [
+    {
+      "ref": "U2105",
+      "pin": "3",
+      "model_node": "bi",
+      "expected_native_net": "CC_BIAS_IN",
+      "native_net": "CC_BIAS_IN",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "2",
+      "model_node": "bias",
+      "expected_native_net": "CC_BIAS",
+      "native_net": "CC_BIAS",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "1",
+      "model_node": "bias",
+      "expected_native_net": "CC_BIAS",
+      "native_net": "CC_BIAS",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "5",
+      "model_node": "ref5",
+      "expected_native_net": "MAT_ADC_REF",
+      "native_net": "MAT_ADC_REF",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "6",
+      "model_node": "upn",
+      "expected_native_net": "CC_UP_N",
+      "native_net": "CC_UP_N",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "7",
+      "model_node": "upref",
+      "expected_native_net": "CC_UP_REF",
+      "native_net": "CC_UP_REF",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "10",
+      "model_node": "cmd",
+      "expected_native_net": "MAT_DRV_CMD",
+      "native_net": "MAT_DRV_CMD",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "9",
+      "model_node": "cbuf",
+      "expected_native_net": "CC_CMD_SENSE",
+      "native_net": "CC_CMD_SENSE",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "8",
+      "model_node": "cbuf",
+      "expected_native_net": "CC_CMD_SENSE",
+      "native_net": "CC_CMD_SENSE",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "12",
+      "model_node": "out",
+      "expected_native_net": "MAT_SOURCE",
+      "native_net": "MAT_SOURCE",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "13",
+      "model_node": "vb",
+      "expected_native_net": "CC_VBUF",
+      "native_net": "CC_VBUF",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "14",
+      "model_node": "vb",
+      "expected_native_net": "CC_VBUF",
+      "native_net": "CC_VBUF",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "3",
+      "model_node": "vpos",
+      "expected_native_net": "CC_VP",
+      "native_net": "CC_VP",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "2",
+      "model_node": "vnerr",
+      "expected_native_net": "CC_VN",
+      "native_net": "CC_VN",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "1",
+      "model_node": "verr",
+      "expected_native_net": "CC_VERR",
+      "native_net": "CC_VERR",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "5",
+      "model_node": "ipos",
+      "expected_native_net": "CC_IP",
+      "native_net": "CC_IP",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "6",
+      "model_node": "inerr",
+      "expected_native_net": "CC_IN",
+      "native_net": "CC_IN",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "7",
+      "model_node": "ierr",
+      "expected_native_net": "CC_IERR",
+      "native_net": "CC_IERR",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "10",
+      "model_node": "verr",
+      "expected_native_net": "CC_VERR",
+      "native_net": "CC_VERR",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "9",
+      "model_node": "vneg",
+      "expected_native_net": "CC_MV_N",
+      "native_net": "CC_MV_N",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "8",
+      "model_node": "vmaxout",
+      "expected_native_net": "CC_MV_OUT",
+      "native_net": "CC_MV_OUT",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "12",
+      "model_node": "ierr",
+      "expected_native_net": "CC_IERR",
+      "native_net": "CC_IERR",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "13",
+      "model_node": "ineg",
+      "expected_native_net": "CC_MI_N",
+      "native_net": "CC_MI_N",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "14",
+      "model_node": "imaxout",
+      "expected_native_net": "CC_MI_OUT",
+      "native_net": "CC_MI_OUT",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "3",
+      "model_node": "upos",
+      "expected_native_net": "CC_UPOS",
+      "native_net": "CC_UPOS",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "2",
+      "model_node": "uneg",
+      "expected_native_net": "CC_UNEG",
+      "native_net": "CC_UNEG",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "1",
+      "model_node": "error",
+      "expected_native_net": "MAT_REG_ERROR",
+      "native_net": "MAT_REG_ERROR",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "5",
+      "model_node": "0",
+      "expected_native_net": "GND",
+      "native_net": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "6",
+      "model_node": "psum",
+      "expected_native_net": "MAT_PI_SUM",
+      "native_net": "MAT_PI_SUM",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "7",
+      "model_node": "raw",
+      "expected_native_net": "MAT_PI_RAW",
+      "native_net": "MAT_PI_RAW",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "10",
+      "model_node": "0",
+      "expected_native_net": "GND",
+      "native_net": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "9",
+      "model_node": "lneg",
+      "expected_native_net": "CC_LOW_N",
+      "native_net": "CC_LOW_N",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "8",
+      "model_node": "lowout",
+      "expected_native_net": "CC_LOW_OUT",
+      "native_net": "CC_LOW_OUT",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "12",
+      "model_node": "upref",
+      "expected_native_net": "CC_UP_REF",
+      "native_net": "CC_UP_REF",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "13",
+      "model_node": "hneg",
+      "expected_native_net": "CC_HIGH_N",
+      "native_net": "CC_HIGH_N",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "14",
+      "model_node": "highout",
+      "expected_native_net": "CC_HIGH_OUT",
+      "native_net": "CC_HIGH_OUT",
+      "pass": true
+    },
+    {
+      "ref": "U2101",
+      "pin": "3",
+      "model_node": "cmd",
+      "expected_native_net": "MAT_DRV_CMD",
+      "native_net": "MAT_DRV_CMD",
+      "pass": true
+    },
+    {
+      "ref": "U2101",
+      "pin": "2",
+      "model_node": "drive",
+      "expected_native_net": "CC_DRIVE",
+      "native_net": "CC_DRIVE",
+      "pass": true
+    },
+    {
+      "ref": "U2101",
+      "pin": "6",
+      "model_node": "drive",
+      "expected_native_net": "CC_DRIVE",
+      "native_net": "CC_DRIVE",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "4",
+      "model_node": "vp",
+      "expected_native_net": "P15",
+      "native_net": "P15",
+      "pass": true
+    },
+    {
+      "ref": "U2105",
+      "pin": "11",
+      "model_node": "vn",
+      "expected_native_net": "N15",
+      "native_net": "N15",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "4",
+      "model_node": "vp",
+      "expected_native_net": "P15",
+      "native_net": "P15",
+      "pass": true
+    },
+    {
+      "ref": "U2106",
+      "pin": "11",
+      "model_node": "vn",
+      "expected_native_net": "N15",
+      "native_net": "N15",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "4",
+      "model_node": "vp",
+      "expected_native_net": "P15",
+      "native_net": "P15",
+      "pass": true
+    },
+    {
+      "ref": "U2107",
+      "pin": "11",
+      "model_node": "vn",
+      "expected_native_net": "N15",
+      "native_net": "N15",
+      "pass": true
+    },
+    {
+      "ref": "U2101",
+      "pin": "7",
+      "model_node": "vp",
+      "expected_native_net": "P15",
+      "native_net": "P15",
+      "pass": true
+    },
+    {
+      "ref": "U2101",
+      "pin": "4",
+      "model_node": "vn",
+      "expected_native_net": "N15",
+      "native_net": "N15",
+      "pass": true
+    },
+    {
+      "ref": "U2104",
+      "pin": "4",
+      "model_node": "ins_p",
+      "expected_native_net": "CC_KELVIN_P",
+      "native_net": "CC_KELVIN_P",
+      "pass": true
+    },
+    {
+      "ref": "U2104",
+      "pin": "1",
+      "model_node": "out",
+      "expected_native_net": "MAT_SOURCE",
+      "native_net": "MAT_SOURCE",
+      "pass": true
+    },
+    {
+      "ref": "U2104",
+      "pin": "7",
+      "model_node": "isense",
+      "expected_native_net": "MAT_CC_SENSE",
+      "native_net": "MAT_CC_SENSE",
+      "pass": true
+    },
+    {
+      "ref": "U2104",
+      "pin": "6",
+      "model_node": "0",
+      "expected_native_net": "GND",
+      "native_net": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U2104",
+      "pin": "8",
+      "model_node": "vp",
+      "expected_native_net": "P15",
+      "native_net": "P15",
+      "pass": true
+    },
+    {
+      "ref": "U2104",
+      "pin": "5",
+      "model_node": "vn",
+      "expected_native_net": "N15",
+      "native_net": "N15",
+      "pass": true
+    },
+    {
+      "ref": "U2104",
+      "pin": "2",
+      "requirement": "RG physically NC forG1",
+      "native_net": "unconnected-(U2104-RG-Pad2)",
+      "pass": true
+    },
+    {
+      "ref": "U2104",
+      "pin": "3",
+      "requirement": "RG physically NC forG1",
+      "native_net": "unconnected-(U2104-RG-Pad3)",
+      "pass": true
+    },
+    {
+      "ref": "U2109",
+      "pin": "4",
+      "model_node": "raw",
+      "expected_native_net": "MAT_PI_RAW",
+      "native_net": "MAT_PI_RAW",
+      "pass": true
+    },
+    {
+      "ref": "U2109",
+      "pin": "1",
+      "model_node": "cmd",
+      "expected_native_net": "MAT_DRV_CMD",
+      "native_net": "MAT_DRV_CMD",
+      "pass": true
+    },
+    {
+      "ref": "U2109",
+      "pin": "7",
+      "model_node": "aw",
+      "expected_native_net": "CC_AW",
+      "native_net": "CC_AW",
+      "pass": true
+    },
+    {
+      "ref": "U2109",
+      "pin": "6",
+      "model_node": "0",
+      "expected_native_net": "GND",
+      "native_net": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U2109",
+      "pin": "8",
+      "model_node": "vp",
+      "expected_native_net": "P15",
+      "native_net": "P15",
+      "pass": true
+    },
+    {
+      "ref": "U2109",
+      "pin": "5",
+      "model_node": "vn",
+      "expected_native_net": "N15",
+      "native_net": "N15",
+      "pass": true
+    },
+    {
+      "ref": "U2109",
+      "pin": "2",
+      "requirement": "RG physically NC forG1",
+      "native_net": "unconnected-(U2109-RG-Pad2)",
+      "pass": true
+    },
+    {
+      "ref": "U2109",
+      "pin": "3",
+      "requirement": "RG physically NC forG1",
+      "native_net": "unconnected-(U2109-RG-Pad3)",
+      "pass": true
+    },
+    {
+      "model": "RB1",
+      "native_ref": "R2104",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "ANA5",
+        "CC_BIAS_IN"
+      ],
+      "model_expected_native_nets": [
+        "ANA5",
+        "CC_BIAS_IN"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RB2",
+      "native_ref": "R2110",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_BIAS_IN",
+        "GND"
+      ],
+      "model_expected_native_nets": [
+        "CC_BIAS_IN",
+        "GND"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RU1A",
+      "native_ref": "R2111",
+      "native_value": "13.7k",
+      "model_value": "13.7k",
+      "native_nets": [
+        "CC_UP_MID",
+        "CC_UP_REF"
+      ],
+      "model_expected_native_nets": [
+        "CC_UP_MID",
+        "CC_UP_REF"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RU1B",
+      "native_ref": "R2138",
+      "native_value": "100",
+      "model_value": "100",
+      "native_nets": [
+        "CC_UP_MID",
+        "CC_UP_N"
+      ],
+      "model_expected_native_nets": [
+        "CC_UP_MID",
+        "CC_UP_N"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RU2",
+      "native_ref": "R2112",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_UP_N",
+        "GND"
+      ],
+      "model_expected_native_nets": [
+        "CC_UP_N",
+        "GND"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RV1",
+      "native_ref": "R2113",
+      "native_value": "100k",
+      "model_value": "100k",
+      "native_nets": [
+        "CC_VBUF",
+        "CC_VP"
+      ],
+      "model_expected_native_nets": [
+        "CC_VBUF",
+        "CC_VP"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RV2",
+      "native_ref": "R2114",
+      "native_value": "100k",
+      "model_value": "100k",
+      "native_nets": [
+        "CC_BIAS",
+        "CC_VP"
+      ],
+      "model_expected_native_nets": [
+        "CC_BIAS",
+        "CC_VP"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RV3",
+      "native_ref": "R2115",
+      "native_value": "100k",
+      "model_value": "100k",
+      "native_nets": [
+        "CC_VN",
+        "MAT_VTARGET"
+      ],
+      "model_expected_native_nets": [
+        "CC_VN",
+        "MAT_VTARGET"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RV4",
+      "native_ref": "R2116",
+      "native_value": "100k",
+      "model_value": "100k",
+      "native_nets": [
+        "CC_VERR",
+        "CC_VN"
+      ],
+      "model_expected_native_nets": [
+        "CC_VERR",
+        "CC_VN"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RI1",
+      "native_ref": "R2117",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_IP",
+        "MAT_CC_SENSE"
+      ],
+      "model_expected_native_nets": [
+        "CC_IP",
+        "MAT_CC_SENSE"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RI2",
+      "native_ref": "R2118",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_BIAS",
+        "CC_IP"
+      ],
+      "model_expected_native_nets": [
+        "CC_BIAS",
+        "CC_IP"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RI3",
+      "native_ref": "R2119",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_IN",
+        "MAT_ILIM_SENSE_BUF"
+      ],
+      "model_expected_native_nets": [
+        "CC_IN",
+        "MAT_ILIM_SENSE_BUF"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RI4",
+      "native_ref": "R2120",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_IERR",
+        "CC_IN"
+      ],
+      "model_expected_native_nets": [
+        "CC_IERR",
+        "CC_IN"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RMV",
+      "native_ref": "R2121",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_EMAX",
+        "CC_MV_N"
+      ],
+      "model_expected_native_nets": [
+        "CC_EMAX",
+        "CC_MV_N"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RMI",
+      "native_ref": "R2122",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_EMAX",
+        "CC_MI_N"
+      ],
+      "model_expected_native_nets": [
+        "CC_EMAX",
+        "CC_MI_N"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RMAX",
+      "native_ref": "R2123",
+      "native_value": "100k",
+      "model_value": "100k",
+      "native_nets": [
+        "CC_EMAX",
+        "GND"
+      ],
+      "model_expected_native_nets": [
+        "CC_EMAX",
+        "GND"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RUP1",
+      "native_ref": "R2124",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_EMAX",
+        "CC_UPOS"
+      ],
+      "model_expected_native_nets": [
+        "CC_EMAX",
+        "CC_UPOS"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RUP2",
+      "native_ref": "R2125",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_UPOS",
+        "GND"
+      ],
+      "model_expected_native_nets": [
+        "CC_UPOS",
+        "GND"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RUN",
+      "native_ref": "R2126",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_BIAS",
+        "CC_UNEG"
+      ],
+      "model_expected_native_nets": [
+        "CC_BIAS",
+        "CC_UNEG"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RUF",
+      "native_ref": "R2127",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_UNEG",
+        "MAT_REG_ERROR"
+      ],
+      "model_expected_native_nets": [
+        "CC_UNEG",
+        "MAT_REG_ERROR"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RINT",
+      "native_ref": "R2103",
+      "native_value": "100k",
+      "model_value": "100k",
+      "native_nets": [
+        "MAT_PI_SUM",
+        "MAT_REG_ERROR_SELECTED"
+      ],
+      "model_expected_native_nets": [
+        "MAT_PI_SUM",
+        "MAT_REG_ERROR_SELECTED"
+      ],
+      "pass": true
+    },
+    {
+      "model": "CINT",
+      "native_ref": "C2103",
+      "native_value": "4.7n",
+      "model_value": "4.7n",
+      "native_nets": [
+        "MAT_PI_C",
+        "MAT_PI_SUM"
+      ],
+      "model_expected_native_nets": [
+        "MAT_PI_C",
+        "MAT_PI_SUM"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RZERO",
+      "native_ref": "R2128",
+      "native_value": "33k",
+      "model_value": "33k",
+      "native_nets": [
+        "MAT_PI_C",
+        "MAT_PI_RAW"
+      ],
+      "model_expected_native_nets": [
+        "MAT_PI_C",
+        "MAT_PI_RAW"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RCTRL",
+      "native_ref": "R2130",
+      "native_value": "1k",
+      "model_value": "1k",
+      "native_nets": [
+        "MAT_DRV_CMD",
+        "MAT_PI_RAW"
+      ],
+      "model_expected_native_nets": [
+        "MAT_DRV_CMD",
+        "MAT_PI_RAW"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RBACK",
+      "native_ref": "R2129",
+      "native_value": "22k",
+      "model_value": "22k",
+      "native_nets": [
+        "CC_AW",
+        "MAT_PI_SUM"
+      ],
+      "model_expected_native_nets": [
+        "CC_AW",
+        "MAT_PI_SUM"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RLOW",
+      "native_ref": "R2131",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_CMD_SENSE",
+        "CC_LOW_N"
+      ],
+      "model_expected_native_nets": [
+        "CC_CMD_SENSE",
+        "CC_LOW_N"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RHIGH",
+      "native_ref": "R2132",
+      "native_value": "10k",
+      "model_value": "10k",
+      "native_nets": [
+        "CC_CMD_SENSE",
+        "CC_HIGH_N"
+      ],
+      "model_expected_native_nets": [
+        "CC_CMD_SENSE",
+        "CC_HIGH_N"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RISO",
+      "native_ref": "R2102",
+      "native_value": "47",
+      "model_value": "47",
+      "native_nets": [
+        "CC_DRIVE",
+        "MAT_DRV_OUTPUT"
+      ],
+      "model_expected_native_nets": [
+        "CC_DRIVE",
+        "MAT_DRV_OUTPUT"
+      ],
+      "pass": true
+    },
+    {
+      "model": "RRESET_C",
+      "native_ref": "R1605",
+      "native_value": "220",
+      "model_value": "220",
+      "native_nets": [
+        "MAT_PI_RESET_C",
+        "MAT_PI_SUM"
+      ],
+      "model_expected_native_nets": [
+        "MAT_PI_RESET_C",
+        "MAT_PI_SUM"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "D2100",
+      "pin": "1",
+      "model_node": "vneg",
+      "expected_native_net": "CC_MV_N",
+      "native_net": "CC_MV_N",
+      "pass": true
+    },
+    {
+      "ref": "D2100",
+      "pin": "3",
+      "model_node": "vmaxout",
+      "expected_native_net": "CC_MV_OUT",
+      "native_net": "CC_MV_OUT",
+      "pass": true
+    },
+    {
+      "ref": "D2100",
+      "pin": "2",
+      "model_node": "emax",
+      "expected_native_net": "CC_EMAX",
+      "native_net": "CC_EMAX",
+      "pass": true
+    },
+    {
+      "ref": "D2101",
+      "pin": "1",
+      "model_node": "ineg",
+      "expected_native_net": "CC_MI_N",
+      "native_net": "CC_MI_N",
+      "pass": true
+    },
+    {
+      "ref": "D2101",
+      "pin": "3",
+      "model_node": "imaxout",
+      "expected_native_net": "CC_MI_OUT",
+      "native_net": "CC_MI_OUT",
+      "pass": true
+    },
+    {
+      "ref": "D2101",
+      "pin": "2",
+      "model_node": "emax",
+      "expected_native_net": "CC_EMAX",
+      "native_net": "CC_EMAX",
+      "pass": true
+    },
+    {
+      "ref": "D2102",
+      "pin": "1",
+      "model_node": "lneg",
+      "expected_native_net": "CC_LOW_N",
+      "native_net": "CC_LOW_N",
+      "pass": true
+    },
+    {
+      "ref": "D2102",
+      "pin": "3",
+      "model_node": "lowout",
+      "expected_native_net": "CC_LOW_OUT",
+      "native_net": "CC_LOW_OUT",
+      "pass": true
+    },
+    {
+      "ref": "D2102",
+      "pin": "2",
+      "model_node": "cmd",
+      "expected_native_net": "MAT_DRV_CMD",
+      "native_net": "MAT_DRV_CMD",
+      "pass": true
+    },
+    {
+      "ref": "D2103",
+      "pin": "1",
+      "model_node": "cmd",
+      "expected_native_net": "MAT_DRV_CMD",
+      "native_net": "MAT_DRV_CMD",
+      "pass": true
+    },
+    {
+      "ref": "D2103",
+      "pin": "3",
+      "model_node": "highout",
+      "expected_native_net": "CC_HIGH_OUT",
+      "native_net": "CC_HIGH_OUT",
+      "pass": true
+    },
+    {
+      "ref": "D2103",
+      "pin": "2",
+      "model_node": "hneg",
+      "expected_native_net": "CC_HIGH_N",
+      "native_net": "CC_HIGH_N",
+      "pass": true
+    },
+    {
+      "ref": "U1602",
+      "pin": "11",
+      "model_node": "MAT_SOURCE_SAFE",
+      "expected_native_net": "MAT_SOURCE_SAFE",
+      "native_net": "MAT_SOURCE_SAFE",
+      "pass": true
+    },
+    {
+      "ref": "U1602",
+      "pin": "12",
+      "model_node": "drv_out",
+      "expected_native_net": "MAT_DRV_OUTPUT",
+      "native_net": "MAT_DRV_OUTPUT",
+      "pass": true
+    },
+    {
+      "ref": "U1602",
+      "pin": "13",
+      "model_node": "power",
+      "expected_native_net": "MAT_RSH_POWER",
+      "native_net": "MAT_RSH_POWER",
+      "pass": true
+    },
+    {
+      "ref": "U1602",
+      "pin": "14",
+      "model_node": "0",
+      "expected_native_net": "GND",
+      "native_net": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U1602",
+      "pin": "20",
+      "model_node": "MAT_SOURCE_SAFE",
+      "expected_native_net": "MAT_SOURCE_SAFE",
+      "native_net": "MAT_SOURCE_SAFE",
+      "pass": true
+    },
+    {
+      "ref": "U1602",
+      "pin": "17",
+      "model_node": "0",
+      "expected_native_net": "GND",
+      "native_net": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U1602",
+      "pin": "18",
+      "model_node": "error_selected",
+      "expected_native_net": "MAT_REG_ERROR_SELECTED",
+      "native_net": "MAT_REG_ERROR_SELECTED",
+      "pass": true
+    },
+    {
+      "ref": "U1602",
+      "pin": "19",
+      "model_node": "error",
+      "expected_native_net": "MAT_REG_ERROR",
+      "native_net": "MAT_REG_ERROR",
+      "pass": true
+    },
+    {
+      "ref": "U1603",
+      "pin": "1",
+      "model_node": "MAT_SOURCE_OFF",
+      "expected_native_net": "MAT_SOURCE_OFF",
+      "native_net": "MAT_SOURCE_OFF",
+      "pass": true
+    },
+    {
+      "ref": "U1603",
+      "pin": "2",
+      "model_node": "raw",
+      "expected_native_net": "MAT_PI_RAW",
+      "native_net": "MAT_PI_RAW",
+      "pass": true
+    },
+    {
+      "ref": "U1603",
+      "pin": "3",
+      "model_node": "psum",
+      "expected_native_net": "MAT_PI_SUM",
+      "native_net": "MAT_PI_SUM",
+      "pass": true
+    },
+    {
+      "ref": "U1603",
+      "pin": "8",
+      "model_node": "MAT_SOURCE_OFF",
+      "expected_native_net": "MAT_SOURCE_OFF",
+      "native_net": "MAT_SOURCE_OFF",
+      "pass": true
+    },
+    {
+      "ref": "U1603",
+      "pin": "6",
+      "model_node": "resetc",
+      "expected_native_net": "MAT_PI_RESET_C",
+      "native_net": "MAT_PI_RESET_C",
+      "pass": true
+    },
+    {
+      "ref": "U1603",
+      "pin": "7",
+      "model_node": "pc",
+      "expected_native_net": "MAT_PI_C",
+      "native_net": "MAT_PI_C",
+      "pass": true
+    },
+    {
+      "ref": "R2105",
+      "value": "100",
+      "expected_value": "100",
+      "pass": true
+    },
+    {
+      "ref": "R2106",
+      "value": "1k",
+      "expected_value": "1k",
+      "pass": true
+    },
+    {
+      "ref": "R2107",
+      "value": "10k",
+      "expected_value": "10k",
+      "pass": true
+    },
+    {
+      "ref": "R2108",
+      "value": "100k",
+      "expected_value": "100k",
+      "pass": true
+    },
+    {
+      "ref": "R1600",
+      "requirement": "DNP,no1Mohmpopulatedsourcebleeder",
+      "pass": true
+    }
+  ]
+}

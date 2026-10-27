@@ -1,0 +1,288 @@
+{
+  "ready_to_package": true,
+  "project": "compliance/working/MIRA_Control",
+  "baseline_project": "compliance/baseline/MIRA_Control",
+  "source_zip": "output/MIRA_Control_Organized.zip",
+  "output_zip": "output/MIRA_Control_Organized.zip",
+  "pdf": "output/pdf/MIRA_Control_How_It_Works_RU.pdf",
+  "pdf_content": "output/pdf/MIRA_Control_How_It_Works_RU.content.json",
+  "engineering_data": "compliance/release/engineering_release_data.json",
+  "graph_report": "compliance/validation/FINAL_CONNECTION_VALIDATION.json",
+  "erc_review": "compliance/validation/FINAL_ERC_REVIEW.json",
+  "package_report": "compliance/release/package_validation.json",
+  "source_library_identity": {
+    "id": "libfile_fcf2a2ca45e88191a71e8ebabae695e2",
+    "expected_version": 4
+  },
+  "pdf_library_identity": {
+    "id": "libfile_c60b726b40d88191b2505e1ffaf5d704",
+    "expected_version": 1
+  },
+  "artifacts": [
+    {
+      "source": "compliance/validation/FINAL_CONNECTION_VALIDATION.json",
+      "destination": "FINAL_CONNECTION_VALIDATION.json",
+      "required": true,
+      "expected_status": "PASS"
+    },
+    {
+      "source": "compliance/validation/FINAL_ERC.json",
+      "destination": "FINAL_ERC.json",
+      "required": true
+    },
+    {
+      "source": "compliance/validation/FINAL_ERC_REVIEW.json",
+      "destination": "FINAL_ERC_REVIEW.json",
+      "required": true,
+      "expected_status": "PASS"
+    },
+    {
+      "source": "compliance/validation/BASELINE.net.xml",
+      "destination": "BASELINE.net.xml",
+      "required": true
+    },
+    {
+      "source": "compliance/validation/FINAL.net.xml",
+      "destination": "FINAL.net.xml",
+      "required": true
+    },
+    {
+      "source": "compliance/validation/validate_compliance_project.py",
+      "destination": "validate_compliance_project.py",
+      "required": true
+    },
+    {
+      "source": "repair/validate_final_project.py",
+      "destination": "native_audit_common.py",
+      "required": true
+    },
+    {
+      "source": "compliance/validation/review_erc.py",
+      "destination": "review_erc.py",
+      "required": true
+    },
+    {
+      "source": "compliance/validation/R2211_FOOTPRINT_MODEL_PROOF.json",
+      "destination": "R2211_FOOTPRINT_MODEL_PROOF.json",
+      "required": true,
+      "expected_status": "PASS"
+    },
+    {
+      "source": "compliance/matrix_guard/digital_contract_changes.json",
+      "destination": "contracts/digital_contract_changes.json",
+      "required": true
+    },
+    {
+      "source": "compliance/matrix_guard/fault_changes.json",
+      "destination": "contracts/fault_changes.json",
+      "required": true
+    },
+    {
+      "source": "compliance/root_integration/routing_changes.json",
+      "destination": "contracts/routing_changes.json",
+      "required": true
+    },
+    {
+      "source": "compliance/root_integration/leaf_note_changes.json",
+      "destination": "contracts/leaf_note_changes.json",
+      "required": true
+    },
+    {
+      "source": "compliance/analog_integration/2100_validation_manifest.json",
+      "destination": "contracts/2100_validation_manifest.json",
+      "required": true
+    },
+    {
+      "source": "compliance/analog_integration/2100_pin_contract.json",
+      "destination": "contracts/2100_pin_contract.json",
+      "required": true
+    },
+    {
+      "source": "compliance/matrix_guard/native_logic_validation.json",
+      "destination": "checks/NATIVE_DIGITAL_LOGIC.json",
+      "required": true
+    },
+    {
+      "source": "compliance/matrix_guard/fault_validation.json",
+      "destination": "checks/FAULT_THRESHOLD_AND_LOGIC.json",
+      "required": true,
+      "expected_status": "PASS"
+    },
+    {
+      "source": "compliance/analog_symbols/NATIVE_PINMAP_VALIDATION.json",
+      "destination": "checks/ANALOG_SYMBOL_NATIVE_PINMAP.json",
+      "required": true
+    },
+    {
+      "source": "compliance/analog_symbols/footprint_proof.json",
+      "destination": "checks/ANALOG_FOOTPRINT_PROOF.json",
+      "required": true
+    },
+    {
+      "source": "compliance/analog_integration/passive_bom_proof.json",
+      "destination": "checks/PASSIVE_BOM_PROOF.json",
+      "required": true
+    },
+    {
+      "source": "compliance/analog_symbols/SOURCE_MANIFEST.json",
+      "destination": "sources/ANALOG_SYMBOL_SOURCES.json",
+      "required": true
+    },
+    {
+      "source": "compliance/matrix_guard/updated_explanations.json",
+      "destination": "sources/DIGITAL_EXPLANATIONS.json",
+      "required": true
+    },
+    {
+      "source": "compliance/pdfprep/preparation_validation.json",
+      "destination": "checks/GUIDE_HISTORY_PREPARATION.json",
+      "required": true
+    },
+    {
+      "source": "compliance/validation/MIRA_Control_Schematic.pdf",
+      "destination": "MIRA_Control_Schematic.pdf",
+      "required": false
+    },
+    {
+      "source": "compliance/validation/LIBRARY_RECONCILIATION.json",
+      "destination": "LIBRARY_RECONCILIATION.json",
+      "required": true
+    },
+    {
+      "source": "compliance/analog_integration/NATIVE_2100_PIN_VALIDATION.json",
+      "destination": "checks/NATIVE_2100_PIN_VALIDATION.json",
+      "required": true
+    },
+    {
+      "source": "compliance/root_integration/remove_orphan_nc.json",
+      "destination": "contracts/remove_orphan_nc.json",
+      "required": true
+    },
+    {
+      "source": "compliance/validation/SCHEMATIC_VISUAL_QA.json",
+      "destination": "checks/SCHEMATIC_VISUAL_QA.json",
+      "required": true
+    },
+    {
+      "source": "compliance/analog_integration/R2129_FINAL_PROPERTY_CHANGE.json",
+      "destination": "contracts/R2129_FINAL_PROPERTY_CHANGE.json",
+      "required": true
+    },
+    {
+      "source": "compliance/validation/LIBRARY_RECONCILIATION_FINAL_READONLY.json",
+      "destination": "checks/LIBRARY_RECONCILIATION_FINAL_READONLY.json",
+      "required": true
+    },
+    {
+      "source": "compliance/validation/LIBRARY_FINAL_MATCH.json",
+      "destination": "checks/LIBRARY_FINAL_MATCH.json",
+      "required": true,
+      "expected_status": "PASS"
+    },
+    {
+      "source": "compliance/root_integration/R1605_RESET_CALCULATION.json",
+      "destination": "checks/R1605_RESET_CALCULATION.json",
+      "required": true
+    },
+    {
+      "source": "compliance/release/SOURCE_DESIGN_EVIDENCE.zip",
+      "destination": "SOURCE_DESIGN_EVIDENCE.zip",
+      "required": true
+    },
+    {
+      "source": "compliance/source_design/release/ENGINEERING_STATUS_RU.md",
+      "destination": "SOURCE_DESIGN_ANALYSIS_RU.md",
+      "required": true
+    },
+    {
+      "source": "compliance/source_design/release/CAPABILITY_CALCULATIONS.json",
+      "destination": "checks/SOURCE_CAPABILITY_CALCULATIONS.json",
+      "required": true
+    },
+    {
+      "source": "compliance/source_design/release/ratio_corner_analysis.json",
+      "destination": "checks/RATIO_CORNER_ANALYSIS.json",
+      "required": true
+    },
+    {
+      "source": "compliance/source_design/release/MANUFACTURER_TEST_STATUS.json",
+      "destination": "checks/MANUFACTURER_TEST_STATUS.json",
+      "required": true
+    },
+    {
+      "source": "compliance/source_design/release/FAILED_MANUFACTURER_TRANSIENT.log",
+      "destination": "checks/FAILED_MANUFACTURER_TRANSIENT.log",
+      "required": true
+    },
+    {
+      "source": "compliance/final_model_validation.zip",
+      "destination": "REDUCED_MODEL_VALIDATION.zip",
+      "required": true
+    },
+    {
+      "source": "compliance/final_model_validation/FINAL_REDUCED_SWEEP.json",
+      "destination": "checks/FINAL_REDUCED_SWEEP.json",
+      "required": true
+    },
+    {
+      "source": "compliance/final_model_validation/FINAL_REDUCED_METRICS.csv",
+      "destination": "checks/FINAL_REDUCED_METRICS.csv",
+      "required": true
+    },
+    {
+      "source": "compliance/final_model_validation/NATIVE_MODEL_MAPPING.json",
+      "destination": "checks/NATIVE_MODEL_MAPPING.json",
+      "required": true
+    },
+    {
+      "source": "compliance/pdfqa/GUIDE_BOUNDS_QA.json",
+      "destination": "checks/GUIDE_BOUNDS_QA.json",
+      "required": true,
+      "expected_status": "PASS"
+    },
+    {
+      "source": "compliance/pdfqa/FINAL_HISTORY_LAYOUT.json",
+      "destination": "checks/GUIDE_HISTORY_LAYOUT.json",
+      "required": true
+    },
+    {
+      "source": "compliance/pdfprep/layout_content_preservation.json",
+      "destination": "checks/GUIDE_LAYOUT_CONTENT_PRESERVATION.json",
+      "required": true
+    },
+    {
+      "source": "compliance/validation/GUIDE_PDF_QA.json",
+      "destination": "checks/GUIDE_PDF_QA.json",
+      "required": true,
+      "expected_status": "PASS"
+    },
+    {
+      "source": "compliance/final_model_validation/MANIFEST.json",
+      "destination": "checks/REDUCED_BUNDLE_MANIFEST.json",
+      "required": true
+    },
+    {
+      "source": "compliance/release/VALIDATION_BUNDLES_RU.md",
+      "destination": "VALIDATION_BUNDLES_RU.md",
+      "required": true
+    }
+  ],
+  "models": [
+    {
+      "source": "repair/dac_matrix_audit/models/sboma34d/OPAx197.LIB",
+      "destination": "models/OPAx197.LIB",
+      "source_url": "https://www.ti.com/lit/zip/sboma34"
+    },
+    {
+      "source": "compliance/source_design/models/sbomaq6b/INA821.LIB",
+      "destination": "models/INA821.LIB",
+      "source_url": "https://www.ti.com/lit/zip/sbomaq6"
+    }
+  ],
+  "simulations": [],
+  "preparation_notes": [
+    "Reviewed final electrical graph and native ERC passed; analog remains a prototype requiring bench qualification.",
+    "Curated source and reduced-component evidence are separate portable ZIPs; no exploratory model results are represented as final."
+  ],
+  "source_zip_sha256": "de2f0638f1c0a1a5338dcaace0a05eb9c9d50b109688cd348e410f94404d97ff"
+}

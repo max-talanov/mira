@@ -1,0 +1,160 @@
+{
+  "files": [
+    "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch"
+  ],
+  "modified": {
+    "U2201": {
+      "4": {
+        "from": "MAT_TRIP",
+        "to": "MAT_OC_TRIP"
+      }
+    }
+  },
+  "added": {
+    "U2203": {
+      "value": "SN74LVC1G32",
+      "pins": {
+        "1": "MAT_OC_TRIP",
+        "2": "MAT_CONFIG_TRIP",
+        "3": "GND",
+        "4": "MAT_TRIP",
+        "5": "IO3V3"
+      },
+      "footprint": "MIRA_RevA:SOT-23-5",
+      "mpn": "SN74LVC1G32DBVR",
+      "manufacturer": "Texas Instruments"
+    },
+    "R2211": {
+      "value": "1.5M",
+      "pins": {
+        "1": "IO3V3",
+        "2": "MAT_CMP_N"
+      },
+      "footprint": "MIRA_RevA:R_1206_3216Metric",
+      "mpn": "TNPW12061M50BEEA",
+      "manufacturer": "Vishay"
+    },
+    "C2203": {
+      "value": "100n",
+      "pins": {
+        "1": "IO3V3",
+        "2": "GND"
+      },
+      "footprint": "MIRA_RevA:C_0201_0603Metric",
+      "mpn": "C0603X7S1C104K030BB",
+      "manufacturer": "TDK"
+    }
+  },
+  "metadata_changes": {
+    "R2200": {
+      "from": {
+        "Reference": "R2200",
+        "Value": "20k",
+        "Footprint": "MIRA_RevA:R_0402_1005Metric",
+        "Datasheet": "",
+        "Description": "20k R, see BOM",
+        "MPN": "",
+        "Manufacturer": "Yageo"
+      },
+      "to": {
+        "Reference": "R2200",
+        "Value": "49.9k",
+        "Footprint": "MIRA_RevA:R_0402_1005Metric",
+        "Datasheet": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+        "Description": "49.9k ohm, 0.1%, 25 ppm/K, precision fault-threshold resistor",
+        "MPN": "TNPW040249K9BEED",
+        "Manufacturer": "Vishay"
+      }
+    },
+    "R2201": {
+      "from": {
+        "Reference": "R2201",
+        "Value": "10k",
+        "Footprint": "MIRA_RevA:R_0402_1005Metric",
+        "Datasheet": "",
+        "Description": "10k R, see BOM",
+        "MPN": "",
+        "Manufacturer": "Yageo"
+      },
+      "to": {
+        "Reference": "R2201",
+        "Value": "10k",
+        "Footprint": "MIRA_RevA:R_0402_1005Metric",
+        "Datasheet": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+        "Description": "10k ohm, 0.1%, 25 ppm/K, precision fault-threshold resistor",
+        "MPN": "TNPW040210K0BEED",
+        "Manufacturer": "Vishay"
+      }
+    },
+    "R2202": {
+      "from": {
+        "Reference": "R2202",
+        "Value": "17.4k",
+        "Footprint": "MIRA_RevA:R_0402_1005Metric",
+        "Datasheet": "",
+        "Description": "17.4k R, see BOM",
+        "MPN": "",
+        "Manufacturer": "Yageo"
+      },
+      "to": {
+        "Reference": "R2202",
+        "Value": "37.4k",
+        "Footprint": "MIRA_RevA:R_0402_1005Metric",
+        "Datasheet": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+        "Description": "37.4k ohm, 0.1%, 25 ppm/K, precision fault-threshold resistor",
+        "MPN": "TNPW040237K4BEED",
+        "Manufacturer": "Vishay"
+      }
+    },
+    "R2203": {
+      "from": {
+        "Reference": "R2203",
+        "Value": "10k",
+        "Footprint": "MIRA_RevA:R_0402_1005Metric",
+        "Datasheet": "",
+        "Description": "10k R, see BOM",
+        "MPN": "",
+        "Manufacturer": "Yageo"
+      },
+      "to": {
+        "Reference": "R2203",
+        "Value": "10k",
+        "Footprint": "MIRA_RevA:R_0402_1005Metric",
+        "Datasheet": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+        "Description": "10k ohm, 0.1%, 25 ppm/K, precision fault-threshold resistor",
+        "MPN": "TNPW040210K0BEED",
+        "Manufacturer": "Vishay"
+      }
+    }
+  },
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/tlv3201.pdf",
+    "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+  ],
+  "sha256": {
+    "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch": "005e27f1854f4043c9829cd7a504454b5d13d939b119c256906d6d3dff8fdba3"
+  },
+  "library_patch": "compliance/matrix_guard/fault_library_symbols.kicad_sym",
+  "preserved": [
+    "U2201 overcurrent AND WRITE_SAFE qualification",
+    "U2202 D=IO3V3, PRE_N=IO3V3, CLK=MAT_TRIP, CLR_N=MAT_FAULT_CLEAR_N",
+    "Q2200..Q2203 output/inhibit driver connections"
+  ],
+  "formula": {
+    "sense_plus": "VSENSE*10/59.9",
+    "sense_minus": "(VILIM/37.4k+IO3V3/1.5M)/(1/37.4k+1/10k+1/1.5M)",
+    "trip_nominal": "VSENSE > 1.257100484*VILIM+0.103434228 V at IO3V3=3.3V"
+  },
+  "validation": {
+    "native_pin_assertions": 35,
+    "fault_logic_combinations": 16,
+    "threshold_and_clamp_calculation": "compliance/matrix_guard/fault_validation.json",
+    "owned_erc_violations": 0,
+    "visual": "PASS_A3"
+  },
+  "added_files": [
+    "libraries/MIRA_RevA.pretty/R_1206_3216Metric.kicad_mod"
+  ],
+  "footprint_patch": "compliance/matrix_guard/new_footprints/R_1206_3216Metric.kicad_mod",
+  "added_BOM_contract_source": "Explicit selected identities from design generator definitions and unchanged baseline bypass part, not autoaccepted from final observed graph."
+}

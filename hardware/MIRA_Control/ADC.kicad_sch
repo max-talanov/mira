@@ -1,0 +1,213 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "89928584-70f3-49a6-9db6-fd9d1c6925e1")
+	(paper "A3")
+	(title_block
+		(title "Current conversion and precision acquisition")
+		(rev "B")
+		(company "MIRA")
+	)
+	(lib_symbols)
+	(text "ADC - Current conversion and precision acquisition"
+		(exclude_from_sim no)
+		(at 22.86 15.24 0)
+		(effects
+			(font
+				(size 2.1 2.1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "014baee3-9fa0-47f1-b27d-bd903c31eae0")
+	)
+	(text "Group scope"
+		(exclude_from_sim no)
+		(at 315 45.72 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "05c0c333-edb6-4fbb-854b-56e4b40325ca")
+	)
+	(text "TIA and monitor mux; high-impedance current feedback and ILIM copies; ILIM buffer also feeds shared source\ncontroller."
+		(exclude_from_sim no)
+		(at 22.86 60.32 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "2ee65ea3-549d-4201-8dd0-44ada6f9db19")
+	)
+	(text "12 V preregulator, 5 V reference, balanced THP210 ADC input and AD4003."
+		(exclude_from_sim no)
+		(at 22.86 97.15 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "4af61fc4-1f32-45bd-8823-af78727e981f")
+	)
+	(text "TIA ranges and monitor selection, high-impedance\ncompliance buffers, balanced differential ADC\ndrive, reference and converter."
+		(exclude_from_sim no)
+		(at 315 54.61 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "86300ce8-71c4-4812-8d87-d27618b53094")
+	)
+	(text "Each numeric child contains its own circuit\nexplanation. Identical global labels connect\nbetween leaves. A shared U reference denotes one\nphysical multi-unit device."
+		(exclude_from_sim no)
+		(at 315 106.68 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "bdf902a1-ea92-4020-8016-23760f19cccd")
+	)
+	(text "Physical references follow the first circuit leaf containing the component; multi-unit devices are not duplicated."
+		(exclude_from_sim no)
+		(at 22.86 277 0)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "e3b52901-ca01-4d12-9ccf-6deb20f4576f")
+	)
+	(text "Reading guide"
+		(exclude_from_sim no)
+		(at 315 97.79 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "e52ce74d-8852-480f-b44e-1689067857ed")
+	)
+	(text "Consecutive circuit order; select a child sheet to inspect its circuit and sheet-specific explanation."
+		(exclude_from_sim no)
+		(at 22.86 25.4 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "fab75c2e-3b75-4bb3-b813-09960a5bf8ed")
+	)
+	(sheet
+		(at 22.86 82.55)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0cd68471-1e6b-4777-98ec-474bbf9e20da")
+		(property "Sheetname" "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES"
+			(at 22.86 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch"
+			(at 22.86 93.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/c82bdf26-7de4-4478-a0aa-bcc4853fb2a7"
+					(page "27")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 45.72)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "16ab9d23-37a9-4b94-ac8f-5664cb2e5fdc")
+		(property "Sheetname" "1900_ADC_TIA_AND_MONITOR_SELECTOR"
+			(at 22.86 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch"
+			(at 22.86 56.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/c82bdf26-7de4-4478-a0aa-bcc4853fb2a7"
+					(page "26")
+				)
+			)
+		)
+	)
+)

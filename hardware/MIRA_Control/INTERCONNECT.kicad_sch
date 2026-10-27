@@ -1,0 +1,155 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "9977b6af-f19e-4ddd-959d-ea0a8638b2b6")
+	(paper "A3")
+	(title_block
+		(title "Power inputs and supervisory boundary")
+		(rev "B")
+		(company "MIRA")
+	)
+	(lib_symbols)
+	(text "Physical references follow the first circuit leaf containing the component; multi-unit devices are not duplicated."
+		(exclude_from_sim no)
+		(at 22.86 277 0)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "058ebf86-12ef-47ab-86d5-2bab242d6c73")
+	)
+	(text "Group scope"
+		(exclude_from_sim no)
+		(at 315 45.72 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "0f9a2647-3918-415f-85f0-1598d1866984")
+	)
+	(text "Physical external rails, 3.3 V AON interface, Ioff status receivers and inhibit return."
+		(exclude_from_sim no)
+		(at 22.86 60.32 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "5aed9a7a-1efc-43ff-b022-d199990e86c7")
+	)
+	(text "Reading guide"
+		(exclude_from_sim no)
+		(at 315 97.79 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "5e1299aa-9b9b-451c-bffb-5af24f18bf3d")
+	)
+	(text "INTERCONNECT - Power inputs and supervisory boundary"
+		(exclude_from_sim no)
+		(at 22.86 15.24 0)
+		(effects
+			(font
+				(size 2.1 2.1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "663f912d-f44f-42cc-93c5-ae27fd58de11")
+	)
+	(text "Explicit Control-side power and permission\nconnector. Separate SYS3V3 and IO3V3 receivers\nprevent joining disabled receiver domains."
+		(exclude_from_sim no)
+		(at 315 54.61 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "88e027f7-6895-4064-a827-70f5c537895d")
+	)
+	(text "Consecutive circuit order; select a child sheet to inspect its circuit and sheet-specific explanation."
+		(exclude_from_sim no)
+		(at 22.86 25.4 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "9984dd3e-a709-47ef-8cb6-ddc3334a2c32")
+	)
+	(text "Each numeric child contains its own circuit\nexplanation. Identical global labels connect\nbetween leaves. A shared U reference denotes one\nphysical multi-unit device."
+		(exclude_from_sim no)
+		(at 315 106.68 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "d0d19a7a-1042-41aa-a1a4-c77878a8f020")
+	)
+	(sheet
+		(at 22.86 45.72)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "877d6aee-4761-48d7-9357-3a336e8ce272")
+		(property "Sheetname" "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE"
+			(at 22.86 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch"
+			(at 22.86 56.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/256d926f-b75a-42ae-a223-730b777ed784"
+					(page "7")
+				)
+			)
+		)
+	)
+)

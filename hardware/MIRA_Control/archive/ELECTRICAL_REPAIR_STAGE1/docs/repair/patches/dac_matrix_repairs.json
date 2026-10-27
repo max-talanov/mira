@@ -1,0 +1,717 @@
+{
+  "scope": "Approved DAC and matrix repairs; only leaves 1800,2200,2600,3100 modified; no global library changes or reference renumbering.",
+  "files": [
+    {
+      "file": "1800_DAC_SERVICE_AND_FORMING.kicad_sch",
+      "before_sha256": "9c56966888161beca32c75b2cfcddcad730a8ceaf1f5d8f1fb1d1b33483873e0",
+      "after_sha256": "449d43c60034904d8edaa228cde18a1dd3d354903c2b7292430f3fe3a749a328"
+    },
+    {
+      "file": "2200_MATRIX_BL0_31_SWITCHING.kicad_sch",
+      "before_sha256": "f4fab832da86accf096d53961a77f40036d265222896744f8d9c6be09c945777",
+      "after_sha256": "0e7cc8cbd5abd1edbf8d507a6ce6815dbc0be848541dde33cc65ef18296f9a69"
+    },
+    {
+      "file": "2600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING.kicad_sch",
+      "before_sha256": "67f044c8e5a6202763306b350c12b96d698473d6ac7782448413cfe62997c30a",
+      "after_sha256": "1df4c467f8fb04fa155fe194edbe847fcde01a635908f43d917d45dbe4baa434"
+    },
+    {
+      "file": "3100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+      "before_sha256": "cecc2337a3d389aede93d716527bc66c9bc380877fa2f95c18e04e48bf3a2550",
+      "after_sha256": "2ce2d3ec7d51abcb31d3a77223f7ebbc6770cb9e490283dabf80a32b676b67fb"
+    },
+    {
+      "file": "2700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
+      "before_sha256": "9994ad09e1452e0357ad4636a44ae8107c33c8b2f2fa857ad567cb27239af918",
+      "after_sha256": "c9062155a5f7615ad5084dfe65840b5f482d87fb69e1d764a658387c56d91cae"
+    }
+  ],
+  "intentional_net_changes": [
+    {
+      "node": "U2202.11",
+      "before": "BL_DAC2",
+      "after": "BL_DAC6"
+    },
+    {
+      "node": "U2202.6",
+      "before": "BL_DAC3",
+      "after": "BL_DAC7"
+    },
+    {
+      "removed_node": "U1803.4",
+      "added_node": "U1806.5",
+      "net": "PROG_P15"
+    },
+    {
+      "removed_node": "U1803.11",
+      "added_node": "U1806.2",
+      "net": "PROG_N15"
+    },
+    {
+      "node": "U3102.7, C3105 supply side",
+      "before": "ANA5",
+      "after": "P15"
+    },
+    {
+      "node": "U3102.2, C3104.1",
+      "before": "MAT_CC_SENSE",
+      "after": "MAT_CC_FB"
+    },
+    {
+      "node": "R3103.1",
+      "before": "MAT_CC_GATE_RAW",
+      "after": "U2604.7 net"
+    },
+    {
+      "node": "U2603.11",
+      "before": "GND",
+      "after": "MAT_WRITE_PULSE"
+    },
+    {
+      "node": "U2603.12",
+      "before": "GND",
+      "after": "MAT_CC_SENSE"
+    },
+    {
+      "node": "U2603.13",
+      "before": "No connect",
+      "after": "MAT_CC_FB"
+    },
+    {
+      "node": "U2603.14",
+      "before": "GND",
+      "after": "MAT_CC_GATE_RAW"
+    },
+    {
+      "node": "U2604.6",
+      "before": "GND",
+      "after": "MAT_CC_GATE_RAW"
+    },
+    {
+      "node": "U2604.7",
+      "before": "No connect",
+      "after": "R3103.1 net"
+    },
+    {
+      "node": "U2604.8",
+      "before": "GND",
+      "after": "MAT_WRITE_PULSE"
+    },
+    {
+      "node": "U3103.2",
+      "before": "MAT_WRITE_SAFE",
+      "after": "MAT_WRITE_PULSE"
+    },
+    {
+      "node": "U3103.4 / Q3102.1 network",
+      "before": "MAT_NOT_WRITE_SAFE",
+      "after": "MAT_NOT_WRITE_PULSE"
+    },
+    {
+      "node": "R3105.1",
+      "before": "MAT_WRITE_SAFE",
+      "after": "MAT_WRITE_PULSE",
+      "reason": "Existing 10k pulldown follows the intentionally changed U3103 inverter input; gate clamp is qualified per pulse."
+    }
+  ],
+  "intentional_component_value_changes": [
+    {
+      "ref": "C3105",
+      "capacitance_before": "100n",
+      "capacitance_after": "100n",
+      "mpn_before": "C0603X7S1C104K030BB",
+      "mpn_after": "GRM155R71H104KE14D",
+      "voltage_before": "16 V",
+      "voltage_after": "50 V",
+      "footprint_before": "MIRA_RevA:C_0201_0603Metric",
+      "footprint_after": "MIRA_RevA:C_0402_1005Metric",
+      "reason": "U3102 supply raised from ANA5 to P15; keep 100nF and use adequate voltage rating."
+    }
+  ],
+  "added_instances": [
+    {
+      "ref": "U1806",
+      "unit": 2,
+      "replaces": "U1803 unit5",
+      "position_mm": [
+        128.27,
+        143.51
+      ]
+    }
+  ],
+  "removed_instances": [
+    {
+      "ref": "U1803",
+      "unit": 5,
+      "reason": "Wrong orphan OPA4192 power unit replaced by actual OPA192 supply unit"
+    },
+    {
+      "ref": "#PWR2603",
+      "reason": "Ground marker for formerly unused U2603C removed"
+    },
+    {
+      "ref": "#PWR2610",
+      "reason": "Ground marker for formerly unused U2604D removed"
+    }
+  ],
+  "moved_instances": [
+    {
+      "ref": "U2603",
+      "unit": 3,
+      "from_sheet": 2600,
+      "to_sheet": 3100,
+      "from_mm": [
+        116.84,
+        189.23
+      ],
+      "to_mm": [
+        53.34,
+        124.46
+      ]
+    },
+    {
+      "ref": "U2604",
+      "unit": 4,
+      "from_sheet": 2600,
+      "to_sheet": 3100,
+      "from_mm": [
+        177.8,
+        187.96
+      ],
+      "to_mm": [
+        53.34,
+        149.86
+      ]
+    },
+    {
+      "ref": "R3103",
+      "unit": 1,
+      "from_mm": [
+        161.29,
+        58.42
+      ],
+      "to_mm": [
+        78.74,
+        149.86
+      ],
+      "value_unchanged": "100 Ohm"
+    }
+  ],
+  "preserved_values": [
+    "R3103 = 100 Ohm",
+    "C3104 = 100 pF C0G",
+    "R3104 = 100k gate to GND",
+    "All DAC gain straps, DAC and amplifier IC models",
+    "All existing current shunts"
+  ],
+  "operating_contract": {
+    "write_sources": "0...+10 V only; AD5761R forming range configured unipolar 0...10 V with overrange disabled.",
+    "dut_sign": "Select with MAT_POLARITY; the current-return sink always receives positive current.",
+    "unsupported": "Negative absolute MAT_SOURCE/VFORM_SRC is not supported by the single-sided 2N7002 current sink; body diode bypasses control.",
+    "tracking_off": "MAT_WRITE_PULSE=0: U2603C selects OUT as feedback; U2604D isolates amplifier from gate; Q3102 plus R3104 hold gate low.",
+    "tracking_on": "MAT_WRITE_PULSE=1: U2603C selects raw CC_SENSE; U2604D connects amplifier through R3103 to gate; clamp releases.",
+    "not_yet_proven": "Loop phase margin, switching transient and first-pulse overshoot require simulation and later bench checks; 100pF is the initial compensation, not a certified stability result.",
+    "power_sequence": "Ordinary ADG54xx are not power-off protected. Analog sources and 3.3V controls must respect actual switch rails during sequencing."
+  },
+  "no_gate_source_resistor_reason": "R3104 already supplies passive gate-to-GND off state. Adding a gate-to-sense resistor injects gate current into the sensitive shunt node and changes microamp current calibration.",
+  "library_patch_required": false,
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/opa192.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa197.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad5672r_5676r.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ad5761r_5721r.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5433_5434.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf",
+    "https://assets.nexperia.com/documents/data-sheet/2N7002.pdf",
+    "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R71H104KE14%22%5D"
+  ],
+  "native_validation": {
+    "tool": "KiCad 10.0.5",
+    "netlist": "repair/dac_matrix_audit/after.net.xml",
+    "expected_pin_net_checks": 21,
+    "passed": true,
+    "observed_native_delta": [
+      {
+        "ref": "C3104",
+        "pin": "1",
+        "before": "MAT_CC_SENSE",
+        "after": "MAT_CC_FB"
+      },
+      {
+        "ref": "C3105",
+        "pin": "1",
+        "before": "ANA5",
+        "after": "P15"
+      },
+      {
+        "ref": "Q3102",
+        "pin": "1",
+        "before": "MAT_NOT_WRITE_SAFE",
+        "after": "MAT_NOT_WRITE_PULSE"
+      },
+      {
+        "ref": "R3103",
+        "pin": "1",
+        "before": "MAT_CC_GATE_RAW",
+        "after": "Net-(U2604D-D)"
+      },
+      {
+        "ref": "U1803",
+        "pin": "11",
+        "before": "PROG_N15",
+        "after": null
+      },
+      {
+        "ref": "U1803",
+        "pin": "4",
+        "before": "PROG_P15",
+        "after": null
+      },
+      {
+        "ref": "U1806",
+        "pin": "2",
+        "before": null,
+        "after": "PROG_N15"
+      },
+      {
+        "ref": "U1806",
+        "pin": "5",
+        "before": null,
+        "after": "PROG_P15"
+      },
+      {
+        "ref": "U2202",
+        "pin": "11",
+        "before": "BL_DAC2",
+        "after": "BL_DAC6"
+      },
+      {
+        "ref": "U2202",
+        "pin": "6",
+        "before": "BL_DAC3",
+        "after": "BL_DAC7"
+      },
+      {
+        "ref": "U2603",
+        "pin": "11",
+        "before": "GND",
+        "after": "MAT_WRITE_PULSE"
+      },
+      {
+        "ref": "U2603",
+        "pin": "12",
+        "before": "GND",
+        "after": "MAT_CC_SENSE"
+      },
+      {
+        "ref": "U2603",
+        "pin": "13",
+        "before": "unconnected-(U2603C-D-Pad13)",
+        "after": "MAT_CC_FB"
+      },
+      {
+        "ref": "U2603",
+        "pin": "14",
+        "before": "GND",
+        "after": "MAT_CC_GATE_RAW"
+      },
+      {
+        "ref": "U2604",
+        "pin": "6",
+        "before": "GND",
+        "after": "MAT_CC_GATE_RAW"
+      },
+      {
+        "ref": "U2604",
+        "pin": "7",
+        "before": "unconnected-(U2604D-D-Pad7)",
+        "after": "Net-(U2604D-D)"
+      },
+      {
+        "ref": "U2604",
+        "pin": "8",
+        "before": "GND",
+        "after": "MAT_WRITE_PULSE"
+      },
+      {
+        "ref": "U3102",
+        "pin": "2",
+        "before": "MAT_CC_SENSE",
+        "after": "MAT_CC_FB"
+      },
+      {
+        "ref": "U3102",
+        "pin": "7",
+        "before": "ANA5",
+        "after": "P15"
+      },
+      {
+        "ref": "U3103",
+        "pin": "2",
+        "before": "MAT_WRITE_SAFE",
+        "after": "MAT_WRITE_PULSE"
+      },
+      {
+        "ref": "U3103",
+        "pin": "4",
+        "before": "MAT_NOT_WRITE_SAFE",
+        "after": "MAT_NOT_WRITE_PULSE"
+      }
+    ],
+    "visual_review": "Four native-exported schematic pages rendered and inspected; new circuits/labels/captions remain inside page frames without collisions."
+  },
+  "explanations_file": "repair/patches/dac_updated_explanations.json",
+  "editorial_update": "Five Russian paragraphs per affected sheet and matching English inline descriptions updated; no electrical edits in this pass.",
+  "intentional_assembly_changes": [
+    {
+      "sheet": 2200,
+      "ref": "R2260",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2242",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2216",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2272",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2220",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2212",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2240",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2294",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2292",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2244",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2246",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2270",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2218",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2262",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2282",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2286",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2296",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2248",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2238",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2266",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2224",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2234",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2214",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2264",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2284",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2258",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2222",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2268",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2210",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2288",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2236",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2200,
+      "ref": "R2290",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2600,
+      "ref": "R2602",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2700,
+      "ref": "R2726",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2700,
+      "ref": "R2718",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2700,
+      "ref": "R2730",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2700,
+      "ref": "R2728",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2700,
+      "ref": "R2722",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2700,
+      "ref": "R2720",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2700,
+      "ref": "R2732",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    },
+    {
+      "sheet": 2700,
+      "ref": "R2724",
+      "value": "1M",
+      "before_dnp": false,
+      "after_dnp": true,
+      "reason": "Ground bleed bypasses Q3101/raw current sense when this terminal is the WRITE return."
+    }
+  ],
+  "preserved_bleeders": [
+    {
+      "ref": "R2601",
+      "net": "MAT_SOURCE to GND",
+      "reason": "Source-side load, does not bypass current measurement after the DUT."
+    },
+    {
+      "ref": "R3110",
+      "net": "MAT_CC_SENSE to GND",
+      "reason": "Part of measured source/shunt network; current is included in Q3101 current."
+    }
+  ],
+  "dnp_operating_note": "BL/NL and MAT_RETURN optional bleed footprints remain, unpopulated. With all switches off these nodes may float; use existing BL_ZERO/NL_ZERO clamps and a deliberate discharge interval when permitted by the DUT. Do not treat DNP parts as default DC paths.",
+  "explanation_update_after_DNP": "Added leaf2700, corrected floating OFF nodes and clarified DUT-current vs MOS-current after removing bypass bleeders.",
+  "dynamic_validation": {
+    "status": "BLOCKING: current-compliance stage not approved for PCB release as a fast microamp pulse limiter",
+    "preserved_compensation": "C3104=100pF, R3103=100 Ohm. No unvalidated passive replacement applied.",
+    "model_report": "dac_matrix_audit/simulation/CC_ENGINEERING_DECISION_RU.md",
+    "topological_limitation": "Low-side sense does not measure current charging external return-to-GND capacitance through the DUT. Removing DC bleeders does not remove this capacitive path.",
+    "numerical_scope": "Unchanged official TI OPA197 macromodel in ngspice ps mode; approximate MOSFET/switch/parasitic representations. Results are counterexamples and sensitivity checks, not guaranteed hardware limits."
+  }
+}

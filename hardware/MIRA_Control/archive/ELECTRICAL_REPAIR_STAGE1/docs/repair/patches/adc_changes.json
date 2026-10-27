@@ -1,0 +1,97 @@
+{
+  "scope": [
+    "2900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
+    "3000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch"
+  ],
+  "source_files_unchanged": true,
+  "shared_library_written": false,
+  "library_patch": "repair/patches/adc_library_symbols.kicad_sym",
+  "modified_components": {
+    "U3003": "OPA197 is now a P15/N15 post-mux voltage follower; obsolete bias divider no longer feeds it",
+    "U3004": "OPA197 replaced by THP210IDR, SOIC-8, balanced -0.15 differential gain",
+    "R3003": "14k -> 20k, FDA RG2 0.1%",
+    "R3004": "10k -> 3k, FDA RF2 0.1%",
+    "R3005": "100k -> 20k, FDA RG1 0.1%",
+    "R3006": "20k -> 3k, FDA RF1 0.1%",
+    "R3007": "33 -> 100 Ohm ADC positive-input isolation",
+    "C3007": "1n -> 470p C0G, now directly across IN+/IN-",
+    "C3004": "100n/16V0201 -> 100n/25Vminimum0402 for P15 bypass",
+    "U3001": "VIN P15 -> MAT_REF_PRE12 from new 12V preregulator",
+    "U3005": "IN- fixed MAT_ADC_CM -> new balanced MAT_ADC_INN; other ADC supply/interface nets retained"
+  },
+  "added_refs": [
+    "U2904",
+    "C2918",
+    "C2919",
+    "U3007",
+    "R3010",
+    "R3011",
+    "C3014",
+    "C3015",
+    "C3016",
+    "C3017",
+    "C3018",
+    "C3019"
+  ],
+  "removed_refs": [],
+  "new_nets": [
+    "MAT_CC_SENSE_BUF",
+    "MAT_ILIM_SENSE_BUF",
+    "MAT_MONITOR_BUF",
+    "FDA_N",
+    "FDA_P",
+    "FDA_OP",
+    "FDA_ON",
+    "MAT_ADC_INN",
+    "MAT_REF_PRE12"
+  ],
+  "obsolete_nets": [
+    "MAT_ADC_BIAS",
+    "MAT_BIAS_RAW",
+    "MAT_ADC_INV",
+    "MAT_ADC_DRIVE"
+  ],
+  "intentional_net_changes": [
+    "U2903 S4/S5 raw MAT_CC_SENSE/MAT_ILIM_SENSE -> corresponding _BUF outputs of U2904",
+    "U2904 A/B high impedance inputs connect raw CC and ILIM; raw control-loop inputs stay on their original nets",
+    "U3003 OUT/IN- forms MAT_MONITOR_BUF; IN+ receives original MAT_MONITOR_RAW",
+    "THP210 cross-feedback RG20k/RF3k implements -0.15 gain; VREF/2 controls output common mode rather than connecting directly to ADC IN-",
+    "100 Ohm in each output leg and 470p directly between ADC inputs",
+    "U3007 TLV76012DBZR P15 -> MAT_REF_PRE12 -> ADR4550 VIN; minimum-load 10k bleed added"
+  ],
+  "coordination_required": [
+    "Project socket audit agent must move R3201/R3203 inputs to MAT_CC_SENSE_BUF/MAT_ILIM_SENSE_BUF on sheet 3200"
+  ],
+  "limitations": [
+    "Post-mux OPA197 still requires output headroom at +/-15V supply rails; qualify an interior monitor range initially +/-14V",
+    "100kSPS and 20us are validation starting conditions, not a proved timing guarantee",
+    "Comparator delay includes new buffer dynamics",
+    "Existing shunt-key RON and permanent1M load remain in compliance calibration; this patch does not redesign the regulator loop",
+    "MAC/HDL/firmware not supplied by this schematic patch"
+  ],
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/thp210.pdf",
+    "https://www.ti.com/lit/ds/symlink/opa197.pdf",
+    "https://www.ti.com/lit/ds/symlink/tlv760.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/AD4003-4007-4011.pdf",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/ADR4520_4525_4530_4533_4540_4550.pdf"
+  ],
+  "dc_checks": {
+    "FDA_gain": -0.15,
+    "FDA_internal_CM_at_monitor_minus15": 1.1956521739,
+    "FDA_internal_CM_at_monitor_plus15": 3.152173913,
+    "FDA_each_output_minmax": [
+      1.375,
+      3.625
+    ],
+    "ADC_input_average": 2.5,
+    "RC_tau_seconds": 9.4e-08,
+    "RC_fc_Hz": 1693137.6925,
+    "initial_validation_rate_limit_sps": 100000,
+    "initial_validation_postchange_delay_seconds": 2e-05,
+    "prereg_output_bounds_V": [
+      11.4,
+      12.6
+    ]
+  }
+}

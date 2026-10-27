@@ -1,0 +1,78 @@
+[
+  {
+    "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+    "note": "U101 is a single multi-unit physical MCU spanning all three MCU sheets. Its designator must stay identical on every unit."
+  },
+  {
+    "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+    "note": "Do not repeat the inherited 480 MHz/VOS0 claim without checking device silicon revision and current ST guidance; no performance claim was retained."
+  },
+  {
+    "sheet": "900_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+    "note": "The inherited 80-bit shift-frame and MCU guide text are unrelated to this supply sheet and should be removed."
+  },
+  {
+    "sheet": "900_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+    "note": "Do not claim the existing unused-GTP wiring is vendor-validated solely because an inherited note mentions UG482; this task does not change or validate that circuit."
+  },
+  {
+    "sheet": "1000_FPGA_CONFIGURATION_AND_XADC.kicad_sch",
+    "note": "Actual configuration mode bits are M0 high, M1/M2 low; avoid encoding a mode name without vendor documentation."
+  },
+  {
+    "sheet": "1000_FPGA_CONFIGURATION_AND_XADC.kicad_sch",
+    "note": "FPGA_DONE and FPGA_INIT_N are present but netlist shows no independent U101 endpoint; do not imply they are already monitored by MCU."
+  },
+  {
+    "sheet": "1100_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+    "note": "U1107 R1103 is a 200 kohm DIR pull-up, not the low leg of a VBUS divider; keep wording precise."
+  },
+  {
+    "sheet": "1100_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+    "note": "No additional regulator IC is on this sheet for FT1V0, so do not describe a nonexistent external regulator."
+  },
+  {
+    "sheet": "1200_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+    "note": "Source has no generated memory-controller configuration or timing constraints; do not assert any proven DDR operating data rate."
+  },
+  {
+    "sheet": "1300_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+    "note": "Buffers have OE permanently low; do not describe firmware-controlled isolation or a bidirectional level translator."
+  },
+  {
+    "sheet": "1300_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+    "note": "Network stack capability is architectural, not proof that a configured MAC/lwIP image exists in this project."
+  },
+  {
+    "sheet": "1400_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+    "note": "Eight OPA4192 packages each have four signal units and one supply unit on this leaf; all units of a package must retain the same reference."
+  },
+  {
+    "sheet": "1400_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+    "note": "Repeated original captions saying BL0-3 or U1402/U1403 are copied captions and should be replaced by the actual channel or package names."
+  },
+  {
+    "sheet": "1800_DAC_SERVICE_AND_FORMING.kicad_sch",
+    "note": "Pre-existing source ambiguity: only U1806 signal unit is placed. U1803 is an OPA4192 power-only package on PROG rails, not the OPA192 supply unit. Preserve all components; flag for electrical review."
+  },
+  {
+    "sheet": "1900_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
+    "note": "U901 unit 7 is part of the same FPGA package used on other sheets; retain one shared reference when renumbering."
+  },
+  {
+    "sheet": "2000_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+    "note": "U901 unit 8 is the same FPGA package as the power, configuration and other bank units. Do not give it a separate sheet-based component reference."
+  },
+  {
+    "sheet": "2200_MATRIX_BL0_31_SWITCHING.kicad_sch",
+    "note": "Pre-existing source wiring: U2202 pin 11, the BL6 DAC path, is on BL_DAC2; pin 6, the BL7 DAC path, is on BL_DAC3. The source does not label these as BL_DAC6/7. Preserve and report separately rather than silently fixing."
+  },
+  {
+    "sheet": "2800_MATRIX_CROSSBAR_SOCKET_AND_BIAS.kicad_sch",
+    "note": "User crossbar reference: socket pin 40 CASE_COM; pin 48 GND_REF (project net MAT_ADAPTER_VSUB); pin 47 NC. Source reference board used a different assignment; do not silently substitute it."
+  },
+  {
+    "sheet": "3000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
+    "note": "Replace stale existing text \"C2915 returns to MAT_ADC_CM\" with \"C3007 returns to MAT_ADC_CM\". The physical 1 nF differential input capacitor is C3007."
+  }
+]

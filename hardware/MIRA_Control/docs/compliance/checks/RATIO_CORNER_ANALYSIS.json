@@ -1,0 +1,38 @@
+{
+  "model": "Exact resistor network corners, ideal zero-offset amplifiers; IERRactive; VB2.5V fixed; not complete tolerance qualification",
+  "corners": [
+    {
+      "res_individual_tolerance": 0.001,
+      "ISET_V": 0.1,
+      "ISENSEmin_V": 0.09020019020019099,
+      "ISENSEmax_V": 0.10980020980020956,
+      "relative_error_min_pct": -9.799809799809012,
+      "relative_error_max_pct": 9.800209800209547
+    },
+    {
+      "res_individual_tolerance": 0.001,
+      "ISET_V": 1.0,
+      "ISENSEmin_V": 0.9920019920019931,
+      "ISENSEmax_V": 1.008002008002008,
+      "relative_error_min_pct": -0.7998007998006873,
+      "relative_error_max_pct": 0.800200800200801
+    },
+    {
+      "res_individual_tolerance": 0.0001,
+      "ISET_V": 0.1,
+      "ISENSEmin_V": 0.09902000199019942,
+      "ISENSEmax_V": 0.10098000200979973,
+      "relative_error_min_pct": -0.9799980098005867,
+      "relative_error_max_pct": 0.9800020097997297
+    },
+    {
+      "res_individual_tolerance": 0.0001,
+      "ISET_V": 1.0,
+      "ISENSEmin_V": 0.9992000199919995,
+      "ISENSEmax_V": 1.000800020008,
+      "relative_error_min_pct": -0.07999800080005226,
+      "relative_error_max_pct": 0.08000200080000575
+    }
+  ],
+  "calibration": "For fixed VB and resistor ratios, ISENSE is affine in ISET. Two-point zero/gain calibration per range can correct this resistor-only error, but not common-mode-dependent INA error, temperature drift/leakage or dynamic behavior."
+}

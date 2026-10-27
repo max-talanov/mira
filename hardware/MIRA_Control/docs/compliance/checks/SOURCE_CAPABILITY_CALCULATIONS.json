@@ -1,0 +1,188 @@
+{
+  "status": "CALCULATIONS_ONLY_NOT_FINAL_MACROMODEL_OR_HARDWARE_VALIDATION",
+  "Ri_ohm": 100000.0,
+  "Cint_F": 4.7e-09,
+  "Rzero_ohm": 33000.0,
+  "Kp": 0.33,
+  "Ki_per_s": 2127.6595744680853,
+  "Rback_ohm": 22000.0,
+  "Rctrl_ohm": 1000,
+  "upper_clamp_nom_V": 11.9,
+  "upper_clamp_allocated_design_band_V": [
+    11.87,
+    11.93
+  ],
+  "ranges": [
+    {
+      "RSH_ohm": 100,
+      "nominal_fullscale_A": 0.01,
+      "DAC5V_setpoint_V_typ_series18p2": 0.9963732015463712,
+      "uncalibrated_FS_A_typ": 0.009963732015463711,
+      "Vsource_max_FS_nom_ceiling11p9_overhead74": 10,
+      "ideal_CC_100ohm_t1pct_s": 0.006480713991075996,
+      "ideal_CC_100ohm_tau_s": 0.0014428999999999998,
+      "physical_shunt_current_FS_W": 0.01
+    },
+    {
+      "RSH_ohm": 1000,
+      "nominal_fullscale_A": 0.001,
+      "DAC5V_setpoint_V_typ_series18p2": 0.9963732015463712,
+      "uncalibrated_FS_A_typ": 0.0009963732015463712,
+      "Vsource_max_FS_nom_ceiling11p9_overhead74": 10,
+      "ideal_CC_100ohm_t1pct_s": 0.003080200393037684,
+      "ideal_CC_100ohm_tau_s": 0.00070688,
+      "physical_shunt_current_FS_W": 0.001
+    },
+    {
+      "RSH_ohm": 10000,
+      "nominal_fullscale_A": 0.0001,
+      "DAC5V_setpoint_V_typ_series18p2": 0.9963732015463712,
+      "uncalibrated_FS_A_typ": 9.963732015463712e-05,
+      "Vsource_max_FS_nom_ceiling11p9_overhead74": 10,
+      "ideal_CC_100ohm_t1pct_s": 0.0027384484207520726,
+      "ideal_CC_100ohm_tau_s": 0.000633278,
+      "physical_shunt_current_FS_W": 0.0001
+    },
+    {
+      "RSH_ohm": 100000,
+      "nominal_fullscale_A": 1e-05,
+      "DAC5V_setpoint_V_typ_series18p2": 0.9963732015463712,
+      "uncalibrated_FS_A_typ": 9.963732015463711e-06,
+      "Vsource_max_FS_nom_ceiling11p9_overhead74": 10,
+      "ideal_CC_100ohm_t1pct_s": 0.002704229231146609,
+      "ideal_CC_100ohm_tau_s": 0.0006259178,
+      "physical_shunt_current_FS_W": 1e-05
+    }
+  ],
+  "charge_budget_examples": [
+    {
+      "Cpost_F": 5e-11,
+      "Vstep_V": 10,
+      "I_source_A": 1e-06,
+      "t_min_charge_s": 0.0005,
+      "stored_Q_C": 5e-10,
+      "stored_energy_J": 2.5e-09
+    },
+    {
+      "Cpost_F": 5e-11,
+      "Vstep_V": 10,
+      "I_source_A": 1e-05,
+      "t_min_charge_s": 5e-05,
+      "stored_Q_C": 5e-10,
+      "stored_energy_J": 2.5e-09
+    },
+    {
+      "Cpost_F": 5e-11,
+      "Vstep_V": 10,
+      "I_source_A": 0.0001,
+      "t_min_charge_s": 5e-06,
+      "stored_Q_C": 5e-10,
+      "stored_energy_J": 2.5e-09
+    },
+    {
+      "Cpost_F": 5e-11,
+      "Vstep_V": 10,
+      "I_source_A": 0.001,
+      "t_min_charge_s": 5e-07,
+      "stored_Q_C": 5e-10,
+      "stored_energy_J": 2.5e-09
+    },
+    {
+      "Cpost_F": 5e-11,
+      "Vstep_V": 10,
+      "I_source_A": 0.01,
+      "t_min_charge_s": 5.0000000000000004e-08,
+      "stored_Q_C": 5e-10,
+      "stored_energy_J": 2.5e-09
+    },
+    {
+      "Cpost_F": 3e-10,
+      "Vstep_V": 10,
+      "I_source_A": 1e-06,
+      "t_min_charge_s": 0.003,
+      "stored_Q_C": 3e-09,
+      "stored_energy_J": 1.5e-08
+    },
+    {
+      "Cpost_F": 3e-10,
+      "Vstep_V": 10,
+      "I_source_A": 1e-05,
+      "t_min_charge_s": 0.0003,
+      "stored_Q_C": 3e-09,
+      "stored_energy_J": 1.5e-08
+    },
+    {
+      "Cpost_F": 3e-10,
+      "Vstep_V": 10,
+      "I_source_A": 0.0001,
+      "t_min_charge_s": 2.9999999999999997e-05,
+      "stored_Q_C": 3e-09,
+      "stored_energy_J": 1.5e-08
+    },
+    {
+      "Cpost_F": 3e-10,
+      "Vstep_V": 10,
+      "I_source_A": 0.001,
+      "t_min_charge_s": 3e-06,
+      "stored_Q_C": 3e-09,
+      "stored_energy_J": 1.5e-08
+    },
+    {
+      "Cpost_F": 3e-10,
+      "Vstep_V": 10,
+      "I_source_A": 0.01,
+      "t_min_charge_s": 3e-07,
+      "stored_Q_C": 3e-09,
+      "stored_energy_J": 1.5e-08
+    },
+    {
+      "Cpost_F": 2e-09,
+      "Vstep_V": 10,
+      "I_source_A": 1e-06,
+      "t_min_charge_s": 0.02,
+      "stored_Q_C": 2e-08,
+      "stored_energy_J": 1.0000000000000001e-07
+    },
+    {
+      "Cpost_F": 2e-09,
+      "Vstep_V": 10,
+      "I_source_A": 1e-05,
+      "t_min_charge_s": 0.002,
+      "stored_Q_C": 2e-08,
+      "stored_energy_J": 1.0000000000000001e-07
+    },
+    {
+      "Cpost_F": 2e-09,
+      "Vstep_V": 10,
+      "I_source_A": 0.0001,
+      "t_min_charge_s": 0.00019999999999999998,
+      "stored_Q_C": 2e-08,
+      "stored_energy_J": 1.0000000000000001e-07
+    },
+    {
+      "Cpost_F": 2e-09,
+      "Vstep_V": 10,
+      "I_source_A": 0.001,
+      "t_min_charge_s": 2e-05,
+      "stored_Q_C": 2e-08,
+      "stored_energy_J": 1.0000000000000001e-07
+    },
+    {
+      "Cpost_F": 2e-09,
+      "Vstep_V": 10,
+      "I_source_A": 0.01,
+      "t_min_charge_s": 2e-06,
+      "stored_Q_C": 2e-08,
+      "stored_energy_J": 1.0000000000000001e-07
+    }
+  ],
+  "off_100k_2n_10V_to_1mV_s": 0.0018425654327753236,
+  "minimum_no_load_ramp_10V_Iset0p1_s": 0.04699999999999999,
+  "AW_outward_error_min_V": -1,
+  "AW_steady_raw_above_cmd_max_V": 0.22,
+  "OPA13_IQ_typ_A": 0.013,
+  "OPA13_IQ_max25_A": 0.0169,
+  "OPA13_idle_power_typ_W": 0.39,
+  "OPA13_idle_power_max25_W": 0.5069999999999999,
+  "error_budget_note": "Must include DAC, divider/matched networks, INA VOSI+VOSO/G, OPA offsets including AW gain, all switch leakages and multiple-cell/sneak currents. No final percentage accuracy declared."
+}

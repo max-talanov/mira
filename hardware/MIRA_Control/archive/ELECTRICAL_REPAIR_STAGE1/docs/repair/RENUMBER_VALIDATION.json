@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "scope": "Native before/after UUID-normalized physical component and net-membership comparison; full active schematic AST preservation and metadata validation.",
+  "manifest": "/workspace/scratch/290918551d9b/repair/patches/renumber_manifest.json",
+  "transaction_backup": "/workspace/scratch/290918551d9b/repair/patches/renumber_transaction_20261018T131617_683135Z/backup",
+  "native_before": {
+    "physical_components": 1054,
+    "nets": 1017,
+    "memberships": 4362
+  },
+  "native_after": {
+    "physical_components": 1054,
+    "nets": 1017,
+    "memberships": 4362
+  },
+  "native_component_uuid_identities_identical": true,
+  "native_component_values_footprints_datasheets_mpn_units_identical": true,
+  "native_net_groups_by_uuid_and_pin_identical": true,
+  "all_placed_symbol_refs_follow_manifest": true,
+  "symbol_unit_count": 1814,
+  "all_uuid_multisets_identical": true,
+  "protected_ast_geometry_and_electrical_content_identical": true,
+  "embedded_library_symbols_identical": true,
+  "electrical_label_names_and_wires_identical": true,
+  "active_schematic_files": 30,
+  "active_leaf_numbers": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500,
+    1600,
+    1700,
+    1800,
+    1900,
+    2000,
+    2100,
+    2200
+  ],
+  "active_pages_dense1to30": true,
+  "old_renamed_active_files_remaining": [],
+  "pro_sheets_cache_actual_instance_uuid_and_name": true,
+  "pro_used_designators_matches_all_active_refs": true,
+  "pro_other_fields_identical": true,
+  "protected_assets": {
+    "libraries/MIRA_RevA.kicad_sym": true,
+    "MIRA_Control.kicad_pcb": true
+  },
+  "erc": {
+    "total": 116,
+    "severity_counts": {
+      "warning": 116
+    },
+    "report": "/workspace/scratch/290918551d9b/repair/patches/logic_validation/post_renumber_erc.json"
+  },
+  "pdf": "/workspace/scratch/290918551d9b/repair/patches/logic_validation/post_renumber_schematic.pdf",
+  "failures": [],
+  "note": "Auto-generated net names and hierarchical name paths may change with reference/sheet renumbering. Equivalence is proven by grouping the same physical UUID identities and pin numbers; explicit electrical label AST contents are separately byte-for-value preserved.",
+  "native_pdf_pages": 30,
+  "native_pdf_30pages": true
+}

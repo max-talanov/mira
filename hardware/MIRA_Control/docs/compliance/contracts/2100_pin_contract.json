@@ -1,0 +1,1586 @@
+{
+  "file": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+  "file_uuid": "0c158699-efea-4a48-9063-2feb574581b1",
+  "hierarchy_path": "/ad010b50-c509-466c-b833-d1667dfb0702/75a2aa70-81cd-4543-a50c-e295d4f5a68c/ee7089d0-2fa4-4736-bdd0-a5754b4b5039",
+  "pins": {
+    "U2100": {
+      "1": "MAT_SRC_A0",
+      "2": "IO3V3",
+      "3": "N15",
+      "4": "ILIM_SET",
+      "5": "ILIM_SET",
+      "6": "ILIM_RESET",
+      "7": "ILIM_FORM",
+      "8": "MAT_ILIM_RAW",
+      "9": "GND",
+      "10": "GND",
+      "11": "GND",
+      "12": "GND",
+      "13": "P15",
+      "14": "GND",
+      "15": "GND",
+      "16": "MAT_SRC_A1"
+    },
+    "R2105": {
+      "1": "MAT_SHUNT_BRANCH_0",
+      "2": "MAT_SOURCE"
+    },
+    "R2106": {
+      "1": "MAT_SHUNT_BRANCH_1",
+      "2": "MAT_SOURCE"
+    },
+    "R2107": {
+      "1": "MAT_SHUNT_BRANCH_2",
+      "2": "MAT_SOURCE"
+    },
+    "R2108": {
+      "1": "MAT_SHUNT_BRANCH_3",
+      "2": "MAT_SOURCE"
+    },
+    "U2103": {
+      "1": "MAT_RSH_A0",
+      "2": "IO3V3",
+      "3": "N15",
+      "4": "MAT_SHUNT_BRANCH_0",
+      "5": "MAT_SHUNT_BRANCH_1",
+      "6": "MAT_SHUNT_BRANCH_2",
+      "7": "MAT_SHUNT_BRANCH_3",
+      "8": "MAT_RSH_POWER",
+      "9": "CC_KELVIN_P",
+      "10": "MAT_SHUNT_BRANCH_3",
+      "11": "MAT_SHUNT_BRANCH_2",
+      "12": "MAT_SHUNT_BRANCH_1",
+      "13": "MAT_SHUNT_BRANCH_0",
+      "14": "P15",
+      "15": "GND",
+      "16": "MAT_RSH_A1"
+    },
+    "U2104": {
+      "1": "MAT_SOURCE",
+      "2": null,
+      "3": null,
+      "4": "CC_KELVIN_P",
+      "5": "N15",
+      "6": "GND",
+      "7": "MAT_CC_SENSE",
+      "8": "P15"
+    },
+    "U2109": {
+      "1": "MAT_DRV_CMD",
+      "2": null,
+      "3": null,
+      "4": "MAT_PI_RAW",
+      "5": "N15",
+      "6": "GND",
+      "7": "CC_AW",
+      "8": "P15"
+    },
+    "U2105": {
+      "3": "CC_BIAS_IN",
+      "2": "CC_BIAS",
+      "1": "CC_BIAS",
+      "5": "MAT_ADC_REF",
+      "6": "CC_UP_N",
+      "7": "CC_UP_REF",
+      "10": "MAT_DRV_CMD",
+      "9": "CC_CMD_SENSE",
+      "8": "CC_CMD_SENSE",
+      "12": "MAT_SOURCE",
+      "13": "CC_VBUF",
+      "14": "CC_VBUF",
+      "4": "P15",
+      "11": "N15"
+    },
+    "U2106": {
+      "3": "CC_VP",
+      "2": "CC_VN",
+      "1": "CC_VERR",
+      "5": "CC_IP",
+      "6": "CC_IN",
+      "7": "CC_IERR",
+      "10": "CC_VERR",
+      "9": "CC_MV_N",
+      "8": "CC_MV_OUT",
+      "12": "CC_IERR",
+      "13": "CC_MI_N",
+      "14": "CC_MI_OUT",
+      "4": "P15",
+      "11": "N15"
+    },
+    "U2107": {
+      "3": "CC_UPOS",
+      "2": "CC_UNEG",
+      "1": "MAT_REG_ERROR",
+      "5": "GND",
+      "6": "MAT_PI_SUM",
+      "7": "MAT_PI_RAW",
+      "10": "GND",
+      "9": "CC_LOW_N",
+      "8": "CC_LOW_OUT",
+      "12": "CC_UP_REF",
+      "13": "CC_HIGH_N",
+      "14": "CC_HIGH_OUT",
+      "4": "P15",
+      "11": "N15"
+    },
+    "U2101": {
+      "1": null,
+      "2": "CC_DRIVE",
+      "3": "MAT_DRV_CMD",
+      "4": "N15",
+      "5": null,
+      "6": "CC_DRIVE",
+      "7": "P15",
+      "8": null
+    },
+    "R2104": {
+      "1": "ANA5",
+      "2": "CC_BIAS_IN"
+    },
+    "R2110": {
+      "1": "CC_BIAS_IN",
+      "2": "GND"
+    },
+    "R2111": {
+      "1": "CC_UP_REF",
+      "2": "CC_UP_MID"
+    },
+    "R2138": {
+      "1": "CC_UP_MID",
+      "2": "CC_UP_N"
+    },
+    "R2112": {
+      "1": "CC_UP_N",
+      "2": "GND"
+    },
+    "R2100": {
+      "1": "MAT_ILIM_RAW",
+      "2": "CC_ILIM_MID"
+    },
+    "R2139": {
+      "1": "CC_ILIM_MID",
+      "2": "MAT_ILIM_SENSE"
+    },
+    "R2101": {
+      "1": "MAT_ILIM_SENSE",
+      "2": "GND"
+    },
+    "R2113": {
+      "1": "CC_VBUF",
+      "2": "CC_VP"
+    },
+    "R2114": {
+      "1": "CC_VP",
+      "2": "CC_BIAS"
+    },
+    "R2115": {
+      "1": "MAT_VTARGET",
+      "2": "CC_VN"
+    },
+    "R2116": {
+      "1": "CC_VERR",
+      "2": "CC_VN"
+    },
+    "R2117": {
+      "1": "MAT_CC_SENSE",
+      "2": "CC_IP"
+    },
+    "R2118": {
+      "1": "CC_IP",
+      "2": "CC_BIAS"
+    },
+    "R2119": {
+      "1": "MAT_ILIM_SENSE_BUF",
+      "2": "CC_IN"
+    },
+    "R2120": {
+      "1": "CC_IERR",
+      "2": "CC_IN"
+    },
+    "R2121": {
+      "1": "CC_EMAX",
+      "2": "CC_MV_N"
+    },
+    "R2122": {
+      "1": "CC_EMAX",
+      "2": "CC_MI_N"
+    },
+    "R2123": {
+      "1": "CC_EMAX",
+      "2": "GND"
+    },
+    "R2124": {
+      "1": "CC_EMAX",
+      "2": "CC_UPOS"
+    },
+    "R2125": {
+      "1": "CC_UPOS",
+      "2": "GND"
+    },
+    "R2126": {
+      "1": "CC_BIAS",
+      "2": "CC_UNEG"
+    },
+    "R2127": {
+      "1": "MAT_REG_ERROR",
+      "2": "CC_UNEG"
+    },
+    "R2103": {
+      "1": "MAT_REG_ERROR_SELECTED",
+      "2": "MAT_PI_SUM"
+    },
+    "R2128": {
+      "1": "MAT_PI_C",
+      "2": "MAT_PI_RAW"
+    },
+    "R2129": {
+      "1": "CC_AW",
+      "2": "MAT_PI_SUM"
+    },
+    "R2130": {
+      "1": "MAT_PI_RAW",
+      "2": "MAT_DRV_CMD"
+    },
+    "R2131": {
+      "1": "CC_CMD_SENSE",
+      "2": "CC_LOW_N"
+    },
+    "R2132": {
+      "1": "CC_CMD_SENSE",
+      "2": "CC_HIGH_N"
+    },
+    "R2102": {
+      "1": "CC_DRIVE",
+      "2": "MAT_DRV_OUTPUT"
+    },
+    "C2102": {
+      "1": "MAT_ILIM_SENSE",
+      "2": "GND"
+    },
+    "C2103": {
+      "1": "MAT_PI_SUM",
+      "2": "MAT_PI_C"
+    },
+    "D2100": {
+      "1": "CC_MV_N",
+      "3": "CC_MV_OUT",
+      "2": "CC_EMAX"
+    },
+    "D2101": {
+      "1": "CC_MI_N",
+      "3": "CC_MI_OUT",
+      "2": "CC_EMAX"
+    },
+    "D2102": {
+      "1": "CC_LOW_N",
+      "3": "CC_LOW_OUT",
+      "2": "MAT_DRV_CMD"
+    },
+    "D2103": {
+      "1": "MAT_DRV_CMD",
+      "3": "CC_HIGH_OUT",
+      "2": "CC_HIGH_N"
+    },
+    "U2108": {
+      "1": null,
+      "2": "MAT_SOURCE_SAFE",
+      "3": "GND",
+      "4": "MAT_SOURCE_OFF",
+      "5": "IO3V3"
+    },
+    "C2100": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2101": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2106": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2107": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2104": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2105": {
+      "1": "IO3V3",
+      "2": "GND"
+    },
+    "C2108": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2109": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2110": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2111": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2112": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2113": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2114": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2115": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2116": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2117": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2118": {
+      "1": "N15",
+      "2": "GND"
+    }
+  },
+  "spice_roles": {
+    "XBIAS": {
+      "ref": "U2105",
+      "unit": 1,
+      "nodes": [
+        "CC_BIAS_IN",
+        "CC_BIAS",
+        "P15",
+        "N15",
+        "CC_BIAS"
+      ]
+    },
+    "XUPREF": {
+      "ref": "U2105",
+      "unit": 2,
+      "nodes": [
+        "MAT_ADC_REF",
+        "CC_UP_N",
+        "P15",
+        "N15",
+        "CC_UP_REF"
+      ]
+    },
+    "XCBUF": {
+      "ref": "U2105",
+      "unit": 3,
+      "nodes": [
+        "MAT_DRV_CMD",
+        "CC_CMD_SENSE",
+        "P15",
+        "N15",
+        "CC_CMD_SENSE"
+      ]
+    },
+    "XVB": {
+      "ref": "U2105",
+      "unit": 4,
+      "nodes": [
+        "MAT_SOURCE",
+        "CC_VBUF",
+        "P15",
+        "N15",
+        "CC_VBUF"
+      ]
+    },
+    "XVE": {
+      "ref": "U2106",
+      "unit": 1,
+      "nodes": [
+        "CC_VP",
+        "CC_VN",
+        "P15",
+        "N15",
+        "CC_VERR"
+      ]
+    },
+    "XIE": {
+      "ref": "U2106",
+      "unit": 2,
+      "nodes": [
+        "CC_IP",
+        "CC_IN",
+        "P15",
+        "N15",
+        "CC_IERR"
+      ]
+    },
+    "XMV": {
+      "ref": "U2106",
+      "unit": 3,
+      "nodes": [
+        "CC_VERR",
+        "CC_MV_N",
+        "P15",
+        "N15",
+        "CC_MV_OUT"
+      ]
+    },
+    "XMI": {
+      "ref": "U2106",
+      "unit": 4,
+      "nodes": [
+        "CC_IERR",
+        "CC_MI_N",
+        "P15",
+        "N15",
+        "CC_MI_OUT"
+      ]
+    },
+    "XUN": {
+      "ref": "U2107",
+      "unit": 1,
+      "nodes": [
+        "CC_UPOS",
+        "CC_UNEG",
+        "P15",
+        "N15",
+        "MAT_REG_ERROR"
+      ]
+    },
+    "XINT": {
+      "ref": "U2107",
+      "unit": 2,
+      "nodes": [
+        "GND",
+        "MAT_PI_SUM",
+        "P15",
+        "N15",
+        "MAT_PI_RAW"
+      ]
+    },
+    "XLOW": {
+      "ref": "U2107",
+      "unit": 3,
+      "nodes": [
+        "GND",
+        "CC_LOW_N",
+        "P15",
+        "N15",
+        "CC_LOW_OUT"
+      ]
+    },
+    "XHIGH": {
+      "ref": "U2107",
+      "unit": 4,
+      "nodes": [
+        "CC_UP_REF",
+        "CC_HIGH_N",
+        "P15",
+        "N15",
+        "CC_HIGH_OUT"
+      ]
+    },
+    "XDRV": {
+      "ref": "U2101",
+      "unit": 1,
+      "nodes": [
+        "MAT_DRV_CMD",
+        "CC_DRIVE",
+        "P15",
+        "N15",
+        "CC_DRIVE"
+      ]
+    },
+    "RB1": {
+      "ref": "R2104",
+      "nodes": [
+        "ANA5",
+        "CC_BIAS_IN"
+      ],
+      "value": "10k"
+    },
+    "RB2": {
+      "ref": "R2110",
+      "nodes": [
+        "CC_BIAS_IN",
+        "GND"
+      ],
+      "value": "10k"
+    },
+    "RU1A": {
+      "ref": "R2111",
+      "nodes": [
+        "CC_UP_REF",
+        "CC_UP_MID"
+      ],
+      "value": "13.7k"
+    },
+    "RU1B": {
+      "ref": "R2138",
+      "nodes": [
+        "CC_UP_MID",
+        "CC_UP_N"
+      ],
+      "value": "100"
+    },
+    "RU2": {
+      "ref": "R2112",
+      "nodes": [
+        "CC_UP_N",
+        "GND"
+      ],
+      "value": "10k"
+    },
+    "ILIM_TOP_A": {
+      "ref": "R2100",
+      "nodes": [
+        "MAT_ILIM_RAW",
+        "CC_ILIM_MID"
+      ],
+      "value": "3.9k"
+    },
+    "ILIM_TOP_B": {
+      "ref": "R2139",
+      "nodes": [
+        "CC_ILIM_MID",
+        "MAT_ILIM_SENSE"
+      ],
+      "value": "100"
+    },
+    "ILIM_BOTTOM": {
+      "ref": "R2101",
+      "nodes": [
+        "MAT_ILIM_SENSE",
+        "GND"
+      ],
+      "value": "1k"
+    },
+    "RV1": {
+      "ref": "R2113",
+      "nodes": [
+        "CC_VBUF",
+        "CC_VP"
+      ],
+      "value": "100k"
+    },
+    "RV2": {
+      "ref": "R2114",
+      "nodes": [
+        "CC_VP",
+        "CC_BIAS"
+      ],
+      "value": "100k"
+    },
+    "RV3": {
+      "ref": "R2115",
+      "nodes": [
+        "MAT_VTARGET",
+        "CC_VN"
+      ],
+      "value": "100k"
+    },
+    "RV4": {
+      "ref": "R2116",
+      "nodes": [
+        "CC_VERR",
+        "CC_VN"
+      ],
+      "value": "100k"
+    },
+    "RI1": {
+      "ref": "R2117",
+      "nodes": [
+        "MAT_CC_SENSE",
+        "CC_IP"
+      ],
+      "value": "10k"
+    },
+    "RI2": {
+      "ref": "R2118",
+      "nodes": [
+        "CC_IP",
+        "CC_BIAS"
+      ],
+      "value": "10k"
+    },
+    "RI3": {
+      "ref": "R2119",
+      "nodes": [
+        "MAT_ILIM_SENSE_BUF",
+        "CC_IN"
+      ],
+      "value": "10k"
+    },
+    "RI4": {
+      "ref": "R2120",
+      "nodes": [
+        "CC_IERR",
+        "CC_IN"
+      ],
+      "value": "10k"
+    },
+    "RMV": {
+      "ref": "R2121",
+      "nodes": [
+        "CC_EMAX",
+        "CC_MV_N"
+      ],
+      "value": "10k"
+    },
+    "RMI": {
+      "ref": "R2122",
+      "nodes": [
+        "CC_EMAX",
+        "CC_MI_N"
+      ],
+      "value": "10k"
+    },
+    "RMAX": {
+      "ref": "R2123",
+      "nodes": [
+        "CC_EMAX",
+        "GND"
+      ],
+      "value": "100k"
+    },
+    "RUP1": {
+      "ref": "R2124",
+      "nodes": [
+        "CC_EMAX",
+        "CC_UPOS"
+      ],
+      "value": "10k"
+    },
+    "RUP2": {
+      "ref": "R2125",
+      "nodes": [
+        "CC_UPOS",
+        "GND"
+      ],
+      "value": "10k"
+    },
+    "RUN": {
+      "ref": "R2126",
+      "nodes": [
+        "CC_BIAS",
+        "CC_UNEG"
+      ],
+      "value": "10k"
+    },
+    "RUF": {
+      "ref": "R2127",
+      "nodes": [
+        "MAT_REG_ERROR",
+        "CC_UNEG"
+      ],
+      "value": "10k"
+    },
+    "RINT": {
+      "ref": "R2103",
+      "nodes": [
+        "MAT_REG_ERROR_SELECTED",
+        "MAT_PI_SUM"
+      ],
+      "value": "100k"
+    },
+    "RZERO": {
+      "ref": "R2128",
+      "nodes": [
+        "MAT_PI_C",
+        "MAT_PI_RAW"
+      ],
+      "value": "33k"
+    },
+    "RBACK": {
+      "ref": "R2129",
+      "nodes": [
+        "CC_AW",
+        "MAT_PI_SUM"
+      ],
+      "value": "22k"
+    },
+    "RCTRL": {
+      "ref": "R2130",
+      "nodes": [
+        "MAT_PI_RAW",
+        "MAT_DRV_CMD"
+      ],
+      "value": "1k"
+    },
+    "RLOW_FB": {
+      "ref": "R2131",
+      "nodes": [
+        "CC_CMD_SENSE",
+        "CC_LOW_N"
+      ],
+      "value": "10k"
+    },
+    "RHIGH_FB": {
+      "ref": "R2132",
+      "nodes": [
+        "CC_CMD_SENSE",
+        "CC_HIGH_N"
+      ],
+      "value": "10k"
+    },
+    "RISO": {
+      "ref": "R2102",
+      "nodes": [
+        "CC_DRIVE",
+        "MAT_DRV_OUTPUT"
+      ],
+      "value": "47"
+    },
+    "XAW": {
+      "ref": "U2109",
+      "unit": 1,
+      "nodes": [
+        "MAT_PI_RAW",
+        "MAT_DRV_CMD",
+        "P15",
+        "N15",
+        "CC_AW",
+        "GND"
+      ],
+      "transfer": "INA821 G=1: AW = RAW - CMD; bothRG pinsNC"
+    },
+    "CINT": {
+      "ref": "C2103",
+      "value": "4.7n",
+      "nodes": [
+        "MAT_PI_SUM",
+        "MAT_PI_C"
+      ]
+    },
+    "ILIM_FILTER": {
+      "ref": "C2102",
+      "value": "1n",
+      "nodes": [
+        "MAT_ILIM_SENSE",
+        "GND"
+      ]
+    }
+  },
+  "passives": [
+    {
+      "ref": "R2105",
+      "value": "100",
+      "nodes": [
+        "MAT_SHUNT_BRANCH_0",
+        "MAT_SOURCE"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2106",
+      "value": "1k",
+      "nodes": [
+        "MAT_SHUNT_BRANCH_1",
+        "MAT_SOURCE"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2107",
+      "value": "10k",
+      "nodes": [
+        "MAT_SHUNT_BRANCH_2",
+        "MAT_SOURCE"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2108",
+      "value": "100k",
+      "nodes": [
+        "MAT_SHUNT_BRANCH_3",
+        "MAT_SOURCE"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2104",
+      "value": "10k",
+      "nodes": [
+        "ANA5",
+        "CC_BIAS_IN"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2110",
+      "value": "10k",
+      "nodes": [
+        "CC_BIAS_IN",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2111",
+      "value": "13.7k",
+      "nodes": [
+        "CC_UP_REF",
+        "CC_UP_MID"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2138",
+      "value": "100",
+      "nodes": [
+        "CC_UP_MID",
+        "CC_UP_N"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2112",
+      "value": "10k",
+      "nodes": [
+        "CC_UP_N",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2100",
+      "value": "3.9k",
+      "nodes": [
+        "MAT_ILIM_RAW",
+        "CC_ILIM_MID"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2139",
+      "value": "100",
+      "nodes": [
+        "CC_ILIM_MID",
+        "MAT_ILIM_SENSE"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2101",
+      "value": "1k",
+      "nodes": [
+        "MAT_ILIM_SENSE",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2113",
+      "value": "100k",
+      "nodes": [
+        "CC_VBUF",
+        "CC_VP"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2114",
+      "value": "100k",
+      "nodes": [
+        "CC_VP",
+        "CC_BIAS"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2115",
+      "value": "100k",
+      "nodes": [
+        "MAT_VTARGET",
+        "CC_VN"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2116",
+      "value": "100k",
+      "nodes": [
+        "CC_VERR",
+        "CC_VN"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2117",
+      "value": "10k",
+      "nodes": [
+        "MAT_CC_SENSE",
+        "CC_IP"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2118",
+      "value": "10k",
+      "nodes": [
+        "CC_IP",
+        "CC_BIAS"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2119",
+      "value": "10k",
+      "nodes": [
+        "MAT_ILIM_SENSE_BUF",
+        "CC_IN"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2120",
+      "value": "10k",
+      "nodes": [
+        "CC_IERR",
+        "CC_IN"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2121",
+      "value": "10k",
+      "nodes": [
+        "CC_EMAX",
+        "CC_MV_N"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2122",
+      "value": "10k",
+      "nodes": [
+        "CC_EMAX",
+        "CC_MI_N"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2123",
+      "value": "100k",
+      "nodes": [
+        "CC_EMAX",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2124",
+      "value": "10k",
+      "nodes": [
+        "CC_EMAX",
+        "CC_UPOS"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2125",
+      "value": "10k",
+      "nodes": [
+        "CC_UPOS",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2126",
+      "value": "10k",
+      "nodes": [
+        "CC_BIAS",
+        "CC_UNEG"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2127",
+      "value": "10k",
+      "nodes": [
+        "MAT_REG_ERROR",
+        "CC_UNEG"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2103",
+      "value": "100k",
+      "nodes": [
+        "MAT_REG_ERROR_SELECTED",
+        "MAT_PI_SUM"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2128",
+      "value": "33k",
+      "nodes": [
+        "MAT_PI_C",
+        "MAT_PI_RAW"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2129",
+      "value": "22k",
+      "nodes": [
+        "CC_AW",
+        "MAT_PI_SUM"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2130",
+      "value": "1k",
+      "nodes": [
+        "MAT_PI_RAW",
+        "MAT_DRV_CMD"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2131",
+      "value": "10k",
+      "nodes": [
+        "CC_CMD_SENSE",
+        "CC_LOW_N"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2132",
+      "value": "10k",
+      "nodes": [
+        "CC_CMD_SENSE",
+        "CC_HIGH_N"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "R2102",
+      "value": "47",
+      "nodes": [
+        "CC_DRIVE",
+        "MAT_DRV_OUTPUT"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:R_0603_1608Metric"
+    },
+    {
+      "ref": "C2102",
+      "value": "1n",
+      "nodes": [
+        "MAT_ILIM_SENSE",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0603_1608Metric"
+    },
+    {
+      "ref": "C2103",
+      "value": "4.7n",
+      "nodes": [
+        "MAT_PI_SUM",
+        "MAT_PI_C"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0603_1608Metric"
+    },
+    {
+      "ref": "C2100",
+      "value": "100n",
+      "nodes": [
+        "P15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2101",
+      "value": "100n",
+      "nodes": [
+        "N15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2106",
+      "value": "100n",
+      "nodes": [
+        "P15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2107",
+      "value": "100n",
+      "nodes": [
+        "N15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2104",
+      "value": "100n",
+      "nodes": [
+        "P15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2105",
+      "value": "100n",
+      "nodes": [
+        "IO3V3",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2108",
+      "value": "100n",
+      "nodes": [
+        "N15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2109",
+      "value": "100n",
+      "nodes": [
+        "P15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2110",
+      "value": "100n",
+      "nodes": [
+        "N15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2111",
+      "value": "100n",
+      "nodes": [
+        "P15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2112",
+      "value": "100n",
+      "nodes": [
+        "N15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2113",
+      "value": "100n",
+      "nodes": [
+        "P15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2114",
+      "value": "100n",
+      "nodes": [
+        "N15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2115",
+      "value": "100n",
+      "nodes": [
+        "P15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2116",
+      "value": "100n",
+      "nodes": [
+        "N15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2117",
+      "value": "100n",
+      "nodes": [
+        "P15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    },
+    {
+      "ref": "C2118",
+      "value": "100n",
+      "nodes": [
+        "N15",
+        "GND"
+      ],
+      "dnp": false,
+      "footprint": "MIRA_RevA:C_0402_1005Metric"
+    }
+  ],
+  "uuid_preservation": {
+    "U2100": {
+      "preserved": true,
+      "uuid": "d7d8e8d9-5e1b-4020-aff8-0b909be8173a"
+    },
+    "R2105": {
+      "preserved": true,
+      "uuid": "024d200e-2cf6-420e-9829-16614d937137"
+    },
+    "R2106": {
+      "preserved": true,
+      "uuid": "df8193fa-19c7-43b8-91d6-dca3a5149945"
+    },
+    "R2107": {
+      "preserved": true,
+      "uuid": "68cfc268-3ffa-4dcf-b18f-7d4268fc0e41"
+    },
+    "R2108": {
+      "preserved": true,
+      "uuid": "790b17f1-ae2f-4b20-ad6a-5e9d4b98b6a8"
+    },
+    "U2103": {
+      "preserved": false,
+      "reason": "New part / new unit in rebuilt A2 source block"
+    },
+    "U2104": {
+      "preserved": false,
+      "reason": "New part / new unit in rebuilt A2 source block"
+    },
+    "U2109": {
+      "preserved": false,
+      "reason": "New part / new unit in rebuilt A2 source block"
+    },
+    "U2105": {
+      "preserved": false,
+      "reason": "New part / new unit in rebuilt A2 source block"
+    },
+    "U2106": {
+      "preserved": false,
+      "reason": "New part / new unit in rebuilt A2 source block"
+    },
+    "U2107": {
+      "preserved": false,
+      "reason": "New part / new unit in rebuilt A2 source block"
+    },
+    "U2101": {
+      "preserved": true,
+      "uuid": "cb73be53-4b96-4de9-8b99-bf495d19c246"
+    },
+    "R2104": {
+      "preserved": true,
+      "uuid": "65572f14-8fc7-4ade-a53e-516ab595e04a"
+    },
+    "R2110": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2111": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2138": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2112": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2100": {
+      "preserved": true,
+      "uuid": "2f6ceec5-3a77-4ec7-a6a0-5ee2e4052421"
+    },
+    "R2139": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2101": {
+      "preserved": true,
+      "uuid": "6ea6431f-bc7b-4f1c-9c2f-1396c479d5e7"
+    },
+    "R2113": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2114": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2115": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2116": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2117": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2118": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2119": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2120": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2121": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2122": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2123": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2124": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2125": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2126": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2127": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2103": {
+      "preserved": true,
+      "uuid": "2e947b17-cfba-43ef-b230-66bd1e2a15d4"
+    },
+    "R2128": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2129": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2130": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2131": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2132": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "R2102": {
+      "preserved": true,
+      "uuid": "0765e4ee-6dab-4da6-8f97-2cd7ae0e82b2"
+    },
+    "C2102": {
+      "preserved": true,
+      "uuid": "4f40ceef-8e91-49dd-9378-5820f6c2c39d"
+    },
+    "C2103": {
+      "preserved": true,
+      "uuid": "3a05f3b0-1424-452c-8ee3-e0979d48cd0d"
+    },
+    "D2100": {
+      "preserved": false,
+      "reason": "New part / new unit in rebuilt A2 source block"
+    },
+    "D2101": {
+      "preserved": false,
+      "reason": "New part / new unit in rebuilt A2 source block"
+    },
+    "D2102": {
+      "preserved": false,
+      "reason": "New part / new unit in rebuilt A2 source block"
+    },
+    "D2103": {
+      "preserved": false,
+      "reason": "New part / new unit in rebuilt A2 source block"
+    },
+    "U2108": {
+      "preserved": false,
+      "reason": "New part / new unit in rebuilt A2 source block"
+    },
+    "C2100": {
+      "preserved": true,
+      "uuid": "b8808ba0-00ea-44e6-a5ec-79666aec2849"
+    },
+    "C2101": {
+      "preserved": true,
+      "uuid": "b3afbae8-3b50-46e7-b792-77ccd72283fe"
+    },
+    "C2106": {
+      "preserved": true,
+      "uuid": "8837212b-3891-4e47-8dbf-12857b449064"
+    },
+    "C2107": {
+      "preserved": true,
+      "uuid": "bd84f0b0-34d5-4990-9670-abe2360a1751"
+    },
+    "C2104": {
+      "preserved": true,
+      "uuid": "2d8d01c3-d81b-4342-b4aa-229cfd03f684"
+    },
+    "C2105": {
+      "preserved": true,
+      "uuid": "2dcaa3a6-e623-4e56-9994-53ef7068deac"
+    },
+    "C2108": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "C2109": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "C2110": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "C2111": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "C2112": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "C2113": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "C2114": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "C2115": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "C2116": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "C2117": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    },
+    "C2118": {
+      "preserved": false,
+      "reason": "New passive for CV/CC source"
+    }
+  },
+  "dnp": [],
+  "removed_refs": [
+    "Q2100",
+    "Q2101",
+    "U2102",
+    "R2109"
+  ],
+  "relocated_other_sheet_units": [
+    "U1602:3",
+    "U1603:4"
+  ],
+  "coordinate_rebuild": "A2 rebuilt to show one complete source controller; component UUIDs retained for reused baseline references; new quad units/INA/diodes have new UUIDs.",
+  "source_freeze": "Final physical contract: 11.9 V ceiling = 2.38*MAT_ADC_REF, Rf13.8k=13.7k+100R; CBUF clamp feedback; AW INA821 RAW-CMD; no physical10G anchor; ILIM divider4k=3.9k+100R; final RBACK R2129=22k to preserve INA821 G1 diamond upper-input margin at P15=14.25V",
+  "new_sheet_sha256": "d6ebac2c888262cffe6811b344f997e3e83836c8b082c3806a55e0f0721d02e0"
+}

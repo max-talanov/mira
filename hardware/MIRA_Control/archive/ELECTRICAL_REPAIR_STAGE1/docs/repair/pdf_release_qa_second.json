@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "pdf": "output/pdf/MIRA_Control_How_It_Works_RU.pdf",
+  "sha256": "e68d7cbfe483860a852ce3b38302af135155fe3ce1c38d9fe08bcbebe7aadf73",
+  "page_count": 59,
+  "pages_reviewed": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+  ],
+  "method": {
+    "contact_sheets": "All pages29–59 visually inspected in four contact sheets from current release PNGs.",
+    "full_size_pages": [
+      41,
+      46,
+      48,
+      50,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "previous_full_size_review": "All pages29–57 of the previous build were also reviewed individually; the final balanced pagination was checked against current contacts.",
+    "automated_checks": "Current59-page PDF scanned for unknown component refs, replacement glyphs and text outside paper; all passed."
+  },
+  "layout": {
+    "clipped_text": false,
+    "text_or_table_overlap": false,
+    "outside_paper": false,
+    "footer_collision": false,
+    "unreadable_body_or_table_font": false,
+    "graph_labels_or_legend_clipped": false
+  },
+  "resolved_previous_findings": [
+    "Power-interface table has visible heading23 onpage50.",
+    "Page46 explicitly states that removed historical components retain their original names.",
+    "Major joined prose/count fragments have been spaced in Before/After tables and validation text.",
+    "Long leaf descriptions are balanced across two pages with explicit continuation headings."
+  ],
+  "focused_reviews": [
+    {
+      "pages": [
+        38,
+        39,
+        40,
+        41
+      ],
+      "result": "PASS",
+      "notes": "ADC/new refs remain consistent: TIA inversion;10k||10M example+393;FDA differential-0.15,outputs1.375…3.625V,internalCM1.196…3.152V;100Ohm/leg+470pF;94ns,1.69MHz andRC-only1.24us;100kSPS/20us correctly described as initial test conditions."
+    },
+    {
+      "pages": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "result": "PASS",
+      "notes": "Before/After tables fit; heading23 restored; historical-ref exception clear; all final component-like refs belong to manifest except explicitly retired U1803/U3203/C3203."
+    },
+    {
+      "pages": [
+        54
+      ],
+      "result": "PASS",
+      "notes": "Engineering decision text and both DC/phase-margin tables fit, all rows readable. Approximate models and PCB-release blocker stated explicitly."
+    },
+    {
+      "pages": [
+        55
+      ],
+      "result": "PASS",
+      "notes": "Three Russian-labelled plots, units, axes, legends and caption fit. Early current peak, late conductive-current settling and earlyVSENSE are visually distinct; approximate-model qualifier remains visible."
+    },
+    {
+      "pages": [
+        56,
+        57
+      ],
+      "result": "PASS",
+      "notes": "277critical-check result and remaining limitations readable; no clipping. No claim of verified shortmicroampWRITE or maximumADC rate."
+    },
+    {
+      "pages": [
+        58,
+        59
+      ],
+      "result": "PASS",
+      "notes": "All sourceURLs fit and wrap without clipping. Russian titles/descriptions/metadata and figure text render correctly."
+    }
+  ],
+  "reference_scan": {
+    "unknown_component_refs": [],
+    "allowed_retired_refs": [
+      "U1803",
+      "U3203",
+      "C3203"
+    ]
+  },
+  "automated_pdf_checks": {
+    "replacement_glyph_pages": [],
+    "text_outside_paper": [],
+    "metadata_title": "MIRA Control - Как работает схема",
+    "Cyrillic_fonts": "DejaVuSans andDejaVuSans-Bold embedded withUnicode mappings"
+  },
+  "blocking_findings": [],
+  "recheck_required": false
+}

@@ -1,0 +1,224 @@
+{
+  "scope": [
+    "2000_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+    "3200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch"
+  ],
+  "library_not_modified": true,
+  "library_additions": [
+    "SN74LVC1G11_MIRA_MAT"
+  ],
+  "changed_components": {
+    "U2001": {
+      "part": "SN74LVC1G11DBVR",
+      "footprint": "MIRA_RevA:SOT-23-6",
+      "pins": {
+        "1": "MATRIX_PERMIT",
+        "2": "GND",
+        "3": "MAT_FAULT_N",
+        "4": "MAT_ALLOWED",
+        "5": "IO3V3",
+        "6": "MAT_FAULT_CLEAR_N"
+      }
+    },
+    "U2005": {
+      "part": "SN74LVC1G11DBVR",
+      "footprint": "MIRA_RevA:SOT-23-6",
+      "pins": {
+        "1": "MAT_ARM_OK",
+        "2": "GND",
+        "3": "MAT_OUTPUT_REQ",
+        "4": "MAT_RUN",
+        "5": "IO3V3",
+        "6": "MAT_REQUEST_VALID"
+      }
+    },
+    "U2002": {
+      "changed_pins": {
+        "2": {
+          "from": "IO3V3",
+          "to": "MAT_FRAME_VALID"
+        }
+      }
+    },
+    "U901": {
+      "changed_pins": {
+        "L4": {
+          "from": "unconnected",
+          "to": "MAT_FRAME_VALID"
+        }
+      }
+    },
+    "U3204": {
+      "changed_pins": {
+        "1": {
+          "from": "GND",
+          "to": "MAT_TRIP"
+        },
+        "2": {
+          "from": "GND",
+          "to": "IO3V3"
+        },
+        "7": {
+          "from": "MAT_TRIP_N",
+          "to": "IO3V3"
+        }
+      }
+    },
+    "R3201": {
+      "changed_pins": {
+        "1": {
+          "from": "MAT_CC_SENSE",
+          "to": "MAT_CC_SENSE_BUF"
+        }
+      }
+    },
+    "R3203": {
+      "changed_pins": {
+        "1": {
+          "from": "MAT_ILIM_SENSE",
+          "to": "MAT_ILIM_SENSE_BUF"
+        }
+      }
+    }
+  },
+  "added_components": {
+    "U2024": {
+      "part": "SN74LVC1G32DBVR",
+      "pins": {
+        "1": "MAT_SERVICE_REQ",
+        "2": "MAT_VMM_REQ",
+        "3": "GND",
+        "4": "MAT_MODE_VALID",
+        "5": "IO3V3"
+      }
+    },
+    "C2030": {
+      "value": "100n",
+      "pins": {
+        "1": "IO3V3",
+        "2": "GND"
+      }
+    },
+    "U2025": {
+      "part": "SN74LVC1G08DBVR",
+      "pins": {
+        "1": "MAT_SERVICE_REQ",
+        "2": "MAT_WRITE_REQ",
+        "3": "GND",
+        "4": "MAT_SERVICE_WRITE_REQ",
+        "5": "IO3V3"
+      }
+    },
+    "C2031": {
+      "value": "100n",
+      "pins": {
+        "1": "IO3V3",
+        "2": "GND"
+      }
+    },
+    "U2026": {
+      "part": "SN74LVC1G32DBVR",
+      "pins": {
+        "1": "MAT_READ_REQ",
+        "2": "MAT_SERVICE_WRITE_REQ",
+        "3": "GND",
+        "4": "MAT_OP_VALID",
+        "5": "IO3V3"
+      }
+    },
+    "C2032": {
+      "value": "100n",
+      "pins": {
+        "1": "IO3V3",
+        "2": "GND"
+      }
+    },
+    "U2027": {
+      "part": "SN74LVC1G08DBVR",
+      "pins": {
+        "1": "MAT_MODE_VALID",
+        "2": "MAT_OP_VALID",
+        "3": "GND",
+        "4": "MAT_REQUEST_VALID",
+        "5": "IO3V3"
+      }
+    },
+    "C2033": {
+      "value": "100n",
+      "pins": {
+        "1": "IO3V3",
+        "2": "GND"
+      }
+    },
+    "R2004": {
+      "value": "10k",
+      "pins": {
+        "1": "MAT_FRAME_VALID",
+        "2": "GND"
+      }
+    },
+    "R2005": {
+      "value": "10k",
+      "pins": {
+        "1": "MATRIX_PERMIT",
+        "2": "GND"
+      }
+    }
+  },
+  "removed_components": [
+    "U3203",
+    "C3203",
+    "#PWR3206",
+    "#PWR3208"
+  ],
+  "removed_net": "MAT_TRIP_N",
+  "external_requirements": [
+    "Root must connect MATRIX_PERMIT to explicit external Power-interface source; R2005 defaults it low. HOST not equated.",
+    "ADC agent supplies MAT_CC_SENSE_BUF and MAT_ILIM_SENSE_BUF via U2904."
+  ],
+  "equations": {
+    "MAT_ALLOWED": "MATRIX_PERMIT & MAT_FAULT_N & MAT_FAULT_CLEAR_N",
+    "MAT_MODE_VALID": "MAT_SERVICE_REQ | MAT_VMM_REQ",
+    "MAT_SERVICE_WRITE_REQ": "MAT_SERVICE_REQ & MAT_WRITE_REQ",
+    "MAT_OP_VALID": "MAT_READ_REQ | MAT_SERVICE_WRITE_REQ",
+    "MAT_REQUEST_VALID": "MAT_MODE_VALID & MAT_OP_VALID",
+    "MAT_RUN": "MAT_ARM_OK & MAT_OUTPUT_REQ & MAT_REQUEST_VALID"
+  },
+  "accepted_modes": [
+    "SERVICE_READ",
+    "SERVICE_WRITE",
+    "VMM_READ"
+  ],
+  "limits": [
+    "No independent hardware bit counter or CRC; exact80bit/mask checks are mandatory HDL contract.",
+    "Clocked fault latch requires minimum MAT_TRIP pulse width and clear recovery/removal timing.",
+    "Combinational interlock is not a promise of zero-delay or glitch-free multi-signal transitions."
+  ],
+  "datasheets": {
+    "SN74LVC1G11": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+    "SN74LVC1G74": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+    "SN74LVC1G08": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+    "SN74LVC1G32": "https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf",
+    "SN74HC595": "https://www.ti.com/lit/ds/symlink/sn74hc595.pdf"
+  },
+  "added_power_refs": [
+    "#PWR2048",
+    "#PWR2049",
+    "#PWR2050",
+    "#PWR2051",
+    "#PWR2052",
+    "#PWR2053",
+    "#PWR2054",
+    "#PWR2055",
+    "#PWR2056",
+    "#PWR2057"
+  ],
+  "file_sha256": {
+    "2000_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch": "eec4dc798823d629a37c5ea0417d6cd21b421eb08bff307bd86c30c84360df7e",
+    "3200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch": "366fd24006c3256b50064d57e0381fa43f849fbb623493f988f9b30cb452c5c3"
+  },
+  "layout_changes": [
+    "Relocated R3205 and its ground/pulldown branch below clear to keep CLK/D labels clear.",
+    "Relocated original serial-image note to free the strict-command decoder area; added HDL contract text."
+  ]
+}

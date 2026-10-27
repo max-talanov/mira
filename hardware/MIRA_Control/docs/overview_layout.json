@@ -1,0 +1,71 @@
+[
+  {
+    "file": "MIRA_Control.kicad_sch",
+    "children": [
+      "MCU",
+      "INTERCONNECT",
+      "FPGA",
+      "DAC",
+      "MATRIX",
+      "ADC",
+      "PROTECTION"
+    ]
+  },
+  {
+    "file": "MCU.kicad_sch",
+    "children": [
+      "100_MCU_POWER_CLOCKS_AND_DEBUG",
+      "200_MCU_FMC_AND_SDRAM",
+      "300_MCU_QSPI_MICROSD_AND_CONTROL"
+    ]
+  },
+  {
+    "file": "INTERCONNECT.kicad_sch",
+    "children": [
+      "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE"
+    ]
+  },
+  {
+    "file": "FPGA.kicad_sch",
+    "children": [
+      "500_FPGA_POWER_AND_DECOUPLING",
+      "600_FPGA_CONFIGURATION_AND_XADC",
+      "700_FPGA_USB3_FIFO_INTERFACE",
+      "800_FPGA_DDR3L_AND_REFERENCE_CLOCK",
+      "900_FPGA_ETHERNET_AND_MCU_INTERFACE"
+    ]
+  },
+  {
+    "file": "DAC.kicad_sch",
+    "children": [
+      "1000_DAC_BL0_31_AND_BUFFERS",
+      "1100_DAC_SERVICE_AND_FORMING",
+      "1200_DAC_FPGA_CONTROL_INTERFACE"
+    ]
+  },
+  {
+    "file": "MATRIX.kicad_sch",
+    "children": [
+      "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS",
+      "1400_MATRIX_SERIAL_CONTROL_REGISTERS",
+      "1500_MATRIX_BL0_31_SWITCHING",
+      "1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING",
+      "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR",
+      "1800_MATRIX_CROSSBAR_SOCKET_AND_BIAS"
+    ]
+  },
+  {
+    "file": "ADC.kicad_sch",
+    "children": [
+      "1900_ADC_TIA_AND_MONITOR_SELECTOR",
+      "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES"
+    ]
+  },
+  {
+    "file": "PROTECTION.kicad_sch",
+    "children": [
+      "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE",
+      "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE"
+    ]
+  }
+]

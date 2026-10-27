@@ -1,0 +1,234 @@
+{
+  "status": "PASS",
+  "native_pin_assertions": 35,
+  "preserved_analog_gate": "MAT_CMP_RAW & MAT_WRITE_SAFE",
+  "fault_or": "MAT_TRIP = MAT_OC_TRIP | MAT_CONFIG_TRIP",
+  "nominal_gain": 1.2571004840921172,
+  "nominal_offset_V": 0.1034342278310994,
+  "corners_initial_0p1_percent": [
+    {
+      "ILIM_V": 0,
+      "trip_min_V": 0.07350016080138091,
+      "trip_max_V": 0.13348913215152736
+    },
+    {
+      "ILIM_V": 0.1,
+      "trip_min_V": 0.1988450442597242,
+      "trip_max_V": 0.25956074112312816
+    },
+    {
+      "ILIM_V": 0.5,
+      "trip_min_V": 0.7000606909554781,
+      "trip_max_V": 0.7640306871580793
+    },
+    {
+      "ILIM_V": 1.0,
+      "trip_min_V": 1.3265802493251704,
+      "trip_max_V": 1.3946181197017682
+    }
+  ],
+  "corners_initial_plus_100K_25ppm_0p35_percent": [
+    {
+      "ILIM_V": 0,
+      "trip_min_V": 0.07271129764757583,
+      "trip_max_V": 0.13459267577921516
+    },
+    {
+      "ILIM_V": 0.1,
+      "trip_min_V": 0.1971474241903177,
+      "trip_max_V": 0.26157220571632234
+    },
+    {
+      "ILIM_V": 0.5,
+      "trip_min_V": 0.6943243535144914,
+      "trip_max_V": 0.7701394314721366
+    },
+    {
+      "ILIM_V": 1.0,
+      "trip_min_V": 1.3157955151697087,
+      "trip_max_V": 1.4058484636669044
+    }
+  ],
+  "comparator_offset_bound_V": 0.004,
+  "input_bias_bound_A": 5e-09,
+  "rail_range_V": [
+    3.135,
+    3.465
+  ],
+  "internal_clamp_current_cases": [
+    {
+      "IO3V3": 0,
+      "fault_input_V": -16.5,
+      "maximum_internal_clamp_current_A": 0.0003791522907831201,
+      "raw_plus_max_V": 0
+    },
+    {
+      "IO3V3": 0,
+      "fault_input_V": 16.5,
+      "maximum_internal_clamp_current_A": 0.0003791522907831201,
+      "raw_plus_max_V": 2.7706916040485035
+    },
+    {
+      "IO3V3": 3.135,
+      "fault_input_V": -16.5,
+      "maximum_internal_clamp_current_A": 0.0003770695802699163,
+      "raw_plus_max_V": 0
+    },
+    {
+      "IO3V3": 3.135,
+      "fault_input_V": 16.5,
+      "maximum_internal_clamp_current_A": 0,
+      "raw_plus_max_V": 2.7706916040485035
+    },
+    {
+      "IO3V3": 3.465,
+      "fault_input_V": -16.5,
+      "maximum_internal_clamp_current_A": 0.0003768503475843159,
+      "raw_plus_max_V": 0
+    },
+    {
+      "IO3V3": 3.465,
+      "fault_input_V": 16.5,
+      "maximum_internal_clamp_current_A": 0,
+      "raw_plus_max_V": 2.7706916040485035
+    }
+  ],
+  "all_clamp_currents_below_0p5mA": true,
+  "logic_combinations": 16,
+  "logic": [
+    {
+      "cmp": false,
+      "write_safe": false,
+      "config_trip": false,
+      "clear_n": false,
+      "trip": false,
+      "sampled_fault_q": false
+    },
+    {
+      "cmp": false,
+      "write_safe": false,
+      "config_trip": false,
+      "clear_n": true,
+      "trip": false,
+      "sampled_fault_q": false
+    },
+    {
+      "cmp": false,
+      "write_safe": false,
+      "config_trip": true,
+      "clear_n": false,
+      "trip": true,
+      "sampled_fault_q": false
+    },
+    {
+      "cmp": false,
+      "write_safe": false,
+      "config_trip": true,
+      "clear_n": true,
+      "trip": true,
+      "sampled_fault_q": true
+    },
+    {
+      "cmp": false,
+      "write_safe": true,
+      "config_trip": false,
+      "clear_n": false,
+      "trip": false,
+      "sampled_fault_q": false
+    },
+    {
+      "cmp": false,
+      "write_safe": true,
+      "config_trip": false,
+      "clear_n": true,
+      "trip": false,
+      "sampled_fault_q": false
+    },
+    {
+      "cmp": false,
+      "write_safe": true,
+      "config_trip": true,
+      "clear_n": false,
+      "trip": true,
+      "sampled_fault_q": false
+    },
+    {
+      "cmp": false,
+      "write_safe": true,
+      "config_trip": true,
+      "clear_n": true,
+      "trip": true,
+      "sampled_fault_q": true
+    },
+    {
+      "cmp": true,
+      "write_safe": false,
+      "config_trip": false,
+      "clear_n": false,
+      "trip": false,
+      "sampled_fault_q": false
+    },
+    {
+      "cmp": true,
+      "write_safe": false,
+      "config_trip": false,
+      "clear_n": true,
+      "trip": false,
+      "sampled_fault_q": false
+    },
+    {
+      "cmp": true,
+      "write_safe": false,
+      "config_trip": true,
+      "clear_n": false,
+      "trip": true,
+      "sampled_fault_q": false
+    },
+    {
+      "cmp": true,
+      "write_safe": false,
+      "config_trip": true,
+      "clear_n": true,
+      "trip": true,
+      "sampled_fault_q": true
+    },
+    {
+      "cmp": true,
+      "write_safe": true,
+      "config_trip": false,
+      "clear_n": false,
+      "trip": true,
+      "sampled_fault_q": false
+    },
+    {
+      "cmp": true,
+      "write_safe": true,
+      "config_trip": false,
+      "clear_n": true,
+      "trip": true,
+      "sampled_fault_q": true
+    },
+    {
+      "cmp": true,
+      "write_safe": true,
+      "config_trip": true,
+      "clear_n": false,
+      "trip": true,
+      "sampled_fault_q": false
+    },
+    {
+      "cmp": true,
+      "write_safe": true,
+      "config_trip": true,
+      "clear_n": true,
+      "trip": true,
+      "sampled_fault_q": true
+    }
+  ],
+  "limits": [
+    "Threshold corners include specified resistor initial tolerance, independent 25ppm/K drift over100K, IO3V3\u00b15%, comparator4mV offset and5nA bias; exclude aging and unbounded hysteresis spread",
+    "Common-mode/function is asserted only for normal current/limit0..1V and positive sense saturation up to16.5V with IO3V3 valid",
+    "Negative overrange or power-off clamp analysis checks absolute input current, not normal comparator function or backfeed-free rail behavior",
+    "Total fault latency is not just comparator propagation time"
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "scope": "Only approved digital schematic repairs; no reference renumbering; shared library untouched",
+  "files": [
+    {
+      "file": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+      "before_sha256": "866f352c9eb0066608b3b19ae8ad6c3fab69ff93c69f7ae1ff8d11d48e7bc57b",
+      "after_sha256": "87078061f38d519f64f4f558ac67c37d7e1417f1ef3bb11055953dd32ba2df4f",
+      "changes_count": 2,
+      "new_objects_count": 2
+    },
+    {
+      "file": "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch",
+      "before_sha256": "cf7788cbbaec0c9c84779acdaa00e9d688efd475c60518c0e267956696e84b27",
+      "after_sha256": "e0eab592fd85b8299d4a232e98b06a60dfd3dfc3542e2ea5732b49d20bbe140b",
+      "changes_count": 1,
+      "new_objects_count": 3
+    },
+    {
+      "file": "1000_FPGA_CONFIGURATION_AND_XADC.kicad_sch",
+      "before_sha256": "11308f6a05be5b589cbc78017acd56e9a89b6e14acf26fe107c4bf001df824f6",
+      "after_sha256": "b6a8b0cc279f88aeafef0da74a211b1863eeda1a8e96bd0ac507445d0ef7cbcc",
+      "changes_count": 2,
+      "new_objects_count": 0
+    },
+    {
+      "file": "1100_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+      "before_sha256": "3d17b35a8e720e26cd74bc290f56ec6e5b2632913be171efc53982054605f00f",
+      "after_sha256": "af204cded46f3d941c8827f9621042593e6cc0f486d15256b2731c8ac1c67bc1",
+      "changes_count": 1,
+      "new_objects_count": 0,
+      "additional_vbus_repair": true
+    },
+    {
+      "file": "1300_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+      "before_sha256": "7ce1c963205b0d3a10a6ca95ab571f39ade11038ff7152435c91f65dbe97425c",
+      "after_sha256": "a5ca8026ac4f3e53e28f6e068dba630047be38c50fce2b128bef6a7f9527cacc",
+      "changes_count": 11,
+      "new_objects_count": 6
+    },
+    {
+      "file": "200_MCU_FMC_AND_SDRAM.kicad_sch",
+      "before_sha256": "cac0b2380038f7aa0d370e11d797b5471f8804cbb53704896ba67a6917bf9f2f",
+      "after_sha256": "fa34aef086e6c7cb7f07171a408b3150569060aa8b82ff412ec20bf9a68b4565",
+      "symbol_types_only": true
+    }
+  ],
+  "intentional_pin_net_changes": [
+    {
+      "ref": "U101",
+      "pin": "122 PC6",
+      "from": "no_connect",
+      "to": "FPGA_DONE_MCU"
+    },
+    {
+      "ref": "U101",
+      "pin": "123 PC7",
+      "from": "no_connect",
+      "to": "FPGA_INIT_N_MCU"
+    },
+    {
+      "ref": "R308",
+      "pin": "2",
+      "from": "QSPI_IO2_M",
+      "to": "MCU_QSPI_IO2"
+    },
+    {
+      "ref": "J301/R324",
+      "pin": "DETECT1/pin2",
+      "from": "unnamed isolated detect node",
+      "to": "MCU_SD_CD_N"
+    },
+    {
+      "ref": "U1302",
+      "pin": "9 3A",
+      "from": "GND",
+      "to": "FPGA_DONE"
+    },
+    {
+      "ref": "U1302",
+      "pin": "8 3Y",
+      "from": "no_connect",
+      "to": "FPGA_DONE_MCU"
+    },
+    {
+      "ref": "U1302",
+      "pin": "12 4A",
+      "from": "GND",
+      "to": "FPGA_INIT_N"
+    },
+    {
+      "ref": "U1302",
+      "pin": "11 4Y",
+      "from": "no_connect",
+      "to": "FPGA_INIT_N_MCU"
+    },
+    {
+      "ref": "U1302/C1308",
+      "pin": "VCC/pin1",
+      "from": "IO3V3",
+      "to": "SYS3V3"
+    },
+    {
+      "ref": "R1104/R1105",
+      "pin": "divider junction",
+      "from": "FT_VBUS_DET direct to FT601",
+      "to": "USB_VBUS_DIV; U1109 pin2 A"
+    },
+    {
+      "ref": "U1109",
+      "pin": "1/2/3/4/5",
+      "from": "absent",
+      "to": "NC/USB_VBUS_DIV/GND/FT_VBUS_DET/IO3V3"
+    },
+    {
+      "ref": "C1133",
+      "pin": "1/2",
+      "from": "absent",
+      "to": "IO3V3/GND"
+    },
+    {
+      "ref": "R1115",
+      "pin": "1/2",
+      "from": "absent",
+      "to": "FT_VBUS_DET/GND"
+    }
+  ],
+  "intentional_component_changes": [
+    {
+      "refs": [
+        "U1301",
+        "U1302"
+      ],
+      "from": "TI SN74LVC125APW",
+      "to": "Nexperia 74LVC125APW,118",
+      "reason": "Specified partial power-down Ioff; same pinout/TSSOP14 footprint"
+    },
+    {
+      "refs": [
+        "R1004",
+        "R1006"
+      ],
+      "from": "10k RC0201FR-0710KL",
+      "to": "4.7k RC0201FR-074K7L",
+      "reason": "AMD UG470 Table2-4 external INIT_B/PROGRAM_B pullups <=4.7k"
+    },
+    {
+      "refs": [
+        "R1101"
+      ],
+      "from": "10k RC0201FR-0710KL",
+      "to": "1k RC0201FR-071KL",
+      "reason": "AMD UG470 Table2-4 PUDC_B tie <=1k"
+    },
+    {
+      "refs": [
+        "R1104"
+      ],
+      "from": "20k RC0201FR-0720KL",
+      "to": "10k RC0201FR-0710KL",
+      "reason": "VBUS divider now3.0V nominal"
+    },
+    {
+      "refs": [
+        "R1105"
+      ],
+      "from": "10k RC0201FR-0710KL",
+      "to": "15k RC0201FR-0715KL",
+      "reason": "VBUS divider now3.0V nominal"
+    },
+    {
+      "refs": [
+        "U1109"
+      ],
+      "from": "absent",
+      "to": "Nexperia74LVC1G17GV,125; MIRA_RevA:SOT-23-5",
+      "reason": "Ioff and overvoltage tolerant Schmitt receiver isolates FT601 VBUS input when IO3V3 off"
+    },
+    {
+      "refs": [
+        "C1133",
+        "R1115"
+      ],
+      "from": "absent",
+      "to": "100nF local bypass;100k FT_VBUS_DET pull-down",
+      "reason": "Decouple receiver and hold FT601 detect low while gate unpowered"
+    }
+  ],
+  "unchanged_pending": [
+    "No additional digital electrical changes pending"
+  ],
+  "sources": [
+    "https://assets.nexperia.com/documents/data-sheet/74LVC125A.pdf",
+    "https://docs.amd.com/v/u/en-US/ug470_7Series_Config",
+    "https://www.st.com/resource/en/datasheet/stm32h745ii.pdf",
+    "https://assets.nexperia.com/documents/data-sheet/74LVC1G17.pdf",
+    "https://ftdichip.com/wp-content/uploads/2024/11/DS_FT600Q-FT601Q-IC-Datasheet.pdf",
+    "https://www.nexperia.com/chemical-content/74LVC1G17GV.html"
+  ],
+  "annotation_updates": "Updated English sheet-specific explanations on100/300/1000/1100/1300; Russian five-section replacements and Before/After/Why in digital_updated_explanations.json",
+  "symbol_pin_type_corrections": [
+    {
+      "file": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+      "pins": {
+        "133": "passive",
+        "172": "passive"
+      },
+      "topology_changed": false
+    },
+    {
+      "file": "200_MCU_FMC_AND_SDRAM.kicad_sch",
+      "pins": {
+        "133": "passive",
+        "172": "passive"
+      },
+      "topology_changed": false
+    },
+    {
+      "file": "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch",
+      "pins": {
+        "133": "passive",
+        "172": "passive"
+      },
+      "topology_changed": false
+    },
+    {
+      "file": "1100_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+      "pins": {
+        "3": "input",
+        "4": "input",
+        "5": "input",
+        "11": "open_collector",
+        "12": "input",
+        "22": "input",
+        "23": "open_collector",
+        "24": "open_collector",
+        "27": "open_collector",
+        "29": "input"
+      },
+      "topology_changed": false
+    }
+  ],
+  "symbol_pin_type_rationale": {
+    "STM32": "VCAP80 remains power_out; VCAP133/172 passive represent the same internal LDO output across internally and externally shared pins. No wire or capacitor changed.",
+    "HD3SS3220": "TI SLLSES1E Pin Functions p3-4: strap/control pins are inputs; DIR/INT_N/VCONN_FAULT_N/ID are open-drain outputs. ADDR22 input stays intentionally NC for GPIO mode. No physical connections changed."
+  }
+}

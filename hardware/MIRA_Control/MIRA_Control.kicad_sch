@@ -5,21 +5,236 @@
 	(uuid "ad010b50-c509-466c-b833-d1667dfb0702")
 	(paper "A3")
 	(title_block
-		(title "MIRA Control")
-		(rev "A")
+		(title "MIRA Control functional hierarchy")
+		(rev "B")
 		(company "MIRA")
 	)
 	(lib_symbols)
+	(text "Explicit Control-side power and permission connector.\nSeparate SYS3V3 and IO3V3 receivers prevent joining\ndisabled receiver domains."
+		(exclude_from_sim no)
+		(at 153.67 74.93 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "008a71fb-8b77-4329-a599-ded836b90e87")
+	)
+	(text "Held routing, line drivers and crossbar\nsocket"
+		(exclude_from_sim no)
+		(at 153.67 140.97 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "14b207fa-d2ad-404b-862a-1f582013e7b9")
+	)
+	(text "Artix-7 supplies, configuration, USB FIFO, DDR3L, Ethernet\nPHY and buffered MCU link. All FPGA sections belong to one\nphysical package."
+		(exclude_from_sim no)
+		(at 284.48 74.93 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "21f77a6e-7d41-466d-af0d-aba3a370cf03")
+	)
+	(text "Thirty-two BL voltages plus service voltage and current\ncommands. The shared source-side CV/CC regulator is on\nsheet 2100; polarity is selected by matrix routing."
+		(exclude_from_sim no)
+		(at 22.86 153.67 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "33cbfbc8-2520-4651-96c0-1661ce128481")
+	)
+	(text "Source-side Kelvin current sensing, shared PI control with\nbounded command and reset, independent backup overcurrent\ntrip, configuration fault latch and external inhibit."
+		(exclude_from_sim no)
+		(at 22.86 232.41 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "49c08c68-e7b7-4318-8a03-a1e41b610efc")
+	)
+	(text "MIRA CONTROL - functional hierarchy"
+		(exclude_from_sim no)
+		(at 22.86 15.24 0)
+		(effects
+			(font
+				(size 2.3 2.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "51d7cfc8-7354-439d-88e9-97fc37384f8f")
+	)
+	(text "Analog commands and source buffers"
+		(exclude_from_sim no)
+		(at 22.86 140.97 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "6032ed73-0b5b-4d94-a2ba-854a41216600")
+	)
+	(text "Host processor, memory and supervision"
+		(exclude_from_sim no)
+		(at 22.86 62.23 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "64b684c4-3095-4e1f-86df-a34f34096b52")
+	)
+	(text "Physical references use owner-sheet base ... base+99. Shared multi-unit packages retain one reference across their leaves."
+		(exclude_from_sim no)
+		(at 22.86 269.24 0)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "83d756ef-5ec4-46ee-9730-10c1a521a1df")
+	)
+	(text "Power inputs and supervisory boundary"
+		(exclude_from_sim no)
+		(at 153.67 62.23 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "8976906b-52ed-4c83-9ec2-0207aeb2b435")
+	)
+	(text "Shared CV/CC source and hardware fault\nmemory"
+		(exclude_from_sim no)
+		(at 22.86 219.71 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "94281082-f474-4d45-b8a6-43dd3d92a83c")
+	)
+	(text "Current conversion and precision\nacquisition"
+		(exclude_from_sim no)
+		(at 284.48 140.97 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "95c86559-abee-43f5-9825-1faecbb9aa0a")
+	)
+	(text "Electrical repairs and an explicit change log are included. Read docs/REPAIR_NOTES_RU.md and the updated separate PDF before PCB release."
+		(exclude_from_sim no)
+		(at 22.86 276.86 0)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "99efcca3-8b68-482f-887b-958a9ef72ee1")
+	)
+	(text "STM32 supply, clocks and debug; FMC SDRAM; QSPI, microSD\nand host control. The same physical MCU spans three leaves."
+		(exclude_from_sim no)
+		(at 22.86 74.93 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "a22cb48c-9d96-4050-b87b-badd29c1c1cf")
+	)
+	(text "Captured mode and address fields, 80-bit image, service\nbank, polarity and READ/WRITE return paths. Any active\nrequest mismatch inhibits RUN and raises configuration\ntrip."
+		(exclude_from_sim no)
+		(at 153.67 153.67 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "ca7e751c-9418-47fc-93dd-dba634acb0e8")
+	)
+	(text "TIA ranges and monitor selection, high-impedance compliance\nbuffers, balanced differential ADC drive, reference and\nconverter."
+		(exclude_from_sim no)
+		(at 284.48 153.67 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "d17abdde-bf60-4d66-92c5-c9e72d0e30cc")
+	)
+	(text "Programmable logic, memory and external\nlinks"
+		(exclude_from_sim no)
+		(at 284.48 62.23 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "e0ef0ddb-6151-402e-96a1-146e4dad5ef6")
+	)
+	(text "22 consecutive circuit leaves: 100, 200, 300, 400 ... 2200. Hierarchy pages are navigation, not additional circuitry."
+		(exclude_from_sim no)
+		(at 22.86 25.4 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "ee3c5289-f9c9-4837-b95d-79dc44125b0f")
+	)
 	(sheet
-		(at 57.15 44.45)
-		(size 12.7 3.81)
+		(at 284.48 45.72)
+		(size 112 10)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
-			(width 0.1524)
+			(width 0.254)
 			(type solid)
 		)
 		(fill
@@ -27,23 +242,24 @@
 		)
 		(uuid "130913e2-0ea0-4abf-9db5-8a7cfbcb2df7")
 		(property "Sheetname" "FPGA"
-			(at 57.15 43.7384 0)
+			(at 284.48 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.25 1.25)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "FPGA.kicad_sch"
-			(at 57.15 48.8446 0)
+			(at 284.48 56.99 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left top)
 			)
@@ -51,21 +267,250 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702"
-					(page "11")
+					(page "8")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 26.67 43.18)
-		(size 12.7 3.81)
+		(at 153.67 45.72)
+		(size 112 10)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
-			(width 0.1524)
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "256d926f-b75a-42ae-a223-730b777ed784")
+		(property "Sheetname" "INTERCONNECT"
+			(at 153.67 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "INTERCONNECT.kicad_sch"
+			(at 153.67 56.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 153.67 124.46)
+		(size 112 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d")
+		(property "Sheetname" "MATRIX"
+			(at 153.67 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MATRIX.kicad_sch"
+			(at 153.67 135.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702"
+					(page "18")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 203.2)
+		(size 112 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "75a2aa70-81cd-4543-a50c-e295d4f5a68c")
+		(property "Sheetname" "PROTECTION"
+			(at 22.86 201.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PROTECTION.kicad_sch"
+			(at 22.86 214.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702"
+					(page "28")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 124.46)
+		(size 112 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "84940a25-ed28-485e-9f63-88f8eacd225a")
+		(property "Sheetname" "DAC"
+			(at 22.86 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DAC.kicad_sch"
+			(at 22.86 135.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 284.48 124.46)
+		(size 112 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c82bdf26-7de4-4478-a0aa-bcc4853fb2a7")
+		(property "Sheetname" "ADC"
+			(at 284.48 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADC.kicad_sch"
+			(at 284.48 135.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702"
+					(page "25")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 45.72)
+		(size 112 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
 			(type solid)
 		)
 		(fill
@@ -73,23 +518,24 @@
 		)
 		(uuid "d0e7db08-6b76-44c1-8f66-e5b45a7321d5")
 		(property "Sheetname" "MCU"
-			(at 26.67 42.4684 0)
+			(at 22.86 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.25 1.25)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 26.67 47.5746 0)
+			(at 22.86 56.99 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left top)
 			)

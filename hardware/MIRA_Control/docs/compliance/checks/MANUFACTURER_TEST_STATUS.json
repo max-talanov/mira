@@ -1,0 +1,16 @@
+{
+  "test": "Final exact manufacturer-component topology",
+  "completed": false,
+  "passed": false,
+  "numerical_state": "OFF DC and 5ms OFF transient completed; aborted at source-enable edge",
+  "time_reached_s": 0.005000000037513,
+  "time_requested_s": 0.03,
+  "reason": "Timestep too small; time=0.005s; node xmv.n39892",
+  "implementation": "13OPA197channels,2INA821,G1;officialBAV199numericparameters;Rback22k,UPREF11.9Vfrom5Vprecisionreference,Rreset_C220ohm,OFFprelude5ms",
+  "simulation_scope": "PSpice manufacturer macros run in ngspice42; not manufacturer-qualified for this simulator",
+  "models_modified_electrically": false,
+  "ADG_models": "RON/ROFF abstraction,ideal switching edges",
+  "partial_waveform": "Removed from curated handoff; it only covered OFF and an incomplete enable transition and cannot be used as functional validation.",
+  "deck_sha256": "4aa789de5286ca39e54457414b41e6ac12b9993511f0287734a0932065cbf062",
+  "log": "FAILED_MANUFACTURER_TRANSIENT.log"
+}

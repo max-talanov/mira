@@ -1,0 +1,547 @@
+{
+  "status": "pass",
+  "read_only": true,
+  "source_pdf": "/workspace/scratch/290918551d9b/repair/MIRA_Control_Schematic.pdf",
+  "source_sha256": "a804add910474c4fb0171e8a657161f74f91a745f06c6b9f0cca3426081e3fca",
+  "source_page_count": 30,
+  "renderer": "Poppler pdftoppm,100dpi,all30pages",
+  "render_count": 30,
+  "overview_pages": [
+    1,
+    2,
+    6,
+    8,
+    14,
+    18,
+    25,
+    28
+  ],
+  "individual_leaf_pages_reviewed": [
+    3,
+    4,
+    5,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    26,
+    27,
+    29,
+    30
+  ],
+  "contact_sheets": [
+    "schematic_visual/contact_all_leaves_a.png",
+    "schematic_visual/contact_all_leaves_b.png",
+    "schematic_visual/contact_all_leaves_c.png",
+    "schematic_visual/contact_all_leaves_d.png",
+    "schematic_visual/contact_overview_a.png",
+    "schematic_visual/contact_overview_b.png"
+  ],
+  "zoom_crops": [
+    "schematic_visual/zoom_p07_connector_header.png",
+    "schematic_visual/zoom_p07_notes.png",
+    "schematic_visual/zoom_p19_notes.png",
+    "schematic_visual/zoom_p26_u1903_power.png",
+    "schematic_visual/zoom_p27_notes.png",
+    "schematic_visual/zoom_p30_notes.png"
+  ],
+  "special_checks": {
+    "root_and_7_group_reflow": "pass; cards/leaf list bars fit without collisions",
+    "p7_J400_header_above_rectangle": "pass; both Reference and Value lie clearly above the connector body",
+    "new_power_flags_pages3_10_11": "pass; placed in free lower areas, no overlap with symbols/notes",
+    "English_notes_wrapping": "PASS; stale cross-reference TXT-01 corrected and rechecked.",
+    "replaced_or_missing_glyphs": "none observed",
+    "text_spans_outside_page": []
+  },
+  "issues": [
+    {
+      "id": "TXT-01",
+      "page": 7,
+      "sheet": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE",
+      "severity": "minor",
+      "category": "stale_cross_reference",
+      "location": "English notes: Permission and hardware inhibit",
+      "observed": "The note says \"pulled low on sheet2000\". The permit pulldown R1304 is on sheet1300 after renumber.",
+      "recommended_correction": "Change to \"pulled low on sheet 1300\".",
+      "evidence": "schematic_visual/zoom_p07_notes.png",
+      "status": "resolved_and_visually_rechecked",
+      "resolution": "Corrected to \"sheet 1300\"; visual note wrap remains clear."
+    },
+    {
+      "id": "LAY-01",
+      "page": 26,
+      "sheet": "1900_ADC_TIA_AND_MONITOR_SELECTOR",
+      "severity": "minor",
+      "category": "tight_power_unit_properties",
+      "location": "U1903C power unit, right side",
+      "observed": "Reference U1903C is very close to the P15 label; Value OPA2197 touches/crowds the N15 label. Other symbols are clear.",
+      "recommended_correction": "Move only the Reference/Value property text to the right of the power unit; leave pin/net geometry untouched.",
+      "evidence": "schematic_visual/zoom_p26_u1903_power.png",
+      "status": "resolved_and_visually_rechecked",
+      "resolution": "Reference/Value moved 13.97 mm to the right; P15/N15 labels and OPA2197/U1903C text are clearly separated."
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "file": "MIRA_Control.kicad_sch",
+      "title": "MIRA Control functional hierarchy",
+      "render": "schematic_visual/page-01.png",
+      "review": "overview contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 2,
+      "file": "MCU.kicad_sch",
+      "title": "Host processor, memory and supervision",
+      "render": "schematic_visual/page-02.png",
+      "review": "overview contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 3,
+      "file": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+      "title": "STM32 supply, clocks, reset and debug",
+      "render": "schematic_visual/page-03.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 4,
+      "file": "200_MCU_FMC_AND_SDRAM.kicad_sch",
+      "title": "STM32 FMC and 64 MiB SDRAM",
+      "render": "schematic_visual/page-04.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 5,
+      "file": "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch",
+      "title": "MCU nonvolatile storage and board control",
+      "render": "schematic_visual/page-05.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 6,
+      "file": "INTERCONNECT.kicad_sch",
+      "title": "Power inputs and supervisory boundary",
+      "render": "schematic_visual/page-06.png",
+      "review": "overview contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 7,
+      "file": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch",
+      "title": "Power and supervision interface",
+      "render": "schematic_visual/page-07.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ],
+      "release_rechecked": true
+    },
+    {
+      "page": 8,
+      "file": "FPGA.kicad_sch",
+      "title": "Programmable logic, memory and external links",
+      "render": "schematic_visual/page-08.png",
+      "review": "overview contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 9,
+      "file": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+      "title": "FPGA supply domains and local bypass",
+      "render": "schematic_visual/page-09.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 10,
+      "file": "600_FPGA_CONFIGURATION_AND_XADC.kicad_sch",
+      "title": "FPGA configuration, recovery and XADC supply",
+      "render": "schematic_visual/page-10.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 11,
+      "file": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+      "title": "USB Type-C and 32-bit FPGA FIFO",
+      "render": "schematic_visual/page-11.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 12,
+      "file": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+      "title": "FPGA DDR3L memory and 200 MHz reference",
+      "render": "schematic_visual/page-12.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 13,
+      "file": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+      "title": "Ethernet physical interface and MCU buffers",
+      "render": "schematic_visual/page-13.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 14,
+      "file": "DAC.kicad_sch",
+      "title": "Analog setpoints and source buffers",
+      "render": "schematic_visual/page-14.png",
+      "review": "overview contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 15,
+      "file": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+      "title": "Thirty-two programmable bit-line voltages",
+      "render": "schematic_visual/page-15.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 16,
+      "file": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+      "title": "Service voltages, current limits and forming source",
+      "render": "schematic_visual/page-16.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 17,
+      "file": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
+      "title": "FPGA control of the DAC bank",
+      "render": "schematic_visual/page-17.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 18,
+      "file": "MATRIX.kicad_sch",
+      "title": "Routing, line drivers and crossbar socket",
+      "render": "schematic_visual/page-18.png",
+      "review": "overview contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 19,
+      "file": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+      "title": "Matrix commands and hardware interlocks",
+      "render": "schematic_visual/page-19.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 20,
+      "file": "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch",
+      "title": "Eighty-bit switch-control image",
+      "render": "schematic_visual/page-20.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 21,
+      "file": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+      "title": "Bit-line DAC connections, clamps and service selection",
+      "render": "schematic_visual/page-21.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 22,
+      "file": "1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING.kicad_sch",
+      "title": "Service source, bit-line bank and polarity routing",
+      "render": "schematic_visual/page-22.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 23,
+      "file": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
+      "title": "Word-line drive and neuron-line selection",
+      "render": "schematic_visual/page-23.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 24,
+      "file": "1800_MATRIX_CROSSBAR_SOCKET_AND_BIAS.kicad_sch",
+      "title": "Crossbar socket and bias",
+      "render": "schematic_visual/page-24.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 25,
+      "file": "ADC.kicad_sch",
+      "title": "Current conversion and precision acquisition",
+      "render": "schematic_visual/page-25.png",
+      "review": "overview contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 26,
+      "file": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
+      "title": "Matrix current conversion and monitor selection",
+      "render": "schematic_visual/page-26.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ],
+      "release_rechecked": true
+    },
+    {
+      "page": 27,
+      "file": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
+      "title": "Buffered monitor and differential matrix ADC",
+      "render": "schematic_visual/page-27.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 28,
+      "file": "PROTECTION.kicad_sch",
+      "title": "Current regulation and hardware fault memory",
+      "render": "schematic_visual/page-28.png",
+      "review": "overview contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    },
+    {
+      "page": 29,
+      "file": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+      "title": "Write-current setpoint, selectable shunt and gate clamp",
+      "render": "schematic_visual/page-29.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ],
+      "release_rechecked": true
+    },
+    {
+      "page": 30,
+      "file": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch",
+      "title": "Write overcurrent trip, fault memory and power inhibit",
+      "render": "schematic_visual/page-30.png",
+      "review": "individual 100dpi full page plus contact sheet",
+      "status": "pass",
+      "checked": [
+        "frame/titleblock and page numbering",
+        "text clipping and conspicuous overlaps",
+        "section headings / label placement",
+        "English explanation column or bottom notes"
+      ]
+    }
+  ],
+  "limits": "Visual/readability audit of the exported schematic. Does not replace native connectivity/ERC/timing checks. Standard KiCad DNP crosses over optional resistor bodies are intentional and not treated as formatting defects.",
+  "initial_review_source_sha256": "cfeb62e9b1d933037586f9ec919ee69af0cb4cfd0158329ddfc87568fdddc14d",
+  "release_qa_passed": true,
+  "release_recheck": {
+    "source_sha256": "a804add910474c4fb0171e8a657161f74f91a745f06c6b9f0cca3426081e3fca",
+    "manual_pages": [
+      7,
+      26,
+      29
+    ],
+    "all30_100dpi_renders_refreshed": true,
+    "all30_revB_date_2026_10_18": true,
+    "stamp_failures": [],
+    "release_limit_block_page29": "PASS: blue heading and four text lines occupy free lower-left space; no overlap, clipping or missing line. Explicitly says 10 us microamp WRITE and guaranteed peak current are not qualified.",
+    "p7_reference_correction": "PASS: sheet1300 now written with separating space. J400 header remains above body.",
+    "p26_power_unit_properties": "PASS: clear to the right of power unit; no P15/N15 overlap.",
+    "text_spans_outside_page": [],
+    "new_unresolved_findings": [],
+    "evidence": [
+      "schematic_visual/page-07.png",
+      "schematic_visual/page-26.png",
+      "schematic_visual/page-29.png",
+      "schematic_visual/zoom_release_p07_notes.png",
+      "schematic_visual/zoom_release_p26_u1903.png",
+      "schematic_visual/zoom_release_p29_complete.png"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "classification": "Calculated design limits; hardware pulse measurement not performed",
+  "reference": "R1605",
+  "mpn": "CRCW0603220RFKEA",
+  "source": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+  "switch_source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG5412_5413.pdf",
+  "nominal_C_F": 4.7e-09,
+  "assumed_C_tolerance": 0.05,
+  "nominal_capacitor_voltage_V": 12,
+  "series_R_ohm": 220,
+  "R_tolerance": 0.01,
+  "nominal_Ron_ohm": 13.5,
+  "nominal_initial_A": 0.05139186295503212,
+  "nominal_RC_s": 1.09745e-06,
+  "nominal_energy_J": 3.384e-07,
+  "conservative_bound_ignore_Ron_at_12p161V_A": 0.055835629017447194,
+  "full_33V_rail_differential_bound_ignore_Ron_A": 0.15151515151515152,
+  "ADG5412_pulse_current_abs_A": 0.278,
+  "full_33V_energy_Cplus5pct_J": 2.6871075e-06,
+  "Vishay_rated_continuous_W_standard": 0.1,
+  "note": "R1605 series-resets only Cint; no DC ON-loop change. Peak resistor power and repetition must follow the manufacturer pulse-load curves. 0.34uJ is the nominal 12V example, not a full-rail energy guarantee. ADG current bound assumes both switch pins remain within powered rails; power-off operation unqualified."
+}

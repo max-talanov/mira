@@ -1,0 +1,3137 @@
+{
+  "mode": "read_only_plan",
+  "project": "compliance/working/MIRA_Control",
+  "active_schematic_files": 30,
+  "placed_symbol_units": 1881,
+  "physical_packages_including_power_symbols": 5,
+  "canonical_live_library_ids": 77,
+  "patch_libraries": [
+    {
+      "file": "compliance/library_patches/analog_library_symbols.kicad_sym",
+      "symbols": [
+        "INA821_CC_MIRA",
+        "ADG5409_CC_MIRA",
+        "OPA4197_CC_MIRA",
+        "BAV199_CC_MIRA"
+      ]
+    },
+    {
+      "file": "compliance/library_patches/digital_library_symbols.kicad_sym",
+      "symbols": [
+        "74LVC574APW_MIRA_CONFIG_CAPTURE",
+        "74HC688PW_MIRA_CONFIG_COMPARE",
+        "SN74LVC1G86_MIRA_CONFIG"
+      ]
+    },
+    {
+      "file": "compliance/library_patches/fault_library_symbols.kicad_sym",
+      "symbols": [
+        "SN74LVC1G32_MIRA_MAT"
+      ]
+    }
+  ],
+  "families": [
+    {
+      "original_lib_id": "MIRA_RevA:12401610E4#2A_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:12401610E4#2A_MIRA",
+          "refs": [
+            "J700"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:2N7002_MIRA_MAT",
+      "physical_references": 2,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:2N7002_MIRA_MAT",
+          "refs": [
+            "Q2200",
+            "Q2201"
+          ],
+          "live_unit_sources": {
+            "(0, 1)": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch",
+            "(1, 1)": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:74HC688PW_MIRA_CONFIG_COMPARE",
+      "physical_references": 2,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:74HC688PW_MIRA_CONFIG_COMPARE",
+          "refs": [
+            "U1329",
+            "U1330"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:74LVC125APW_INTERFACE_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:74LVC125APW_INTERFACE_MIRA",
+          "refs": [
+            "U400"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch",
+            "(2, 1)": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch",
+            "(3, 1)": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch",
+            "(4, 1)": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch",
+            "(5, 1)": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:74LVC125APW_NEXPERIA_MIRA",
+      "physical_references": 2,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:74LVC125APW_NEXPERIA_MIRA",
+          "refs": [
+            "U900",
+            "U901"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:74LVC1G17GV_INTERFACE_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:74LVC1G17GV_INTERFACE_MIRA",
+          "refs": [
+            "U401"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:74LVC1G17GV_NEXPERIA_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:74LVC1G17GV_NEXPERIA_MIRA",
+          "refs": [
+            "U708"
+          ],
+          "live_unit_sources": {
+            "(0, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+            "(1, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:74LVC574APW_MIRA_CONFIG_CAPTURE",
+      "physical_references": 2,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:74LVC574APW_MIRA_CONFIG_CAPTURE",
+          "refs": [
+            "U1327",
+            "U1328"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:ABM8_25_000MHZ_B2_T_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:ABM8_25_000MHZ_B2_T_MIRA",
+          "refs": [
+            "Y900"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:ABM8_30_000MHZ_B2_T_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:ABM8_30_000MHZ_B2_T_MIRA",
+          "refs": [
+            "Y700"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:ABS07_32_768KHZ_7_T_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:ABS07_32_768KHZ_7_T_MIRA",
+          "refs": [
+            "Y101"
+          ],
+          "live_unit_sources": {
+            "(0, 1)": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+            "(1, 1)": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:AD4003_MIRA_MAT",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:AD4003_MIRA_MAT",
+          "refs": [
+            "U2004"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:AD5676RBRUZ_MIRA",
+      "physical_references": 5,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:AD5676RBRUZ_MIRA",
+          "refs": [
+            "U1000",
+            "U1003",
+            "U1006",
+            "U1009",
+            "U1100"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1100_DAC_SERVICE_AND_FORMING.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:AD5761RBRUZ_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:AD5761RBRUZ_MIRA",
+          "refs": [
+            "U1103"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1100_DAC_SERVICE_AND_FORMING.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:ADG1208_MIRA_MAT",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:ADG1208_MIRA_MAT",
+          "refs": [
+            "U1902"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:ADG5408_MIRA_MAT",
+      "physical_references": 9,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:ADG5408_MIRA_MAT",
+          "refs": [
+            "U1516",
+            "U1517",
+            "U1518",
+            "U1519",
+            "U1600",
+            "U1601",
+            "U1705",
+            "U1901",
+            "U2100"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:ADG5409_CC_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:ADG5409_CC_MIRA",
+          "refs": [
+            "U2103"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:ADG5412_MIRA_MAT",
+      "physical_references": 19,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:ADG5412_MIRA_MAT",
+          "refs": [
+            "U1500",
+            "U1501",
+            "U1502",
+            "U1503",
+            "U1504",
+            "U1505",
+            "U1506",
+            "U1507",
+            "U1508",
+            "U1509",
+            "U1510",
+            "U1511",
+            "U1512",
+            "U1513",
+            "U1514",
+            "U1515",
+            "U1603",
+            "U1702",
+            "U1703"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
+            "(2, 1)": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
+            "(3, 1)": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
+            "(4, 1)": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
+            "(5, 1)": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:ADG5434_MIRA_MAT",
+      "physical_references": 3,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:ADG5434_MIRA_MAT",
+          "refs": [
+            "U1602",
+            "U1700",
+            "U1701"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
+            "(2, 1)": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
+            "(3, 1)": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
+            "(4, 1)": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
+            "(5, 1)": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:ADR4550_MIRA_MAT",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:ADR4550_MIRA_MAT",
+          "refs": [
+            "U2000"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:ASV_25_000MHZ_EJ_T_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:ASV_25_000MHZ_EJ_T_MIRA",
+          "refs": [
+            "Y100"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:BAV199_CC_MIRA",
+      "physical_references": 4,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:BAV199_CC_MIRA",
+          "refs": [
+            "D2100",
+            "D2101",
+            "D2102",
+            "D2103"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:BC857B_MIRA_MAT",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:BC857B_MIRA_MAT",
+          "refs": [
+            "Q2202"
+          ],
+          "live_unit_sources": {
+            "(0, 1)": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch",
+            "(1, 1)": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:BSS138N_MATRIX_FAULT_MIRA_MAT",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:BSS138N_MATRIX_FAULT_MIRA_MAT",
+          "refs": [
+            "Q2203"
+          ],
+          "live_unit_sources": {
+            "(0, 1)": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch",
+            "(1, 1)": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:Bias_jumper_MIRA_MAT",
+      "physical_references": 2,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:Bias_jumper_MIRA_MAT",
+          "refs": [
+            "J1801",
+            "J1802"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1800_MATRIX_CROSSBAR_SOCKET_AND_BIAS.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:Boot_jumper_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:Boot_jumper_MIRA",
+          "refs": [
+            "J101"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:C_100n_C_0402_1005Metric_df5239",
+      "physical_references": 2,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:C_100n_C_0402_1005Metric_df5239",
+          "refs": [
+            "C400",
+            "C401"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:Capacitor",
+      "physical_references": 516,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:Capacitor",
+          "refs": [
+            "C100",
+            "C1000",
+            "C1001",
+            "C1002",
+            "C1003",
+            "C1004",
+            "C1005",
+            "C1006",
+            "C1007",
+            "C1008",
+            "C1009",
+            "C101",
+            "C1010",
+            "C1011",
+            "C1012",
+            "C1013",
+            "C1014",
+            "C1015",
+            "C1016",
+            "C1017",
+            "C1018",
+            "C1019",
+            "C102",
+            "C1020",
+            "C1021",
+            "C1022",
+            "C1023",
+            "C1024",
+            "C1025",
+            "C1026",
+            "C1027",
+            "C1028",
+            "C1029",
+            "C103",
+            "C1030",
+            "C1031",
+            "C1032",
+            "C1033",
+            "C1034",
+            "C1035",
+            "C1036",
+            "C1037",
+            "C1038",
+            "C1039",
+            "C104",
+            "C1040",
+            "C1041",
+            "C1042",
+            "C1043",
+            "C1044",
+            "C1045",
+            "C1046",
+            "C1047",
+            "C1048",
+            "C1049",
+            "C105",
+            "C1050",
+            "C1051",
+            "C106",
+            "C107",
+            "C108",
+            "C109",
+            "C110",
+            "C1100",
+            "C1101",
+            "C1102",
+            "C1103",
+            "C1104",
+            "C1105",
+            "C1106",
+            "C1107",
+            "C1108",
+            "C1109",
+            "C111",
+            "C1110",
+            "C1111",
+            "C1112",
+            "C1113",
+            "C1114",
+            "C1115",
+            "C1116",
+            "C1117",
+            "C1118",
+            "C1119",
+            "C112",
+            "C1120",
+            "C1121",
+            "C1122",
+            "C113",
+            "C114",
+            "C115",
+            "C116",
+            "C117",
+            "C118",
+            "C119",
+            "C120",
+            "C1200",
+            "C1201",
+            "C1202",
+            "C1203",
+            "C1204",
+            "C1205",
+            "C1206",
+            "C121",
+            "C122",
+            "C123",
+            "C124",
+            "C125",
+            "C126",
+            "C127",
+            "C128",
+            "C129",
+            "C130",
+            "C1300",
+            "C1301",
+            "C1302",
+            "C1303",
+            "C1304",
+            "C1305",
+            "C1306",
+            "C1307",
+            "C1308",
+            "C1309",
+            "C131",
+            "C1310",
+            "C1311",
+            "C1312",
+            "C1313",
+            "C1314",
+            "C1315",
+            "C1316",
+            "C1317",
+            "C1318",
+            "C1319",
+            "C132",
+            "C1320",
+            "C1321",
+            "C1322",
+            "C1323",
+            "C1324",
+            "C1325",
+            "C1326",
+            "C1327",
+            "C1328",
+            "C1329",
+            "C1330",
+            "C1331",
+            "C1332",
+            "C1333",
+            "C1334",
+            "C1335",
+            "C1336",
+            "C1337",
+            "C1338",
+            "C1339",
+            "C1340",
+            "C1341",
+            "C1342",
+            "C1343",
+            "C1344",
+            "C1345",
+            "C1346",
+            "C1347",
+            "C1348",
+            "C1349",
+            "C1350",
+            "C1351",
+            "C1352",
+            "C1353",
+            "C1354",
+            "C1355",
+            "C1356",
+            "C1357",
+            "C1358",
+            "C1400",
+            "C1401",
+            "C1402",
+            "C1403",
+            "C1404",
+            "C1405",
+            "C1406",
+            "C1407",
+            "C1408",
+            "C1409",
+            "C1500",
+            "C1501",
+            "C1502",
+            "C1503",
+            "C1504",
+            "C1505",
+            "C1506",
+            "C1507",
+            "C1508",
+            "C1509",
+            "C1510",
+            "C1511",
+            "C1512",
+            "C1513",
+            "C1514",
+            "C1515",
+            "C1516",
+            "C1517",
+            "C1518",
+            "C1519",
+            "C1520",
+            "C1521",
+            "C1522",
+            "C1523",
+            "C1524",
+            "C1525",
+            "C1526",
+            "C1527",
+            "C1528",
+            "C1529",
+            "C1530",
+            "C1531",
+            "C1532",
+            "C1533",
+            "C1534",
+            "C1535",
+            "C1536",
+            "C1537",
+            "C1538",
+            "C1539",
+            "C1540",
+            "C1541",
+            "C1542",
+            "C1543",
+            "C1600",
+            "C1601",
+            "C1602",
+            "C1603",
+            "C1604",
+            "C1605",
+            "C1606",
+            "C1607",
+            "C1700",
+            "C1701",
+            "C1702",
+            "C1703",
+            "C1704",
+            "C1705",
+            "C1706",
+            "C1707",
+            "C1708",
+            "C1709",
+            "C1710",
+            "C1900",
+            "C1901",
+            "C1902",
+            "C1903",
+            "C1904",
+            "C1905",
+            "C1906",
+            "C1907",
+            "C1908",
+            "C1909",
+            "C1910",
+            "C1911",
+            "C1912",
+            "C1913",
+            "C1914",
+            "C1915",
+            "C1916",
+            "C1917",
+            "C1918",
+            "C200",
+            "C2000",
+            "C2001",
+            "C2002",
+            "C2003",
+            "C2004",
+            "C2005",
+            "C2006",
+            "C2007",
+            "C2008",
+            "C2009",
+            "C201",
+            "C2010",
+            "C2011",
+            "C2012",
+            "C2013",
+            "C2014",
+            "C2015",
+            "C2016",
+            "C2017",
+            "C2018",
+            "C202",
+            "C203",
+            "C204",
+            "C205",
+            "C206",
+            "C207",
+            "C2100",
+            "C2101",
+            "C2102",
+            "C2103",
+            "C2104",
+            "C2105",
+            "C2106",
+            "C2107",
+            "C2108",
+            "C2109",
+            "C2110",
+            "C2111",
+            "C2112",
+            "C2113",
+            "C2114",
+            "C2115",
+            "C2116",
+            "C2117",
+            "C2118",
+            "C2200",
+            "C2201",
+            "C2202",
+            "C2203",
+            "C300",
+            "C301",
+            "C302",
+            "C303",
+            "C500",
+            "C501",
+            "C502",
+            "C503",
+            "C504",
+            "C505",
+            "C506",
+            "C507",
+            "C508",
+            "C509",
+            "C510",
+            "C511",
+            "C512",
+            "C513",
+            "C514",
+            "C515",
+            "C516",
+            "C517",
+            "C518",
+            "C519",
+            "C520",
+            "C521",
+            "C522",
+            "C523",
+            "C524",
+            "C525",
+            "C526",
+            "C527",
+            "C528",
+            "C529",
+            "C530",
+            "C531",
+            "C532",
+            "C533",
+            "C534",
+            "C535",
+            "C536",
+            "C537",
+            "C538",
+            "C539",
+            "C540",
+            "C541",
+            "C542",
+            "C543",
+            "C544",
+            "C545",
+            "C546",
+            "C547",
+            "C548",
+            "C549",
+            "C550",
+            "C551",
+            "C552",
+            "C553",
+            "C554",
+            "C555",
+            "C556",
+            "C557",
+            "C558",
+            "C559",
+            "C560",
+            "C561",
+            "C562",
+            "C563",
+            "C564",
+            "C565",
+            "C566",
+            "C567",
+            "C568",
+            "C569",
+            "C570",
+            "C571",
+            "C572",
+            "C573",
+            "C574",
+            "C575",
+            "C576",
+            "C577",
+            "C578",
+            "C579",
+            "C580",
+            "C581",
+            "C600",
+            "C601",
+            "C602",
+            "C603",
+            "C700",
+            "C701",
+            "C702",
+            "C703",
+            "C704",
+            "C705",
+            "C706",
+            "C707",
+            "C708",
+            "C709",
+            "C710",
+            "C711",
+            "C712",
+            "C713",
+            "C714",
+            "C715",
+            "C716",
+            "C717",
+            "C718",
+            "C719",
+            "C720",
+            "C721",
+            "C722",
+            "C723",
+            "C724",
+            "C725",
+            "C726",
+            "C727",
+            "C728",
+            "C729",
+            "C730",
+            "C731",
+            "C732",
+            "C800",
+            "C801",
+            "C802",
+            "C803",
+            "C804",
+            "C805",
+            "C806",
+            "C807",
+            "C808",
+            "C809",
+            "C810",
+            "C811",
+            "C812",
+            "C813",
+            "C814",
+            "C815",
+            "C816",
+            "C817",
+            "C818",
+            "C819",
+            "C820",
+            "C821",
+            "C822",
+            "C823",
+            "C824",
+            "C825",
+            "C826",
+            "C827",
+            "C828",
+            "C829",
+            "C830",
+            "C831",
+            "C832",
+            "C833",
+            "C834",
+            "C835",
+            "C836",
+            "C837",
+            "C900",
+            "C901",
+            "C902",
+            "C903",
+            "C904",
+            "C905",
+            "C906",
+            "C907",
+            "C908",
+            "C909",
+            "C910",
+            "C911",
+            "C912",
+            "C913",
+            "C914",
+            "C915",
+            "C916",
+            "C917",
+            "C918",
+            "C919",
+            "C920",
+            "C921",
+            "C922",
+            "C923",
+            "C924",
+            "C925",
+            "C926",
+            "C927",
+            "C928",
+            "C929",
+            "C930",
+            "C931",
+            "C932",
+            "C933",
+            "C934",
+            "C935",
+            "C936",
+            "C937",
+            "C938"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:Cortex_SWD_10_pin_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:Cortex_SWD_10_pin_MIRA",
+          "refs": [
+            "J100"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:DM3AT_SF_PEJM5_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:DM3AT_SF_PEJM5_MIRA",
+          "refs": [
+            "J300"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:DP83867IRRGZR_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:DP83867IRRGZR_MIRA",
+          "refs": [
+            "U902"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+            "(2, 1)": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+            "(3, 1)": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:FPGA_JTAG_1x06_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:FPGA_JTAG_1x06_MIRA",
+          "refs": [
+            "J600"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "600_FPGA_CONFIGURATION_AND_XADC.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:FPGA_PROGRAM_BUTTON_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:FPGA_PROGRAM_BUTTON_MIRA",
+          "refs": [
+            "SW600"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "600_FPGA_CONFIGURATION_AND_XADC.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:FT601Q_B_R_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:FT601Q_B_R_MIRA",
+          "refs": [
+            "U707"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+            "(2, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+            "(3, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+            "(4, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:Ferrite",
+      "physical_references": 3,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:Ferrite",
+          "refs": [
+            "FB600",
+            "FB700",
+            "FB701"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:H5007NLT_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:H5007NLT_MIRA",
+          "refs": [
+            "T900"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:HD3SS3220IRNHR_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:HD3SS3220IRNHR_MIRA",
+          "refs": [
+            "U706"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:ICS_CQFP64_1830_1830_100_1_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:ICS_CQFP64_1830_1830_100_1_MIRA",
+          "refs": [
+            "J1800"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1800_MATRIX_CROSSBAR_SOCKET_AND_BIAS.kicad_sch",
+            "(2, 1)": "1800_MATRIX_CROSSBAR_SOCKET_AND_BIAS.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:INA821_CC_MIRA",
+      "physical_references": 2,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:INA821_CC_MIRA",
+          "refs": [
+            "U2104",
+            "U2109"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:IS42S16320F_7TLI_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:IS42S16320F_7TLI_MIRA",
+          "refs": [
+            "U200"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "200_MCU_FMC_AND_SDRAM.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:MT41K256M16TW_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:MT41K256M16TW_MIRA",
+          "refs": [
+            "U800"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+            "(2, 1)": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+            "(3, 1)": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:OPA192IDBVR_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:OPA192IDBVR_MIRA",
+          "refs": [
+            "U1104"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+            "(2, 1)": "1100_DAC_SERVICE_AND_FORMING.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:OPA197_MIRA_MAT",
+      "physical_references": 2,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:OPA197_MIRA_MAT",
+          "refs": [
+            "U2002",
+            "U2101"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:OPA197_MIRA_MAT_LAYOUT_42e2a435",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:OPA197_MIRA_MAT_LAYOUT_42e2a435",
+          "refs": [
+            "U2001"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:OPA2197_MIRA_MAT",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:OPA2197_MIRA_MAT",
+          "refs": [
+            "U1903"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
+            "(2, 1)": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
+            "(3, 1)": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:OPA4192IPWR_MIRA",
+      "physical_references": 10,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:OPA4192IPWR_MIRA",
+          "refs": [
+            "U1001",
+            "U1002",
+            "U1004",
+            "U1005",
+            "U1007",
+            "U1008",
+            "U1010",
+            "U1011",
+            "U1101",
+            "U1102"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+            "(2, 1)": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+            "(3, 1)": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+            "(4, 1)": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+            "(5, 1)": "1100_DAC_SERVICE_AND_FORMING.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:OPA4197_CC_MIRA",
+      "physical_references": 3,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:OPA4197_CC_MIRA",
+          "refs": [
+            "U2105",
+            "U2106",
+            "U2107"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+            "(2, 1)": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+            "(3, 1)": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+            "(4, 1)": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+            "(5, 1)": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:OPA551_MIRA_MAT",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:OPA551_MIRA_MAT",
+          "refs": [
+            "U1900"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:PESD5V0S1BA,115_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:PESD5V0S1BA,115_MIRA",
+          "refs": [
+            "D700"
+          ],
+          "live_unit_sources": {
+            "(0, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+            "(1, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:POWER_CONTROL_64_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:POWER_CONTROL_64_MIRA",
+          "refs": [
+            "J400"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:PWR_FLAG",
+      "physical_references": 4,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:PWR_FLAG",
+          "refs": [
+            "#FLG100",
+            "#FLG600",
+            "#FLG700",
+            "#FLG701"
+          ],
+          "live_unit_sources": {
+            "(0, 0)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+            "(0, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:RJE71_188_1412_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:RJE71_188_1412_MIRA",
+          "refs": [
+            "J900"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:R_10k_R_0402_1005Metric_5c7260",
+      "physical_references": 8,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:R_10k_R_0402_1005Metric_5c7260",
+          "refs": [
+            "R400",
+            "R401",
+            "R402",
+            "R403",
+            "R404",
+            "R405",
+            "R406",
+            "R407"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:Reset_pushbutton_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:Reset_pushbutton_MIRA",
+          "refs": [
+            "SW100"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:Resistor",
+      "physical_references": 433,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:Resistor",
+          "refs": [
+            "R100",
+            "R1000",
+            "R1001",
+            "R1002",
+            "R1003",
+            "R1004",
+            "R1005",
+            "R1006",
+            "R1007",
+            "R1008",
+            "R1009",
+            "R101",
+            "R1010",
+            "R1011",
+            "R1012",
+            "R1013",
+            "R1014",
+            "R1015",
+            "R1016",
+            "R1017",
+            "R1018",
+            "R1019",
+            "R102",
+            "R1020",
+            "R1021",
+            "R1022",
+            "R1023",
+            "R1024",
+            "R1025",
+            "R1026",
+            "R1027",
+            "R1028",
+            "R1029",
+            "R103",
+            "R1030",
+            "R1031",
+            "R1032",
+            "R1033",
+            "R1034",
+            "R1035",
+            "R1036",
+            "R1037",
+            "R1038",
+            "R1039",
+            "R104",
+            "R1040",
+            "R1041",
+            "R1042",
+            "R1043",
+            "R105",
+            "R106",
+            "R1100",
+            "R1101",
+            "R1102",
+            "R1103",
+            "R1104",
+            "R1105",
+            "R1106",
+            "R1107",
+            "R1108",
+            "R1109",
+            "R1110",
+            "R1111",
+            "R1112",
+            "R1113",
+            "R1114",
+            "R1115",
+            "R1116",
+            "R1117",
+            "R1118",
+            "R1119",
+            "R1120",
+            "R1200",
+            "R1201",
+            "R1202",
+            "R1203",
+            "R1204",
+            "R1205",
+            "R1206",
+            "R1207",
+            "R1300",
+            "R1301",
+            "R1302",
+            "R1303",
+            "R1304",
+            "R1400",
+            "R1401",
+            "R1402",
+            "R1403",
+            "R1404",
+            "R1405",
+            "R1406",
+            "R1407",
+            "R1408",
+            "R1409",
+            "R1410",
+            "R1411",
+            "R1412",
+            "R1413",
+            "R1414",
+            "R1415",
+            "R1500",
+            "R1501",
+            "R1502",
+            "R1503",
+            "R1504",
+            "R1505",
+            "R1506",
+            "R1507",
+            "R1508",
+            "R1509",
+            "R1510",
+            "R1511",
+            "R1512",
+            "R1513",
+            "R1514",
+            "R1515",
+            "R1516",
+            "R1517",
+            "R1518",
+            "R1519",
+            "R1520",
+            "R1521",
+            "R1522",
+            "R1523",
+            "R1524",
+            "R1525",
+            "R1526",
+            "R1527",
+            "R1528",
+            "R1529",
+            "R1530",
+            "R1531",
+            "R1532",
+            "R1533",
+            "R1534",
+            "R1535",
+            "R1536",
+            "R1537",
+            "R1538",
+            "R1539",
+            "R1540",
+            "R1541",
+            "R1542",
+            "R1543",
+            "R1544",
+            "R1545",
+            "R1546",
+            "R1547",
+            "R1548",
+            "R1549",
+            "R1550",
+            "R1551",
+            "R1552",
+            "R1553",
+            "R1554",
+            "R1555",
+            "R1556",
+            "R1557",
+            "R1558",
+            "R1559",
+            "R1560",
+            "R1561",
+            "R1562",
+            "R1563",
+            "R1564",
+            "R1565",
+            "R1566",
+            "R1567",
+            "R1568",
+            "R1569",
+            "R1570",
+            "R1571",
+            "R1572",
+            "R1573",
+            "R1574",
+            "R1575",
+            "R1576",
+            "R1577",
+            "R1578",
+            "R1579",
+            "R1580",
+            "R1581",
+            "R1582",
+            "R1583",
+            "R1584",
+            "R1585",
+            "R1586",
+            "R1587",
+            "R1588",
+            "R1589",
+            "R1590",
+            "R1591",
+            "R1592",
+            "R1593",
+            "R1594",
+            "R1595",
+            "R1596",
+            "R1597",
+            "R1598",
+            "R1599",
+            "R1600",
+            "R1601",
+            "R1602",
+            "R1603",
+            "R1604",
+            "R1605",
+            "R1700",
+            "R1701",
+            "R1702",
+            "R1703",
+            "R1704",
+            "R1705",
+            "R1706",
+            "R1707",
+            "R1708",
+            "R1709",
+            "R1710",
+            "R1711",
+            "R1712",
+            "R1713",
+            "R1714",
+            "R1715",
+            "R1716",
+            "R1717",
+            "R1718",
+            "R1719",
+            "R1720",
+            "R1721",
+            "R1722",
+            "R1723",
+            "R1724",
+            "R1725",
+            "R1726",
+            "R1727",
+            "R1728",
+            "R1729",
+            "R1730",
+            "R1731",
+            "R1732",
+            "R1800",
+            "R1801",
+            "R1900",
+            "R1901",
+            "R1902",
+            "R1903",
+            "R1904",
+            "R1905",
+            "R1906",
+            "R1907",
+            "R1908",
+            "R200",
+            "R2000",
+            "R2001",
+            "R2002",
+            "R2003",
+            "R2004",
+            "R2005",
+            "R2006",
+            "R2007",
+            "R2008",
+            "R2009",
+            "R201",
+            "R2010",
+            "R202",
+            "R203",
+            "R204",
+            "R205",
+            "R206",
+            "R207",
+            "R208",
+            "R209",
+            "R210",
+            "R2100",
+            "R2101",
+            "R2102",
+            "R2103",
+            "R2104",
+            "R2105",
+            "R2106",
+            "R2107",
+            "R2108",
+            "R211",
+            "R2110",
+            "R2111",
+            "R2112",
+            "R2113",
+            "R2114",
+            "R2115",
+            "R2116",
+            "R2117",
+            "R2118",
+            "R2119",
+            "R212",
+            "R2120",
+            "R2121",
+            "R2122",
+            "R2123",
+            "R2124",
+            "R2125",
+            "R2126",
+            "R2127",
+            "R2128",
+            "R2129",
+            "R213",
+            "R2130",
+            "R2131",
+            "R2132",
+            "R2138",
+            "R2139",
+            "R214",
+            "R215",
+            "R216",
+            "R217",
+            "R218",
+            "R219",
+            "R220",
+            "R2200",
+            "R2201",
+            "R2202",
+            "R2203",
+            "R2204",
+            "R2205",
+            "R2206",
+            "R2207",
+            "R2208",
+            "R2209",
+            "R221",
+            "R2210",
+            "R2211",
+            "R222",
+            "R223",
+            "R224",
+            "R300",
+            "R301",
+            "R302",
+            "R303",
+            "R304",
+            "R305",
+            "R306",
+            "R307",
+            "R308",
+            "R309",
+            "R310",
+            "R311",
+            "R312",
+            "R313",
+            "R314",
+            "R315",
+            "R316",
+            "R317",
+            "R318",
+            "R319",
+            "R320",
+            "R321",
+            "R322",
+            "R323",
+            "R600",
+            "R601",
+            "R602",
+            "R603",
+            "R604",
+            "R605",
+            "R606",
+            "R607",
+            "R700",
+            "R701",
+            "R702",
+            "R703",
+            "R704",
+            "R705",
+            "R706",
+            "R707",
+            "R708",
+            "R709",
+            "R710",
+            "R711",
+            "R712",
+            "R713",
+            "R714",
+            "R800",
+            "R801",
+            "R802",
+            "R803",
+            "R804",
+            "R805",
+            "R806",
+            "R807",
+            "R808",
+            "R809",
+            "R810",
+            "R811",
+            "R812",
+            "R813",
+            "R814",
+            "R815",
+            "R816",
+            "R817",
+            "R818",
+            "R819",
+            "R820",
+            "R821",
+            "R822",
+            "R823",
+            "R824",
+            "R825",
+            "R826",
+            "R827",
+            "R828",
+            "R829",
+            "R830",
+            "R900",
+            "R901",
+            "R902",
+            "R903",
+            "R904",
+            "R905",
+            "R906",
+            "R907",
+            "R908",
+            "R909",
+            "R910",
+            "R911",
+            "R912",
+            "R913",
+            "R914",
+            "R915",
+            "R916",
+            "R917",
+            "R918",
+            "R919",
+            "R920",
+            "R921"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:SN74HC595_MIRA_MAT",
+      "physical_references": 10,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:SN74HC595_MIRA_MAT",
+          "refs": [
+            "U1400",
+            "U1401",
+            "U1402",
+            "U1403",
+            "U1404",
+            "U1405",
+            "U1406",
+            "U1407",
+            "U1408",
+            "U1409"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:SN74LVC1G04_MIRA_MAT",
+      "physical_references": 13,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:SN74LVC1G04_MIRA_MAT",
+          "refs": [
+            "U1302",
+            "U1305",
+            "U1306",
+            "U1307",
+            "U1312",
+            "U1313",
+            "U1321",
+            "U1337",
+            "U1338",
+            "U1340",
+            "U1346",
+            "U1350",
+            "U2108"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:SN74LVC1G07DBVR_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:SN74LVC1G07DBVR_MIRA",
+          "refs": [
+            "U601"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "600_FPGA_CONFIGURATION_AND_XADC.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:SN74LVC1G08_MIRA_MAT",
+      "physical_references": 24,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:SN74LVC1G08_MIRA_MAT",
+          "refs": [
+            "U1303",
+            "U1308",
+            "U1309",
+            "U1310",
+            "U1311",
+            "U1314",
+            "U1315",
+            "U1316",
+            "U1317",
+            "U1318",
+            "U1319",
+            "U1322",
+            "U1324",
+            "U1326",
+            "U1331",
+            "U1335",
+            "U1336",
+            "U1341",
+            "U1342",
+            "U1343",
+            "U1345",
+            "U1349",
+            "U1351",
+            "U2201"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:SN74LVC1G11_MIRA_MAT",
+      "physical_references": 4,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:SN74LVC1G11_MIRA_MAT",
+          "refs": [
+            "U1300",
+            "U1304",
+            "U1344",
+            "U1348"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:SN74LVC1G32_MIRA_MAT",
+      "physical_references": 10,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:SN74LVC1G32_MIRA_MAT",
+          "refs": [
+            "U1320",
+            "U1323",
+            "U1325",
+            "U1332",
+            "U1334",
+            "U1339",
+            "U1347",
+            "U1352",
+            "U1704",
+            "U2203"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:SN74LVC1G74_MIRA_MAT",
+      "physical_references": 2,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:SN74LVC1G74_MIRA_MAT",
+          "refs": [
+            "U1301",
+            "U2202"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:SN74LVC1G86_MIRA_CONFIG",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:SN74LVC1G86_MIRA_CONFIG",
+          "refs": [
+            "U1333"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:STM32H745IIT6_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:STM32H745IIT6_MIRA",
+          "refs": [
+            "U100"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+            "(2, 1)": "200_MCU_FMC_AND_SDRAM.kicad_sch",
+            "(3, 1)": "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch",
+            "(4, 1)": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+            "(5, 1)": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:SiT9121AI_2B2_33E200_000000_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:SiT9121AI_2B2_33E200_000000_MIRA",
+          "refs": [
+            "Y800"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:THP210_MIRA_MAT",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:THP210_MIRA_MAT",
+          "refs": [
+            "U2003"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:TLV3201_MIRA_MAT",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:TLV3201_MIRA_MAT",
+          "refs": [
+            "U2200"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:TLV75518P_MIRA_MAT",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:TLV75518P_MIRA_MAT",
+          "refs": [
+            "U2005"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:TLV75525PDBVR_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:TLV75525PDBVR_MIRA",
+          "refs": [
+            "U903"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:TLV76012_MIRA_MAT",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:TLV76012_MIRA_MAT",
+          "refs": [
+            "U2006"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:TPD2EUSB30DRTR_MIRA",
+      "physical_references": 10,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:TPD2EUSB30DRTR_MIRA",
+          "refs": [
+            "U700",
+            "U701",
+            "U702",
+            "U703",
+            "U704",
+            "U705",
+            "U904",
+            "U905",
+            "U906",
+            "U907"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:USBLC6_2SC6_MIRA",
+      "physical_references": 3,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:USBLC6_2SC6_MIRA",
+          "refs": [
+            "U301",
+            "U302",
+            "U303"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:W25Q128JVSIQ_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:W25Q128JVSIQ_MIRA",
+          "refs": [
+            "U600"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "600_FPGA_CONFIGURATION_AND_XADC.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:W25Q512JVEIQ_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:W25Q512JVEIQ_MIRA",
+          "refs": [
+            "U300"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "MIRA_RevA:XC7A200T_2FBG484I_MIRA",
+      "physical_references": 1,
+      "variants": [
+        {
+          "lib_id": "MIRA_RevA:XC7A200T_2FBG484I_MIRA",
+          "refs": [
+            "U500"
+          ],
+          "live_unit_sources": {
+            "(1, 1)": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+            "(2, 1)": "600_FPGA_CONFIGURATION_AND_XADC.kicad_sch",
+            "(3, 1)": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+            "(4, 1)": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+            "(5, 1)": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+            "(6, 1)": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+            "(7, 1)": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
+            "(8, 1)": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+            "(9, 1)": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+            "(10, 1)": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+            "(11, 1)": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+            "(12, 1)": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+            "(13, 1)": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch"
+          }
+        }
+      ]
+    },
+    {
+      "original_lib_id": "power:GND",
+      "physical_references": 554,
+      "variants": [
+        {
+          "lib_id": "power:GND",
+          "refs": [
+            "#PWR1",
+            "#PWR10",
+            "#PWR100",
+            "#PWR101",
+            "#PWR102",
+            "#PWR103",
+            "#PWR104",
+            "#PWR105",
+            "#PWR106",
+            "#PWR107",
+            "#PWR108",
+            "#PWR109",
+            "#PWR11",
+            "#PWR110",
+            "#PWR111",
+            "#PWR112",
+            "#PWR113",
+            "#PWR114",
+            "#PWR115",
+            "#PWR116",
+            "#PWR117",
+            "#PWR118",
+            "#PWR119",
+            "#PWR12",
+            "#PWR120",
+            "#PWR121",
+            "#PWR122",
+            "#PWR123",
+            "#PWR124",
+            "#PWR125",
+            "#PWR126",
+            "#PWR127",
+            "#PWR128",
+            "#PWR129",
+            "#PWR13",
+            "#PWR130",
+            "#PWR131",
+            "#PWR132",
+            "#PWR133",
+            "#PWR134",
+            "#PWR135",
+            "#PWR136",
+            "#PWR137",
+            "#PWR138",
+            "#PWR139",
+            "#PWR14",
+            "#PWR140",
+            "#PWR141",
+            "#PWR142",
+            "#PWR143",
+            "#PWR144",
+            "#PWR145",
+            "#PWR146",
+            "#PWR147",
+            "#PWR148",
+            "#PWR149",
+            "#PWR15",
+            "#PWR150",
+            "#PWR151",
+            "#PWR152",
+            "#PWR153",
+            "#PWR154",
+            "#PWR155",
+            "#PWR156",
+            "#PWR157",
+            "#PWR158",
+            "#PWR159",
+            "#PWR16",
+            "#PWR160",
+            "#PWR161",
+            "#PWR162",
+            "#PWR163",
+            "#PWR164",
+            "#PWR165",
+            "#PWR166",
+            "#PWR167",
+            "#PWR168",
+            "#PWR169",
+            "#PWR17",
+            "#PWR170",
+            "#PWR171",
+            "#PWR172",
+            "#PWR173",
+            "#PWR174",
+            "#PWR175",
+            "#PWR176",
+            "#PWR177",
+            "#PWR178",
+            "#PWR179",
+            "#PWR18",
+            "#PWR180",
+            "#PWR181",
+            "#PWR182",
+            "#PWR183",
+            "#PWR184",
+            "#PWR185",
+            "#PWR186",
+            "#PWR187",
+            "#PWR188",
+            "#PWR189",
+            "#PWR19",
+            "#PWR190",
+            "#PWR191",
+            "#PWR192",
+            "#PWR193",
+            "#PWR194",
+            "#PWR195",
+            "#PWR196",
+            "#PWR197",
+            "#PWR198",
+            "#PWR199",
+            "#PWR2",
+            "#PWR20",
+            "#PWR200",
+            "#PWR201",
+            "#PWR202",
+            "#PWR203",
+            "#PWR204",
+            "#PWR205",
+            "#PWR206",
+            "#PWR207",
+            "#PWR208",
+            "#PWR209",
+            "#PWR21",
+            "#PWR210",
+            "#PWR211",
+            "#PWR212",
+            "#PWR213",
+            "#PWR214",
+            "#PWR215",
+            "#PWR216",
+            "#PWR217",
+            "#PWR218",
+            "#PWR219",
+            "#PWR22",
+            "#PWR220",
+            "#PWR221",
+            "#PWR222",
+            "#PWR223",
+            "#PWR224",
+            "#PWR225",
+            "#PWR226",
+            "#PWR227",
+            "#PWR228",
+            "#PWR229",
+            "#PWR23",
+            "#PWR230",
+            "#PWR231",
+            "#PWR232",
+            "#PWR233",
+            "#PWR234",
+            "#PWR235",
+            "#PWR236",
+            "#PWR237",
+            "#PWR238",
+            "#PWR239",
+            "#PWR24",
+            "#PWR240",
+            "#PWR241",
+            "#PWR242",
+            "#PWR243",
+            "#PWR244",
+            "#PWR245",
+            "#PWR246",
+            "#PWR247",
+            "#PWR248",
+            "#PWR249",
+            "#PWR25",
+            "#PWR250",
+            "#PWR251",
+            "#PWR252",
+            "#PWR253",
+            "#PWR254",
+            "#PWR255",
+            "#PWR256",
+            "#PWR257",
+            "#PWR258",
+            "#PWR259",
+            "#PWR26",
+            "#PWR260",
+            "#PWR261",
+            "#PWR262",
+            "#PWR263",
+            "#PWR264",
+            "#PWR265",
+            "#PWR266",
+            "#PWR267",
+            "#PWR268",
+            "#PWR269",
+            "#PWR27",
+            "#PWR270",
+            "#PWR271",
+            "#PWR272",
+            "#PWR273",
+            "#PWR274",
+            "#PWR275",
+            "#PWR276",
+            "#PWR277",
+            "#PWR278",
+            "#PWR279",
+            "#PWR28",
+            "#PWR280",
+            "#PWR281",
+            "#PWR282",
+            "#PWR283",
+            "#PWR284",
+            "#PWR285",
+            "#PWR286",
+            "#PWR287",
+            "#PWR288",
+            "#PWR289",
+            "#PWR29",
+            "#PWR290",
+            "#PWR291",
+            "#PWR292",
+            "#PWR293",
+            "#PWR294",
+            "#PWR295",
+            "#PWR296",
+            "#PWR297",
+            "#PWR298",
+            "#PWR299",
+            "#PWR3",
+            "#PWR30",
+            "#PWR300",
+            "#PWR301",
+            "#PWR302",
+            "#PWR303",
+            "#PWR304",
+            "#PWR305",
+            "#PWR306",
+            "#PWR307",
+            "#PWR308",
+            "#PWR309",
+            "#PWR31",
+            "#PWR310",
+            "#PWR311",
+            "#PWR312",
+            "#PWR313",
+            "#PWR314",
+            "#PWR315",
+            "#PWR316",
+            "#PWR317",
+            "#PWR318",
+            "#PWR319",
+            "#PWR32",
+            "#PWR320",
+            "#PWR321",
+            "#PWR322",
+            "#PWR323",
+            "#PWR324",
+            "#PWR325",
+            "#PWR326",
+            "#PWR327",
+            "#PWR328",
+            "#PWR329",
+            "#PWR33",
+            "#PWR330",
+            "#PWR331",
+            "#PWR332",
+            "#PWR333",
+            "#PWR334",
+            "#PWR335",
+            "#PWR336",
+            "#PWR337",
+            "#PWR338",
+            "#PWR339",
+            "#PWR34",
+            "#PWR340",
+            "#PWR341",
+            "#PWR342",
+            "#PWR343",
+            "#PWR344",
+            "#PWR345",
+            "#PWR346",
+            "#PWR347",
+            "#PWR348",
+            "#PWR349",
+            "#PWR35",
+            "#PWR350",
+            "#PWR351",
+            "#PWR352",
+            "#PWR353",
+            "#PWR354",
+            "#PWR355",
+            "#PWR356",
+            "#PWR357",
+            "#PWR358",
+            "#PWR359",
+            "#PWR36",
+            "#PWR360",
+            "#PWR361",
+            "#PWR362",
+            "#PWR363",
+            "#PWR364",
+            "#PWR365",
+            "#PWR366",
+            "#PWR367",
+            "#PWR368",
+            "#PWR369",
+            "#PWR37",
+            "#PWR370",
+            "#PWR371",
+            "#PWR372",
+            "#PWR373",
+            "#PWR374",
+            "#PWR375",
+            "#PWR376",
+            "#PWR377",
+            "#PWR378",
+            "#PWR379",
+            "#PWR38",
+            "#PWR380",
+            "#PWR381",
+            "#PWR382",
+            "#PWR383",
+            "#PWR384",
+            "#PWR385",
+            "#PWR386",
+            "#PWR387",
+            "#PWR388",
+            "#PWR389",
+            "#PWR39",
+            "#PWR390",
+            "#PWR391",
+            "#PWR392",
+            "#PWR393",
+            "#PWR394",
+            "#PWR395",
+            "#PWR396",
+            "#PWR397",
+            "#PWR398",
+            "#PWR399",
+            "#PWR4",
+            "#PWR40",
+            "#PWR400",
+            "#PWR401",
+            "#PWR402",
+            "#PWR403",
+            "#PWR404",
+            "#PWR405",
+            "#PWR406",
+            "#PWR407",
+            "#PWR408",
+            "#PWR409",
+            "#PWR41",
+            "#PWR410",
+            "#PWR411",
+            "#PWR412",
+            "#PWR413",
+            "#PWR414",
+            "#PWR415",
+            "#PWR416",
+            "#PWR417",
+            "#PWR418",
+            "#PWR419",
+            "#PWR42",
+            "#PWR420",
+            "#PWR421",
+            "#PWR422",
+            "#PWR423",
+            "#PWR424",
+            "#PWR425",
+            "#PWR426",
+            "#PWR427",
+            "#PWR428",
+            "#PWR429",
+            "#PWR43",
+            "#PWR430",
+            "#PWR431",
+            "#PWR432",
+            "#PWR433",
+            "#PWR434",
+            "#PWR435",
+            "#PWR436",
+            "#PWR437",
+            "#PWR438",
+            "#PWR439",
+            "#PWR44",
+            "#PWR440",
+            "#PWR441",
+            "#PWR442",
+            "#PWR443",
+            "#PWR444",
+            "#PWR445",
+            "#PWR446",
+            "#PWR447",
+            "#PWR448",
+            "#PWR449",
+            "#PWR45",
+            "#PWR450",
+            "#PWR451",
+            "#PWR452",
+            "#PWR453",
+            "#PWR454",
+            "#PWR455",
+            "#PWR456",
+            "#PWR457",
+            "#PWR458",
+            "#PWR459",
+            "#PWR46",
+            "#PWR460",
+            "#PWR461",
+            "#PWR462",
+            "#PWR463",
+            "#PWR464",
+            "#PWR465",
+            "#PWR466",
+            "#PWR467",
+            "#PWR47",
+            "#PWR48",
+            "#PWR488",
+            "#PWR489",
+            "#PWR49",
+            "#PWR490",
+            "#PWR491",
+            "#PWR492",
+            "#PWR493",
+            "#PWR494",
+            "#PWR495",
+            "#PWR496",
+            "#PWR497",
+            "#PWR498",
+            "#PWR499",
+            "#PWR5",
+            "#PWR50",
+            "#PWR500",
+            "#PWR501",
+            "#PWR502",
+            "#PWR503",
+            "#PWR504",
+            "#PWR505",
+            "#PWR506",
+            "#PWR507",
+            "#PWR508",
+            "#PWR509",
+            "#PWR51",
+            "#PWR510",
+            "#PWR511",
+            "#PWR512",
+            "#PWR513",
+            "#PWR514",
+            "#PWR515",
+            "#PWR516",
+            "#PWR517",
+            "#PWR518",
+            "#PWR519",
+            "#PWR52",
+            "#PWR520",
+            "#PWR521",
+            "#PWR522",
+            "#PWR523",
+            "#PWR524",
+            "#PWR525",
+            "#PWR526",
+            "#PWR527",
+            "#PWR528",
+            "#PWR529",
+            "#PWR53",
+            "#PWR530",
+            "#PWR531",
+            "#PWR532",
+            "#PWR533",
+            "#PWR534",
+            "#PWR535",
+            "#PWR536",
+            "#PWR537",
+            "#PWR538",
+            "#PWR539",
+            "#PWR54",
+            "#PWR540",
+            "#PWR541",
+            "#PWR542",
+            "#PWR543",
+            "#PWR544",
+            "#PWR545",
+            "#PWR546",
+            "#PWR547",
+            "#PWR548",
+            "#PWR549",
+            "#PWR55",
+            "#PWR550",
+            "#PWR551",
+            "#PWR552",
+            "#PWR553",
+            "#PWR554",
+            "#PWR555",
+            "#PWR556",
+            "#PWR557",
+            "#PWR558",
+            "#PWR559",
+            "#PWR56",
+            "#PWR560",
+            "#PWR561",
+            "#PWR57",
+            "#PWR58",
+            "#PWR585",
+            "#PWR586",
+            "#PWR587",
+            "#PWR588",
+            "#PWR589",
+            "#PWR59",
+            "#PWR590",
+            "#PWR591",
+            "#PWR592",
+            "#PWR593",
+            "#PWR594",
+            "#PWR595",
+            "#PWR596",
+            "#PWR597",
+            "#PWR6",
+            "#PWR60",
+            "#PWR61",
+            "#PWR62",
+            "#PWR63",
+            "#PWR64",
+            "#PWR65",
+            "#PWR66",
+            "#PWR67",
+            "#PWR68",
+            "#PWR69",
+            "#PWR7",
+            "#PWR70",
+            "#PWR71",
+            "#PWR72",
+            "#PWR73",
+            "#PWR74",
+            "#PWR75",
+            "#PWR76",
+            "#PWR77",
+            "#PWR78",
+            "#PWR79",
+            "#PWR8",
+            "#PWR80",
+            "#PWR81",
+            "#PWR82",
+            "#PWR83",
+            "#PWR84",
+            "#PWR85",
+            "#PWR86",
+            "#PWR87",
+            "#PWR88",
+            "#PWR89",
+            "#PWR9",
+            "#PWR90",
+            "#PWR91",
+            "#PWR92",
+            "#PWR93",
+            "#PWR94",
+            "#PWR95",
+            "#PWR96",
+            "#PWR97",
+            "#PWR98",
+            "#PWR99"
+          ],
+          "live_unit_sources": {
+            "(0, 1)": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+            "(1, 1)": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch"
+          }
+        }
+      ]
+    }
+  ],
+  "preservation": [
+    {
+      "file": "MIRA_Control.kicad_sch",
+      "placed_units": 0,
+      "pins_all_unit_styles": 0,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "file": "MCU.kicad_sch",
+      "placed_units": 0,
+      "pins_all_unit_styles": 0,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "file": "INTERCONNECT.kicad_sch",
+      "placed_units": 0,
+      "pins_all_unit_styles": 0,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "file": "FPGA.kicad_sch",
+      "placed_units": 0,
+      "pins_all_unit_styles": 0,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "file": "DAC.kicad_sch",
+      "placed_units": 0,
+      "pins_all_unit_styles": 0,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "file": "MATRIX.kicad_sch",
+      "placed_units": 0,
+      "pins_all_unit_styles": 0,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "file": "ADC.kicad_sch",
+      "placed_units": 0,
+      "pins_all_unit_styles": 0,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "file": "PROTECTION.kicad_sch",
+      "placed_units": 0,
+      "pins_all_unit_styles": 0,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "file": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+      "placed_units": 66,
+      "pins_all_unit_styles": 229,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "242d7c5045adf004728f6ad9307bd0ab82a07ab804edf55833a5a823a1792fdf"
+    },
+    {
+      "file": "200_MCU_FMC_AND_SDRAM.kicad_sch",
+      "placed_units": 38,
+      "pins_all_unit_styles": 162,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "c362318e9675bc8f7c5b6a00a8e1ab307b87e32e3794d5ac5214ed99489691d7"
+    },
+    {
+      "file": "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch",
+      "placed_units": 45,
+      "pins_all_unit_styles": 131,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "5061183e59d749fdf25931ac3a6e0dec9c56132ad8284d6ea676e325c90d7181"
+    },
+    {
+      "file": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch",
+      "placed_units": 17,
+      "pins_all_unit_styles": 103,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "2141b9b6e5b6ed2fc6b7a08e6c6b1152247d8163b711ff39ad1966c5d28f99dd"
+    },
+    {
+      "file": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+      "placed_units": 103,
+      "pins_all_unit_styles": 357,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "6bca2f673ed1f3b8ffb8257a6e3282e57cc3e5328517508fc2bfd44f619b2a88"
+    },
+    {
+      "file": "600_FPGA_CONFIGURATION_AND_XADC.kicad_sch",
+      "placed_units": 28,
+      "pins_all_unit_styles": 78,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "7044c9a887637267615618cba6d9edb3907cce8cd9b12aa578d37339181b6be2"
+    },
+    {
+      "file": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+      "placed_units": 98,
+      "pins_all_unit_styles": 344,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "6064eb0c4d751d9a0f135512d8d30d475b0e4fc9616af103defe8112f358404e"
+    },
+    {
+      "file": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+      "placed_units": 91,
+      "pins_all_unit_styles": 356,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "d0fcfb6c62caf1d009b48cd085b0a0cc8128a3839126140230f0de7f2fe34254"
+    },
+    {
+      "file": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+      "placed_units": 102,
+      "pins_all_unit_styles": 319,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "ffbcae68dd01685aa5df76c748dc4d1e602e447bb8fc9ba1f9161088c7760c2c"
+    },
+    {
+      "file": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+      "placed_units": 192,
+      "pins_all_unit_styles": 436,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "7da51e3ecb4a6f632b44c2c9c5756612052c422e67b85df225a335effeaa5772"
+    },
+    {
+      "file": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+      "placed_units": 83,
+      "pins_all_unit_styles": 182,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "1ac9c914032e01b612c7ddfe976f3a4bedb98f894c4b29d49a9120c49bae06b3"
+    },
+    {
+      "file": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
+      "placed_units": 16,
+      "pins_all_unit_styles": 80,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "47104762a54bc6794bb761e41891604dac3baad5f38678b0edc10fda4e0c04e2"
+    },
+    {
+      "file": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+      "placed_units": 175,
+      "pins_all_unit_styles": 567,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "68eb07ea15e037708d6862801098fcce2a0dc3f9280916f57d9d0a45706ec395"
+    },
+    {
+      "file": "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch",
+      "placed_units": 49,
+      "pins_all_unit_styles": 225,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "34d86f86df97126dca61786f10fe3b350a1fb725c8205297d778d144cdb3e1b1"
+    },
+    {
+      "file": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+      "placed_units": 420,
+      "pins_all_unit_styles": 800,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "41a126770d74038d6dda62a97830fdc4caf2138ff88b4853a9b73a09fcf38405"
+    },
+    {
+      "file": "1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING.kicad_sch",
+      "placed_units": 26,
+      "pins_all_unit_styles": 96,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "a3dd7a4dc8f7071d8c7cf0259ff1f43657f2156dd0485b933ab4cbb25b7006ee"
+    },
+    {
+      "file": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
+      "placed_units": 132,
+      "pins_all_unit_styles": 247,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "3dfdbf470db2a55367c331822100d688d6c89565dd975507f4f4f1ee27a539b9"
+    },
+    {
+      "file": "1800_MATRIX_CROSSBAR_SOCKET_AND_BIAS.kicad_sch",
+      "placed_units": 10,
+      "pins_all_unit_styles": 78,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "c93cc7f4065db049afb1214cae1164c667e23214eaba881ffa2c9979bbc7ef28"
+    },
+    {
+      "file": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
+      "placed_units": 38,
+      "pins_all_unit_styles": 108,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "69893f02982debf7938a9769f9f04e7d45ddb056a786aa73510e576fed805bc7"
+    },
+    {
+      "file": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
+      "placed_units": 37,
+      "pins_all_unit_styles": 110,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "aa0c1af4779597af9abde1934bfdddc178d4ec6557cf905bdd45d01dca08fd40"
+    },
+    {
+      "file": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+      "placed_units": 78,
+      "pins_all_unit_styles": 221,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "9335919b7ca6c02c872ea2cdda463c89a5790e440c9e2a3f55afa25a0db3eec0"
+    },
+    {
+      "file": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch",
+      "placed_units": 37,
+      "pins_all_unit_styles": 80,
+      "pin_transform_and_type_unchanged": true,
+      "inventory_sha256": "734b48896191145fa3130a0a23e7241631d345ec6f8c6aef3ae02e9c530eee1f"
+    }
+  ],
+  "watched_files": {
+    "compliance/working/MIRA_Control/MIRA_Control.kicad_sch": "c3e71f8d19e542d124a0c49ada519c3b32de85e3364279ad8a48655baca3e80b",
+    "compliance/working/MIRA_Control/MCU.kicad_sch": "2e38fcd25aaf24fc6effb71b52d5fce13359f4275980106e53bb9ef587fc4995",
+    "compliance/working/MIRA_Control/INTERCONNECT.kicad_sch": "b24388ce5890bb9c6a940ea881a38e1ffe3f5200018329ab921b0a955c27fa15",
+    "compliance/working/MIRA_Control/FPGA.kicad_sch": "028463d3c7cbeb1b023f768422a4c665dad8d9d910275b9558ee6a1120c9cbe1",
+    "compliance/working/MIRA_Control/DAC.kicad_sch": "27575f1dc26f8ff50a5a5de24e152d81d6879eb6ebe12ba56604f8d7a048fb67",
+    "compliance/working/MIRA_Control/MATRIX.kicad_sch": "e4dde44e9a8e0c32f4ff4994fb19214702f9566c3b4e66c37681af9718085a56",
+    "compliance/working/MIRA_Control/ADC.kicad_sch": "19fd4d8158b6b9dec44810556292bb778b0681eeca7970ee85671de416c62432",
+    "compliance/working/MIRA_Control/PROTECTION.kicad_sch": "117e1344781c7b38f747236e76537257be4a2c03f2c9741328e801d2a878e483",
+    "compliance/working/MIRA_Control/100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch": "a4b537f19bf9ff9962e7b80cd68e9f0b41dff7733fc3c5ec0d61d8799d8a44a5",
+    "compliance/working/MIRA_Control/200_MCU_FMC_AND_SDRAM.kicad_sch": "27418c5749422c60b2662eb9d2c158c33e238ece64722ed2dca5c5fd45a26837",
+    "compliance/working/MIRA_Control/300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch": "7e2667f6a8caa51d2a6012a35a14b3d8511d83186b5ffc2967072899261f9372",
+    "compliance/working/MIRA_Control/400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch": "30da87d3b654ae2edebd3e66ab03ff8d45ec4e9e01f817c15bdcbee3bdff4ac7",
+    "compliance/working/MIRA_Control/500_FPGA_POWER_AND_DECOUPLING.kicad_sch": "cf34a90cdb291ea1d31ce120048cbf284425bae7b28e208bd1933a7328cb57f4",
+    "compliance/working/MIRA_Control/600_FPGA_CONFIGURATION_AND_XADC.kicad_sch": "bd067c2df4836a30f6e664c72e30383c8c255a79bda6e4580831f102e55342e1",
+    "compliance/working/MIRA_Control/700_FPGA_USB3_FIFO_INTERFACE.kicad_sch": "07a6f53338545a79efc12dc4f969901f8045f5d44444a7ff203b5ae391cc157d",
+    "compliance/working/MIRA_Control/800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch": "898fadd777b11c7e5ab2d1df849b1794fe7621a65171376f2da355a65abdb12e",
+    "compliance/working/MIRA_Control/900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch": "422932808d7a32a17f280f586d0a0822638e5c550eef7678d78b6108a471aa95",
+    "compliance/working/MIRA_Control/1000_DAC_BL0_31_AND_BUFFERS.kicad_sch": "2bd9cdfe0365ae72f2228c71662617522ee6344513b13323bfaffd0761cc26a7",
+    "compliance/working/MIRA_Control/1100_DAC_SERVICE_AND_FORMING.kicad_sch": "41baf2bb094ee79dbf3c642d7b2dfb0eebcff919f8901d61f305d7d31d6abf80",
+    "compliance/working/MIRA_Control/1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch": "942d7d63bbed35a29f4c96026fb9ff25d18aa34fd512b4c125216a28d616677a",
+    "compliance/working/MIRA_Control/1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch": "9bcdd35e38e4f562a0baecb449296d128b5bdd1cf93a1adbbb57aeebf13c77bc",
+    "compliance/working/MIRA_Control/1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch": "5c4c1575e21cc33d947c9487c3384463bc580fbf2434b04c6fa908cfc23201d7",
+    "compliance/working/MIRA_Control/1500_MATRIX_BL0_31_SWITCHING.kicad_sch": "90ccaf30d96276edf8b3ae401a2877408f40be6207b43f14eadecbc779fea055",
+    "compliance/working/MIRA_Control/1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING.kicad_sch": "38578d6fe323c69f8ceb8d9712ee1e79a57be15bf523885979347dd5f2c09806",
+    "compliance/working/MIRA_Control/1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch": "aa320c76ab5667a1004a6989ba24ec9fa85ca1a673e3e9983198ca272bb7ab92",
+    "compliance/working/MIRA_Control/1800_MATRIX_CROSSBAR_SOCKET_AND_BIAS.kicad_sch": "400bbeb7ac66c4489518fc0df72fbcbf912402a7c739d842b3c747ac13900002",
+    "compliance/working/MIRA_Control/1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch": "e8db2c535d77b452b58fe33183eee02cbd9da0bb5dbda41e09816c5a5490f4a1",
+    "compliance/working/MIRA_Control/2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch": "d4b05cdba2eeaca9c1d516c9dd1eeb4c67f27d396276e9f56d20a32b38bf2a73",
+    "compliance/working/MIRA_Control/2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch": "d6ebac2c888262cffe6811b344f997e3e83836c8b082c3806a55e0f0721d02e0",
+    "compliance/working/MIRA_Control/2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch": "f794cd69adff937dc2753db7d17354f139463285d4e736227106a30ccd5d505a",
+    "compliance/working/MIRA_Control/libraries/MIRA_RevA.kicad_sym": "91de3808f955cc80f34a18002b6a252a6f145d9ab2ca365cde092a514ee16db9",
+    "compliance/library_patches/analog_library_symbols.kicad_sym": "c1c70d167bce6de57ca2ccfbdc6cf75c0f8a7bc8b038be95c051fe13c96d61f1",
+    "compliance/library_patches/digital_library_symbols.kicad_sym": "41c01f3c15f5df18d5cb2e74c2e59c24087f5390e9a2cb024420385b75802f0f",
+    "compliance/library_patches/fault_library_symbols.kicad_sym": "d4fed543c3c5f4f51ff262f8b7a654265833a87689716257eb52c7db577165e6",
+    "compliance/working/MIRA_Control/sym-lib-table": "54fab93e6eab345ba467ec01a3e1a81a8e6360d85bbf884014c938f5d94abc51"
+  },
+  "proposed_writes": [
+    {
+      "file": "compliance/working/MIRA_Control/libraries/MIRA_RevA.kicad_sym",
+      "sha256": "91de3808f955cc80f34a18002b6a252a6f145d9ab2ca365cde092a514ee16db9",
+      "bytes": 465886
+    },
+    {
+      "file": "compliance/working/MIRA_Control/libraries/power.kicad_sym",
+      "sha256": "2d0d3432db7abbc9b3d872dc1d1aad197f2f0bb24d1aa999a4854e2a205a1106",
+      "bytes": 2534
+    },
+    {
+      "file": "compliance/working/MIRA_Control/sym-lib-table",
+      "sha256": "54fab93e6eab345ba467ec01a3e1a81a8e6360d85bbf884014c938f5d94abc51",
+      "bytes": 381
+    }
+  ],
+  "notes": [
+    "Built from current ACTUALLY placed unit styles only. Unplaced unit styles retained from current template, not stale master.",
+    "Canonical library property Reference defaults normalized; placed fields, placement, pins, unit, rotation, mirror, values and footprints untouched.",
+    "Different geometry for the same used unit across physical references produces explicit LAYOUT variants, with placed lib_id changes only.",
+    "Actual embedded definition is resolved through lib_name when present; stale lib_name pointers removed during canonicalization. All old embedded aliases removed if unplaced. Each active schematic embeds exact copies of the same canonical definitions used by its assigned library IDs.",
+    "Negative analog VSS pins retain names and electrical types. No ERC heuristic suppression or ground reconnection."
+  ]
+}

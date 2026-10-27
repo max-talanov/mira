@@ -4,41 +4,328 @@
 	(generator_version "10.0")
 	(uuid "2daf38a9-3ae4-4e82-85ac-549ad80b04e5")
 	(paper "A3")
+	(title_block
+		(title "Programmable logic, memory and external links")
+		(rev "B")
+		(company "MIRA")
+	)
 	(lib_symbols)
+	(text "Master SPI flash, JTAG, PROGRAM_B recovery and XADC supply filter."
+		(exclude_from_sim no)
+		(at 22.86 97.15 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "324c377d-762f-4c1b-80f2-409c81d85162")
+	)
+	(text "Artix-7 supplies, configuration, USB FIFO,\nDDR3L, Ethernet PHY and buffered MCU link. All\nFPGA sections belong to one physical package."
+		(exclude_from_sim no)
+		(at 315 54.61 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "33f87839-d78e-491b-a8f5-41f5155a30fb")
+	)
+	(text "FPGA - Programmable logic, memory and external links"
+		(exclude_from_sim no)
+		(at 22.86 15.24 0)
+		(effects
+			(font
+				(size 2.1 2.1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "3fabd03d-c66b-49a1-a890-d36129380ef6")
+	)
+	(text "Physical references follow the first circuit leaf containing the component; multi-unit devices are not duplicated."
+		(exclude_from_sim no)
+		(at 22.86 277 0)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "571be835-c2a3-4b8c-beb7-f8b220a5e07d")
+	)
+	(text "Group scope"
+		(exclude_from_sim no)
+		(at 315 45.72 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "5eda5b07-7343-46cb-95ac-e64d7e973e84")
+	)
+	(text "Consecutive circuit order; select a child sheet to inspect its circuit and sheet-specific explanation."
+		(exclude_from_sim no)
+		(at 22.86 25.4 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "92c4fea0-661c-4312-ab25-2cefd3ca60a1")
+	)
+	(text "Reading guide"
+		(exclude_from_sim no)
+		(at 315 97.79 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "a07fb992-6a97-42fe-a223-236db710260a")
+	)
+	(text "Ethernet PHY/magnetics and domain-powered MCU/FPGA control buffers."
+		(exclude_from_sim no)
+		(at 22.86 207.64 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "a1a4e251-e087-4db7-bfe7-eb53497641f7")
+	)
+	(text "USB Type-C orientation, ESD, FT601 FIFO and isolated VBUS detection."
+		(exclude_from_sim no)
+		(at 22.86 133.98 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "ae24849d-5bb4-4652-8449-c0c9766b087e")
+	)
+	(text "One Artix-7 package; core, auxiliary and selected I/O supply decoupling."
+		(exclude_from_sim no)
+		(at 22.86 60.32 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "b1012fc9-7b65-49be-bf1d-37fe7fdf8658")
+	)
+	(text "FPGA DDR3L data groups, terminations and AC-coupled 200 MHz reference."
+		(exclude_from_sim no)
+		(at 22.86 170.81 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "bc27a6ba-50d4-4873-b884-ab132b8d7e47")
+	)
+	(text "Each numeric child contains its own circuit\nexplanation. Identical global labels connect\nbetween leaves. A shared U reference denotes one\nphysical multi-unit device."
+		(exclude_from_sim no)
+		(at 315 106.68 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "c39338b7-c097-400f-bc6c-87f63eaa2731")
+	)
 	(sheet
-		(at 67.31 30.48)
-		(size 12.7 3.81)
+		(at 22.86 45.72)
+		(size 260 10)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
-			(width 0.1524)
+			(width 0.254)
 			(type solid)
 		)
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "1fe74c2f-e7dc-4101-9211-f14db26ecdee")
-		(property "Sheetname" "FPGA_2"
-			(at 67.31 29.7684 0)
+		(uuid "0107ad30-05a2-4f79-8a00-cb1818b2883c")
+		(property "Sheetname" "500_FPGA_POWER_AND_DECOUPLING"
+			(at 22.86 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.25 1.25)
 				)
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "FPGA_2.kicad_sch"
-			(at 67.31 34.8746 0)
+		(property "Sheetfile" "500_FPGA_POWER_AND_DECOUPLING.kicad_sch"
+			(at 22.86 56.99 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 82.55)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "4f504810-f53d-45b0-b53d-57ce6313f41f")
+		(property "Sheetname" "600_FPGA_CONFIGURATION_AND_XADC"
+			(at 22.86 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "600_FPGA_CONFIGURATION_AND_XADC.kicad_sch"
+			(at 22.86 93.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 156.21)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8e41acd8-38d0-4d92-9347-27279deada26")
+		(property "Sheetname" "800_FPGA_DDR3L_AND_REFERENCE_CLOCK"
+			(at 22.86 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch"
+			(at 22.86 167.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MIRA_Control"
+				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 193.04)
+		(size 260 10)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8e7119fe-9bc9-4e2f-93f4-ec2a20a15ae1")
+		(property "Sheetname" "900_FPGA_ETHERNET_AND_MCU_INTERFACE"
+			(at 22.86 191.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.25 1.25)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch"
+			(at 22.86 204.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
 				)
 				(justify left top)
 			)
@@ -52,39 +339,39 @@
 		)
 	)
 	(sheet
-		(at 33.02 31.75)
-		(size 12.7 3.81)
+		(at 22.86 119.38)
+		(size 260 10)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
-			(width 0.1524)
+			(width 0.254)
 			(type solid)
 		)
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "24fa026d-a804-4a6e-8e1a-8090b9f60549")
-		(property "Sheetname" "FPGA_1"
-			(at 33.02 31.0384 0)
+		(uuid "f083602f-086c-44bb-87da-6c0bfbcb5bda")
+		(property "Sheetname" "700_FPGA_USB3_FIFO_INTERFACE"
+			(at 22.86 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.25 1.25)
 				)
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "FPGA_1.kicad_sch"
-			(at 33.02 36.1446 0)
+		(property "Sheetfile" "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch"
+			(at 22.86 130.65 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left top)
 			)
@@ -92,7 +379,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7"
-					(page "12")
+					(page "11")
 				)
 			)
 		)

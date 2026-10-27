@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "native_gates": 50,
+  "static_combinations": 65536,
+  "active_field_flip_cases": 51,
+  "combinational_dependency_graph": "acyclic",
+  "fault_qualifier": "MAT_RUN_INTENT or MAT_WRITE_INTENT; both precede match/DAC gates",
+  "limits": [
+    "Gate propagation skew and minimum trigger/clock pulse timing require PCB qualification",
+    "The 80-bit frame content validator remains HDL responsibility",
+    "Analog output and DAC settling are outside this digital verification"
+  ]
+}

@@ -1,0 +1,472 @@
+{
+  "pass": true,
+  "baseline_source": "MIRA_Control_CrossbarSocket_3D.zip",
+  "native_kicad": "10.0.5",
+  "active_pages": 28,
+  "functional_leaf_sheets": 21,
+  "groups": [
+    "MCU",
+    "FPGA",
+    "DAC",
+    "MATRIX",
+    "ADC",
+    "PROTECTION"
+  ],
+  "missing_sheet_files": [],
+  "symbol_units_unchanged": 1774,
+  "electrical_drawing_objects_unchanged": 7561,
+  "physical_components": 1019,
+  "nets": 1010,
+  "pin_nodes": 4192,
+  "all_native_net_memberships_unchanged": true,
+  "all_immutable_library_assets_unchanged": 100,
+  "main_pcb_unchanged": true,
+  "shared_references": {
+    "U101": {
+      "units": 5
+    },
+    "U901": {
+      "units": 13
+    }
+  },
+  "reference_map_errors": [],
+  "all_reference_ranges_contiguous_from_sheet_number_plus_1": true,
+  "reference_ranges": {
+    "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch": {
+      "C": {
+        "count": 33,
+        "first": "C101",
+        "last": "C133"
+      },
+      "J": {
+        "count": 2,
+        "first": "J101",
+        "last": "J102"
+      },
+      "R": {
+        "count": 7,
+        "first": "R101",
+        "last": "R107"
+      },
+      "SW": {
+        "count": 1,
+        "first": "SW101",
+        "last": "SW101"
+      },
+      "Y": {
+        "count": 2,
+        "first": "Y101",
+        "last": "Y102"
+      }
+    },
+    "200_MCU_FMC_AND_SDRAM.kicad_sch": {
+      "C": {
+        "count": 8,
+        "first": "C201",
+        "last": "C208"
+      },
+      "R": {
+        "count": 25,
+        "first": "R201",
+        "last": "R225"
+      },
+      "U": {
+        "count": 1,
+        "first": "U201",
+        "last": "U201"
+      }
+    },
+    "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch": {
+      "C": {
+        "count": 4,
+        "first": "C301",
+        "last": "C304"
+      },
+      "J": {
+        "count": 1,
+        "first": "J301",
+        "last": "J301"
+      },
+      "R": {
+        "count": 24,
+        "first": "R301",
+        "last": "R324"
+      },
+      "U": {
+        "count": 4,
+        "first": "U301",
+        "last": "U304"
+      }
+    },
+    "900_FPGA_POWER_AND_DECOUPLING.kicad_sch": {
+      "C": {
+        "count": 82,
+        "first": "C901",
+        "last": "C982"
+      }
+    },
+    "1000_FPGA_CONFIGURATION_AND_XADC.kicad_sch": {
+      "C": {
+        "count": 4,
+        "first": "C1001",
+        "last": "C1004"
+      },
+      "FB": {
+        "count": 1,
+        "first": "FB1001",
+        "last": "FB1001"
+      },
+      "J": {
+        "count": 1,
+        "first": "J1001",
+        "last": "J1001"
+      },
+      "R": {
+        "count": 8,
+        "first": "R1001",
+        "last": "R1008"
+      },
+      "SW": {
+        "count": 1,
+        "first": "SW1001",
+        "last": "SW1001"
+      },
+      "U": {
+        "count": 2,
+        "first": "U1001",
+        "last": "U1002"
+      }
+    },
+    "1100_FPGA_USB3_FIFO_INTERFACE.kicad_sch": {
+      "C": {
+        "count": 32,
+        "first": "C1101",
+        "last": "C1132"
+      },
+      "D": {
+        "count": 1,
+        "first": "D1101",
+        "last": "D1101"
+      },
+      "FB": {
+        "count": 2,
+        "first": "FB1101",
+        "last": "FB1102"
+      },
+      "J": {
+        "count": 1,
+        "first": "J1101",
+        "last": "J1101"
+      },
+      "R": {
+        "count": 14,
+        "first": "R1101",
+        "last": "R1114"
+      },
+      "U": {
+        "count": 8,
+        "first": "U1101",
+        "last": "U1108"
+      },
+      "Y": {
+        "count": 1,
+        "first": "Y1101",
+        "last": "Y1101"
+      }
+    },
+    "1200_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch": {
+      "C": {
+        "count": 38,
+        "first": "C1201",
+        "last": "C1238"
+      },
+      "R": {
+        "count": 31,
+        "first": "R1201",
+        "last": "R1231"
+      },
+      "U": {
+        "count": 1,
+        "first": "U1201",
+        "last": "U1201"
+      },
+      "Y": {
+        "count": 1,
+        "first": "Y1201",
+        "last": "Y1201"
+      }
+    },
+    "1300_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch": {
+      "C": {
+        "count": 39,
+        "first": "C1301",
+        "last": "C1339"
+      },
+      "J": {
+        "count": 1,
+        "first": "J1301",
+        "last": "J1301"
+      },
+      "R": {
+        "count": 22,
+        "first": "R1301",
+        "last": "R1322"
+      },
+      "T": {
+        "count": 1,
+        "first": "T1301",
+        "last": "T1301"
+      },
+      "U": {
+        "count": 8,
+        "first": "U1301",
+        "last": "U1308"
+      },
+      "Y": {
+        "count": 1,
+        "first": "Y1301",
+        "last": "Y1301"
+      }
+    },
+    "1400_DAC_BL0_31_AND_BUFFERS.kicad_sch": {
+      "C": {
+        "count": 52,
+        "first": "C1401",
+        "last": "C1452"
+      },
+      "R": {
+        "count": 44,
+        "first": "R1401",
+        "last": "R1444"
+      },
+      "U": {
+        "count": 12,
+        "first": "U1401",
+        "last": "U1412"
+      }
+    },
+    "1800_DAC_SERVICE_AND_FORMING.kicad_sch": {
+      "C": {
+        "count": 23,
+        "first": "C1801",
+        "last": "C1823"
+      },
+      "R": {
+        "count": 21,
+        "first": "R1801",
+        "last": "R1821"
+      },
+      "U": {
+        "count": 6,
+        "first": "U1801",
+        "last": "U1806"
+      }
+    },
+    "1900_DAC_FPGA_CONTROL_INTERFACE.kicad_sch": {
+      "C": {
+        "count": 7,
+        "first": "C1901",
+        "last": "C1907"
+      },
+      "R": {
+        "count": 8,
+        "first": "R1901",
+        "last": "R1908"
+      }
+    },
+    "2000_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch": {
+      "C": {
+        "count": 29,
+        "first": "C2001",
+        "last": "C2029"
+      },
+      "R": {
+        "count": 3,
+        "first": "R2001",
+        "last": "R2003"
+      },
+      "U": {
+        "count": 23,
+        "first": "U2001",
+        "last": "U2023"
+      }
+    },
+    "2100_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch": {
+      "C": {
+        "count": 10,
+        "first": "C2101",
+        "last": "C2110"
+      },
+      "R": {
+        "count": 16,
+        "first": "R2101",
+        "last": "R2116"
+      },
+      "U": {
+        "count": 10,
+        "first": "U2101",
+        "last": "U2110"
+      }
+    },
+    "2200_MATRIX_BL0_31_SWITCHING.kicad_sch": {
+      "C": {
+        "count": 44,
+        "first": "C2201",
+        "last": "C2244"
+      },
+      "R": {
+        "count": 100,
+        "first": "R2201",
+        "last": "R2300"
+      },
+      "U": {
+        "count": 20,
+        "first": "U2201",
+        "last": "U2220"
+      }
+    },
+    "2600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING.kicad_sch": {
+      "C": {
+        "count": 8,
+        "first": "C2601",
+        "last": "C2608"
+      },
+      "R": {
+        "count": 5,
+        "first": "R2601",
+        "last": "R2605"
+      },
+      "U": {
+        "count": 4,
+        "first": "U2601",
+        "last": "U2604"
+      }
+    },
+    "2700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch": {
+      "C": {
+        "count": 11,
+        "first": "C2701",
+        "last": "C2711"
+      },
+      "R": {
+        "count": 33,
+        "first": "R2701",
+        "last": "R2733"
+      },
+      "U": {
+        "count": 6,
+        "first": "U2701",
+        "last": "U2706"
+      }
+    },
+    "2800_MATRIX_CROSSBAR_SOCKET_AND_BIAS.kicad_sch": {
+      "J": {
+        "count": 3,
+        "first": "J2801",
+        "last": "J2803"
+      },
+      "R": {
+        "count": 2,
+        "first": "R2801",
+        "last": "R2802"
+      }
+    },
+    "2900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch": {
+      "C": {
+        "count": 17,
+        "first": "C2901",
+        "last": "C2917"
+      },
+      "R": {
+        "count": 9,
+        "first": "R2901",
+        "last": "R2909"
+      },
+      "U": {
+        "count": 3,
+        "first": "U2901",
+        "last": "U2903"
+      }
+    },
+    "3000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch": {
+      "C": {
+        "count": 13,
+        "first": "C3001",
+        "last": "C3013"
+      },
+      "R": {
+        "count": 9,
+        "first": "R3001",
+        "last": "R3009"
+      },
+      "U": {
+        "count": 6,
+        "first": "U3001",
+        "last": "U3006"
+      }
+    },
+    "3100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch": {
+      "C": {
+        "count": 8,
+        "first": "C3101",
+        "last": "C3108"
+      },
+      "Q": {
+        "count": 2,
+        "first": "Q3101",
+        "last": "Q3102"
+      },
+      "R": {
+        "count": 10,
+        "first": "R3101",
+        "last": "R3110"
+      },
+      "U": {
+        "count": 4,
+        "first": "U3101",
+        "last": "U3104"
+      }
+    },
+    "3200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch": {
+      "C": {
+        "count": 4,
+        "first": "C3201",
+        "last": "C3204"
+      },
+      "Q": {
+        "count": 4,
+        "first": "Q3201",
+        "last": "Q3204"
+      },
+      "R": {
+        "count": 11,
+        "first": "R3201",
+        "last": "R3211"
+      },
+      "U": {
+        "count": 4,
+        "first": "U3201",
+        "last": "U3204"
+      }
+    }
+  },
+  "native_export_note": "U901 receives an automatic local libpart alias from KiCad due changed hierarchy traversal order. All original embedded definitions, actual lib_id values and unit/pin maps are unchanged.",
+  "validation_stage": "Final check after editorial cleanup",
+  "pin_assignment_editorial_changes_validated": 94,
+  "pin_assignment_unexpected_changes": 0,
+  "old_references_in_visible_text_and_properties": 0,
+  "visible_reference_scan": {
+    "free_text_objects": 600,
+    "visible_symbol_properties": 2978,
+    "visible_sheet_properties": 27,
+    "net_labels": 1919
+  },
+  "project_metadata_checked": true,
+  "project_metadata_pass": true,
+  "project_metadata_fields_changed": [
+    "schematic.used_designators",
+    "sheets"
+  ],
+  "project_sheets_uuid_name_entries_verified": 28,
+  "project_used_designators_verified": 1622
+}

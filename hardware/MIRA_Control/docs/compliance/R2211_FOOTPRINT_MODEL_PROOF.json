@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "reference": "R2211",
+  "value": "1.5M",
+  "MPN": "TNPW12061M50BEEA",
+  "footprint": "MIRA_RevA:R_1206_3216Metric",
+  "official_KiCad_geometry_equal": true,
+  "source_official_file": "runtime_kicad/AppDir/share/kicad/footprints/Resistor_SMD.pretty/R_1206_3216Metric.kicad_mod",
+  "patch_file": "compliance/matrix_guard/new_footprints/R_1206_3216Metric.kicad_mod",
+  "patch_sha256": "bd23e8a268efa2ecf419f1d6dcd694fee9cb69196eadc3b3c2f173548da9258e",
+  "pads": [
+    {
+      "pin": "1",
+      "center_mm": [
+        "-1.4625",
+        "0"
+      ],
+      "size_mm": [
+        "1.125",
+        "1.75"
+      ]
+    },
+    {
+      "pin": "2",
+      "center_mm": [
+        "1.4625",
+        "0"
+      ],
+      "size_mm": [
+        "1.125",
+        "1.75"
+      ]
+    }
+  ],
+  "body_F_Fab_mm": [
+    3.2,
+    1.6
+  ],
+  "model_path": "${KIPRJMOD}/libraries/MIRA_RevA.3dshapes/R_0805_2012Metric.step",
+  "model_scale": [
+    "1.6",
+    "1.28",
+    "1"
+  ],
+  "model_exists": true,
+  "model_sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+  "model_status": "Existing generic R0805 STEP scaled in X and Y to nominal 1206 body; portable approximation, not manufacturer-exact geometry.",
+  "limitations": [
+    "This confirms official KiCad land pattern geometry, pin numbering, and portable generic model reference. Solder process qualification is not established."
+  ]
+}

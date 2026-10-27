@@ -1,0 +1,1246 @@
+{
+  "modified": {
+    "U2100": {
+      "1": {
+        "from": "MAT_ILIM_A0",
+        "to": "MAT_SRC_A0"
+      },
+      "5": {
+        "from": "ILIM_RESET",
+        "to": "ILIM_SET"
+      },
+      "6": {
+        "from": "ILIM_FORM",
+        "to": "ILIM_RESET"
+      },
+      "7": {
+        "from": "GND",
+        "to": "ILIM_FORM"
+      },
+      "16": {
+        "from": "MAT_ILIM_A1",
+        "to": "MAT_SRC_A1"
+      }
+    },
+    "R2105": {
+      "2": {
+        "from": "GND",
+        "to": "MAT_SOURCE"
+      }
+    },
+    "R2106": {
+      "2": {
+        "from": "GND",
+        "to": "MAT_SOURCE"
+      }
+    },
+    "R2107": {
+      "2": {
+        "from": "GND",
+        "to": "MAT_SOURCE"
+      }
+    },
+    "R2108": {
+      "2": {
+        "from": "GND",
+        "to": "MAT_SOURCE"
+      }
+    },
+    "U2103": {
+      "2": {
+        "from": "MAT_RUN",
+        "to": "IO3V3"
+      },
+      "8": {
+        "from": "MAT_CC_SENSE",
+        "to": "MAT_RSH_POWER"
+      },
+      "9": {
+        "from": "GND",
+        "to": "CC_KELVIN_P"
+      },
+      "10": {
+        "from": "GND",
+        "to": "MAT_SHUNT_BRANCH_3"
+      },
+      "11": {
+        "from": "GND",
+        "to": "MAT_SHUNT_BRANCH_2"
+      },
+      "12": {
+        "from": "GND",
+        "to": "MAT_SHUNT_BRANCH_1"
+      },
+      "13": {
+        "from": "P15",
+        "to": "MAT_SHUNT_BRANCH_0"
+      },
+      "14": {
+        "from": "GND",
+        "to": "P15"
+      }
+    },
+    "U2101": {
+      "2": {
+        "from": "MAT_CC_FB",
+        "to": "CC_DRIVE"
+      },
+      "3": {
+        "from": "MAT_ILIM_SENSE",
+        "to": "MAT_DRV_CMD"
+      },
+      "4": {
+        "from": "GND",
+        "to": "N15"
+      },
+      "6": {
+        "from": "MAT_CC_GATE_RAW",
+        "to": "CC_DRIVE"
+      }
+    },
+    "R2104": {
+      "1": {
+        "from": "MAT_WRITE_PULSE",
+        "to": "ANA5"
+      },
+      "2": {
+        "from": "GND",
+        "to": "CC_BIAS_IN"
+      }
+    },
+    "R2100": {
+      "2": {
+        "from": "MAT_ILIM_SENSE",
+        "to": "CC_ILIM_MID"
+      }
+    },
+    "R2103": {
+      "1": {
+        "from": "MAT_CC_GATE",
+        "to": "MAT_REG_ERROR_SELECTED"
+      },
+      "2": {
+        "from": "GND",
+        "to": "MAT_PI_SUM"
+      }
+    },
+    "R2102": {
+      "1": {
+        "from": "Net-(U1603D-D)",
+        "to": "CC_DRIVE"
+      },
+      "2": {
+        "from": "MAT_CC_GATE",
+        "to": "MAT_DRV_OUTPUT"
+      }
+    },
+    "C2103": {
+      "1": {
+        "from": "MAT_CC_FB",
+        "to": "MAT_PI_SUM"
+      },
+      "2": {
+        "from": "MAT_CC_GATE_RAW",
+        "to": "MAT_PI_C"
+      }
+    }
+  },
+  "added": {
+    "U2104": {
+      "value": "INA821",
+      "pins": {
+        "1": "MAT_SOURCE",
+        "2": null,
+        "3": null,
+        "4": "CC_KELVIN_P",
+        "5": "N15",
+        "6": "GND",
+        "7": "MAT_CC_SENSE",
+        "8": "P15"
+      }
+    },
+    "U2109": {
+      "value": "INA821",
+      "pins": {
+        "1": "MAT_DRV_CMD",
+        "2": null,
+        "3": null,
+        "4": "MAT_PI_RAW",
+        "5": "N15",
+        "6": "GND",
+        "7": "CC_AW",
+        "8": "P15"
+      }
+    },
+    "U2105": {
+      "value": "OPA4197",
+      "pins": {
+        "3": "CC_BIAS_IN",
+        "2": "CC_BIAS",
+        "1": "CC_BIAS",
+        "5": "MAT_ADC_REF",
+        "6": "CC_UP_N",
+        "7": "CC_UP_REF",
+        "10": "MAT_DRV_CMD",
+        "9": "CC_CMD_SENSE",
+        "8": "CC_CMD_SENSE",
+        "12": "MAT_SOURCE",
+        "13": "CC_VBUF",
+        "14": "CC_VBUF",
+        "4": "P15",
+        "11": "N15"
+      }
+    },
+    "U2106": {
+      "value": "OPA4197",
+      "pins": {
+        "3": "CC_VP",
+        "2": "CC_VN",
+        "1": "CC_VERR",
+        "5": "CC_IP",
+        "6": "CC_IN",
+        "7": "CC_IERR",
+        "10": "CC_VERR",
+        "9": "CC_MV_N",
+        "8": "CC_MV_OUT",
+        "12": "CC_IERR",
+        "13": "CC_MI_N",
+        "14": "CC_MI_OUT",
+        "4": "P15",
+        "11": "N15"
+      }
+    },
+    "U2107": {
+      "value": "OPA4197",
+      "pins": {
+        "3": "CC_UPOS",
+        "2": "CC_UNEG",
+        "1": "MAT_REG_ERROR",
+        "5": "GND",
+        "6": "MAT_PI_SUM",
+        "7": "MAT_PI_RAW",
+        "10": "GND",
+        "9": "CC_LOW_N",
+        "8": "CC_LOW_OUT",
+        "12": "CC_UP_REF",
+        "13": "CC_HIGH_N",
+        "14": "CC_HIGH_OUT",
+        "4": "P15",
+        "11": "N15"
+      }
+    },
+    "R2110": {
+      "value": "10k",
+      "pins": {
+        "1": "CC_BIAS_IN",
+        "2": "GND"
+      }
+    },
+    "R2111": {
+      "value": "13.7k",
+      "pins": {
+        "1": "CC_UP_REF",
+        "2": "CC_UP_MID"
+      }
+    },
+    "R2138": {
+      "value": "100",
+      "pins": {
+        "1": "CC_UP_MID",
+        "2": "CC_UP_N"
+      }
+    },
+    "R2112": {
+      "value": "10k",
+      "pins": {
+        "1": "CC_UP_N",
+        "2": "GND"
+      }
+    },
+    "R2139": {
+      "value": "100",
+      "pins": {
+        "1": "CC_ILIM_MID",
+        "2": "MAT_ILIM_SENSE"
+      }
+    },
+    "R2113": {
+      "value": "100k",
+      "pins": {
+        "1": "CC_VBUF",
+        "2": "CC_VP"
+      }
+    },
+    "R2114": {
+      "value": "100k",
+      "pins": {
+        "1": "CC_VP",
+        "2": "CC_BIAS"
+      }
+    },
+    "R2115": {
+      "value": "100k",
+      "pins": {
+        "1": "MAT_VTARGET",
+        "2": "CC_VN"
+      }
+    },
+    "R2116": {
+      "value": "100k",
+      "pins": {
+        "1": "CC_VERR",
+        "2": "CC_VN"
+      }
+    },
+    "R2117": {
+      "value": "10k",
+      "pins": {
+        "1": "MAT_CC_SENSE",
+        "2": "CC_IP"
+      }
+    },
+    "R2118": {
+      "value": "10k",
+      "pins": {
+        "1": "CC_IP",
+        "2": "CC_BIAS"
+      }
+    },
+    "R2119": {
+      "value": "10k",
+      "pins": {
+        "1": "MAT_ILIM_SENSE_BUF",
+        "2": "CC_IN"
+      }
+    },
+    "R2120": {
+      "value": "10k",
+      "pins": {
+        "1": "CC_IERR",
+        "2": "CC_IN"
+      }
+    },
+    "R2121": {
+      "value": "10k",
+      "pins": {
+        "1": "CC_EMAX",
+        "2": "CC_MV_N"
+      }
+    },
+    "R2122": {
+      "value": "10k",
+      "pins": {
+        "1": "CC_EMAX",
+        "2": "CC_MI_N"
+      }
+    },
+    "R2123": {
+      "value": "100k",
+      "pins": {
+        "1": "CC_EMAX",
+        "2": "GND"
+      }
+    },
+    "R2124": {
+      "value": "10k",
+      "pins": {
+        "1": "CC_EMAX",
+        "2": "CC_UPOS"
+      }
+    },
+    "R2125": {
+      "value": "10k",
+      "pins": {
+        "1": "CC_UPOS",
+        "2": "GND"
+      }
+    },
+    "R2126": {
+      "value": "10k",
+      "pins": {
+        "1": "CC_BIAS",
+        "2": "CC_UNEG"
+      }
+    },
+    "R2127": {
+      "value": "10k",
+      "pins": {
+        "1": "MAT_REG_ERROR",
+        "2": "CC_UNEG"
+      }
+    },
+    "R2128": {
+      "value": "33k",
+      "pins": {
+        "1": "MAT_PI_C",
+        "2": "MAT_PI_RAW"
+      }
+    },
+    "R2129": {
+      "value": "22k",
+      "pins": {
+        "1": "CC_AW",
+        "2": "MAT_PI_SUM"
+      }
+    },
+    "R2130": {
+      "value": "1k",
+      "pins": {
+        "1": "MAT_PI_RAW",
+        "2": "MAT_DRV_CMD"
+      }
+    },
+    "R2131": {
+      "value": "10k",
+      "pins": {
+        "1": "CC_CMD_SENSE",
+        "2": "CC_LOW_N"
+      }
+    },
+    "R2132": {
+      "value": "10k",
+      "pins": {
+        "1": "CC_CMD_SENSE",
+        "2": "CC_HIGH_N"
+      }
+    },
+    "D2100": {
+      "value": "BAV199",
+      "pins": {
+        "1": "CC_MV_N",
+        "3": "CC_MV_OUT",
+        "2": "CC_EMAX"
+      }
+    },
+    "D2101": {
+      "value": "BAV199",
+      "pins": {
+        "1": "CC_MI_N",
+        "3": "CC_MI_OUT",
+        "2": "CC_EMAX"
+      }
+    },
+    "D2102": {
+      "value": "BAV199",
+      "pins": {
+        "1": "CC_LOW_N",
+        "3": "CC_LOW_OUT",
+        "2": "MAT_DRV_CMD"
+      }
+    },
+    "D2103": {
+      "value": "BAV199",
+      "pins": {
+        "1": "MAT_DRV_CMD",
+        "3": "CC_HIGH_OUT",
+        "2": "CC_HIGH_N"
+      }
+    },
+    "U2108": {
+      "value": "SN74LVC1G04",
+      "pins": {
+        "1": null,
+        "2": "MAT_SOURCE_SAFE",
+        "3": "GND",
+        "4": "MAT_SOURCE_OFF",
+        "5": "IO3V3"
+      }
+    },
+    "C2108": {
+      "value": "100n",
+      "pins": {
+        "1": "N15",
+        "2": "GND"
+      }
+    },
+    "C2109": {
+      "value": "100n",
+      "pins": {
+        "1": "P15",
+        "2": "GND"
+      }
+    },
+    "C2110": {
+      "value": "100n",
+      "pins": {
+        "1": "N15",
+        "2": "GND"
+      }
+    },
+    "C2111": {
+      "value": "100n",
+      "pins": {
+        "1": "P15",
+        "2": "GND"
+      }
+    },
+    "C2112": {
+      "value": "100n",
+      "pins": {
+        "1": "N15",
+        "2": "GND"
+      }
+    },
+    "C2113": {
+      "value": "100n",
+      "pins": {
+        "1": "P15",
+        "2": "GND"
+      }
+    },
+    "C2114": {
+      "value": "100n",
+      "pins": {
+        "1": "N15",
+        "2": "GND"
+      }
+    },
+    "C2115": {
+      "value": "100n",
+      "pins": {
+        "1": "P15",
+        "2": "GND"
+      }
+    },
+    "C2116": {
+      "value": "100n",
+      "pins": {
+        "1": "N15",
+        "2": "GND"
+      }
+    },
+    "C2117": {
+      "value": "100n",
+      "pins": {
+        "1": "P15",
+        "2": "GND"
+      }
+    },
+    "C2118": {
+      "value": "100n",
+      "pins": {
+        "1": "N15",
+        "2": "GND"
+      }
+    }
+  },
+  "removed": [
+    "Q2100",
+    "Q2101",
+    "U2102",
+    "R2109"
+  ],
+  "metadata_changes": {
+    "R2105": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD07100RL"
+      },
+      "Description": {
+        "from": "100 R, see BOM",
+        "to": "Current shunt, 0.1%, 25 ppm/C; normal full scale 1 V; Kelvin sense excludes force-switch RON"
+      },
+      "MPN": {
+        "from": "",
+        "to": "RT0603BRD07100RL"
+      },
+      "Manufacturer": {
+        "from": "Yageo",
+        "to": "YAGEO"
+      }
+    },
+    "R2106": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD071KL"
+      },
+      "Description": {
+        "from": "1k R, see BOM",
+        "to": "Current shunt, 0.1%, 25 ppm/C; normal full scale 1 V; Kelvin sense excludes force-switch RON"
+      },
+      "MPN": {
+        "from": "",
+        "to": "RT0603BRD071KL"
+      },
+      "Manufacturer": {
+        "from": "Yageo",
+        "to": "YAGEO"
+      }
+    },
+    "R2107": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD0710KL"
+      },
+      "Description": {
+        "from": "10k R, 0.1%, 25 ppm/C preferred",
+        "to": "Current shunt, 0.1%, 25 ppm/C; normal full scale 1 V; Kelvin sense excludes force-switch RON"
+      },
+      "MPN": {
+        "from": "",
+        "to": "RT0603BRD0710KL"
+      },
+      "Manufacturer": {
+        "from": "Yageo",
+        "to": "YAGEO"
+      }
+    },
+    "R2108": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD07100KL"
+      },
+      "Description": {
+        "from": "100k R, 0.1%, 25 ppm/C preferred",
+        "to": "Current shunt, 0.1%, 25 ppm/C; normal full scale 1 V; Kelvin sense excludes force-switch RON"
+      },
+      "MPN": {
+        "from": "",
+        "to": "RT0603BRD07100KL"
+      },
+      "Manufacturer": {
+        "from": "Yageo",
+        "to": "YAGEO"
+      }
+    },
+    "U2103": {
+      "Description": {
+        "from": "ADG5408",
+        "to": "Dual 4:1 high voltage analog multiplexer; TSSOP RU-16 pin map; active high EN; break-before-make"
+      },
+      "MPN": {
+        "from": "ADG5408BRUZ",
+        "to": "ADG5409BRUZ"
+      },
+      "Value": {
+        "from": "ADG5408",
+        "to": "ADG5409"
+      },
+      "lib_id": {
+        "from": "MIRA_RevA:ADG5408_MIRA_MAT",
+        "to": "MIRA_RevA:ADG5409_CC_MIRA"
+      }
+    },
+    "R2104": {
+      "Datasheet": {
+        "from": "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-0710KL",
+        "to": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD0710KL"
+      },
+      "Description": {
+        "from": "10k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)",
+        "to": "Precision resistor, 0.1%, 25 ppm/C, 0.1 W; calibrate zero and gain per current range"
+      },
+      "Footprint": {
+        "from": "MIRA_RevA:R_0201_0603Metric",
+        "to": "MIRA_RevA:R_0603_1608Metric"
+      },
+      "MPN": {
+        "from": "RC0201FR-0710KL",
+        "to": "RT0603BRD0710KL"
+      },
+      "Manufacturer": {
+        "from": "Yageo",
+        "to": "YAGEO"
+      }
+    },
+    "R2100": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD073K9L"
+      },
+      "Description": {
+        "from": "4k R, see BOM",
+        "to": "Precision resistor, 0.1%, 25 ppm/C, 0.1 W; calibrate zero and gain per current range"
+      },
+      "Footprint": {
+        "from": "MIRA_RevA:R_0402_1005Metric",
+        "to": "MIRA_RevA:R_0603_1608Metric"
+      },
+      "MPN": {
+        "from": "",
+        "to": "RT0603BRD073K9L"
+      },
+      "Manufacturer": {
+        "from": "Yageo",
+        "to": "YAGEO"
+      },
+      "Value": {
+        "from": "4k",
+        "to": "3.9k"
+      }
+    },
+    "R2101": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD071KL"
+      },
+      "Description": {
+        "from": "1k R, see BOM",
+        "to": "Precision resistor, 0.1%, 25 ppm/C, 0.1 W; calibrate zero and gain per current range"
+      },
+      "Footprint": {
+        "from": "MIRA_RevA:R_0402_1005Metric",
+        "to": "MIRA_RevA:R_0603_1608Metric"
+      },
+      "MPN": {
+        "from": "",
+        "to": "RT0603BRD071KL"
+      },
+      "Manufacturer": {
+        "from": "Yageo",
+        "to": "YAGEO"
+      }
+    },
+    "R2103": {
+      "Datasheet": {
+        "from": "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-07100KL",
+        "to": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD07100KL"
+      },
+      "Description": {
+        "from": "100k ohm, +/-1%, 50 mW at 70 C, 25 V max working, +/-200 ppm/C, 0201 (0603 metric)",
+        "to": "Precision resistor, 0.1%, 25 ppm/C, 0.1 W; calibrate zero and gain per current range"
+      },
+      "Footprint": {
+        "from": "MIRA_RevA:R_0201_0603Metric",
+        "to": "MIRA_RevA:R_0603_1608Metric"
+      },
+      "MPN": {
+        "from": "RC0201FR-07100KL",
+        "to": "RT0603BRD07100KL"
+      },
+      "Manufacturer": {
+        "from": "Yageo",
+        "to": "YAGEO"
+      }
+    },
+    "R2102": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD0747RL"
+      },
+      "Description": {
+        "from": "100 R, see BOM",
+        "to": "Precision resistor, 0.1%, 25 ppm/C, 0.1 W; calibrate zero and gain per current range"
+      },
+      "Footprint": {
+        "from": "MIRA_RevA:R_0402_1005Metric",
+        "to": "MIRA_RevA:R_0603_1608Metric"
+      },
+      "MPN": {
+        "from": "",
+        "to": "RT0603BRD0747RL"
+      },
+      "Manufacturer": {
+        "from": "Yageo",
+        "to": "YAGEO"
+      },
+      "Value": {
+        "from": "100",
+        "to": "47"
+      }
+    },
+    "C2102": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.murata.com/en-global/products/productdetail?partno=GRM1885C1H102JA01D"
+      },
+      "Description": {
+        "from": "1n C, see BOM",
+        "to": "ILIM command filter, C0G, 50 V; settle after target updates with source OFF"
+      },
+      "Footprint": {
+        "from": "MIRA_RevA:C_0402_1005Metric",
+        "to": "MIRA_RevA:C_0603_1608Metric"
+      },
+      "MPN": {
+        "from": "",
+        "to": "GRM1885C1H102JA01D"
+      }
+    },
+    "C2103": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.murata.com/en-global/products/productdetail?partno=GRM1885C1H472JA01D"
+      },
+      "Description": {
+        "from": "100p compensation capacitor, C0G/NP0",
+        "to": "PI compensation capacitor, 4.7 nF, C0G/NP0, 50 V minimum"
+      },
+      "Footprint": {
+        "from": "MIRA_RevA:C_0402_1005Metric",
+        "to": "MIRA_RevA:C_0603_1608Metric"
+      },
+      "MPN": {
+        "from": "",
+        "to": "GRM1885C1H472JA01D"
+      },
+      "Value": {
+        "from": "100p",
+        "to": "4.7n"
+      }
+    },
+    "C2100": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.murata.com/en-global/products/productdetail?partno=GRM155R71H104KE14D"
+      },
+      "Description": {
+        "from": "100n rail bypass, 35 V minimum",
+        "to": "Bypass capacitor, 100 nF, X7R, 50 V, +/-10%, 0402"
+      },
+      "Footprint": {
+        "from": "MIRA_RevA:C_0603_1608Metric",
+        "to": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "MPN": {
+        "from": "",
+        "to": "GRM155R71H104KE14D"
+      }
+    },
+    "C2101": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.murata.com/en-global/products/productdetail?partno=GRM155R71H104KE14D"
+      },
+      "Description": {
+        "from": "100n rail bypass, 35 V minimum",
+        "to": "Bypass capacitor, 100 nF, X7R, 50 V, +/-10%, 0402"
+      },
+      "Footprint": {
+        "from": "MIRA_RevA:C_0603_1608Metric",
+        "to": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "MPN": {
+        "from": "",
+        "to": "GRM155R71H104KE14D"
+      }
+    },
+    "C2106": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.murata.com/en-global/products/productdetail?partno=GRM155R71H104KE14D"
+      },
+      "Description": {
+        "from": "100n rail bypass, 35 V minimum",
+        "to": "Bypass capacitor, 100 nF, X7R, 50 V, +/-10%, 0402"
+      },
+      "Footprint": {
+        "from": "MIRA_RevA:C_0603_1608Metric",
+        "to": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "MPN": {
+        "from": "",
+        "to": "GRM155R71H104KE14D"
+      }
+    },
+    "C2107": {
+      "Datasheet": {
+        "from": "",
+        "to": "https://www.murata.com/en-global/products/productdetail?partno=GRM155R71H104KE14D"
+      },
+      "Description": {
+        "from": "100n rail bypass, 35 V minimum",
+        "to": "Bypass capacitor, 100 nF, X7R, 50 V, +/-10%, 0402"
+      },
+      "Footprint": {
+        "from": "MIRA_RevA:C_0603_1608Metric",
+        "to": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "MPN": {
+        "from": "",
+        "to": "GRM155R71H104KE14D"
+      }
+    },
+    "C2104": {
+      "Datasheet": {
+        "from": "https://ds.murata.com/simsurfing/mlcc.html?partnumbers=%5B%22GRM155R71H104KE14%22%5D",
+        "to": "https://www.murata.com/en-global/products/productdetail?partno=GRM155R71H104KE14D"
+      },
+      "Description": {
+        "from": "100 nF, 50 V, X7R, +/-10%, 0402 (1005 metric), local P15 bypass",
+        "to": "Bypass capacitor, 100 nF, X7R, 50 V, +/-10%, 0402"
+      }
+    },
+    "C2105": {
+      "Datasheet": {
+        "from": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C0603X7S1C104K030BB",
+        "to": "https://www.murata.com/en-global/products/productdetail?partno=GRM155R71H104KE14D"
+      },
+      "Description": {
+        "from": "100 nF, 16 V, X7S, +/-10%, 0201 (0603 metric), local bypass / AC coupling; temperature coefficient +/-22%",
+        "to": "Bypass capacitor, 100 nF, X7R, 50 V, +/-10%, 0402"
+      },
+      "Footprint": {
+        "from": "MIRA_RevA:C_0201_0603Metric",
+        "to": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "MPN": {
+        "from": "C0603X7S1C104K030BB",
+        "to": "GRM155R71H104KE14D"
+      },
+      "Manufacturer": {
+        "from": "TDK",
+        "to": "Murata"
+      }
+    }
+  },
+  "expected_pins": {
+    "U2100": {
+      "1": "MAT_SRC_A0",
+      "2": "IO3V3",
+      "3": "N15",
+      "4": "ILIM_SET",
+      "5": "ILIM_SET",
+      "6": "ILIM_RESET",
+      "7": "ILIM_FORM",
+      "8": "MAT_ILIM_RAW",
+      "9": "GND",
+      "10": "GND",
+      "11": "GND",
+      "12": "GND",
+      "13": "P15",
+      "14": "GND",
+      "15": "GND",
+      "16": "MAT_SRC_A1"
+    },
+    "R2105": {
+      "1": "MAT_SHUNT_BRANCH_0",
+      "2": "MAT_SOURCE"
+    },
+    "R2106": {
+      "1": "MAT_SHUNT_BRANCH_1",
+      "2": "MAT_SOURCE"
+    },
+    "R2107": {
+      "1": "MAT_SHUNT_BRANCH_2",
+      "2": "MAT_SOURCE"
+    },
+    "R2108": {
+      "1": "MAT_SHUNT_BRANCH_3",
+      "2": "MAT_SOURCE"
+    },
+    "U2103": {
+      "1": "MAT_RSH_A0",
+      "2": "IO3V3",
+      "3": "N15",
+      "4": "MAT_SHUNT_BRANCH_0",
+      "5": "MAT_SHUNT_BRANCH_1",
+      "6": "MAT_SHUNT_BRANCH_2",
+      "7": "MAT_SHUNT_BRANCH_3",
+      "8": "MAT_RSH_POWER",
+      "9": "CC_KELVIN_P",
+      "10": "MAT_SHUNT_BRANCH_3",
+      "11": "MAT_SHUNT_BRANCH_2",
+      "12": "MAT_SHUNT_BRANCH_1",
+      "13": "MAT_SHUNT_BRANCH_0",
+      "14": "P15",
+      "15": "GND",
+      "16": "MAT_RSH_A1"
+    },
+    "U2104": {
+      "1": "MAT_SOURCE",
+      "2": null,
+      "3": null,
+      "4": "CC_KELVIN_P",
+      "5": "N15",
+      "6": "GND",
+      "7": "MAT_CC_SENSE",
+      "8": "P15"
+    },
+    "U2109": {
+      "1": "MAT_DRV_CMD",
+      "2": null,
+      "3": null,
+      "4": "MAT_PI_RAW",
+      "5": "N15",
+      "6": "GND",
+      "7": "CC_AW",
+      "8": "P15"
+    },
+    "U2105": {
+      "3": "CC_BIAS_IN",
+      "2": "CC_BIAS",
+      "1": "CC_BIAS",
+      "5": "MAT_ADC_REF",
+      "6": "CC_UP_N",
+      "7": "CC_UP_REF",
+      "10": "MAT_DRV_CMD",
+      "9": "CC_CMD_SENSE",
+      "8": "CC_CMD_SENSE",
+      "12": "MAT_SOURCE",
+      "13": "CC_VBUF",
+      "14": "CC_VBUF",
+      "4": "P15",
+      "11": "N15"
+    },
+    "U2106": {
+      "3": "CC_VP",
+      "2": "CC_VN",
+      "1": "CC_VERR",
+      "5": "CC_IP",
+      "6": "CC_IN",
+      "7": "CC_IERR",
+      "10": "CC_VERR",
+      "9": "CC_MV_N",
+      "8": "CC_MV_OUT",
+      "12": "CC_IERR",
+      "13": "CC_MI_N",
+      "14": "CC_MI_OUT",
+      "4": "P15",
+      "11": "N15"
+    },
+    "U2107": {
+      "3": "CC_UPOS",
+      "2": "CC_UNEG",
+      "1": "MAT_REG_ERROR",
+      "5": "GND",
+      "6": "MAT_PI_SUM",
+      "7": "MAT_PI_RAW",
+      "10": "GND",
+      "9": "CC_LOW_N",
+      "8": "CC_LOW_OUT",
+      "12": "CC_UP_REF",
+      "13": "CC_HIGH_N",
+      "14": "CC_HIGH_OUT",
+      "4": "P15",
+      "11": "N15"
+    },
+    "U2101": {
+      "1": null,
+      "2": "CC_DRIVE",
+      "3": "MAT_DRV_CMD",
+      "4": "N15",
+      "5": null,
+      "6": "CC_DRIVE",
+      "7": "P15",
+      "8": null
+    },
+    "R2104": {
+      "1": "ANA5",
+      "2": "CC_BIAS_IN"
+    },
+    "R2110": {
+      "1": "CC_BIAS_IN",
+      "2": "GND"
+    },
+    "R2111": {
+      "1": "CC_UP_REF",
+      "2": "CC_UP_MID"
+    },
+    "R2138": {
+      "1": "CC_UP_MID",
+      "2": "CC_UP_N"
+    },
+    "R2112": {
+      "1": "CC_UP_N",
+      "2": "GND"
+    },
+    "R2100": {
+      "1": "MAT_ILIM_RAW",
+      "2": "CC_ILIM_MID"
+    },
+    "R2139": {
+      "1": "CC_ILIM_MID",
+      "2": "MAT_ILIM_SENSE"
+    },
+    "R2101": {
+      "1": "MAT_ILIM_SENSE",
+      "2": "GND"
+    },
+    "R2113": {
+      "1": "CC_VBUF",
+      "2": "CC_VP"
+    },
+    "R2114": {
+      "1": "CC_VP",
+      "2": "CC_BIAS"
+    },
+    "R2115": {
+      "1": "MAT_VTARGET",
+      "2": "CC_VN"
+    },
+    "R2116": {
+      "1": "CC_VERR",
+      "2": "CC_VN"
+    },
+    "R2117": {
+      "1": "MAT_CC_SENSE",
+      "2": "CC_IP"
+    },
+    "R2118": {
+      "1": "CC_IP",
+      "2": "CC_BIAS"
+    },
+    "R2119": {
+      "1": "MAT_ILIM_SENSE_BUF",
+      "2": "CC_IN"
+    },
+    "R2120": {
+      "1": "CC_IERR",
+      "2": "CC_IN"
+    },
+    "R2121": {
+      "1": "CC_EMAX",
+      "2": "CC_MV_N"
+    },
+    "R2122": {
+      "1": "CC_EMAX",
+      "2": "CC_MI_N"
+    },
+    "R2123": {
+      "1": "CC_EMAX",
+      "2": "GND"
+    },
+    "R2124": {
+      "1": "CC_EMAX",
+      "2": "CC_UPOS"
+    },
+    "R2125": {
+      "1": "CC_UPOS",
+      "2": "GND"
+    },
+    "R2126": {
+      "1": "CC_BIAS",
+      "2": "CC_UNEG"
+    },
+    "R2127": {
+      "1": "MAT_REG_ERROR",
+      "2": "CC_UNEG"
+    },
+    "R2103": {
+      "1": "MAT_REG_ERROR_SELECTED",
+      "2": "MAT_PI_SUM"
+    },
+    "R2128": {
+      "1": "MAT_PI_C",
+      "2": "MAT_PI_RAW"
+    },
+    "R2129": {
+      "1": "CC_AW",
+      "2": "MAT_PI_SUM"
+    },
+    "R2130": {
+      "1": "MAT_PI_RAW",
+      "2": "MAT_DRV_CMD"
+    },
+    "R2131": {
+      "1": "CC_CMD_SENSE",
+      "2": "CC_LOW_N"
+    },
+    "R2132": {
+      "1": "CC_CMD_SENSE",
+      "2": "CC_HIGH_N"
+    },
+    "R2102": {
+      "1": "CC_DRIVE",
+      "2": "MAT_DRV_OUTPUT"
+    },
+    "C2102": {
+      "1": "MAT_ILIM_SENSE",
+      "2": "GND"
+    },
+    "C2103": {
+      "1": "MAT_PI_SUM",
+      "2": "MAT_PI_C"
+    },
+    "D2100": {
+      "1": "CC_MV_N",
+      "3": "CC_MV_OUT",
+      "2": "CC_EMAX"
+    },
+    "D2101": {
+      "1": "CC_MI_N",
+      "3": "CC_MI_OUT",
+      "2": "CC_EMAX"
+    },
+    "D2102": {
+      "1": "CC_LOW_N",
+      "3": "CC_LOW_OUT",
+      "2": "MAT_DRV_CMD"
+    },
+    "D2103": {
+      "1": "MAT_DRV_CMD",
+      "3": "CC_HIGH_OUT",
+      "2": "CC_HIGH_N"
+    },
+    "U2108": {
+      "1": null,
+      "2": "MAT_SOURCE_SAFE",
+      "3": "GND",
+      "4": "MAT_SOURCE_OFF",
+      "5": "IO3V3"
+    },
+    "C2100": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2101": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2106": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2107": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2104": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2105": {
+      "1": "IO3V3",
+      "2": "GND"
+    },
+    "C2108": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2109": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2110": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2111": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2112": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2113": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2114": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2115": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2116": {
+      "1": "N15",
+      "2": "GND"
+    },
+    "C2117": {
+      "1": "P15",
+      "2": "GND"
+    },
+    "C2118": {
+      "1": "N15",
+      "2": "GND"
+    }
+  },
+  "replaced_refs": [
+    "U2103"
+  ],
+  "notes": "U1602C/U1603D moved back to sheet1600 by root. Reused physical reference UUIDs retained except U2103 part replacement; new A2 layout. Final controller: 13 OPA197/OPA4197 channels + 2 INA821; R2129=22k (RT0603BRD0722KL); command ceiling11.9V; source-OFF capacitor reset uses R1605=220ohm on sheet1600. Precision passive part selections are sourced. No physical numerical10G anchor. Root canonical cache and orphan-NC cleanup preserved. All pin contracts unchanged by this note correction."
+}

@@ -4,41 +4,166 @@
 	(generator_version "10.0")
 	(uuid "c13a4734-0710-4c94-941e-1f0b70ba1e2d")
 	(paper "A3")
+	(title_block
+		(title "Host processor, memory and supervision")
+		(rev "B")
+		(company "MIRA")
+	)
 	(lib_symbols)
+	(text "STM32 supply, LDO reservoir, clocks, reset and SWD; DONE/INIT status inputs."
+		(exclude_from_sim no)
+		(at 22.86 60.32 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "1df536ce-eec8-46bc-b00c-acb1b24d2383")
+	)
+	(text "MCU QSPI flash, microSD card detect and supervisory GPIO/UART links."
+		(exclude_from_sim no)
+		(at 22.86 133.98 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "29454d4a-0eb1-4061-b40f-8a6f69810792")
+	)
+	(text "Group scope"
+		(exclude_from_sim no)
+		(at 315 45.72 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "6c96bc23-f9f5-487f-84ff-5e6a0d648fe9")
+	)
+	(text "Consecutive circuit order; select a child sheet to inspect its circuit and sheet-specific explanation."
+		(exclude_from_sim no)
+		(at 22.86 25.4 0)
+		(effects
+			(font
+				(size 1.2 1.2)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "701aca4f-ac5e-4e92-b699-0f993f9cfae1")
+	)
+	(text "Physical references follow the first circuit leaf containing the component; multi-unit devices are not duplicated."
+		(exclude_from_sim no)
+		(at 22.86 277 0)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "89e35141-0005-4705-8312-cca83c276562")
+	)
+	(text "Reading guide"
+		(exclude_from_sim no)
+		(at 315 97.79 0)
+		(effects
+			(font
+				(size 1.7 1.7)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "a349d4d3-fd26-44bc-885a-97e2b193c9d5")
+	)
+	(text "MCU - Host processor, memory and supervision"
+		(exclude_from_sim no)
+		(at 22.86 15.24 0)
+		(effects
+			(font
+				(size 2.1 2.1)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "c8b43e7e-7d74-49d6-bb04-979211fe506e")
+	)
+	(text "STM32 supply, clocks and debug; FMC SDRAM; QSPI,\nmicroSD and host control. The same physical MCU\nspans three leaves."
+		(exclude_from_sim no)
+		(at 315 54.61 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "ccebee06-840a-443a-9c6b-c9850352d8eb")
+	)
+	(text "Each numeric child contains its own circuit\nexplanation. Identical global labels connect\nbetween leaves. A shared U reference denotes one\nphysical multi-unit device."
+		(exclude_from_sim no)
+		(at 315 106.68 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "dd6aebc6-acd3-4221-b4a3-db5d532626c0")
+	)
+	(text "MCU external SDRAM and FMC signals, defaults and local bypass."
+		(exclude_from_sim no)
+		(at 22.86 97.15 0)
+		(effects
+			(font
+				(size 1.25 1.25)
+				(color 0 70 160 1)
+			)
+			(justify left top)
+		)
+		(uuid "ee835c40-5cf8-4c52-b7e3-69d9b5160c01")
+	)
 	(sheet
-		(at 90.17 82.55)
-		(size 12.7 3.81)
+		(at 22.86 82.55)
+		(size 260 10)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
-			(width 0.1524)
+			(width 0.254)
 			(type solid)
 		)
 		(fill
 			(color 0 0 0 0)
 		)
 		(uuid "ea583142-66b4-44d6-a14f-0501929789aa")
-		(property "Sheetname" "200_MCU_SDRAM_INTERFACE"
-			(at 90.17 81.8384 0)
+		(property "Sheetname" "200_MCU_FMC_AND_SDRAM"
+			(at 22.86 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.25 1.25)
 				)
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "200_MCU_SDRAM_INTERFACE.kicad_sch"
-			(at 90.17 86.9446 0)
+		(property "Sheetfile" "200_MCU_FMC_AND_SDRAM.kicad_sch"
+			(at 22.86 93.82 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left top)
 			)
@@ -52,15 +177,14 @@
 		)
 	)
 	(sheet
-		(at 34.29 82.55)
-		(size 12.7 3.81)
+		(at 22.86 45.72)
+		(size 260 10)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
-			(width 0.1524)
+			(width 0.254)
 			(type solid)
 		)
 		(fill
@@ -68,23 +192,24 @@
 		)
 		(uuid "ef73b321-fdc6-4643-b13d-184374a26533")
 		(property "Sheetname" "100_MCU_POWER_CLOCKS_AND_DEBUG"
-			(at 34.29 81.8384 0)
+			(at 22.86 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.25 1.25)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch"
-			(at 34.29 86.9446 0)
+			(at 22.86 56.99 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left top)
 			)
@@ -98,39 +223,39 @@
 		)
 	)
 	(sheet
-		(at 135.89 80.01)
-		(size 12.7 3.81)
+		(at 22.86 119.38)
+		(size 260 10)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
-			(width 0.1524)
+			(width 0.254)
 			(type solid)
 		)
 		(fill
 			(color 0 0 0 0)
 		)
 		(uuid "fa3c3189-1e32-42a7-8477-81e82afcd0a1")
-		(property "Sheetname" "300_MCU_STORAGE_AND_CONTROL"
-			(at 135.89 79.2984 0)
+		(property "Sheetname" "300_MCU_QSPI_MICROSD_AND_CONTROL"
+			(at 22.86 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.25 1.25)
 				)
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "300_MCU_STORAGE_AND_CONTROL.kicad_sch"
-			(at 135.89 84.4046 0)
+		(property "Sheetfile" "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch"
+			(at 22.86 130.65 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1 1)
 				)
 				(justify left top)
 			)
