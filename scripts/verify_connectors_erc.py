@@ -124,4 +124,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    if (ROOT / 'docs/pcb-preparation/distributed-power/interface.json').exists():
+        from verify_distributed_power import main as verify_current
+        verify_current()
+    else:
+        main()

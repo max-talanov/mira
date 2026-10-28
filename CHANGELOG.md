@@ -4,6 +4,13 @@ Repository milestones are separate from hardware revisions. Both projects curren
 
 ## Unreleased
 
+### 2026-10-28 — Distributed local power entries
+
+- Replace the central 64-contact interface with seven local power entries for FPGA, DDR, MCU, USB, Ethernet, DAC/matrix and ADC/AFE, plus a separate 20-contact supervision interface. Update both boards together; this pinout supersedes the previous connector candidate.
+- Assign all eight Samtec SSW/HTSW pairs and add four hierarchy leaves, zone-specific symbols, 14 unique local footprints/models, BOM, mating pinout and placement requirements. Retain the proposed 12 mm facing-surface gap; PCB coordinates and routing remain pending.
+- Preserve all 6686 connected pin entries outside the replaced connectors, including power converters, protection, analog negative supplies and CORE positive sense. Verify all 118 mating contacts, zero ERC violations/exclusions under the documented check set, and 21 power-path/value assertions.
+- Account for provisional FPGA AUX/IO return current in the conditional CORE DC calculation. Do not claim hardware load capacity, thermal qualification or a completed mechanical stack.
+
 ### 2026-10-28 — Connector selection and VSS ERC correction
 
 - Assign SSW-132-01-S-D / HTSW-132-07-S-D and SSW-109-01-S-D / HTSW-109-07-S-D to the existing 64- and 18-contact inter-board interfaces. Add local footprints, nominal 3D envelope models, mating pinout, BOM and a proposed 12 mm board stack.

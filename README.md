@@ -6,13 +6,15 @@ The project aims to bring array control, an analog front end, digital processing
 
 ## Current status
 
-**RevA** is currently in development. The repository contains two independent KiCad projects with local libraries: **MIRA_Control (30 active schematic pages)** and **MIRA_Power (49 active schematic pages)**.
+**RevA** is currently in development. The repository contains two independent KiCad projects with local libraries: **MIRA_Control (32 active schematic pages)** and **MIRA_Power (51 active schematic pages)**.
 
 Control includes MCU, FPGA, communications, matrix, analog, and protection circuits. Both projects are undergoing review before PCB placement and routing.
 
 The [high-load schematic candidate](docs/pcb-preparation/high-load/README.md) dated **2026-10-28** adds a supplemental CORE connector and positive remote sense, replaces N15 with a TEN 30-2413WIN module, and coordinates N15 overcurrent and input overvoltage thresholds. The candidate input range is **18–30 V DC**, nominal 24 V. The provisional targets are CORE 5.2 A and N15 0.468 A; hardware capacity has not been validated.
 
-The [connector selection and ERC update](docs/pcb-preparation/connectors-erc/README.md) assigns Samtec SSW/HTSW pairs with 64 and 18 contacts, local footprints and nominal 3D envelope models. The proposed parallel-board stack has a 12 mm facing-surface gap. All 82 mating contacts and all 6850 connected pin entries were checked; electrical connectivity is unchanged from the high-load candidate.
+The [distributed power interface](docs/pcb-preparation/distributed-power/README.md) replaces the central 64-contact connector with **seven local power entries and one separate supervision interface**. The zones are FPGA, DDR, MCU, USB, Ethernet, DAC/matrix and ADC/AFE. Eight Samtec SSW/HTSW pairs have assigned parts, local footprints and nominal 3D envelope models. The proposed stack has Power below Control and a 12 mm facing-surface gap; final placement coordinates and routing remain to be defined.
+
+All 118 mating contacts were checked. All 6686 connected pin entries outside the replaced connectors are unchanged from `c72edb2`; the sources, loads, protection and positive CORE sense remain connected as before. The new pinout requires updating both projects together. The [earlier connector/ERC report](docs/pcb-preparation/connectors-erc/README.md) is retained as history.
 
 KiCad CLI 10.0.7 reports **0 errors / 0 warnings / 0 exclusions for both projects**. Negative analog supply pins are now named VSS_NEG, with their power-input types and nets preserved; 32 old exclusions were removed. Two existing style checks remain ignored (`four_way_junction`, `single_global_label`); footprint-filter and simulation-model checks were re-enabled. PCB layout, mechanical and thermal qualification, feedback stability, startup and analog noise remain open. The [original inter-board review](docs/pcb-preparation/README.md), [original ERC reports](docs/pcb-preparation/erc/README.md) and [earlier correction candidate](docs/pcb-preparation/fixes/README.md) are preserved as history.
 
@@ -23,7 +25,7 @@ Schematics in this repository do not imply that the corresponding circuits have 
 | Project | Current contents | Open in KiCad |
 | --- | --- | --- |
 | [MIRA_Power](hardware/MIRA_Power) | Power schematics, hierarchy, and local libraries | `hardware/MIRA_Power/MIRA_Power.kicad_pro` |
-| [MIRA_Control](hardware/MIRA_Control) | 30-page schematic hierarchy, an empty PCB, and local symbol, footprint, and STEP libraries | `hardware/MIRA_Control/MIRA_Control.kicad_pro` |
+| [MIRA_Control](hardware/MIRA_Control) | 32-page schematic hierarchy, an empty PCB, and local symbol, footprint, and 3D libraries | `hardware/MIRA_Control/MIRA_Control.kicad_pro` |
 
 Each project has its own library tables and project-relative library paths. Keep its complete folder together.
 
@@ -95,7 +97,7 @@ See [LICENSE](LICENSE) and the third-party library and model notices included un
 ## Next steps
 
 - Establish the FPGA/matrix maximum operating scenario and recalculate the full power budget for the new N15 module.
-- Place and qualify the selected inter-board connectors, power/return paths and proposed 12 mm mechanical stack.
+- Co-design both PCB floorplans around the eight connector pairs; place regulators and local returns near their assigned load zones and qualify the proposed 12 mm mechanical stack.
 - Validate CORE remote-sense stability, N15 startup/protection/noise and input surge response.
 - Complete the remaining domain sequencing, reset/STOP and VTT/DDR_VREF reviews listed in the [candidate report](docs/pcb-preparation/high-load/README.md). The VSS ERC-exclusion review is resolved in the connector/ERC update.
 - Prepare and review component placement and PCB routing before hardware validation.

@@ -70,7 +70,7 @@
 		)
 		(uuid "663f912d-f44f-42cc-93c5-ae27fd58de11")
 	)
-	(text "Explicit Control-side power and permission\nconnector. Separate SYS3V3 and IO3V3 receivers\nprevent joining disabled receiver domains."
+	(text "Seven local power entry zones plus a separate\nsupervision connector. SYS3V3 and IO3V3 receivers\nkeep disabled receiver domains separate."
 		(exclude_from_sim no)
 		(at 315 54.61 0)
 		(effects
@@ -152,4 +152,16 @@
 			)
 		)
 	)
+
+(sheet (at 22.86 91.44) (size 260 15.24) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+ (stroke (width .254) (type solid)) (fill (color 0 0 0 0)) (uuid "a40e793d-3473-4bf5-958c-a2b55d9cfdf6")
+ (property "Sheetname" "410 DIGITAL POWER ENTRY" (at 22.86 90.17 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
+ (property "Sheetfile" "410_DISTRIBUTED_DIGITAL_POWER.kicad_sch" (at 22.86 107.95 0) (effects (font (size 1.016 1.016)) (justify left top) (hide yes)))
+ (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/256d926f-b75a-42ae-a223-730b777ed784" (page "31")))))
+
+(sheet (at 22.86 137.16) (size 260 15.24) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+ (stroke (width .254) (type solid)) (fill (color 0 0 0 0)) (uuid "3c873a11-7277-4333-b26e-1e17efecdc4b")
+ (property "Sheetname" "420 ANALOG POWER ENTRY" (at 22.86 135.89 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
+ (property "Sheetfile" "420_DISTRIBUTED_ANALOG_POWER.kicad_sch" (at 22.86 153.67 0) (effects (font (size 1.016 1.016)) (justify left top) (hide yes)))
+ (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/256d926f-b75a-42ae-a223-730b777ed784" (page "32")))))
 )

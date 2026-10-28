@@ -3,7 +3,8 @@
 from pathlib import Path
 import subprocess, tempfile, xml.etree.ElementTree as ET, json, itertools
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'docs/pcb-preparation/high-load/validation'; OUT.mkdir(parents=True,exist_ok=True)
+INTERFACE=ROOT/'docs/pcb-preparation/distributed-power/interface.json'
+OUT=ROOT/('docs/pcb-preparation/distributed-power/validation/high-load' if INTERFACE.exists() else 'docs/pcb-preparation/high-load/validation'); OUT.mkdir(parents=True,exist_ok=True)
 with tempfile.TemporaryDirectory(prefix='mira-verify-') as td:
  maps={};trees={}
  for project in ['Power','Control']:
@@ -14,9 +15,13 @@ with tempfile.TemporaryDirectory(prefix='mira-verify-') as td:
  def check(name,condition):
   checks[name]=bool(condition)
   if not condition:raise AssertionError(name)
- check('original_64_pin_map_preserved',all(p['J4901',str(i)]==c['J400',str(i)] for i in range(1,65)))
- check('additional_eight_power_contacts',all(p['J4902',str(i)]==c['J401',str(i)]=='CORE1V0' for i in range(1,16,2)))
- check('additional_nine_ground_contacts',all(p['J4902',str(i)]==c['J401',str(i)]=='GND' for i in range(2,19,2)))
+ if INTERFACE.exists():
+  interface=json.loads(INTERFACE.read_text())
+  check('distributed_interface_pin_map',all(p[a['Power_ref'],str(pin['number'])]==pin['Power_net'] and c[a['Control_ref'],str(pin['number'])]==pin['Control_net'] for a in interface['connectors'] for pin in a['pins']))
+ else:
+  check('original_64_pin_map_preserved',all(p['J4901',str(i)]==c['J400',str(i)] for i in range(1,65)))
+ check('eight_core_force_contacts',all(p['J4902',str(i)]==c['J401',str(i)]=='CORE1V0' for i in range(1,16,2)))
+ check('core_return_contacts',all(p['J4902',str(i)]==c['J401',str(i)]=='GND' for i in range(2,27 if INTERFACE.exists() else 19,2)))
  check('control_sense_is_on_load_net',c['J401','17']=='CORE1V0')
  check('sense_reaches_upper_divider',p['J4902','17']==p['R1203','1']==p['R1210','2']=='CORE_SENSE_P')
  check('sense_not_shorted_to_raw_or_output',len({p['R1210','1'],p['R1210','2'],p['R1205','2']})==3)
@@ -50,13 +55,14 @@ print(json.dumps({'connectivity_checks_passed':len(checks),'ovp':result},indent=
 
 # DC positive-only sense model. The return resistance is outside the feedback loop.
 assumptions={'force_path_ohm_including_shunt':.007,'return_ohm':.003,'sense_wire_ohm':1,
-             'source_tolerance':.02,'transient_reserve_V':.01}
+             'source_tolerance':.02,'transient_reserve_V':.01,
+             'additional_shared_return_A':(.3+.4)*1.3 if INTERFACE.exists() else 0}
 scenarios=[]
 for current in [0,4,5.2]:
  sense_current=(.6/15000*100-.007*current)/(100+1+.007)
  load_positive=1.008+sense_current
  raw=load_positive+.007*(current+sense_current)
- load_voltage=load_positive-.003*current
+ load_voltage=load_positive-.003*(current+assumptions['additional_shared_return_A'])
  scenarios.append({'current_A':current,'raw_V':raw,'load_V_nominal':load_voltage,
                    'lower_V_with_2pct_and_10mV':load_voltage-.02*1.008-.01,'sense_line_A':sense_current})
 (OUT/'core-dc-scenarios.json').write_text(json.dumps({'assumptions':assumptions,'scenarios':scenarios,

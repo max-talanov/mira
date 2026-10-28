@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Generate MIRA Samtec connector footprints and nominal 3D envelope models.
 
-Sources and dimensions are recorded in docs/pcb-preparation/connectors-erc/README.md.
+Sources and dimensions are recorded in docs/pcb-preparation/distributed-power/README.md
+and the earlier docs/pcb-preparation/connectors-erc/README.md.
 The models are project-created envelopes, not manufacturer detailed CAD models.
 """
 from pathlib import Path
@@ -46,7 +47,7 @@ def build(project, series, rows):
                  '.07 .07 .07' if socket else '.82 .78 .62')]
     lines = [f'(footprint "{name}" (version 20241229) (generator "pcbnew")',
              '(layer "F.Cu") (attr through_hole)',
-             f'(descr "Samtec {part}; 30uin gold contact/tin tail; mating orientation in connectors-erc report")',
+             f'(descr "Samtec {part}; 30uin gold contact/tin tail; mating orientation in distributed-power report")',
              '(tags "Samtec MIRA board-to-board 2.54mm")',
              f'(fp_text reference "REF**" (at {num(cx)} {num(y1-2)}) (layer "F.SilkS") (effects (font (size 1 1) (thickness .15))))',
              f'(fp_text value "{part}" (at {num(cx)} {num(y2+2)}) (layer "F.Fab") (effects (font (size 1 1) (thickness .15))))']
@@ -83,8 +84,10 @@ def build(project, series, rows):
 
 
 if __name__ == '__main__':
-    assets = [build(project,series,n) for project,series in [('Power','SSW'),('Control','HTSW')] for n in [32,9]]
-    out=ROOT/'docs/pcb-preparation/connectors-erc'
+    config = ROOT/'docs/pcb-preparation/distributed-power/interface.json'
+    rows = sorted({a['rows'] for a in json.loads(config.read_text())['connectors']}) if config.exists() else [32,9]
+    assets = [build(project,series,n) for project,series in [('Power','SSW'),('Control','HTSW')] for n in rows]
+    out=config.parent if config.exists() else ROOT/'docs/pcb-preparation/connectors-erc'
     out.mkdir(parents=True,exist_ok=True)
     (out/'connector-assets.json').write_text(json.dumps(assets,indent=2)+'\n')
-    print('Generated four footprints and four nominal 3D envelope models.')
+    print(f'Generated {len(assets)} footprints and {len(assets)} nominal 3D envelope models.')
