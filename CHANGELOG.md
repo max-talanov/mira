@@ -4,6 +4,14 @@ Repository milestones are separate from hardware revisions. Both projects curren
 
 ## Unreleased
 
+### 2026-10-28 — High-load schematic candidate
+
+- Include the earlier ERC/interface corrections: U1903 feedback, Power 4900 inter-board interface, reset and host status paths.
+- Add supplemental CORE contacts and positive remote sense with a local fallback path; retain the existing 64-pin map.
+- Replace the N15 inverting converter with TEN 30-2413WIN and a default-OFF remote driver; coordinate its current-trip divider for the provisional load target.
+- Change the input OVP divider and specify the candidate continuous input range as 18–30 V at nominal 24 V.
+- Add local library assets, reproducible connectivity/DC checks, ERC reports and a report of remaining hardware validation. No PCB routing, GitHub publication or hardware qualification is claimed.
+
 ### 2026-10-27 — Initial ERC report review
 
 - Preserve user-generated Control and Power ERC reports byte-for-byte: 4 errors / 118 warnings and 11 errors / 13 warnings respectively.

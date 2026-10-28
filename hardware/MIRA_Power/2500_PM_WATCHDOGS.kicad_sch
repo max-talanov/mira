@@ -1874,12 +1874,7 @@
 		(color 0 0 0 0)
 		(uuid "9cdc874a-3067-48e6-897c-1bfdfc516cfb")
 	)
-	(junction
-		(at 119.38 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c36e8cd1-28af-44fc-a183-a68da0f49f6a")
-	)
+
 	(junction
 		(at 119.38 33.02)
 		(diameter 0)
@@ -2260,16 +2255,7 @@
 		)
 		(uuid "871fd99e-0cb7-4e05-b992-5089151f6bd7")
 	)
-	(wire
-		(pts
-			(xy 119.38 120.65) (xy 132.08 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89a6233e-61c9-4ae9-8b21-26f5be47d65f")
-	)
+
 	(wire
 		(pts
 			(xy 101.6 139.7) (xy 104.14 139.7)
@@ -2411,16 +2397,7 @@
 		)
 		(uuid "b88954bb-7914-4acb-963e-bc8e1a3b1fe1")
 	)
-	(wire
-		(pts
-			(xy 132.08 121.92) (xy 132.08 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bbd62cb5-1ca5-44df-9054-a511366a05bd")
-	)
+
 	(wire
 		(pts
 			(xy 55.88 34.29) (xy 55.88 35.56)
@@ -5648,4 +5625,8 @@
 			)
 		)
 	)
+
+(wire (pts (xy 132.08 121.92) (xy 132.08 116.84)) (stroke (width 0) (type default)) (uuid "834d3580-c1a0-4b3e-b8a0-619245ff61e7"))
+
+(global_label "SYS3V3" (shape input) (at 132.08 116.84 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "fbfc5540-1fa2-4dee-8265-b25330092a34"))
 )

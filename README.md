@@ -6,13 +6,13 @@ The project aims to bring array control, an analog front end, digital processing
 
 ## Current status
 
-**RevA** is currently in development. The repository contains two independent KiCad projects with local libraries: **MIRA_Control (30 active schematic pages)** and **MIRA_Power (48 active schematic pages)**.
+**RevA** is currently in development. The repository contains two independent KiCad projects with local libraries: **MIRA_Control (30 active schematic pages)** and **MIRA_Power (49 active schematic pages)**.
 
 Control includes MCU, FPGA, communications, matrix, analog, and protection circuits. Both projects are undergoing review before PCB placement and routing.
 
-The [Power–Control inter-board review](docs/pcb-preparation/README.md) was completed on **2026-10-27**: 26 required connections were recorded, with 3 P0 and 5 P1 questions left open. Completion of this review means the connections and discrepancies are documented; it does not mean the interface is ready for fabrication.
+The [high-load schematic candidate](docs/pcb-preparation/high-load/README.md) dated **2026-10-28** adds a supplemental CORE connector and positive remote sense, replaces N15 with a TEN 30-2413WIN module, and coordinates N15 overcurrent and input overvoltage thresholds. The candidate input range is **18–30 V DC**, nominal 24 V. The provisional targets are CORE 5.2 A and N15 0.468 A; hardware capacity has not been validated.
 
-The [initial ERC review](docs/pcb-preparation/erc/README.md) records user-generated reports from **2026-10-27**: Control has **4 errors / 118 warnings**, and Power has **11 errors / 13 warnings**. All 146 messages are grouped by cause with next actions. Schematic fixes and reproducibility details remain open; this update does not claim a clean ERC run.
+KiCad CLI 10.0.7 reports **Power: 0 errors / 0 warnings; Control: 0 errors / 2 active warnings / 32 excluded warnings**, with the existing ignored checks retained. Twenty-one netlist/value assertions pass. Connector selection, PCB layout, feedback stability, startup, thermal performance and analog noise remain open. The [original inter-board review](docs/pcb-preparation/README.md), [original ERC reports](docs/pcb-preparation/erc/README.md) and [earlier correction candidate](docs/pcb-preparation/fixes/README.md) are preserved as history.
 
 Schematics in this repository do not imply that the corresponding circuits have been built or validated in hardware.
 
@@ -92,9 +92,8 @@ See [LICENSE](LICENSE) and the third-party library and model notices included un
 
 ## Next steps
 
-- Resolve [ERC questions E01–E07](docs/pcb-preparation/erc/README.md), starting with the two U1903 feedback connections; record the KiCad version and check settings, then save fresh reports after corrections.
-- Resolve the [inter-board P0 questions](docs/pcb-preparation/README.md#open-questions): physical connector mapping, matrix inhibit return, and host reset output.
-- Calculate rail currents, voltage drops, and connector requirements; coordinate protection thresholds with load requirements.
-- Complete consistent schematic formatting and descriptions.
-- Review component suitability and availability.
-- Prepare component placement and PCB routing.
+- Establish the FPGA/matrix maximum operating scenario and recalculate the full power budget for the new N15 module.
+- Select and qualify the physical inter-board connectors, power/return paths and mechanical stack.
+- Validate CORE remote-sense stability, N15 startup/protection/noise and input surge response.
+- Complete the remaining domain sequencing, reset/STOP, VTT/DDR_VREF and ERC-exclusion reviews listed in the [candidate report](docs/pcb-preparation/high-load/README.md).
+- Prepare and review component placement and PCB routing before hardware validation.

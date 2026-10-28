@@ -1,0 +1,277 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T01:27:40",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_INPUT/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/16d1e3eb-c775-4475-b8fa-b6f478a715e2",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_INPUT/100_INPUT_CONNECTOR/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/16d1e3eb-c775-4475-b8fa-b6f478a715e2/f38f6ef6-8e39-4740-b661-806282bacb3e",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_INPUT/200_INPUT_FUSE_PROTECTION/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/16d1e3eb-c775-4475-b8fa-b6f478a715e2/8a1ec1db-8d27-4835-b99b-1c315ac37060",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_INPUT/300_INPUT_EFUSE_PROTECTION/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/16d1e3eb-c775-4475-b8fa-b6f478a715e2/dc72bf47-1f3a-4bbc-9afe-d0279391b99a",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_INPUT/400_INPUT_FILTER_SENSE/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/16d1e3eb-c775-4475-b8fa-b6f478a715e2/3c417c8b-aae2-4e6c-98c1-cce16c306e6c",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/PRIMARY_POWER/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/PRIMARY_POWER/500_AON_3V3_BUCK/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/PRIMARY_POWER/600_USB_5V/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/PRIMARY_POWER/700_SYS_3V3/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/3df52315-f309-4baa-bbc6-7639615f4edd",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/PRIMARY_POWER/800_FPGA_INTERMEDIATE_5V5/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/e3f70bbe-b445-478e-9c16-de7e91310a13",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/PRIMARY_POWER/900_ANALOG_PREREGULATOR_6V/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/847bd007-3ba8-4e5c-aef2-32c2cf126b65",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/PRIMARY_POWER/1000_AFE_POSITIVE_15V/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/ca39e07d-15f1-4398-acb0-5c6293f8b6da",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/PRIMARY_POWER/1100_AFE_NEGATIVE_15V/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/d240dfe5-3728-4557-b698-3004fc160de1",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/SECONDARY_POWER/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/PROGRAM_SWITCHES/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_CONTROL/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_MONITOR/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/SECONDARY_POWER/1200_POWER_MONITOR/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/SECONDARY_POWER/1300_FPGA_AUX_1V8/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/e44be13d-f01e-42f0-8e1a-efad65e68af0",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/SECONDARY_POWER/1400_FPGA_AUX_2V5/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/9b9d1440-4d41-4167-9b35-cdc2dd1e45e7",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/SECONDARY_POWER/1500_FPGA_IO_3V3/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/b0a4cd49-0a47-4531-91f4-adf45ba9d571",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/SECONDARY_POWER/1600_DDR_1V35/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/75f4833a-8ffe-4826-9b4f-9624f0891516",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/SECONDARY_POWER/1700_PHY_1V05/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/SECONDARY_POWER/1800_DDR_VTT_REFERENCE/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/192298de-83f0-4b85-a128-d88097a24d4a",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/SECONDARY_POWER/1900_ANALOG_5V/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/279f931e-243b-4881-9f3e-a2333335d827",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/SECONDARY_POWER/2000_ANALOG_3V3/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/4cf8cbea-d0ac-497e-bc85-d5eadca41e74",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/PROGRAM_SWITCHES/2100_PROGRAM_POSITIVE/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/36567e76-39e5-4385-bb34-60c34f46c6d0",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/PROGRAM_SWITCHES/2200_PROGRAM_NEGATIVE/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/PROGRAM_SWITCHES/2300_PROGRAM_INTERFACE/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/92066e9d-e19c-4a6f-82f8-9ea75b58d34c",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_CONTROL/2400_PM_CONTROLLER/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/368701d5-087c-4eeb-b302-0af74145b641",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_CONTROL/2500_PM_WATCHDOGS/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/0a36b77b-05e6-45f3-a77e-d4367afeda23",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_CONTROL/2600_PM_PERMIT_INTERLOCKS/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/58374aae-7426-4e49-8230-83aa532a478b",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_CONTROL/2700_PM_ENABLE_GATES_PRIMARY/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/5340af23-13be-4816-ba9a-a90b0bfec07e",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_CONTROL/2800_PM_ENABLE_GATES_AUXILIARY/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/3db1c0d1-31da-4f1a-9a0c-3e5bcb553f57",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_CONTROL/2900_PM_ANALOG_POWER_GOOD/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f3faabc0-bff0-4aac-9609-1eb0a44b6eb3",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_CONTROL/3000_PM_RAIL_READY/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_CONTROL/3100_PM_COMMAND_READY/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_CONTROL/3200_PM_NEGATIVE_OVERCURRENT/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/084a524d-ae7e-4075-8103-d9a0161d4e87",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_CONTROL/3300_PM_DEBUG_HOST_INTERFACE/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/0d4f67d9-465c-429b-9cae-b3678a9d67c4",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_MONITOR/3400_NEGATIVE_RAIL_MONITOR/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/a6d3f121-75f2-4391-8657-708b6270533c",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_MONITOR/3500_MONITOR_INPUT_AON_USB_SYS/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_MONITOR/3600_MONITOR_FPGA_ANA_AFE/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/8fbf416a-311d-4599-ba8c-db5768bb86e8",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_MONITOR/3700_MONITOR_FPGA_CORE_AUX_IO/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7131967b-c002-4563-8857-0314364c40f1",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_MONITOR/3800_MONITOR_DDR_PHY_ANALOG/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/83067d03-1ebe-48db-8efc-243ee072b6b4",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_MONITOR/3900_TELEMETRY_MULTIPLEXERS/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/e7dbd345-57f8-4b81-96c1-c0406ce18a64",
+            "violations": []
+        },
+        {
+            "path": "/POWER_SYSTEM/POWER_MONITOR/4000_TELEMETRY_ADC_BUFFERS/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/d8a96798-cb66-419a-b7f0-b615bdc562f8",
+            "violations": []
+        },
+        {
+            "path": "/POWER_CONTROL_INTERFACE/",
+            "uuid_path": "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/dbdc5547-ddd8-4565-b568-f55141960e57",
+            "violations": []
+        }
+    ],
+    "source": "MIRA_Power.kicad_sch"
+}

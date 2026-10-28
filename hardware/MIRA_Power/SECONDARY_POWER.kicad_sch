@@ -738,7 +738,7 @@
 		)
 		(uuid "a04ba891-963f-4ccd-85c8-02335d0c6a9d")
 	)
-	(text "Feeds the FPGA core used by the MIRA matrix and data engine.\nFPGA5V5 -> CORE1V0; 1.008 V nominal at CORE_RAW.\nCMD_CORE enables; PGR_CORE reports regulator status."
+	(text "Feeds the FPGA core used by the MIRA matrix and data engine.\nFPGA5V5 -> CORE1V0; 1.008 V at positive remote sense.\nCMD_CORE enables; local GND reference; test loop stability."
 		(exclude_from_sim no)
 		(at 156.21 33.88 0)
 		(effects
@@ -805,7 +805,7 @@
 		)
 		(uuid "b3c75824-a2a7-4805-b2c6-c29439cc4acc")
 	)
-	(text "1.008 V RAW"
+	(text "1.008 V sense"
 		(exclude_from_sim no)
 		(at 117 37.28 0)
 		(effects
