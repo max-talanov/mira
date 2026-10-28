@@ -521,7 +521,7 @@
 					)
 				)
 			)
-			(property "Description" "16-bit multiple-range bipolar output DAC with 2.5 V internal reference"
+			(property "Description" "16-bit multiple-range bipolar output DAC with 2.5 V internal reference; VSS_NEG denotes datasheet VSS (negative analog supply), separate from GND."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -659,7 +659,7 @@
 				(pin power_in line
 					(at -17.78 10.16 0)
 					(length 2.54)
-					(name "VSS"
+					(name "VSS_NEG"
 						(effects
 							(font
 								(size 0.9 0.9)

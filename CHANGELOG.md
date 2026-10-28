@@ -4,6 +4,13 @@ Repository milestones are separate from hardware revisions. Both projects curren
 
 ## Unreleased
 
+### 2026-10-28 — Connector selection and VSS ERC correction
+
+- Assign SSW-132-01-S-D / HTSW-132-07-S-D and SSW-109-01-S-D / HTSW-109-07-S-D to the existing 64- and 18-contact inter-board interfaces. Add local footprints, nominal 3D envelope models, mating pinout, BOM and a proposed 12 mm board stack.
+- Rename negative analog supply pins VSS_NEG in six local symbol definitions and active schematic copies, preserving pin numbers, power-input types and all electrical connectivity. Remove all 32 previous VSS exclusions and resolve the two remaining active messages.
+- Verify zero ERC errors, warnings and exclusions in both projects. Re-enable footprint-filter and simulation-model checks; retain and disclose the two existing ignored style checks.
+- Verify all 82 mating contacts, 34 negative-supply pins and 6850 connected pin entries against the high-load baseline. PCB placement, routing, mechanical and thermal qualification remain pending.
+
 ### 2026-10-28 — High-load schematic candidate
 
 - Include the earlier ERC/interface corrections: U1903 feedback, Power 4900 inter-board interface, reset and host status paths.

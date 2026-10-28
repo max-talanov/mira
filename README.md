@@ -12,7 +12,9 @@ Control includes MCU, FPGA, communications, matrix, analog, and protection circu
 
 The [high-load schematic candidate](docs/pcb-preparation/high-load/README.md) dated **2026-10-28** adds a supplemental CORE connector and positive remote sense, replaces N15 with a TEN 30-2413WIN module, and coordinates N15 overcurrent and input overvoltage thresholds. The candidate input range is **18–30 V DC**, nominal 24 V. The provisional targets are CORE 5.2 A and N15 0.468 A; hardware capacity has not been validated.
 
-KiCad CLI 10.0.7 reports **Power: 0 errors / 0 warnings; Control: 0 errors / 2 active warnings / 32 excluded warnings**, with the existing ignored checks retained. Twenty-one netlist/value assertions pass. Connector selection, PCB layout, feedback stability, startup, thermal performance and analog noise remain open. The [original inter-board review](docs/pcb-preparation/README.md), [original ERC reports](docs/pcb-preparation/erc/README.md) and [earlier correction candidate](docs/pcb-preparation/fixes/README.md) are preserved as history.
+The [connector selection and ERC update](docs/pcb-preparation/connectors-erc/README.md) assigns Samtec SSW/HTSW pairs with 64 and 18 contacts, local footprints and nominal 3D envelope models. The proposed parallel-board stack has a 12 mm facing-surface gap. All 82 mating contacts and all 6850 connected pin entries were checked; electrical connectivity is unchanged from the high-load candidate.
+
+KiCad CLI 10.0.7 reports **0 errors / 0 warnings / 0 exclusions for both projects**. Negative analog supply pins are now named VSS_NEG, with their power-input types and nets preserved; 32 old exclusions were removed. Two existing style checks remain ignored (`four_way_junction`, `single_global_label`); footprint-filter and simulation-model checks were re-enabled. PCB layout, mechanical and thermal qualification, feedback stability, startup and analog noise remain open. The [original inter-board review](docs/pcb-preparation/README.md), [original ERC reports](docs/pcb-preparation/erc/README.md) and [earlier correction candidate](docs/pcb-preparation/fixes/README.md) are preserved as history.
 
 Schematics in this repository do not imply that the corresponding circuits have been built or validated in hardware.
 
@@ -93,7 +95,7 @@ See [LICENSE](LICENSE) and the third-party library and model notices included un
 ## Next steps
 
 - Establish the FPGA/matrix maximum operating scenario and recalculate the full power budget for the new N15 module.
-- Select and qualify the physical inter-board connectors, power/return paths and mechanical stack.
+- Place and qualify the selected inter-board connectors, power/return paths and proposed 12 mm mechanical stack.
 - Validate CORE remote-sense stability, N15 startup/protection/noise and input surge response.
-- Complete the remaining domain sequencing, reset/STOP, VTT/DDR_VREF and ERC-exclusion reviews listed in the [candidate report](docs/pcb-preparation/high-load/README.md).
+- Complete the remaining domain sequencing, reset/STOP and VTT/DDR_VREF reviews listed in the [candidate report](docs/pcb-preparation/high-load/README.md). The VSS ERC-exclusion review is resolved in the connector/ERC update.
 - Prepare and review component placement and PCB routing before hardware validation.
