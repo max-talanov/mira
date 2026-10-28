@@ -4,6 +4,35 @@ Repository milestones are separate from hardware revisions. Both projects curren
 
 ## Unreleased
 
+### 2026-10-28 — Task 1/2 documentation refresh
+
+- Synchronize the task review, ERC resolution table, inter-board pinout, current XLSX/JSON budget and ready-to-post task comments with hardware commit `52f4386`; preserve the previous documents and workbook as history.
+- Apply a 30% margin to provisional peak loads, model TEN 30-2413WIN losses separately, refresh capacitances from native netlists and replace the obsolete central-connector calculation with 27 zone/rail branches and the CORE sense model.
+- Record unresolved N15 startup/OCP and IO3V3 current-distribution cases explicitly. Do not claim final load capacity, completed PCB layout or GitHub publication.
+- Add an independent budget verification script and GitHub publication instructions. This documentation refresh does not alter hardware sources.
+
+### 2026-10-28 — Distributed local power entries
+
+- Replace the central 64-contact interface with seven local power entries for FPGA, DDR, MCU, USB, Ethernet, DAC/matrix and ADC/AFE, plus a separate 20-contact supervision interface. Update both boards together; this pinout supersedes the previous connector candidate.
+- Assign all eight Samtec SSW/HTSW pairs and add four hierarchy leaves, zone-specific symbols, 14 unique local footprints/models, BOM, mating pinout and placement requirements. Retain the proposed 12 mm facing-surface gap; PCB coordinates and routing remain pending.
+- Preserve all 6686 connected pin entries outside the replaced connectors, including power converters, protection, analog negative supplies and CORE positive sense. Verify all 118 mating contacts, zero ERC violations/exclusions under the documented check set, and 21 power-path/value assertions.
+- Account for provisional FPGA AUX/IO return current in the conditional CORE DC calculation. Do not claim hardware load capacity, thermal qualification or a completed mechanical stack.
+
+### 2026-10-28 — Connector selection and VSS ERC correction
+
+- Assign SSW-132-01-S-D / HTSW-132-07-S-D and SSW-109-01-S-D / HTSW-109-07-S-D to the existing 64- and 18-contact inter-board interfaces. Add local footprints, nominal 3D envelope models, mating pinout, BOM and a proposed 12 mm board stack.
+- Rename negative analog supply pins VSS_NEG in six local symbol definitions and active schematic copies, preserving pin numbers, power-input types and all electrical connectivity. Remove all 32 previous VSS exclusions and resolve the two remaining active messages.
+- Verify zero ERC errors, warnings and exclusions in both projects. Re-enable footprint-filter and simulation-model checks; retain and disclose the two existing ignored style checks.
+- Verify all 82 mating contacts, 34 negative-supply pins and 6850 connected pin entries against the high-load baseline. PCB placement, routing, mechanical and thermal qualification remain pending.
+
+### 2026-10-28 — High-load schematic candidate
+
+- Include the earlier ERC/interface corrections: U1903 feedback, Power 4900 inter-board interface, reset and host status paths.
+- Add supplemental CORE contacts and positive remote sense with a local fallback path; retain the existing 64-pin map.
+- Replace the N15 inverting converter with TEN 30-2413WIN and a default-OFF remote driver; coordinate its current-trip divider for the provisional load target.
+- Change the input OVP divider and specify the candidate continuous input range as 18–30 V at nominal 24 V.
+- Add local library assets, reproducible connectivity/DC checks, ERC reports and a report of remaining hardware validation. No PCB routing, GitHub publication or hardware qualification is claimed.
+
 ### 2026-10-27 — Initial ERC report review
 
 - Preserve user-generated Control and Power ERC reports byte-for-byte: 4 errors / 118 warnings and 11 errors / 13 warnings respectively.

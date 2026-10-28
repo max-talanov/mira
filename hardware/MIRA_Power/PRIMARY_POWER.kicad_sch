@@ -476,7 +476,7 @@
 		)
 		(uuid "6f7b89ba-e9ca-40d1-b527-c21a38410100")
 	)
-	(text "Generates N15 from BUS24 for the negative AFE supply.\nInverting LMR51610; -14.99 V at N15_RAW before the output shunt.\nCMD_N15 enables through an optocoupler level shifter.\nLocal converter GND is N15_RAW; no power-good output."
+	(text "Generates N15 from BUS24 with TEN 30-2413WIN.\nSingle isolated output referenced to GND: -15 V at N15_RAW.\nCMD_N15 and AON drive a default-OFF remote circuit.\n2 A module rating; system current, noise and startup need validation."
 		(exclude_from_sim no)
 		(at 156.21 141.36 0)
 		(effects

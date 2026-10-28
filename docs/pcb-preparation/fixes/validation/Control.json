@@ -1,0 +1,762 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T23:58:43",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702",
+            "violations": []
+        },
+        {
+            "path": "/MCU/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5",
+            "violations": []
+        },
+        {
+            "path": "/MCU/100_MCU_POWER_CLOCKS_AND_DEBUG/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533",
+            "violations": []
+        },
+        {
+            "path": "/MCU/200_MCU_FMC_AND_SDRAM/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ea583142-66b4-44d6-a14f-0501929789aa",
+            "violations": []
+        },
+        {
+            "path": "/MCU/300_MCU_QSPI_MICROSD_AND_CONTROL/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/fa3c3189-1e32-42a7-8477-81e82afcd0a1",
+            "violations": []
+        },
+        {
+            "path": "/INTERCONNECT/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/256d926f-b75a-42ae-a223-730b777ed784",
+            "violations": []
+        },
+        {
+            "path": "/INTERCONNECT/400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/256d926f-b75a-42ae-a223-730b777ed784/877d6aee-4761-48d7-9357-3a336e8ce272",
+            "violations": []
+        },
+        {
+            "path": "/FPGA/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7",
+            "violations": []
+        },
+        {
+            "path": "/FPGA/500_FPGA_POWER_AND_DECOUPLING/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/0107ad30-05a2-4f79-8a00-cb1818b2883c",
+            "violations": []
+        },
+        {
+            "path": "/FPGA/600_FPGA_CONFIGURATION_AND_XADC/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/4f504810-f53d-45b0-b53d-57ce6313f41f",
+            "violations": []
+        },
+        {
+            "path": "/FPGA/700_FPGA_USB3_FIFO_INTERFACE/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/f083602f-086c-44bb-87da-6c0bfbcb5bda",
+            "violations": []
+        },
+        {
+            "path": "/FPGA/800_FPGA_DDR3L_AND_REFERENCE_CLOCK/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/8e41acd8-38d0-4d92-9347-27279deada26",
+            "violations": []
+        },
+        {
+            "path": "/FPGA/900_FPGA_ETHERNET_AND_MCU_INTERFACE/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/130913e2-0ea0-4abf-9db5-8a7cfbcb2df7/8e7119fe-9bc9-4e2f-93f4-ec2a20a15ae1",
+            "violations": []
+        },
+        {
+            "path": "/DAC/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/84940a25-ed28-485e-9f63-88f8eacd225a",
+            "violations": []
+        },
+        {
+            "path": "/DAC/1000_DAC_BL0_31_AND_BUFFERS/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/84940a25-ed28-485e-9f63-88f8eacd225a/71beb996-19ee-43a4-9b54-911b384cfcb0",
+            "violations": []
+        },
+        {
+            "path": "/DAC/1100_DAC_SERVICE_AND_FORMING/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/84940a25-ed28-485e-9f63-88f8eacd225a/a77b3f50-0196-4029-8804-2103c78e8a4d",
+            "violations": [
+                {
+                    "comment": "U1103.6: VSS is the negative analog supply (PROG_N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/ad5761r_5721r.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1103 Pin 6 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 49.53,
+                                "y": 139.7
+                            },
+                            "uuid": "beedabc4-ff03-4223-9cf6-28bd7cf06a45"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                }
+            ]
+        },
+        {
+            "path": "/DAC/1200_DAC_FPGA_CONTROL_INTERFACE/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/84940a25-ed28-485e-9f63-88f8eacd225a/eea5b834-10ee-4e0c-bf4c-13878dc08663",
+            "violations": []
+        },
+        {
+            "path": "/MATRIX/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d",
+            "violations": []
+        },
+        {
+            "path": "/MATRIX/1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d/287bbd79-0316-4114-a3ae-c82f07e335c4",
+            "violations": []
+        },
+        {
+            "path": "/MATRIX/1400_MATRIX_SERIAL_CONTROL_REGISTERS/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d/563543ff-1813-4a65-9a21-19412a404c5e",
+            "violations": []
+        },
+        {
+            "path": "/MATRIX/1500_MATRIX_BL0_31_SWITCHING/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d/8be588c0-db78-4795-bb6a-aa2a49e6533a",
+            "violations": [
+                {
+                    "description": "Pin VSS not connected to ground net",
+                    "items": [
+                        {
+                            "description": "Symbol U1506 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 107.95
+                            },
+                            "uuid": "04a0ad3e-acac-47ab-aa0e-f3615b52d693"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1500.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1500 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 33.02
+                            },
+                            "uuid": "24c2698e-dbd0-4050-bbaf-d1ba85d03f73"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1502.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1502 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 46.99
+                            },
+                            "uuid": "63cef0c7-f71e-4b1a-b2f8-ef59c0f27875"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1501.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Pin VSS not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1501 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 63.5
+                            },
+                            "uuid": "47cdf426-27c9-43ef-b0f6-2d6e448c5631"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1503.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1503 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 77.47
+                            },
+                            "uuid": "fd0e7953-f61b-4834-a6de-491f043d1d78"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1504.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1504 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 93.98
+                            },
+                            "uuid": "aae2a941-44ea-4822-a448-2409a9abe307"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1505.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1505 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 124.46
+                            },
+                            "uuid": "ba5508e3-f87e-487a-9295-38867c8cb3f6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1507.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1507 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 138.43
+                            },
+                            "uuid": "71fa482c-33dd-42aa-92c7-3c0475323532"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1508.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1508 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 154.94
+                            },
+                            "uuid": "23ef2add-f580-45c4-82c2-11e7e73e2853"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1510.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1510 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 168.91
+                            },
+                            "uuid": "76afd159-f9bd-447e-bcd0-a1ddf3798d5b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1509.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1509 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 185.42
+                            },
+                            "uuid": "dc287d4a-ca4c-4150-ae90-8f78b69ba828"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1511.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1511 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 199.39
+                            },
+                            "uuid": "529f4abf-b94e-45ac-8460-446742dcaa62"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1512.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1512 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 215.9
+                            },
+                            "uuid": "296553c7-aa0c-4a05-a463-9583d2191833"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1514.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1514 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 229.87
+                            },
+                            "uuid": "962f55f0-3a10-4cf5-b4f0-2ac7b874d998"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1513.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1513 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 246.38
+                            },
+                            "uuid": "8eea5214-7d2c-4b80-a671-a9ab5d8a8423"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1515.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1515 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 213.36,
+                                "y": 260.35
+                            },
+                            "uuid": "0c7b34c9-90e0-4264-b12c-e5f42b285c3a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1516.3: VSS is the negative analog supply (N15), not ground. Separate GND pin 14 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1516 Pin 3 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 276.86,
+                                "y": 48.26
+                            },
+                            "uuid": "206bdd00-9c9f-465e-b929-297137ce78ef"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1517.3: VSS is the negative analog supply (N15), not ground. Separate GND pin 14 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1517 Pin 3 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 276.86,
+                                "y": 109.22
+                            },
+                            "uuid": "945b4924-6c83-494d-af2b-ce33ba949283"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1518.3: VSS is the negative analog supply (N15), not ground. Separate GND pin 14 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1518 Pin 3 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 276.86,
+                                "y": 170.18
+                            },
+                            "uuid": "83c1531a-15b0-44f9-b4ba-4413a79ffe40"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1519.3: VSS is the negative analog supply (N15), not ground. Separate GND pin 14 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1519 Pin 3 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 276.86,
+                                "y": 231.14
+                            },
+                            "uuid": "49fa95cc-1e95-42b0-bb52-68f9ee9c4484"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                }
+            ]
+        },
+        {
+            "path": "/MATRIX/1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d/0d8739bf-c5d1-4e27-8610-4094c4c8abcd",
+            "violations": [
+                {
+                    "description": "Pin VSS not connected to ground net",
+                    "items": [
+                        {
+                            "description": "Symbol U1603 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 69.85,
+                                "y": 275.59
+                            },
+                            "uuid": "3037e6f5-abfc-46bf-bed7-2fc37922c04e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1602.5: VSS is the negative analog supply (N15), not ground. Separate GND pin 6 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5433_5434.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1602 Pin 5 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 69.85,
+                                "y": 237.49
+                            },
+                            "uuid": "ea0ac92f-2cdd-4b30-957e-9e20d60fb34f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1601.3: VSS is the negative analog supply (N15), not ground. Separate GND pin 14 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1601 Pin 3 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 93.98,
+                                "y": 72.39
+                            },
+                            "uuid": "97cc3329-927f-4d99-a0b9-a6c31866d2ef"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1600.3: VSS is the negative analog supply (N15), not ground. Separate GND pin 14 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Pin VSS not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1600 Pin 3 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 93.98,
+                                "y": 153.67
+                            },
+                            "uuid": "304cbcad-1030-4e02-9edc-d2c94413b472"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                }
+            ]
+        },
+        {
+            "path": "/MATRIX/1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d/a99177be-59ea-4574-b82f-3db01362f81c",
+            "violations": [
+                {
+                    "comment": "U1700.5: VSS is the negative analog supply (N15), not ground. Separate GND pin 6 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5433_5434.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1700 Pin 5 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 209.55,
+                                "y": 36.83
+                            },
+                            "uuid": "1a789329-eda4-4933-9f13-2836fa5ea0c6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1701.5: VSS is the negative analog supply (N15), not ground. Separate GND pin 6 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5433_5434.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1701 Pin 5 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 209.55,
+                                "y": 68.58
+                            },
+                            "uuid": "c565f131-018c-435d-891d-dcd56127b561"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1702.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1702 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 209.55,
+                                "y": 105.41
+                            },
+                            "uuid": "e74aa212-441f-41ef-a328-c11f14d331a4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1703.4: VSS is the negative analog supply (N15), not ground. Separate GND pin 5 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5412_5413.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1703 Pin 4 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 209.55,
+                                "y": 137.16
+                            },
+                            "uuid": "cdb6343a-56b7-4370-865d-2109b42fb136"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1705.3: VSS is the negative analog supply (N15), not ground. Separate GND pin 14 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1705 Pin 3 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 276.86,
+                                "y": 116.84
+                            },
+                            "uuid": "634ef8ec-1bd5-40ba-be11-3c6320be61e9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                }
+            ]
+        },
+        {
+            "path": "/MATRIX/1800_MATRIX_CROSSBAR_SOCKET_AND_BIAS/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/70b8b7e8-b7f2-4da0-a7ca-ffa6a5a3de1d/65122252-1631-4d3b-aa34-05c472ad61c2",
+            "violations": []
+        },
+        {
+            "path": "/ADC/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/c82bdf26-7de4-4478-a0aa-bcc4853fb2a7",
+            "violations": []
+        },
+        {
+            "path": "/ADC/1900_ADC_TIA_AND_MONITOR_SELECTOR/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/c82bdf26-7de4-4478-a0aa-bcc4853fb2a7/16ab9d23-37a9-4b94-ac8f-5664cb2e5fdc",
+            "violations": [
+                {
+                    "comment": "U1901.3: VSS is the negative analog supply (N15), not ground. Separate GND pin 14 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1901 Pin 3 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 184.15,
+                                "y": 66.04
+                            },
+                            "uuid": "a91a62ed-9ffa-4fb0-bcf9-a98d0e3e40bd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U1902.3: VSS is the negative analog supply (N15), not ground. Separate GND pin 14 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg1208_1209.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U1902 Pin 3 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 294.64,
+                                "y": 81.28
+                            },
+                            "uuid": "039a4d9d-5d39-40e5-8a80-de9567c703b4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                }
+            ]
+        },
+        {
+            "path": "/ADC/2000_ADC_CONVERTER_AND_PRECISION_REFERENCES/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/c82bdf26-7de4-4478-a0aa-bcc4853fb2a7/0cd68471-1e6b-4777-98ec-474bbf9e20da",
+            "violations": []
+        },
+        {
+            "path": "/PROTECTION/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/75a2aa70-81cd-4543-a50c-e295d4f5a68c",
+            "violations": []
+        },
+        {
+            "path": "/PROTECTION/2100_PROTECTION_WRITE_CURRENT_COMPLIANCE/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/75a2aa70-81cd-4543-a50c-e295d4f5a68c/ee7089d0-2fa4-4736-bdd0-a5754b4b5039",
+            "violations": [
+                {
+                    "comment": "U2100.3: VSS is the negative analog supply (N15), not ground. Separate GND pin 14 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U2100 Pin 3 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 93.98,
+                                "y": 71.12
+                            },
+                            "uuid": "c891752e-d68e-4e1b-8952-5cce4be41b5f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                },
+                {
+                    "comment": "U2103.3: VSS is the negative analog supply (N15), not ground. Separate GND pin 15 verified on GND in native netlist. https://www.analog.com/media/en/technical-documentation/data-sheets/adg5408_5409.pdf See docs/pcb-preparation/fixes/negative-supply-review.json.",
+                    "description": "Ground pin not connected to ground net",
+                    "excluded": true,
+                    "items": [
+                        {
+                            "description": "Symbol U2103 Pin 3 [VSS, Power input, Line]",
+                            "pos": {
+                                "x": 367.03,
+                                "y": 92.71
+                            },
+                            "uuid": "f9c5ea64-a876-44e7-9a4d-acebc72e1515"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "ground_pin_not_ground"
+                }
+            ]
+        },
+        {
+            "path": "/PROTECTION/2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE/",
+            "uuid_path": "/ad010b50-c509-466c-b833-d1667dfb0702/75a2aa70-81cd-4543-a50c-e295d4f5a68c/c17b5599-39dd-494c-ad64-99a5847f5793",
+            "violations": []
+        }
+    ],
+    "source": "MIRA_Control.kicad_sch"
+}

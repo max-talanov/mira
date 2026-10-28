@@ -1,0 +1,34 @@
+{
+  "assumptions": {
+    "force_path_ohm_including_shunt": 0.007,
+    "return_ohm": 0.003,
+    "sense_wire_ohm": 1,
+    "source_tolerance": 0.02,
+    "transient_reserve_V": 0.01
+  },
+  "scenarios": [
+    {
+      "current_A": 0,
+      "raw_V": 1.0080398784242677,
+      "load_V_nominal": 1.0080396012157573,
+      "lower_V_with_2pct_and_10mV": 0.9778796012157573,
+      "sense_line_A": 3.9601215757323746e-05
+    },
+    {
+      "current_A": 4,
+      "raw_V": 1.0357607294543942,
+      "load_V_nominal": 0.995762392705456,
+      "lower_V_with_2pct_and_10mV": 0.965602392705456,
+      "sense_line_A": -0.0002376072945439425
+    },
+    {
+      "current_A": 5.2,
+      "raw_V": 1.0440769847634321,
+      "load_V_nominal": 0.9920792301523657,
+      "lower_V_with_2pct_and_10mV": 0.9619192301523657,
+      "sense_line_A": -0.0003207698476343223
+    }
+  ],
+  "open_sense_no_load_nominal_V": 1.0119999999999998,
+  "scope": "Conditional DC calculation, not measured PCB performance or feedback-loop simulation."
+}

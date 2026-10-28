@@ -6,13 +6,17 @@ The project aims to bring array control, an analog front end, digital processing
 
 ## Current status
 
-**RevA** is currently in development. The repository contains two independent KiCad projects with local libraries: **MIRA_Control (30 active schematic pages)** and **MIRA_Power (48 active schematic pages)**.
+**RevA** is currently in development. The repository contains two independent KiCad projects with local libraries: **MIRA_Control (32 active schematic pages)** and **MIRA_Power (51 active schematic pages)**.
 
 Control includes MCU, FPGA, communications, matrix, analog, and protection circuits. Both projects are undergoing review before PCB placement and routing.
 
-The [Power–Control inter-board review](docs/pcb-preparation/README.md) was completed on **2026-10-27**: 26 required connections were recorded, with 3 P0 and 5 P1 questions left open. Completion of this review means the connections and discrepancies are documented; it does not mean the interface is ready for fabrication.
+The [high-load schematic candidate](docs/pcb-preparation/high-load/README.md) dated **2026-10-28** adds a supplemental CORE connector and positive remote sense, replaces N15 with a TEN 30-2413WIN module, and coordinates N15 overcurrent and input overvoltage thresholds. The candidate input range is **18–30 V DC**, nominal 24 V. The provisional targets are CORE 5.2 A and N15 0.468 A; hardware capacity has not been validated.
 
-The [initial ERC review](docs/pcb-preparation/erc/README.md) records user-generated reports from **2026-10-27**: Control has **4 errors / 118 warnings**, and Power has **11 errors / 13 warnings**. All 146 messages are grouped by cause with next actions. Schematic fixes and reproducibility details remain open; this update does not claim a clean ERC run.
+The [distributed power interface](docs/pcb-preparation/distributed-power/README.md) replaces the central 64-contact connector with **seven local power entries and one separate supervision interface**. The zones are FPGA, DDR, MCU, USB, Ethernet, DAC/matrix and ADC/AFE. Eight Samtec SSW/HTSW pairs have assigned parts, local footprints and nominal 3D envelope models. The proposed stack has Power below Control and a 12 mm facing-surface gap; final placement coordinates and routing remain to be defined.
+
+All 118 mating contacts were checked. All 6686 connected pin entries outside the replaced connectors are unchanged from `c72edb2`; the sources, loads, protection and positive CORE sense remain connected as before. The new pinout requires updating both projects together. The [earlier connector/ERC report](docs/pcb-preparation/connectors-erc/README.md) is retained as history.
+
+KiCad CLI 10.0.7 reports **0 errors / 0 warnings / 0 exclusions for both projects**. Negative analog supply pins are now named VSS_NEG, with their power-input types and nets preserved; 32 old exclusions were removed. Two existing style checks remain ignored (`four_way_junction`, `single_global_label`); footprint-filter and simulation-model checks were re-enabled. PCB layout, mechanical and thermal qualification, feedback stability, startup and analog noise remain open. The [task 1/2 status and remaining questions](docs/pcb-preparation/README.md), [current ERC review](docs/pcb-preparation/erc/README.md) and [updated power budget](docs/pcb-preparation/power-budget/README.md) describe the current candidate. Original reports and calculations remain available as history. The budget applies a 30% margin to provisional peak loads and explicitly leaves N15 startup and shared-rail current distribution unresolved.
 
 Schematics in this repository do not imply that the corresponding circuits have been built or validated in hardware.
 
@@ -21,7 +25,7 @@ Schematics in this repository do not imply that the corresponding circuits have 
 | Project | Current contents | Open in KiCad |
 | --- | --- | --- |
 | [MIRA_Power](hardware/MIRA_Power) | Power schematics, hierarchy, and local libraries | `hardware/MIRA_Power/MIRA_Power.kicad_pro` |
-| [MIRA_Control](hardware/MIRA_Control) | 30-page schematic hierarchy, an empty PCB, and local symbol, footprint, and STEP libraries | `hardware/MIRA_Control/MIRA_Control.kicad_pro` |
+| [MIRA_Control](hardware/MIRA_Control) | 32-page schematic hierarchy, an empty PCB, and local symbol, footprint, and 3D libraries | `hardware/MIRA_Control/MIRA_Control.kicad_pro` |
 
 Each project has its own library tables and project-relative library paths. Keep its complete folder together.
 
@@ -92,9 +96,8 @@ See [LICENSE](LICENSE) and the third-party library and model notices included un
 
 ## Next steps
 
-- Resolve [ERC questions E01–E07](docs/pcb-preparation/erc/README.md), starting with the two U1903 feedback connections; record the KiCad version and check settings, then save fresh reports after corrections.
-- Resolve the [inter-board P0 questions](docs/pcb-preparation/README.md#open-questions): physical connector mapping, matrix inhibit return, and host reset output.
-- Calculate rail currents, voltage drops, and connector requirements; coordinate protection thresholds with load requirements.
-- Complete consistent schematic formatting and descriptions.
-- Review component suitability and availability.
-- Prepare component placement and PCB routing.
+- Establish the FPGA/matrix maximum operating scenario and recalculate the full power budget for the new N15 module.
+- Co-design both PCB floorplans around the eight connector pairs; place regulators and local returns near their assigned load zones and qualify the proposed 12 mm mechanical stack.
+- Validate CORE remote-sense stability, N15 startup/protection/noise and input surge response.
+- Complete the remaining domain sequencing, reset/STOP and VTT/DDR_VREF reviews listed in the [candidate report](docs/pcb-preparation/high-load/README.md). The VSS ERC-exclusion review is resolved in the connector/ERC update.
+- Prepare and review component placement and PCB routing before hardware validation.

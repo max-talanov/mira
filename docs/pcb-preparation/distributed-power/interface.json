@@ -1,0 +1,1009 @@
+{
+  "baseline_commit": "c72edb2",
+  "stack_gap_mm": 12,
+  "sockets_on": "Power F.Cu",
+  "headers_on": "Control B.Cu",
+  "scope": "Distributed power entry points. Placement coordinates and PCB routes are not assigned by this schematic change.",
+  "primary_external_source_pins": {
+    "AON": {
+      "ref": "J403",
+      "pin": 7
+    },
+    "SYS3V3": {
+      "ref": "J403",
+      "pin": 1
+    },
+    "IO3V3": {
+      "ref": "J401",
+      "pin": 23
+    },
+    "CORE1V0": {
+      "ref": "J401",
+      "pin": 1
+    },
+    "AUX1V8": {
+      "ref": "J401",
+      "pin": 19
+    },
+    "DDR1V35": {
+      "ref": "J402",
+      "pin": 1
+    },
+    "VTT": {
+      "ref": "J402",
+      "pin": 7
+    },
+    "DDR_VREF": {
+      "ref": "J402",
+      "pin": 11
+    },
+    "PHY1V05": {
+      "ref": "J405",
+      "pin": 1
+    },
+    "ANA5": {
+      "ref": "J406",
+      "pin": 9
+    },
+    "ANA3V3": {
+      "ref": "J407",
+      "pin": 7
+    },
+    "P15": {
+      "ref": "J406",
+      "pin": 1
+    },
+    "N15": {
+      "ref": "J406",
+      "pin": 5
+    },
+    "PROG_P15": {
+      "ref": "J406",
+      "pin": 13
+    },
+    "PROG_N15": {
+      "ref": "J406",
+      "pin": 15
+    },
+    "USB5": {
+      "ref": "J404",
+      "pin": 5
+    },
+    "GND": {
+      "ref": "J403",
+      "pin": 2
+    }
+  },
+  "connectors": [
+    {
+      "zone": "SUPERVISION",
+      "Power_ref": "J4901",
+      "Control_ref": "J400",
+      "rows": 10,
+      "contacts": 20,
+      "group": "service",
+      "placement_target": "MCU / supervisor boundary",
+      "Power_part": "SSW-110-01-S-D",
+      "Control_part": "HTSW-110-07-S-D",
+      "pins": [
+        {
+          "number": 1,
+          "Power_net": "HOST_WDI",
+          "Control_net": "HOST_WDI",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 2,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 3,
+          "Power_net": "HOST_ALIVE",
+          "Control_net": "HOST_ALIVE",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 4,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 5,
+          "Power_net": "HOST_UART_TX",
+          "Control_net": "HOST_UART_TX",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 6,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 7,
+          "Power_net": "PM_UART_TX_POWER",
+          "Control_net": "PM_UART_TX_POWER",
+          "Power_type": "passive",
+          "Control_type": "output"
+        },
+        {
+          "number": 8,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 9,
+          "Power_net": "ALL_RAILS_PG_POWER",
+          "Control_net": "ALL_RAILS_PG_POWER",
+          "Power_type": "passive",
+          "Control_type": "output"
+        },
+        {
+          "number": 10,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 11,
+          "Power_net": "GLOBAL_PWR_PERMIT_POWER",
+          "Control_net": "GLOBAL_PWR_PERMIT_POWER",
+          "Power_type": "passive",
+          "Control_type": "output"
+        },
+        {
+          "number": 12,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 13,
+          "Power_net": "MATRIX_PERMIT_POWER",
+          "Control_net": "MATRIX_PERMIT_POWER",
+          "Power_type": "passive",
+          "Control_type": "output"
+        },
+        {
+          "number": 14,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 15,
+          "Power_net": "HOST_RESET_N",
+          "Control_net": "HOST_RESET_N",
+          "Power_type": "passive",
+          "Control_type": "open_collector"
+        },
+        {
+          "number": 16,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 17,
+          "Power_net": "MATRIX_INHIBIT_N",
+          "Control_net": "MATRIX_INHIBIT_N",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 18,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 19,
+          "Power_net": "AON",
+          "Control_net": "AON",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 20,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        }
+      ]
+    },
+    {
+      "zone": "FPGA",
+      "Power_ref": "J4902",
+      "Control_ref": "J401",
+      "rows": 13,
+      "contacts": 26,
+      "group": "digital",
+      "placement_target": "U500 FPGA power decoupling",
+      "Power_part": "SSW-113-01-S-D",
+      "Control_part": "HTSW-113-07-S-D",
+      "pins": [
+        {
+          "number": 1,
+          "Power_net": "CORE1V0",
+          "Control_net": "CORE1V0",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 2,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 3,
+          "Power_net": "CORE1V0",
+          "Control_net": "CORE1V0",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 4,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 5,
+          "Power_net": "CORE1V0",
+          "Control_net": "CORE1V0",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 6,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 7,
+          "Power_net": "CORE1V0",
+          "Control_net": "CORE1V0",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 8,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 9,
+          "Power_net": "CORE1V0",
+          "Control_net": "CORE1V0",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 10,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 11,
+          "Power_net": "CORE1V0",
+          "Control_net": "CORE1V0",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 12,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 13,
+          "Power_net": "CORE1V0",
+          "Control_net": "CORE1V0",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 14,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 15,
+          "Power_net": "CORE1V0",
+          "Control_net": "CORE1V0",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 16,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 17,
+          "Power_net": "CORE_SENSE_P",
+          "Control_net": "CORE1V0",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 18,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 19,
+          "Power_net": "AUX1V8",
+          "Control_net": "AUX1V8",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 20,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 21,
+          "Power_net": "AUX1V8",
+          "Control_net": "AUX1V8",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 22,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 23,
+          "Power_net": "IO3V3",
+          "Control_net": "IO3V3",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 24,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 25,
+          "Power_net": "IO3V3",
+          "Control_net": "IO3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 26,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        }
+      ]
+    },
+    {
+      "zone": "DDR",
+      "Power_ref": "J4903",
+      "Control_ref": "J402",
+      "rows": 7,
+      "contacts": 14,
+      "group": "digital",
+      "placement_target": "U800 DDR3L, FPGA banks 15/16 and termination network",
+      "Power_part": "SSW-107-01-S-D",
+      "Control_part": "HTSW-107-07-S-D",
+      "pins": [
+        {
+          "number": 1,
+          "Power_net": "DDR1V35",
+          "Control_net": "DDR1V35",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 2,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 3,
+          "Power_net": "DDR1V35",
+          "Control_net": "DDR1V35",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 4,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 5,
+          "Power_net": "DDR1V35",
+          "Control_net": "DDR1V35",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 6,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 7,
+          "Power_net": "VTT",
+          "Control_net": "VTT",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 8,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 9,
+          "Power_net": "VTT",
+          "Control_net": "VTT",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 10,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 11,
+          "Power_net": "DDR_VREF",
+          "Control_net": "DDR_VREF",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 12,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 13,
+          "Power_net": "IO3V3",
+          "Control_net": "IO3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 14,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        }
+      ]
+    },
+    {
+      "zone": "MCU",
+      "Power_ref": "J4904",
+      "Control_ref": "J403",
+      "rows": 5,
+      "contacts": 10,
+      "group": "digital",
+      "placement_target": "U100 MCU, U200 SDRAM, U300 Flash / microSD",
+      "Power_part": "SSW-105-01-S-D",
+      "Control_part": "HTSW-105-07-S-D",
+      "pins": [
+        {
+          "number": 1,
+          "Power_net": "SYS3V3",
+          "Control_net": "SYS3V3",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 2,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 3,
+          "Power_net": "SYS3V3",
+          "Control_net": "SYS3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 4,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 5,
+          "Power_net": "SYS3V3",
+          "Control_net": "SYS3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 6,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 7,
+          "Power_net": "AON",
+          "Control_net": "AON",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 8,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 9,
+          "Power_net": "IO3V3",
+          "Control_net": "IO3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 10,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        }
+      ]
+    },
+    {
+      "zone": "USB",
+      "Power_ref": "J4905",
+      "Control_ref": "J404",
+      "rows": 4,
+      "contacts": 8,
+      "group": "digital",
+      "placement_target": "U706 Type-C controller and U707 FT601",
+      "Power_part": "SSW-104-01-S-D",
+      "Control_part": "HTSW-104-07-S-D",
+      "pins": [
+        {
+          "number": 1,
+          "Power_net": "IO3V3",
+          "Control_net": "IO3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 2,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 3,
+          "Power_net": "IO3V3",
+          "Control_net": "IO3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 4,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 5,
+          "Power_net": "USB5",
+          "Control_net": "USB5",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 6,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 7,
+          "Power_net": "USB5",
+          "Control_net": "USB5",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 8,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        }
+      ]
+    },
+    {
+      "zone": "ETHERNET",
+      "Power_ref": "J4906",
+      "Control_ref": "J405",
+      "rows": 5,
+      "contacts": 10,
+      "group": "digital",
+      "placement_target": "U902 PHY and U903 local PHY2V5 regulator",
+      "Power_part": "SSW-105-01-S-D",
+      "Control_part": "HTSW-105-07-S-D",
+      "pins": [
+        {
+          "number": 1,
+          "Power_net": "PHY1V05",
+          "Control_net": "PHY1V05",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 2,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 3,
+          "Power_net": "PHY1V05",
+          "Control_net": "PHY1V05",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 4,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 5,
+          "Power_net": "IO3V3",
+          "Control_net": "IO3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 6,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 7,
+          "Power_net": "IO3V3",
+          "Control_net": "IO3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 8,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 9,
+          "Power_net": "IO3V3",
+          "Control_net": "IO3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 10,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        }
+      ]
+    },
+    {
+      "zone": "DAC_MATRIX",
+      "Power_ref": "J4907",
+      "Control_ref": "J406",
+      "rows": 9,
+      "contacts": 18,
+      "group": "analog",
+      "placement_target": "DAC, matrix drivers/switches and forming source",
+      "Power_part": "SSW-109-01-S-D",
+      "Control_part": "HTSW-109-07-S-D",
+      "pins": [
+        {
+          "number": 1,
+          "Power_net": "P15",
+          "Control_net": "P15",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 2,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 3,
+          "Power_net": "P15",
+          "Control_net": "P15",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 4,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 5,
+          "Power_net": "N15",
+          "Control_net": "N15",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 6,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 7,
+          "Power_net": "N15",
+          "Control_net": "N15",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 8,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 9,
+          "Power_net": "ANA5",
+          "Control_net": "ANA5",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 10,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 11,
+          "Power_net": "IO3V3",
+          "Control_net": "IO3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 12,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 13,
+          "Power_net": "PROG_P15",
+          "Control_net": "PROG_P15",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 14,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 15,
+          "Power_net": "PROG_N15",
+          "Control_net": "PROG_N15",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 16,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 17,
+          "Power_net": "IO3V3",
+          "Control_net": "IO3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 18,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        }
+      ]
+    },
+    {
+      "zone": "ADC_AFE",
+      "Power_ref": "J4908",
+      "Control_ref": "J407",
+      "rows": 6,
+      "contacts": 12,
+      "group": "analog",
+      "placement_target": "U1900-U2006 ADC/TIA/reference and nearby protection circuits",
+      "Power_part": "SSW-106-01-S-D",
+      "Control_part": "HTSW-106-07-S-D",
+      "pins": [
+        {
+          "number": 1,
+          "Power_net": "P15",
+          "Control_net": "P15",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 2,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 3,
+          "Power_net": "N15",
+          "Control_net": "N15",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 4,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 5,
+          "Power_net": "ANA5",
+          "Control_net": "ANA5",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 6,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 7,
+          "Power_net": "ANA3V3",
+          "Control_net": "ANA3V3",
+          "Power_type": "passive",
+          "Control_type": "power_out"
+        },
+        {
+          "number": 8,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 9,
+          "Power_net": "IO3V3",
+          "Control_net": "IO3V3",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 10,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 11,
+          "Power_net": "AON",
+          "Control_net": "AON",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        },
+        {
+          "number": 12,
+          "Power_net": "GND",
+          "Control_net": "GND",
+          "Power_type": "passive",
+          "Control_type": "passive"
+        }
+      ]
+    }
+  ]
+}

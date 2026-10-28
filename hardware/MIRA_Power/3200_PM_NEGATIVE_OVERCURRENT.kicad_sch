@@ -1128,7 +1128,249 @@
 			)
 			(embedded_fonts no)
 		)
-	)
+
+(symbol "MIRA_RevA:R_RT0402BRD0713K7L"
+    (pin_names
+      (offset 0.508)
+    )
+    (pin_numbers hide)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "R"
+      (at 0 4.826 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Value" "13.7k"
+      (at 0 -4.826 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Footprint" "MIRA_RevA:R_0402_1005Metric"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property "MPN" "RT0402BRD0713K7L"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property "Manufacturer" "Yageo"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property "Description" "Chip resistor, 13.7k Ohm, +/-0.1%, 0402"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (symbol "R_RT0402BRD0713K7L_0_1"
+      (rectangle
+        (start -2.54 1.016)
+        (end 2.54 -1.016)
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type background)
+        )
+      )
+    )
+    (symbol "R_RT0402BRD0713K7L_1_1"
+      (pin passive line
+        (at -5.08 0 0)
+        (length 2.54)
+        (name "~"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+        (number "1"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin passive line
+        (at 5.08 0 180)
+        (length 2.54)
+        (name "~"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+        (number "2"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+    )
+  )
+
+(symbol "MIRA_RevA:R_RT0402BRD0710KL"
+    (pin_names
+      (offset 0.508)
+    )
+    (pin_numbers hide)
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "R"
+      (at 0 4.826 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Value" "10.0k"
+      (at 0 -4.826 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+    (property "Footprint" "MIRA_RevA:R_0402_1005Metric"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property "MPN" "RT0402BRD0710KL"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property "Manufacturer" "Yageo"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (property "Description" "Chip resistor, 10.0k Ohm, +/-0.1%, 0402"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+    (symbol "R_RT0402BRD0710KL_0_1"
+      (rectangle
+        (start -2.54 1.016)
+        (end 2.54 -1.016)
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type background)
+        )
+      )
+    )
+    (symbol "R_RT0402BRD0710KL_1_1"
+      (pin passive line
+        (at -5.08 0 0)
+        (length 2.54)
+        (name "~"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+        (number "1"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin passive line
+        (at 5.08 0 180)
+        (length 2.54)
+        (name "~"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+        (number "2"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+    )
+  )
+)
 	(rectangle
 		(start 15.24 15.24)
 		(end 148.59 161.29)
@@ -1209,7 +1451,7 @@
 		)
 		(uuid "2bbff7e5-cbaf-4695-9930-5a27713a1f87")
 	)
-	(text "Threshold reference\nVREF = AON x 10 / 57"
+	(text "Threshold reference\nVREF = AON / 2.37"
 		(exclude_from_sim no)
 		(at 22.86 39.37 0)
 		(effects
@@ -1249,7 +1491,7 @@
 		)
 		(uuid "429337fe-2158-433e-a113-cc8cdb6c0cd6")
 	)
-	(text "R3201 / R3202 set VREF = AON x 10 / 57, about 0.575 V at 3.28 V.\nC3201 filters this reference with an 82 us time constant.\nThe current limit also depends on the external sense gain and shunt.\nThis circuit has no intentional hysteresis or local sense filtering."
+	(text "R3201=13.7k / R3202=10k (0.1%, 25ppm/K): VREF=AON/2.37.\nAt AON=3.28 V: 1.384 V, nominal N15 trip 0.692 A (2 V/A).\nC3201 reference filter: 58 us. Validate startup and fault delay.\nNo intentional hysteresis; see high-load corner calculation."
 		(exclude_from_sim no)
 		(at 156.21 114.02 0)
 		(effects
@@ -2256,7 +2498,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
+		(lib_id "MIRA_RevA:R_RT0402BRD0710KL")
 		(at 46.99 64.77 270)
 		(unit 1)
 		(body_style 1)
@@ -2276,7 +2518,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10.0k"
 			(at 50.8 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2286,7 +2528,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
+		(property "Footprint" "MIRA_RevA:R_0402_1005Metric"
 			(at 46.99 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -2297,7 +2539,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l"
 			(at 46.99 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -2308,7 +2550,7 @@
 				)
 			)
 		)
-		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
+		(property "Description" "Chip resistor, 10.0k Ohm, +/-0.1%, 0402"
 			(at 46.99 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -2319,7 +2561,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERJ1GNF1002C"
+		(property "MPN" "RT0402BRD0710KL"
 			(at 46.99 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -2330,7 +2572,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer" "Yageo"
 			(at 46.99 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -2341,7 +2583,7 @@
 				)
 			)
 		)
-		(property "package" "0201"
+		(property "package" "0402"
 			(at 46.99 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -2352,7 +2594,7 @@
 				)
 			)
 		)
-		(property "tolerance" "1%"
+		(property "tolerance" "0.1%"
 			(at 46.99 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -2587,7 +2829,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MIRA_RevA:R_ERJ1GNF4702C")
+		(lib_id "MIRA_RevA:R_RT0402BRD0713K7L")
 		(at 40.64 57.15 0)
 		(unit 1)
 		(body_style 1)
@@ -2607,7 +2849,7 @@
 				)
 			)
 		)
-		(property "Value" "47k"
+		(property "Value" "13.7k"
 			(at 40.64 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2617,7 +2859,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
+		(property "Footprint" "MIRA_RevA:R_0402_1005Metric"
 			(at 40.64 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -2628,7 +2870,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/pyu-rt_1-to-0-01_rohs_l"
 			(at 40.64 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -2639,7 +2881,7 @@
 				)
 			)
 		)
-		(property "Description" "Chip resistor, 47k Ohm, +/-1%, 0201"
+		(property "Description" "Chip resistor, 13.7k Ohm, +/-0.1%, 0402"
 			(at 40.64 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -2650,7 +2892,7 @@
 				)
 			)
 		)
-		(property "MPN" "ERJ1GNF4702C"
+		(property "MPN" "RT0402BRD0713K7L"
 			(at 40.64 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -2661,7 +2903,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Panasonic"
+		(property "Manufacturer" "Yageo"
 			(at 40.64 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -2672,7 +2914,7 @@
 				)
 			)
 		)
-		(property "package" "0201"
+		(property "package" "0402"
 			(at 40.64 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -2683,7 +2925,7 @@
 				)
 			)
 		)
-		(property "tolerance" "1%"
+		(property "tolerance" "0.1%"
 			(at 40.64 57.15 0)
 			(hide yes)
 			(show_name no)
