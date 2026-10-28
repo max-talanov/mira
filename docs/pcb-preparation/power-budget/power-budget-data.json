@@ -1,13 +1,13 @@
 {
   "date": "2026-10-28",
-  "baseline": "24b4428877257387bc5a686abd9e830a37f58770",
+  "baseline": "52f43869b6ed5019490eb40afbc84a4d607fd61e",
   "sources": {
-    "SCHEM": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware",
+    "SCHEM": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
     "AMD": "https://docs.amd.com/v/u/en-US/ds181_Artix_7_Data_Sheet",
-    "N15": "https://www.ti.com/lit/an/slvafp0/slvafp0.pdf",
+    "N15": "https://www.tracopower.com/products/ten30win.pdf",
     "EFUSE": "https://www.ti.com/lit/ds/symlink/tps2663.pdf",
     "PHY": "https://www.ti.com/lit/ds/symlink/dp83867ir.pdf",
-    "SAMTEC": "https://suddendocs.samtec.com/productspecs/tsw-sxx.pdf",
+    "SAMTEC": "https://www.samtec.com/products/ssw-113-01-s-d",
     "LMR": "https://www.ti.com/product/LMR51610",
     "LM76005": "https://www.ti.com/product/LM76005",
     "TPS568215": "https://www.ti.com/product/TPS568215",
@@ -23,322 +23,354 @@
     {
       "rail": "AON",
       "board": "Power",
-      "block": "PM MCU, 14 INA301, INA293, логика, оптопары, мониторы",
+      "block": "PM MCU, 14 INA301, INA293, логика, оптопары, мониторы; U4901 HOST_ALIVE",
       "avg": 0.12,
-      "peak": 0.2,
+      "peak": 0.26,
       "start": 0.08,
-      "note": "D01: суммарный резерв, включая VIN/Iq TPS51200; уточнить режим MCU и оптопар",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "note": "D01: суммарный резерв, включая VIN/Iq TPS51200; уточнить режим MCU и оптопар; U4901 включён в тот же агрегированный резерв, отдельно максимум не подтверждён",
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.2
     },
     {
       "rail": "AON",
       "board": "Control",
       "block": "Подтяжки и цепь аппаратного запрета",
       "avg": 0.002,
-      "peak": 0.005,
+      "peak": 0.006500000000000001,
       "start": 0.001,
       "note": "D01: предварительный резерв",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.005
     },
     {
       "rail": "SYS3V3",
       "board": "Control",
       "block": "U100 STM32H745, оба ядра",
       "avg": 0.2,
-      "peak": 0.4,
+      "peak": 0.52,
       "start": 0.08,
       "note": "D02: допущение; частоты, периферия и активность не заданы",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.4
     },
     {
       "rail": "SYS3V3",
       "board": "Control",
       "block": "U200 SDRAM IS42S16320F",
       "avg": 0.09,
-      "peak": 0.15,
+      "peak": 0.195,
       "start": 0.03,
       "note": "D02: допущение; заменить расчётом по режимам памяти",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.15
     },
     {
       "rail": "SYS3V3",
       "board": "Control",
       "block": "U300 Flash и microSD",
       "avg": 0.115,
-      "peak": 0.28,
+      "peak": 0.36400000000000005,
       "start": 0.03,
       "note": "D02: 15/30 мА Flash и 100/250 мА microSD; карта не выбрана",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.28
     },
     {
       "rail": "SYS3V3",
       "board": "Control",
       "block": "Генератор, буферы, подтяжки",
       "avg": 0.02,
-      "peak": 0.05,
+      "peak": 0.065,
       "start": 0.01,
       "note": "D02: суммарный резерв",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.05
     },
     {
       "rail": "SYS3V3",
       "board": "Power",
       "block": "Host watchdog и U3301",
       "avg": 0.01,
-      "peak": 0.02,
+      "peak": 0.026000000000000002,
       "start": 0.005,
       "note": "D02: суммарный резерв",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.02
     },
     {
       "rail": "CORE1V0",
       "board": "Control",
       "block": "U500 VCCINT + VCCBRAM",
       "avg": 2,
-      "peak": 4,
+      "peak": 5.2,
       "start": 1,
       "note": "D03: 2/4 А — бюджет до XPE. Пуск 1 А без заряда C — тоже допущение",
-      "source": "https://docs.amd.com/v/u/en-US/ds181_Artix_7_Data_Sheet"
+      "source": "https://docs.amd.com/v/u/en-US/ds181_Artix_7_Data_Sheet",
+      "base_peak": 4
     },
     {
       "rail": "AUX1V8",
       "board": "Control",
       "block": "U500 VCCAUX и XADC через FB600",
       "avg": 0.15,
-      "peak": 0.3,
+      "peak": 0.39,
       "start": 0.15,
       "note": "D03: бюджет до XPE, включая XADC",
-      "source": "https://docs.amd.com/v/u/en-US/ds181_Artix_7_Data_Sheet"
+      "source": "https://docs.amd.com/v/u/en-US/ds181_Artix_7_Data_Sheet",
+      "base_peak": 0.3
     },
     {
       "rail": "AUX2V5",
       "board": "Power",
       "block": "Не назначенный потребитель; резерв",
       "avg": 0,
-      "peak": 0,
+      "peak": 0.0,
       "start": 0,
       "note": "D04: потребитель в текущей схеме не найден; 0 относится к этому сценарию, не к разрешению удалить шину",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0
     },
     {
       "rail": "IO3V3",
       "board": "Control",
       "block": "U500 банки 0/13/14/34/35",
       "avg": 0.15,
-      "peak": 0.4,
+      "peak": 0.52,
       "start": 0.225,
       "note": "D03: активность I/O неизвестна; пуск 5 банков × 45 мА ориентировочно",
-      "source": "https://docs.amd.com/v/u/en-US/ds181_Artix_7_Data_Sheet"
+      "source": "https://docs.amd.com/v/u/en-US/ds181_Artix_7_Data_Sheet",
+      "base_peak": 0.4
     },
     {
       "rail": "IO3V3",
       "board": "Control",
       "block": "U707 FT601 вместе с внутренним FT1V0 и фильтрами",
       "avg": 0.2,
-      "peak": 0.3,
+      "peak": 0.39,
       "start": 0.08,
       "note": "D05: общий ток на входе 3,3 В; FT1V0 отдельно повторно не суммируется",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.3
     },
     {
       "rail": "IO3V3",
       "board": "Control",
       "block": "Матричная логика, регистры, SPI, Flash",
       "avg": 0.06,
-      "peak": 0.12,
+      "peak": 0.156,
       "start": 0.025,
       "note": "D05: резерв; зависит от частот и ёмкостной нагрузки",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.12
     },
     {
       "rail": "IO3V3",
       "board": "Control",
       "block": "Y800 SiT9121 200 MHz",
       "avg": 0.06,
-      "peak": 0.09,
+      "peak": 0.11699999999999999,
       "start": 0.06,
       "note": "D05: допущение до проверки исполнения генератора",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.09
     },
     {
       "rail": "IO3V3",
       "board": "Control",
       "block": "PHY VDDIO, LED, буферы",
       "avg": 0.04,
-      "peak": 0.08,
+      "peak": 0.10400000000000001,
       "start": 0.025,
       "note": "D05: запас для 3,3 В I/O; таблица TI с 1,8 В I/O напрямую не переносится",
-      "source": "https://www.ti.com/lit/ds/symlink/dp83867ir.pdf"
+      "source": "https://www.ti.com/lit/ds/symlink/dp83867ir.pdf",
+      "base_peak": 0.08
     },
     {
       "rail": "DDR1V35",
       "board": "Control",
       "block": "U800 DDR3L + U500 банки 15/16",
       "avg": 0.4,
-      "peak": 0.8,
+      "peak": 1.04,
       "start": 0.15,
       "note": "D06: бюджет памяти и I/O; средний включает верхние драйверы SSTL. Пиковая огибающая рассчитана для source VTT",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.8
     },
     {
       "rail": "VTT",
       "board": "Control",
       "block": "23 терминирующих резистора по 49,9 Ом",
       "avg": 0.155561122244489,
-      "peak": 0.311122244488978,
+      "peak": 0.40445891783567145,
       "start": 0.02,
       "note": "CALC: |Imax|=23×0,675/49,9; средний source принят 50%. Возможен равный по модулю sink; он не вычитается из входной мощности",
-      "source": "https://www.ti.com/product/TPS51200"
+      "source": "https://www.ti.com/product/TPS51200",
+      "base_peak": 0.311122244488978
     },
     {
       "rail": "DDR_VREF",
       "board": "Control",
       "block": "Опорные входы DDR и FPGA",
       "avg": 0.0001,
-      "peak": 0.001,
+      "peak": 0.0013000000000000002,
       "start": 0.0001,
       "note": "D06: предварительный ток опор; критерий — tracking/noise, не нагрев контакта",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.001
     },
     {
       "rail": "PHY1V05",
       "board": "Control",
       "block": "U902 DP83867IRRGZ VDD1P0",
       "avg": 0.108,
-      "peak": 0.2,
+      "peak": 0.26,
       "start": 0.108,
       "note": "108 мА — типовой 1000BASE-T из TI, 200 мА — расчётный резерв",
-      "source": "https://www.ti.com/lit/ds/symlink/dp83867ir.pdf"
+      "source": "https://www.ti.com/lit/ds/symlink/dp83867ir.pdf",
+      "base_peak": 0.2
     },
     {
       "rail": "PHY2V5",
       "board": "Control",
       "block": "U902 VDDA2P5, локальный U903 от IO3V3",
       "avg": 0.137,
-      "peak": 0.2,
+      "peak": 0.26,
       "start": 0.137,
       "note": "137 мА — типовой двухдоменный режим TI, 200 мА — резерв; I/O 3,3 В учтён отдельно",
-      "source": "https://www.ti.com/lit/ds/symlink/dp83867ir.pdf"
+      "source": "https://www.ti.com/lit/ds/symlink/dp83867ir.pdf",
+      "base_peak": 0.2
     },
     {
       "rail": "ANA5",
       "board": "Control",
       "block": "Пять AD5676R, OPA197, THP210 и обвязка",
       "avg": 0.08,
-      "peak": 0.15,
+      "peak": 0.195,
       "start": 0.04,
       "note": "D07: суммарный резерв; допустимое напряжение всей цепи ещё проверить",
-      "source": "https://www.analog.com/en/products/ad5676r.html"
+      "source": "https://www.analog.com/en/products/ad5676r.html",
+      "base_peak": 0.15
     },
     {
       "rail": "ANA3V3",
       "board": "Power",
       "block": "Разрядный резистор и служебный ток",
       "avg": 0.001,
-      "peak": 0.002,
+      "peak": 0.0026000000000000003,
       "start": 0.001,
       "note": "D07: резерв; основной потребитель — локальный LDO ADC на Control",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.002
     },
     {
       "rail": "MAT_ADC_1V8",
       "board": "Control",
       "block": "U2004 AD4003 через U2005 TLV75518P",
       "avg": 0.02,
-      "peak": 0.05,
+      "peak": 0.065,
       "start": 0.01,
       "note": "D07: допущение до задания частоты выборок",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.05
     },
     {
       "rail": "P15",
       "board": "Control",
       "block": "40 каналов OPA192, 16 OPA197, OPA551, INA и ключи",
       "avg": 0.075,
-      "peak": 0.1,
+      "peak": 0.13,
       "start": 0.1,
       "note": "D08: 40+16+7=63 мА типовой основы; остальные и запас включены до 75/100 мА. Не datasheet maximum",
-      "source": "https://www.ti.com/product/OPA4192"
+      "source": "https://www.ti.com/product/OPA4192",
+      "base_peak": 0.1
     },
     {
       "rail": "P15",
       "board": "Control",
       "block": "Выходные токи аналоговых буферов и резистивные цепи",
       "avg": 0.03,
-      "peak": 0.2,
+      "peak": 0.26,
       "start": 0.005,
       "note": "D08: допущение. 32 одновременных BL, проводимость DUT и заряд линий требуют отдельного расчёта",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.2
     },
     {
       "rail": "N15",
       "board": "Control",
       "block": "40 каналов OPA192, 16 OPA197, OPA551, INA и ключи",
       "avg": 0.075,
-      "peak": 0.1,
+      "peak": 0.13,
       "start": 0.1,
       "note": "D08: 40+16+7=63 мА типовой основы; остальные и запас включены до 75/100 мА. Не datasheet maximum",
-      "source": "https://www.ti.com/product/OPA4192"
+      "source": "https://www.ti.com/product/OPA4192",
+      "base_peak": 0.1
     },
     {
       "rail": "N15",
       "board": "Control",
       "block": "Выходные токи аналоговых буферов и резистивные цепи",
       "avg": 0.03,
-      "peak": 0.2,
+      "peak": 0.26,
       "start": 0.005,
       "note": "D08: допущение. 32 одновременных BL, проводимость DUT и заряд линий требуют отдельного расчёта",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.2
     },
     {
       "rail": "PROG_P15",
       "board": "Control",
       "block": "U1103 AD5761R + U1104 OPA192, FORM/WRITE",
       "avg": 0.02,
-      "peak": 0.06,
+      "peak": 0.078,
       "start": 0.015,
       "note": "D09: резерв до определения импульсов, нагрузки и скважности; учитывается также в родительской ±15 В",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.06
     },
     {
       "rail": "PROG_N15",
       "board": "Control",
       "block": "U1103 AD5761R + U1104 OPA192, FORM/WRITE",
       "avg": 0.02,
-      "peak": 0.06,
+      "peak": 0.078,
       "start": 0.015,
       "note": "D09: резерв до определения импульсов, нагрузки и скважности; учитывается также в родительской ±15 В",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.06
     },
     {
       "rail": "MAT_REF_PRE12",
       "board": "Control",
       "block": "U2000 ADR4550 и утечки",
       "avg": 0.002,
-      "peak": 0.003,
+      "peak": 0.0039000000000000003,
       "start": 0.002,
       "note": "D07: собственный ток опоры предварительно; выходная нагрузка MAT_ADC_REF учитывается отдельно",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.003
     },
     {
       "rail": "MAT_ADC_REF",
       "board": "Control",
       "block": "Опорная цепь ADC и компараторов",
       "avg": 0.001,
-      "peak": 0.005,
+      "peak": 0.006500000000000001,
       "start": 0.001,
       "note": "D07: допущение; динамический ток зарядки входа ADC и буфер ещё проверить",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.005
     },
     {
       "rail": "USB5",
       "board": "Control",
       "block": "U706 HD3SS3220 VDD5",
       "avg": 0.02,
-      "peak": 0.05,
+      "peak": 0.065,
       "start": 0.02,
       "note": "D10: резерв только контроллеру Type-C; внешняя нагрузка USB VBUS не разрешена и не учтена",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware"
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
+      "base_peak": 0.05
     }
   ],
   "rails": [
@@ -358,8 +390,32 @@
       "vmin": 3.15,
       "vmax": 3.45,
       "bounds": "D11: проектное окно ±5% от 3,3; проверить supervisor",
-      "cap_uF": 108.2,
+      "cap_uF": 108.4,
       "caprows": [
+        {
+          "ref": "C504",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "500_AON_3V3_BUCK.kicad_sch",
+          "project": "power",
+          "net": "AON_RAW"
+        },
+        {
+          "ref": "C505",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "500_AON_3V3_BUCK.kicad_sch",
+          "project": "power",
+          "net": "AON_RAW"
+        },
+        {
+          "ref": "C1101",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1100_AFE_NEGATIVE_15V.kicad_sch",
+          "project": "power",
+          "net": "AON"
+        },
         {
           "ref": "C1803",
           "uF": 4.7,
@@ -369,15 +425,7 @@
           "net": "AON"
         },
         {
-          "ref": "C2404",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "2400_PM_CONTROLLER.kicad_sch",
-          "project": "power",
-          "net": "AON"
-        },
-        {
-          "ref": "C2402",
+          "ref": "C2401",
           "uF": 0.1,
           "value": "100n",
           "sheet": "2400_PM_CONTROLLER.kicad_sch",
@@ -385,15 +433,7 @@
           "net": "AON"
         },
         {
-          "ref": "C2405",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "2400_PM_CONTROLLER.kicad_sch",
-          "project": "power",
-          "net": "AON"
-        },
-        {
-          "ref": "C2401",
+          "ref": "C2402",
           "uF": 0.1,
           "value": "100n",
           "sheet": "2400_PM_CONTROLLER.kicad_sch",
@@ -409,10 +449,34 @@
           "net": "AON"
         },
         {
+          "ref": "C2404",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "2400_PM_CONTROLLER.kicad_sch",
+          "project": "power",
+          "net": "AON"
+        },
+        {
+          "ref": "C2405",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "2400_PM_CONTROLLER.kicad_sch",
+          "project": "power",
+          "net": "AON"
+        },
+        {
           "ref": "C2501",
           "uF": 0.1,
           "value": "100n",
           "sheet": "2500_PM_WATCHDOGS.kicad_sch",
+          "project": "power",
+          "net": "AON"
+        },
+        {
+          "ref": "C2601",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "2600_PM_PERMIT_INTERLOCKS.kicad_sch",
           "project": "power",
           "net": "AON"
         },
@@ -426,14 +490,6 @@
         },
         {
           "ref": "C2603",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "2600_PM_PERMIT_INTERLOCKS.kicad_sch",
-          "project": "power",
-          "net": "AON"
-        },
-        {
-          "ref": "C2601",
           "uF": 0.1,
           "value": "100n",
           "sheet": "2600_PM_PERMIT_INTERLOCKS.kicad_sch",
@@ -457,7 +513,7 @@
           "net": "AON"
         },
         {
-          "ref": "C2802",
+          "ref": "C2801",
           "uF": 0.1,
           "value": "100n",
           "sheet": "2800_PM_ENABLE_GATES_AUXILIARY.kicad_sch",
@@ -465,7 +521,7 @@
           "net": "AON"
         },
         {
-          "ref": "C2801",
+          "ref": "C2802",
           "uF": 0.1,
           "value": "100n",
           "sheet": "2800_PM_ENABLE_GATES_AUXILIARY.kicad_sch",
@@ -505,14 +561,6 @@
           "net": "AON"
         },
         {
-          "ref": "C3103",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "3100_PM_COMMAND_READY.kicad_sch",
-          "project": "power",
-          "net": "AON"
-        },
-        {
           "ref": "C3101",
           "uF": 0.1,
           "value": "100n",
@@ -522,6 +570,14 @@
         },
         {
           "ref": "C3102",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "3100_PM_COMMAND_READY.kicad_sch",
+          "project": "power",
+          "net": "AON"
+        },
+        {
+          "ref": "C3103",
           "uF": 0.1,
           "value": "100n",
           "sheet": "3100_PM_COMMAND_READY.kicad_sch",
@@ -553,14 +609,6 @@
           "net": "AON"
         },
         {
-          "ref": "C3511",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "3500_MONITOR_INPUT_AON_USB_SYS.kicad_sch",
-          "project": "power",
-          "net": "AON"
-        },
-        {
           "ref": "C3505",
           "uF": 0.1,
           "value": "100n",
@@ -577,7 +625,15 @@
           "net": "AON"
         },
         {
-          "ref": "C3608",
+          "ref": "C3511",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "3500_MONITOR_INPUT_AON_USB_SYS.kicad_sch",
+          "project": "power",
+          "net": "AON"
+        },
+        {
+          "ref": "C3602",
           "uF": 0.1,
           "value": "100n",
           "sheet": "3600_MONITOR_FPGA_ANA_AFE.kicad_sch",
@@ -593,7 +649,7 @@
           "net": "AON"
         },
         {
-          "ref": "C3602",
+          "ref": "C3608",
           "uF": 0.1,
           "value": "100n",
           "sheet": "3600_MONITOR_FPGA_ANA_AFE.kicad_sch",
@@ -641,7 +697,7 @@
           "net": "AON"
         },
         {
-          "ref": "C3810",
+          "ref": "C3804",
           "uF": 0.1,
           "value": "100n",
           "sheet": "3800_MONITOR_DDR_PHY_ANALOG.kicad_sch",
@@ -657,7 +713,7 @@
           "net": "AON"
         },
         {
-          "ref": "C3804",
+          "ref": "C3810",
           "uF": 0.1,
           "value": "100n",
           "sheet": "3800_MONITOR_DDR_PHY_ANALOG.kicad_sch",
@@ -689,24 +745,13 @@
           "net": "AON"
         },
         {
-          "ref": "C504",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "500_AON_3V3_BUCK.kicad_sch",
+          "ref": "C4901",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "4900_POWER_CONTROL_INTERFACE.kicad_sch",
           "project": "power",
-          "net": "AON_RAW"
-        },
-        {
-          "ref": "C505",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "500_AON_3V3_BUCK.kicad_sch",
-          "project": "power",
-          "net": "AON_RAW"
+          "net": "AON"
         }
-      ],
-      "pins": [
-        1
       ],
       "consumers": [
         "Power:U1801 TPS51200DRCR",
@@ -746,7 +791,8 @@
         "Power:U3901 CD74HC4067PWR",
         "Power:U3902 CD74HC4067PWR",
         "Power:U4001 TLV9002IDGKR"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "SYS3V3",
@@ -767,6 +813,62 @@
       "cap_uF": 312.5,
       "caprows": [
         {
+          "ref": "C702",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "700_SYS_3V3.kicad_sch",
+          "project": "power",
+          "net": "SYS_RAW"
+        },
+        {
+          "ref": "C708",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "700_SYS_3V3.kicad_sch",
+          "project": "power",
+          "net": "SYS_RAW"
+        },
+        {
+          "ref": "C709",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "700_SYS_3V3.kicad_sch",
+          "project": "power",
+          "net": "SYS_RAW"
+        },
+        {
+          "ref": "C710",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "700_SYS_3V3.kicad_sch",
+          "project": "power",
+          "net": "SYS_RAW"
+        },
+        {
+          "ref": "C711",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "700_SYS_3V3.kicad_sch",
+          "project": "power",
+          "net": "SYS_RAW"
+        },
+        {
+          "ref": "C712",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "700_SYS_3V3.kicad_sch",
+          "project": "power",
+          "net": "SYS_RAW"
+        },
+        {
+          "ref": "C713",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "700_SYS_3V3.kicad_sch",
+          "project": "power",
+          "net": "SYS_RAW"
+        },
+        {
           "ref": "C2503",
           "uF": 0.1,
           "value": "100n",
@@ -783,143 +885,7 @@
           "net": "SYS3V3"
         },
         {
-          "ref": "C702",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "700_SYS_3V3.kicad_sch",
-          "project": "power",
-          "net": "SYS_RAW"
-        },
-        {
-          "ref": "C710",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "700_SYS_3V3.kicad_sch",
-          "project": "power",
-          "net": "SYS_RAW"
-        },
-        {
-          "ref": "C709",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "700_SYS_3V3.kicad_sch",
-          "project": "power",
-          "net": "SYS_RAW"
-        },
-        {
-          "ref": "C712",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "700_SYS_3V3.kicad_sch",
-          "project": "power",
-          "net": "SYS_RAW"
-        },
-        {
-          "ref": "C711",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "700_SYS_3V3.kicad_sch",
-          "project": "power",
-          "net": "SYS_RAW"
-        },
-        {
-          "ref": "C713",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "700_SYS_3V3.kicad_sch",
-          "project": "power",
-          "net": "SYS_RAW"
-        },
-        {
-          "ref": "C708",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "700_SYS_3V3.kicad_sch",
-          "project": "power",
-          "net": "SYS_RAW"
-        },
-        {
-          "ref": "C106",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
-          "project": "control",
-          "net": "SYS3V3"
-        },
-        {
           "ref": "C100",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
-          "project": "control",
-          "net": "SYS3V3"
-        },
-        {
-          "ref": "C102",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
-          "project": "control",
-          "net": "SYS3V3"
-        },
-        {
-          "ref": "C118",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
-          "project": "control",
-          "net": "SYS3V3"
-        },
-        {
-          "ref": "C113",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
-          "project": "control",
-          "net": "SYS3V3"
-        },
-        {
-          "ref": "C105",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
-          "project": "control",
-          "net": "SYS3V3"
-        },
-        {
-          "ref": "C129",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
-          "project": "control",
-          "net": "SYS3V3"
-        },
-        {
-          "ref": "C111",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
-          "project": "control",
-          "net": "SYS3V3"
-        },
-        {
-          "ref": "C110",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
-          "project": "control",
-          "net": "SYS3V3"
-        },
-        {
-          "ref": "C107",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
-          "project": "control",
-          "net": "SYS3V3"
-        },
-        {
-          "ref": "C112",
           "uF": 0.1,
           "value": "100n",
           "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
@@ -935,7 +901,55 @@
           "net": "SYS3V3"
         },
         {
+          "ref": "C102",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+          "project": "control",
+          "net": "SYS3V3"
+        },
+        {
+          "ref": "C103",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+          "project": "control",
+          "net": "SYS3V3"
+        },
+        {
           "ref": "C104",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+          "project": "control",
+          "net": "SYS3V3"
+        },
+        {
+          "ref": "C105",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+          "project": "control",
+          "net": "SYS3V3"
+        },
+        {
+          "ref": "C106",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+          "project": "control",
+          "net": "SYS3V3"
+        },
+        {
+          "ref": "C107",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+          "project": "control",
+          "net": "SYS3V3"
+        },
+        {
+          "ref": "C108",
           "uF": 0.1,
           "value": "100n",
           "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
@@ -951,23 +965,31 @@
           "net": "SYS3V3"
         },
         {
-          "ref": "C128",
-          "uF": 1.0,
-          "value": "1u",
+          "ref": "C110",
+          "uF": 0.1,
+          "value": "100n",
           "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
           "project": "control",
           "net": "SYS3V3"
         },
         {
-          "ref": "C117",
-          "uF": 4.7,
-          "value": "4.7u",
+          "ref": "C111",
+          "uF": 0.1,
+          "value": "100n",
           "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
           "project": "control",
           "net": "SYS3V3"
         },
         {
-          "ref": "C115",
+          "ref": "C112",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+          "project": "control",
+          "net": "SYS3V3"
+        },
+        {
+          "ref": "C113",
           "uF": 0.1,
           "value": "100n",
           "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
@@ -983,9 +1005,33 @@
           "net": "SYS3V3"
         },
         {
-          "ref": "C127",
+          "ref": "C115",
           "uF": 0.1,
           "value": "100n",
+          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+          "project": "control",
+          "net": "SYS3V3"
+        },
+        {
+          "ref": "C116",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+          "project": "control",
+          "net": "SYS3V3"
+        },
+        {
+          "ref": "C117",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
+          "project": "control",
+          "net": "SYS3V3"
+        },
+        {
+          "ref": "C118",
+          "uF": 4.7,
+          "value": "4.7u",
           "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
           "project": "control",
           "net": "SYS3V3"
@@ -1007,7 +1053,7 @@
           "net": "SYS3V3"
         },
         {
-          "ref": "C103",
+          "ref": "C127",
           "uF": 0.1,
           "value": "100n",
           "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
@@ -1015,26 +1061,18 @@
           "net": "SYS3V3"
         },
         {
-          "ref": "C108",
-          "uF": 0.1,
-          "value": "100n",
+          "ref": "C128",
+          "uF": 1.0,
+          "value": "1u",
           "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
           "project": "control",
           "net": "SYS3V3"
         },
         {
-          "ref": "C116",
+          "ref": "C129",
           "uF": 0.1,
           "value": "100n",
           "sheet": "100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch",
-          "project": "control",
-          "net": "SYS3V3"
-        },
-        {
-          "ref": "C202",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "200_MCU_FMC_AND_SDRAM.kicad_sch",
           "project": "control",
           "net": "SYS3V3"
         },
@@ -1055,15 +1093,23 @@
           "net": "SYS3V3"
         },
         {
-          "ref": "C207",
-          "uF": 4.7,
-          "value": "4.7u",
+          "ref": "C202",
+          "uF": 0.1,
+          "value": "100n",
           "sheet": "200_MCU_FMC_AND_SDRAM.kicad_sch",
           "project": "control",
           "net": "SYS3V3"
         },
         {
           "ref": "C203",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "200_MCU_FMC_AND_SDRAM.kicad_sch",
+          "project": "control",
+          "net": "SYS3V3"
+        },
+        {
+          "ref": "C204",
           "uF": 0.1,
           "value": "100n",
           "sheet": "200_MCU_FMC_AND_SDRAM.kicad_sch",
@@ -1087,9 +1133,9 @@
           "net": "SYS3V3"
         },
         {
-          "ref": "C204",
-          "uF": 0.1,
-          "value": "100n",
+          "ref": "C207",
+          "uF": 4.7,
+          "value": "4.7u",
           "sheet": "200_MCU_FMC_AND_SDRAM.kicad_sch",
           "project": "control",
           "net": "SYS3V3"
@@ -1098,14 +1144,6 @@
           "ref": "C300",
           "uF": 0.1,
           "value": "100n",
-          "sheet": "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch",
-          "project": "control",
-          "net": "SYS3V3"
-        },
-        {
-          "ref": "C303",
-          "uF": 10.0,
-          "value": "10u",
           "sheet": "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch",
           "project": "control",
           "net": "SYS3V3"
@@ -1127,6 +1165,14 @@
           "net": "SYS3V3"
         },
         {
+          "ref": "C303",
+          "uF": 10.0,
+          "value": "10u",
+          "sheet": "300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch",
+          "project": "control",
+          "net": "SYS3V3"
+        },
+        {
           "ref": "C400",
           "uF": 0.1,
           "value": "100n",
@@ -1143,10 +1189,6 @@
           "net": "SYS3V3"
         }
       ],
-      "pins": [
-        3,
-        5
-      ],
       "consumers": [
         "Control:U100 STM32H745IIT6",
         "Control:U200 IS42S16320F-7TLI",
@@ -1159,7 +1201,8 @@
         "Control:Y100 ASV-25.000MHZ-EJ-T",
         "Power:U2502 TPS3851H33EDRBR",
         "Power:U3301 74LVC125APW,118"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "USB5",
@@ -1180,7 +1223,7 @@
       "cap_uF": 94.1,
       "caprows": [
         {
-          "ref": "C605",
+          "ref": "C604",
           "uF": 47.0,
           "value": "47u",
           "sheet": "600_USB_5V.kicad_sch",
@@ -1188,7 +1231,7 @@
           "net": "USB_RAW"
         },
         {
-          "ref": "C604",
+          "ref": "C605",
           "uF": 47.0,
           "value": "47u",
           "sheet": "600_USB_5V.kicad_sch",
@@ -1204,12 +1247,10 @@
           "net": "USB5"
         }
       ],
-      "pins": [
-        49
-      ],
       "consumers": [
         "Control:U706 HD3SS3220IRNHR"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "FPGA5V5",
@@ -1230,111 +1271,15 @@
       "cap_uF": 427.6,
       "caprows": [
         {
-          "ref": "C1202",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "1200_POWER_MONITOR.kicad_sch",
+          "ref": "C802",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "800_FPGA_INTERMEDIATE_5V5.kicad_sch",
           "project": "power",
-          "net": "FPGA5V5"
+          "net": "FPGA_RAW"
         },
         {
-          "ref": "C1201",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "1200_POWER_MONITOR.kicad_sch",
-          "project": "power",
-          "net": "FPGA5V5"
-        },
-        {
-          "ref": "C1204",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1200_POWER_MONITOR.kicad_sch",
-          "project": "power",
-          "net": "FPGA5V5"
-        },
-        {
-          "ref": "C1303",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_FPGA_AUX_1V8.kicad_sch",
-          "project": "power",
-          "net": "FPGA5V5"
-        },
-        {
-          "ref": "C1302",
-          "uF": 10.0,
-          "value": "10u",
-          "sheet": "1300_FPGA_AUX_1V8.kicad_sch",
-          "project": "power",
-          "net": "FPGA5V5"
-        },
-        {
-          "ref": "C1403",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1400_FPGA_AUX_2V5.kicad_sch",
-          "project": "power",
-          "net": "FPGA5V5"
-        },
-        {
-          "ref": "C1402",
-          "uF": 10.0,
-          "value": "10u",
-          "sheet": "1400_FPGA_AUX_2V5.kicad_sch",
-          "project": "power",
-          "net": "FPGA5V5"
-        },
-        {
-          "ref": "C1503",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_FPGA_IO_3V3.kicad_sch",
-          "project": "power",
-          "net": "FPGA5V5"
-        },
-        {
-          "ref": "C1502",
-          "uF": 10.0,
-          "value": "10u",
-          "sheet": "1500_FPGA_IO_3V3.kicad_sch",
-          "project": "power",
-          "net": "FPGA5V5"
-        },
-        {
-          "ref": "C1603",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1600_DDR_1V35.kicad_sch",
-          "project": "power",
-          "net": "FPGA5V5"
-        },
-        {
-          "ref": "C1602",
-          "uF": 10.0,
-          "value": "10u",
-          "sheet": "1600_DDR_1V35.kicad_sch",
-          "project": "power",
-          "net": "FPGA5V5"
-        },
-        {
-          "ref": "C1703",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1700_PHY_1V05.kicad_sch",
-          "project": "power",
-          "net": "FPGA5V5"
-        },
-        {
-          "ref": "C1702",
-          "uF": 10.0,
-          "value": "10u",
-          "sheet": "1700_PHY_1V05.kicad_sch",
-          "project": "power",
-          "net": "FPGA5V5"
-        },
-        {
-          "ref": "C811",
+          "ref": "C808",
           "uF": 47.0,
           "value": "47u",
           "sheet": "800_FPGA_INTERMEDIATE_5V5.kicad_sch",
@@ -1350,14 +1295,6 @@
           "net": "FPGA_RAW"
         },
         {
-          "ref": "C808",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "800_FPGA_INTERMEDIATE_5V5.kicad_sch",
-          "project": "power",
-          "net": "FPGA_RAW"
-        },
-        {
           "ref": "C810",
           "uF": 47.0,
           "value": "47u",
@@ -1366,15 +1303,7 @@
           "net": "FPGA_RAW"
         },
         {
-          "ref": "C802",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "800_FPGA_INTERMEDIATE_5V5.kicad_sch",
-          "project": "power",
-          "net": "FPGA_RAW"
-        },
-        {
-          "ref": "C813",
+          "ref": "C811",
           "uF": 47.0,
           "value": "47u",
           "sheet": "800_FPGA_INTERMEDIATE_5V5.kicad_sch",
@@ -1388,9 +1317,120 @@
           "sheet": "800_FPGA_INTERMEDIATE_5V5.kicad_sch",
           "project": "power",
           "net": "FPGA_RAW"
+        },
+        {
+          "ref": "C813",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "800_FPGA_INTERMEDIATE_5V5.kicad_sch",
+          "project": "power",
+          "net": "FPGA_RAW"
+        },
+        {
+          "ref": "C1201",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "1200_POWER_MONITOR.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
+        },
+        {
+          "ref": "C1202",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "1200_POWER_MONITOR.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
+        },
+        {
+          "ref": "C1204",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1200_POWER_MONITOR.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
+        },
+        {
+          "ref": "C1302",
+          "uF": 10.0,
+          "value": "10u",
+          "sheet": "1300_FPGA_AUX_1V8.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
+        },
+        {
+          "ref": "C1303",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_FPGA_AUX_1V8.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
+        },
+        {
+          "ref": "C1402",
+          "uF": 10.0,
+          "value": "10u",
+          "sheet": "1400_FPGA_AUX_2V5.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
+        },
+        {
+          "ref": "C1403",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1400_FPGA_AUX_2V5.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
+        },
+        {
+          "ref": "C1502",
+          "uF": 10.0,
+          "value": "10u",
+          "sheet": "1500_FPGA_IO_3V3.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
+        },
+        {
+          "ref": "C1503",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_FPGA_IO_3V3.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
+        },
+        {
+          "ref": "C1602",
+          "uF": 10.0,
+          "value": "10u",
+          "sheet": "1600_DDR_1V35.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
+        },
+        {
+          "ref": "C1603",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1600_DDR_1V35.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
+        },
+        {
+          "ref": "C1702",
+          "uF": 10.0,
+          "value": "10u",
+          "sheet": "1700_PHY_1V05.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
+        },
+        {
+          "ref": "C1703",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1700_PHY_1V05.kicad_sch",
+          "project": "power",
+          "net": "FPGA5V5"
         }
       ],
-      "pins": [],
       "consumers": [
         "Power:U1201 TPS568215RNNR",
         "Power:U1301 TPS62130ARGTR",
@@ -1398,7 +1438,8 @@
         "Power:U1501 TPS62130ARGTR",
         "Power:U1601 TPS62130ARGTR",
         "Power:U1701 TPS62130ARGTR"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "CORE1V0",
@@ -1419,31 +1460,7 @@
       "cap_uF": 1126.39,
       "caprows": [
         {
-          "ref": "C1212",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "1200_POWER_MONITOR.kicad_sch",
-          "project": "power",
-          "net": "CORE_RAW"
-        },
-        {
-          "ref": "C1210",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "1200_POWER_MONITOR.kicad_sch",
-          "project": "power",
-          "net": "CORE_RAW"
-        },
-        {
           "ref": "C1207",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "1200_POWER_MONITOR.kicad_sch",
-          "project": "power",
-          "net": "CORE_RAW"
-        },
-        {
-          "ref": "C1209",
           "uF": 47.0,
           "value": "47u",
           "sheet": "1200_POWER_MONITOR.kicad_sch",
@@ -1459,6 +1476,22 @@
           "net": "CORE_RAW"
         },
         {
+          "ref": "C1209",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "1200_POWER_MONITOR.kicad_sch",
+          "project": "power",
+          "net": "CORE_RAW"
+        },
+        {
+          "ref": "C1210",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "1200_POWER_MONITOR.kicad_sch",
+          "project": "power",
+          "net": "CORE_RAW"
+        },
+        {
           "ref": "C1211",
           "uF": 47.0,
           "value": "47u",
@@ -1467,60 +1500,12 @@
           "net": "CORE_RAW"
         },
         {
-          "ref": "C504",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
-        },
-        {
-          "ref": "C538",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
-        },
-        {
-          "ref": "C514",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
-        },
-        {
-          "ref": "C506",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
-        },
-        {
-          "ref": "C515",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
-        },
-        {
-          "ref": "C518",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
-        },
-        {
-          "ref": "C508",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
+          "ref": "C1212",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "1200_POWER_MONITOR.kicad_sch",
+          "project": "power",
+          "net": "CORE_RAW"
         },
         {
           "ref": "C500",
@@ -1531,7 +1516,7 @@
           "net": "CORE1V0"
         },
         {
-          "ref": "C507",
+          "ref": "C501",
           "uF": 4.7,
           "value": "4.7u",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
@@ -1539,15 +1524,23 @@
           "net": "CORE1V0"
         },
         {
-          "ref": "C526",
-          "uF": 0.47,
-          "value": "470n",
+          "ref": "C502",
+          "uF": 4.7,
+          "value": "4.7u",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "CORE1V0"
         },
         {
-          "ref": "C510",
+          "ref": "C503",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C504",
           "uF": 4.7,
           "value": "4.7u",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
@@ -1563,49 +1556,41 @@
           "net": "CORE1V0"
         },
         {
-          "ref": "C522",
-          "uF": 0.47,
-          "value": "470n",
+          "ref": "C506",
+          "uF": 4.7,
+          "value": "4.7u",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "CORE1V0"
         },
         {
-          "ref": "C524",
-          "uF": 0.47,
-          "value": "470n",
+          "ref": "C507",
+          "uF": 4.7,
+          "value": "4.7u",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "CORE1V0"
         },
         {
-          "ref": "C525",
-          "uF": 0.47,
-          "value": "470n",
+          "ref": "C508",
+          "uF": 4.7,
+          "value": "4.7u",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "CORE1V0"
         },
         {
-          "ref": "C516",
-          "uF": 0.47,
-          "value": "470n",
+          "ref": "C509",
+          "uF": 4.7,
+          "value": "4.7u",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "CORE1V0"
         },
         {
-          "ref": "C523",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
-        },
-        {
-          "ref": "C513",
-          "uF": 0.47,
-          "value": "470n",
+          "ref": "C510",
+          "uF": 4.7,
+          "value": "4.7u",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "CORE1V0"
@@ -1627,16 +1612,48 @@
           "net": "CORE1V0"
         },
         {
-          "ref": "C521",
-          "uF": 0.47,
+          "ref": "C513",
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "CORE1V0"
         },
         {
-          "ref": "C539",
-          "uF": 0.47,
+          "ref": "C514",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C515",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C516",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C517",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C518",
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
@@ -1644,7 +1661,63 @@
         },
         {
           "ref": "C519",
-          "uF": 0.47,
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C520",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C521",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C522",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C523",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C524",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C525",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C526",
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
@@ -1659,71 +1732,34 @@
           "net": "CORE1V0"
         },
         {
-          "ref": "C509",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
-        },
-        {
-          "ref": "C520",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
-        },
-        {
-          "ref": "C501",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
-        },
-        {
-          "ref": "C503",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
-        },
-        {
-          "ref": "C502",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "CORE1V0"
-        },
-        {
           "ref": "C537",
-          "uF": 0.47,
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "CORE1V0"
         },
         {
-          "ref": "C517",
-          "uF": 0.47,
+          "ref": "C538",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "CORE1V0"
+        },
+        {
+          "ref": "C539",
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "CORE1V0"
         }
       ],
-      "pins": [
-        13,
-        15,
-        17,
-        19
-      ],
       "consumers": [
         "Control:U500 XC7A200T-2FBG484I"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "AUX1V8",
@@ -1760,25 +1796,9 @@
           "net": "AUX1V8"
         },
         {
-          "ref": "C530",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "AUX1V8"
-        },
-        {
           "ref": "C528",
           "uF": 4.7,
           "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "AUX1V8"
-        },
-        {
-          "ref": "C534",
-          "uF": 0.47,
-          "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "AUX1V8"
@@ -1792,8 +1812,16 @@
           "net": "AUX1V8"
         },
         {
-          "ref": "C533",
-          "uF": 0.47,
+          "ref": "C530",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "AUX1V8"
+        },
+        {
+          "ref": "C531",
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
@@ -1801,15 +1829,23 @@
         },
         {
           "ref": "C532",
-          "uF": 0.47,
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "AUX1V8"
         },
         {
-          "ref": "C531",
-          "uF": 0.47,
+          "ref": "C533",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "AUX1V8"
+        },
+        {
+          "ref": "C534",
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
@@ -1817,20 +1853,17 @@
         },
         {
           "ref": "C535",
-          "uF": 0.47,
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "AUX1V8"
         }
       ],
-      "pins": [
-        21,
-        23
-      ],
       "consumers": [
         "Control:U500 XC7A200T-2FBG484I"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "AUX2V5",
@@ -1859,8 +1892,8 @@
           "net": "AUX25_RAW"
         }
       ],
-      "pins": [],
-      "consumers": []
+      "consumers": [],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "IO3V3",
@@ -1889,6 +1922,534 @@
           "net": "IO33_RAW"
         },
         {
+          "ref": "C401",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C540",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C541",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C542",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C543",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C544",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C545",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C546",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C547",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C548",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C549",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C550",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C551",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C552",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C553",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C554",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C555",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C556",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C557",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C558",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C559",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C560",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C561",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C562",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C563",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C564",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C565",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C566",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C567",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C568",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C600",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "600_FPGA_CONFIGURATION_AND_XADC.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C603",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "600_FPGA_CONFIGURATION_AND_XADC.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C700",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C701",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C702",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C703",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C704",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C705",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C706",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C711",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C712",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C715",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C720",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C721",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C722",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C723",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C724",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C725",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C726",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C732",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C800",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C900",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C901",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C902",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C903",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C904",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C905",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C906",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C910",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C913",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C926",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C927",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C928",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C929",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C930",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C931",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
           "ref": "C1002",
           "uF": 0.1,
           "value": "100n",
@@ -1897,7 +2458,7 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1016",
+          "ref": "C1003",
           "uF": 10.0,
           "value": "10u",
           "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
@@ -1913,9 +2474,17 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1003",
+          "ref": "C1016",
           "uF": 10.0,
           "value": "10u",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1028",
+          "uF": 0.1,
+          "value": "100n",
           "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
           "project": "control",
           "net": "IO3V3"
@@ -1945,10 +2514,10 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1028",
+          "ref": "C1102",
           "uF": 0.1,
           "value": "100n",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
           "project": "control",
           "net": "IO3V3"
         },
@@ -1969,41 +2538,9 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1102",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1206",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
           "ref": "C1200",
           "uF": 4.7,
           "value": "4.7u",
-          "sheet": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1203",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1204",
-          "uF": 0.47,
-          "value": "470n",
           "sheet": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
           "project": "control",
           "net": "IO3V3"
@@ -2017,23 +2554,95 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1205",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
           "ref": "C1202",
-          "uF": 0.47,
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
           "project": "control",
           "net": "IO3V3"
         },
         {
-          "ref": "C1348",
+          "ref": "C1203",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1204",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1205",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1206",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "1200_DAC_FPGA_CONTROL_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1300",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1301",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1302",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1303",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1304",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1305",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1306",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
@@ -2041,7 +2650,7 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1358",
+          "ref": "C1307",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
@@ -2049,7 +2658,71 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1341",
+          "ref": "C1308",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1309",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1310",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1311",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1312",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1313",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1314",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1315",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1316",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
@@ -2073,14 +2746,6 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1351",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
           "ref": "C1319",
           "uF": 0.1,
           "value": "100n",
@@ -2089,71 +2754,7 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1326",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1329",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1316",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1307",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1327",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1306",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1328",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1314",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1353",
+          "ref": "C1320",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
@@ -2169,46 +2770,6 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1324",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1349",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1339",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1305",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1332",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
           "ref": "C1322",
           "uF": 0.1,
           "value": "100n",
@@ -2217,7 +2778,7 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1313",
+          "ref": "C1323",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
@@ -2225,23 +2786,7 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1304",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1301",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1311",
+          "ref": "C1324",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
@@ -2257,7 +2802,127 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1352",
+          "ref": "C1326",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1327",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1328",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1329",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1330",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1331",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1332",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1333",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1334",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1335",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1336",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1337",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1338",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1339",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1340",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1341",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
@@ -2266,6 +2931,94 @@
         },
         {
           "ref": "C1342",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1343",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1344",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1345",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1346",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1347",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1348",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1349",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1350",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1351",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1352",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
+          "ref": "C1353",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
@@ -2289,55 +3042,7 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1335",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1350",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1333",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1309",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1312",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1347",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1336",
+          "ref": "C1356",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
@@ -2353,15 +3058,7 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1300",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1320",
+          "ref": "C1358",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
@@ -2369,138 +3066,26 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1356",
+          "ref": "C1400",
           "uF": 0.1,
           "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "sheet": "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch",
           "project": "control",
           "net": "IO3V3"
         },
         {
-          "ref": "C1346",
+          "ref": "C1401",
           "uF": 0.1,
           "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "sheet": "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch",
           "project": "control",
           "net": "IO3V3"
         },
         {
-          "ref": "C1310",
+          "ref": "C1402",
           "uF": 0.1,
           "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1315",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1340",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1338",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1344",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1302",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1343",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1303",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1345",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1331",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1337",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1308",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1323",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1330",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1334",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1300_MATRIX_FPGA_CONTROL_AND_INTERLOCKS.kicad_sch",
+          "sheet": "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch",
           "project": "control",
           "net": "IO3V3"
         },
@@ -2521,7 +3106,7 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1408",
+          "ref": "C1405",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch",
@@ -2537,14 +3122,6 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1409",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
           "ref": "C1407",
           "uF": 0.1,
           "value": "100n",
@@ -2553,7 +3130,7 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1405",
+          "ref": "C1408",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch",
@@ -2561,23 +3138,7 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C1400",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1402",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C1401",
+          "ref": "C1409",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1400_MATRIX_SERIAL_CONTROL_REGISTERS.kicad_sch",
@@ -2609,6 +3170,14 @@
           "net": "IO3V3"
         },
         {
+          "ref": "C2200",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "IO3V3"
+        },
+        {
           "ref": "C2201",
           "uF": 0.1,
           "value": "100n",
@@ -2625,554 +3194,13 @@
           "net": "IO3V3"
         },
         {
-          "ref": "C2200",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
           "ref": "C2203",
           "uF": 0.1,
           "value": "100n",
           "sheet": "2200_PROTECTION_MATRIX_TRIP_AND_FAULT_INTERFACE.kicad_sch",
           "project": "control",
           "net": "IO3V3"
-        },
-        {
-          "ref": "C401",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C555",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C551",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C558",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C557",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C563",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C545",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C566",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C560",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C559",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C562",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C554",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C565",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C556",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C540",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C544",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C552",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C549",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C548",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C547",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C561",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C541",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C542",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C543",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C564",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C550",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C568",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C567",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C553",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C546",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C603",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "600_FPGA_CONFIGURATION_AND_XADC.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C600",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "600_FPGA_CONFIGURATION_AND_XADC.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C700",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C725",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C702",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C711",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C703",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C723",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C705",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C732",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C704",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C712",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C726",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C724",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C701",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C722",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C721",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C706",
-          "uF": 47.0,
-          "value": "47u",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C715",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C720",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "700_FPGA_USB3_FIFO_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C800",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C904",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C930",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C910",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C913",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C929",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C927",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C931",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C902",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C926",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C900",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C905",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C901",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C906",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C903",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
-        },
-        {
-          "ref": "C928",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "IO3V3"
         }
-      ],
-      "pins": [
-        7,
-        9,
-        11
       ],
       "consumers": [
         "Control:U1000 AD5676RBRUZ",
@@ -3262,7 +3290,8 @@
         "Control:U902 DP83867IRRGZR",
         "Control:U903 TLV75525PDBVR",
         "Control:Y800 SiT9121AI-2B2-33E200.000000"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "DDR1V35",
@@ -3280,16 +3309,8 @@
       "vmin": 1.2825,
       "vmax": 1.4175,
       "bounds": "AMD DS181 ±5%; полную проверку Micron дополнить",
-      "cap_uF": 197.92,
+      "cap_uF": 197.92000000000002,
       "caprows": [
-        {
-          "ref": "C1801",
-          "uF": 10.0,
-          "value": "10u",
-          "sheet": "1800_DDR_VTT_REFERENCE.kicad_sch",
-          "project": "power",
-          "net": "DDR1V35"
-        },
         {
           "ref": "C1604",
           "uF": 47.0,
@@ -3299,7 +3320,15 @@
           "net": "DDR_RAW"
         },
         {
-          "ref": "C576",
+          "ref": "C1801",
+          "uF": 10.0,
+          "value": "10u",
+          "sheet": "1800_DDR_VTT_REFERENCE.kicad_sch",
+          "project": "power",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C569",
           "uF": 4.7,
           "value": "4.7u",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
@@ -3315,8 +3344,32 @@
           "net": "DDR1V35"
         },
         {
+          "ref": "C571",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
           "ref": "C572",
-          "uF": 0.47,
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C573",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C574",
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
@@ -3331,17 +3384,9 @@
           "net": "DDR1V35"
         },
         {
-          "ref": "C578",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C580",
-          "uF": 0.47,
-          "value": "470n",
+          "ref": "C576",
+          "uF": 4.7,
+          "value": "4.7u",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "DDR1V35"
@@ -3355,24 +3400,8 @@
           "net": "DDR1V35"
         },
         {
-          "ref": "C569",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C574",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C581",
-          "uF": 0.47,
+          "ref": "C578",
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
@@ -3380,169 +3409,25 @@
         },
         {
           "ref": "C579",
-          "uF": 0.47,
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "DDR1V35"
         },
         {
-          "ref": "C571",
-          "uF": 0.47,
+          "ref": "C580",
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
           "project": "control",
           "net": "DDR1V35"
         },
         {
-          "ref": "C573",
-          "uF": 0.47,
+          "ref": "C581",
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "500_FPGA_POWER_AND_DECOUPLING.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C810",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C824",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C823",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C816",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C832",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C811",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C822",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C808",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C825",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C830",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C806",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C828",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C815",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C818",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C831",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C814",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C829",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C805",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
           "project": "control",
           "net": "DDR1V35"
         },
@@ -3550,14 +3435,6 @@
           "ref": "C803",
           "uF": 4.7,
           "value": "4.7u",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C807",
-          "uF": 0.47,
-          "value": "470n",
           "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
           "project": "control",
           "net": "DDR1V35"
@@ -3571,15 +3448,111 @@
           "net": "DDR1V35"
         },
         {
-          "ref": "C812",
-          "uF": 0.47,
+          "ref": "C805",
+          "uF": 0.47000000000000003,
           "value": "470n",
           "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
           "project": "control",
           "net": "DDR1V35"
         },
         {
-          "ref": "C833",
+          "ref": "C806",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C807",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C808",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C809",
+          "uF": 47.0,
+          "value": "47u",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C810",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C811",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C812",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C813",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C814",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C815",
+          "uF": 0.47000000000000003,
+          "value": "470n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C816",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C817",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C818",
           "uF": 0.1,
           "value": "100n",
           "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
@@ -3603,9 +3576,41 @@
           "net": "DDR1V35"
         },
         {
-          "ref": "C809",
-          "uF": 47.0,
-          "value": "47u",
+          "ref": "C821",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C822",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C823",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C824",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C825",
+          "uF": 0.1,
+          "value": "100n",
           "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
           "project": "control",
           "net": "DDR1V35"
@@ -3619,31 +3624,55 @@
           "net": "DDR1V35"
         },
         {
-          "ref": "C821",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C817",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
-          "ref": "C813",
-          "uF": 0.47,
-          "value": "470n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR1V35"
-        },
-        {
           "ref": "C827",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C828",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C829",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C830",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C831",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C832",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR1V35"
+        },
+        {
+          "ref": "C833",
           "uF": 0.1,
           "value": "100n",
           "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
@@ -3651,16 +3680,12 @@
           "net": "DDR1V35"
         }
       ],
-      "pins": [
-        25,
-        27,
-        29
-      ],
       "consumers": [
         "Control:U500 XC7A200T-2FBG484I",
         "Control:U800 MT41K256M16TW-107:P",
         "Power:U1801 TPS51200DRCR"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "PHY1V05",
@@ -3689,7 +3714,55 @@
           "net": "PHY_RAW"
         },
         {
+          "ref": "C912",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "PHY1V05"
+        },
+        {
+          "ref": "C918",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "PHY1V05"
+        },
+        {
+          "ref": "C919",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "PHY1V05"
+        },
+        {
+          "ref": "C920",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "PHY1V05"
+        },
+        {
           "ref": "C921",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "PHY1V05"
+        },
+        {
+          "ref": "C922",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "PHY1V05"
+        },
+        {
+          "ref": "C923",
           "uF": 1.0,
           "value": "1u",
           "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
@@ -3711,62 +3784,12 @@
           "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
           "project": "control",
           "net": "PHY1V05"
-        },
-        {
-          "ref": "C920",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "PHY1V05"
-        },
-        {
-          "ref": "C923",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "PHY1V05"
-        },
-        {
-          "ref": "C919",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "PHY1V05"
-        },
-        {
-          "ref": "C922",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "PHY1V05"
-        },
-        {
-          "ref": "C912",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "PHY1V05"
-        },
-        {
-          "ref": "C918",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "PHY1V05"
         }
-      ],
-      "pins": [
-        35
       ],
       "consumers": [
         "Control:U902 DP83867IRRGZR"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "VTT",
@@ -3787,7 +3810,7 @@
       "cap_uF": 30.0,
       "caprows": [
         {
-          "ref": "C1806",
+          "ref": "C1805",
           "uF": 10.0,
           "value": "10u",
           "sheet": "1800_DDR_VTT_REFERENCE.kicad_sch",
@@ -3795,7 +3818,7 @@
           "net": "VTT"
         },
         {
-          "ref": "C1805",
+          "ref": "C1806",
           "uF": 10.0,
           "value": "10u",
           "sheet": "1800_DDR_VTT_REFERENCE.kicad_sch",
@@ -3811,10 +3834,8 @@
           "net": "VTT"
         }
       ],
-      "pins": [
-        31
-      ],
-      "consumers": []
+      "consumers": [],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "DDR_VREF",
@@ -3843,14 +3864,6 @@
           "net": "DDR_VREF"
         },
         {
-          "ref": "C836",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
-          "project": "control",
-          "net": "DDR_VREF"
-        },
-        {
           "ref": "C834",
           "uF": 0.1,
           "value": "100n",
@@ -3867,6 +3880,14 @@
           "net": "DDR_VREF"
         },
         {
+          "ref": "C836",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "800_FPGA_DDR3L_AND_REFERENCE_CLOCK.kicad_sch",
+          "project": "control",
+          "net": "DDR_VREF"
+        },
+        {
           "ref": "C837",
           "uF": 0.1,
           "value": "100n",
@@ -3875,13 +3896,11 @@
           "net": "DDR_VREF"
         }
       ],
-      "pins": [
-        33
-      ],
       "consumers": [
         "Control:U500 XC7A200T-2FBG484I",
         "Control:U800 MT41K256M16TW-107:P"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "ANA6",
@@ -3926,10 +3945,10 @@
           "net": "ANA6"
         }
       ],
-      "pins": [],
       "consumers": [
         "Power:U1901 TPS7A9101DSKR"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "ANA5",
@@ -3966,6 +3985,14 @@
           "net": "ANA5"
         },
         {
+          "ref": "C1000",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "ANA5"
+        },
+        {
           "ref": "C1001",
           "uF": 10.0,
           "value": "10u",
@@ -3974,9 +4001,9 @@
           "net": "ANA5"
         },
         {
-          "ref": "C1040",
-          "uF": 10.0,
-          "value": "10u",
+          "ref": "C1013",
+          "uF": 0.1,
+          "value": "100n",
           "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
           "project": "control",
           "net": "ANA5"
@@ -3990,23 +4017,7 @@
           "net": "ANA5"
         },
         {
-          "ref": "C1039",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "ANA5"
-        },
-        {
-          "ref": "C1000",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "ANA5"
-        },
-        {
-          "ref": "C1013",
+          "ref": "C1026",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
@@ -4022,9 +4033,17 @@
           "net": "ANA5"
         },
         {
-          "ref": "C1026",
+          "ref": "C1039",
           "uF": 0.1,
           "value": "100n",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "ANA5"
+        },
+        {
+          "ref": "C1040",
+          "uF": 10.0,
+          "value": "10u",
           "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
           "project": "control",
           "net": "ANA5"
@@ -4054,24 +4073,21 @@
           "net": "ANA5"
         },
         {
-          "ref": "C2013",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
-          "project": "control",
-          "net": "ANA5"
-        },
-        {
           "ref": "C2005",
           "uF": 0.1,
           "value": "100n",
           "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
           "project": "control",
           "net": "ANA5"
+        },
+        {
+          "ref": "C2013",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
+          "project": "control",
+          "net": "ANA5"
         }
-      ],
-      "pins": [
-        37
       ],
       "consumers": [
         "Control:U1000 AD5676RBRUZ",
@@ -4082,7 +4098,8 @@
         "Control:U2001 OPA197",
         "Control:U2003 THP210",
         "Power:U2001 TPS7A9101DSKR"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "ANA3V3",
@@ -4119,12 +4136,10 @@
           "net": "ANA3V3"
         }
       ],
-      "pins": [
-        39
-      ],
       "consumers": [
         "Control:U2005 TLV75518P"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "P15",
@@ -4169,9 +4184,41 @@
           "net": "P15_RAW"
         },
         {
+          "ref": "C1005",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
           "ref": "C1006",
           "uF": 4.7,
           "value": "4.7u",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1009",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1010",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1018",
+          "uF": 0.1,
+          "value": "100n",
           "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
           "project": "control",
           "net": "P15"
@@ -4185,7 +4232,7 @@
           "net": "P15"
         },
         {
-          "ref": "C1005",
+          "ref": "C1022",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
@@ -4193,9 +4240,25 @@
           "net": "P15"
         },
         {
-          "ref": "C1022",
+          "ref": "C1023",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1031",
           "uF": 0.1,
           "value": "100n",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1032",
+          "uF": 4.7,
+          "value": "4.7u",
           "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
           "project": "control",
           "net": "P15"
@@ -4217,14 +4280,6 @@
           "net": "P15"
         },
         {
-          "ref": "C1018",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
           "ref": "C1044",
           "uF": 0.1,
           "value": "100n",
@@ -4233,55 +4288,7 @@
           "net": "P15"
         },
         {
-          "ref": "C1010",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1031",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1009",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1032",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1049",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
           "ref": "C1045",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1023",
           "uF": 4.7,
           "value": "4.7u",
           "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
@@ -4297,7 +4304,15 @@
           "net": "P15"
         },
         {
-          "ref": "C1109",
+          "ref": "C1049",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1105",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
@@ -4313,6 +4328,14 @@
           "net": "P15"
         },
         {
+          "ref": "C1109",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
           "ref": "C1110",
           "uF": 4.7,
           "value": "4.7u",
@@ -4321,151 +4344,7 @@
           "net": "P15"
         },
         {
-          "ref": "C1105",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1516",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1541",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
           "ref": "C1500",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1525",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1512",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1510",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1522",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1518",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1542",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1520",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1514",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1531",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1528",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1508",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1537",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1526",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1505",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1523",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
@@ -4481,6 +4360,118 @@
           "net": "P15"
         },
         {
+          "ref": "C1504",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1505",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1508",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1510",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1512",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1514",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1516",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1518",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1520",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1522",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1523",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1525",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1526",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1528",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
           "ref": "C1530",
           "uF": 0.1,
           "value": "100n",
@@ -4489,23 +4480,15 @@
           "net": "P15"
         },
         {
+          "ref": "C1531",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
           "ref": "C1533",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1539",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C1504",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
@@ -4521,7 +4504,39 @@
           "net": "P15"
         },
         {
-          "ref": "C1604",
+          "ref": "C1537",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1539",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1541",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1542",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1600",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING.kicad_sch",
@@ -4537,6 +4552,14 @@
           "net": "P15"
         },
         {
+          "ref": "C1604",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
           "ref": "C1606",
           "uF": 0.1,
           "value": "100n",
@@ -4545,15 +4568,15 @@
           "net": "P15"
         },
         {
-          "ref": "C1600",
+          "ref": "C1700",
           "uF": 0.1,
           "value": "100n",
-          "sheet": "1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING.kicad_sch",
+          "sheet": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
           "project": "control",
           "net": "P15"
         },
         {
-          "ref": "C1700",
+          "ref": "C1702",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
@@ -4577,14 +4600,6 @@
           "net": "P15"
         },
         {
-          "ref": "C1702",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
           "ref": "C1708",
           "uF": 0.1,
           "value": "100n",
@@ -4593,7 +4608,7 @@
           "net": "P15"
         },
         {
-          "ref": "C1917",
+          "ref": "C1900",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
@@ -4609,14 +4624,6 @@
           "net": "P15"
         },
         {
-          "ref": "C1915",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
           "ref": "C1905",
           "uF": 0.1,
           "value": "100n",
@@ -4625,7 +4632,15 @@
           "net": "P15"
         },
         {
-          "ref": "C1900",
+          "ref": "C1915",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C1917",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
@@ -4641,6 +4656,14 @@
           "net": "P15"
         },
         {
+          "ref": "C2003",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
           "ref": "C2015",
           "uF": 1.0,
           "value": "1u",
@@ -4649,10 +4672,26 @@
           "net": "P15"
         },
         {
-          "ref": "C2003",
+          "ref": "C2100",
           "uF": 0.1,
           "value": "100n",
-          "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
+          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C2104",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+          "project": "control",
+          "net": "P15"
+        },
+        {
+          "ref": "C2106",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
           "project": "control",
           "net": "P15"
         },
@@ -4673,7 +4712,7 @@
           "net": "P15"
         },
         {
-          "ref": "C2104",
+          "ref": "C2113",
           "uF": 0.1,
           "value": "100n",
           "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
@@ -4689,40 +4728,13 @@
           "net": "P15"
         },
         {
-          "ref": "C2106",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
-          "ref": "C2100",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
-          "project": "control",
-          "net": "P15"
-        },
-        {
           "ref": "C2117",
           "uF": 0.1,
           "value": "100n",
           "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
           "project": "control",
           "net": "P15"
-        },
-        {
-          "ref": "C2113",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
-          "project": "control",
-          "net": "P15"
         }
-      ],
-      "pins": [
-        41
       ],
       "consumers": [
         "Control:U1001 OPA4192IPWR",
@@ -4778,36 +4790,29 @@
         "Control:U2106 OPA4197",
         "Control:U2107 OPA4197",
         "Control:U2109 INA821"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "N15",
       "parent": "BUS24",
-      "v": -14.990045248868777,
-      "limit": null,
+      "v": -15,
+      "limit": 2,
       "shunt": 0.1,
       "raw": "N15_RAW",
       "ramp": 5,
-      "top": "inverting",
+      "top": "isolated_module",
       "eta": 0.8,
-      "iq": 2.5e-05,
-      "ref": "U1102 LMR51610, IBB",
-      "source": "https://www.ti.com/lit/an/slvafp0/slvafp0.pdf",
+      "iq": 0.03,
+      "ref": "U1102 TEN 30-2413WIN",
+      "source": "https://www.tracopower.com/products/ten30win.pdf",
       "vmin": 14.25,
       "vmax": 15.75,
-      "bounds": "D11: окно по модулю; IBB ток зависит от Vin",
-      "cap_uF": 128.9,
+      "bounds": "Модуль 15 В / 2 А; OCP платы ограничивает раньше. КПД 0,80 — сценарий, I0=30 мА тип.",
+      "cap_uF": 124.0,
       "caprows": [
         {
-          "ref": "C1109",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1100_AFE_NEGATIVE_15V.kicad_sch",
-          "project": "power",
-          "net": "N15_RAW"
-        },
-        {
-          "ref": "C1107",
+          "ref": "C1106",
           "uF": 22.0,
           "value": "22u",
           "sheet": "1100_AFE_NEGATIVE_15V.kicad_sch",
@@ -4815,7 +4820,7 @@
           "net": "N15_RAW"
         },
         {
-          "ref": "C1106",
+          "ref": "C1107",
           "uF": 22.0,
           "value": "22u",
           "sheet": "1100_AFE_NEGATIVE_15V.kicad_sch",
@@ -4839,31 +4844,23 @@
           "net": "N15_RAW"
         },
         {
-          "ref": "C1011",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1024",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1046",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
           "ref": "C1007",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1008",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1011",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
@@ -4879,55 +4876,7 @@
           "net": "N15"
         },
         {
-          "ref": "C1008",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1034",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1038",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1050",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1037",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1047",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1033",
+          "ref": "C1020",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
@@ -4943,9 +4892,73 @@
           "net": "N15"
         },
         {
+          "ref": "C1024",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
           "ref": "C1025",
           "uF": 4.7,
           "value": "4.7u",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1033",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1034",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1037",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1038",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1046",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1047",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1050",
+          "uF": 0.1,
+          "value": "100n",
           "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
           "project": "control",
           "net": "N15"
@@ -4959,23 +4972,7 @@
           "net": "N15"
         },
         {
-          "ref": "C1020",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1000_DAC_BL0_31_AND_BUFFERS.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1112",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1111",
+          "ref": "C1107",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
@@ -4991,7 +4988,7 @@
           "net": "N15"
         },
         {
-          "ref": "C1107",
+          "ref": "C1111",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
@@ -4999,15 +4996,15 @@
           "net": "N15"
         },
         {
-          "ref": "C1524",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "ref": "C1112",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
           "project": "control",
           "net": "N15"
         },
         {
-          "ref": "C1513",
+          "ref": "C1502",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
@@ -5023,23 +5020,7 @@
           "net": "N15"
         },
         {
-          "ref": "C1529",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1515",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1517",
+          "ref": "C1506",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
@@ -5071,7 +5052,7 @@
           "net": "N15"
         },
         {
-          "ref": "C1534",
+          "ref": "C1513",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
@@ -5079,7 +5060,7 @@
           "net": "N15"
         },
         {
-          "ref": "C1538",
+          "ref": "C1515",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
@@ -5087,7 +5068,7 @@
           "net": "N15"
         },
         {
-          "ref": "C1506",
+          "ref": "C1517",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
@@ -5095,7 +5076,7 @@
           "net": "N15"
         },
         {
-          "ref": "C1536",
+          "ref": "C1519",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
@@ -5103,7 +5084,31 @@
           "net": "N15"
         },
         {
-          "ref": "C1502",
+          "ref": "C1521",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1524",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1527",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1529",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
@@ -5119,7 +5124,23 @@
           "net": "N15"
         },
         {
-          "ref": "C1521",
+          "ref": "C1534",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1536",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1538",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
@@ -5143,30 +5164,6 @@
           "net": "N15"
         },
         {
-          "ref": "C1519",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1527",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1500_MATRIX_BL0_31_SWITCHING.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1605",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
           "ref": "C1601",
           "uF": 0.1,
           "value": "100n",
@@ -5183,6 +5180,14 @@
           "net": "N15"
         },
         {
+          "ref": "C1605",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1600_MATRIX_SERVICE_SOURCE_BANK_AND_POLARITY_ROUTING.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
           "ref": "C1607",
           "uF": 0.1,
           "value": "100n",
@@ -5191,7 +5196,7 @@
           "net": "N15"
         },
         {
-          "ref": "C1705",
+          "ref": "C1701",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
@@ -5207,15 +5212,7 @@
           "net": "N15"
         },
         {
-          "ref": "C1701",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C1710",
+          "ref": "C1705",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
@@ -5231,10 +5228,10 @@
           "net": "N15"
         },
         {
-          "ref": "C1904",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
+          "ref": "C1710",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1700_MATRIX_WL0_7_DRIVERS_AND_NL0_7_CLAMPS_SELECTOR.kicad_sch",
           "project": "control",
           "net": "N15"
         },
@@ -5247,7 +5244,15 @@
           "net": "N15"
         },
         {
-          "ref": "C1918",
+          "ref": "C1904",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C1906",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
@@ -5263,18 +5268,10 @@
           "net": "N15"
         },
         {
-          "ref": "C1906",
+          "ref": "C1918",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1900_ADC_TIA_AND_MONITOR_SELECTOR.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C2016",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
           "project": "control",
           "net": "N15"
         },
@@ -5287,42 +5284,10 @@
           "net": "N15"
         },
         {
-          "ref": "C2110",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C2118",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C2108",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C2116",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
-          "project": "control",
-          "net": "N15"
-        },
-        {
-          "ref": "C2114",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+          "ref": "C2016",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
           "project": "control",
           "net": "N15"
         },
@@ -5343,6 +5308,22 @@
           "net": "N15"
         },
         {
+          "ref": "C2108",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C2110",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
           "ref": "C2112",
           "uF": 0.1,
           "value": "100n",
@@ -5351,16 +5332,29 @@
           "net": "N15"
         },
         {
-          "project": "power",
-          "net": "BUS24–N15_RAW",
-          "ref": "C1104/C1105",
-          "uF": 4.8,
-          "value": "100n+4.7u",
-          "sheet": "1100_AFE_NEGATIVE_15V.kicad_sch"
+          "ref": "C2114",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C2116",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+          "project": "control",
+          "net": "N15"
+        },
+        {
+          "ref": "C2118",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "2100_PROTECTION_WRITE_CURRENT_COMPLIANCE.kicad_sch",
+          "project": "control",
+          "net": "N15"
         }
-      ],
-      "pins": [
-        43
       ],
       "consumers": [
         "Control:U1001 OPA4192IPWR",
@@ -5415,7 +5409,8 @@
         "Control:U2106 OPA4197",
         "Control:U2107 OPA4197",
         "Control:U2109 INA821"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "PROG_P15",
@@ -5429,7 +5424,7 @@
       "eta": 1,
       "iq": 0,
       "ref": "Q2102/Q2103; P15",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware",
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
       "vmin": 14.25,
       "vmax": 15.75,
       "bounds": "D11: по модулю; сопротивление MOSFET ещё не включено",
@@ -5444,9 +5439,9 @@
           "net": "PROG_P15"
         },
         {
-          "ref": "C1120",
-          "uF": 4.7,
-          "value": "4.7u",
+          "ref": "C1113",
+          "uF": 0.1,
+          "value": "100n",
           "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
           "project": "control",
           "net": "PROG_P15"
@@ -5460,7 +5455,7 @@
           "net": "PROG_P15"
         },
         {
-          "ref": "C1113",
+          "ref": "C1119",
           "uF": 0.1,
           "value": "100n",
           "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
@@ -5468,26 +5463,24 @@
           "net": "PROG_P15"
         },
         {
-          "ref": "C1119",
-          "uF": 0.1,
-          "value": "100n",
+          "ref": "C1120",
+          "uF": 4.7,
+          "value": "4.7u",
           "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
           "project": "control",
           "net": "PROG_P15"
         }
       ],
-      "pins": [
-        45
-      ],
       "consumers": [
         "Control:U1103 AD5761RBRUZ",
         "Control:U1104 OPA192IDBVR"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "PROG_N15",
       "parent": "N15",
-      "v": -14.990045248868777,
+      "v": -15,
       "limit": null,
       "shunt": 0,
       "raw": "PROG_N15",
@@ -5496,7 +5489,7 @@
       "eta": 1,
       "iq": 0,
       "ref": "Ключи листа 2200; N15",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware",
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
       "vmin": 14.25,
       "vmax": 15.75,
       "bounds": "D11: по модулю; сопротивление MOSFET ещё не включено",
@@ -5508,6 +5501,22 @@
           "value": "4.7u",
           "sheet": "2200_PROGRAM_NEGATIVE.kicad_sch",
           "project": "power",
+          "net": "PROG_N15"
+        },
+        {
+          "ref": "C1115",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+          "project": "control",
+          "net": "PROG_N15"
+        },
+        {
+          "ref": "C1116",
+          "uF": 4.7,
+          "value": "4.7u",
+          "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
+          "project": "control",
           "net": "PROG_N15"
         },
         {
@@ -5525,31 +5534,13 @@
           "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
           "project": "control",
           "net": "PROG_N15"
-        },
-        {
-          "ref": "C1116",
-          "uF": 4.7,
-          "value": "4.7u",
-          "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
-          "project": "control",
-          "net": "PROG_N15"
-        },
-        {
-          "ref": "C1115",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "1100_DAC_SERVICE_AND_FORMING.kicad_sch",
-          "project": "control",
-          "net": "PROG_N15"
         }
-      ],
-      "pins": [
-        47
       ],
       "consumers": [
         "Control:U1103 AD5761RBRUZ",
         "Control:U1104 OPA192IDBVR"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "PHY2V5",
@@ -5563,7 +5554,7 @@
       "eta": 0.7587253414264037,
       "iq": 3e-05,
       "ref": "U903 TLV75525P",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware",
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
       "vmin": 2.375,
       "vmax": 2.625,
       "bounds": "TI DP83867 VDDA2P5",
@@ -5573,6 +5564,14 @@
           "ref": "C911",
           "uF": 4.7,
           "value": "4.7u",
+          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
+          "project": "control",
+          "net": "PHY2V5"
+        },
+        {
+          "ref": "C914",
+          "uF": 0.1,
+          "value": "100n",
           "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
           "project": "control",
           "net": "PHY2V5"
@@ -5600,20 +5599,12 @@
           "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
           "project": "control",
           "net": "PHY2V5"
-        },
-        {
-          "ref": "C914",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "900_FPGA_ETHERNET_AND_MCU_INTERFACE.kicad_sch",
-          "project": "control",
-          "net": "PHY2V5"
         }
       ],
-      "pins": [],
       "consumers": [
         "Control:U902 DP83867IRRGZR"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "MAT_ADC_1V8",
@@ -5627,7 +5618,7 @@
       "eta": 0.5462822458270107,
       "iq": 3e-05,
       "ref": "U2005 TLV75518P",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware",
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
       "vmin": 1.71,
       "vmax": 1.89,
       "bounds": "D11: проектное окно, сверить AD4003",
@@ -5650,10 +5641,10 @@
           "net": "MAT_ADC_1V8"
         }
       ],
-      "pins": [],
       "consumers": [
         "Control:U2004 AD4003"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "MAT_REF_PRE12",
@@ -5667,20 +5658,12 @@
       "eta": 0.8,
       "iq": 0.0001,
       "ref": "U2006 TLV76012",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware",
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
       "vmin": 11.4,
       "vmax": 12.6,
       "bounds": "D11: проектное окно",
       "cap_uF": 2.0,
       "caprows": [
-        {
-          "ref": "C2018",
-          "uF": 1.0,
-          "value": "1u",
-          "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
-          "project": "control",
-          "net": "MAT_REF_PRE12"
-        },
         {
           "ref": "C2017",
           "uF": 1.0,
@@ -5688,12 +5671,20 @@
           "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
           "project": "control",
           "net": "MAT_REF_PRE12"
+        },
+        {
+          "ref": "C2018",
+          "uF": 1.0,
+          "value": "1u",
+          "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
+          "project": "control",
+          "net": "MAT_REF_PRE12"
         }
       ],
-      "pins": [],
       "consumers": [
         "Control:U2000 ADR4550"
-      ]
+      ],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     },
     {
       "name": "MAT_ADC_REF",
@@ -5707,14 +5698,14 @@
       "eta": 0.4166666666666667,
       "iq": 0,
       "ref": "U2000 ADR4550",
-      "source": "https://github.com/max-talanov/mira/tree/24b4428877257387bc5a686abd9e830a37f58770/hardware",
+      "source": "https://github.com/max-talanov/mira/tree/52f43869b6ed5019490eb40afbc84a4d607fd61e/hardware",
       "vmin": null,
       "vmax": null,
       "bounds": "Точность, шум и динамика опоры рассматриваются отдельно",
       "cap_uF": 20.2,
       "caprows": [
         {
-          "ref": "C2008",
+          "ref": "C2001",
           "uF": 10.0,
           "value": "10u",
           "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
@@ -5722,7 +5713,15 @@
           "net": "MAT_ADC_REF"
         },
         {
-          "ref": "C2001",
+          "ref": "C2002",
+          "uF": 0.1,
+          "value": "100n",
+          "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
+          "project": "control",
+          "net": "MAT_ADC_REF"
+        },
+        {
+          "ref": "C2008",
           "uF": 10.0,
           "value": "10u",
           "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
@@ -5736,44 +5735,40 @@
           "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
           "project": "control",
           "net": "MAT_ADC_REF"
-        },
-        {
-          "ref": "C2002",
-          "uF": 0.1,
-          "value": "100n",
-          "sheet": "2000_ADC_CONVERTER_AND_PRECISION_REFERENCES.kicad_sch",
-          "project": "control",
-          "net": "MAT_ADC_REF"
         }
       ],
-      "pins": [],
-      "consumers": []
+      "consumers": [],
+      "consumers_source": "Initial consumer classification retained; loads remain assumptions. Current capacitances from native netlists."
     }
   ],
   "settings": {
     "vin": 24,
     "vin_min": 18,
-    "vin_max": 36,
+    "vin_max": 30,
     "cap_factor": 1.2,
     "reg_tol": 0.02,
     "transient_v": 0.01,
-    "contact_mohm": 10,
+    "contact_mohm": 20,
     "pcb_loop_mohm": 5,
     "sharing_factor": 1.25,
     "pin_budget_a": 1,
     "efuse_r_kohm": 5.1,
     "efuse_tol": 0.1,
     "input_path_ohm": 0.12,
-    "input_cap_uF": 149.0,
+    "input_cap_uF": 144.2,
     "input_slew_v_ms": 0.5,
     "vin_aux_a": 0.015,
-    "reserve_factor": 1.25
+    "reserve_factor": 1.3
   },
   "limitations": [
-    "Все токи, кроме явно отмеченных типовых величин и расчёта VTT, являются допущениями.",
-    "Точные MPN пары J400 и ответная распиновка Power не выбраны.",
-    "Все 78 активных схем совпадают с исходной версией дня 1; электрические вопросы ERC не исправлены.",
-    "Модель пуска — верхняя оценка нагрузки отдельных шин при заданных рампах; последовательность EN и фактический максимум на входе требуют проверки.",
-    "Для отрицательных шин напряжение показано со знаком, токи/мощности и допуски считаются по модулю."
-  ]
+    "Пиковые входные нагрузки дня 2 умножены на 1,30. Это запас над допущениями, не доказанный максимум устройства.",
+    "Самостоятельного второго множителя 1,30 при выборе БП нет; резерв включён в токи нагрузок.",
+    "TEN 30-2413WIN: КПД 0,80 принят как сценарий потерь плюс типовой ток холостого хода 30 мА. Каталожный КПД 89% при полной нагрузке не является КПД данного режима.",
+    "Рампа N15 5 мс оставлена только для сравнения сценариев, не как характеристика нового модуля. Фактический пуск и OCP требуют проверки.",
+    "Контакты общих шин оценены консервативно: весь ток Control данной шины в каждой зоне по отдельности. Эти оценки нельзя суммировать как независимые нагрузки.",
+    "Оценка CORE с положительным sense не компенсирует GND и не проверяет устойчивость контура.",
+    "Номинальная ёмкость учтена на прямых шинах до/после шунтов. Фильтрованные ветви и DC-bias требуют отдельной проверки.",
+    "PCB размещение, распределение токов, тепловая и аварийная квалификация не выполнены."
+  ],
+  "schema_revision": "distributed-power-budget-v2"
 }

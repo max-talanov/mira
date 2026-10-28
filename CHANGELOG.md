@@ -4,6 +4,13 @@ Repository milestones are separate from hardware revisions. Both projects curren
 
 ## Unreleased
 
+### 2026-10-28 — Task 1/2 documentation refresh
+
+- Synchronize the task review, ERC resolution table, inter-board pinout, current XLSX/JSON budget and ready-to-post task comments with hardware commit `52f4386`; preserve the previous documents and workbook as history.
+- Apply a 30% margin to provisional peak loads, model TEN 30-2413WIN losses separately, refresh capacitances from native netlists and replace the obsolete central-connector calculation with 27 zone/rail branches and the CORE sense model.
+- Record unresolved N15 startup/OCP and IO3V3 current-distribution cases explicitly. Do not claim final load capacity, completed PCB layout or GitHub publication.
+- Add an independent budget verification script and GitHub publication instructions. This documentation refresh does not alter hardware sources.
+
 ### 2026-10-28 — Distributed local power entries
 
 - Replace the central 64-contact interface with seven local power entries for FPGA, DDR, MCU, USB, Ethernet, DAC/matrix and ADC/AFE, plus a separate 20-contact supervision interface. Update both boards together; this pinout supersedes the previous connector candidate.
