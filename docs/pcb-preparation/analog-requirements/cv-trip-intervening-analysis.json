@@ -1,0 +1,186 @@
+{
+  "source_command_V": [
+    0,
+    10
+  ],
+  "nominal_ILIM_max_V": 0.9982630223411265,
+  "current_ranges": [
+    {
+      "code": 0,
+      "Rsh_ohm": 100,
+      "I_low_A": 0.001,
+      "I_high_nominal_A": 0.009982630223411264,
+      "Rsh_power_max_W": 0.009965290617736404
+    },
+    {
+      "code": 1,
+      "Rsh_ohm": 1000,
+      "I_low_A": 0.0001,
+      "I_high_nominal_A": 0.0009982630223411264,
+      "Rsh_power_max_W": 0.0009965290617736404
+    },
+    {
+      "code": 2,
+      "Rsh_ohm": 10000,
+      "I_low_A": 1e-05,
+      "I_high_nominal_A": 9.982630223411266e-05,
+      "Rsh_power_max_W": 9.965290617736404e-05
+    },
+    {
+      "code": 3,
+      "Rsh_ohm": 100000,
+      "I_low_A": 1e-06,
+      "I_high_nominal_A": 9.982630223411266e-06,
+      "Rsh_power_max_W": 9.965290617736404e-06
+    }
+  ],
+  "trip_nominal": {
+    "slope": 1.2562290033594623,
+    "offset_V": 0.09396592945128777,
+    "sense16_5_input_V": 2.7578138057830524
+  },
+  "trip_corners": {
+    "slope": [
+      1.2161016163268779,
+      1.2976666159807166
+    ],
+    "threshold_at_ILIM0_1_V": [
+      0.17862439743207278,
+      0.26208155148448686
+    ],
+    "threshold_at_ILIM1_V": [
+      1.2732194400247026,
+      1.4298697016807353
+    ],
+    "conditions": "1% resistors, IO3V3 +/-5%, comparator offset allocation +/-5mV; excludes switch leakage, dynamics and temperature drift"
+  },
+  "CV_ideal_nominal": [
+    [
+      0,
+      0.00023138748563367173
+    ],
+    [
+      0.1,
+      0.10020743550714917
+    ],
+    [
+      0.5,
+      0.5001116275932107
+    ],
+    [
+      5,
+      4.999033788561408
+    ],
+    [
+      10,
+      9.997836189637184
+    ]
+  ],
+  "CV_nominal_gain": 0.999760480215155,
+  "CV_corners": {
+    "zero_V": [
+      -0.0050583332711602565,
+      0.005428424930575261
+    ],
+    "point_0_1_V": [
+      0.0951392432050452,
+      0.10519281670438077
+    ],
+    "point_10_V": [
+      9.98183029633342,
+      10.01470873326087
+    ]
+  },
+  "TIA": [
+    {
+      "code": 0,
+      "Rf_ohm": 100,
+      "Cf_F": 3.3e-10,
+      "Reff_typ_ohm": 103.99891841124852,
+      "Reff_Ron7_4_ohm": 107.39884653638822,
+      "I_at_10V_A": 0.09615484615384615,
+      "feedback_RC_only_s": 3.454844069621676e-08,
+      "ADC_LSB_equivalent_current_A": 2.4628186448809446e-06
+    },
+    {
+      "code": 1,
+      "Rf_ohm": 1000,
+      "Cf_F": 1e-10,
+      "Reff_typ_ohm": 1003.8992085194647,
+      "Reff_Ron7_4_ohm": 1007.2985247466169,
+      "I_at_10V_A": 0.0099611593625498,
+      "feedback_RC_only_s": 1.025984991106893e-07,
+      "ADC_LSB_equivalent_current_A": 2.551356482175261e-07
+    },
+    {
+      "code": 2,
+      "Rf_ohm": 10000,
+      "Cf_F": 3.3e-11,
+      "Reff_typ_ohm": 9994.002000398801,
+      "Reff_Ron7_4_ohm": 9997.395206720827,
+      "I_at_10V_A": 0.0010006001599360255,
+      "feedback_RC_only_s": 3.5178887041403784e-07,
+      "ADC_LSB_equivalent_current_A": 2.5628419456035168e-08
+    },
+    {
+      "code": 3,
+      "Rf_ohm": 100000,
+      "Cf_F": 1e-11,
+      "Reff_typ_ohm": 99013.82217274369,
+      "Reff_Ron7_4_ohm": 99017.15517554966,
+      "I_at_10V_A": 0.00010099600015999361,
+      "feedback_RC_only_s": 1.207968630507473e-06,
+      "ADC_LSB_equivalent_current_A": 2.586815352545617e-09
+    },
+    {
+      "code": 4,
+      "Rf_ohm": 1000000,
+      "Cf_F": 3.3e-12,
+      "Reff_typ_ohm": 909094.2148748309,
+      "Reff_Ron7_4_ohm": 909097.0247892741,
+      "I_at_10V_A": 1.099996000016e-05,
+      "feedback_RC_only_s": 5.00001818181157e-06,
+      "ADC_LSB_equivalent_current_A": 2.8174249832393937e-10
+    }
+  ],
+  "route": {
+    "service_3mux_2spdt_1spst_typ_ohm": 21.2,
+    "service_3mux_2spdt_1spst_max85_ohm": 39.800000000000004,
+    "VMM_return_typ_ohm": 9.6,
+    "VMM_BL_typ_ohm": 6.7
+  },
+  "ADC": {
+    "gain": -0.148935704,
+    "reference_V": 5,
+    "code_bits": 18,
+    "monitor_equivalent_LSB_V": 0.000256130475310675,
+    "differential_at_TIA_limit_V": 1.48935704,
+    "fraction_ADC_fullscale_at_TIA_limit": 0.297871408
+  },
+  "charge_cases": [
+    {
+      "C_F": 5e-11,
+      "V": 10,
+      "Q_C": 5e-10,
+      "energy_J": 2.5e-09,
+      "RC_discharge_100k_to_1mV_s": 4.605170185988092e-05
+    },
+    {
+      "C_F": 3.1e-10,
+      "V": 10,
+      "Q_C": 3.1e-09,
+      "energy_J": 1.55e-08,
+      "RC_discharge_100k_to_1mV_s": 0.0002855205515312617
+    },
+    {
+      "C_F": 2e-09,
+      "V": 10,
+      "Q_C": 2e-08,
+      "energy_J": 1.0000000000000001e-07,
+      "RC_discharge_100k_to_1mV_s": 0.0018420680743952368
+    }
+  ],
+  "VMM_8NL_initial_scan_min_us": 240,
+  "measurement_status": "DC calculation only; no new transient simulations or board measurements",
+  "scope": "Historical version 10 DC analysis retained for provenance. Wider 0..10 V / 10 mA ranges and 20 us ADC blanking are superseded by the current profile. CV and trip calculations are recomputed in current calculations.json."
+}

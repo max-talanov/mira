@@ -1,5 +1,7 @@
 # MIRA
 
+**MIRA.05, 30 октября 2026:** [требования аналоговой части и исправления схемы](docs/pcb-preparation/analog-requirements/README.md). U2109 заменён на INA149AIDR с новой распиновкой; потолок команды снижен до 10,05 В, порог готовности P15 повышен до 13,22 В. Сохранены исправления пары CV 100/101 кОм и восьми записей BOM из промежуточного обновления; итоговая дельта — 12 компонентов. Заданы предварительные диапазоны READ/SET/RESET/FORMING, ток, нагрузка, одновременность и время; свойства реальной матрицы оставлены неизвестными. ERC 0 ошибок / 0 предупреждений на обеих платах. Пиковый ток, устойчивость, точность и время импульсов требуют отдельной проверки; прошивка и PCB не изменены.
+
 **Решение от 30.10.2026: проверка MIG/Vivado отложена по согласованию с пользователем. Вернуться к ней перед трассировкой FPGA ↔ DDR3L на плате Control и до окончательной фиксации распиновки FPGA. По решению пользователя текущая карточка MIRA.04 закрывается как завершённый схемный этап; проверка MIG остаётся незавершённым условием перед трассировкой. Остальные проверки схемы, проектирование Power и независимые участки Control можно продолжать.**
 
 **MIRA.04, 30 октября 2026:** [проверка цифровых интерфейсов](docs/pcb-preparation/digital-interfaces/README.md). SPI SCK перенесён AB12 → Y11; FMC/AF и 164 FPGA-порта сверены, ERC 0/0. MIG/Vivado ещё не запускались; кандидатные XDC и процедура запуска находятся в `fpga/digital-interfaces/`. Закрытие текущей карточки не означает выполнения проверки MIG; её нужно завершить до трассировки DDR3L.
@@ -11,6 +13,8 @@
 The project aims to bring array control, an analog front end, digital processing, and software tools into a single system. It is intended for studying memristor readout and programming, vector–matrix multiplication (VMM), and spiking neuron models.
 
 ## Current status
+
+The current **MIRA.05 analog requirements** revision defines a provisional operating envelope and repairs the anti-windup amplifier, command ceiling and P15 qualifier. See the [analog report](docs/pcb-preparation/analog-requirements/README.md). Native ERC and historical regressions pass; matrix-specific limits, loop stability and transient peak-current qualification remain open.
 
 The previous **2026-10-30 v6 signal remediation** adds hardware protection for PM, DAC, ADC/FDA and comparator inputs; replaces 33 analog switch ICs with fail-safe-input parts; isolates 10 VIN-relative enable paths; and qualifies USB and FPGA AUX/IO supplies. See the [current review and operating conditions](docs/pcb-preparation/signal-remediation/README.md). There are 271 new components and 40 changed legacy values. Native KiCad ERC reports zero errors and warnings. The checklist can be closed as a schematic review within those conditions. PCB, firmware and prototype qualification remain open. The [v5 receiver-only report](docs/pcb-preparation/unpowered-signals/README.md) is historical.
 

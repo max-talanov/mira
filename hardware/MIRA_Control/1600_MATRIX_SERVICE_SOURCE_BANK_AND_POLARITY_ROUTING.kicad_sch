@@ -23,18 +23,7 @@
 		)
 		(uuid "19d9d3a2-23d3-434e-a179-ff951e1c427d")
 	)
-	(text "SUPPLIES / LOCAL BYPASS\nAll ADG54xx use P15/N15. Respect powered-rail sequencing."
-		(exclude_from_sim no)
-		(at 20.32 307.34 0)
-		(effects
-			(font
-				(size 1.2 1.2)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "3bf2547b-2638-46eb-b4d6-ea6c700011e5")
-	)
+	(text "SUPPLIES / LOCAL BYPASS\nTMUX72xx use P15/N15. Respect rail sequencing; see MIRA.05 limits." (exclude_from_sim no) (at 20.32 307.34 0) (effects (font (size 1.2 1.2) (color 0 70 160 1)) (justify left top)) (uuid "3bf2547b-2638-46eb-b4d6-ea6c700011e5"))
 	(text "UPSTREAM POWER ENABLE\nOFF: shunt input to GND. ON: CV/CC driver.\nNo pulse switch after the current shunt."
 		(exclude_from_sim no)
 		(at 381 30.48 0)
@@ -83,18 +72,7 @@
 		)
 		(uuid "72621157-a412-433c-bdf4-d3211102e6da")
 	)
-	(text "DNP BLEEDERS / PASSIVE CONTROL PULL-DOWNS\nR1600/R1601 must remain DNP for microamp operation. Power OFF discharges SOURCE through the selected shunt.\nBefore range, polarity or route changes: source OFF, discharge and wait; a loaded/open high-R range takes longer."
-		(exclude_from_sim no)
-		(at 20.32 340.36 0)
-		(effects
-			(font
-				(size 1.2 1.2)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "868946e0-9aa7-45cf-bc57-24ad7ff6afd7")
-	)
+	(text "DNP BLEEDERS / PASSIVE CONTROL PULL-DOWNS\nR1600/R1601 must remain DNP for microamp operation. Power OFF discharges SOURCE through the selected shunt.\nBefore route/range changes: source OFF; run an explicit clamp/discharge frame.\nSource OFF isolates DUT lines; it does not prove their capacitance is discharged." (exclude_from_sim no) (at 20.32 340.36 0) (effects (font (size 1.2 1.2) (color 0 70 160 1)) (justify left top)) (uuid "868946e0-9aa7-45cf-bc57-24ad7ff6afd7"))
 	(text "ERROR SELECTION\nOFF selects zero; ON selects regulator error.\nThe PI controller and shunts are on sheet 2100."
 		(exclude_from_sim no)
 		(at 381 135.89 0)
@@ -131,7 +109,7 @@
 		)
 		(uuid "dc1622b6-25ed-4d42-b572-82b9be670f71")
 	)
-	
+
 	(no_connect
 		(at 90.17 275.59)
 		(uuid "8d68327f-82a4-41a3-9a77-82d3b65dca55")

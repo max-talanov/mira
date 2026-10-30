@@ -111,7 +111,7 @@ def main():
         for a in vendor_sdram:
             if a['name'] in ['VDD','VDDQ','VSS','VSSQ']:ck('SDRAM_supply_'+a['pin'],m['U200',a['pin']]==('GND' if a['name'].startswith('VSS') else 'SYS3V3'))
         baseline=json.loads((OUT/'validation/baseline-control-pins.json').read_text())
-        ck('only_two_declared_pin_changes',sorted(normalize_digital_rows([(*k,v) for k,v in m.items()]))==sorted(tuple(x) for x in baseline))
+        ck('only_declared_MIRA04_and_MIRA05_pin_changes',sorted(normalize_digital_rows([(*k,v) for k,v in m.items()]))==sorted(tuple(x) for x in baseline))
         for k,(old,new) in DELTA.items():ck('current_delta_'+k[1],m[k]==new)
         # Pin XDC must describe exactly the currently connected user ports.
         text=(FPGA/'mira_pinout_candidate.xdc').read_text()

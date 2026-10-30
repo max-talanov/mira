@@ -1,0 +1,92 @@
+{
+  "schema": "mira.analog-profile.v1",
+  "revision": "MIRA.05-2026-10-30",
+  "programming_enabled": false,
+  "real_DUT_profile_complete": false,
+  "qualification_status": "SCHEMATIC_REVIEW_ONLY",
+  "voltage_definition": "MAT_SOURCE relative to GND; Vcell=VBL-VNL differs by route/contact drops",
+  "limits": {
+    "READ_source_V": [
+      0,
+      0.5
+    ],
+    "SET_source_V": [
+      0,
+      5
+    ],
+    "RESET_source_V": [
+      0,
+      5
+    ],
+    "FORMING_source_V": [
+      0,
+      8
+    ],
+    "nominal_standard_current_A": [
+      1e-05,
+      0.008
+    ],
+    "hardware_command_intervals_A": [
+      [
+        1e-06,
+        8e-06
+      ],
+      [
+        8e-06,
+        8e-05
+      ],
+      [
+        8e-05,
+        0.0008
+      ],
+      [
+        0.0008,
+        0.008
+      ]
+    ],
+    "experimental_current_A": [
+      1e-06,
+      1e-05
+    ],
+    "max_VMM_total_current_A": 0.008,
+    "service_command_window_ms": [
+      5,
+      1000
+    ],
+    "VMM_initial_test_window_ms": 1,
+    "VMM_100us_status": "qualification_target_only",
+    "max_write_duty": 0.1,
+    "max_external_pair_C_F": 1e-09,
+    "WL_electrical_envelope_V": [
+      0,
+      4.5
+    ],
+    "WL_default_V": 0,
+    "bias_default_V": 0,
+    "ADC_rate_max_initial_SPS": 100000,
+    "ADC_blank_after_monitor_or_TIA_change_us": 100,
+    "TIA_near_range_V": 8,
+    "TIA_invalid_at_abs_V": 10
+  },
+  "timing_semantics": "Command enable window, not a guaranteed flat DUT pulse. Source settling is load dependent and may take hundreds of milliseconds. No real programming before measured pulse qualification.",
+  "DUT": {
+    "part_id": null,
+    "pin_map_verified": null,
+    "safe_read_voltage_V": null,
+    "SET_polarity": null,
+    "SET_voltage_V": null,
+    "RESET_polarity": null,
+    "RESET_voltage_V": null,
+    "FORMING_voltage_V": null,
+    "max_WL_voltage_V": null,
+    "Rmin_ohm": null,
+    "Rmax_ohm": null,
+    "capacitance_F": null,
+    "max_steady_current_A": null,
+    "max_peak_current_A": null,
+    "max_pulse_energy_J": null,
+    "allowed_pulse_width_s": null,
+    "allowed_rise_time_s": null,
+    "post_write_verify_delay_s": null
+  }
+}

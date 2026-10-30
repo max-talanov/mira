@@ -148,18 +148,7 @@
 		)
 		(uuid "5e545864-ffcd-42bd-8464-1ba4732ff6f9")
 	)
-	(text "MAT_MONITOR_RAW feeds the high-input-impedance OPA197 follower on\nsheet 2000. Set the monitor and TIA range before conversion. Initial\nvalidation uses <=100 kSPS and a 20 us post-change delay, subject to\nanalog settling verification. Analog buffers and switches use\nP15/N15."
-		(exclude_from_sim no)
-		(at 310.11 174.34 0)
-		(effects
-			(font
-				(size 1.35 1.35)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "5ed027d0-808c-4887-9e3e-9de1679c2638")
-	)
+	(text "MAT_MONITOR_RAW feeds the OPA197 buffer on sheet 2000.\nInitial validation: <=100 kSPS, >=100 us ADC blanking;\nconfirm settling after each monitor/TIA range change.\nCV/CC needs separate ms-scale settling.\nReject abs(TIA_OUT)>=10 V; ADC may be below full scale.\nChange TIA gain only with excitation OFF. P15/N15 supply." (exclude_from_sim no) (at 310.11 174.34 0) (effects (font (size 1.35 1.35) (color 0 70 160 1)) (justify left top)) (uuid "5ed027d0-808c-4887-9e3e-9de1679c2638"))
 	(text "7"
 		(exclude_from_sim no)
 		(at 90.17 139.7 0)

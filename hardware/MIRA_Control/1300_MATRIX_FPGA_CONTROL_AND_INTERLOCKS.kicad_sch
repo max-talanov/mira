@@ -11495,18 +11495,7 @@
 		)
 		(uuid "1ec4b997-834e-4f51-bb38-3f6819456927")
 	)
-	(text "SERVICE_READ requires source code 00. SERVICE_WRITE\nrequires 01 SET, 10 RESET or 11 FORM. VMM_READ does not use\nthe service-source code. The source and current-limit\nmultiplexers share captured SRC bits. READ forces the\nanalog programming range to its defined low-ohm setting."
-		(exclude_from_sim no)
-		(at 510.54 174.245 0)
-		(effects
-			(font
-				(size 1.08 1.08)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "24f1fa60-c264-4017-862d-d55fee948d60")
-	)
+	(text "SERVICE_READ requires source code 00. SERVICE_WRITE\nrequires 01 SET, 10 RESET or 11 FORM. VMM_READ does not use\nthe service-source code. SRC and RSH are held by U1327.\nAll four shunts are available in service READ and WRITE.\nChange RSH only with source OFF and the route discharged." (exclude_from_sim no) (at 510.54 174.245 0) (effects (font (size 1.08 1.08) (color 0 70 160 1)) (justify left top)) (uuid "24f1fa60-c264-4017-862d-d55fee948d60"))
 	(text "FPGA MATRIX ENGINE / BANK 35"
 		(exclude_from_sim no)
 		(at 17.54 37.54 0)

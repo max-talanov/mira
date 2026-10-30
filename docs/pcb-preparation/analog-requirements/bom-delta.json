@@ -1,0 +1,254 @@
+[
+  {
+    "ref": "U2109",
+    "before": {
+      "Reference": "U2109",
+      "Value": "INA821",
+      "Footprint": "MIRA_RevA:SOIC-8_3.9x4.9mm_P1.27mm",
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/ina821.pdf",
+      "Description": "36 V instrumentation amplifier; SOIC-8 D; gain 1 with RG pins 2 and 3 open; REF requires low impedance drive",
+      "Manufacturer": "Texas Instruments",
+      "MPN": "INA821IDR"
+    },
+    "after": {
+      "Reference": "U2109",
+      "Value": "INA149AIDR",
+      "Footprint": "MIRA_RevA:SOIC-8_3.9x4.9mm_P1.27mm",
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/ina149.pdf",
+      "Description": "Unity-gain difference amplifier; REFB pin 1 and REFA pin 5 to ground; NC pin 8",
+      "Manufacturer": "Texas Instruments",
+      "MPN": "INA149AIDR"
+    }
+  },
+  {
+    "ref": "R2111",
+    "before": {
+      "Reference": "R2111",
+      "Value": "13.7k",
+      "Footprint": "MIRA_RevA:R_0603_1608Metric",
+      "Datasheet": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD0713K7L",
+      "Description": "Precision resistor, 0.1%, 25 ppm/C, 0.1 W; calibrate zero and gain per current range",
+      "Manufacturer": "YAGEO",
+      "MPN": "RT0603BRD0713K7L"
+    },
+    "after": {
+      "Reference": "R2111",
+      "Value": "10k",
+      "Footprint": "MIRA_RevA:R_0603_1608Metric",
+      "Datasheet": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD0710KL",
+      "Description": "Precision resistor, 0.1%, 25 ppm/C; MIRA.05 analog operating envelope",
+      "Manufacturer": "YAGEO",
+      "MPN": "RT0603BRD0710KL"
+    }
+  },
+  {
+    "ref": "R2301",
+    "before": {
+      "Reference": "R2301",
+      "Value": "1M",
+      "Footprint": "MIRA_RevA:R_0402_1005Metric",
+      "Datasheet": "",
+      "Description": "Enable pulldown; default OFF",
+      "Manufacturer": "Panasonic",
+      "MPN": "ERJ-2RKF1004X"
+    },
+    "after": {
+      "Reference": "R2301",
+      "Value": "1M",
+      "Footprint": "MIRA_RevA:R_0603_1608Metric",
+      "Datasheet": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD071ML",
+      "Description": "Precision resistor, 0.1%, 25 ppm/C; MIRA.05 analog operating envelope",
+      "Manufacturer": "YAGEO",
+      "MPN": "RT0603BRD071ML"
+    }
+  },
+  {
+    "ref": "R2302",
+    "before": {
+      "Reference": "R2302",
+      "Value": "34.8k",
+      "Footprint": "MIRA_RevA:R_0402_1005Metric",
+      "Datasheet": "",
+      "Description": "Enable pulldown; default OFF",
+      "Manufacturer": "Panasonic",
+      "MPN": "ERJ-2RKF3482X"
+    },
+    "after": {
+      "Reference": "R2302",
+      "Value": "31.6k",
+      "Footprint": "MIRA_RevA:R_0603_1608Metric",
+      "Datasheet": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD0731K6L",
+      "Description": "Precision resistor, 0.1%, 25 ppm/C; MIRA.05 analog operating envelope",
+      "Manufacturer": "YAGEO",
+      "MPN": "RT0603BRD0731K6L"
+    }
+  },
+  {
+    "ref": "R2004",
+    "before": {
+      "Reference": "R2004",
+      "Value": "806",
+      "Footprint": "MIRA_RevA:R_0402_1005Metric",
+      "Datasheet": "",
+      "Description": "20kOhm precision resistor, 0.1%, 25 ppm/C preferred; matched FDA ratios",
+      "Manufacturer": "Yageo",
+      "MPN": "ERJ-2RKF8060X"
+    },
+    "after": {
+      "Reference": "R2004",
+      "Value": "806",
+      "Footprint": "MIRA_RevA:R_0402_1005Metric",
+      "Datasheet": "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2RKF8060X",
+      "Description": "806 ohm, 1%, 0402; Panasonic ERJ-2RKF; calibrate actual divider ratio",
+      "Manufacturer": "Panasonic",
+      "MPN": "ERJ-2RKF8060X"
+    }
+  },
+  {
+    "ref": "R2002",
+    "before": {
+      "Reference": "R2002",
+      "Value": "806",
+      "Footprint": "MIRA_RevA:R_0402_1005Metric",
+      "Datasheet": "",
+      "Description": "20kOhm precision resistor, 0.1%, 25 ppm/C preferred; matched FDA ratios",
+      "Manufacturer": "Yageo",
+      "MPN": "ERJ-2RKF8060X"
+    },
+    "after": {
+      "Reference": "R2002",
+      "Value": "806",
+      "Footprint": "MIRA_RevA:R_0402_1005Metric",
+      "Datasheet": "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2RKF8060X",
+      "Description": "806 ohm, 1%, 0402; Panasonic ERJ-2RKF; calibrate actual divider ratio",
+      "Manufacturer": "Panasonic",
+      "MPN": "ERJ-2RKF8060X"
+    }
+  },
+  {
+    "ref": "R2000",
+    "before": {
+      "Reference": "R2000",
+      "Value": "9.09k",
+      "Footprint": "MIRA_RevA:R_0402_1005Metric",
+      "Datasheet": "",
+      "Description": "10 kOhm, 0.1%, matched divider ratio",
+      "Manufacturer": "Yageo",
+      "MPN": "ERJ-2RKF9091X"
+    },
+    "after": {
+      "Reference": "R2000",
+      "Value": "9.09k",
+      "Footprint": "MIRA_RevA:R_0402_1005Metric",
+      "Datasheet": "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2RKF9091X",
+      "Description": "9.09k ohm, 1%, 0402; Panasonic ERJ-2RKF; calibrate actual divider ratio",
+      "Manufacturer": "Panasonic",
+      "MPN": "ERJ-2RKF9091X"
+    }
+  },
+  {
+    "ref": "R2200",
+    "before": {
+      "Reference": "R2200",
+      "Value": "45.3k",
+      "Footprint": "MIRA_RevA:R_0402_1005Metric",
+      "Datasheet": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+      "Description": "49.9k ohm, 0.1%, 25 ppm/K, precision fault-threshold resistor",
+      "Manufacturer": "Vishay",
+      "MPN": "ERJ-2RKF4532X"
+    },
+    "after": {
+      "Reference": "R2200",
+      "Value": "45.3k",
+      "Footprint": "MIRA_RevA:R_0402_1005Metric",
+      "Datasheet": "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2RKF4532X",
+      "Description": "45.3k ohm, 1%, 0402; Panasonic ERJ-2RKF; calibrate actual divider ratio",
+      "Manufacturer": "Panasonic",
+      "MPN": "ERJ-2RKF4532X"
+    }
+  },
+  {
+    "ref": "R2202",
+    "before": {
+      "Reference": "R2202",
+      "Value": "34k",
+      "Footprint": "MIRA_RevA:R_0402_1005Metric",
+      "Datasheet": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+      "Description": "37.4k ohm, 0.1%, 25 ppm/K, precision fault-threshold resistor",
+      "Manufacturer": "Vishay",
+      "MPN": "ERJ-2RKF3402X"
+    },
+    "after": {
+      "Reference": "R2202",
+      "Value": "34k",
+      "Footprint": "MIRA_RevA:R_0402_1005Metric",
+      "Datasheet": "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2RKF3402X",
+      "Description": "34k ohm, 1%, 0402; Panasonic ERJ-2RKF; calibrate actual divider ratio",
+      "Manufacturer": "Panasonic",
+      "MPN": "ERJ-2RKF3402X"
+    }
+  },
+  {
+    "ref": "R2116",
+    "before": {
+      "Reference": "R2116",
+      "Value": "100k",
+      "Footprint": "MIRA_RevA:R_0603_1608Metric",
+      "Datasheet": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD07100KL",
+      "Description": "Precision resistor, 0.1%, 25 ppm/C, 0.1 W; calibrate zero and gain per current range",
+      "Manufacturer": "YAGEO",
+      "MPN": "RT0603BRD07100KL"
+    },
+    "after": {
+      "Reference": "R2116",
+      "Value": "101k",
+      "Footprint": "MIRA_RevA:R_0603_1608Metric",
+      "Datasheet": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+      "Description": "101k, 0.1%, 25 ppm/C, 0603; matches 100k plus 1k guarded voltage target path",
+      "Manufacturer": "Vishay",
+      "MPN": "TNPW0603101KBEEA"
+    }
+  },
+  {
+    "ref": "R2104",
+    "before": {
+      "Reference": "R2104",
+      "Value": "9.09k",
+      "Footprint": "MIRA_RevA:R_0603_1608Metric",
+      "Datasheet": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD0710KL",
+      "Description": "Precision resistor, 0.1%, 25 ppm/C, 0.1 W; calibrate zero and gain per current range",
+      "Manufacturer": "YAGEO",
+      "MPN": "ERJ-2RKF9091X"
+    },
+    "after": {
+      "Reference": "R2104",
+      "Value": "9.09k",
+      "Footprint": "MIRA_RevA:R_0603_1608Metric",
+      "Datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L",
+      "Description": "9.09k, 0.1%, 25 ppm/C, 0603; loaded bias divider",
+      "Manufacturer": "YAGEO",
+      "MPN": "RT0603BRD079K09L"
+    }
+  },
+  {
+    "ref": "R2115",
+    "before": {
+      "Reference": "R2115",
+      "Value": "99k",
+      "Footprint": "MIRA_RevA:R_0603_1608Metric",
+      "Datasheet": "https://www.yageogroup.com/component-documentation/download/specsheet/RT0603BRD07100KL",
+      "Description": "Precision resistor, 0.1%, 25 ppm/C, 0.1 W; calibrate zero and gain per current range",
+      "Manufacturer": "YAGEO",
+      "MPN": "ERA-2AEB9902X"
+    },
+    "after": {
+      "Reference": "R2115",
+      "Value": "100k",
+      "Footprint": "MIRA_RevA:R_0603_1608Metric",
+      "Datasheet": "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L",
+      "Description": "CV input resistor; use with R2116=101k and 1k guard series resistor; calibrate complete path",
+      "Manufacturer": "YAGEO",
+      "MPN": "RT0603BRD07100KL"
+    }
+  }
+]

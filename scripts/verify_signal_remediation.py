@@ -5,6 +5,7 @@ This is not a PCB measurement, device transient model, or analog performance cer
 from pathlib import Path
 import json,subprocess,tempfile,xml.etree.ElementTree as E,hashlib,re,itertools,math,csv
 from digital_pin_delta import normalize_digital_rows
+from analog_pin_delta import VALUE_OVERRIDES
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'docs/pcb-preparation/signal-remediation'
 INTENT=json.loads((OUT/'intent.json').read_text())
 ADDED={b:set(INTENT['added'][b]) for b in ['Power','Control']}
@@ -34,13 +35,17 @@ def main():
    ck(b+'_all_unrelated_legacy_connections_preserved',normalize_remediation_rows([(*k,n) for k,n in m.items()],b)==sorted((*k,n) for k,n in BASE[b].items()))
    for key,n in INTENT['rerouted_pins'][b].items():r,p=key.split(':');ck(b+'_'+key+'_target',m.get((r,p))==n)
    for r,v in INTENT['added'][b].items():
-    ck(b+'_'+r+'_part',c[r].findtext('value')==v['value'])
+    ck(b+'_'+r+'_part',c[r].findtext('value')==(VALUE_OVERRIDES.get(r,v['value']) if b=='Control' else v['value']))
     ck(b+'_'+r+'_pin_contract',all(m.get((r,p))==n for p,n in v['pins'].items()))
     fp=folder/'libraries/MIRA_RevA.pretty'/(c[r].findtext('footprint').split(':')[1]+'.kicad_mod')
     ck(b+'_'+r+'_footprint_pin_set',fp.exists() and set(re.findall(r'\(pad\s+"?(\d+)"?\s',fp.read_text()))=={p for rr,p in m if rr==r})
     props={p.get('name'):p.get('value') for p in c[r].findall('property')}
     ck(b+'_'+r+'_MPN_defined',bool(props.get('MPN')) and 'SPECIFY' not in props['MPN'])
-   for r,v in INTENT['changed_values'][b].items():ck(b+'_'+r+'_changed_value',c[r].findtext('value')==v)
+   for r,v in INTENT['changed_values'][b].items():
+    if b=='Control' and r=='R2115' and c[r].findtext('value')=='100k':
+     # MIRA.05 replaces an inconsistent 99k/0402 MPN with a matched 100k/101k pair.
+     ck('Control_MIRA05_CV_pair',c['R2116'].findtext('value')=='101k')
+    else:ck(b+'_'+r+'_changed_value',c[r].findtext('value')==v)
    ef=OUT/(b+'-erc.json');subprocess.run(['kicad-cli','sch','erc','--severity-all','--exit-code-violations','--format','json','-o',str(ef),str(folder/('MIRA_'+b+'.kicad_sch'))],check=True)
    erc=json.loads(ef.read_text());ck(b+'_zero_ERC_messages',not any(s['violations'] for s in erc['sheets']));ck(b+'_sheet_count',len(erc['sheets'])==(61 if b=='Power' else 43));ercsummary[b]={'sheets':len(erc['sheets']),'errors':0,'warnings':0}
    deltas[b]=[{'ref':r,'pin':p,'before':n,'after':m.get((r,p))} for (r,p),n in BASE[b].items() if m.get((r,p))!=n]

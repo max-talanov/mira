@@ -2065,18 +2065,7 @@
 		)
 		(uuid "37c1e0eb-8db6-4fc8-8a15-281d968f3b87")
 	)
-	(text "R2200/R2201 = 49.9k/10k divide normalized source-current\nsense by 5.99. R2202/R2203 = 37.4k/10k and R2211 = 1.5M\nfrom IO3V3 set the backup threshold. Nominal trip: VSENSE\n> 1.2571*VILIM + 0.10343 V. The CV/CC loop is the\nprecision current regulator; this comparator is\nindependent coarse shutdown."
-		(exclude_from_sim no)
-		(at 22.86 174.34 0)
-		(effects
-			(font
-				(size 1.1 1.1)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "4cee413d-b577-43a9-8e6e-f3db1b3d8f03")
-	)
+	(text "R2200/R2201 = 45.3k/10k; R2202/R2203 = 34k/10k.\nInclude both 100k guard bleeds on sheet 3000 and\nR2211=1.5M from IO3V3. Nominal backup trip:\nVSENSE > 1.25623*VILIM + 0.09397 V at IO3V3=3.3 V.\nThis is coarse shutdown, not precision CC. Comparator\noffset, leakage and resistor tolerances add error." (exclude_from_sim no) (at 22.86 174.34 0) (effects (font (size 1.1 1.1) (color 0 70 160 1)) (justify left top)) (uuid "4cee413d-b577-43a9-8e6e-f3db1b3d8f03"))
 	(text "MATRIX_INHIBIT_N to Power / connector sheet 400"
 		(exclude_from_sim no)
 		(at 171.45 148.59 0)
@@ -2181,18 +2170,7 @@
 		)
 		(uuid "b5334d5b-43a2-416d-9311-7bb359efcc39")
 	)
-	(text "Backup trip only: 1.2571 x ILIM + 0.10343 V\nCurrent regulation and pulse energy are evaluated on sheet 2100."
-		(exclude_from_sim no)
-		(at 22.86 83.82 0)
-		(effects
-			(font
-				(size 1.05 1.05)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "b71f7be7-a88f-4961-b304-a1c913a0a806")
-	)
+	(text "Backup trip nominal: 1.25623 x ILIM + 0.09397 V\nWRITE qualified only; READ / VMM have no such trip." (exclude_from_sim no) (at 22.86 83.82 0) (effects (font (size 1.05 1.05) (color 0 70 160 1)) (justify left top)) (uuid "b71f7be7-a88f-4961-b304-a1c913a0a806"))
 	(text "Clocked trip memory / asynchronous clear"
 		(exclude_from_sim no)
 		(at 264.16 39.37 0)
@@ -2423,7 +2401,7 @@
 		)
 		(uuid "22a397d2-1942-4ce0-8645-618389311d3a")
 	)
-	
+
 	(wire
 		(pts
 			(xy 200.66 127) (xy 200.66 120.65)
@@ -2644,7 +2622,7 @@
 		)
 		(uuid "7db6007c-cdfc-4803-b948-f79730713c36")
 	)
-	
+
 	(wire
 		(pts
 			(xy 180.34 124.46) (xy 181.61 124.46)
@@ -2795,8 +2773,8 @@
 		)
 		(uuid "a5e94006-1a46-4323-8379-b1431338fa90")
 	)
-	
-	
+
+
 	(wire
 		(pts
 			(xy 90.17 62.23) (xy 93.98 62.23)
@@ -4095,7 +4073,7 @@
 			)
 		)
 	)
-	(symbol (lib_id "MIRA_RevA:Resistor") (at 39.37 60.96 90) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "1aa644ba-aa0a-4518-8280-b520b5015977") (property "Reference" "R2200" (at 39.37 58.46 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Value" "45.3k" (at 39.37 63.46 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Footprint" "MIRA_RevA:R_0402_1005Metric" (at 39.37 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" (at 39.37 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Description" "49.9k ohm, 0.1%, 25 ppm/K, precision fault-threshold resistor" (at 39.37 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "MPN" "ERJ-2RKF4532X" (at 39.37 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Manufacturer" "Vishay" (at 39.37 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (pin "1" (uuid "4e835a2d-833d-4a96-8edc-34d64295da9a")) (pin "2" (uuid "ac84a3a5-04c1-4b5b-8ee6-2a1458bfde26")) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/75a2aa70-81cd-4543-a50c-e295d4f5a68c/c17b5599-39dd-494c-ad64-99a5847f5793" (reference "R2200") (unit 1)))))
+	(symbol (lib_id "MIRA_RevA:Resistor") (at 39.37 60.96 90) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "1aa644ba-aa0a-4518-8280-b520b5015977") (property "Reference" "R2200" (at 39.37 58.46 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Value" "45.3k" (at 39.37 63.46 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Footprint" "MIRA_RevA:R_0402_1005Metric" (at 39.37 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Datasheet" "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2RKF4532X" (at 39.37 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Description" "45.3k ohm, 1%, 0402; Panasonic ERJ-2RKF; calibrate actual divider ratio" (at 39.37 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "MPN" "ERJ-2RKF4532X" (at 39.37 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Manufacturer" "Panasonic" (at 39.37 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (pin "1" (uuid "4e835a2d-833d-4a96-8edc-34d64295da9a")) (pin "2" (uuid "ac84a3a5-04c1-4b5b-8ee6-2a1458bfde26")) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/75a2aa70-81cd-4543-a50c-e295d4f5a68c/c17b5599-39dd-494c-ad64-99a5847f5793" (reference "R2200") (unit 1)))))
 	(symbol
 		(lib_id "MIRA_RevA:SN74LVC1G08_MIRA_MAT")
 		(at 180.34 72.39 0)
@@ -6502,7 +6480,7 @@
 			)
 		)
 	)
-	(symbol (lib_id "MIRA_RevA:Resistor") (at 39.37 68.58 90) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "c2557e1e-6c35-44b1-8702-41f9632aa3ad") (property "Reference" "R2202" (at 39.37 66.08 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Value" "34k" (at 39.37 71.08 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Footprint" "MIRA_RevA:R_0402_1005Metric" (at 39.37 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Datasheet" "https://www.vishay.com/docs/28758/tnpw_e3.pdf" (at 39.37 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Description" "37.4k ohm, 0.1%, 25 ppm/K, precision fault-threshold resistor" (at 39.37 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "MPN" "ERJ-2RKF3402X" (at 39.37 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Manufacturer" "Vishay" (at 39.37 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (pin "1" (uuid "2dd56ee6-421d-4dab-ad4b-7265e30c6b84")) (pin "2" (uuid "25799559-2aa6-4748-9058-6518ce11085d")) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/75a2aa70-81cd-4543-a50c-e295d4f5a68c/c17b5599-39dd-494c-ad64-99a5847f5793" (reference "R2202") (unit 1)))))
+	(symbol (lib_id "MIRA_RevA:Resistor") (at 39.37 68.58 90) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "c2557e1e-6c35-44b1-8702-41f9632aa3ad") (property "Reference" "R2202" (at 39.37 66.08 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Value" "34k" (at 39.37 71.08 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Footprint" "MIRA_RevA:R_0402_1005Metric" (at 39.37 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Datasheet" "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2RKF3402X" (at 39.37 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Description" "34k ohm, 1%, 0402; Panasonic ERJ-2RKF; calibrate actual divider ratio" (at 39.37 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "MPN" "ERJ-2RKF3402X" (at 39.37 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Manufacturer" "Panasonic" (at 39.37 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (pin "1" (uuid "2dd56ee6-421d-4dab-ad4b-7265e30c6b84")) (pin "2" (uuid "25799559-2aa6-4748-9058-6518ce11085d")) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/75a2aa70-81cd-4543-a50c-e295d4f5a68c/c17b5599-39dd-494c-ad64-99a5847f5793" (reference "R2202") (unit 1)))))
 	(symbol
 		(lib_id "MIRA_RevA:2N7002_MIRA_MAT")
 		(at 148.59 125.73 0)

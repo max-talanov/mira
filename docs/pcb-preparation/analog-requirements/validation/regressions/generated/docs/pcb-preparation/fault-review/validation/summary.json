@@ -1,0 +1,1556 @@
+{
+  "kicad_version": "10.0.8",
+  "checks_passed": 177,
+  "checks": {
+    "Power_U2501_pins": true,
+    "Power_U2502_pins": true,
+    "Power_U2603_pins": true,
+    "Power_D2501_pins": true,
+    "Power_U2401_pins": true,
+    "Power_U3301_pins": true,
+    "Power_J4901_pins": true,
+    "Control_J400_pins": true,
+    "Control_U100_pins": true,
+    "Control_R402_pins": true,
+    "Control_U401_pins": true,
+    "Power_R2509_pins": true,
+    "Power_R2508_pins": true,
+    "Control_U1301_pins": true,
+    "Control_U1336_pins": true,
+    "Control_U1331_pins": true,
+    "Control_U1305_pins": true,
+    "Control_U1404_pins": true,
+    "Control_U1405_pins": true,
+    "Control_U1406_pins": true,
+    "Control_U1407_pins": true,
+    "Control_U1408_pins": true,
+    "Control_U1409_pins": true,
+    "Power_Q2101_pins": true,
+    "Power_Q2104_pins": true,
+    "Power_Q2106_pins": true,
+    "Power_U5405_pins": true,
+    "PM_watchdog_parts_exact": true,
+    "local_guard_loss_clears_image": true,
+    "local_guard_restore_needs_reload": true,
+    "reference_loss_clears_image": true,
+    "reference_recovery_needs_reload": true,
+    "PM watchdog_matrix_disabled": true,
+    "PM watchdog_expected_global_scope": true,
+    "PM watchdog_no_auto_rearm": true,
+    "PM watchdog_requires_Control_reload": true,
+    "PM watchdog_valid_reload_can_restore": true,
+    "PM external reset_matrix_disabled": true,
+    "PM external reset_expected_global_scope": true,
+    "PM external reset_no_auto_rearm": true,
+    "PM external reset_requires_Control_reload": true,
+    "PM external reset_valid_reload_can_restore": true,
+    "AON supervisor_matrix_disabled": true,
+    "AON supervisor_expected_global_scope": true,
+    "AON supervisor_no_auto_rearm": true,
+    "AON supervisor_requires_Control_reload": true,
+    "AON supervisor_valid_reload_can_restore": true,
+    "startup qualifier_matrix_disabled": true,
+    "startup qualifier_expected_global_scope": true,
+    "startup qualifier_no_auto_rearm": true,
+    "startup qualifier_requires_Control_reload": true,
+    "startup qualifier_valid_reload_can_restore": true,
+    "input PG_matrix_disabled": true,
+    "input PG_expected_global_scope": true,
+    "input PG_no_auto_rearm": true,
+    "input PG_requires_Control_reload": true,
+    "input PG_valid_reload_can_restore": true,
+    "input fault_matrix_disabled": true,
+    "input fault_expected_global_scope": true,
+    "input fault_no_auto_rearm": true,
+    "input fault_requires_Control_reload": true,
+    "input fault_valid_reload_can_restore": true,
+    "overcurrent_matrix_disabled": true,
+    "overcurrent_expected_global_scope": true,
+    "overcurrent_no_auto_rearm": true,
+    "overcurrent_requires_Control_reload": true,
+    "overcurrent_valid_reload_can_restore": true,
+    "global STOP_matrix_disabled": true,
+    "global STOP_expected_global_scope": true,
+    "global STOP_no_auto_rearm": true,
+    "global STOP_requires_Control_reload": true,
+    "global STOP_valid_reload_can_restore": true,
+    "host watchdog_matrix_disabled": true,
+    "host watchdog_expected_global_scope": true,
+    "host watchdog_no_auto_rearm": true,
+    "host watchdog_requires_Control_reload": true,
+    "host watchdog_valid_reload_can_restore": true,
+    "host reset_matrix_disabled": true,
+    "host reset_expected_global_scope": true,
+    "host reset_no_auto_rearm": true,
+    "host reset_requires_Control_reload": true,
+    "host reset_valid_reload_can_restore": true,
+    "matrix inhibit_matrix_disabled": true,
+    "matrix inhibit_expected_global_scope": true,
+    "matrix inhibit_no_auto_rearm": true,
+    "matrix inhibit_requires_Control_reload": true,
+    "matrix inhibit_valid_reload_can_restore": true,
+    "application heartbeat timeout_matrix_disabled": true,
+    "application heartbeat timeout_expected_global_scope": true,
+    "application heartbeat timeout_no_auto_rearm": true,
+    "application heartbeat timeout_requires_Control_reload": true,
+    "application heartbeat timeout_valid_reload_can_restore": true,
+    "SYS3V3 PG loss_matrix_disabled": true,
+    "SYS3V3 PG loss_expected_global_scope": true,
+    "SYS3V3 PG loss_no_auto_rearm": true,
+    "SYS3V3 PG loss_requires_Control_reload": true,
+    "SYS3V3 PG loss_valid_reload_can_restore": true,
+    "FPGA5V5 PG loss_matrix_disabled": true,
+    "FPGA5V5 PG loss_expected_global_scope": true,
+    "FPGA5V5 PG loss_no_auto_rearm": true,
+    "FPGA5V5 PG loss_requires_Control_reload": true,
+    "FPGA5V5 PG loss_valid_reload_can_restore": true,
+    "CORE1V0 PG loss_matrix_disabled": true,
+    "CORE1V0 PG loss_expected_global_scope": true,
+    "CORE1V0 PG loss_no_auto_rearm": true,
+    "CORE1V0 PG loss_requires_Control_reload": true,
+    "CORE1V0 PG loss_valid_reload_can_restore": true,
+    "AUX1V8 PG loss_matrix_disabled": true,
+    "AUX1V8 PG loss_expected_global_scope": true,
+    "AUX1V8 PG loss_no_auto_rearm": true,
+    "AUX1V8 PG loss_requires_Control_reload": true,
+    "AUX1V8 PG loss_valid_reload_can_restore": true,
+    "AUX2V5 PG loss_matrix_disabled": true,
+    "AUX2V5 PG loss_expected_global_scope": true,
+    "AUX2V5 PG loss_no_auto_rearm": true,
+    "AUX2V5 PG loss_requires_Control_reload": true,
+    "AUX2V5 PG loss_valid_reload_can_restore": true,
+    "IO3V3 PG loss_matrix_disabled": true,
+    "IO3V3 PG loss_expected_global_scope": true,
+    "IO3V3 PG loss_no_auto_rearm": true,
+    "IO3V3 PG loss_requires_Control_reload": true,
+    "IO3V3 PG loss_valid_reload_can_restore": true,
+    "DDR1V35 PG loss_matrix_disabled": true,
+    "DDR1V35 PG loss_expected_global_scope": true,
+    "DDR1V35 PG loss_no_auto_rearm": true,
+    "DDR1V35 PG loss_requires_Control_reload": true,
+    "DDR1V35 PG loss_valid_reload_can_restore": true,
+    "VTT PG loss_matrix_disabled": true,
+    "VTT PG loss_expected_global_scope": true,
+    "VTT PG loss_no_auto_rearm": true,
+    "VTT PG loss_requires_Control_reload": true,
+    "VTT PG loss_valid_reload_can_restore": true,
+    "PHY1V05 PG loss_matrix_disabled": true,
+    "PHY1V05 PG loss_expected_global_scope": true,
+    "PHY1V05 PG loss_no_auto_rearm": true,
+    "PHY1V05 PG loss_requires_Control_reload": true,
+    "PHY1V05 PG loss_valid_reload_can_restore": true,
+    "USB5 PG loss_matrix_disabled": true,
+    "USB5 PG loss_expected_global_scope": true,
+    "USB5 PG loss_no_auto_rearm": true,
+    "USB5 PG loss_requires_Control_reload": true,
+    "USB5 PG loss_valid_reload_can_restore": true,
+    "ANA6 PG loss_matrix_disabled": true,
+    "ANA6 PG loss_expected_global_scope": true,
+    "ANA6 PG loss_no_auto_rearm": true,
+    "ANA6 PG loss_requires_Control_reload": true,
+    "ANA6 PG loss_valid_reload_can_restore": true,
+    "ANA5 PG loss_matrix_disabled": true,
+    "ANA5 PG loss_expected_global_scope": true,
+    "ANA5 PG loss_no_auto_rearm": true,
+    "ANA5 PG loss_requires_Control_reload": true,
+    "ANA5 PG loss_valid_reload_can_restore": true,
+    "ANA3V3 PG loss_matrix_disabled": true,
+    "ANA3V3 PG loss_expected_global_scope": true,
+    "ANA3V3 PG loss_no_auto_rearm": true,
+    "ANA3V3 PG loss_requires_Control_reload": true,
+    "ANA3V3 PG loss_valid_reload_can_restore": true,
+    "P15 PG loss_matrix_disabled": true,
+    "P15 PG loss_expected_global_scope": true,
+    "P15 PG loss_no_auto_rearm": true,
+    "P15 PG loss_requires_Control_reload": true,
+    "P15 PG loss_valid_reload_can_restore": true,
+    "N15 PG loss_matrix_disabled": true,
+    "N15 PG loss_expected_global_scope": true,
+    "N15 PG loss_no_auto_rearm": true,
+    "N15 PG loss_requires_Control_reload": true,
+    "N15 PG loss_valid_reload_can_restore": true,
+    "UART_VALID_no_direct_hardware_detection": true,
+    "UART_VALID_PM_KILL_path_disables_matrix": true,
+    "PC_LINK_VALID_no_direct_hardware_detection": true,
+    "PC_LINK_VALID_PM_KILL_path_disables_matrix": true,
+    "FPGA_PROGRESS_no_direct_hardware_detection": true,
+    "FPGA_PROGRESS_PM_KILL_path_disables_matrix": true,
+    "Power_Q2601_pins": true,
+    "Power_Q2602_pins": true,
+    "ARM_held_high_through_fault_does_not_rearm": true,
+    "fresh_ARM_edge_after_fault_is_required": true
+  },
+  "native_pin_net_sha256": {
+    "Power": "18c742dca2165bc8b2ae2f0c0ae0c6854c9a094789488002a974e60b4bd261a2",
+    "Control": "29ad98029f6d153d920bad77a8801fa770c2f393a8f7e1b24da3b23256644e0b"
+  },
+  "fault_scenarios": 30,
+  "scenarios": [
+    {
+      "event": "PM watchdog",
+      "signal": "PM_WDO_N",
+      "hardware_scope": "global",
+      "at_fault": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "PM external reset",
+      "signal": "PM_RESET_N",
+      "hardware_scope": "global",
+      "at_fault": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "AON supervisor",
+      "signal": "AON_RESET_N",
+      "hardware_scope": "global",
+      "at_fault": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "startup qualifier",
+      "signal": "STARTUP_READY_H",
+      "hardware_scope": "global",
+      "at_fault": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "input PG",
+      "signal": "PG_INPUT",
+      "hardware_scope": "global",
+      "at_fault": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "input fault",
+      "signal": "FLT_INPUT_N",
+      "hardware_scope": "global",
+      "at_fault": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "overcurrent",
+      "signal": "OC_OK_N",
+      "hardware_scope": "global",
+      "at_fault": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "global STOP",
+      "signal": "Net-(J2601-Pin_2)",
+      "hardware_scope": "global",
+      "at_fault": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": false,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 0
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "host watchdog",
+      "signal": "HOST_WDO_N",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "host reset",
+      "signal": "HOST_RESET_N",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "matrix inhibit",
+      "signal": "MATRIX_INHIBIT_N",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "application heartbeat timeout",
+      "signal": "LINK_READY_H",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "SYS3V3 PG loss",
+      "signal": "PG_SYS",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "FPGA5V5 PG loss",
+      "signal": "PG_FPGA",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "CORE1V0 PG loss",
+      "signal": "PGR_CORE",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "AUX1V8 PG loss",
+      "signal": "PGR_AUX18",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "AUX2V5 PG loss",
+      "signal": "PGR_AUX25",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "IO3V3 PG loss",
+      "signal": "PGR_IO33",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "DDR1V35 PG loss",
+      "signal": "PGR_DDR",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "VTT PG loss",
+      "signal": "PGR_VTT",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "PHY1V05 PG loss",
+      "signal": "PGR_PHY",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "USB5 PG loss",
+      "signal": "PG_USB",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "ANA6 PG loss",
+      "signal": "PG_ANA",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "ANA5 PG loss",
+      "signal": "PGR_ANA5",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "ANA3V3 PG loss",
+      "signal": "PGR_ANA33",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "P15 PG loss",
+      "signal": "PG_P15",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "N15 PG loss",
+      "signal": "PG_N15",
+      "hardware_scope": "matrix",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_signal_restored_without_ARM": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      },
+      "after_Power_rearm_without_Control_reload": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "UART_VALID lost while heartbeat continues",
+      "hardware_detection": "message/progress validity requires firmware to stop application heartbeat or assert KILL",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": true,
+        "MAT_OE_N": false,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": true,
+          "MAT_VMM_SAFE": true,
+          "MAT_READ_SAFE": true,
+          "MAT_WRITE_PULSE": true,
+          "MAT_VMM_DRIVE_SAFE": true
+        },
+        "commanded_rails": 15
+      },
+      "after_PM_asserts_MATRIX_KILL": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "PC_LINK_VALID lost while heartbeat continues",
+      "hardware_detection": "message/progress validity requires firmware to stop application heartbeat or assert KILL",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": true,
+        "MAT_OE_N": false,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": true,
+          "MAT_VMM_SAFE": true,
+          "MAT_READ_SAFE": true,
+          "MAT_WRITE_PULSE": true,
+          "MAT_VMM_DRIVE_SAFE": true
+        },
+        "commanded_rails": 15
+      },
+      "after_PM_asserts_MATRIX_KILL": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    },
+    {
+      "event": "FPGA_PROGRESS lost while heartbeat continues",
+      "hardware_detection": "message/progress validity requires firmware to stop application heartbeat or assert KILL",
+      "at_fault": {
+        "global_permit": true,
+        "matrix_permit": true,
+        "image_armed": true,
+        "MAT_OE_N": false,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": true,
+          "MAT_VMM_SAFE": true,
+          "MAT_READ_SAFE": true,
+          "MAT_WRITE_PULSE": true,
+          "MAT_VMM_DRIVE_SAFE": true
+        },
+        "commanded_rails": 15
+      },
+      "after_PM_asserts_MATRIX_KILL": {
+        "global_permit": true,
+        "matrix_permit": false,
+        "image_armed": false,
+        "MAT_OE_N": true,
+        "energizing_logic": {
+          "MAT_SERVICE_SAFE": false,
+          "MAT_VMM_SAFE": false,
+          "MAT_READ_SAFE": false,
+          "MAT_WRITE_PULSE": false,
+          "MAT_VMM_DRIVE_SAFE": false
+        },
+        "commanded_rails": 15
+      }
+    }
+  ],
+  "scope": "Ideal combinational gates/asynchronous flip-flops at valid supply levels. PG low is injected; no analogue detector, watchdog, discharge, propagation-delay or firmware simulation. Hardware and firmware tests pending."
+}

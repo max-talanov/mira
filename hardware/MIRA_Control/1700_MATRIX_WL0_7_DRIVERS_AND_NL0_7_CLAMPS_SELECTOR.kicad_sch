@@ -326,18 +326,7 @@
 		)
 		(uuid "b0cfe7bb-a446-42ad-8b28-ff0e74711e25")
 	)
-	(text "U1700 and U1701 are quad ADG5434 switches. Their common outputs connect to\nWL0-WL7. Each channel selects between VWL_SRC and GND under the matching\nMAT_WL_ON_0-7 control from the serial register image. This supplies the selected\nword-line voltage to the crossbar transistor gates."
-		(exclude_from_sim no)
-		(at 315 42.34 0)
-		(effects
-			(font
-				(size 1.35 1.35)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "b8291158-361b-462e-bb8d-9973041c8168")
-	)
+	(text "U1700 and U1701 are quad TMUX7234 switches. Each WL selects VWL_SRC or\nGND under MAT_WL_ON_0-7. VWL is a gate voltage only for a compatible\n1T1R adapter. Validate VGS, VGD and gate oxide limits for BOTH polarities\nbefore programming; the socket pin map does not specify the DUT ratings." (exclude_from_sim no) (at 315 42.34 0) (effects (font (size 1.35 1.35) (color 0 70 160 1)) (justify left top)) (uuid "b8291158-361b-462e-bb8d-9973041c8168"))
 	(text "Word-line loading"
 		(exclude_from_sim no)
 		(at 315 56.966 0)
@@ -668,12 +657,12 @@
 		(at 229.87 137.16)
 		(uuid "a7336ceb-28d9-419d-86db-52aac29278e1")
 	)
-	
+
 	(no_connect
 		(at 229.87 105.41)
 		(uuid "ba6856f1-b28e-45e7-984e-899ead285818")
 	)
-	
+
 	(wire
 		(pts
 			(xy 275.59 128.27) (xy 275.59 130.81)

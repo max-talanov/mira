@@ -1,5 +1,15 @@
 # MIRA changelog
 
+## 2026-10-30 — MIRA.05 analog requirements
+
+- Define separate READ, SET, RESET and FORMING source-voltage/current profiles, concurrency, provisional load limits and command windows. Distinguish these engineering limits from unknown DUT ratings.
+- Replace U2109 INA821 with INA149AIDR and its actual SOIC-8 pin map; sense buffered command for anti-windup. Preserve all other pin connectivity.
+- Change R2111 to 10 kOhm; nominal command ceiling 10.05 V. Set the local P15 qualifier to 1 MOhm / 31.6 kOhm, 0.1%, 0603; nominal falling threshold 13.22 V.
+- Preserve intervening R2115/R2116 100k/101k CV compensation, R2104 0603 MPN and five Panasonic ERJ metadata fixes (12 component records total).
+- Correct switch-family, ADC blanking, discharge and over-current notes. Preserve the earlier MIRA.04 and v6 repairs and all Power circuitry.
+- Pass 43 analog checks, 1650 digital and 1404 v6 checks, seven other historical regression scripts, and native ERC on Control (43 sheets) / Power (61 sheets), zero errors and warnings.
+- Add a Russian report, changed-sheet PDF, numeric tables, disabled matrix-profile template and explicit bench/model acceptance criteria. No firmware, PCB, peak-current or pulse-timing qualification is claimed. MIG/Vivado remains deferred until before DDR3L routing.
+
 ## 2026-10-30 — MIRA.04 digital interface review
 
 - User decision: defer MIG/Vivado validation until before routing FPGA-to-DDR3L on Control and before freezing the FPGA pinout. The user is closing the current MIRA.04 card as a schematic milestone; MIG validation remains an open pre-routing requirement.
