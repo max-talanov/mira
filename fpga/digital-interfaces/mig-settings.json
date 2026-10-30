@@ -50,12 +50,13 @@
     "date": "2026-10-30",
     "status": "DEFERRED_BY_USER",
     "resume_before": "Routing FPGA-to-DDR3L on MIRA_Control and freezing the FPGA pinout",
-    "card_status": "OPEN",
+    "card_status": "USER_CLOSING_SCHEMATIC_MILESTONE",
     "required_results": [
       "MIG pin validation for the exact FPGA, package, memory and frequency",
       "Generated MIG project and XDC matched to the current schematic",
       "Example-design implementation, DRC and timing reports"
     ],
-    "independent_work_may_continue": true
+    "independent_work_may_continue": true,
+    "MIG_requirement_status": "OPEN_DEFERRED_UNTIL_BEFORE_ROUTING"
   }
 }

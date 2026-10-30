@@ -2,7 +2,7 @@
 
 ## 2026-10-30 — MIRA.04 digital interface review
 
-- User decision: defer MIG/Vivado validation until before routing FPGA-to-DDR3L on Control and before freezing the FPGA pinout. MIRA.04 remains open; unrelated work may continue.
+- User decision: defer MIG/Vivado validation until before routing FPGA-to-DDR3L on Control and before freezing the FPGA pinout. The user is closing the current MIRA.04 card as a schematic milestone; MIG validation remains an open pre-routing requirement.
 
 - Move MCU-to-FPGA SPI SCK from U500.AB12 to Y11 (SRCC, bank 13); release AB12.
 - Verify exact FPGA/MCU/DDR3L/SDRAM pin functions, 39 FMC paths and 56 STM32 alternate functions.
