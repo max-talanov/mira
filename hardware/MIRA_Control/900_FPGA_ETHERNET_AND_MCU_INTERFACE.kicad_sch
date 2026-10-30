@@ -12595,7 +12595,7 @@
 		)
 		(uuid "e6c82c5d-6eaf-4170-aee6-02f81d688edd")
 	)
-	(text "U900 forwards SCK, MOSI, CS_N and HOST_ALIVE, powered by IO3V3.\nU901 returns MISO, FPGA_IRQ, FPGA_DONE and FPGA_INIT_N, powered by\nSYS3V3 with C907. Both are Nexperia 74LVC125APW,118 with specified Ioff.\nU901 3Y/4Y drive MCU PC6/PC7 through FPGA_DONE_MCU/FPGA_INIT_N_MCU.\nOutput enables remain grounded; 100 kohm resistors define startup levels."
+	(text "U900 forwards SCK, MOSI, CS_N and periodic HOST_ALIVE, powered by IO3V3.\nHOST_ALIVE is now a pulse train, not a static ready flag; FPGA must track it.\nU901 returns MISO, FPGA_IRQ, FPGA_DONE and FPGA_INIT_N from SYS3V3.\nBoth use 74LVC125APW,118 with Ioff; C907 decouples U901.\nU901 3Y/4Y drive PC6/PC7; OE pins stay low, 100k define startup levels."
 		(exclude_from_sim no)
 		(at 315 120.032 0)
 		(effects
@@ -31214,4 +31214,10 @@
 			)
 		)
 	)
+
+
+
+
+
+
 )

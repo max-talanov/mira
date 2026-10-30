@@ -4640,7 +4640,7 @@
 		)
 		(uuid "8581a4e3-b189-432b-96e8-e7f909bb50df")
 	)
-	(text "HOST_ALIVE, HOST_WDI and HOST_UART_TX communicate host activity and\ncommands. ALL_RAILS_PG_HOST, GLOBAL_PWR_PERMIT_HOST, MATRIX_PERMIT_HOST\nand PM_UART_TX_HOST return status and permissions. These nets report the\nindependent power manager state; they do not replace the hardware protection\ncircuitry."
+	(text "HOST_ALIVE is an application heartbeat: falling edges every 50 ms,\nmaximum gap 100 ms. Stop pulses on lost link/session or task progress.\nPower sheet 5400 enforces a 170..230 ms timeout and first-edge readiness.\nHOST_WDI is separate MCU supervision. Neither heartbeat may use a free-\nrunning PWM/DMA. Status nets report the independent power manager."
 		(exclude_from_sim no)
 		(at 315 122.205 0)
 		(effects
@@ -12833,4 +12833,10 @@
 			)
 		)
 	)
+
+
+
+
+
+
 )

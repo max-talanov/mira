@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-30",
+  "checks_passed": 36,
+  "checks": {
+    "Power_unrelated_pins_unchanged": true,
+    "exactly_seven_new_parts": true,
+    "exactly_three_legacy_pin_changes": true,
+    "U5501_pins": true,
+    "U5502_pins": true,
+    "R5501_pins": true,
+    "R5501_100k": true,
+    "R5502_pins": true,
+    "R5502_100k": true,
+    "R5503_pins": true,
+    "R5503_100k": true,
+    "C5501_pins": true,
+    "C5501_100n": true,
+    "C5502_pins": true,
+    "C5502_100n": true,
+    "U5501_exact_Ioff_MPN": true,
+    "U5501_power_input_output_types": true,
+    "U5502_exact_Ioff_MPN": true,
+    "U5502_power_input_output_types": true,
+    "U2602_pins": true,
+    "R3305_pins": true,
+    "R3306_pins": true,
+    "reset_AON_fanout_exact": true,
+    "UART_raw_fanout_exact": true,
+    "UART_PM_fanout_exact": true,
+    "C5501_package_pin_numbers": true,
+    "C5502_package_pin_numbers": true,
+    "R5501_package_pin_numbers": true,
+    "R5502_package_pin_numbers": true,
+    "R5503_package_pin_numbers": true,
+    "U5501_package_pin_numbers": true,
+    "U5502_package_pin_numbers": true,
+    "D3301_pins": true,
+    "D3501_pins": true,
+    "U3902_pins": true,
+    "Control_unrelated_pins_unchanged": true
+  },
+  "native_pin_sha256": {
+    "Power": "c44d030517cbb7a95fd93a2a88477684df161986a6788413930c893b7c918133",
+    "Control": "4e9f42a3b61d356ee1502254d9d38198034d3028c29cf607ed36d16aee72ff53"
+  },
+  "added_components": 7,
+  "legacy_pin_changes": [
+    {
+      "ref": "R3305",
+      "pin": "2",
+      "before": "PM_UART_RX",
+      "after": "HOST_UART_TX_RAW"
+    },
+    {
+      "ref": "R3306",
+      "pin": "1",
+      "before": "PM_UART_RX",
+      "after": "HOST_UART_TX_RAW"
+    },
+    {
+      "ref": "U2602",
+      "pin": "10",
+      "before": "HOST_RESET_N",
+      "after": "HOST_RESET_AON_N"
+    }
+  ],
+  "checklist_status": "Historical v5 regression; current status is in signal-remediation/README.md",
+  "scope": "Historical v5 connectivity regression after explicit v6 normalization; current actual-net validation runs first. No board measurement.",
+  "AON_budget_delta_mA": 2,
+  "AON_bypass_delta_uF": 0.2
+}

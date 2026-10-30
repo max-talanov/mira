@@ -1,3 +1,13 @@
+# Обновление 29 октября 2026
+
+**Актуальная ревизия v6, 30 октября 2026:** [исправления сигналов при отключённом питании](../signal-remediation/README.md). Power — 61 лист / Control — 43; ERC 0/0. Закрытие — по схеме в указанных условиях; испытания платы и PCB открыты. AON: суммарный добавочный резерв 112 mA и 2.8 µF к бюджету 28 октября. Данные прежних этапов ниже сохранены как история.
+
+## История до v6
+
+Ревизия v5 30 октября 2026: Power 55 листов / Control 32, KiCad 10.0.8; 0 errors / 0 warnings / 0 exclusions. См. [проверку unpowered inputs](../unpowered-signals/README.md). Этот результат ERC не закрывает аналоговые пути обратного питания.
+
+Предыдущая ревизия: Power 54 листа, Control: 32; актуальные проверки — [fault-hardware](../fault-review/README.md), [startup](../startup/README.md) и [distributed-power/validation](../distributed-power/validation/summary.json). Ноль сообщений ERC; старые правила оформления и отсутствие исключений сохранены. Приведённая ниже история относится к прежним снимкам.
+
 # ERC: актуальное состояние и исходные отчёты
 
 KiCad CLI **10.0.7**, схемная основа `52f4386`. В обновлении документов исходники схем не изменялись.
@@ -7,7 +17,7 @@ KiCad CLI **10.0.7**, схемная основа `52f4386`. В обновлен
 | Power | 51 | 0 | 0 | 0 |
 | Control | 32 | 0 | 0 | 0 |
 
-[Power ERC](../distributed-power/validation/Power.json), [Control ERC](../distributed-power/validation/Control.json), [сводка](../distributed-power/validation/summary.json), [исходники и хеши](../distributed-power/validation/source-snapshot.json).
+[Power ERC](../distributed-power/validation/Power.json), [Control ERC](../distributed-power/validation/Control.json), [сводка](../distributed-power/validation/summary.json), [текущие исходники и хеши](../startup/validation/source-snapshot.json).
 
 ## Закрытие причин первоначальных сообщений
 

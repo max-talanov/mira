@@ -1,0 +1,2638 @@
+{
+  "rerouted_pins": {
+    "Power": {
+      "U3902:17": "MON_V_ANA5_SAFE",
+      "D3802:3": "MON_V_ANA5_SAFE",
+      "U3902:4": "MON_V_ANA6_SAFE",
+      "D3602:3": "MON_V_ANA6_SAFE",
+      "U3902:16": "MON_V_ANA33_SAFE",
+      "D3804:3": "MON_V_ANA33_SAFE",
+      "U3902:22": "MON_V_AUX18_SAFE",
+      "D3702:3": "MON_V_AUX18_SAFE",
+      "U3902:21": "MON_V_AUX25_SAFE",
+      "D3703:3": "MON_V_AUX25_SAFE",
+      "U3902:23": "MON_V_CORE_SAFE",
+      "D3701:3": "MON_V_CORE_SAFE",
+      "U3902:19": "MON_V_DDR_SAFE",
+      "D3801:3": "MON_V_DDR_SAFE",
+      "U3902:5": "MON_V_FPGA_SAFE",
+      "D3601:3": "MON_V_FPGA_SAFE",
+      "U3902:9": "MON_V_INPUT_SAFE",
+      "D3501:3": "MON_V_INPUT_SAFE",
+      "U3902:20": "MON_V_IO33_SAFE",
+      "D3704:3": "MON_V_IO33_SAFE",
+      "U3902:3": "MON_V_P15_SAFE",
+      "D3603:3": "MON_V_P15_SAFE",
+      "U3902:18": "MON_V_PHY_SAFE",
+      "D3803:3": "MON_V_PHY_SAFE",
+      "U3902:6": "MON_V_SYS_SAFE",
+      "D3504:3": "MON_V_SYS_SAFE",
+      "U3902:7": "MON_V_USB_SAFE",
+      "D3503:3": "MON_V_USB_SAFE",
+      "U2401:19": "ADC_VTT_SAFE",
+      "D3301:3": "ADC_VTT_SAFE",
+      "U601:4": "EN_USB_VIN",
+      "U701:18": "EN_SYS_VIN",
+      "U801:18": "EN_FPGA_VIN",
+      "U901:4": "EN_ANA_VIN",
+      "U1001:4": "EN_P15_VIN",
+      "U1301:13": "EN_AUX18_VIN",
+      "U1401:13": "EN_AUX25_VIN",
+      "U1501:13": "EN_IO33_VIN",
+      "U1601:13": "EN_DDR_VIN",
+      "U1701:13": "EN_PHY_VIN"
+    },
+    "Control": {
+      "U1602:15": "GND",
+      "U1700:15": "GND",
+      "U1701:15": "GND",
+      "U1300:4": "MAT_ALLOWED_BASE",
+      "U1001:3": "BL_DAC_RAW0_SAFE",
+      "U1001:5": "BL_DAC_RAW1_SAFE",
+      "U1001:10": "BL_DAC_RAW2_SAFE",
+      "U1001:12": "BL_DAC_RAW3_SAFE",
+      "U1002:3": "BL_DAC_RAW4_SAFE",
+      "U1002:5": "BL_DAC_RAW5_SAFE",
+      "U1002:10": "BL_DAC_RAW6_SAFE",
+      "U1002:12": "BL_DAC_RAW7_SAFE",
+      "U1004:3": "BL_DAC_RAW8_SAFE",
+      "U1004:5": "BL_DAC_RAW9_SAFE",
+      "U1004:10": "BL_DAC_RAW10_SAFE",
+      "U1004:12": "BL_DAC_RAW11_SAFE",
+      "U1005:3": "BL_DAC_RAW12_SAFE",
+      "U1005:5": "BL_DAC_RAW13_SAFE",
+      "U1005:10": "BL_DAC_RAW14_SAFE",
+      "U1005:12": "BL_DAC_RAW15_SAFE",
+      "U1007:3": "BL_DAC_RAW16_SAFE",
+      "U1007:5": "BL_DAC_RAW17_SAFE",
+      "U1007:10": "BL_DAC_RAW18_SAFE",
+      "U1007:12": "BL_DAC_RAW19_SAFE",
+      "U1008:3": "BL_DAC_RAW20_SAFE",
+      "U1008:5": "BL_DAC_RAW21_SAFE",
+      "U1008:10": "BL_DAC_RAW22_SAFE",
+      "U1008:12": "BL_DAC_RAW23_SAFE",
+      "U1010:3": "BL_DAC_RAW24_SAFE",
+      "U1010:5": "BL_DAC_RAW25_SAFE",
+      "U1010:10": "BL_DAC_RAW26_SAFE",
+      "U1010:12": "BL_DAC_RAW27_SAFE",
+      "U1011:3": "BL_DAC_RAW28_SAFE",
+      "U1011:5": "BL_DAC_RAW29_SAFE",
+      "U1011:10": "BL_DAC_RAW30_SAFE",
+      "U1011:12": "BL_DAC_RAW31_SAFE",
+      "U1101:3": "VREAD_DAC_SAFE",
+      "U1101:10": "VRESET_DAC_SAFE",
+      "U1101:5": "VSET_DAC_SAFE",
+      "U1101:12": "VWL_DAC_SAFE",
+      "U1102:10": "ILIM_FORM_DAC_SAFE",
+      "U1102:5": "ILIM_RESET_DAC_SAFE",
+      "U1102:3": "ILIM_SET_DAC_SAFE",
+      "U1102:12": "MATRIX_BIAS_DAC_SAFE",
+      "U2105:3": "CC_BIAS_IN_AFE_SAFE",
+      "U2105:5": "MAT_ADC_REF_AFE_SAFE",
+      "R2006:1": "ADC_P_SWITCHED",
+      "R2009:1": "ADC_N_SWITCHED",
+      "U2001:3": "MAT_CM_SAFE",
+      "U2200:3": "MAT_CMP_P_SAFE",
+      "U2200:4": "MAT_CMP_N_SAFE",
+      "R2004:1": "FDA_GUARD_N",
+      "R2002:1": "FDA_GUARD_P",
+      "U1601:4": "VREAD_SRC_SAFE",
+      "U1601:5": "VSET_SRC_SAFE",
+      "U1601:6": "VRESET_SRC_SAFE",
+      "U1601:7": "VFORM_SRC_SAFE",
+      "U706:8": "USB_MUX_3V3",
+      "R702:1": "USB_MUX_3V3",
+      "U706:29": "USB_CC_DISABLE",
+      "U2003:3": "MAT_ADC_REF",
+      "U2003:7": "MAT_ADC_REF",
+      "U2001:7": "MAT_ADC_REF",
+      "C2004:1": "MAT_ADC_REF",
+      "C2005:1": "MAT_ADC_REF",
+      "C2013:1": "MAT_ADC_REF"
+    }
+  },
+  "added": {
+    "Power": {
+      "U5600": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AON",
+          "4": "GND",
+          "9": "GND",
+          "7": "AON_MON_ENABLE",
+          "3": "AON_MON_ENABLE",
+          "1": "MON_V_ANA33",
+          "2": "MON_V_ANA33_SAFE",
+          "5": "MON_V_ANA5",
+          "6": "MON_V_ANA5_SAFE"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C5600": {
+        "value": "100n",
+        "pins": {
+          "1": "AON",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R5600": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_ANA33_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5602": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_ANA5_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5601": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AON",
+          "4": "GND",
+          "9": "GND",
+          "7": "AON_MON_ENABLE",
+          "3": "AON_MON_ENABLE",
+          "1": "MON_V_ANA6",
+          "2": "MON_V_ANA6_SAFE",
+          "5": "MON_V_AUX18",
+          "6": "MON_V_AUX18_SAFE"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C5601": {
+        "value": "100n",
+        "pins": {
+          "1": "AON",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R5604": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_ANA6_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5606": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_AUX18_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5602": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AON",
+          "4": "GND",
+          "9": "GND",
+          "7": "AON_MON_ENABLE",
+          "3": "AON_MON_ENABLE",
+          "1": "MON_V_AUX25",
+          "2": "MON_V_AUX25_SAFE",
+          "5": "MON_V_CORE",
+          "6": "MON_V_CORE_SAFE"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C5602": {
+        "value": "100n",
+        "pins": {
+          "1": "AON",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R5608": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_AUX25_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5610": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_CORE_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5603": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AON",
+          "4": "GND",
+          "9": "GND",
+          "7": "AON_MON_ENABLE",
+          "3": "AON_MON_ENABLE",
+          "1": "MON_V_DDR",
+          "2": "MON_V_DDR_SAFE",
+          "5": "MON_V_FPGA",
+          "6": "MON_V_FPGA_SAFE"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C5603": {
+        "value": "100n",
+        "pins": {
+          "1": "AON",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R5612": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_DDR_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5614": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_FPGA_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5700": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AON",
+          "4": "GND",
+          "9": "GND",
+          "7": "AON_MON_ENABLE",
+          "3": "AON_MON_ENABLE",
+          "1": "MON_V_INPUT",
+          "2": "MON_V_INPUT_SAFE",
+          "5": "MON_V_IO33",
+          "6": "MON_V_IO33_SAFE"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C5700": {
+        "value": "100n",
+        "pins": {
+          "1": "AON",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R5700": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_INPUT_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5702": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_IO33_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5701": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AON",
+          "4": "GND",
+          "9": "GND",
+          "7": "AON_MON_ENABLE",
+          "3": "AON_MON_ENABLE",
+          "1": "MON_V_P15",
+          "2": "MON_V_P15_SAFE",
+          "5": "MON_V_PHY",
+          "6": "MON_V_PHY_SAFE"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C5701": {
+        "value": "100n",
+        "pins": {
+          "1": "AON",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R5704": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_P15_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5706": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_PHY_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5702": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AON",
+          "4": "GND",
+          "9": "GND",
+          "7": "AON_MON_ENABLE",
+          "3": "AON_MON_ENABLE",
+          "1": "MON_V_SYS",
+          "2": "MON_V_SYS_SAFE",
+          "5": "MON_V_USB",
+          "6": "MON_V_USB_SAFE"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C5702": {
+        "value": "100n",
+        "pins": {
+          "1": "AON",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R5708": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_SYS_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5710": {
+        "value": "100k",
+        "pins": {
+          "1": "MON_V_USB_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5703": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AON",
+          "4": "GND",
+          "9": "GND",
+          "7": "AON_MON_ENABLE",
+          "3": "GND",
+          "1": "ADC_VTT",
+          "2": "ADC_VTT_SAFE",
+          "5": "GND",
+          "6": "GND"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C5703": {
+        "value": "100n",
+        "pins": {
+          "1": "AON",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R5712": {
+        "value": "100k",
+        "pins": {
+          "1": "ADC_VTT_SAFE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5800": {
+        "value": "TLP172GM(TPR,E)",
+        "pins": {
+          "1": "EN_USB_LED_A",
+          "3": "EN_USB_LED_K",
+          "6": "BUS24",
+          "4": "EN_USB_VIN"
+        },
+        "footprint": "MIRA_RevA:SO6_4Pin_Toshiba_11-4M1S"
+      },
+      "Q5800": {
+        "value": "AO3400A",
+        "pins": {
+          "1": "EN_USB",
+          "2": "GND",
+          "3": "EN_USB_LED_K"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "R5800": {
+        "value": "270",
+        "pins": {
+          "1": "AON",
+          "2": "EN_USB_LED_A"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5801": {
+        "value": "22k",
+        "pins": {
+          "1": "EN_USB_VIN",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5801": {
+        "value": "TLP172GM(TPR,E)",
+        "pins": {
+          "1": "EN_SYS_LED_A",
+          "3": "EN_SYS_LED_K",
+          "6": "BUS24",
+          "4": "EN_SYS_VIN"
+        },
+        "footprint": "MIRA_RevA:SO6_4Pin_Toshiba_11-4M1S"
+      },
+      "Q5801": {
+        "value": "AO3400A",
+        "pins": {
+          "1": "EN_SYS",
+          "2": "GND",
+          "3": "EN_SYS_LED_K"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "R5802": {
+        "value": "270",
+        "pins": {
+          "1": "AON",
+          "2": "EN_SYS_LED_A"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5803": {
+        "value": "22k",
+        "pins": {
+          "1": "EN_SYS_VIN",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5802": {
+        "value": "TLP172GM(TPR,E)",
+        "pins": {
+          "1": "EN_FPGA_LED_A",
+          "3": "EN_FPGA_LED_K",
+          "6": "BUS24",
+          "4": "EN_FPGA_VIN"
+        },
+        "footprint": "MIRA_RevA:SO6_4Pin_Toshiba_11-4M1S"
+      },
+      "Q5802": {
+        "value": "AO3400A",
+        "pins": {
+          "1": "EN_FPGA",
+          "2": "GND",
+          "3": "EN_FPGA_LED_K"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "R5804": {
+        "value": "270",
+        "pins": {
+          "1": "AON",
+          "2": "EN_FPGA_LED_A"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5805": {
+        "value": "22k",
+        "pins": {
+          "1": "EN_FPGA_VIN",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5803": {
+        "value": "TLP172GM(TPR,E)",
+        "pins": {
+          "1": "EN_ANA_LED_A",
+          "3": "EN_ANA_LED_K",
+          "6": "BUS24",
+          "4": "EN_ANA_VIN"
+        },
+        "footprint": "MIRA_RevA:SO6_4Pin_Toshiba_11-4M1S"
+      },
+      "Q5803": {
+        "value": "AO3400A",
+        "pins": {
+          "1": "EN_ANA",
+          "2": "GND",
+          "3": "EN_ANA_LED_K"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "R5806": {
+        "value": "270",
+        "pins": {
+          "1": "AON",
+          "2": "EN_ANA_LED_A"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5807": {
+        "value": "22k",
+        "pins": {
+          "1": "EN_ANA_VIN",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5804": {
+        "value": "TLP172GM(TPR,E)",
+        "pins": {
+          "1": "EN_P15_LED_A",
+          "3": "EN_P15_LED_K",
+          "6": "BUS24",
+          "4": "EN_P15_VIN"
+        },
+        "footprint": "MIRA_RevA:SO6_4Pin_Toshiba_11-4M1S"
+      },
+      "Q5804": {
+        "value": "AO3400A",
+        "pins": {
+          "1": "EN_P15",
+          "2": "GND",
+          "3": "EN_P15_LED_K"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "R5808": {
+        "value": "270",
+        "pins": {
+          "1": "AON",
+          "2": "EN_P15_LED_A"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5809": {
+        "value": "22k",
+        "pins": {
+          "1": "EN_P15_VIN",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5900": {
+        "value": "TLP172GM(TPR,E)",
+        "pins": {
+          "1": "EN_AUX18_LED_A",
+          "3": "EN_AUX18_LED_K",
+          "6": "FPGA5V5",
+          "4": "EN_AUX18_VIN"
+        },
+        "footprint": "MIRA_RevA:SO6_4Pin_Toshiba_11-4M1S"
+      },
+      "Q5900": {
+        "value": "AO3400A",
+        "pins": {
+          "1": "EN_AUX18",
+          "2": "GND",
+          "3": "EN_AUX18_LED_K"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "R5900": {
+        "value": "270",
+        "pins": {
+          "1": "AON",
+          "2": "EN_AUX18_LED_A"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5901": {
+        "value": "22k",
+        "pins": {
+          "1": "EN_AUX18_VIN",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5901": {
+        "value": "TLP172GM(TPR,E)",
+        "pins": {
+          "1": "EN_AUX25_LED_A",
+          "3": "EN_AUX25_LED_K",
+          "6": "FPGA5V5",
+          "4": "EN_AUX25_VIN"
+        },
+        "footprint": "MIRA_RevA:SO6_4Pin_Toshiba_11-4M1S"
+      },
+      "Q5901": {
+        "value": "AO3400A",
+        "pins": {
+          "1": "EN_AUX25",
+          "2": "GND",
+          "3": "EN_AUX25_LED_K"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "R5902": {
+        "value": "270",
+        "pins": {
+          "1": "AON",
+          "2": "EN_AUX25_LED_A"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5903": {
+        "value": "22k",
+        "pins": {
+          "1": "EN_AUX25_VIN",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5902": {
+        "value": "TLP172GM(TPR,E)",
+        "pins": {
+          "1": "EN_IO33_LED_A",
+          "3": "EN_IO33_LED_K",
+          "6": "FPGA5V5",
+          "4": "EN_IO33_VIN"
+        },
+        "footprint": "MIRA_RevA:SO6_4Pin_Toshiba_11-4M1S"
+      },
+      "Q5902": {
+        "value": "AO3400A",
+        "pins": {
+          "1": "EN_IO33_QUAL",
+          "2": "GND",
+          "3": "EN_IO33_LED_K"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "R5904": {
+        "value": "270",
+        "pins": {
+          "1": "AON",
+          "2": "EN_IO33_LED_A"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5905": {
+        "value": "22k",
+        "pins": {
+          "1": "EN_IO33_VIN",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5903": {
+        "value": "TLP172GM(TPR,E)",
+        "pins": {
+          "1": "EN_DDR_LED_A",
+          "3": "EN_DDR_LED_K",
+          "6": "FPGA5V5",
+          "4": "EN_DDR_VIN"
+        },
+        "footprint": "MIRA_RevA:SO6_4Pin_Toshiba_11-4M1S"
+      },
+      "Q5903": {
+        "value": "AO3400A",
+        "pins": {
+          "1": "EN_DDR",
+          "2": "GND",
+          "3": "EN_DDR_LED_K"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "R5906": {
+        "value": "270",
+        "pins": {
+          "1": "AON",
+          "2": "EN_DDR_LED_A"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5907": {
+        "value": "22k",
+        "pins": {
+          "1": "EN_DDR_VIN",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U5904": {
+        "value": "TLP172GM(TPR,E)",
+        "pins": {
+          "1": "EN_PHY_LED_A",
+          "3": "EN_PHY_LED_K",
+          "6": "FPGA5V5",
+          "4": "EN_PHY_VIN"
+        },
+        "footprint": "MIRA_RevA:SO6_4Pin_Toshiba_11-4M1S"
+      },
+      "Q5904": {
+        "value": "AO3400A",
+        "pins": {
+          "1": "EN_PHY",
+          "2": "GND",
+          "3": "EN_PHY_LED_K"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "R5908": {
+        "value": "270",
+        "pins": {
+          "1": "AON",
+          "2": "EN_PHY_LED_A"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R5909": {
+        "value": "22k",
+        "pins": {
+          "1": "EN_PHY_VIN",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U6000": {
+        "value": "SN74LVC1G11",
+        "pins": {
+          "1": "EN_IO33",
+          "3": "PGR_AUX18",
+          "6": "EN_AUX18",
+          "4": "EN_IO33_QUAL",
+          "5": "AON",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:SOT-23-6"
+      },
+      "C6000": {
+        "value": "100n",
+        "pins": {
+          "1": "AON",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R6000": {
+        "value": "100k",
+        "pins": {
+          "1": "EN_IO33_QUAL",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R6001": {
+        "value": "1k",
+        "pins": {
+          "1": "IO3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U6100": {
+        "value": "74LVC1G17GV,125",
+        "pins": {
+          "2": "STARTUP_READY_H",
+          "3": "GND",
+          "4": "AON_MON_ENABLE",
+          "5": "AON"
+        },
+        "footprint": "MIRA_RevA:SOT-23-5"
+      },
+      "R6100": {
+        "value": "100k",
+        "pins": {
+          "1": "AON_MON_ENABLE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "C6100": {
+        "value": "100n",
+        "pins": {
+          "1": "AON",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      }
+    },
+    "Control": {
+      "U2300": {
+        "value": "TLV76033DBZR",
+        "pins": {
+          "2": "P15",
+          "3": "GND",
+          "1": "AFE_SIG_3V3"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "C2300": {
+        "value": "1u",
+        "pins": {
+          "1": "P15",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "C2301": {
+        "value": "1u",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2300": {
+        "value": "1k",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2301": {
+        "value": "TPS3808G01DBVR",
+        "pins": {
+          "1": "AFE_SIG_RESET_N",
+          "2": "GND",
+          "3": "AFE_SIG_3V3",
+          "5": "AFE_P15_SENSE",
+          "6": "AFE_SIG_3V3"
+        },
+        "footprint": "MIRA_RevA:SOT-23-6"
+      },
+      "R2301": {
+        "value": "1M",
+        "pins": {
+          "1": "P15",
+          "2": "AFE_P15_SENSE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2302": {
+        "value": "34.8k",
+        "pins": {
+          "1": "AFE_P15_SENSE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2303": {
+        "value": "10k",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "AFE_SIG_RESET_N"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2304": {
+        "value": "100k",
+        "pins": {
+          "1": "AFE_SIG_RESET_N",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "C2302": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "U2302": {
+        "value": "SN74LVC1G11",
+        "pins": {
+          "1": "MAT_ALLOWED_BASE",
+          "3": "AFE_SIG_READY",
+          "6": "ADC_REF_READY",
+          "2": "GND",
+          "4": "MAT_ALLOWED",
+          "5": "IO3V3"
+        },
+        "footprint": "MIRA_RevA:SOT-23-6"
+      },
+      "C2303": {
+        "value": "100n",
+        "pins": {
+          "1": "IO3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2305": {
+        "value": "100k",
+        "pins": {
+          "1": "MAT_ALLOWED",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2303": {
+        "value": "74LVC1G17GV,125",
+        "pins": {
+          "2": "AFE_SIG_RESET_N",
+          "3": "GND",
+          "4": "AFE_SIG_READY",
+          "5": "AFE_SIG_3V3"
+        },
+        "footprint": "MIRA_RevA:SOT-23-5"
+      },
+      "C2304": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2306": {
+        "value": "10k",
+        "pins": {
+          "1": "AFE_SIG_READY",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2400": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW0",
+          "2": "BL_DAC_RAW0_SAFE_SW",
+          "5": "BL_DAC_RAW1",
+          "6": "BL_DAC_RAW1_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2400": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2400": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW0_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2401": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW0_SAFE_SW",
+          "2": "BL_DAC_RAW0_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2402": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW1_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2403": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW1_SAFE_SW",
+          "2": "BL_DAC_RAW1_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2401": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW2",
+          "2": "BL_DAC_RAW2_SAFE_SW",
+          "5": "BL_DAC_RAW3",
+          "6": "BL_DAC_RAW3_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2401": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2404": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW2_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2405": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW2_SAFE_SW",
+          "2": "BL_DAC_RAW2_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2406": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW3_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2407": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW3_SAFE_SW",
+          "2": "BL_DAC_RAW3_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2402": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW4",
+          "2": "BL_DAC_RAW4_SAFE_SW",
+          "5": "BL_DAC_RAW5",
+          "6": "BL_DAC_RAW5_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2402": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2408": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW4_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2409": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW4_SAFE_SW",
+          "2": "BL_DAC_RAW4_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2410": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW5_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2411": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW5_SAFE_SW",
+          "2": "BL_DAC_RAW5_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2403": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW6",
+          "2": "BL_DAC_RAW6_SAFE_SW",
+          "5": "BL_DAC_RAW7",
+          "6": "BL_DAC_RAW7_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2403": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2412": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW6_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2413": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW6_SAFE_SW",
+          "2": "BL_DAC_RAW6_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2414": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW7_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2415": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW7_SAFE_SW",
+          "2": "BL_DAC_RAW7_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2500": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW8",
+          "2": "BL_DAC_RAW8_SAFE_SW",
+          "5": "BL_DAC_RAW9",
+          "6": "BL_DAC_RAW9_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2500": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2500": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW8_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2501": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW8_SAFE_SW",
+          "2": "BL_DAC_RAW8_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2502": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW9_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2503": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW9_SAFE_SW",
+          "2": "BL_DAC_RAW9_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2501": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW10",
+          "2": "BL_DAC_RAW10_SAFE_SW",
+          "5": "BL_DAC_RAW11",
+          "6": "BL_DAC_RAW11_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2501": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2504": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW10_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2505": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW10_SAFE_SW",
+          "2": "BL_DAC_RAW10_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2506": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW11_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2507": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW11_SAFE_SW",
+          "2": "BL_DAC_RAW11_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2502": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW12",
+          "2": "BL_DAC_RAW12_SAFE_SW",
+          "5": "BL_DAC_RAW13",
+          "6": "BL_DAC_RAW13_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2502": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2508": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW12_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2509": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW12_SAFE_SW",
+          "2": "BL_DAC_RAW12_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2510": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW13_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2511": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW13_SAFE_SW",
+          "2": "BL_DAC_RAW13_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2503": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW14",
+          "2": "BL_DAC_RAW14_SAFE_SW",
+          "5": "BL_DAC_RAW15",
+          "6": "BL_DAC_RAW15_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2503": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2512": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW14_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2513": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW14_SAFE_SW",
+          "2": "BL_DAC_RAW14_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2514": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW15_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2515": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW15_SAFE_SW",
+          "2": "BL_DAC_RAW15_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2600": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW16",
+          "2": "BL_DAC_RAW16_SAFE_SW",
+          "5": "BL_DAC_RAW17",
+          "6": "BL_DAC_RAW17_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2600": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2600": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW16_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2601": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW16_SAFE_SW",
+          "2": "BL_DAC_RAW16_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2602": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW17_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2603": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW17_SAFE_SW",
+          "2": "BL_DAC_RAW17_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2601": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW18",
+          "2": "BL_DAC_RAW18_SAFE_SW",
+          "5": "BL_DAC_RAW19",
+          "6": "BL_DAC_RAW19_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2601": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2604": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW18_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2605": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW18_SAFE_SW",
+          "2": "BL_DAC_RAW18_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2606": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW19_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2607": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW19_SAFE_SW",
+          "2": "BL_DAC_RAW19_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2602": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW20",
+          "2": "BL_DAC_RAW20_SAFE_SW",
+          "5": "BL_DAC_RAW21",
+          "6": "BL_DAC_RAW21_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2602": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2608": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW20_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2609": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW20_SAFE_SW",
+          "2": "BL_DAC_RAW20_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2610": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW21_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2611": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW21_SAFE_SW",
+          "2": "BL_DAC_RAW21_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2603": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW22",
+          "2": "BL_DAC_RAW22_SAFE_SW",
+          "5": "BL_DAC_RAW23",
+          "6": "BL_DAC_RAW23_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2603": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2612": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW22_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2613": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW22_SAFE_SW",
+          "2": "BL_DAC_RAW22_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2614": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW23_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2615": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW23_SAFE_SW",
+          "2": "BL_DAC_RAW23_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2700": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW24",
+          "2": "BL_DAC_RAW24_SAFE_SW",
+          "5": "BL_DAC_RAW25",
+          "6": "BL_DAC_RAW25_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2700": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2700": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW24_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2701": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW24_SAFE_SW",
+          "2": "BL_DAC_RAW24_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2702": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW25_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2703": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW25_SAFE_SW",
+          "2": "BL_DAC_RAW25_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2701": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW26",
+          "2": "BL_DAC_RAW26_SAFE_SW",
+          "5": "BL_DAC_RAW27",
+          "6": "BL_DAC_RAW27_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2701": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2704": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW26_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2705": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW26_SAFE_SW",
+          "2": "BL_DAC_RAW26_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2706": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW27_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2707": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW27_SAFE_SW",
+          "2": "BL_DAC_RAW27_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2702": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW28",
+          "2": "BL_DAC_RAW28_SAFE_SW",
+          "5": "BL_DAC_RAW29",
+          "6": "BL_DAC_RAW29_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2702": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2708": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW28_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2709": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW28_SAFE_SW",
+          "2": "BL_DAC_RAW28_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2710": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW29_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2711": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW29_SAFE_SW",
+          "2": "BL_DAC_RAW29_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2703": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "BL_DAC_RAW30",
+          "2": "BL_DAC_RAW30_SAFE_SW",
+          "5": "BL_DAC_RAW31",
+          "6": "BL_DAC_RAW31_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2703": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2712": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW30_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2713": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW30_SAFE_SW",
+          "2": "BL_DAC_RAW30_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2714": {
+        "value": "100k",
+        "pins": {
+          "1": "BL_DAC_RAW31_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2715": {
+        "value": "1k",
+        "pins": {
+          "1": "BL_DAC_RAW31_SAFE_SW",
+          "2": "BL_DAC_RAW31_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2800": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "VREAD_DAC",
+          "2": "VREAD_DAC_SAFE_SW",
+          "5": "VRESET_DAC",
+          "6": "VRESET_DAC_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2800": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2800": {
+        "value": "100k",
+        "pins": {
+          "1": "VREAD_DAC_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2801": {
+        "value": "1k",
+        "pins": {
+          "1": "VREAD_DAC_SAFE_SW",
+          "2": "VREAD_DAC_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2802": {
+        "value": "100k",
+        "pins": {
+          "1": "VRESET_DAC_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2803": {
+        "value": "1k",
+        "pins": {
+          "1": "VRESET_DAC_SAFE_SW",
+          "2": "VRESET_DAC_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2801": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "VSET_DAC",
+          "2": "VSET_DAC_SAFE_SW",
+          "5": "VWL_DAC",
+          "6": "VWL_DAC_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2801": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2804": {
+        "value": "100k",
+        "pins": {
+          "1": "VSET_DAC_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2805": {
+        "value": "1k",
+        "pins": {
+          "1": "VSET_DAC_SAFE_SW",
+          "2": "VSET_DAC_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2806": {
+        "value": "100k",
+        "pins": {
+          "1": "VWL_DAC_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2807": {
+        "value": "1k",
+        "pins": {
+          "1": "VWL_DAC_SAFE_SW",
+          "2": "VWL_DAC_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2802": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "ILIM_FORM_DAC",
+          "2": "ILIM_FORM_DAC_SAFE_SW",
+          "5": "ILIM_RESET_DAC",
+          "6": "ILIM_RESET_DAC_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2802": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2808": {
+        "value": "100k",
+        "pins": {
+          "1": "ILIM_FORM_DAC_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2809": {
+        "value": "1k",
+        "pins": {
+          "1": "ILIM_FORM_DAC_SAFE_SW",
+          "2": "ILIM_FORM_DAC_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2810": {
+        "value": "100k",
+        "pins": {
+          "1": "ILIM_RESET_DAC_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2811": {
+        "value": "1k",
+        "pins": {
+          "1": "ILIM_RESET_DAC_SAFE_SW",
+          "2": "ILIM_RESET_DAC_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2803": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "ILIM_SET_DAC",
+          "2": "ILIM_SET_DAC_SAFE_SW",
+          "5": "MATRIX_BIAS_DAC",
+          "6": "MATRIX_BIAS_DAC_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2803": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2812": {
+        "value": "100k",
+        "pins": {
+          "1": "ILIM_SET_DAC_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2813": {
+        "value": "1k",
+        "pins": {
+          "1": "ILIM_SET_DAC_SAFE_SW",
+          "2": "ILIM_SET_DAC_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2814": {
+        "value": "100k",
+        "pins": {
+          "1": "MATRIX_BIAS_DAC_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2815": {
+        "value": "1k",
+        "pins": {
+          "1": "MATRIX_BIAS_DAC_SAFE_SW",
+          "2": "MATRIX_BIAS_DAC_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U2900": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "AFE_SIG_3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "AFE_SIG_READY",
+          "3": "AFE_SIG_READY",
+          "1": "CC_BIAS_IN",
+          "2": "CC_BIAS_IN_AFE_SAFE_SW",
+          "5": "MAT_ADC_REF",
+          "6": "MAT_ADC_REF_AFE_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C2900": {
+        "value": "100n",
+        "pins": {
+          "1": "AFE_SIG_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R2900": {
+        "value": "100k",
+        "pins": {
+          "1": "CC_BIAS_IN_AFE_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2901": {
+        "value": "1k",
+        "pins": {
+          "1": "CC_BIAS_IN_AFE_SAFE_SW",
+          "2": "CC_BIAS_IN_AFE_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2902": {
+        "value": "100k",
+        "pins": {
+          "1": "MAT_ADC_REF_AFE_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R2903": {
+        "value": "1k",
+        "pins": {
+          "1": "MAT_ADC_REF_AFE_SAFE_SW",
+          "2": "MAT_ADC_REF_AFE_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U3000": {
+        "value": "TPS3808G01DBVR",
+        "pins": {
+          "1": "ADC_REF_READY",
+          "2": "GND",
+          "3": "MAT_ADC_REF",
+          "5": "ADC_REF_SENSE",
+          "6": "MAT_ADC_REF"
+        },
+        "footprint": "MIRA_RevA:SOT-23-6"
+      },
+      "R3000": {
+        "value": "100k",
+        "pins": {
+          "1": "MAT_ADC_REF",
+          "2": "ADC_REF_SENSE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3001": {
+        "value": "9.53k",
+        "pins": {
+          "1": "ADC_REF_SENSE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3002": {
+        "value": "10k",
+        "pins": {
+          "1": "MAT_ADC_REF",
+          "2": "ADC_REF_READY"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3003": {
+        "value": "100k",
+        "pins": {
+          "1": "ADC_REF_READY",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "C3000": {
+        "value": "100n",
+        "pins": {
+          "1": "MAT_ADC_REF",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "U3010": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "MAT_ADC_REF",
+          "4": "GND",
+          "9": "GND",
+          "7": "ADC_REF_READY",
+          "3": "ADC_REF_READY",
+          "1": "AFE_FDA_OP",
+          "2": "ADC_P_SWITCHED",
+          "5": "AFE_FDA_ON",
+          "6": "ADC_N_SWITCHED"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C3010": {
+        "value": "100n",
+        "pins": {
+          "1": "MAT_ADC_REF",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R3010": {
+        "value": "100k",
+        "pins": {
+          "1": "ADC_P_SWITCHED",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3012": {
+        "value": "100k",
+        "pins": {
+          "1": "ADC_N_SWITCHED",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U3020": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "MAT_ADC_REF",
+          "4": "GND",
+          "9": "GND",
+          "7": "ADC_REF_READY",
+          "3": "GND",
+          "1": "MAT_CM_RAW",
+          "2": "MAT_CM_SAFE_SW",
+          "5": "GND",
+          "6": "GND"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C3020": {
+        "value": "100n",
+        "pins": {
+          "1": "MAT_ADC_REF",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R3020": {
+        "value": "100k",
+        "pins": {
+          "1": "MAT_CM_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3021": {
+        "value": "1k",
+        "pins": {
+          "1": "MAT_CM_SAFE_SW",
+          "2": "MAT_CM_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U3030": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "8": "IO3V3",
+          "4": "GND",
+          "9": "GND",
+          "7": "IO3V3",
+          "3": "IO3V3",
+          "1": "MAT_CMP_P",
+          "2": "MAT_CMP_P_SAFE_SW",
+          "5": "MAT_CMP_N",
+          "6": "MAT_CMP_N_SAFE_SW"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C3030": {
+        "value": "100n",
+        "pins": {
+          "1": "IO3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R3030": {
+        "value": "100k",
+        "pins": {
+          "1": "MAT_CMP_P_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3031": {
+        "value": "1k",
+        "pins": {
+          "1": "MAT_CMP_P_SAFE_SW",
+          "2": "MAT_CMP_P_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3032": {
+        "value": "100k",
+        "pins": {
+          "1": "MAT_CMP_N_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3033": {
+        "value": "1k",
+        "pins": {
+          "1": "MAT_CMP_N_SAFE_SW",
+          "2": "MAT_CMP_N_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3100": {
+        "value": "16k",
+        "pins": {
+          "1": "MAT_MONITOR_BUF",
+          "2": "FDA_GUARD_N_RAW"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3101": {
+        "value": "4.02k",
+        "pins": {
+          "1": "FDA_GUARD_N_RAW",
+          "2": "MAT_ADC_CM"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3102": {
+        "value": "100k",
+        "pins": {
+          "1": "FDA_GUARD_N",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3103": {
+        "value": "16k",
+        "pins": {
+          "1": "GND",
+          "2": "FDA_GUARD_P_RAW"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3104": {
+        "value": "4.02k",
+        "pins": {
+          "1": "FDA_GUARD_P_RAW",
+          "2": "MAT_ADC_CM"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3105": {
+        "value": "100k",
+        "pins": {
+          "1": "FDA_GUARD_P",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U3100": {
+        "value": "TMUX2821DSGR",
+        "pins": {
+          "1": "FDA_GUARD_N_RAW",
+          "2": "FDA_GUARD_N",
+          "5": "FDA_GUARD_P_RAW",
+          "6": "FDA_GUARD_P",
+          "7": "ADC_REF_READY",
+          "3": "ADC_REF_READY",
+          "8": "MAT_ADC_REF",
+          "4": "GND",
+          "9": "GND"
+        },
+        "footprint": "MIRA_RevA:WSON-8_2x2mm_P0.5mm_EP0.9x1.6mm"
+      },
+      "C3100": {
+        "value": "100n",
+        "pins": {
+          "1": "MAT_ADC_REF",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R3200": {
+        "value": "100k",
+        "pins": {
+          "1": "VREAD_SRC_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3201": {
+        "value": "1k",
+        "pins": {
+          "1": "VREAD_SRC_SAFE_SW",
+          "2": "VREAD_SRC_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3202": {
+        "value": "100k",
+        "pins": {
+          "1": "VSET_SRC_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3203": {
+        "value": "1k",
+        "pins": {
+          "1": "VSET_SRC_SAFE_SW",
+          "2": "VSET_SRC_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3204": {
+        "value": "100k",
+        "pins": {
+          "1": "VRESET_SRC_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3205": {
+        "value": "1k",
+        "pins": {
+          "1": "VRESET_SRC_SAFE_SW",
+          "2": "VRESET_SRC_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3206": {
+        "value": "100k",
+        "pins": {
+          "1": "VFORM_SRC_SAFE_SW",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3207": {
+        "value": "1k",
+        "pins": {
+          "1": "VFORM_SRC_SAFE_SW",
+          "2": "VFORM_SRC_SAFE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U3200": {
+        "value": "ADG5412BFBRUZ",
+        "pins": {
+          "4": "N15",
+          "13": "P15",
+          "5": "GND",
+          "3": "VREAD_SRC",
+          "2": "VREAD_SRC_SAFE_SW",
+          "1": "AFE_SIG_READY",
+          "14": "VSET_SRC",
+          "15": "VSET_SRC_SAFE_SW",
+          "16": "AFE_SIG_READY",
+          "11": "VRESET_SRC",
+          "10": "VRESET_SRC_SAFE_SW",
+          "9": "AFE_SIG_READY",
+          "6": "VFORM_SRC",
+          "7": "VFORM_SRC_SAFE_SW",
+          "8": "AFE_SIG_READY"
+        },
+        "footprint": "MIRA_RevA:TSSOP-16_4.4x5mm_P0.65mm"
+      },
+      "C3200": {
+        "value": "100n",
+        "pins": {
+          "1": "P15",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "C3201": {
+        "value": "100n",
+        "pins": {
+          "1": "N15",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "U3300": {
+        "value": "TLV76033DBZR",
+        "pins": {
+          "2": "USB5",
+          "3": "GND",
+          "1": "USB_MUX_3V3"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "C3300": {
+        "value": "1u",
+        "pins": {
+          "1": "USB5",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "C3301": {
+        "value": "1u",
+        "pins": {
+          "1": "USB_MUX_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "R3300": {
+        "value": "1k",
+        "pins": {
+          "1": "USB_MUX_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "U3301": {
+        "value": "TPS3808G01DBVR",
+        "pins": {
+          "1": "USB_CC_READY",
+          "2": "GND",
+          "3": "USB_MUX_3V3",
+          "5": "USB5_SENSE",
+          "6": "USB_MUX_3V3"
+        },
+        "footprint": "MIRA_RevA:SOT-23-6"
+      },
+      "R3301": {
+        "value": "100k",
+        "pins": {
+          "1": "USB5",
+          "2": "USB5_SENSE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3302": {
+        "value": "9.53k",
+        "pins": {
+          "1": "USB5_SENSE",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3303": {
+        "value": "10k",
+        "pins": {
+          "1": "USB_MUX_3V3",
+          "2": "USB_CC_READY"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "R3304": {
+        "value": "100k",
+        "pins": {
+          "1": "USB_CC_READY",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      },
+      "C3302": {
+        "value": "100n",
+        "pins": {
+          "1": "USB_MUX_3V3",
+          "2": "GND"
+        },
+        "footprint": "MIRA_RevA:C_0402_1005Metric"
+      },
+      "Q3300": {
+        "value": "AO3400A",
+        "pins": {
+          "1": "USB_CC_READY",
+          "2": "GND",
+          "3": "USB_CC_DISABLE"
+        },
+        "footprint": "MIRA_RevA:SOT-23"
+      },
+      "R3305": {
+        "value": "10k",
+        "pins": {
+          "1": "USB5",
+          "2": "USB_CC_DISABLE"
+        },
+        "footprint": "MIRA_RevA:R_0402_1005Metric"
+      }
+    }
+  },
+  "changed_values": {
+    "Power": {},
+    "Control": {
+      "U1516": "TMUX7208PWR",
+      "U1518": "TMUX7208PWR",
+      "U1519": "TMUX7208PWR",
+      "U1517": "TMUX7208PWR",
+      "U1500": "TMUX7212PWR",
+      "U1503": "TMUX7212PWR",
+      "U1508": "TMUX7212PWR",
+      "U1513": "TMUX7212PWR",
+      "U1506": "TMUX7212PWR",
+      "U1502": "TMUX7212PWR",
+      "U1511": "TMUX7212PWR",
+      "U1515": "TMUX7212PWR",
+      "U1507": "TMUX7212PWR",
+      "U1501": "TMUX7212PWR",
+      "U1510": "TMUX7212PWR",
+      "U1509": "TMUX7212PWR",
+      "U1505": "TMUX7212PWR",
+      "U1514": "TMUX7212PWR",
+      "U1504": "TMUX7212PWR",
+      "U1512": "TMUX7212PWR",
+      "U1902": "TMUX7208PWR",
+      "U1901": "TMUX7208PWR",
+      "U1601": "TMUX7208PWR",
+      "U1600": "TMUX7208PWR",
+      "U1603": "TMUX7212PWR",
+      "U1602": "TMUX7234PWR",
+      "U1705": "TMUX7208PWR",
+      "U1703": "TMUX7212PWR",
+      "U1702": "TMUX7212PWR",
+      "U1700": "TMUX7234PWR",
+      "U1701": "TMUX7234PWR",
+      "U2100": "TMUX7208PWR",
+      "U2103": "TMUX7209PWR",
+      "R2104": "9.09k",
+      "R2000": "9.09k",
+      "R2200": "45.3k",
+      "R2202": "34k",
+      "R2004": "806",
+      "R2002": "806",
+      "R2115": "99k"
+    }
+  },
+  "control_aliases": {
+    "/ADC/2000_ADC_CONVERTER_AND_PRECISION_REFERENCES/FDA_N": "AFE_FDA_N",
+    "/ADC/2000_ADC_CONVERTER_AND_PRECISION_REFERENCES/FDA_ON": "AFE_FDA_ON",
+    "/ADC/2000_ADC_CONVERTER_AND_PRECISION_REFERENCES/FDA_OP": "AFE_FDA_OP",
+    "/ADC/2000_ADC_CONVERTER_AND_PRECISION_REFERENCES/FDA_P": "AFE_FDA_P"
+  },
+  "source_sha256": "f801c25960eae40542e9bb8b2fa4cff229f3701a658e39bf090d9ad02c575632"
+}

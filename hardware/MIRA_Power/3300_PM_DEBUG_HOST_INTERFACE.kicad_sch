@@ -2244,7 +2244,7 @@
 		)
 		(uuid "1118b3a3-55b2-431d-8f16-dd34b27be5dc")
 	)
-	(text "Host UART receive\nSeries resistor and local pull-down"
+	(text "Host UART receive to U5502\nSeries resistor and local pull-down"
 		(exclude_from_sim no)
 		(at 88.9 51 0)
 		(effects
@@ -2270,19 +2270,7 @@
 		)
 		(uuid "20474ce0-9165-4d1c-bec9-4efc15a41a67")
 	)
-	(text "This sheet links the AON power manager to the STM32H745\napplication controller. It carries UART, permits, rail status and\na watchdog heartbeat, and provides SWD access to STM32G0B1.\nThe separate VTT monitor checks the DDR termination supply."
-		(exclude_from_sim no)
-		(at 156.21 45.44 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "291d3fac-7e6f-47b4-aa8b-d174430e5e2c")
-	)
+	(text "This sheet links the AON power manager to the STM32H745\napplication controller. It carries UART, permits, rail status\nand a watchdog heartbeat, and provides SWD access to STM32G0B1.\nThe separate VTT monitor checks the DDR termination supply." (exclude_from_sim no) (at 167.64 45.44 0) (effects (font (size 1.3 1.3) (thickness 0.15) (color 33 43 55 1)) (justify left top)) (uuid "291d3fac-7e6f-47b4-aa8b-d174430e5e2c"))
 	(text "Partial power down\nOutputs high impedance if SYS3V3 is OFF"
 		(exclude_from_sim no)
 		(at 85.09 164 0)
@@ -2296,45 +2284,9 @@
 		)
 		(uuid "2935bf5c-46f2-4523-9d2b-738bb9154098")
 	)
-	(text "J3301 provides AON reference, GND, SWDIO, SWCLK and PM reset.\nJ3302 provides SYS3V3 reference, GND, UART in both directions,\nHOST_WDI and three buffered status signals. The reference\npins are connected to board rails; external tools must only sense them."
-		(exclude_from_sim no)
-		(at 156.21 68.3 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "4ae187e7-016d-4af6-9045-ecf7b77777ff")
-	)
-	(text "SHEET GUIDE / 3300_PM_DEBUG_HOST_INTERFACE"
-		(exclude_from_sim no)
-		(at 156.21 19.24 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-				(thickness 0.15)
-				(color 86 96 108 1)
-			)
-			(justify left top)
-		)
-		(uuid "523549f5-5e2f-4c73-bd02-59bfc382e54b")
-	)
-	(text "U3301 buffers PM_UART_TX, MATRIX_PERMIT, ALL_RAILS_PG and\nGLOBAL_PWR_PERMIT into the SYS3V3 host domain. All enables are\nLOW. Host TX reaches PM receive through R3305; R3306 holds\nreceive LOW when undriven. R3307 holds PM transmit idle HIGH."
-		(exclude_from_sim no)
-		(at 156.21 91.16 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "6b4623fe-a4e9-47c9-8795-fc7214dcbe4e")
-	)
+	(text "J3301 provides AON reference, GND, SWDIO, SWCLK and PM reset.\nJ3302 provides SYS3V3 reference, GND, UART in both directions,\nHOST_WDI and three buffered status signals. The reference pins\nare connected to board rails; external tools must only sense\nthem." (exclude_from_sim no) (at 167.64 68.3 0) (effects (font (size 1.3 1.3) (thickness 0.15) (color 33 43 55 1)) (justify left top)) (uuid "4ae187e7-016d-4af6-9045-ecf7b77777ff"))
+	(text "SHEET GUIDE / 3300_PM_DEBUG_HOST_INTERFACE" (exclude_from_sim no) (at 167.64 19.24 0) (effects (font (size 1.25 1.25) (thickness 0.15) (color 86 96 108 1)) (justify left top)) (uuid "523549f5-5e2f-4c73-bd02-59bfc382e54b"))
+	(text "U3301 buffers PM_UART_TX, MATRIX_PERMIT, ALL_RAILS_PG and\nGLOBAL_PWR_PERMIT into the SYS3V3 host domain. All enables are\nLOW. Host TX reaches U5502 through R3305; R3306 holds the raw\ninput LOW when undriven. R3307 holds PM transmit idle HIGH." (exclude_from_sim no) (at 167.64 91.16 0) (effects (font (size 1.3 1.3) (thickness 0.15) (color 33 43 55 1)) (justify left top)) (uuid "6b4623fe-a4e9-47c9-8795-fc7214dcbe4e"))
 	(text "VTT monitor\n1 kOhm / 10 nF; rail clamps"
 		(exclude_from_sim no)
 		(at 22.86 51 0)
@@ -2348,34 +2300,8 @@
 		)
 		(uuid "790f0781-59eb-4733-a6a8-af04364b4c8e")
 	)
-	(text "Protection and fault response"
-		(exclude_from_sim no)
-		(at 156.21 132.08 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "ab1203bc-98e7-40a0-a455-9a10f0b37914")
-	)
-	(text "Inputs and outputs"
-		(exclude_from_sim no)
-		(at 156.21 63.5 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "b2776b7e-d2fb-411f-a6f9-22e4fb83cf77")
-	)
+	(text "Protection and fault response" (exclude_from_sim no) (at 167.64 132.08 0) (effects (font (size 1.8 1.8) (thickness 0.18) (bold yes) (color 0 100 110 1)) (justify left top)) (uuid "ab1203bc-98e7-40a0-a455-9a10f0b37914"))
+	(text "Inputs and outputs" (exclude_from_sim no) (at 167.64 63.5 0) (effects (font (size 1.8 1.8) (thickness 0.18) (bold yes) (color 0 100 110 1)) (justify left top)) (uuid "b2776b7e-d2fb-411f-a6f9-22e4fb83cf77"))
 	(text "3300_PM_DEBUG_HOST_INTERFACE"
 		(exclude_from_sim no)
 		(at 20.32 19.05 0)
@@ -2389,88 +2315,12 @@
 		)
 		(uuid "c1b5bea7-113d-4fbd-b60a-cdc5d4123653")
 	)
-	(text "Power manager debug and host interface"
-		(exclude_from_sim no)
-		(at 156.21 26.24 0)
-		(effects
-			(font
-				(size 2.05 2.05)
-				(thickness 0.18)
-				(bold yes)
-				(color 25 47 72 1)
-			)
-			(justify left top)
-		)
-		(uuid "c746e511-3f1b-47f5-806c-f205015c8aa8")
-	)
-	(text "SWDIO / SWCLK use 33 Ohm series resistors; SWCLK has a\n100 kOhm pull-down. R3304 / C3301 filter ADC_VTT with a\nnominal 10 us time constant. The host must send falling\nHOST_WDI edges within the watchdog interval set on sheet 2500."
-		(exclude_from_sim no)
-		(at 156.21 114.02 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "e5b03d8b-2496-4264-b890-4cc4391f17dd")
-	)
-	(text "Purpose and role"
-		(exclude_from_sim no)
-		(at 156.21 40.64 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "f364e3b5-1549-4328-923a-26283e62ad4b")
-	)
-	(text "Control logic"
-		(exclude_from_sim no)
-		(at 156.21 86.36 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "f38f98ce-9238-402e-bef9-79e99a6728ac")
-	)
-	(text "Timing and settings"
-		(exclude_from_sim no)
-		(at 156.21 109.22 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "f4c17aac-d8d4-4ad4-a1ce-a6fe9354fbda")
-	)
-	(text "D3301 clamps ADC_VTT toward GND and AON. U3301 supports\npartial power down; its outputs become high impedance when\nSYS3V3 is OFF. Host reset is routed separately from J3302.\nUART LOW during host power loss must be handled by firmware."
-		(exclude_from_sim no)
-		(at 156.21 136.88 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "ffb6ba7c-eb9f-4671-afaf-9ebcabc496b2")
-	)
+	(text "Power manager debug and host interface" (exclude_from_sim no) (at 167.64 26.24 0) (effects (font (size 2.05 2.05) (thickness 0.18) (bold yes) (color 25 47 72 1)) (justify left top)) (uuid "c746e511-3f1b-47f5-806c-f205015c8aa8"))
+	(text "SWDIO / SWCLK use 33 Ohm series resistors; SWCLK has a 100 kOhm\npull-down. R3304 / C3301 filter ADC_VTT with a nominal 10 us\ntime constant. The host must send falling HOST_WDI edges within\nthe watchdog interval set on sheet 2500." (exclude_from_sim no) (at 167.64 114.02 0) (effects (font (size 1.3 1.3) (thickness 0.15) (color 33 43 55 1)) (justify left top)) (uuid "e5b03d8b-2496-4264-b890-4cc4391f17dd"))
+	(text "Purpose and role" (exclude_from_sim no) (at 167.64 40.64 0) (effects (font (size 1.8 1.8) (thickness 0.18) (bold yes) (color 0 100 110 1)) (justify left top)) (uuid "f364e3b5-1549-4328-923a-26283e62ad4b"))
+	(text "Control logic" (exclude_from_sim no) (at 167.64 86.36 0) (effects (font (size 1.8 1.8) (thickness 0.18) (bold yes) (color 0 100 110 1)) (justify left top)) (uuid "f38f98ce-9238-402e-bef9-79e99a6728ac"))
+	(text "Timing and settings" (exclude_from_sim no) (at 167.64 109.22 0) (effects (font (size 1.8 1.8) (thickness 0.18) (bold yes) (color 0 100 110 1)) (justify left top)) (uuid "f4c17aac-d8d4-4ad4-a1ce-a6fe9354fbda"))
+	(text "D3301 is downstream of the VTT isolation switch; see sheet 5700. U3301\nsupports partial power down; its outputs become high impedance\nwhen SYS3V3 is OFF. Host reset is routed separately from J3302.\nUART LOW during host power loss must be handled by firmware." (exclude_from_sim no) (at 167.64 136.88 0) (effects (font (size 1.3 1.3) (thickness 0.15) (color 33 43 55 1)) (justify left top)) (uuid "ffb6ba7c-eb9f-4671-afaf-9ebcabc496b2"))
 	(junction
 		(at 39.37 153.67)
 		(diameter 0)
@@ -2859,16 +2709,7 @@
 		)
 		(uuid "852aa70e-6378-4b21-9609-8edd697d0a9e")
 	)
-	(wire
-		(pts
-			(xy 44.45 68.58) (xy 52.07 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d5ec525-c4b3-4017-a7c1-8ed98161611c")
-	)
+	
 	(wire
 		(pts
 			(xy 39.37 153.67) (xy 39.37 173.99)
@@ -3202,7 +3043,7 @@
 			)
 		)
 	)
-	(global_label "PM_UART_RX"
+	(global_label "HOST_UART_TX_RAW"
 		(shape input)
 		(at 119.38 62.23 0)
 		(effects
@@ -5746,4 +5587,10 @@
 (global_label "ALL_RAILS_PG_POWER" (shape input) (at 142.24 151.13 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "74717c38-d380-446a-b51e-0e18d5fb84d7"))
 
 (global_label "GLOBAL_PWR_PERMIT_POWER" (shape input) (at 134.62 171.45 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "5ed94ea6-0ede-42c8-8922-4329ffe35175"))
+
+(global_label "ADC_VTT_SAFE" (shape input) (at 52.07 68.58 180) (effects (font (size 0.8 0.8)) (justify right)) (uuid "eeab73b6-09a0-4bf5-b775-a6f712c38384"))
+
+
+
+
 )

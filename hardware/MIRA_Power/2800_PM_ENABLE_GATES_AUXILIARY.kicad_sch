@@ -870,7 +870,7 @@
 		)
 		(uuid "1b585624-d02d-4c15-92e0-ec6c658b9a38")
 	)
-	(text "Each used channel follows the same rule:\nCMD_x = GLOBAL_PWR_PERMIT AND EN_REQ_x.\nThe request selects a rail; the permit authorizes its operation.\nThe unused U2802 inputs are grounded and its output is not connected."
+	(text "Each used channel follows the same rule:\nCMD_x_RAW = GLOBAL_PWR_PERMIT AND EN_REQ_x.\nSheet 5300 also requires STARTUP_READY_H before outputs are driven.\nThe unused U2802 inputs are grounded and its output is not connected."
 		(exclude_from_sim no)
 		(at 156.21 91.16 0)
 		(effects
@@ -991,7 +991,7 @@
 		)
 		(uuid "ae192291-bb41-428f-bcc3-61718b98a112")
 	)
-	(text "U2801 generates CMD_AUX25, CMD_IO33, CMD_DDR and CMD_PHY.\nU2802 generates CMD_VTT, CMD_ANA5 and CMD_ANA33.\nEach used channel receives GLOBAL_PWR_PERMIT and its matching\nEN_REQ input. The fourth U2802 gate is unused."
+	(text "U2801 generates CMD_AUX25_RAW, CMD_IO33_RAW, CMD_DDR_RAW and CMD_PHY_RAW.\nU2802 generates CMD_VTT_RAW, CMD_ANA5_RAW and CMD_ANA33_RAW.\nEach used channel receives GLOBAL_PWR_PERMIT and its matching\nEN_REQ input. The fourth U2802 gate is unused."
 		(exclude_from_sim no)
 		(at 156.21 68.3 0)
 		(effects
@@ -1045,7 +1045,7 @@
 		)
 		(uuid "e9fb504e-807a-4203-adfc-6a141dc9408c")
 	)
-	(text "Every CMD = request AND global permit"
+	(text "Raw CMD = request AND global permit; qualified on sheet 5300"
 		(exclude_from_sim no)
 		(at 18 193 0)
 		(effects
@@ -2033,7 +2033,7 @@
 		)
 		(uuid "ff6ac837-5eae-4754-af31-f22b65d8fa04")
 	)
-	(global_label "CMD_DDR"
+	(global_label "CMD_DDR_RAW"
 		(shape input)
 		(at 128.27 72.39 0)
 		(effects
@@ -2099,7 +2099,7 @@
 			)
 		)
 	)
-	(global_label "CMD_ANA5"
+	(global_label "CMD_ANA5_RAW"
 		(shape input)
 		(at 128.27 139.7 0)
 		(effects
@@ -2165,7 +2165,7 @@
 			)
 		)
 	)
-	(global_label "CMD_ANA33"
+	(global_label "CMD_ANA33_RAW"
 		(shape input)
 		(at 128.27 160.02 0)
 		(effects
@@ -2187,7 +2187,7 @@
 			)
 		)
 	)
-	(global_label "CMD_AUX25"
+	(global_label "CMD_AUX25_RAW"
 		(shape input)
 		(at 128.27 31.75 0)
 		(effects
@@ -2275,7 +2275,7 @@
 			)
 		)
 	)
-	(global_label "CMD_VTT"
+	(global_label "CMD_VTT_RAW"
 		(shape input)
 		(at 128.27 119.38 0)
 		(effects
@@ -2363,7 +2363,7 @@
 			)
 		)
 	)
-	(global_label "CMD_PHY"
+	(global_label "CMD_PHY_RAW"
 		(shape input)
 		(at 128.27 92.71 0)
 		(effects
@@ -2385,7 +2385,7 @@
 			)
 		)
 	)
-	(global_label "CMD_IO33"
+	(global_label "CMD_IO33_RAW"
 		(shape input)
 		(at 128.27 52.07 0)
 		(effects
@@ -5899,4 +5899,10 @@
 			)
 		)
 	)
+
+
+
+
+
+
 )

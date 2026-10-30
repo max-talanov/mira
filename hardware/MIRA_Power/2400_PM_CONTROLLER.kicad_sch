@@ -2013,7 +2013,7 @@
 		)
 		(uuid "3805979b-04b1-4883-80ac-20ed6ac52d25")
 	)
-	(text "Read GLOBAL_PWR_PERMIT and MATRIX_PERMIT as inputs.\nInitialize EN_REQ_* safely before applying either arm pulse."
+	(text "PC14: GLOBAL_CLEAR_N; PC15: LINK_READY_H. Inputs, no pull; LSE OFF.\nWait for CLEAR before PWR_ARM; LINK_READY before MATRIX_ARM.\nRead HOST_ALIVE_PM as a heartbeat; verify both permit outputs."
 		(exclude_from_sim no)
 		(at 20.32 140.335 0)
 		(effects
@@ -2094,7 +2094,7 @@
 		)
 		(uuid "9e357cba-d88d-435d-a2ce-9ae206410566")
 	)
-	(text "The startup order and rail settling delays are set in firmware.\nService PM_WDI before the external watchdog can time out.\nUse internal clocking: PF0 is assigned to EN_REQ_USB.\nKeep NRST and SWD active; keep the VREFBUF output disabled."
+	(text "Wait for PC14 CLEAR before PWR_ARM; PC15 LINK_READY before MATRIX_ARM.\nService PM_WDI throughout startup and shutdown.\nUse internal clocking; PF0, PC14 and PC15 are GPIO, not HSE/LSE.\nSee docs/pcb-preparation/sequencing/README.md for rail order."
 		(exclude_from_sim no)
 		(at 156.21 114.02 0)
 		(effects
@@ -2224,15 +2224,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe8eae8a-de92-48f9-90a4-2f4eaccda2e2")
-	)
-
-	(no_connect
-		(at 90.17 59.69)
-		(uuid "82a6ded2-5b16-44b2-8f0a-371b75dab821")
-	)
-	(no_connect
-		(at 90.17 57.15)
-		(uuid "e3bdf574-f903-4cc0-a5bc-995e07ebf6d5")
 	)
 	(wire
 		(pts
@@ -3569,28 +3560,7 @@
 			)
 		)
 	)
-	(global_label "ADC_VTT"
-		(shape input)
-		(at 81.28 95.25 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "8c9bec07-8a7d-4b5c-bcef-f5187fc6a7da")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.28 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-	)
+	(global_label "ADC_VTT_SAFE" (shape input) (at 81.28 95.25 180) (effects (font (size 1 1)) (justify right)) (uuid "8c9bec07-8a7d-4b5c-bcef-f5187fc6a7da") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 81.28 95.25 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))))
 	(global_label "ADC_V"
 		(shape input)
 		(at 81.28 92.71 180)
@@ -5477,8 +5447,78 @@
 			)
 		)
 	)
+	(wire (pts (xy 90.17 74.93) (xy 82.55 74.93)) (stroke (width 0) (type default)) (uuid "1792907d-b7db-4663-9c1a-91e5dbca30e1"))
+	(global_label "HOST_ALIVE_PM" (shape input) (at 82.55 74.93 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "e67ac4c1-0764-4b60-98a8-3cb5096d6c92"))
+	(wire
+		(pts
+			(xy 80.01 57.15)
+			(xy 90.17 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "013825fd-017c-4a3d-a3e3-e11b18ceba5b")
+	)
+	(global_label "GLOBAL_CLEAR_N"
+		(shape input)
+		(at 80.01 57.15 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "c27a4dbe-25b6-414c-a882-a6427b615d82")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.28 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 80.01 59.69)
+			(xy 90.17 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50284f38-f3fc-4dcd-9c03-d9eb8457cc08")
+	)
+	(global_label "LINK_READY_H"
+		(shape input)
+		(at 80.01 59.69 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right)
+		)
+		(uuid "b3bce622-32c5-4236-a122-bca98d34a206")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.28 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+	)
 
-(wire (pts (xy 90.17 74.93) (xy 82.55 74.93)) (stroke (width 0) (type default)) (uuid "1792907d-b7db-4663-9c1a-91e5dbca30e1"))
 
-(global_label "HOST_ALIVE_PM" (shape input) (at 82.55 74.93 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "e67ac4c1-0764-4b60-98a8-3cb5096d6c92"))
+
+
+
+
 )

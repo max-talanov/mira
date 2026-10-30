@@ -1,12 +1,20 @@
 # MIRA
 
+**Актуальная ревизия v6, 30 октября 2026:** [исправления сигналов при отключённом питании](docs/pcb-preparation/signal-remediation/README.md). Power — 61 лист / Control — 43; ERC 0/0. Закрытие — по схеме в указанных условиях; испытания платы и PCB открыты. AON: суммарный добавочный резерв 112 mA и 2.8 µF к бюджету 28 октября. Данные прежних этапов ниже сохранены как история.
+
 **MIRA is a research platform under development for experiments with memristor arrays and neuromorphic computing.**
 
 The project aims to bring array control, an analog front end, digital processing, and software tools into a single system. It is intended for studying memristor readout and programming, vector–matrix multiplication (VMM), and spiking neuron models.
 
 ## Current status
 
-**RevA** is currently in development. The repository contains two independent KiCad projects with local libraries: **MIRA_Control (32 active schematic pages)** and **MIRA_Power (51 active schematic pages)**.
+The **2026-10-30 v6 signal remediation** adds hardware protection for PM, DAC, ADC/FDA and comparator inputs; replaces 33 analog switch ICs with fail-safe-input parts; isolates 10 VIN-relative enable paths; and qualifies USB and FPGA AUX/IO supplies. See the [current review and operating conditions](docs/pcb-preparation/signal-remediation/README.md). There are 271 new components and 40 changed legacy values. Native KiCad ERC reports zero errors and warnings. The checklist can be closed as a schematic review within those conditions. PCB, firmware and prototype qualification remain open. The [v5 receiver-only report](docs/pcb-preparation/unpowered-signals/README.md) is historical.
+
+The preceding [fault hardware repair](docs/pcb-preparation/fault-review/README.md) adds a 170–230 ms application heartbeat watchdog, first-edge readiness and direct host reset on watchdog expiry. LINK_READY_H feeds the matrix interlock and PM PC15. The 14 added components are checked by native netlist and ideal timing/latch tests; firmware and prototype validation remain open.
+
+The **2026-10-29** update adds [AON startup gating and full-swing VTT enable](docs/pcb-preparation/startup/README.md), plus [PM clear feedback and the 15-rail sequencing contract](docs/pcb-preparation/sequencing/README.md). The PM firmware must read GLOBAL_CLEAR_N on PC14 before arming, then confirm GLOBAL_PWR_PERMIT. Firmware implementation and prototype fault/ramp tests remain open.
+
+**RevA** is currently in development. The repository contains two independent KiCad projects with local libraries: **MIRA_Control (43 active schematic pages)** and **MIRA_Power (61 active schematic pages)**.
 
 Control includes MCU, FPGA, communications, matrix, analog, and protection circuits. Both projects are undergoing review before PCB placement and routing.
 
@@ -14,9 +22,9 @@ The [high-load schematic candidate](docs/pcb-preparation/high-load/README.md) da
 
 The [distributed power interface](docs/pcb-preparation/distributed-power/README.md) replaces the central 64-contact connector with **seven local power entries and one separate supervision interface**. The zones are FPGA, DDR, MCU, USB, Ethernet, DAC/matrix and ADC/AFE. Eight Samtec SSW/HTSW pairs have assigned parts, local footprints and nominal 3D envelope models. The proposed stack has Power below Control and a 12 mm facing-surface gap; final placement coordinates and routing remain to be defined.
 
-All 118 mating contacts were checked. All 6686 connected pin entries outside the replaced connectors are unchanged from `c72edb2`; the sources, loads, protection and positive CORE sense remain connected as before. The new pinout requires updating both projects together. The [earlier connector/ERC report](docs/pcb-preparation/connectors-erc/README.md) is retained as history.
+All 118 mating contacts were checked. The 6686-entry connector regression baseline from `c72edb2` remains matched after explicitly mapping back the documented startup, PC14 feedback, fault hardware the three v5 receive-path changes, and the explicit v6 signal-remediation delta; unrelated source/load circuits and positive CORE sense are preserved. The new pinout requires updating both projects together. The [earlier connector/ERC report](docs/pcb-preparation/connectors-erc/README.md) is retained as history.
 
-KiCad CLI 10.0.7 reports **0 errors / 0 warnings / 0 exclusions for both projects**. Negative analog supply pins are now named VSS_NEG, with their power-input types and nets preserved; 32 old exclusions were removed. Two existing style checks remain ignored (`four_way_junction`, `single_global_label`); footprint-filter and simulation-model checks were re-enabled. PCB layout, mechanical and thermal qualification, feedback stability, startup and analog noise remain open. The [task 1/2 status and remaining questions](docs/pcb-preparation/README.md), [current ERC review](docs/pcb-preparation/erc/README.md) and [updated power budget](docs/pcb-preparation/power-budget/README.md) describe the current candidate. Original reports and calculations remain available as history. The budget applies a 30% margin to provisional peak loads and explicitly leaves N15 startup and shared-rail current distribution unresolved.
+KiCad CLI 10.0.8 reports **0 errors / 0 warnings / 0 exclusions for both projects**. Negative analog supply pins are now named VSS_NEG, with their power-input types and nets preserved; 32 old exclusions were removed. Two existing style checks remain ignored (`four_way_junction`, `single_global_label`); footprint-filter and simulation-model checks were re-enabled. PCB layout, mechanical and thermal qualification, feedback stability, startup and analog noise remain open. The [task 1/2 status and remaining questions](docs/pcb-preparation/README.md), [current ERC review](docs/pcb-preparation/erc/README.md) and [updated power budget](docs/pcb-preparation/power-budget/README.md) describe the current candidate. Original reports and calculations remain available as history. The budget applies a 30% margin to provisional peak loads and explicitly leaves N15 startup and shared-rail current distribution unresolved.
 
 Schematics in this repository do not imply that the corresponding circuits have been built or validated in hardware.
 
@@ -25,7 +33,7 @@ Schematics in this repository do not imply that the corresponding circuits have 
 | Project | Current contents | Open in KiCad |
 | --- | --- | --- |
 | [MIRA_Power](hardware/MIRA_Power) | Power schematics, hierarchy, and local libraries | `hardware/MIRA_Power/MIRA_Power.kicad_pro` |
-| [MIRA_Control](hardware/MIRA_Control) | 32-page schematic hierarchy, an empty PCB, and local symbol, footprint, and 3D libraries | `hardware/MIRA_Control/MIRA_Control.kicad_pro` |
+| [MIRA_Control](hardware/MIRA_Control) | 43-page schematic hierarchy, an empty PCB, and local symbol, footprint, and 3D libraries | `hardware/MIRA_Control/MIRA_Control.kicad_pro` |
 
 Each project has its own library tables and project-relative library paths. Keep its complete folder together.
 

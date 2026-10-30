@@ -15690,16 +15690,7 @@
 		)
 		(uuid "6aed69e3-a62b-43c9-934b-8e8fa4619af0")
 	)
-	(wire
-		(pts
-			(xy 194.31 189.23) (xy 196.85 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ba774c7-ee0d-4e16-b3d9-8bc3435c811a")
-	)
+	
 	(wire
 		(pts
 			(xy 121.92 201.93) (xy 121.92 198.12)
@@ -16580,16 +16571,7 @@
 		)
 		(uuid "b072db4e-ba3c-4081-a698-2dd01f6bde70")
 	)
-	(wire
-		(pts
-			(xy 196.85 186.69) (xy 196.85 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0858560-2f7c-456b-a015-d6a2303c8b95")
-	)
+	
 	(wire
 		(pts
 			(xy 180.34 250.19) (xy 182.88 250.19)
@@ -18408,28 +18390,7 @@
 			)
 		)
 	)
-	(global_label "IO3V3"
-		(shape bidirectional)
-		(at 137.16 182.88 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "2d625602-434b-4d7f-9b84-4b2f45932885")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.16 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-	)
+	(global_label "USB_MUX_3V3" (shape bidirectional) (at 137.16 182.88 180) (effects (font (size 0.9 0.9)) (justify right)) (uuid "2d625602-434b-4d7f-9b84-4b2f45932885") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 137.16 182.88 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))))
 	(global_label "USB_RX1_P"
 		(shape bidirectional)
 		(at 160.02 248.92 90)
@@ -19552,28 +19513,7 @@
 			)
 		)
 	)
-	(global_label "IO3V3"
-		(shape bidirectional)
-		(at 156.21 175.26 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "71dcc976-9d27-41d8-89ce-ebd474f24842")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 156.21 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-	)
+	(global_label "USB_MUX_3V3" (shape bidirectional) (at 156.21 175.26 180) (effects (font (size 0.9 0.9)) (justify right)) (uuid "71dcc976-9d27-41d8-89ce-ebd474f24842") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 156.21 175.26 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))))
 	(global_label "USB_DM"
 		(shape bidirectional)
 		(at 212.09 247.65 90)
@@ -33376,4 +33316,10 @@
 			)
 		)
 	)
+
+(global_label "USB_CC_DISABLE" (shape input) (at 194.31 189.23 180) (effects (font (size 0.8 0.8)) (justify right)) (uuid "148f7e7b-fb01-4dc6-9815-4f2a217717e9"))
+
+
+
+
 )

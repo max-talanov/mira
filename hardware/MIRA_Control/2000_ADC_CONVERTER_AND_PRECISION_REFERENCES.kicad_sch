@@ -1880,30 +1880,8 @@
 		)
 		(uuid "106d9062-d174-41ee-ab43-c218240dcf34")
 	)
-	(text "Matched 0.1% FDA resistor ratios.\nPD is tied to ANA5 for normal operation."
-		(exclude_from_sim no)
-		(at 91.44 181.61 0)
-		(effects
-			(font
-				(size 1 1)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "139f2349-bb8f-4075-8a54-c459c771620e")
-	)
-	(text "U2003 is a THP210 powered by ANA5/GND. U2001 supplies VOCM = VREF/2.\nIdeal outputs are 2.5 V +/- 0.075 x VMON, giving VDIFF = -0.15 x\nVMON and a constant 2.5 V average. At VMON = +/-15 V the FDA outputs\nare 1.375...3.625 V and its input common mode is 1.196...3.152 V.\nThe post-mux buffer requires rail headroom."
-		(exclude_from_sim no)
-		(at 315 77.4 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "4653e6a6-0906-416b-8756-46991f8eee82")
-	)
+	(text "Matched FDA resistor ratios; see sheet 3100.\nPD and VS+ share MAT_ADC_REF." (exclude_from_sim no) (at 91.44 181.61 0) (effects (font (size 1 1) (color 0 70 160 1)) (justify left top)) (uuid "139f2349-bb8f-4075-8a54-c459c771620e"))
+	(text "U2003 and U2001 share MAT_ADC_REF with the ADC reference.\nSheet 3100 adds balanced attenuation and power-off isolation.\nNominal VDIFF = -0.148935704 x VMON, average about 2.5 V.\nAt VMON = +/-15.75 V, outputs are 1.327...3.673 V and\nFDA input common mode is 1.591...2.920 V. Qualify settling\nand reference loading on the prototype; see v6 report." (exclude_from_sim no) (at 315 77.4 0) (effects (font (size 1.25 1.25) (color 0 70 160 1)) (justify left top)) (uuid "4653e6a6-0906-416b-8756-46991f8eee82"))
 	(text "U2006 derives a nominal 12 V input from P15 for U2000. This keeps\nthe ADR4550 input away from its 15 V upper operating boundary. R2010\nprovides the preregulator minimum load; the 5 V reference is not\npowered from ANA5."
 		(exclude_from_sim no)
 		(at 315 42.4 0)
@@ -1964,18 +1942,7 @@
 		)
 		(uuid "745e67d5-47b5-4ba0-8ab7-7ff6e58d608a")
 	)
-	(text "RF / RG = 3k / 20k = 0.15\nBoth ADC inputs move in antiphase;\nC2006 is between IN+ and IN-."
-		(exclude_from_sim no)
-		(at 16.51 176.53 0)
-		(effects
-			(font
-				(size 1 1)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "79b643b8-638f-40e5-ad71-853a7e03d1be")
-	)
+	(text "Complete gain including sheet 3100:\nVDIFF / VMON = -0.148935704 nominal.\nC2006 is between IN+ and IN-." (exclude_from_sim no) (at 16.51 176.53 0) (effects (font (size 1 1) (color 0 70 160 1)) (justify left top)) (uuid "79b643b8-638f-40e5-ad71-853a7e03d1be"))
 	(text "5 V reference from a protected 12 V input"
 		(exclude_from_sim no)
 		(at 19.05 35.56 0)
@@ -2084,18 +2051,7 @@
 		)
 		(uuid "ebd01cec-59e9-46c1-8592-c72b95d340a0")
 	)
-	(text "AD4003 uses MAT_ADC_1V8 for VDD and IO3V3 for its interface. CNV,\nSCK, SDI and SDO retain their U500 connections. R2008 holds CNV low;\nR2007 holds SDI high. Use the gain -0.15 in conversion and per-range\ncalibration."
-		(exclude_from_sim no)
-		(at 315 116.2 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "f6c095a9-0b07-4453-b0e0-49963f126b13")
-	)
+	(text "AD4003 uses MAT_ADC_1V8 for VDD and IO3V3 for its interface.\nCNV, SCK, SDI and SDO retain their U500 connections. R2008 holds\nCNV low; R2007 holds SDI high. Use gain -0.148935704 and\nper-range calibration. REF readiness clears the matrix image." (exclude_from_sim no) (at 315 116.2 0) (effects (font (size 1.25 1.25) (color 0 70 160 1)) (justify left top)) (uuid "f6c095a9-0b07-4453-b0e0-49963f126b13"))
 	(text "Balanced FDA gain and ADC filter"
 		(exclude_from_sim no)
 		(at 16.51 105.41 0)
@@ -2544,16 +2500,7 @@
 		)
 		(uuid "785a9349-8e27-4b7a-875c-43f4e751854d")
 	)
-	(wire
-		(pts
-			(xy 76.2 128.27) (xy 87.63 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c093999-066e-4186-800a-a1e7cd77d6a5")
-	)
+	(wire (pts (xy 76.2 128.27) (xy 78.74 128.27)) (stroke (width 0) (type default)) (uuid "7c093999-066e-4186-800a-a1e7cd77d6a5"))
 	(wire
 		(pts
 			(xy 186.69 80.01) (xy 186.69 82.55)
@@ -2995,16 +2942,7 @@
 		)
 		(uuid "da7fc242-5150-4910-b4ca-b81f75d9ea83")
 	)
-	(wire
-		(pts
-			(xy 76.2 138.43) (xy 87.63 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db3a8102-a301-46fd-a5bf-8e876280cc9e")
-	)
+	(wire (pts (xy 76.2 138.43) (xy 78.74 138.43)) (stroke (width 0) (type default)) (uuid "db3a8102-a301-46fd-a5bf-8e876280cc9e"))
 	(wire
 		(pts
 			(xy 228.6 123.19) (xy 228.6 125.73)
@@ -3145,86 +3083,14 @@
 		)
 		(uuid "ffff27de-dd03-44f1-89a2-db91c4592680")
 	)
-	(label "FDA_N"
-		(at 22.86 162.56 180)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify right bottom)
-		)
-		(uuid "08b46462-8473-4c5d-8161-dc66dab83ebc")
-	)
-	(label "FDA_ON"
-		(at 78.74 138.43 0)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify left bottom)
-		)
-		(uuid "30018279-4d81-46b6-ae6e-50e9e62fa6a4")
-	)
-	(label "FDA_OP"
-		(at 35.56 162.56 0)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify left bottom)
-		)
-		(uuid "4e339878-563a-4d74-be6b-3484500cc992")
-	)
-	(label "FDA_OP"
-		(at 78.74 128.27 0)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify left bottom)
-		)
-		(uuid "7710cef9-c86c-45f7-a9e4-369f6d8e4626")
-	)
-	(label "FDA_P"
-		(at 66.04 172.72 180)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify right bottom)
-		)
-		(uuid "77687930-9bb6-4cad-a73c-62fc6fe2dc16")
-	)
-	(label "FDA_N"
-		(at 44.45 140.97 0)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify left bottom)
-		)
-		(uuid "83a8bc49-017f-4769-95f1-8785448af967")
-	)
-	(label "FDA_P"
-		(at 38.1 125.73 0)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify left bottom)
-		)
-		(uuid "d9d7c042-f046-4271-baad-b9d409574f6b")
-	)
-	(label "FDA_ON"
-		(at 78.74 172.72 0)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify left bottom)
-		)
-		(uuid "e1f14de3-3d86-4927-8a4e-46020830c035")
-	)
+	(global_label "AFE_FDA_N" (shape input) (at 22.86 162.56 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "08b46462-8473-4c5d-8161-dc66dab83ebc"))
+	(global_label "AFE_FDA_ON" (shape input) (at 78.74 138.43 0) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "30018279-4d81-46b6-ae6e-50e9e62fa6a4"))
+	(global_label "AFE_FDA_OP" (shape input) (at 35.56 162.56 0) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "4e339878-563a-4d74-be6b-3484500cc992"))
+	(global_label "AFE_FDA_OP" (shape input) (at 78.74 128.27 0) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "7710cef9-c86c-45f7-a9e4-369f6d8e4626"))
+	(global_label "AFE_FDA_P" (shape input) (at 66.04 172.72 180) (effects (font (size 0.95 0.95)) (justify right bottom)) (uuid "77687930-9bb6-4cad-a73c-62fc6fe2dc16"))
+	(global_label "AFE_FDA_N" (shape input) (at 44.45 140.97 0) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "83a8bc49-017f-4769-95f1-8785448af967"))
+	(global_label "AFE_FDA_P" (shape input) (at 38.1 125.73 0) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "d9d7c042-f046-4271-baad-b9d409574f6b"))
+	(global_label "AFE_FDA_ON" (shape input) (at 78.74 172.72 0) (effects (font (size 0.95 0.95)) (justify left bottom)) (uuid "e1f14de3-3d86-4927-8a4e-46020830c035"))
 	(global_label "P15"
 		(shape input)
 		(at 25.4 223.52 180)
@@ -3423,28 +3289,7 @@
 			)
 		)
 	)
-	(global_label "ANA5"
-		(shape input)
-		(at 58.42 151.13 180)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify right)
-		)
-		(uuid "18d4246e-eaeb-4bfc-adc5-309a864a6de6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.42 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
+	(global_label "MAT_ADC_REF" (shape input) (at 58.42 151.13 180) (effects (font (size 0.95 0.95)) (justify right)) (uuid "18d4246e-eaeb-4bfc-adc5-309a864a6de6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 58.42 151.13 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
 	(global_label "MAT_ADC_CNV"
 		(shape input)
 		(at 228.6 113.03 180)
@@ -3753,28 +3598,7 @@
 			)
 		)
 	)
-	(global_label "MAT_MONITOR_BUF"
-		(shape input)
-		(at 34.29 140.97 180)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify right)
-		)
-		(uuid "4ae071b6-3e6d-48aa-8b53-1b3faa69caed")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.29 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
+	(global_label "FDA_GUARD_N" (shape input) (at 34.29 140.97 180) (effects (font (size 0.95 0.95)) (justify right)) (uuid "4ae071b6-3e6d-48aa-8b53-1b3faa69caed") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 34.29 140.97 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
 	(global_label "MAT_ADC_1V8"
 		(shape input)
 		(at 167.64 207.01 0)
@@ -3973,28 +3797,7 @@
 			)
 		)
 	)
-	(global_label "ANA5"
-		(shape input)
-		(at 63.5 115.57 180)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify right)
-		)
-		(uuid "5d380ff4-abb8-4770-97ae-321ac126761a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.5 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
+	(global_label "MAT_ADC_REF" (shape input) (at 63.5 115.57 180) (effects (font (size 0.95 0.95)) (justify right)) (uuid "5d380ff4-abb8-4770-97ae-321ac126761a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 115.57 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
 	(global_label "MAT_ADC_REF"
 		(shape input)
 		(at 146.05 128.27 180)
@@ -4215,72 +4018,9 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape input)
-		(at 22.86 125.73 180)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify right)
-		)
-		(uuid "7c24ac35-8956-4b66-8081-b404181b7637")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 22.86 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "ANA5"
-		(shape input)
-		(at 59.69 182.88 180)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify right)
-		)
-		(uuid "80952534-0384-42cd-a687-d4464f07099f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.69 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "ANA5"
-		(shape input)
-		(at 73.66 182.88 180)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify right)
-		)
-		(uuid "81cec6e7-25f0-4a9e-b1d7-f1c27f39ee92")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 73.66 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
+	(global_label "FDA_GUARD_P" (shape input) (at 22.86 125.73 180) (effects (font (size 0.95 0.95)) (justify right)) (uuid "7c24ac35-8956-4b66-8081-b404181b7637") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 22.86 125.73 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
+	(global_label "MAT_ADC_REF" (shape input) (at 59.69 182.88 180) (effects (font (size 0.95 0.95)) (justify right)) (uuid "80952534-0384-42cd-a687-d4464f07099f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 59.69 182.88 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
+	(global_label "MAT_ADC_REF" (shape input) (at 73.66 182.88 180) (effects (font (size 0.95 0.95)) (justify right)) (uuid "81cec6e7-25f0-4a9e-b1d7-f1c27f39ee92") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 73.66 182.88 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
 	(global_label "MAT_ADC_INP"
 		(shape input)
 		(at 146.05 133.35 180)
@@ -4347,28 +4087,7 @@
 			)
 		)
 	)
-	(global_label "ANA5"
-		(shape input)
-		(at 107.95 72.39 180)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify right)
-		)
-		(uuid "8ee2e1e4-f0a2-4ab7-a92c-52b89080f82c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.95 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
+	(global_label "MAT_ADC_REF" (shape input) (at 107.95 72.39 180) (effects (font (size 0.95 0.95)) (justify right)) (uuid "8ee2e1e4-f0a2-4ab7-a92c-52b89080f82c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 107.95 72.39 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
 	(global_label "MAT_ADC_REF"
 		(shape input)
 		(at 146.05 158.75 180)
@@ -4457,28 +4176,7 @@
 			)
 		)
 	)
-	(global_label "ANA5"
-		(shape input)
-		(at 107.95 41.91 180)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify right)
-		)
-		(uuid "9d82cea9-2c2a-4ddb-bdfa-983c55975522")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.95 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
+	(global_label "MAT_ADC_REF" (shape input) (at 107.95 41.91 180) (effects (font (size 0.95 0.95)) (justify right)) (uuid "9d82cea9-2c2a-4ddb-bdfa-983c55975522") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 107.95 41.91 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
 	(global_label "IO3V3"
 		(shape input)
 		(at 182.88 158.75 180)
@@ -4589,28 +4287,7 @@
 			)
 		)
 	)
-	(global_label "MAT_CM_RAW"
-		(shape input)
-		(at 95.25 50.8 180)
-		(effects
-			(font
-				(size 0.95 0.95)
-			)
-			(justify right)
-		)
-		(uuid "ab45fac1-2105-402f-abb9-d35a796b21ee")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.25 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
+	(global_label "MAT_CM_SAFE" (shape input) (at 95.25 50.8 180) (effects (font (size 0.95 0.95)) (justify right)) (uuid "ab45fac1-2105-402f-abb9-d35a796b21ee") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 95.25 50.8 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
 	(global_label "GND"
 		(shape input)
 		(at 59.69 193.04 0)
@@ -6992,107 +6669,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "MIRA_RevA:Resistor")
-		(at 40.64 140.97 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "75f9cf31-1749-4a1c-b18e-1cd777a50949")
-		(property "Reference" "R2004"
-			(at 40.64 138.43 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.85 0.85)
-				)
-			)
-		)
-		(property "Value" "20k"
-			(at 40.64 143.51 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.85 0.85)
-				)
-			)
-		)
-		(property "Footprint" "MIRA_RevA:R_0402_1005Metric"
-			(at 40.64 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Description" "20kOhm precision resistor, 0.1%, 25 ppm/C preferred; matched FDA ratios"
-			(at 40.64 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 40.64 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Manufacturer" "Yageo"
-			(at 40.64 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "775b85cf-deb1-4774-b2ee-6f28202af5ad")
-		)
-		(pin "2"
-			(uuid "401bc58f-fb4e-4481-a952-2ecbe2d7a65f")
-		)
-		(instances
-			(project "MIRA_Control"
-				(path "/ad010b50-c509-466c-b833-d1667dfb0702/c82bdf26-7de4-4478-a0aa-bcc4853fb2a7/0cd68471-1e6b-4777-98ec-474bbf9e20da"
-					(reference "R2004")
-					(unit 1)
-				)
-			)
-		)
-	)
+	(symbol (lib_id "MIRA_RevA:Resistor") (at 40.64 140.97 90) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "75f9cf31-1749-4a1c-b18e-1cd777a50949") (property "Reference" "R2004" (at 40.64 138.43 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Value" "806" (at 40.64 143.51 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Footprint" "MIRA_RevA:R_0402_1005Metric" (at 40.64 140.97 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Datasheet" "" (at 40.64 140.97 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Description" "20kOhm precision resistor, 0.1%, 25 ppm/C preferred; matched FDA ratios" (at 40.64 140.97 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "MPN" "ERJ-2RKF8060X" (at 40.64 140.97 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Manufacturer" "Yageo" (at 40.64 140.97 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (pin "1" (uuid "775b85cf-deb1-4774-b2ee-6f28202af5ad")) (pin "2" (uuid "401bc58f-fb4e-4481-a952-2ecbe2d7a65f")) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/c82bdf26-7de4-4478-a0aa-bcc4853fb2a7/0cd68471-1e6b-4777-98ec-474bbf9e20da" (reference "R2004") (unit 1)))))
 	(symbol
 		(lib_id "MIRA_RevA:Resistor")
 		(at 29.21 162.56 90)
@@ -8020,107 +7597,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "MIRA_RevA:Resistor")
-		(at 29.21 125.73 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c315a458-c935-4a03-be51-064e66fe9d58")
-		(property "Reference" "R2002"
-			(at 29.21 123.19 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.85 0.85)
-				)
-			)
-		)
-		(property "Value" "20k"
-			(at 29.21 128.27 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.85 0.85)
-				)
-			)
-		)
-		(property "Footprint" "MIRA_RevA:R_0402_1005Metric"
-			(at 29.21 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Description" "20kOhm precision resistor, 0.1%, 25 ppm/C preferred; matched FDA ratios"
-			(at 29.21 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 29.21 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Manufacturer" "Yageo"
-			(at 29.21 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e6b27950-0a8d-4928-8f73-8615542e872d")
-		)
-		(pin "2"
-			(uuid "abd9c518-2a3d-4969-a718-86a583c36a9d")
-		)
-		(instances
-			(project "MIRA_Control"
-				(path "/ad010b50-c509-466c-b833-d1667dfb0702/c82bdf26-7de4-4478-a0aa-bcc4853fb2a7/0cd68471-1e6b-4777-98ec-474bbf9e20da"
-					(reference "R2002")
-					(unit 1)
-				)
-			)
-		)
-	)
+	(symbol (lib_id "MIRA_RevA:Resistor") (at 29.21 125.73 90) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "c315a458-c935-4a03-be51-064e66fe9d58") (property "Reference" "R2002" (at 29.21 123.19 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Value" "806" (at 29.21 128.27 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Footprint" "MIRA_RevA:R_0402_1005Metric" (at 29.21 125.73 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Datasheet" "" (at 29.21 125.73 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Description" "20kOhm precision resistor, 0.1%, 25 ppm/C preferred; matched FDA ratios" (at 29.21 125.73 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "MPN" "ERJ-2RKF8060X" (at 29.21 125.73 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Manufacturer" "Yageo" (at 29.21 125.73 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (pin "1" (uuid "e6b27950-0a8d-4928-8f73-8615542e872d")) (pin "2" (uuid "abd9c518-2a3d-4969-a718-86a583c36a9d")) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/c82bdf26-7de4-4478-a0aa-bcc4853fb2a7/0cd68471-1e6b-4777-98ec-474bbf9e20da" (reference "R2002") (unit 1)))))
 	(symbol
 		(lib_id "MIRA_RevA:AD4003_MIRA_MAT")
 		(at 163.83 133.35 0)
@@ -8246,107 +7723,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "MIRA_RevA:Resistor")
-		(at 62.23 50.8 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cdd83b43-9acb-49f5-9cd8-c352d27a66b5")
-		(property "Reference" "R2000"
-			(at 62.23 48.26 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.85 0.85)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 62.23 53.34 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.85 0.85)
-				)
-			)
-		)
-		(property "Footprint" "MIRA_RevA:R_0402_1005Metric"
-			(at 62.23 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Description" "10 kOhm, 0.1%, matched divider ratio"
-			(at 62.23 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 62.23 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Manufacturer" "Yageo"
-			(at 62.23 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a0ee19c6-2a0d-42a3-b025-025d6d734fe3")
-		)
-		(pin "2"
-			(uuid "70a2b294-60c2-453c-8a1a-77a862e0868f")
-		)
-		(instances
-			(project "MIRA_Control"
-				(path "/ad010b50-c509-466c-b833-d1667dfb0702/c82bdf26-7de4-4478-a0aa-bcc4853fb2a7/0cd68471-1e6b-4777-98ec-474bbf9e20da"
-					(reference "R2000")
-					(unit 1)
-				)
-			)
-		)
-	)
+	(symbol (lib_id "MIRA_RevA:Resistor") (at 62.23 50.8 90) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "cdd83b43-9acb-49f5-9cd8-c352d27a66b5") (property "Reference" "R2000" (at 62.23 48.26 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Value" "9.09k" (at 62.23 53.34 90) (show_name no) (do_not_autoplace no) (effects (font (size 0.85 0.85)))) (property "Footprint" "MIRA_RevA:R_0402_1005Metric" (at 62.23 50.8 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Datasheet" "" (at 62.23 50.8 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Description" "10 kOhm, 0.1%, matched divider ratio" (at 62.23 50.8 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "MPN" "ERJ-2RKF9091X" (at 62.23 50.8 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (property "Manufacturer" "Yageo" (at 62.23 50.8 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))) (pin "1" (uuid "a0ee19c6-2a0d-42a3-b025-025d6d734fe3")) (pin "2" (uuid "70a2b294-60c2-453c-8a1a-77a862e0868f")) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/c82bdf26-7de4-4478-a0aa-bcc4853fb2a7/0cd68471-1e6b-4777-98ec-474bbf9e20da" (reference "R2000") (unit 1)))))
 	(symbol
 		(lib_id "MIRA_RevA:Capacitor")
 		(at 59.69 187.96 0)
@@ -8852,4 +8229,13 @@
 			)
 		)
 	)
+
+(global_label "ADC_P_SWITCHED" (shape input) (at 87.63 128.27 180) (effects (font (size 0.8 0.8)) (justify right)) (uuid "9ad470a1-2b9c-4fba-b9f9-63aa99de6717"))
+(global_label "ADC_N_SWITCHED" (shape input) (at 87.63 138.43 180) (effects (font (size 0.8 0.8)) (justify right)) (uuid "f8de4b74-cb21-488f-817c-86941ff1e7f5"))
+
+
+
+
+
+
 )

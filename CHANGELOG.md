@@ -1,8 +1,31 @@
 # MIRA changelog
 
+## 2026-10-30 — Unpowered-input review / partial hardware repair
+
+- Add AON-powered Ioff Schmitt receivers for host reset and host UART RX on Power 5500 (7 parts; 3 legacy pin changes).
+- Keep Control pin connectivity unchanged and preserve startup / sequencing / fault behavior.
+- Record open analog back-power paths and an exact 190-row input/clamp inventory. This checklist item is not closed.
+- KiCad 10.0.8, Power 55 sheets / Control 32; no ERC errors or warnings. No firmware, PCB or board-test claim.
+
+
 Repository milestones are separate from hardware revisions. Both projects currently use **RevA**.
 
 ## Unreleased
+
+### 2026-10-29 — Fault hardware repair
+
+- Add Power sheet 5400: application heartbeat timeout, first-edge readiness latch and open-drain host-watchdog reset. Add LINK_READY_H to matrix clear and PM PC15.
+- Preserve the 118-contact pinout and all Control electrical connections; update heartbeat semantics on Control sheets 300/900. Add 14 Power components.
+- Verify 112 fault-hardware checks, 173 fault-path checks across 30 scenarios, 134 startup checks, 179 sequencing checks and 21 power-path checks. ERC: zero messages, Power 54 sheets / Control 32.
+- Firmware integration, PCB placement, supply ramps, fault timing, discharge and unpowered-input tests remain pending.
+
+### 2026-10-29 — Startup and PM sequencing
+
+- Qualify AON startup, block all 15 rail commands and MATRIX_PERMIT until ready, require fresh ARM after a detected fault, and replace the VTT source follower with a full-swing buffered drive.
+- Add GLOBAL_CLEAR_N feedback to PC14 / U2401.4 on Power sheet 2400; keep low-voltage READY fanout unchanged. Document every EN/PG pin, parent dependency, sequencing and fault response for PM firmware.
+- Preserve the 118-contact inter-board interface and Control sources. Verify 134 startup checks, 178 native connectivity/Boolean sequencing checks, zero ERC messages on 53 Power and 32 Control sheets, and the earlier 21 power-path checks.
+- No PM/FPGA firmware implementation, PCB routing, GitHub publication or hardware timing qualification is claimed.
+
 
 ### 2026-10-28 — Task 1/2 documentation refresh
 

@@ -1,3 +1,4 @@
+from verify_signal_remediation import normalize_remediation_rows
 #!/usr/bin/env python3
 """Verify all distributed connectors, native KiCad ERC and preserved load circuits.
 
@@ -5,6 +6,7 @@ The interface specification is the reviewed electrical contract, not inferred fr
 the generated footprints. Requires kicad-cli 10.0.7 for baseline-comparable net names.
 """
 import csv
+from verify_startup import normalize_startup_rows
 import hashlib
 import json
 from pathlib import Path
@@ -45,7 +47,7 @@ def main():
             nodes[project]={(n.get('ref'),n.get('pin')):n for net in tree.findall('nets/net') for n in net.findall('node')}
             components[project]={c.get('ref'):c for c in tree.findall('components/comp')}
             refs={a[project+'_ref'] for a in spec['connectors']}
-            load_rows=[r for r in rows if r[0] not in refs]
+            load_rows=[r for r in (normalize_startup_rows(rows) if project=='Power' else normalize_remediation_rows(rows,'Control')) if r[0] not in refs]
             digest=hashlib.sha256(json.dumps(load_rows,separators=(',',':')).encode()).hexdigest()
             assert len(load_rows)==baseline[project]['connected_pin_entries']
             assert digest==baseline[project]['sha256_sorted_ref_pin_net'], project+': load/source circuit changed'
@@ -58,9 +60,9 @@ def main():
             run('sch','erc','--format','json','--severity-all','--exit-code-violations','-o',str(erc_path),str(source))
             erc=json.loads(erc_path.read_text())
             assert not [v for s in erc['sheets'] for v in s['violations']]
-            assert len(erc['sheets'])==(51 if project=='Power' else 32)
+            assert len(erc['sheets'])==(61 if project=='Power' else 43)
             report[project]={'active_sheets':len(erc['sheets']),'connector_instances':len(refs),'connected_pin_entries':len(rows),
-                             'nonconnector_entries_preserved':len(load_rows),'nonconnector_connectivity_sha256':digest,
+                             'nonconnector_entries_preserved_after_explicit_startup_delta':len(load_rows),'nonconnector_connectivity_sha256':digest,
                              'erc_errors':0,'erc_warnings':0,'erc_exclusions':0,'ignored_style_checks':sorted(STYLE_RULES)}
 
         for a in spec['connectors']:

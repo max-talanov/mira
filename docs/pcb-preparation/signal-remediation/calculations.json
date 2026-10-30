@@ -1,0 +1,69 @@
+{
+  "temperature_scope_C": [
+    -40,
+    85
+  ],
+  "TMUX_off_leakage_bound_uA_125C": 2,
+  "bleed_max_ohm": 101000,
+  "off_receiver_voltage_bound_V": 0.20199999999999999,
+  "OPA_input_current_upper_bound_A": 0.005555555555555556,
+  "comparator_input_current_upper_bound_A": 0.005555555555555556,
+  "FDA_input_current_upper_bound_A": 0.0068927488282327,
+  "ADC_REF_domain_budget_mA": 8,
+  "ADR4550_source_capability_mA": 10,
+  "startup_AUP_static_load_uA": 18,
+  "AON_added_reserve_vs_v5_mA": 103,
+  "AON_total_reserve_vs_28Oct_mA": 112,
+  "AON_added_bypass_uF": 1.0,
+  "local_guard_P15_reserve_mA": 10,
+  "USB5_added_reserve_mA": 25,
+  "IO3V3_added_reserve_mA": 5,
+  "IO_capacitance_contract_F": 0.001,
+  "IO_discharge_to_2_625V_s": 0.28340805396426216,
+  "DS181_limit_s_at_125C": 0.3,
+  "FDA_nominal_differential_gain": -0.14893570397743003,
+  "FDA_nominal_gain_change_percent": -0.7095306817133107,
+  "FDA_ideal_DC_cases": [
+    {
+      "input_V": -15.75,
+      "guard_N_V": 1.0317414115458674,
+      "guard_P_V": 1.6619628429263622,
+      "FDA_common_mode_V": 1.5910552763290449,
+      "out_P_V": 3.6728686688222614,
+      "out_N_V": 1.3271313311777386,
+      "differential_V": 2.3457373376445227
+    },
+    {
+      "input_V": 0,
+      "guard_N_V": 2.1896400156830387,
+      "guard_P_V": 2.1896400156830387,
+      "FDA_common_mode_V": 2.255365225183688,
+      "out_P_V": 2.5,
+      "out_N_V": 2.5,
+      "differential_V": 0.0
+    },
+    {
+      "input_V": 15.75,
+      "guard_N_V": 3.3475386198202095,
+      "guard_P_V": 2.7173171884397145,
+      "FDA_common_mode_V": 2.9196751740383307,
+      "out_P_V": 1.3271313311777386,
+      "out_N_V": 3.6728686688222614,
+      "differential_V": -2.3457373376445227
+    }
+  ],
+  "IO_direct_nominal_capacitance_F": 0.00040431000000000006,
+  "IO_direct_capacitance_x2_F": 0.0008086200000000001,
+  "IO_related_retained_capacitance_F": 8.7e-06,
+  "IO_total_related_x2_F": 0.0008260200000000001,
+  "reference_current_allocation": {
+    "OPA197_max_mA": 1.5,
+    "THP210_max_mA": 1.4,
+    "TMUX_three_parts_reserve_mA": 0.42,
+    "AD4003_reference_allocation_mA": 2.2,
+    "resistors_output_loads_and_margin_mA": 2.48,
+    "total_allocated_mA": 8,
+    "ADR4550_source_mA": 10,
+    "note": "AD4003 typical REF current at 2 MSPS is 1.1 mA; allocation is 2x typical, not a manufacturer maximum. Validate REF ripple/settling on the populated board."
+  }
+}
