@@ -1,0 +1,31 @@
+{
+  "kicad_version": "10.0.8",
+  "checks_passed": 112,
+  "added_components": 14,
+  "legacy_pin_changes": [
+    {
+      "ref": "U2401",
+      "pin": "5",
+      "before": "unconnected-(U2401-PC15-Pad5)",
+      "after": "LINK_READY_H"
+    },
+    {
+      "ref": "U2602",
+      "pin": "13",
+      "before": "AON",
+      "after": "LINK_READY_H"
+    }
+  ],
+  "native_power_pin_net_sha256": "18c742dca2165bc8b2ae2f0c0ae0c6854c9a094789488002a974e60b4bd261a2",
+  "heartbeat_design_target_ms": 50,
+  "heartbeat_firmware_max_gap_ms": 100,
+  "hardware_timeout_range_ms": [
+    170,
+    230
+  ],
+  "extra_AON_budget_mA": 2,
+  "added_bypass_uF": 0.5,
+  "scope": "Native connectivity, packages and ideal event/latch model at valid supplies; not electrical transient, MCU firmware or prototype verification. Measure ramp, propagation, disconnect-to-stop, reset and unpowered-input behavior on hardware."
+}
+08:53:18: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+08:53:20: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found

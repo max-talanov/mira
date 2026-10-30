@@ -1,0 +1,22 @@
+{
+  "status": "pin_assignment_verified_no_firmware_execution",
+  "mcu": "STM32H745IIT6",
+  "memory": "IS42S16320F-7TLI",
+  "FMC_bank": "SDRAM bank 1 (SDNE0, SDCKE0)",
+  "base_address": "0xC0000000",
+  "capacity_bytes": 67108864,
+  "data_width": 16,
+  "row_bits": 13,
+  "column_bits": 10,
+  "internal_banks": 4,
+  "clock_target_MHz": 100,
+  "clock_scope": "planning target; verify complete STM32/ISSI/PCB timing before operation",
+  "CAS_latency_candidate": 3,
+  "refresh_rows": 8192,
+  "refresh_window_ms": 64,
+  "refresh_counter_example_at_100MHz": 761,
+  "refresh_formula": "floor(F_SDCLK_Hz * 0.064 / 8192) - 20; RM0399 Rev 4, FMC_SDRTR, p. 920; recompute for actual clock/temperature",
+  "pinmap_file": "fmc-sdram-pin-map.csv",
+  "FMC_AF": 12,
+  "GPIO_CS_SPI1": "PA4 is software GPIO CS; do not route FMC or alternate QSPI to occupied pins"
+}

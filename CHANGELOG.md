@@ -1,5 +1,15 @@
 # MIRA changelog
 
+## 2026-10-30 — MIRA.04 digital interface review
+
+- User decision: defer MIG/Vivado validation until before routing FPGA-to-DDR3L on Control and before freezing the FPGA pinout. MIRA.04 remains open; unrelated work may continue.
+
+- Move MCU-to-FPGA SPI SCK from U500.AB12 to Y11 (SRCC, bank 13); release AB12.
+- Verify exact FPGA/MCU/DDR3L/SDRAM pin functions, 39 FMC paths and 56 STM32 alternate functions.
+- Add pin maps, candidate XDC, exact MIG input settings and Vivado project preparation scripts.
+- Pass 1650 static checks and historical regressions; KiCad ERC remains 0 errors / 0 warnings on both projects.
+- MIG/Vivado was not available: DDR validation, generated MIG project and implementation/timing reports remain open. No PCB, firmware or hardware-test claim.
+
 ## 2026-10-30 — Unpowered-input review / partial hardware repair
 
 - Add AON-powered Ioff Schmitt receivers for host reset and host UART RX on Power 5500 (7 parts; 3 legacy pin changes).

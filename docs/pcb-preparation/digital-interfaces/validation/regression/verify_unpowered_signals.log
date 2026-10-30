@@ -1,0 +1,70 @@
+Found 0 violations
+Saved ERC Report to /workspace/scratch/5a96bac6efb7/audit/regression-project/docs/pcb-preparation/signal-remediation/Power-erc.json
+Found 0 violations
+Saved ERC Report to /workspace/scratch/5a96bac6efb7/audit/regression-project/docs/pcb-preparation/signal-remediation/Control-erc.json
+{
+  "checks_passed": 1404,
+  "erc": {
+    "Power": {
+      "sheets": 61,
+      "errors": 0,
+      "warnings": 0
+    },
+    "Control": {
+      "sheets": 43,
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  "added_components": {
+    "Power": 78,
+    "Control": 193
+  },
+  "legacy_changed_pin_entries": {
+    "Power": 40,
+    "Control": 78
+  },
+  "firmware_implemented": false,
+  "pcb_updated": false,
+  "board_tests_performed": false,
+  "scope": "Native connectivity, package pin-set consistency, explicit change regression, ideal logic/DC arithmetic. Partial-rail transients, leakage on a PCB and measurement accuracy remain hardware qualification."
+}
+{
+  "date": "2026-10-30",
+  "checks_passed": 36,
+  "native_pin_sha256": {
+    "Power": "c44d030517cbb7a95fd93a2a88477684df161986a6788413930c893b7c918133",
+    "Control": "4e9f42a3b61d356ee1502254d9d38198034d3028c29cf607ed36d16aee72ff53"
+  },
+  "added_components": 7,
+  "legacy_pin_changes": [
+    {
+      "ref": "R3305",
+      "pin": "2",
+      "before": "PM_UART_RX",
+      "after": "HOST_UART_TX_RAW"
+    },
+    {
+      "ref": "R3306",
+      "pin": "1",
+      "before": "PM_UART_RX",
+      "after": "HOST_UART_TX_RAW"
+    },
+    {
+      "ref": "U2602",
+      "pin": "10",
+      "before": "HOST_RESET_N",
+      "after": "HOST_RESET_AON_N"
+    }
+  ],
+  "checklist_status": "Historical v5 regression; current status is in signal-remediation/README.md",
+  "scope": "Historical v5 connectivity regression after explicit v6 normalization; current actual-net validation runs first. No board measurement.",
+  "AON_budget_delta_mA": 2,
+  "AON_bypass_delta_uF": 0.2
+}
+08:53:22: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+08:53:24: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+08:53:29: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+08:53:32: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+08:53:48: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found
+08:53:49: Error: schema file '/usr/share/kicad/schemas/api.v1.schema.json' not found

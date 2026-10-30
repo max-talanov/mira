@@ -11617,18 +11617,7 @@
 		)
 		(uuid "9883b369-59c6-4502-bf92-3c780748abd1")
 	)
-	(text "U800 is an MT41K256M16TW-107:P DDR3L device, organised as 256M x 16 bits,\nor 512 MiB. FPGA bank 15 carries address, command and memory clock signals;\nbank 16 carries the two data byte lanes. This memory is independent of the MCU\nFMC SDRAM."
-		(exclude_from_sim no)
-		(at 315 42.34 0)
-		(effects
-			(font
-				(size 1.35 1.35)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "a246dbc6-c0be-48f2-9880-1ef77374a332")
-	)
+	(text "U800 is an MT41K256M16TW-107:P DDR3L device, organised as 256M x 16 bits,\nor 512 MiB. FPGA bank 15 carries address, command and memory clock signals;\nbank 16 carries the two data byte lanes. This memory is independent of the MCU\nFMC SDRAM.\nMIG target: 400 MHz CK / 800 MT/s, 4:1. CS# is grounded: disable Chip Select." (exclude_from_sim no) (at 315 42.34 0) (effects (font (size 1.35 1.35) (color 0 70 160 1)) (justify left top)) (uuid "a246dbc6-c0be-48f2-9880-1ef77374a332"))
 	(text "FPGA DDR3L address and command"
 		(exclude_from_sim no)
 		(at 21.59 40.64 0)

@@ -1,6 +1,10 @@
 # MIRA
 
-**Актуальная ревизия v6, 30 октября 2026:** [исправления сигналов при отключённом питании](docs/pcb-preparation/signal-remediation/README.md). Power — 61 лист / Control — 43; ERC 0/0. Закрытие — по схеме в указанных условиях; испытания платы и PCB открыты. AON: суммарный добавочный резерв 112 mA и 2.8 µF к бюджету 28 октября. Данные прежних этапов ниже сохранены как история.
+**Решение от 30.10.2026: проверка MIG/Vivado отложена по согласованию с пользователем. Вернуться к ней перед трассировкой FPGA ↔ DDR3L на плате Control и до окончательной фиксации распиновки FPGA. MIRA.04 остаётся открытой до получения результатов проверки. Остальные проверки схемы, проектирование Power и независимые участки Control можно продолжать.**
+
+**MIRA.04, 30 октября 2026:** [проверка цифровых интерфейсов](docs/pcb-preparation/digital-interfaces/README.md). SPI SCK перенесён AB12 → Y11; FMC/AF и 164 FPGA-порта сверены, ERC 0/0. MIG/Vivado ещё не запускались; кандидатные XDC и процедура запуска находятся в `fpga/digital-interfaces/`. Карточка MIRA.04 остаётся открытой до проверки инструментом производителя.
+
+**Предыдущий этап v6, 30 октября 2026:** [исправления сигналов при отключённом питании](docs/pcb-preparation/signal-remediation/README.md). Power — 61 лист / Control — 43; ERC 0/0. Закрытие — по схеме в указанных условиях; испытания платы и PCB открыты. AON: суммарный добавочный резерв 112 mA и 2.8 µF к бюджету 28 октября. Данные прежних этапов ниже сохранены как история.
 
 **MIRA is a research platform under development for experiments with memristor arrays and neuromorphic computing.**
 
@@ -8,7 +12,7 @@ The project aims to bring array control, an analog front end, digital processing
 
 ## Current status
 
-The **2026-10-30 v6 signal remediation** adds hardware protection for PM, DAC, ADC/FDA and comparator inputs; replaces 33 analog switch ICs with fail-safe-input parts; isolates 10 VIN-relative enable paths; and qualifies USB and FPGA AUX/IO supplies. See the [current review and operating conditions](docs/pcb-preparation/signal-remediation/README.md). There are 271 new components and 40 changed legacy values. Native KiCad ERC reports zero errors and warnings. The checklist can be closed as a schematic review within those conditions. PCB, firmware and prototype qualification remain open. The [v5 receiver-only report](docs/pcb-preparation/unpowered-signals/README.md) is historical.
+The previous **2026-10-30 v6 signal remediation** adds hardware protection for PM, DAC, ADC/FDA and comparator inputs; replaces 33 analog switch ICs with fail-safe-input parts; isolates 10 VIN-relative enable paths; and qualifies USB and FPGA AUX/IO supplies. See the [current review and operating conditions](docs/pcb-preparation/signal-remediation/README.md). There are 271 new components and 40 changed legacy values. Native KiCad ERC reports zero errors and warnings. The checklist can be closed as a schematic review within those conditions. PCB, firmware and prototype qualification remain open. The [v5 receiver-only report](docs/pcb-preparation/unpowered-signals/README.md) is historical.
 
 The preceding [fault hardware repair](docs/pcb-preparation/fault-review/README.md) adds a 170–230 ms application heartbeat watchdog, first-edge readiness and direct host reset on watchdog expiry. LINK_READY_H feeds the matrix interlock and PM PC15. The 14 added components are checked by native netlist and ideal timing/latch tests; firmware and prototype validation remain open.
 

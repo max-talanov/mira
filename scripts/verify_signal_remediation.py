@@ -4,6 +4,7 @@ This is not a PCB measurement, device transient model, or analog performance cer
 """
 from pathlib import Path
 import json,subprocess,tempfile,xml.etree.ElementTree as E,hashlib,re,itertools,math,csv
+from digital_pin_delta import normalize_digital_rows
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'docs/pcb-preparation/signal-remediation'
 INTENT=json.loads((OUT/'intent.json').read_text())
 ADDED={b:set(INTENT['added'][b]) for b in ['Power','Control']}
@@ -11,7 +12,7 @@ BASE={b:{(r,p):n for r,p,n in json.loads((OUT/('baseline-v5-'+b.lower()+'.json')
 def normalize_remediation_rows(rows,board='Power'):
  """Reverse only the explicit v6 pin delta for immutable earlier regression baselines."""
  out=[]
- for r,p,n in rows:
+ for r,p,n in normalize_digital_rows(rows,board):
   if r in ADDED[board]:continue
   if INTENT['rerouted_pins'][board].get(r+':'+p)==n:n=BASE[board][r,p]
   elif board=='Control' and INTENT['control_aliases'].get(BASE[board].get((r,p)))==n:n=BASE[board][r,p]

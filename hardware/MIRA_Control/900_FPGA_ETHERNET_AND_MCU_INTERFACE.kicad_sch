@@ -12595,18 +12595,7 @@
 		)
 		(uuid "e6c82c5d-6eaf-4170-aee6-02f81d688edd")
 	)
-	(text "U900 forwards SCK, MOSI, CS_N and periodic HOST_ALIVE, powered by IO3V3.\nHOST_ALIVE is now a pulse train, not a static ready flag; FPGA must track it.\nU901 returns MISO, FPGA_IRQ, FPGA_DONE and FPGA_INIT_N from SYS3V3.\nBoth use 74LVC125APW,118 with Ioff; C907 decouples U901.\nU901 3Y/4Y drive PC6/PC7; OE pins stay low, 100k define startup levels."
-		(exclude_from_sim no)
-		(at 315 120.032 0)
-		(effects
-			(font
-				(size 1.35 1.35)
-				(color 0 70 160 1)
-			)
-			(justify left top)
-		)
-		(uuid "f0442b79-17f8-4c54-9f8d-719b34656b2d")
-	)
+	(text "U900 forwards SCK, MOSI, CS_N and periodic HOST_ALIVE, powered by IO3V3.\nHOST_ALIVE is now a pulse train, not a static ready flag; FPGA must track it.\nU901 returns MISO, FPGA_IRQ, FPGA_DONE and FPGA_INIT_N from SYS3V3.\nBoth use 74LVC125APW,118 with Ioff; C907 decouples U901.\nU901 3Y/4Y drive PC6/PC7; OE pins stay low, 100k define startup levels.\nSCK uses U500.Y11 (SRCC, bank 13); AB12 is unused. See digital-interfaces review." (exclude_from_sim no) (at 315 120.032 0) (effects (font (size 1.35 1.35) (color 0 70 160 1)) (justify left top)) (uuid "f0442b79-17f8-4c54-9f8d-719b34656b2d"))
 	(text "Ethernet magnetics and center taps | Rev.A"
 		(exclude_from_sim no)
 		(at 77.47 128.29 0)
@@ -13201,10 +13190,7 @@
 		(color 0 0 0 0)
 		(uuid "fb72083f-793c-4eed-90b1-db364843a5ef")
 	)
-	(no_connect
-		(at 162.56 45.72)
-		(uuid "0d2c459a-594b-4a9b-bbb1-f866c6b708f1")
-	)
+	(no_connect (at 116.84 72.39) (uuid "0d2c459a-594b-4a9b-bbb1-f866c6b708f1"))
 	(no_connect
 		(at 254 45.72)
 		(uuid "1e1bf2ba-2af8-487a-85c0-dc8202e1309d")
@@ -18926,28 +18912,7 @@
 			)
 		)
 	)
-	(global_label "MCU_FPGA_SCK_F"
-		(shape bidirectional)
-		(at 116.84 72.39 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "c6e48cc7-9819-4ebd-8607-7def0824d820")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 116.84 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-	)
+	(global_label "MCU_FPGA_SCK_F" (shape bidirectional) (at 162.56 45.72 0) (effects (font (size 0.9 0.9)) (justify left)) (uuid "c6e48cc7-9819-4ebd-8607-7def0824d820") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 162.56 45.72 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1 1)))))
 	(global_label "MDI_B_N"
 		(shape bidirectional)
 		(at 118.11 160.02 180)
