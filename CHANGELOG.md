@@ -1,5 +1,11 @@
 # MIRA changelog
 
+## 2026-10-30 — Architecture Atlas 4.3 distribution
+
+- Add the original, unchanged `MIRA_Architecture_Atlas_4.3.zip` under `docs/architecture-atlas/`, with a direct download link and Russian opening instructions in the repository README.
+- Document offline startup through `index.html`, presentation mode, and the speaker guide. Keep the atlas's earlier schematic snapshot separate from the current `hardware/` projects.
+- Verify ZIP integrity, all 273 script/style dependencies, functional data, and navigation using the bundled validators. The archive is preserved byte for byte; no hardware files are changed.
+
 ## 2026-10-30 — MIRA.05 analog requirements
 
 - Define separate READ, SET, RESET and FORMING source-voltage/current profiles, concurrency, provisional load limits and command windows. Distinguish these engineering limits from unknown DUT ratings.
