@@ -39,7 +39,15 @@ def main():
    ck(item['ref']+'_intervening_properties_preserved',all(properties(c[item['ref']]).get(k)==v for k,v in item['after'].items()))
   _,bc=native(OUT/'validation/baseline-control.xml')
   allowed={'U2109','R2111','R2301','R2302'}|{x['ref'] for x in intervening}
-  ck('all_other_component_properties_unchanged',all(properties(c[r])==properties(bc[r]) for r in c if r not in allowed))
+  # MIRA.06: explicit, audited procurement fields and J100 SMT footprint only.
+  assembly_delta=json.loads((ROOT/'docs/pcb-preparation/components-assembly/bom-delta.json').read_text())
+  normalized={r:properties(c[r]) for r in c}
+  for item in assembly_delta:
+   if item['board']!='Control':continue
+   r=item['ref']
+   ck(r+'_MIRA06_properties',all(normalized[r].get(k)==v for k,v in item['after'].items()))
+   normalized[r].update(item['before'])
+  ck('all_other_component_properties_unchanged',all(normalized[r]==properties(bc[r]) for r in c if r not in allowed))
   ck('RSH_available_for_service_READ',m['U1327','17']==m['U2103','1']=='MAT_RSH_A0' and m['U1327','16']==m['U2103','16']=='MAT_RSH_A1')
   ck('VMM_bypasses_shared_CC',all(m['U1500',p]==n for p,n in [('3','BL_DAC0'),('2','BL0'),('1','MAT_BL_VMM_0')]))
 
