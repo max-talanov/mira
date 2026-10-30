@@ -1685,6 +1685,126 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MIRA_RevA:R_ERJ1GN0R00C"
+			(pin_names
+      (offset 0.508)
+    )
+			(pin_numbers hide)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+      (at 0 4.826 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+			(property "Value" "0R"
+				(at 0 -4.826 0)
+				(effects
+        (font
+          (size 1 1)
+        )
+      )
+			)
+			(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Datasheet" ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "MPN" "ERJ1GN0R00C"
+				(at 0 0 0)
+				(effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+			)
+			(property "Manufacturer" "Panasonic"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Description" "Zero-ohm jumper, 0201"
+				(at 0 0 0)
+				(effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+			)
+			(symbol "R_ERJ1GN0R00C_0_1"
+				(rectangle
+        (start -2.54 1.016)
+        (end 2.54 -1.016)
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type background)
+        )
+      )
+			)
+			(symbol "R_ERJ1GN0R00C_1_1"
+				(pin passive line
+        (at -5.08 0 0)
+        (length 2.54)
+        (name "~"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+        (number "1"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+				(pin passive line
+        (at 5.08 0 180)
+        (length 2.54)
+        (name "~"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+        (number "2"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+			)
+		)
 	)
 	(rectangle
 		(start 15.24 15.24)
@@ -1861,7 +1981,7 @@
 		)
 		(uuid "9072f585-106a-474b-a91d-65be1463dde6")
 	)
-	(text "CMD_VTT drives Q1801.\nR1801 pulls EN_VTT low.\nDDR_VREF remains on with EN low."
+	(text "CMD_VTT is buffered on sheet 5300.\nR1805 links it directly to EN_VTT.\nDDR_VREF remains on with EN low."
 		(exclude_from_sim no)
 		(at 73 40 0)
 		(effects
@@ -1874,7 +1994,7 @@
 		)
 		(uuid "a20e4a20-effc-47a8-999d-b8a69bcf5ecc")
 	)
-	(text "U1801 (TPS51200) uses AON for VIN and DDR1V35 for VLDOIN. Q1801 controls\nEN_VTT from CMD_VTT; R1801 (100 kOhm) pulls EN low when Q1801 is off.\nDisabling EN discharges VTT; DDR_VREF remains active while its input supplies\nare valid."
+	(text "U1801 (TPS51200) uses AON for VIN and DDR1V35 for VLDOIN. The AUP\nbuffer on sheet 5300 drives EN_VTT through R1805 without a VGS drop.\nR1801 and R5313 pull EN low when the buffer is disabled. Disabling EN\ndischarges VTT; DDR_VREF remains active while its input supplies are valid."
 		(exclude_from_sim no)
 		(at 156.21 65.3 0)
 		(effects
@@ -2075,16 +2195,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ff99aa8d-88dd-40d3-9c31-de0f744b5576")
-	)
-	(wire
-		(pts
-			(xy 35.56 48.26) (xy 36.83 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "019964fc-a31b-44f2-8101-67b94116cc38")
 	)
 	(wire
 		(pts
@@ -2328,16 +2438,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 35.56) (xy 44.45 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ca4e701-4fe3-43e9-b802-c90d5e5ce691")
-	)
-	(wire
-		(pts
 			(xy 58.42 120.65) (xy 58.42 118.11)
 		)
 		(stroke
@@ -2459,16 +2559,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 35.56) (xy 44.45 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83ccdf1a-a219-4ed4-9aef-2aab710998fd")
-	)
-	(wire
-		(pts
 			(xy 54.61 130.81) (xy 59.69 130.81)
 		)
 		(stroke
@@ -2546,16 +2636,6 @@
 			(type default)
 		)
 		(uuid "ab76ad72-ea2b-460d-8967-85645ad2dc91")
-	)
-	(wire
-		(pts
-			(xy 44.45 53.34) (xy 44.45 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "adcbe929-1ee6-4b8e-bd42-3240a59437cb")
 	)
 	(wire
 		(pts
@@ -2686,28 +2766,6 @@
 			(type default)
 		)
 		(uuid "ff2babd2-0f56-41b4-851c-f4577459b9c6")
-	)
-	(global_label "AON"
-		(shape input)
-		(at 40.64 35.56 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "27ac3fd5-8058-4a92-a29d-92af99b0e9e4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
 	)
 	(global_label "DDR1V35"
 		(shape input)
@@ -2897,28 +2955,6 @@
 		(uuid "b6464d53-abad-46cd-99d8-c69734501ecf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 109.22 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-	)
-	(global_label "CMD_VTT"
-		(shape input)
-		(at 35.56 48.26 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "cf7c40da-03a4-4b77-8cb1-70dde54eec8a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.56 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4976,85 +5012,69 @@
 		)
 	)
 	(symbol
-		(lib_id "MIRA_RevA:Q_BSS138NH6327XTSA2")
-		(at 41.91 48.26 0)
+		(lib_id "MIRA_RevA:R_ERJ1GN0R00C")
+		(at 39.37 48.26 0)
 		(unit 1)
-		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
 		(dnp no)
-		(uuid "f946f379-4e99-4023-9c71-6d9e3d9d0fb6")
-		(property "Reference" "Q1801"
-			(at 50.8 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(uuid "9eeab30b-a971-451a-a6bd-d9c1319b985a")
+		(property "Reference" "R1805"
+			(at 39.37 44.26 0)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 				)
 			)
 		)
-		(property "Value" "BSS138N"
-			(at 50.8 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
+		(property "Value" "0R"
+			(at 39.37 46.26 0)
 			(effects
 				(font
-					(size 1 1)
+					(size 0.85 0.85)
 				)
 			)
 		)
-		(property "Footprint" "MIRA_RevA:SOT-23"
-			(at 41.91 48.26 0)
+		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
+			(at 39.37 46.26 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 				)
 			)
 		)
-		(property "Datasheet" "https://www.infineon.com/part/BSS138N"
-			(at 41.91 48.26 0)
+		(property "Datasheet" ""
+			(at 39.37 46.26 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 				)
 			)
 		)
-		(property "Description" "N-channel MOSFET, 60V, SOT-23; supply-qualified enable source follower"
-			(at 41.91 48.26 0)
+		(property "MPN" "ERJ1GN0R00C"
+			(at 39.37 46.26 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 				)
 			)
 		)
-		(property "MPN" "BSS138NH6327XTSA2"
-			(at 41.91 48.26 0)
+		(property "Manufacturer" "Panasonic"
+			(at 39.37 46.26 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 				)
 			)
 		)
-		(property "Manufacturer" "Infineon"
-			(at 41.91 48.26 0)
+		(property "Description" "Zero-ohm jumper, 0201"
+			(at 39.37 46.26 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -5062,21 +5082,68 @@
 			)
 		)
 		(pin "1"
-			(uuid "18aebe06-64db-44ea-94e3-316c579029b0")
+			(uuid "44fa8469-93e4-4df6-a795-10f772ec524e")
 		)
 		(pin "2"
-			(uuid "8972e9b8-6819-41ee-abf6-604b754e0842")
-		)
-		(pin "3"
-			(uuid "84a4ba51-67d1-4c1f-88c4-d2065d8f0b83")
+			(uuid "719eab27-a82f-4d42-bc8e-a3858734ef23")
 		)
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/192298de-83f0-4b85-a128-d88097a24d4a"
-					(reference "Q1801")
+					(reference "R1805")
 					(unit 1)
 				)
 			)
 		)
 	)
+	(wire
+		(pts
+			(xy 34.29 48.26)
+			(xy 31.75 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0325f37a-2884-44c3-880e-337a03160443")
+	)
+	(global_label "CMD_VTT"
+		(shape bidirectional)
+		(at 31.75 48.26 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "374724ed-c10b-4d38-b500-6839fd913a0a")
+	)
+	(wire
+		(pts
+			(xy 44.45 48.26)
+			(xy 46.99 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5d7b838-6c83-45a9-a4eb-b5ca0bf7c525")
+	)
+	(global_label "EN_VTT"
+		(shape bidirectional)
+		(at 46.99 48.26 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "937dc294-b090-411e-b990-8aa54cb6140f")
+	)
+
+
+
+
+
+
 )

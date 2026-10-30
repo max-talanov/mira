@@ -197,4 +197,10 @@
 (global_label "GND" (shape input) (at 274.32 114.3 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "fc216c33-ff70-436f-b644-7e4ef7984879"))
 (text "J407 <-> J4908 | ADC_AFE" (at 208.28 127 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7e3f2805-05c6-4bb5-93be-89f3c8561fdc"))
 (text "DAC_MATRIX: place near DAC buffers and matrix power entry.\nPROG_P15 / PROG_N15 remain switched supplies for the forming source.\nADC_AFE: place beside the TIA / ADC / reference power filters.\n\nRepeated rail names are the same protected source, with multiple entry points.\nKeep a continuous GND plane; local returns must not cross the FPGA/DDR load path.\nRoute quiet analog supply branches from the proper post-regulator/post-shunt output.\nNo connector-level isolation or independent zone protection is implied.\n\nThis sheet defines the electrical interface, not final XY placement or qualified current.\nSee docs/pcb-preparation/distributed-power for pinout, budgets and placement requirements." (at 35.56 228.6 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "848fc054-e402-49db-b69c-5786f1f51d47"))
+
+
+
+
+
+
 )

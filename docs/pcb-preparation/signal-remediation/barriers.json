@@ -1,0 +1,682 @@
+{
+  "analog": [
+    {
+      "board": "Power",
+      "ref": "U5600",
+      "source": "MON_V_ANA33",
+      "drain": "MON_V_ANA33_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5600"
+    },
+    {
+      "board": "Power",
+      "ref": "U5600",
+      "source": "MON_V_ANA5",
+      "drain": "MON_V_ANA5_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5602"
+    },
+    {
+      "board": "Power",
+      "ref": "U5601",
+      "source": "MON_V_ANA6",
+      "drain": "MON_V_ANA6_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5604"
+    },
+    {
+      "board": "Power",
+      "ref": "U5601",
+      "source": "MON_V_AUX18",
+      "drain": "MON_V_AUX18_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5606"
+    },
+    {
+      "board": "Power",
+      "ref": "U5602",
+      "source": "MON_V_AUX25",
+      "drain": "MON_V_AUX25_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5608"
+    },
+    {
+      "board": "Power",
+      "ref": "U5602",
+      "source": "MON_V_CORE",
+      "drain": "MON_V_CORE_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5610"
+    },
+    {
+      "board": "Power",
+      "ref": "U5603",
+      "source": "MON_V_DDR",
+      "drain": "MON_V_DDR_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5612"
+    },
+    {
+      "board": "Power",
+      "ref": "U5603",
+      "source": "MON_V_FPGA",
+      "drain": "MON_V_FPGA_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5614"
+    },
+    {
+      "board": "Power",
+      "ref": "U5700",
+      "source": "MON_V_INPUT",
+      "drain": "MON_V_INPUT_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5700"
+    },
+    {
+      "board": "Power",
+      "ref": "U5700",
+      "source": "MON_V_IO33",
+      "drain": "MON_V_IO33_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5702"
+    },
+    {
+      "board": "Power",
+      "ref": "U5701",
+      "source": "MON_V_P15",
+      "drain": "MON_V_P15_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5704"
+    },
+    {
+      "board": "Power",
+      "ref": "U5701",
+      "source": "MON_V_PHY",
+      "drain": "MON_V_PHY_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5706"
+    },
+    {
+      "board": "Power",
+      "ref": "U5702",
+      "source": "MON_V_SYS",
+      "drain": "MON_V_SYS_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5708"
+    },
+    {
+      "board": "Power",
+      "ref": "U5702",
+      "source": "MON_V_USB",
+      "drain": "MON_V_USB_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5710"
+    },
+    {
+      "board": "Power",
+      "ref": "U5703",
+      "source": "ADC_VTT",
+      "drain": "ADC_VTT_SAFE",
+      "supply": "AON",
+      "enable": "AON_MON_ENABLE",
+      "bleed_ref": "R5712"
+    },
+    {
+      "board": "Control",
+      "ref": "U2400",
+      "source": "BL_DAC_RAW0",
+      "drain": "BL_DAC_RAW0_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2400"
+    },
+    {
+      "board": "Control",
+      "ref": "U2400",
+      "source": "BL_DAC_RAW1",
+      "drain": "BL_DAC_RAW1_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2402"
+    },
+    {
+      "board": "Control",
+      "ref": "U2401",
+      "source": "BL_DAC_RAW2",
+      "drain": "BL_DAC_RAW2_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2404"
+    },
+    {
+      "board": "Control",
+      "ref": "U2401",
+      "source": "BL_DAC_RAW3",
+      "drain": "BL_DAC_RAW3_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2406"
+    },
+    {
+      "board": "Control",
+      "ref": "U2402",
+      "source": "BL_DAC_RAW4",
+      "drain": "BL_DAC_RAW4_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2408"
+    },
+    {
+      "board": "Control",
+      "ref": "U2402",
+      "source": "BL_DAC_RAW5",
+      "drain": "BL_DAC_RAW5_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2410"
+    },
+    {
+      "board": "Control",
+      "ref": "U2403",
+      "source": "BL_DAC_RAW6",
+      "drain": "BL_DAC_RAW6_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2412"
+    },
+    {
+      "board": "Control",
+      "ref": "U2403",
+      "source": "BL_DAC_RAW7",
+      "drain": "BL_DAC_RAW7_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2414"
+    },
+    {
+      "board": "Control",
+      "ref": "U2500",
+      "source": "BL_DAC_RAW8",
+      "drain": "BL_DAC_RAW8_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2500"
+    },
+    {
+      "board": "Control",
+      "ref": "U2500",
+      "source": "BL_DAC_RAW9",
+      "drain": "BL_DAC_RAW9_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2502"
+    },
+    {
+      "board": "Control",
+      "ref": "U2501",
+      "source": "BL_DAC_RAW10",
+      "drain": "BL_DAC_RAW10_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2504"
+    },
+    {
+      "board": "Control",
+      "ref": "U2501",
+      "source": "BL_DAC_RAW11",
+      "drain": "BL_DAC_RAW11_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2506"
+    },
+    {
+      "board": "Control",
+      "ref": "U2502",
+      "source": "BL_DAC_RAW12",
+      "drain": "BL_DAC_RAW12_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2508"
+    },
+    {
+      "board": "Control",
+      "ref": "U2502",
+      "source": "BL_DAC_RAW13",
+      "drain": "BL_DAC_RAW13_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2510"
+    },
+    {
+      "board": "Control",
+      "ref": "U2503",
+      "source": "BL_DAC_RAW14",
+      "drain": "BL_DAC_RAW14_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2512"
+    },
+    {
+      "board": "Control",
+      "ref": "U2503",
+      "source": "BL_DAC_RAW15",
+      "drain": "BL_DAC_RAW15_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2514"
+    },
+    {
+      "board": "Control",
+      "ref": "U2600",
+      "source": "BL_DAC_RAW16",
+      "drain": "BL_DAC_RAW16_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2600"
+    },
+    {
+      "board": "Control",
+      "ref": "U2600",
+      "source": "BL_DAC_RAW17",
+      "drain": "BL_DAC_RAW17_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2602"
+    },
+    {
+      "board": "Control",
+      "ref": "U2601",
+      "source": "BL_DAC_RAW18",
+      "drain": "BL_DAC_RAW18_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2604"
+    },
+    {
+      "board": "Control",
+      "ref": "U2601",
+      "source": "BL_DAC_RAW19",
+      "drain": "BL_DAC_RAW19_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2606"
+    },
+    {
+      "board": "Control",
+      "ref": "U2602",
+      "source": "BL_DAC_RAW20",
+      "drain": "BL_DAC_RAW20_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2608"
+    },
+    {
+      "board": "Control",
+      "ref": "U2602",
+      "source": "BL_DAC_RAW21",
+      "drain": "BL_DAC_RAW21_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2610"
+    },
+    {
+      "board": "Control",
+      "ref": "U2603",
+      "source": "BL_DAC_RAW22",
+      "drain": "BL_DAC_RAW22_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2612"
+    },
+    {
+      "board": "Control",
+      "ref": "U2603",
+      "source": "BL_DAC_RAW23",
+      "drain": "BL_DAC_RAW23_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2614"
+    },
+    {
+      "board": "Control",
+      "ref": "U2700",
+      "source": "BL_DAC_RAW24",
+      "drain": "BL_DAC_RAW24_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2700"
+    },
+    {
+      "board": "Control",
+      "ref": "U2700",
+      "source": "BL_DAC_RAW25",
+      "drain": "BL_DAC_RAW25_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2702"
+    },
+    {
+      "board": "Control",
+      "ref": "U2701",
+      "source": "BL_DAC_RAW26",
+      "drain": "BL_DAC_RAW26_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2704"
+    },
+    {
+      "board": "Control",
+      "ref": "U2701",
+      "source": "BL_DAC_RAW27",
+      "drain": "BL_DAC_RAW27_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2706"
+    },
+    {
+      "board": "Control",
+      "ref": "U2702",
+      "source": "BL_DAC_RAW28",
+      "drain": "BL_DAC_RAW28_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2708"
+    },
+    {
+      "board": "Control",
+      "ref": "U2702",
+      "source": "BL_DAC_RAW29",
+      "drain": "BL_DAC_RAW29_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2710"
+    },
+    {
+      "board": "Control",
+      "ref": "U2703",
+      "source": "BL_DAC_RAW30",
+      "drain": "BL_DAC_RAW30_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2712"
+    },
+    {
+      "board": "Control",
+      "ref": "U2703",
+      "source": "BL_DAC_RAW31",
+      "drain": "BL_DAC_RAW31_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2714"
+    },
+    {
+      "board": "Control",
+      "ref": "U2800",
+      "source": "VREAD_DAC",
+      "drain": "VREAD_DAC_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2800"
+    },
+    {
+      "board": "Control",
+      "ref": "U2800",
+      "source": "VRESET_DAC",
+      "drain": "VRESET_DAC_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2802"
+    },
+    {
+      "board": "Control",
+      "ref": "U2801",
+      "source": "VSET_DAC",
+      "drain": "VSET_DAC_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2804"
+    },
+    {
+      "board": "Control",
+      "ref": "U2801",
+      "source": "VWL_DAC",
+      "drain": "VWL_DAC_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2806"
+    },
+    {
+      "board": "Control",
+      "ref": "U2802",
+      "source": "ILIM_FORM_DAC",
+      "drain": "ILIM_FORM_DAC_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2808"
+    },
+    {
+      "board": "Control",
+      "ref": "U2802",
+      "source": "ILIM_RESET_DAC",
+      "drain": "ILIM_RESET_DAC_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2810"
+    },
+    {
+      "board": "Control",
+      "ref": "U2803",
+      "source": "ILIM_SET_DAC",
+      "drain": "ILIM_SET_DAC_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2812"
+    },
+    {
+      "board": "Control",
+      "ref": "U2803",
+      "source": "MATRIX_BIAS_DAC",
+      "drain": "MATRIX_BIAS_DAC_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2814"
+    },
+    {
+      "board": "Control",
+      "ref": "U2900",
+      "source": "CC_BIAS_IN",
+      "drain": "CC_BIAS_IN_AFE_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2900"
+    },
+    {
+      "board": "Control",
+      "ref": "U2900",
+      "source": "MAT_ADC_REF",
+      "drain": "MAT_ADC_REF_AFE_SAFE_SW",
+      "supply": "AFE_SIG_3V3",
+      "enable": "AFE_SIG_READY",
+      "bleed_ref": "R2902"
+    },
+    {
+      "board": "Control",
+      "ref": "U3010",
+      "source": "AFE_FDA_OP",
+      "drain": "ADC_P_SWITCHED",
+      "supply": "MAT_ADC_REF",
+      "enable": "ADC_REF_READY",
+      "bleed_ref": "R3010"
+    },
+    {
+      "board": "Control",
+      "ref": "U3010",
+      "source": "AFE_FDA_ON",
+      "drain": "ADC_N_SWITCHED",
+      "supply": "MAT_ADC_REF",
+      "enable": "ADC_REF_READY",
+      "bleed_ref": "R3012"
+    },
+    {
+      "board": "Control",
+      "ref": "U3020",
+      "source": "MAT_CM_RAW",
+      "drain": "MAT_CM_SAFE_SW",
+      "supply": "MAT_ADC_REF",
+      "enable": "ADC_REF_READY",
+      "bleed_ref": "R3020"
+    },
+    {
+      "board": "Control",
+      "ref": "U3030",
+      "source": "MAT_CMP_P",
+      "drain": "MAT_CMP_P_SAFE_SW",
+      "supply": "IO3V3",
+      "enable": "IO3V3",
+      "bleed_ref": "R3030"
+    },
+    {
+      "board": "Control",
+      "ref": "U3030",
+      "source": "MAT_CMP_N",
+      "drain": "MAT_CMP_N_SAFE_SW",
+      "supply": "IO3V3",
+      "enable": "IO3V3",
+      "bleed_ref": "R3032"
+    },
+    {
+      "board": "Control",
+      "ref": "U3100",
+      "source": "FDA_GUARD_N_RAW",
+      "drain": "FDA_GUARD_N",
+      "supply": "MAT_ADC_REF",
+      "enable": "ADC_REF_READY",
+      "bleed_ref": "R3102"
+    },
+    {
+      "board": "Control",
+      "ref": "U3100",
+      "source": "FDA_GUARD_P_RAW",
+      "drain": "FDA_GUARD_P",
+      "supply": "MAT_ADC_REF",
+      "enable": "ADC_REF_READY",
+      "bleed_ref": "R3105"
+    }
+  ],
+  "enables": [
+    {
+      "relay": "U5800",
+      "control": "EN_USB",
+      "vin": "BUS24",
+      "enable": "EN_USB_VIN",
+      "converter_pin": [
+        "U601",
+        "4"
+      ]
+    },
+    {
+      "relay": "U5801",
+      "control": "EN_SYS",
+      "vin": "BUS24",
+      "enable": "EN_SYS_VIN",
+      "converter_pin": [
+        "U701",
+        "18"
+      ]
+    },
+    {
+      "relay": "U5802",
+      "control": "EN_FPGA",
+      "vin": "BUS24",
+      "enable": "EN_FPGA_VIN",
+      "converter_pin": [
+        "U801",
+        "18"
+      ]
+    },
+    {
+      "relay": "U5803",
+      "control": "EN_ANA",
+      "vin": "BUS24",
+      "enable": "EN_ANA_VIN",
+      "converter_pin": [
+        "U901",
+        "4"
+      ]
+    },
+    {
+      "relay": "U5804",
+      "control": "EN_P15",
+      "vin": "BUS24",
+      "enable": "EN_P15_VIN",
+      "converter_pin": [
+        "U1001",
+        "4"
+      ]
+    },
+    {
+      "relay": "U5900",
+      "control": "EN_AUX18",
+      "vin": "FPGA5V5",
+      "enable": "EN_AUX18_VIN",
+      "converter_pin": [
+        "U1301",
+        "13"
+      ]
+    },
+    {
+      "relay": "U5901",
+      "control": "EN_AUX25",
+      "vin": "FPGA5V5",
+      "enable": "EN_AUX25_VIN",
+      "converter_pin": [
+        "U1401",
+        "13"
+      ]
+    },
+    {
+      "relay": "U5902",
+      "control": "EN_IO33_QUAL",
+      "vin": "FPGA5V5",
+      "enable": "EN_IO33_VIN",
+      "converter_pin": [
+        "U1501",
+        "13"
+      ]
+    },
+    {
+      "relay": "U5903",
+      "control": "EN_DDR",
+      "vin": "FPGA5V5",
+      "enable": "EN_DDR_VIN",
+      "converter_pin": [
+        "U1601",
+        "13"
+      ]
+    },
+    {
+      "relay": "U5904",
+      "control": "EN_PHY",
+      "vin": "FPGA5V5",
+      "enable": "EN_PHY_VIN",
+      "converter_pin": [
+        "U1701",
+        "13"
+      ]
+    }
+  ]
+}

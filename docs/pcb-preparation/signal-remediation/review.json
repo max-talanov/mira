@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-30",
+  "version": 6,
+  "status": "SCHEMATIC_REMEDIATION_COMPLETE_WITH_EXPLICIT_OPERATING_CONTRACT",
+  "closure_text": "Допустимость сигналов на обесточенных входах проверена по схеме в ревизии v6. Выявленные междоменные цепи защищены аппаратно; соединения, пороги и расчётные ограничения проверены. Проверка переходных процессов и токов на изготовленной плате выполняется отдельным испытанием.",
+  "board_qualification": "OPEN; not performed",
+  "firmware_implemented": false,
+  "pcb_updated": false,
+  "added_components": {
+    "Power": 78,
+    "Control": 193
+  },
+  "changed_legacy_values": 40,
+  "checks": 1404,
+  "conditions": [
+    "common GND",
+    "passive DUT",
+    "no interboard hotplug",
+    "VTREF-aware non-powering SWD adapter",
+    "TMUX signal range +/-5.5V",
+    "IO3V3 retained capacitance <=1mF",
+    "prototype transient and precision qualification separate"
+  ],
+  "resolved_v5_findings": [
+    "SIG-03",
+    "SIG-04",
+    "SIG-05",
+    "SIG-06",
+    "SIG-07",
+    "SIG-08"
+  ],
+  "additional_hardware_fixes": [
+    "VIN-referenced EN",
+    "AUX-to-IO interlock",
+    "USB CC power qualification",
+    "local REF-to-image clear"
+  ]
+}

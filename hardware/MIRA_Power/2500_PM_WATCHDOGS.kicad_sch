@@ -1637,7 +1637,7 @@
 		)
 		(uuid "3d6b573e-a58e-4a30-8218-2ebea3d0e5c5")
 	)
-	(text "AON reset or PM watchdog fault\npulls the controller reset low.\nHost fault signals stay separate."
+	(text "AON reset or PM watchdog fault\npulls the PM controller reset low.\nHost reset coupling is on sheet 5400."
 		(exclude_from_sim no)
 		(at 20.32 86.36 0)
 		(effects
@@ -1650,7 +1650,7 @@
 		)
 		(uuid "5dc646ec-612d-4898-8175-ea401b48b5c7")
 	)
-	(text "D2501 combines AON_RESET_N and PM_WDO_N into PM_RESET_N.\nEither low signal resets U2401 through the common-anode diode.\nHost watchdog and reset signals remain separate on this sheet;\nthe hardware interlocks use them to qualify matrix operation."
+	(text "D2501 combines AON_RESET_N and PM_WDO_N into PM_RESET_N.\nEither LOW resets U2401 through the common-anode diode.\nHost WDO now also pulls HOST_RESET_N LOW through U5405\non sheet 5400; both host faults clear matrix permission."
 		(exclude_from_sim no)
 		(at 156.21 91.16 0)
 		(effects
@@ -1729,7 +1729,7 @@
 		)
 		(uuid "a514767e-fc46-478a-8fb5-8d152c60f5b9")
 	)
-	(text "Supply undervoltage or a shorted manual contact asserts RESET.\nWatchdog expiry asserts WDO; PM expiry also resets the MCU.\nAON pullups make status readable in the control domain.\nHost rail readiness must also inhibit operation while SYS3V3 is off."
+	(text "Supply undervoltage or manual reset asserts RESET.\nPM expiry resets PM; host expiry also resets host via U5405.\nHOST_RESET_N pullups stay on SYS3V3; WDO pullups use AON.\nSheet 5400 adds application-heartbeat timeout and first-edge latch."
 		(exclude_from_sim no)
 		(at 156.21 136.88 0)
 		(effects
@@ -1783,7 +1783,7 @@
 		)
 		(uuid "eee53b86-e40d-4382-a60c-6adfa05fd712")
 	)
-	(text "J2502 requests a host manual reset.\nAON pullups retain the control-domain logic level."
+	(text "J2502 requests a host manual reset.\nR2509 pulls HOST_RESET_N to SYS3V3, not AON."
 		(exclude_from_sim no)
 		(at 20.32 112.395 0)
 		(effects
@@ -1874,7 +1874,6 @@
 		(color 0 0 0 0)
 		(uuid "9cdc874a-3067-48e6-897c-1bfdfc516cfb")
 	)
-
 	(junction
 		(at 119.38 33.02)
 		(diameter 0)
@@ -2255,7 +2254,6 @@
 		)
 		(uuid "871fd99e-0cb7-4e05-b992-5089151f6bd7")
 	)
-
 	(wire
 		(pts
 			(xy 101.6 139.7) (xy 104.14 139.7)
@@ -2397,7 +2395,6 @@
 		)
 		(uuid "b88954bb-7914-4acb-963e-bc8e1a3b1fe1")
 	)
-
 	(wire
 		(pts
 			(xy 55.88 34.29) (xy 55.88 35.56)
@@ -5625,8 +5622,12 @@
 			)
 		)
 	)
+	(wire (pts (xy 132.08 121.92) (xy 132.08 116.84)) (stroke (width 0) (type default)) (uuid "834d3580-c1a0-4b3e-b8a0-619245ff61e7"))
+	(global_label "SYS3V3" (shape input) (at 132.08 116.84 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "fbfc5540-1fa2-4dee-8265-b25330092a34"))
 
-(wire (pts (xy 132.08 121.92) (xy 132.08 116.84)) (stroke (width 0) (type default)) (uuid "834d3580-c1a0-4b3e-b8a0-619245ff61e7"))
 
-(global_label "SYS3V3" (shape input) (at 132.08 116.84 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "fbfc5540-1fa2-4dee-8265-b25330092a34"))
+
+
+
+
 )

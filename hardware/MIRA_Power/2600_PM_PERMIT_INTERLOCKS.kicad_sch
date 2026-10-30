@@ -2105,7 +2105,7 @@
 		)
 		(uuid "35c06398-98f0-46a9-a073-00df18c24cec")
 	)
-	(text "A global fault clears both permissions; a matrix fault clears only\nmatrix permission. Fault recovery alone does not re-arm either latch.\nAON_RESET_N must clear U2603 during startup. The stop connectors\ntrip when closed; an open cable is not detected as a stop."
+	(text "A global fault clears both permissions; a matrix fault clears only\nmatrix permission. Fault recovery alone does not re-arm either latch.\nSheets 5200/5300 block startup outputs and qualify GLOBAL_CLEAR_N.\nAON_RESET_N remains in the clear chain. The stop connectors trip\nwhen closed; an open cable is not detected as a stop."
 		(exclude_from_sim no)
 		(at 156.21 136.88 0)
 		(effects
@@ -2201,7 +2201,7 @@
 		)
 		(uuid "c14e3d7b-2240-428b-ab9c-0b80aa276ca6")
 	)
-	(text "Global inputs cover input power, AON reset, PM watchdog/reset,\novercurrent and the global stop. Matrix inputs add rail/command\nreadiness, host watchdog/reset and the matrix stop. J2603 exports\nMATRIX_PERMIT, its inverse MATRIX_KILL_H, AON and GND."
+	(text "Global inputs cover input power, AON reset, PM watchdog/reset,\novercurrent and global stop. Matrix inputs add rail/command\nreadiness, host watchdog/reset, LINK_READY_H and matrix stop.\nJ2603 exports MATRIX_PERMIT and raw MATRIX_KILL_H.\nApplication heartbeat qualification is on sheet 5400."
 		(exclude_from_sim no)
 		(at 156.21 68.3 0)
 		(effects
@@ -3229,7 +3229,8 @@
 		)
 		(uuid "7754ee17-481f-40d7-861c-4be04aa8078b")
 	)
-	(label "GLOBAL_CLEAR_N"
+	(global_label "GLOBAL_CLEAR_RAW_N"
+		(shape bidirectional)
 		(at 125.73 55.88 0)
 		(effects
 			(font
@@ -3249,7 +3250,8 @@
 		)
 		(uuid "c636272c-796c-49ac-a43c-86d9cb4f5ee2")
 	)
-	(label "GLOBAL_CLEAR_N"
+	(global_label "GLOBAL_CLEAR_N"
+		(shape bidirectional)
 		(at 77.47 144.78 180)
 		(effects
 			(font
@@ -3281,7 +3283,7 @@
 			)
 		)
 	)
-	(global_label "AON"
+	(global_label "LINK_READY_H"
 		(shape input)
 		(at 87.63 118.11 180)
 		(effects
@@ -3457,7 +3459,7 @@
 			)
 		)
 	)
-	(global_label "MATRIX_PERMIT"
+	(global_label "MATRIX_PERMIT_RAW"
 		(shape input)
 		(at 124.46 176.53 0)
 		(effects
@@ -3787,7 +3789,7 @@
 			)
 		)
 	)
-	(global_label "HOST_RESET_N"
+	(global_label "HOST_RESET_AON_N"
 		(shape input)
 		(at 87.63 113.03 180)
 		(effects
@@ -6820,6 +6822,11 @@
 			)
 		)
 	)
+	(global_label "MATRIX_INHIBIT_N" (shape input) (at 57.15 115.57 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "ec73b1d3-0220-418f-aa89-13adb4ae6bc6"))
 
-(global_label "MATRIX_INHIBIT_N" (shape input) (at 57.15 115.57 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "ec73b1d3-0220-418f-aa89-13adb4ae6bc6"))
+
+
+
+
+
 )

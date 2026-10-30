@@ -1,0 +1,3479 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "8f7c4b86-51f9-4a95-9c00-1cf56407431e")
+	(paper "A3")
+	(title_block
+		(title "Host link watchdog and reset")
+		(date "2026-10-29")
+		(rev "RevA 29Oct")
+	)
+	(lib_symbols
+		(symbol "MIRA_RevA:U_TPS3851H33EDRBR"
+			(pin_names
+      (offset 0.508)
+    )
+			(pin_numbers)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+      (at 0 11.43 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+			(property "Value" "TPS3851H33EDRBR"
+      (at 0 -11.43 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+			(property "Footprint" "MIRA_RevA:Texas_DRB0008A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps3851.pdf"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "MPN" "TPS3851H33EDRBR"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Manufacturer" "Texas Instruments"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Description" "3.3V supervisor and 1.6s watchdog, separate open-drain outputs, VSON-8"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(symbol "U_TPS3851H33EDRBR_0_1"
+      (rectangle
+        (start -15.24 7.62)
+        (end 15.24 -7.62)
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type background)
+        )
+      )
+    )
+			(symbol "U_TPS3851H33EDRBR_1_1"
+      (pin power_in line
+        (at -17.78 5.08 0)
+        (length 2.54)
+        (name "VDD"
+          (effects
+            (font
+              (size 1.0 1.0)
+            )
+          )
+        )
+        (number "1"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin input line
+        (at -17.78 2.54 0)
+        (length 2.54)
+        (name "CWD"
+          (effects
+            (font
+              (size 1.0 1.0)
+            )
+          )
+        )
+        (number "2"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin input line
+        (at -17.78 0 0)
+        (length 2.54)
+        (name "MR_N"
+          (effects
+            (font
+              (size 1.0 1.0)
+            )
+          )
+        )
+        (number "3"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin power_in line
+        (at -17.78 -2.54 0)
+        (length 2.54)
+        (name "GND"
+          (effects
+            (font
+              (size 1.0 1.0)
+            )
+          )
+        )
+        (number "4"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin input line
+        (at -17.78 -5.08 0)
+        (length 2.54)
+        (name "SET1"
+          (effects
+            (font
+              (size 1.0 1.0)
+            )
+          )
+        )
+        (number "5"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin input line
+        (at 17.78 5.08 180)
+        (length 2.54)
+        (name "WDI"
+          (effects
+            (font
+              (size 1.0 1.0)
+            )
+          )
+        )
+        (number "6"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin open_collector line
+        (at 17.78 2.54 180)
+        (length 2.54)
+        (name "WDO_N"
+          (effects
+            (font
+              (size 1.0 1.0)
+            )
+          )
+        )
+        (number "7"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin open_collector line
+        (at 17.78 0 180)
+        (length 2.54)
+        (name "RESET_N"
+          (effects
+            (font
+              (size 1.0 1.0)
+            )
+          )
+        )
+        (number "8"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin power_in line
+        (at 17.78 -2.54 180)
+        (length 2.54)
+        (name "EP"
+          (effects
+            (font
+              (size 1.0 1.0)
+            )
+          )
+        )
+        (number "9"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+    )
+		)
+		(symbol "MIRA_RevA:U_74LVC1G14GV_LINK"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "74LVC1G14GV"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" "MIRA_RevA:SOT-23-5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC1G14.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Schmitt inverter: HOST_ALIVE falling edge clocks link-valid latch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "MPN" "74LVC1G14GV,125"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Manufacturer" "Nexperia"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "U_74LVC1G14GV_LINK_1_1"
+				(rectangle
+					(start -3.81 3.81)
+					(end 3.81 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin no_connect line
+					(at -6.35 2.54 0)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -6.35 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 6.35 0 180)
+					(length 2.54)
+					(name "Y"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 6.35 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 0.9 0.9)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.8 0.8)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MIRA_RevA:R_ERJ1GNF1002C"
+			(pin_names
+      (offset 0.508)
+    )
+			(pin_numbers hide)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+      (at 0 4.826 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+			(property "Value" "10k"
+      (at 0 -4.826 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+			(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Datasheet" ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "MPN" "ERJ1GNF1002C"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Manufacturer" "Panasonic"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(symbol "R_ERJ1GNF1002C_0_1"
+      (rectangle
+        (start -2.54 1.016)
+        (end 2.54 -1.016)
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type background)
+        )
+      )
+    )
+			(symbol "R_ERJ1GNF1002C_1_1"
+      (pin passive line
+        (at -5.08 0 0)
+        (length 2.54)
+        (name "~"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+        (number "1"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin passive line
+        (at 5.08 0 180)
+        (length 2.54)
+        (name "~"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+        (number "2"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+    )
+		)
+		(symbol "MIRA_RevA:R_ERJ1GNF1003C"
+			(pin_names
+      (offset 0.508)
+    )
+			(pin_numbers hide)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+      (at 0 4.826 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+			(property "Value" "100k"
+      (at 0 -4.826 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+			(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Datasheet" ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "MPN" "ERJ1GNF1003C"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Manufacturer" "Panasonic"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Description" "Enable pulldown; default OFF"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(symbol "R_ERJ1GNF1003C_0_1"
+      (rectangle
+        (start -2.54 1.016)
+        (end 2.54 -1.016)
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type background)
+        )
+      )
+    )
+			(symbol "R_ERJ1GNF1003C_1_1"
+      (pin passive line
+        (at -5.08 0 0)
+        (length 2.54)
+        (name "~"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+        (number "1"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin passive line
+        (at 5.08 0 180)
+        (length 2.54)
+        (name "~"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+        (number "2"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+    )
+		)
+		(symbol "MIRA_RevA:74LVC1G08GV_STARTUP_MIRA"
+			(pin_names
+			(offset 0.5)
+		)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+			(at 0 -10.620000000000001 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+			(property "Value" "74LVC1G08GV"
+			(at 0 -8.620000000000001 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+			(property "Footprint" "MIRA_RevA:SOT-23-5"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC1G08.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+			(property "Description" "Adds startup qualification to the existing asynchronous clear chain"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+			(property "MPN" "74LVC1G08GV,125"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+			(property "Manufacturer" "Nexperia"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+			(symbol "74LVC1G08GV_STARTUP_MIRA_0_1"
+			(rectangle
+				(start -7.62 7.62)
+				(end 7.62 -7.62)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+			(symbol "74LVC1G08GV_STARTUP_MIRA_1_1"
+			(pin input line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 0.9 0.9)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 0.9 0.9)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "Y"
+					(effects
+						(font
+							(size 0.9 0.9)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 10.16 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 0.9 0.9)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -10.16 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.9 0.9)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.8 0.8)
+						)
+					)
+				)
+			)
+		)
+		)
+		(symbol "MIRA_RevA:U_SN74LVC1G74DCUR_LINK"
+			(pin_names (offset 0.8))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U" (at 0 5 0) (show_name no) (do_not_autoplace no) (effects (font (size 1 1))))
+			(property "Value" "SN74LVC1G74DCUR"
+				(at 0 -5 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects (font (size 1 1)))
+			)
+			(property "Footprint" "MIRA_RevA:VSSOP-8_2.3x2mm_P0.5mm" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1 1))))
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1 1))))
+			(property "Description" "First heartbeat latch; watchdog clear removes readiness until a fresh falling edge"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects (font (size 1 1)))
+			)
+			(property "MPN" "SN74LVC1G74DCUR" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1 1))))
+			(property "Manufacturer" "Texas Instruments" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1 1))))
+			(embedded_fonts no)
+			(symbol "U_SN74LVC1G74DCUR_LINK_1_1"
+				(rectangle (start -10.16 7.62) (end 10.16 -7.62) (stroke (width 0.254) (type default)) (fill (type none)))
+				(pin input line (at -12.7 3.81 0) (length 2.54) (name "CLK" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.8 0.8)))))
+				(pin input line (at -12.7 1.27 0) (length 2.54) (name "D" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.8 0.8)))))
+				(pin output line (at 12.7 3.81 180) (length 2.54) (name "Q_N" (effects (font (size 0.9 0.9)))) (number "3" (effects (font (size 0.8 0.8)))))
+				(pin power_in line (at 12.7 -3.81 180) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "4" (effects (font (size 0.8 0.8)))))
+				(pin output line (at 12.7 1.27 180) (length 2.54) (name "Q" (effects (font (size 0.9 0.9)))) (number "5" (effects (font (size 0.8 0.8)))))
+				(pin input line (at -12.7 -1.27 0) (length 2.54) (name "CLR_N" (effects (font (size 0.9 0.9)))) (number "6" (effects (font (size 0.8 0.8)))))
+				(pin input line (at -12.7 -3.81 0) (length 2.54) (name "PRE_N" (effects (font (size 0.9 0.9)))) (number "7" (effects (font (size 0.8 0.8)))))
+				(pin power_in line (at 12.7 -1.27 180) (length 2.54) (name "VCC" (effects (font (size 0.9 0.9)))) (number "8" (effects (font (size 0.8 0.8)))))
+			)
+		)
+		(symbol "MIRA_RevA:U_SN74LVC1G07DBVR_HOST_RESET"
+			(pin_names (offset 0.8))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U" (at 0 5 0) (show_name no) (do_not_autoplace no) (effects (font (size 1 1))))
+			(property "Value" "SN74LVC1G07DBVR" (at 0 -5 0) (show_name no) (do_not_autoplace no) (effects (font (size 1 1))))
+			(property "Footprint" "MIRA_RevA:SOT-23-5" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1 1))))
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1 1))))
+			(property "Description" "AON powered Ioff open-drain watchdog-to-host reset; no AON pullup on NRST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects (font (size 1 1)))
+			)
+			(property "MPN" "SN74LVC1G07DBVR" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1 1))))
+			(property "Manufacturer" "Texas Instruments" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1 1))))
+			(embedded_fonts no)
+			(symbol "U_SN74LVC1G07DBVR_HOST_RESET_1_1"
+				(rectangle (start -15.24 6.35) (end 15.24 -6.35) (stroke (width 0.254) (type default)) (fill (type none)))
+				(pin no_connect line (at -17.78 2.54 0) (length 2.54) (name "NC" (effects (font (size 0.9 0.9)))) (number "1" (effects (font (size 0.8 0.8)))))
+				(pin input line (at -17.78 0 0) (length 2.54) (name "A" (effects (font (size 0.9 0.9)))) (number "2" (effects (font (size 0.8 0.8)))))
+				(pin power_in line (at -17.78 -2.54 0) (length 2.54) (name "GND" (effects (font (size 0.9 0.9)))) (number "3" (effects (font (size 0.8 0.8)))))
+				(pin open_collector line (at 17.78 0 180) (length 2.54) (name "Y_OD" (effects (font (size 0.9 0.9)))) (number "4" (effects (font (size 0.8 0.8)))))
+				(pin power_in line (at 0 8.89 270) (length 2.54) (name "VCC" (effects (font (size 0.9 0.9)))) (number "5" (effects (font (size 0.8 0.8)))))
+			)
+		)
+		(symbol "MIRA_RevA:C_GRM033R61A104KE15D"
+			(pin_names
+      (offset 0.508)
+    )
+			(pin_numbers hide)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+      (at 0 5.715 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+			(property "Value" "100n"
+      (at 0 -5.715 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+      )
+    )
+			(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Datasheet" ""
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "MPN" "GRM033R61A104KE15D"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Manufacturer" "Murata"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1 1)
+        )
+        hide
+      )
+    )
+			(symbol "C_GRM033R61A104KE15D_0_1"
+      (polyline
+        (pts
+          (xy -0.635 1.905)
+          (xy -0.635 -1.905)
+        )
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
+      (polyline
+        (pts
+          (xy 0.635 1.905)
+          (xy 0.635 -1.905)
+        )
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
+      (polyline
+        (pts
+          (xy -2.54 0)
+          (xy -0.635 0)
+        )
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
+      (polyline
+        (pts
+          (xy 0.635 0)
+          (xy 2.54 0)
+        )
+        (stroke
+          (width 0.254)
+          (type default)
+        )
+        (fill
+          (type none)
+        )
+      )
+    )
+			(symbol "C_GRM033R61A104KE15D_1_1"
+      (pin passive line
+        (at -5.08 0 0)
+        (length 2.54)
+        (name "~"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+        (number "1"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+      (pin passive line
+        (at 5.08 0 180)
+        (length 2.54)
+        (name "~"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+        (number "2"
+          (effects
+            (font
+              (size 0.8 0.8)
+            )
+          )
+        )
+      )
+    )
+		)
+	)
+	(text "5400  APPLICATION HEARTBEAT AND HOST RESET"
+		(at 15.24 16.51 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left top)
+		)
+		(uuid "e93ceb88-002f-4583-9c95-c13d8c629617")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:U_TPS3851H33EDRBR")
+		(at 69.85 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab226bcf-24e4-4b6d-9be4-a9f5c0da0b0a")
+		(property "Reference" "U5401"
+			(at 69.85 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS3851H33EDRBR"
+			(at 69.85 38.099999999999994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:Texas_DRB0008A"
+			(at 69.85 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps3851.pdf"
+			(at 69.85 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "TPS3851H33EDRBR"
+			(at 69.85 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 69.85 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "3.3V supervisor and 1.6s watchdog, separate open-drain outputs, VSON-8"
+			(at 69.85 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f8080230-a269-42e3-b3bb-024ac7247a94")
+		)
+		(pin "2"
+			(uuid "ea05c395-11f1-4523-b921-d1b3239620a3")
+		)
+		(pin "3"
+			(uuid "ede55f13-1e6c-4854-aa09-87a0b089d1ac")
+		)
+		(pin "4"
+			(uuid "7ce2bd7e-ddcc-4f07-81fd-320b0e6cd30b")
+		)
+		(pin "5"
+			(uuid "2a316f9d-bb6d-40c6-a0c7-903bd5fcdc11")
+		)
+		(pin "6"
+			(uuid "f0719fc6-14d8-4276-b547-62cd7511f30f")
+		)
+		(pin "7"
+			(uuid "909c90df-99fc-4857-aace-51ce183cd5f6")
+		)
+		(pin "8"
+			(uuid "08cca721-d303-433e-8806-190fed0969d0")
+		)
+		(pin "9"
+			(uuid "716580b3-c956-4cfa-9bc4-796e4802be9a")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "U5401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 52.07 49.53)
+			(xy 49.53 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36ab00b8-802e-46f1-8112-60a5003af545")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 49.53 49.53 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "33a84260-0cd6-4212-9aa6-eaed41e9a1b3")
+	)
+	(wire
+		(pts
+			(xy 52.07 52.07)
+			(xy 49.53 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef2fe5f8-7b60-407a-ae8c-3376bd7bdd6d")
+	)
+	(global_label "LINK_CWD"
+		(shape bidirectional)
+		(at 49.53 52.07 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "7d856a30-e6af-4bb2-ae32-fdc4f62f4d1f")
+	)
+	(wire
+		(pts
+			(xy 52.07 54.61)
+			(xy 49.53 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9079bc5-8063-4b61-8116-fe703a402222")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 49.53 54.61 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "ea052bb5-30ce-4b12-a3f1-79d0962746f6")
+	)
+	(wire
+		(pts
+			(xy 52.07 57.15)
+			(xy 49.53 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11676a58-6518-4fd3-a63c-1dc371dbcaa2")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 49.53 57.15 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "04eddee8-fa0b-451b-985d-2f1a3257f804")
+	)
+	(wire
+		(pts
+			(xy 52.07 59.69)
+			(xy 49.53 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41b5a609-c3e0-435b-8c0d-1359e2fd386b")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 49.53 59.69 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "4ff81908-d5b3-4a6f-bf80-d25bf6a19d04")
+	)
+	(wire
+		(pts
+			(xy 87.63 49.53)
+			(xy 90.17 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c47c369d-9628-4d14-84fa-3f9b72fc237f")
+	)
+	(global_label "HOST_ALIVE_PM"
+		(shape bidirectional)
+		(at 90.17 49.53 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "60694d4f-10e9-4cc8-8103-01a0012c6acc")
+	)
+	(wire
+		(pts
+			(xy 87.63 52.07)
+			(xy 90.17 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c541758-f04a-4d74-a6a6-66a0ea6eed16")
+	)
+	(global_label "LINK_WDO_N"
+		(shape bidirectional)
+		(at 90.17 52.07 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "624aceb9-5ca8-4d3e-9da9-edeab4f3fd09")
+	)
+	(wire
+		(pts
+			(xy 87.63 54.61)
+			(xy 90.17 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed3894d2-69d2-4cd3-a3e5-a91b765a5d32")
+	)
+	(global_label "LINK_RESET_N"
+		(shape bidirectional)
+		(at 90.17 54.61 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "901765cb-b6f2-483a-b496-4e7ec5dc5529")
+	)
+	(wire
+		(pts
+			(xy 87.63 57.15)
+			(xy 90.17 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cf540df-3981-4992-882e-9122931301f8")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 90.17 57.15 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "f0728b9c-0af3-47f8-bbc1-ab2c6da9b439")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:U_74LVC1G14GV_LINK")
+		(at 219.71 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a3b978f-d4e2-47da-9ae1-68b3d29df6bf")
+		(property "Reference" "U5402"
+			(at 240.03 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC1G14GV"
+			(at 240.03 38.099999999999994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:SOT-23-5"
+			(at 219.71 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC1G14.pdf"
+			(at 219.71 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Schmitt inverter: HOST_ALIVE falling edge clocks link-valid latch"
+			(at 219.71 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "74LVC1G14GV,125"
+			(at 219.71 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 219.71 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e0373c07-4384-4a52-b588-f7898e7cd3a2")
+		)
+		(pin "2"
+			(uuid "c9fa8b93-0d14-4036-bd26-a2411a8711df")
+		)
+		(pin "3"
+			(uuid "1cc8996b-d94d-496a-ad2e-cd608400945d")
+		)
+		(pin "4"
+			(uuid "8c487bbc-ba16-4677-a986-8d8a4d61e661")
+		)
+		(pin "5"
+			(uuid "48e93dec-da47-41f6-a808-53f5ab28bcb9")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "U5402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect
+		(at 213.36 52.07)
+		(uuid "22d6bdf1-f77d-40da-928b-8a77804a6ea1")
+	)
+	(wire
+		(pts
+			(xy 213.36 54.61)
+			(xy 210.82 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e824920f-0bc2-4a5a-8446-f831b8f6d447")
+	)
+	(global_label "HOST_ALIVE_PM"
+		(shape bidirectional)
+		(at 210.82 54.61 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "22449488-5486-4c64-b936-abe865c92275")
+	)
+	(wire
+		(pts
+			(xy 219.71 60.96)
+			(xy 219.71 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "640c28cf-8f49-419d-97cc-6846dcaa0a7c")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 219.71 63.5 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "49b09ec2-8dce-4d87-a090-253456d8980d")
+	)
+	(wire
+		(pts
+			(xy 226.06 54.61)
+			(xy 228.6 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b55fa9db-bab9-4155-88ec-622a212e6f93")
+	)
+	(global_label "LINK_EDGE_H"
+		(shape bidirectional)
+		(at 228.6 54.61 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "b4945f18-4673-408f-b83c-691f920bd103")
+	)
+	(wire
+		(pts
+			(xy 219.71 48.26)
+			(xy 219.71 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f227cd8b-1025-4f76-911b-4c9d4406fccc")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 219.71 45.72 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f3643563-5712-49bd-9d4b-55a7cdb19225")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
+		(at 69.85 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "34ee8194-ae49-4c6a-a1b2-623f6663019f")
+		(property "Reference" "R5401"
+			(at 69.85 91.25 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 69.85 93.25 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
+			(at 69.85 93.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 93.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ERJ1GNF1002C"
+			(at 69.85 93.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 69.85 93.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
+			(at 69.85 93.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3f038c24-64b0-4b45-9185-a7aa3be065d0")
+		)
+		(pin "2"
+			(uuid "7162e591-4b58-496e-a5a7-1c70955bb929")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "R5401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 64.77 95.25)
+			(xy 62.23 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d57ef721-075f-4deb-9054-13aa1d99d630")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 62.23 95.25 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "ff17048f-3d1a-44f5-bb4e-9e0445f2fe6a")
+	)
+	(wire
+		(pts
+			(xy 74.93 95.25)
+			(xy 77.47 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23843b9f-545a-4bc2-9164-75a77661c1ac")
+	)
+	(global_label "LINK_CWD"
+		(shape bidirectional)
+		(at 77.47 95.25 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "5b00429a-f50f-4cb9-80c1-c20a27fd8cf0")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
+		(at 69.85 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d06396f-0c14-4e78-8436-bee5fff9ad94")
+		(property "Reference" "R5402"
+			(at 69.85 111.57 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 69.85 113.57 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
+			(at 69.85 113.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 113.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ERJ1GNF1002C"
+			(at 69.85 113.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 69.85 113.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
+			(at 69.85 113.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ecd02e9-4e55-4c04-b233-cb42113506e7")
+		)
+		(pin "2"
+			(uuid "0e52d640-e04d-4b0c-8b4d-1f07fdf9bf1a")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "R5402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 64.77 115.57)
+			(xy 62.23 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e804ae9b-2cb5-4e6e-a364-914879377a6a")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 62.23 115.57 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "fd4ba7e5-2461-4c66-9558-029e03c049b7")
+	)
+	(wire
+		(pts
+			(xy 74.93 115.57)
+			(xy 77.47 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d75df63b-9e78-4997-86c7-73f3e37fcdbe")
+	)
+	(global_label "LINK_RESET_N"
+		(shape bidirectional)
+		(at 77.47 115.57 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "bd1befa3-6995-468b-ac74-03033d3d9b35")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
+		(at 219.71 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3af1b3a1-a5f9-495d-819b-0108391224d0")
+		(property "Reference" "R5403"
+			(at 219.71 91.25 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 219.71 93.25 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
+			(at 219.71 93.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 93.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ERJ1GNF1002C"
+			(at 219.71 93.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 219.71 93.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
+			(at 219.71 93.25 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d1860ef-06e2-4eae-95fe-c1daa5df2b32")
+		)
+		(pin "2"
+			(uuid "d47002a4-776e-4c2b-a1eb-544502e33ebc")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "R5403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 214.63 95.25)
+			(xy 212.09 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d26ce6c-3455-4c3f-8440-62de1e517eb9")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 212.09 95.25 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "c0b6e992-8278-482b-8352-a9972661f79c")
+	)
+	(wire
+		(pts
+			(xy 224.79 95.25)
+			(xy 227.33 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41e0b7da-7fe1-4e49-8903-e1a3d6ae01f7")
+	)
+	(global_label "LINK_WDO_N"
+		(shape bidirectional)
+		(at 227.33 95.25 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "4ca258cb-f6a1-4ddf-a742-ccb9dbf2eecf")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:R_ERJ1GNF1003C")
+		(at 219.71 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "42af52be-abe9-43ae-867e-332e7ea3587a")
+		(property "Reference" "R5404"
+			(at 219.71 111.57 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 219.71 113.57 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
+			(at 219.71 113.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 113.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "ERJ1GNF1003C"
+			(at 219.71 113.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 219.71 113.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Enable pulldown; default OFF"
+			(at 219.71 113.57 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bcf3305f-e4a6-4115-9dbe-170e80a7b6de")
+		)
+		(pin "2"
+			(uuid "23c8e61c-31a4-4f05-84ac-abde31b9ae98")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "R5404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 214.63 115.57)
+			(xy 212.09 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bfd5d5e-e904-48cb-a28c-44adbf052620")
+	)
+	(global_label "LINK_READY_H"
+		(shape bidirectional)
+		(at 212.09 115.57 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "1f7541be-11b3-495b-8b55-217b70c02f8b")
+	)
+	(wire
+		(pts
+			(xy 224.79 115.57)
+			(xy 227.33 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "815dd98e-d50a-4bed-825a-186f2470fc58")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 227.33 115.57 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "c69dd273-3206-41f1-ac3f-5fb8326e85d0")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:74LVC1G08GV_STARTUP_MIRA")
+		(at 69.85 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0b9faf56-9972-4a2b-ad7e-b59ef7c4cf8a")
+		(property "Reference" "U5404"
+			(at 90.16999999999999 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC1G08GV"
+			(at 90.16999999999999 147.32000000000002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:SOT-23-5"
+			(at 69.85 165.10000000000002 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74LVC1G08.pdf"
+			(at 69.85 165.10000000000002 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Adds startup qualification to the existing asynchronous clear chain"
+			(at 69.85 165.10000000000002 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "74LVC1G08GV,125"
+			(at 69.85 165.10000000000002 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 69.85 165.10000000000002 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a986073d-0257-4390-881d-4dbd09139ac6")
+		)
+		(pin "2"
+			(uuid "c4934923-932d-4b18-a3c6-99908e03ed93")
+		)
+		(pin "4"
+			(uuid "fbd44915-ae41-409d-89b7-ecae37a0fdd9")
+		)
+		(pin "5"
+			(uuid "6d642c75-aa6e-4ebb-973d-93e119b23b23")
+		)
+		(pin "3"
+			(uuid "aa741330-0de2-4da9-aa98-af53e1a35cf4")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "U5404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 59.69 161.29)
+			(xy 57.15 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c7a8eaf-fed9-4620-b3bb-48f393bdbeed")
+	)
+	(global_label "LINK_RESET_N"
+		(shape bidirectional)
+		(at 57.15 161.29 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "57305858-5ad5-4680-8d00-32241927ec81")
+	)
+	(wire
+		(pts
+			(xy 59.69 166.37)
+			(xy 57.15 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7fe66e9-8eb0-4e9c-afd6-b73b598fa4e9")
+	)
+	(global_label "LINK_WDO_N"
+		(shape bidirectional)
+		(at 57.15 166.37 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "0fb5237a-e62c-4947-898a-a5b834acb4c9")
+	)
+	(wire
+		(pts
+			(xy 80.01 163.83)
+			(xy 82.55 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bd5b187-e23d-4a80-afd8-961e27350869")
+	)
+	(global_label "LINK_CLEAR_N"
+		(shape bidirectional)
+		(at 82.55 163.83 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "6dfcdccb-4684-4d05-90ff-cc061cacf808")
+	)
+	(wire
+		(pts
+			(xy 69.85 153.67)
+			(xy 69.85 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6100c07-0f65-48e6-9615-67a5c42b1202")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 69.85 151.13 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "625132a1-df6b-4add-b152-7375e80db1fa")
+	)
+	(wire
+		(pts
+			(xy 69.85 173.99)
+			(xy 69.85 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "726df08a-b04e-40b3-9179-22fea035c4b6")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 69.85 176.53 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "2e60f3c9-5df5-4436-8ab1-b41ec591107e")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:U_SN74LVC1G74DCUR_LINK")
+		(at 219.71 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce552149-0d03-40a4-ac51-01b27a45ab98")
+		(property "Reference" "U5403"
+			(at 219.71 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74LVC1G74DCUR"
+			(at 219.71 147.32000000000002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:VSSOP-8_2.3x2mm_P0.5mm"
+			(at 219.71 165.10000000000002 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf"
+			(at 219.71 165.10000000000002 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "First heartbeat latch; watchdog clear removes readiness until a fresh falling edge"
+			(at 219.71 165.10000000000002 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "SN74LVC1G74DCUR"
+			(at 219.71 165.10000000000002 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 219.71 165.10000000000002 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e95c27e6-e907-4d05-b7d1-9a428cee393d")
+		)
+		(pin "2"
+			(uuid "6eddcaaa-e19e-4fee-865d-e7ae2c705d7d")
+		)
+		(pin "3"
+			(uuid "a728a559-0fc7-41f3-a033-eed15318f504")
+		)
+		(pin "4"
+			(uuid "f66cd78e-0b12-4b0f-8c9a-485f73e7dc79")
+		)
+		(pin "5"
+			(uuid "67221088-2ae8-4757-9efe-03bfa328c9bf")
+		)
+		(pin "6"
+			(uuid "f0955337-8585-4492-b6b8-519357fc8741")
+		)
+		(pin "7"
+			(uuid "de2be43d-64e5-4543-9dc2-492b0af355fc")
+		)
+		(pin "8"
+			(uuid "0e2ddee4-ac46-4c97-a76e-db76bd669ef0")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "U5403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 207.01 160.02)
+			(xy 204.47 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f8b56e8-df02-4a05-a7fa-2eced3f01576")
+	)
+	(global_label "LINK_EDGE_H"
+		(shape bidirectional)
+		(at 204.47 160.02 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5439dc70-92a1-411c-81e6-28f6108a8dbd")
+	)
+	(wire
+		(pts
+			(xy 207.01 162.56)
+			(xy 204.47 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8218d02e-2382-45a5-b2b4-944558ff4cfa")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 204.47 162.56 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "383f2aaf-8c27-4f3c-80e1-a9b55bbb67ae")
+	)
+	(no_connect
+		(at 232.41 160.02)
+		(uuid "a62dbf38-cf30-47c5-9f71-5ce60526bfaa")
+	)
+	(wire
+		(pts
+			(xy 232.41 167.64)
+			(xy 234.95 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbda9ae2-f510-4fe9-9845-df16b676b7b1")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 234.95 167.64 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "33981d8b-e99f-47a1-aa23-35c669471acc")
+	)
+	(wire
+		(pts
+			(xy 232.41 162.56)
+			(xy 234.95 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c40b8ea-cad5-4366-9314-0305178a75a2")
+	)
+	(global_label "LINK_READY_H"
+		(shape bidirectional)
+		(at 234.95 162.56 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "108b32ca-5459-4783-9738-a724c7253404")
+	)
+	(wire
+		(pts
+			(xy 207.01 165.1)
+			(xy 204.47 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c50f9e63-b09c-43a8-bfd7-f07c366d6925")
+	)
+	(global_label "LINK_CLEAR_N"
+		(shape bidirectional)
+		(at 204.47 165.1 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "3dcfe04f-50b4-4888-98c8-6fcecc943bd7")
+	)
+	(wire
+		(pts
+			(xy 207.01 167.64)
+			(xy 204.47 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b99bec9-2215-402f-9739-71eb9d54c3d2")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 204.47 167.64 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "597dbace-c249-4447-a4a5-596548a0fb55")
+	)
+	(wire
+		(pts
+			(xy 232.41 165.1)
+			(xy 234.95 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "344e185c-a538-4b14-afa3-712f17d13a0c")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 234.95 165.1 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "c591ad10-292f-4545-84ab-1274017f82b1")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:U_SN74LVC1G07DBVR_HOST_RESET")
+		(at 69.85 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4190e154-1097-4360-b0d8-603dea787e46")
+		(property "Reference" "U5405"
+			(at 90.16999999999999 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74LVC1G07DBVR"
+			(at 90.16999999999999 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:SOT-23-5"
+			(at 69.85 219.71 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf"
+			(at 69.85 219.71 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "AON powered Ioff open-drain watchdog-to-host reset; no AON pullup on NRST"
+			(at 69.85 219.71 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "SN74LVC1G07DBVR"
+			(at 69.85 219.71 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 69.85 219.71 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "555b691c-53c6-404b-ada1-5496b87e9a1e")
+		)
+		(pin "2"
+			(uuid "de3ac937-12a1-4d2b-9d9d-45f2442f393c")
+		)
+		(pin "3"
+			(uuid "398d9164-f33a-443f-982e-1d7b92c375cd")
+		)
+		(pin "4"
+			(uuid "ea1d7c1c-0e78-40fc-b942-55c7a0fb38b5")
+		)
+		(pin "5"
+			(uuid "f021e247-c8af-42ea-a3cb-fa1208ef9f52")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "U5405")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect
+		(at 52.06999999999999 215.9)
+		(uuid "7b34e188-61cd-4c11-87c9-0fc025a70a61")
+	)
+	(wire
+		(pts
+			(xy 52.07 218.44)
+			(xy 49.53 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03811308-923c-4b76-9d60-a01799f3ec2b")
+	)
+	(global_label "HOST_WDO_N"
+		(shape bidirectional)
+		(at 49.53 218.44 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f5148893-f0c4-4a03-b4d2-608fecf7b7e3")
+	)
+	(wire
+		(pts
+			(xy 52.07 220.98)
+			(xy 49.53 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06b0dae6-0e71-448a-9c5e-008347de3e1b")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 49.53 220.98 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "ea754e25-ea4a-4aac-9155-ca0fd6ed2567")
+	)
+	(wire
+		(pts
+			(xy 87.63 218.44)
+			(xy 90.17 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ff7099d-d2bc-45f4-afd5-14e53a0206e5")
+	)
+	(global_label "HOST_RESET_N"
+		(shape bidirectional)
+		(at 90.17 218.44 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "db1e7b89-1ec4-4ba5-bbb9-43b7525f8649")
+	)
+	(wire
+		(pts
+			(xy 69.85 209.55)
+			(xy 69.85 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1920db2-0e4e-42b8-a1ba-8aeacc9c9799")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 69.85 207.01 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "98e1437a-1e0b-40ab-be47-2b2306648cec")
+	)
+	(text "HOST RESET\nU5405 adds an open-drain LOW from HOST_WDO_N.\nU2502 and manual reset remain connected.\nHOST_RESET_N pullups stay on SYS3V3."
+		(at 134.62 205.74 0)
+		(effects
+			(font
+				(size 1.15 1.15)
+			)
+			(justify left top)
+		)
+		(uuid "9e796440-4cdb-437a-9462-0d63e04af36e")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:C_GRM033R61A104KE15D")
+		(at 40.64 261.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "888c85e8-ee2b-407f-85af-11f37480d925")
+		(property "Reference" "C5401"
+			(at 40.64 257.62 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 40.64 259.62 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
+			(at 40.64 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM033R61A104KE15D"
+			(at 40.64 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 40.64 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
+			(at 40.64 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a484f876-552a-4913-aaf7-991906a3de25")
+		)
+		(pin "2"
+			(uuid "d83441db-ef64-419e-9200-8cba2c754768")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "C5401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 35.56 261.62)
+			(xy 33.02 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "004f450f-63a4-4215-80ff-f3eafdae3e77")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 33.02 261.62 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "5f816a6d-9438-46fc-8c54-d19b07d68c52")
+	)
+	(wire
+		(pts
+			(xy 45.72 261.62)
+			(xy 48.26 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97c61761-5eb8-4e32-bb34-9004ab40761e")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 48.26 261.62 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "8253c516-7fa8-4028-993e-c6f51203ba85")
+	)
+	(text "U5401"
+		(at 35.56 271.78 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "7e536b81-8224-41cb-a3cf-7de3e280521a")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:C_GRM033R61A104KE15D")
+		(at 91.44 261.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15d7dea1-ecfb-414c-b906-a44cea4c47f5")
+		(property "Reference" "C5402"
+			(at 91.44 257.62 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 91.44 259.62 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
+			(at 91.44 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM033R61A104KE15D"
+			(at 91.44 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 91.44 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
+			(at 91.44 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20693e04-6c59-4bf6-9526-18e20264d836")
+		)
+		(pin "2"
+			(uuid "b4001743-5122-4f06-b49f-16e39c0e3562")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "C5402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 86.36 261.62)
+			(xy 83.82 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe6ee9cb-12c8-435e-ae6a-e65fbe9dd96d")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 83.82 261.62 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "929f6681-c15c-49f1-b0ae-8edaeb224ccc")
+	)
+	(wire
+		(pts
+			(xy 96.52 261.62)
+			(xy 99.06 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cf4d212-7309-4716-b603-51c23581fcc8")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 99.06 261.62 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "9443aa02-5998-425d-a7bd-bf119226b92f")
+	)
+	(text "U5402"
+		(at 86.36 271.78 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "2f3129e9-d925-4fa8-94f0-aefed49eaf77")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:C_GRM033R61A104KE15D")
+		(at 142.24 261.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0fa8ca9c-f0c5-4742-805a-10a1bc8586be")
+		(property "Reference" "C5403"
+			(at 142.24 257.62 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 142.24 259.62 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
+			(at 142.24 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM033R61A104KE15D"
+			(at 142.24 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 142.24 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
+			(at 142.24 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f7182206-17df-40c4-b180-1c00a1223b48")
+		)
+		(pin "2"
+			(uuid "f7bd5495-2964-4044-9f31-413d89e153e7")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "C5403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 137.16 261.62)
+			(xy 134.62 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03fc5b01-06d6-4b7f-a814-5623452dbc6f")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 134.62 261.62 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "b6f1b7b8-3c4e-4b8f-bdda-a67bc7df0b54")
+	)
+	(wire
+		(pts
+			(xy 147.32 261.62)
+			(xy 149.86 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd87273e-b709-4438-bb41-25ec19e56db8")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 149.86 261.62 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "8998865a-7f67-4130-a9cc-2f45d735e62f")
+	)
+	(text "U5403"
+		(at 137.16 271.78 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "93cdc881-26e8-4c81-b74e-d49ee496cbee")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:C_GRM033R61A104KE15D")
+		(at 193.04 261.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6df402e2-4945-4757-9169-34c80728ea75")
+		(property "Reference" "C5404"
+			(at 193.04 257.62 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 193.04 259.62 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
+			(at 193.04 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM033R61A104KE15D"
+			(at 193.04 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 193.04 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
+			(at 193.04 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fec30049-62b9-4eb3-9607-fd86f70514d0")
+		)
+		(pin "2"
+			(uuid "77d98a42-c2a8-4424-ae36-92d1ec017d62")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "C5404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 187.96 261.62)
+			(xy 185.42 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cd76747-40d1-4ded-8a59-2b8307cf460a")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 185.42 261.62 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "f8b0639a-d99e-43b5-b6e7-a24ab2607447")
+	)
+	(wire
+		(pts
+			(xy 198.12 261.62)
+			(xy 200.66 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a6a6400-fd4c-4382-bd0d-d188a2f7e409")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 200.66 261.62 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "27d60047-5e51-42c2-863b-bc5057bd55ab")
+	)
+	(text "U5404"
+		(at 187.95999999999998 271.78 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "4e04745f-5fb2-4d11-8a3f-da3e2e30abb1")
+	)
+	(symbol
+		(lib_id "MIRA_RevA:C_GRM033R61A104KE15D")
+		(at 243.84 261.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb8c6ab5-6129-47e8-b08c-6534b3310759")
+		(property "Reference" "C5405"
+			(at 243.84 257.62 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 243.84 259.62 0)
+			(effects
+				(font
+					(size 0.85 0.85)
+				)
+			)
+		)
+		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
+			(at 243.84 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN" "GRM033R61A104KE15D"
+			(at 243.84 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 243.84 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
+			(at 243.84 259.62 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9e120bae-0251-4969-a263-a86ec5a088ae")
+		)
+		(pin "2"
+			(uuid "25ee4b58-773c-4cca-b172-e31af2f9dfe7")
+		)
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/cf97dafc-bba8-4324-839a-1294d02bf1f1"
+					(reference "C5405")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 238.76 261.62)
+			(xy 236.22 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ff29318-e4db-486d-84e6-0e9373b74c72")
+	)
+	(global_label "AON"
+		(shape bidirectional)
+		(at 236.22 261.62 180)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify right)
+		)
+		(uuid "63ba263b-c21d-4303-a90d-ba38254d6c52")
+	)
+	(wire
+		(pts
+			(xy 248.92 261.62)
+			(xy 251.46 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0a35cbf-eba8-4724-9697-9452e19ca56c")
+	)
+	(global_label "GND"
+		(shape bidirectional)
+		(at 251.46 261.62 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left)
+		)
+		(uuid "3a5ff916-f450-40fb-95a0-ed9e4f881b1c")
+	)
+	(text "U5405"
+		(at 238.76 271.78 0)
+		(effects
+			(font
+				(size 0.9 0.9)
+			)
+			(justify left top)
+		)
+		(uuid "e4f73de9-5909-4bbd-9e15-db224e218ac3")
+	)
+	(text "HEARTBEAT CONTRACT\nHOST_ALIVE is a periodic application pulse,\nnot a static ready level. Pinout retained.\nFalling edges every 50 ms; firmware gap\n<=100 ms. No free-running PWM or DMA.\nEach edge requires valid link and progress.\n\nHARDWARE TIMEOUT\nR5401=10k selects 170..230 ms timeout.\nMissing edges, stuck HIGH/LOW or an open\nsource remove LINK_READY_H.\n\nFIRST EDGE / RESTART\nU5403 starts cleared by LINK_RESET_N.\nA heartbeat edge sets readiness.\nWDO expiry clears it; WDO recovery alone\ndoes not restore it. A new edge is needed.\nPower matrix permission still needs ARM;\nControl needs a fresh valid configuration.\n\nCONNECTIONS\nLINK_READY_H -> U2602.13 and PM PC15.\nPC15: input, no pull; LSE disabled.\nRead readiness before MATRIX_ARM.\n\nSUPPLIES / PLACEMENT\nAll added logic is powered by AON.\nPut C540x at matching U540x VCC.\nKeep clear and clock routes short.\nReserve another 2 mA and 0.5 uF on AON.\n\nLIMITS\nThe circuit detects edges, not message\nvalidity. Firmware must stop heartbeat\non loss of link, session or task progress.\nRamp and back-power tests remain open."
+		(at 304.8 30.48 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left top)
+		)
+		(uuid "b6e7c1b0-4677-4a04-8b54-14cf81aa812d")
+	)
+
+
+
+
+
+
+)

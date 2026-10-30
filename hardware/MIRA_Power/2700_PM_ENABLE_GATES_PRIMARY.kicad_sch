@@ -938,7 +938,7 @@
 		)
 		(uuid "45b407b2-b8e2-4a90-839c-151c04b38daf")
 	)
-	(text "Every channel uses the same rule:\nCMD_x = GLOBAL_PWR_PERMIT AND EN_REQ_x.\nBoth inputs must be HIGH to enable the rail. The power manager\nchooses the sequence; these gates add the hardware permission."
+	(text "Every channel uses the same rule:\nCMD_x_RAW = GLOBAL_PWR_PERMIT AND EN_REQ_x.\nSheet 5300 passes these commands only after STARTUP_READY_H.\nThe power manager chooses the sequence and explicitly arms permits."
 		(exclude_from_sim no)
 		(at 156.21 91.16 0)
 		(effects
@@ -951,7 +951,7 @@
 		)
 		(uuid "5d9dfbcc-3d8b-4210-8cc6-6302928962fb")
 	)
-	(text "U2701 generates CMD_USB, CMD_SYS, CMD_FPGA and CMD_ANA.\nU2702 generates CMD_P15, CMD_N15, CMD_CORE and CMD_AUX18.\nEach channel receives GLOBAL_PWR_PERMIT and its corresponding\nEN_REQ signal from the power manager."
+	(text "U2701 generates CMD_USB_RAW, CMD_SYS_RAW, CMD_FPGA_RAW and CMD_ANA_RAW.\nU2702 generates CMD_P15_RAW, CMD_N15_RAW, CMD_CORE_RAW and CMD_AUX18_RAW.\nEach channel receives GLOBAL_PWR_PERMIT and its corresponding\nEN_REQ signal from the power manager."
 		(exclude_from_sim no)
 		(at 156.21 68.3 0)
 		(effects
@@ -1004,7 +1004,7 @@
 		)
 		(uuid "88ff49ca-30e4-45f9-84b2-a944419133ab")
 	)
-	(text "Every CMD = request AND global permit"
+	(text "Raw CMD = request AND global permit; qualified on sheet 5300"
 		(exclude_from_sim no)
 		(at 18 193 0)
 		(effects
@@ -2199,7 +2199,7 @@
 			)
 		)
 	)
-	(global_label "CMD_N15"
+	(global_label "CMD_N15_RAW"
 		(shape input)
 		(at 128.27 139.7 0)
 		(effects
@@ -2353,7 +2353,7 @@
 			)
 		)
 	)
-	(global_label "CMD_FPGA"
+	(global_label "CMD_FPGA_RAW"
 		(shape input)
 		(at 128.27 72.39 0)
 		(effects
@@ -2485,7 +2485,7 @@
 			)
 		)
 	)
-	(global_label "CMD_USB"
+	(global_label "CMD_USB_RAW"
 		(shape input)
 		(at 128.27 31.75 0)
 		(effects
@@ -2507,7 +2507,7 @@
 			)
 		)
 	)
-	(global_label "CMD_SYS"
+	(global_label "CMD_SYS_RAW"
 		(shape input)
 		(at 128.27 52.07 0)
 		(effects
@@ -2529,7 +2529,7 @@
 			)
 		)
 	)
-	(global_label "CMD_ANA"
+	(global_label "CMD_ANA_RAW"
 		(shape input)
 		(at 128.27 92.71 0)
 		(effects
@@ -2551,7 +2551,7 @@
 			)
 		)
 	)
-	(global_label "CMD_P15"
+	(global_label "CMD_P15_RAW"
 		(shape input)
 		(at 128.27 119.38 0)
 		(effects
@@ -2573,7 +2573,7 @@
 			)
 		)
 	)
-	(global_label "CMD_AUX18"
+	(global_label "CMD_AUX18_RAW"
 		(shape input)
 		(at 128.27 180.34 0)
 		(effects
@@ -2595,7 +2595,7 @@
 			)
 		)
 	)
-	(global_label "CMD_CORE"
+	(global_label "CMD_CORE_RAW"
 		(shape input)
 		(at 128.27 160.02 0)
 		(effects
@@ -6333,4 +6333,10 @@
 			)
 		)
 	)
+
+
+
+
+
+
 )

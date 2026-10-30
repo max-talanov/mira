@@ -33,7 +33,7 @@ with tempfile.TemporaryDirectory(prefix='mira-verify-') as td:
  check('pmos_common_source',p['Q1101','2']==p['Q1102','2']==p['R1101','1']==p['C1110','1']=='N15_EN_SOURCE')
  check('pmos_gate_control',p['Q1101','1']==p['Q1102','1']==p['Q1103','3']==p['R1101','2']==p['C1110','2']=='N15_EN_GATE')
  check('pmos_external_drains',p['Q1101','3']=='AON' and p['Q1102','3']=='N15_REMOTE_EN')
- check('n15_command_reaches_driver',p['U2702','6']==p['Q1103','1']=='CMD_N15')
+ check('n15_command_reaches_driver',p['U2702','6']==p['U5303','5']=='CMD_N15_RAW' and p['U5303','3']==p['Q1103','1']=='CMD_N15' and p['U5303','7']=='STARTUP_READY_H')
  check('nm_os_enable_drive',p['Q1103','1']==p['R1102','1']=='CMD_N15' and p['Q1103','2']==p['R1102','2']=='GND')
  check('analog_feedback_still_present',c['U1903','1']==c['U1903','2'] and c['U1903','6']==c['U1903','7'])
  values={a.get('ref'):a.findtext('value') for a in trees['Power'].findall('components/comp')}
