@@ -1,0 +1,12 @@
+(version 1)
+# AN238422. TX is split by AC capacitors. Allocate half the total skew to each side.
+(rule "USB RX pair skew" (condition "A.NetName == 'FX_USB3RX*'") (constraint skew (max 0.12mm) (within_diff_pairs)))
+(rule "USB TX pair skew per AC segment" (condition "A.NetName == 'FX_USB3TX*'") (constraint skew (max 0.06mm) (within_diff_pairs)))
+(rule "USB RX complete route" (condition "A.NetName == 'FX_USB3RX*'") (constraint length (max 76.2mm)))
+# Internal pad-to-pad clearance ONLY. All other features keep their netclass clearance.
+(rule "U1701 DGN thermal pad clearance" (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U1701') && B.memberOfFootprint('U1701')") (constraint clearance (min 0.15mm)))
+# 12401610 rev C, page 2. The slot is part of the connector, not the board perimeter.
+(rule "Normal copper to routed edge" (constraint edge_clearance (min 0.50mm)))
+(rule "J700 internal locating slot to own contacts"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('J700') && B.memberOfFootprint('J700') && (A.Pad_Number == '' || B.Pad_Number == '')")
+  (constraint edge_clearance (min 0.25mm)))

@@ -1,0 +1,180 @@
+(footprint "L_Bourns_SRP5030TA_5.7x5.2mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Bourns SRP5030TA manufacturer recommended layout6.5 overall,2.5gap,1.8padwidth; https://www.bourns.com/docs/product-datasheets/srp5030ta.pdf")
+	(property "Reference" "REF**"
+		(at 0 -3.5 0)
+		(layer "F.SilkS")
+		(uuid "91457d58-7f51-4778-b99e-046b7ce37c16")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Bourns_SRP5030TA_5.7x5.2mm"
+		(at 0 3.5 0)
+		(layer "F.Fab")
+		(uuid "a28b056a-8d71-43cb-b79d-e7ef053aed16")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "77ecd904-beb5-4aa6-8d13-63f1be5a3396")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "112a483b-396f-4c3b-b300-8e9648529d8b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5a35152f-7384-4ffd-b771-d6a77d87a376")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.5 -2.85)
+		(end 3.5 -2.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "71ea19d0-7639-419d-b0c1-6a504f181896")
+	)
+	(fp_line
+		(start -3.5 2.85)
+		(end -3.5 -2.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f86e94fb-3585-456a-813e-2d2263619ff2")
+	)
+	(fp_line
+		(start 3.5 -2.85)
+		(end 3.5 2.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "018a9d71-7664-4e13-8485-c131510252a0")
+	)
+	(fp_line
+		(start 3.5 2.85)
+		(end -3.5 2.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d06331ac-6599-4185-9a2b-04568bcc7d2c")
+	)
+	(fp_line
+		(start -2.85 -2.6)
+		(end 2.85 -2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e9cfeb8a-44a3-4f7c-87d7-63026afb86da")
+	)
+	(fp_line
+		(start -2.85 2.6)
+		(end -2.85 -2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2723fa7d-231e-4395-b510-b02a9a02536d")
+	)
+	(fp_line
+		(start 2.85 -2.6)
+		(end 2.85 2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f2f4d159-f6d0-4ab9-b4df-a1d519972ac9")
+	)
+	(fp_line
+		(start 2.85 2.6)
+		(end -2.85 2.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c26dd72d-d320-4b0a-bdc3-a399d24fe408")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "4c105f34-bb6b-4016-a051-02ba2c1020b8")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.25 0)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c30a97a3-5227-457c-9c26-6b56e0dd6542")
+	)
+	(pad "2" smd rect
+		(at 2.25 0)
+		(size 2 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "eb160dc4-94ce-49af-b2b0-d795608d2e66")
+	)
+	(model "${KIPRJMOD}/libraries/MIRA_RevA.3dshapes/L_Bourns_SRP5030T.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

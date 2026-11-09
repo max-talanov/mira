@@ -1,0 +1,168 @@
+(footprint "TerminalBlock_Degson_DG126-5.0-02P-14_1x02_P5.00mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Degson DG126, 2-position, 5.00 mm pitch, straight THT terminal block")
+	(tags "terminal block Degson DG126 2P 5mm THT")
+	(property "Reference" "REF**"
+		(at -0.7 -5.1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ead3e40c-0e73-487c-a329-d31b0707ef99")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "DG126-5.0-02P-14"
+		(at 0 2.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "390d9a36-d889-4ba8-bec8-cce2e5c832e0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "af9b967c-600b-44ab-9b83-a863c60a54b8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.degson.com/"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fd406733-8b53-4947-83ee-7702dffe8169")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dc8c91df-ebf2-45c4-96fb-09f746ce5ee8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -2.6 -4)
+		(end 7.6 4)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "6b087bc6-4e63-4c03-9f59-53638745c9fe")
+	)
+	(fp_circle
+		(center -1.4 2.8)
+		(end -1 2.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "f1ed1a39-f2fc-4d7f-a36e-1fa2684bdc16")
+	)
+	(fp_rect
+		(start -3 -4.4)
+		(end 8 4.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "bc1bb54c-837f-47d3-992a-3ba70ee4a47a")
+	)
+	(fp_rect
+		(start -2.5 -3.9)
+		(end 7.5 3.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "9018e491-509b-4053-9484-4b942ba341e7")
+	)
+	(fp_circle
+		(center -1.4 2.8)
+		(end -1 2.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Fab")
+		(uuid "fafe36e7-f4f1-41ed-ba26-0dbf72b4e796")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.5 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "47dcd9cc-3a1a-47c6-af1c-2ed3eaf8ab27")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 3 3)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(uuid "d5f51465-e15a-4f2a-b737-3179750c9901")
+	)
+	(pad "2" thru_hole roundrect
+		(at 5 0)
+		(size 3 3)
+		(drill 1.4)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(uuid "bc2013e1-8e54-47a6-936b-c35ef16562a6")
+	)
+	(model "${KIPRJMOD}/libraries/MIRA_RevA.3dshapes/DG126_5mm_2P_UserModel.stp"
+		(offset
+			(xyz 16 0 -12.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

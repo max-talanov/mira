@@ -1,0 +1,203 @@
+(footprint "LTV356T_SOP4_P2.54mm_Mfr"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "LITEON LTV-356T DS70-2001-010 RevN p11/12 recommended mount pads1.0x0.8 mm; pitch2.54 rows6.5; https://www.mouser.com/datasheet/3/281/1/LTV-356T%20series%20201610.pdf")
+	(property "Reference" "REF**"
+		(at 0 -3.1 0)
+		(layer "F.SilkS")
+		(uuid "a22ae9c3-641d-46e5-bc52-cec487745226")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LTV356T_SOP4_P2.54mm_Mfr"
+		(at 0 3.1 0)
+		(layer "F.Fab")
+		(uuid "15731834-fe25-45ba-896b-934e2ada5b39")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "504151f9-e38e-4d05-9282-0f16721aca92")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ae152926-7187-42a8-9108-bac01b5c94dd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c86d253c-0557-460a-8f05-2ed401743407")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center -3.25 -2.1)
+		(end -3.17 -2.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "6ed1099c-e479-4e9b-8350-7ce5dc4f2e62")
+	)
+	(fp_line
+		(start -4 -2.45)
+		(end 4 -2.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4a1c7bb7-9641-406d-9e38-99a842bd54ea")
+	)
+	(fp_line
+		(start -4 2.45)
+		(end -4 -2.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ca8178e8-961a-424b-ba3a-a2f35f2d619f")
+	)
+	(fp_line
+		(start 4 -2.45)
+		(end 4 2.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "dfebe817-0eab-4dfe-8522-a367ec3c441f")
+	)
+	(fp_line
+		(start 4 2.45)
+		(end -4 2.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fe487e17-63c2-4c25-b67a-1e99fd20f5da")
+	)
+	(fp_line
+		(start -2.2 -1.925)
+		(end 2.2 -1.925)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "862c8f8e-b00a-4b98-9ffb-7e9eb046dc4e")
+	)
+	(fp_line
+		(start -2.2 1.925)
+		(end -2.2 -1.925)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "251834dd-0dee-4a6c-b6c4-c96b960031c6")
+	)
+	(fp_line
+		(start 2.2 -1.925)
+		(end 2.2 1.925)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "02471719-a503-41de-8f1e-cd37a673392a")
+	)
+	(fp_line
+		(start 2.2 1.925)
+		(end -2.2 1.925)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "859638f6-3b83-4e03-a5d8-97dded6c5c12")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "2dc4124e-31f8-4c5e-a106-e0f952ad3249")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -3.25 -1.27)
+		(size 1 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "56689a62-5e93-4f8a-b692-029bc25493b6")
+	)
+	(pad "2" smd rect
+		(at -3.25 1.27)
+		(size 1 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "4a93271c-c2fb-4d8d-9a0c-b3eac13fcd9a")
+	)
+	(pad "3" smd rect
+		(at 3.25 1.27)
+		(size 1 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "9bcb7b0b-be1f-4e6f-8f84-f580312776c1")
+	)
+	(pad "4" smd rect
+		(at 3.25 -1.27)
+		(size 1 0.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "6f02848b-980f-4a6a-b053-0f8197ab5da6")
+	)
+	(model "${KIPRJMOD}/libraries/MIRA_RevA.3dshapes/LTV356T_SOP4_P2.54mm_Mfr_BODY_ENVELOPE.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

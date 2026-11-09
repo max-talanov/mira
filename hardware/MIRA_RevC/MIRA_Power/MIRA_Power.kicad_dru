@@ -1,0 +1,3 @@
+(version 1)
+(rule "General finished drill 0.30 mm" (constraint hole_size (min 0.30mm)))
+(rule "DRB0008A embedded thermal drills" (condition "A.Type == 'Pad' && A.Pad_Number == '9' && (A.memberOfFootprint('U1001') || A.memberOfFootprint('U2501') || A.memberOfFootprint('U2502') || A.memberOfFootprint('U5401'))") (constraint hole_size (min 0.20mm)))

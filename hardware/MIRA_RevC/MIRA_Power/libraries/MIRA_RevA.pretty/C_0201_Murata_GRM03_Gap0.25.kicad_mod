@@ -1,0 +1,180 @@
+(footprint "C_0201_Murata_GRM03_Gap0.25"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Murata GRM03 reflow table: a=0.25 b=0.30 c=0.35 mm; 0201 imperial / 0603 metric; https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM0335C1H390GA01-01A-EN_PDF_CERAMICCAPACITORSMD page27")
+	(property "Reference" "REF**"
+		(at 0 -1.05 0)
+		(layer "F.SilkS")
+		(uuid "2097a3a9-ba6e-4354-a001-5958c7460cf1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "C_0201_Murata_GRM03_Gap0.25"
+		(at 0 1.05 0)
+		(layer "F.Fab")
+		(uuid "1cce94f0-b53f-410a-a4ce-3c94fac047c5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e46de60c-c703-4757-8fe2-1a0114db0ff1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a376047-0e18-4dcd-8833-f1135c11e5ab")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "36e406ff-0e43-4916-9b63-407d5a5c057d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.675 -0.425)
+		(end 0.675 -0.425)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3877ef10-6478-4f89-8847-e220fd228f59")
+	)
+	(fp_line
+		(start -0.675 0.425)
+		(end -0.675 -0.425)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fc11a5db-f275-4278-a049-0b5896075100")
+	)
+	(fp_line
+		(start 0.675 -0.425)
+		(end 0.675 0.425)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5777030a-794e-4a89-9761-489f40bf1652")
+	)
+	(fp_line
+		(start 0.675 0.425)
+		(end -0.675 0.425)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5734e65e-a288-49c3-99f5-943eaf3b83c0")
+	)
+	(fp_line
+		(start -0.3 -0.15)
+		(end 0.3 -0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a4c01b48-1b0f-42df-82d2-2c5d1a79a364")
+	)
+	(fp_line
+		(start -0.3 0.15)
+		(end -0.3 -0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1dc10a6a-584c-4d02-8019-f921fca8a5de")
+	)
+	(fp_line
+		(start 0.3 -0.15)
+		(end 0.3 0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b66a611f-5309-46ba-a430-045598d6755b")
+	)
+	(fp_line
+		(start 0.3 0.15)
+		(end -0.3 0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5d9fda29-ee0a-4c15-b241-56851c85e490")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "0cab2588-be8b-4324-8694-a5f453a36429")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.275 0)
+		(size 0.3 0.35)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "760bdbce-d5e0-4945-8a6a-47c56da49ee7")
+	)
+	(pad "2" smd rect
+		(at 0.275 0)
+		(size 0.3 0.35)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "68c36821-301b-402d-aa4e-4556ab45036e")
+	)
+	(model "${KIPRJMOD}/libraries/MIRA_RevA.3dshapes/C_0201_0603Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,180 @@
+(footprint "L_Bourns_SRP7030CA_7.8x7.6mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Bourns SRP7030CA manufacturer recommended layout: overall7.4 gap2.8 width7.2 mm; https://www.bourns.com/docs/product-datasheets/srp7030ca.pdf")
+	(property "Reference" "REF**"
+		(at 0 -4.7 0)
+		(layer "F.SilkS")
+		(uuid "85ca9ff9-e0de-4c00-b4b4-a1b325c78343")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Bourns_SRP7030CA_7.8x7.6mm"
+		(at 0 4.7 0)
+		(layer "F.Fab")
+		(uuid "90f744f9-a0fc-4d26-890c-3b2c3c4f351a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d6b1aa5d-3d8f-4067-b73b-ca62d5a286b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4e3b990c-de9d-40b2-949d-2c3f6d4a7fc9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fdf15a29-080d-4b1f-bd95-0768c4bc5cb8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -4.15 -4.05)
+		(end 4.15 -4.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d4833eac-2f85-45d8-b91d-b5b519ddbcc6")
+	)
+	(fp_line
+		(start -4.15 4.05)
+		(end -4.15 -4.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "269f650f-80ee-4622-a501-981890615364")
+	)
+	(fp_line
+		(start 4.15 -4.05)
+		(end 4.15 4.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4fafccf0-ff63-4d45-9074-5997e3358890")
+	)
+	(fp_line
+		(start 4.15 4.05)
+		(end -4.15 4.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "40e15f27-98c5-4f06-abe4-56aa0d7e9692")
+	)
+	(fp_line
+		(start -3.9 -3.8)
+		(end 3.9 -3.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e7435c75-ef31-4782-b902-44a19553576c")
+	)
+	(fp_line
+		(start -3.9 3.8)
+		(end -3.9 -3.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b1f57a7d-9804-48fc-8812-5b7921634458")
+	)
+	(fp_line
+		(start 3.9 -3.8)
+		(end 3.9 3.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b2130ddf-2890-4a41-87ac-d6955d5cf333")
+	)
+	(fp_line
+		(start 3.9 3.8)
+		(end -3.9 3.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b3c85899-7e8b-43d8-a639-2723aeaa7466")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "88289703-bc55-4805-893c-ef7e175858ee")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -2.55)
+		(size 7.2 2.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "dc1439bd-d2a2-4d53-93b8-9ebee74c1b3b")
+	)
+	(pad "2" smd rect
+		(at 0 2.55)
+		(size 7.2 2.3)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "3822d7b4-1165-4344-bd77-6528ef2f2498")
+	)
+	(model "${KIPRJMOD}/libraries/MIRA_RevA.3dshapes/L_Bourns_SRP7030CA_7.8x7.6mm_BODY_ENVELOPE.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
