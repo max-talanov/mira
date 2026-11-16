@@ -7,7 +7,7 @@ from collections import Counter
 from pathlib import Path
 
 here=Path(__file__).resolve().parent
-base=Path(sys.argv[1]) if len(sys.argv)>1 else here.parent/'netlists'
+base=Path(sys.argv[1]) if len(sys.argv)>1 else here.parent/'layout'/'netlists'
 plan=Path(sys.argv[2]) if len(sys.argv)>2 else here.parent.parent/'pinplan'
 
 class Netlist:
@@ -42,16 +42,28 @@ for ref in range(400,408):
         w.check(pr,pin,expected)
 count=sum(1 for r,p in c.net if r in {'J'+str(x) for x in range(400,408)})
 print('All eight Control-Power connectors:',count,'contacts, including remote sense.')
-for pin in range(1,141):
-    name=(['BL','NL','WL','GND'][(pin-1)%4] if pin<=128 else 'GND')
-    if name!='GND':name+=str((pin-1)//4)
-    c.check('J1800',pin,name);m.check('J1',pin,name)
+# Native FX23L A/B map: 80 signal positions and four distinct power contacts per pair.
+interface=list(csv.DictReader((here.parent/'layout'/'crossbar-pin-map.csv').open()))
+assert len(interface)==168
+lines=[]
+for row in interface:
+    cr,cp,mr,mp,net=(row[k] for k in ['control_ref','control_pin','adapter_ref','adapter_pin','net'])
+    if net=='NC':
+        assert c.net[cr,cp].startswith('unconnected-') and m.net[mr,mp].startswith('unconnected-')
+    else:
+        c.check(cr,cp,net);m.check(mr,mp,net)
+        if row['class']=='line':m.check('U1',net,net);lines.append(net)
+assert Counter(lines)==Counter(f'{fam}{i}' for fam in ['BL','NL','WL'] for i in range(32))
+for pair in ['A','B']:
+    counts=Counter(r['class'] for r in interface if r['pair']==pair)
+    assert counts=={'line':48,'signal_GND':22,'reserve_NC':10,'power_GND':4}
+print('FX23L A/B: all 96 lines; per pair 48 lines + 22 GND + 10 NC + 4 power GND.')
 for i in range(32):
     line='WL'+str(i)
-    assert sorted(c.comp[r].split(' ')[0] for r,p in c.nodes[line] if r!='J1800')==['120','27']
+    assert sorted(c.comp[r].split(' ')[0] for r,p in c.nodes[line] if r not in {'J1800','J1801'})==['120','27']
     for family in ['BL','NL']:
         name=family+str(i)
-        assert sorted(c.comp[r] for r,p in c.nodes[name] if r!='J1800')==['ADG442','OPA4192','TMUX6112','TMUX7208']
+        assert sorted(c.comp[r] for r,p in c.nodes[name] if r not in {'J1800','J1801'})==['ADG442','OPA4192','TMUX6112','TMUX7208']
         for suffix,component,channel in [('_SET','DAC81416','OUT'),('_VADC','AD4696BCPZ','IN'),('_IADC','AD4696BCPZ','IN')]:
             idx=(i//16)+(2 if family=='NL' else 0)
             if component=='DAC81416':expected='U'+str(1000+idx)
@@ -60,7 +72,7 @@ for i in range(32):
             assert matches==[(expected,channel+str(i%16))],(name,suffix,matches,expected)
 for ref in [r for r in c.comp if c.comp[r]=='TMUX6212']:c.check(ref,13,'VWL_PRE12')
 for ref in [r for r in c.comp if c.comp[r]=='INA296A2']:c.check(ref,4,'GND')
-print('32 WL electrodes separated from the supply; 64 driver and 128 ADC paths; all 140 module contacts.')
+print('32 WL electrodes separated from the supply; 64 driver and 128 ADC paths; all 168 FX23L contacts (including reserves and power).')
 # Micron 4 Gb DDR3L, Rev Q, Figure 7. Unused balls are explicitly checked.
 balls={
 'DDR1V35':'A1 A8 B2 C1 C9 D2 D9 E9 F1 G7 H2 H9 K2 K8 N1 N9 R1 R9',
