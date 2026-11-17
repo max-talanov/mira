@@ -1,44 +1,18 @@
-(kicad_sch (version 20260306)
+(kicad_sch
+(version 20260306)
 (generator "eeschema")
 (generator_version "10.0")
 (uuid "e826bacf-8422-52a7-9537-295d7df1a291")
-(paper "A3")
 (title_block (title "Forming Routes") (rev "C-review"))
 (lib_symbols)
-
-(sheet (at 25.4000 45.7200) (size 116.84 12.7) (stroke (width 0.22) (type solid)) (fill (color 0 0 0 0)) (uuid "0f3a1197-a439-5000-9697-44d31af9dd3d") (property "Sheetname" "Gate Supply" (at 25.4 44.449999999999996 0) (effects (font (size 1.15 1.15)) (justify left bottom))) (property "Sheetfile" "C_WL12.kicad_sch" (at 25.4 59.72 0) (hide yes) (effects (font (size 0.9 0.9)) (justify left top))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f" (page "5500")))))
 (embedded_fonts no)
-
-
-
-
-
-
-
-
-
-
-
-
-(sheet (at 25.4000 71.1200) (size 116.84 12.7) (stroke (width .2) (type default)) (fill (color 0 0 0 0)) (uuid "feca32dd-5575-5c51-a1b4-c2c77f0daef6") (property "Sheetname" "Forming Interlock" (at 25.4 69.85000000000001 0) (effects (font (size 1.3 1.3)) (justify left bottom))) (property "Sheetfile" "CH48_Interlock.kicad_sch" (at 25.4 85.12 0) (hide yes) (effects (font (size 1 1)))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f" (page "5600")))))
-(sheet (at 25.4000 96.5200) (size 116.84 12.7) (stroke (width .2) (type default)) (fill (color 0 0 0 0)) (uuid "edbb8c69-dc7e-58fd-ae65-111ae1706bc3") (property "Sheetname" "Forming Source" (at 25.4 95.25 0) (effects (font (size 1.3 1.3)) (justify left bottom))) (property "Sheetfile" "CH48_Form_BL.kicad_sch" (at 25.4 110.52 0) (hide yes) (effects (font (size 1 1)))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f" (page "5700")))))
-(sheet (at 25.4000 121.9200) (size 116.84 12.7) (stroke (width .2) (type default)) (fill (color 0 0 0 0)) (uuid "878df0fc-06dd-5162-83e6-f133e3f3bcd6") (property "Sheetname" "Forming Return" (at 25.4 120.64999999999999 0) (effects (font (size 1.3 1.3)) (justify left bottom))) (property "Sheetfile" "CH48_Form_NL.kicad_sch" (at 25.4 135.92 0) (hide yes) (effects (font (size 1 1)))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f" (page "5800")))))
-(sheet (at 25.4000 147.3200) (size 116.84 12.7) (stroke (width .2) (type default)) (fill (color 0 0 0 0)) (uuid "adb42c36-500b-507b-8ca6-f589feda29d0") (property "Sheetname" "Forming Gate" (at 25.4 146.04999999999998 0) (effects (font (size 1.3 1.3)) (justify left bottom))) (property "Sheetfile" "CH48_Form_WL.kicad_sch" (at 25.4 161.32 0) (hide yes) (effects (font (size 1 1)))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f" (page "5900")))))
-(sheet (at 25.4000 172.7200) (size 116.84 12.7) (stroke (width .2) (type default)) (fill (color 0 0 0 0)) (uuid "cbb28b2f-8d55-5d30-8cbc-8c851b602c81") (property "Sheetname" "Electrode Isolation" (at 25.4 171.45 0) (effects (font (size 1.3 1.3)) (justify left bottom))) (property "Sheetfile" "CH48_Form_Isolation.kicad_sch" (at 25.4 186.72 0) (hide yes) (effects (font (size 1 1)))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f" (page "6000")))))
-
-(text "5500" (at 27.939999999999998 49.72 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "5418dad9-a227-5632-8177-248d4748d9c4"))
-
-(text "5600" (at 27.939999999999998 75.12 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "bab5872a-e120-5956-8b5f-36a0387d8a8d"))
-
-(text "5700" (at 27.939999999999998 100.52 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "f4a08090-7786-569d-8e94-b7033bb9b575"))
-
-(text "5800" (at 27.939999999999998 125.91999999999999 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "0953a597-cb7d-5230-9b9f-d7eb9ce53761"))
-
-(text "5900" (at 27.939999999999998 151.32 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "9c312fe2-6f39-583a-9764-8ce0be73c5fd"))
-
-(text "6000" (at 27.939999999999998 176.72 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "8e581fc2-73a8-50d0-b8b5-a8ec9604ccc3"))
-
-(text "Forming Routes" (at 20.32 15.24 0) (effects (font (size 2.2 2.2)) (justify left top)) (uuid "10f26470-1734-52f2-aeb9-1245295cb7c1"))
-
-(text "Read in page order. Each section opens the signal path and its local support circuitry." (at 20.32 24.13 0) (effects (font (size 1 1)) (justify left top)) (uuid "a1781efb-767c-5e81-b0d6-08d8c2d1d3a5"))
+(paper "A4")
+(text "Forming Routes" (at 15 15 0) (effects (font (size 1.8 1.8)) (justify left top)) (uuid "2072b89b-74e0-558e-adf0-04457e327b3a"))
+(text "Open a block to follow the signal path." (at 15 25 0) (effects (font (size 1.1 1.1)) (justify left top)) (uuid "cabeadc4-9801-5fc6-b528-b6ffe8be00da"))
+(sheet (at 15 45) (size 125 15) (stroke (width 0.22) (type solid)) (fill (color 0 0 0 0)) (uuid "0f3a1197-a439-5000-9697-44d31af9dd3d") (property "Sheetname" "Gate Supply" (at 18 50 0) (effects (font (size 1.15 1.15)) (justify left bottom))) (property "Sheetfile" "C_WL12.kicad_sch" (at 18 56 0) (hide yes) (effects (font (size 0.9 0.9)) (justify left top))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f" (page "5100")))))
+(sheet (at 160 45) (size 125 15) (stroke (width .2) (type default)) (fill (color 0 0 0 0)) (uuid "feca32dd-5575-5c51-a1b4-c2c77f0daef6") (property "Sheetname" "Forming Interlock" (at 163 50 0) (effects (font (size 1.3 1.3)) (justify left bottom))) (property "Sheetfile" "CH48_Interlock.kicad_sch" (at 163 56 0) (hide yes) (effects (font (size 1 1)))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f" (page "5200")))))
+(sheet (at 15 77) (size 125 15) (stroke (width .2) (type default)) (fill (color 0 0 0 0)) (uuid "edbb8c69-dc7e-58fd-ae65-111ae1706bc3") (property "Sheetname" "Forming Source" (at 18 82 0) (effects (font (size 1.3 1.3)) (justify left bottom))) (property "Sheetfile" "CH48_Form_BL.kicad_sch" (at 18 88 0) (hide yes) (effects (font (size 1 1)))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f" (page "5300")))))
+(sheet (at 160 77) (size 125 15) (stroke (width .2) (type default)) (fill (color 0 0 0 0)) (uuid "878df0fc-06dd-5162-83e6-f133e3f3bcd6") (property "Sheetname" "Forming Return" (at 163 82 0) (effects (font (size 1.3 1.3)) (justify left bottom))) (property "Sheetfile" "CH48_Form_NL.kicad_sch" (at 163 88 0) (hide yes) (effects (font (size 1 1)))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f" (page "5400")))))
+(sheet (at 15 109) (size 125 15) (stroke (width .2) (type default)) (fill (color 0 0 0 0)) (uuid "adb42c36-500b-507b-8ca6-f589feda29d0") (property "Sheetname" "Forming Gate" (at 18 114 0) (effects (font (size 1.3 1.3)) (justify left bottom))) (property "Sheetfile" "CH48_Form_WL.kicad_sch" (at 18 120 0) (hide yes) (effects (font (size 1 1)))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f" (page "5500")))))
+(sheet (at 160 109) (size 125 15) (stroke (width .2) (type default)) (fill (color 0 0 0 0)) (uuid "cbb28b2f-8d55-5d30-8cbc-8c851b602c81") (property "Sheetname" "Electrode Isolation" (at 163 114 0) (effects (font (size 1.3 1.3)) (justify left bottom))) (property "Sheetfile" "CH48_Form_Isolation.kicad_sch" (at 163 120 0) (hide yes) (effects (font (size 1 1)))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f" (page "5600")))))
 )

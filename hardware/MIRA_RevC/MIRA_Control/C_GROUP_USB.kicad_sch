@@ -1,13 +1,14 @@
-(kicad_sch (version 20260306) (generator "eeschema") (generator_version "10.0") (uuid "a24238d1-fee7-5fe3-b6d0-f7160ae53299") (paper "A3") (title_block (title "USB Interface") (rev "C-review")) (lib_symbols)
-
-(sheet (at 25.4000 45.7200) (size 116.84 12.7) (stroke (width 0.22) (type solid)) (fill (color 0 0 0 0)) (uuid "50e17b51-89b0-5215-b779-658ab7f72f57") (property "Sheetname" "FX20 Bridge" (at 25.4 44.449999999999996 0) (effects (font (size 1.15 1.15)) (justify left bottom))) (property "Sheetfile" "C_FX20.kicad_sch" (at 25.4 59.72 0) (hide yes) (effects (font (size 0.9 0.9)) (justify left top))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/61ea4e66-56da-5b9e-87fa-4ef863a3b38c" (page "1800")))))
-(sheet (at 25.4000 71.1200) (size 116.84 12.7) (stroke (width 0.22) (type solid)) (fill (color 0 0 0 0)) (uuid "c8e043d7-eba8-5837-b0cf-28dd226d7d4c") (property "Sheetname" "USB-C Port" (at 25.4 69.85000000000001 0) (effects (font (size 1.15 1.15)) (justify left bottom))) (property "Sheetfile" "C_USB_C.kicad_sch" (at 25.4 85.12 0) (hide yes) (effects (font (size 0.9 0.9)) (justify left top))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/61ea4e66-56da-5b9e-87fa-4ef863a3b38c" (page "1900")))))
+(kicad_sch
+(version 20260306)
+(generator "eeschema")
+(generator_version "10.0")
+(uuid "a24238d1-fee7-5fe3-b6d0-f7160ae53299")
+(title_block (title "USB Interface") (rev "C-review"))
+(lib_symbols)
 (embedded_fonts no)
-(text "1800" (at 27.939999999999998 49.72 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "b0dd0f29-5e6f-5e70-991b-0c6cfeb0fbcf"))
-
-(text "1900" (at 27.939999999999998 75.12 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "d704772b-2a58-5969-84be-20f9b7d9cf8e"))
-
-(text "USB Interface" (at 20.32 15.24 0) (effects (font (size 2.2 2.2)) (justify left top)) (uuid "0aebb002-1d4e-5acb-beff-d08cd165f83d"))
-
-(text "Read in page order. Each section opens the signal path and its local support circuitry." (at 20.32 24.13 0) (effects (font (size 1 1)) (justify left top)) (uuid "a1781efb-767c-5e81-b0d6-08d8c2d1d3a5"))
+(paper "A5")
+(text "USB Interface" (at 15 15 0) (effects (font (size 1.8 1.8)) (justify left top)) (uuid "39a7d258-8caa-5648-8c76-e1bedd570233"))
+(text "Open a block to follow the signal path." (at 15 25 0) (effects (font (size 1.1 1.1)) (justify left top)) (uuid "cabeadc4-9801-5fc6-b528-b6ffe8be00da"))
+(sheet (at 15 45) (size 170 15) (stroke (width 0.22) (type solid)) (fill (color 0 0 0 0)) (uuid "50e17b51-89b0-5215-b779-658ab7f72f57") (property "Sheetname" "FX20 Bridge" (at 18 50 0) (effects (font (size 1.15 1.15)) (justify left bottom))) (property "Sheetfile" "C_FX20.kicad_sch" (at 18 56 0) (hide yes) (effects (font (size 0.9 0.9)) (justify left top))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/61ea4e66-56da-5b9e-87fa-4ef863a3b38c" (page "1800")))))
+(sheet (at 15 77) (size 170 15) (stroke (width 0.22) (type solid)) (fill (color 0 0 0 0)) (uuid "c8e043d7-eba8-5837-b0cf-28dd226d7d4c") (property "Sheetname" "USB-C Port" (at 18 82 0) (effects (font (size 1.15 1.15)) (justify left bottom))) (property "Sheetfile" "C_USB_C.kicad_sch" (at 18 88 0) (hide yes) (effects (font (size 0.9 0.9)) (justify left top))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/61ea4e66-56da-5b9e-87fa-4ef863a3b38c" (page "1900")))))
 )

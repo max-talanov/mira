@@ -1,10 +1,9 @@
 (kicad_sch
-	(version 20260306)
-	(generator "eeschema")
-	(generator_version "10.0")
-	(uuid "5bc8c5b4-b619-43d6-96b8-ebe510835111")
-	(paper "A4")
-	(lib_symbols
+(version 20260306)
+(generator "eeschema")
+(generator_version "10.0")
+(uuid "5bc8c5b4-b619-43d6-96b8-ebe510835111")
+(lib_symbols
 		(symbol "MIRA_RevA:C_GRM033R61A104KE15D"
 			(pin_numbers
 				(hide yes)
@@ -1671,542 +1670,239 @@
 			(embedded_fonts no)
 		)
 	)
-	(rectangle
-		(start 151.13 15.24)
-		(end 283.21 161.29)
-		(stroke
-			(width 0.13)
-			(type solid)
-			(color 120 128 138 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "5519abb6-d832-4d6b-b618-68ca56ce7d38")
-	)
-	(rectangle
-		(start 15.24 15.24)
-		(end 148.59 194.31)
-		(stroke
-			(width 0.13)
-			(type solid)
-			(color 120 128 138 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "5da8ce6e-1390-4b3a-9433-62f992626b4e")
-	)
-	(text "Control logic"
-		(exclude_from_sim no)
-		(at 156.21 86.36 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "123bc53b-2198-48e0-a220-6a11921aa558")
-	)
-	(text "Current scales: input 0.4 V/A with the stated external 0.02 Ohm shunt; AON 2\nV/A; USB 1 V/A; SYS 0.2 V/A. The 10 kOhm LIMIT resistors set 0.8 V, giving\nnominal trips of 0.4 A, 0.8 A and 4 A. Voltage scales are input/16 and other\nrails/2. Each 1 kOhm / 10 nF current filter has a 10 us time constant."
-		(exclude_from_sim no)
-		(at 156.21 114.02 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "3c4738e9-f2fd-40dc-a661-a8c89d728887")
-	)
-	(text "0.1 Ohm: 2 V/A. Nominal trip 0.4 A."
-		(exclude_from_sim no)
-		(at 88.9 32.67 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-				(thickness 0.15)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "442d0139-5f18-494b-bec3-0604f0f393fa")
-	)
-	(text "The BAT54S pairs clamp voltage nodes toward GND and AON. Telemetry filters do\nnot delay the INA301 internal comparator. OC_OK_N uses external AON pullups on\nthe ADC-buffer and negative-overcurrent sheets; trip settings must be checked\nagainst load and inrush budgets."
-		(exclude_from_sim no)
-		(at 156.21 136.88 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "513db8f0-cfe2-4a0f-9c24-ecf6f233340f")
-	)
-	(text "Inputs and outputs"
-		(exclude_from_sim no)
-		(at 156.21 63.5 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "560d9408-c6da-491c-a936-fe3b061db038")
-	)
-	(text "AON rail monitor"
-		(exclude_from_sim no)
-		(at 92.71 27.94 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-				(thickness 0.15)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "56bf62f3-2e7e-485c-aa95-be40b279116d")
-	)
-	(text "System rail monitor"
-		(exclude_from_sim no)
-		(at 85.09 113.03 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-				(thickness 0.15)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "5d74943c-ef17-480b-a11f-09b7abec8567")
-	)
-	(text "0.01 Ohm: 0.2 V/A. Nominal trip 4 A."
-		(exclude_from_sim no)
-		(at 85.09 119.03 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-				(thickness 0.15)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "74e9d950-c7ef-41d3-ac83-8a324a1babd1")
-	)
-	(text "These four channels let the MIRA power controller monitor the protected input\nbus and the AON, USB and system rails. Current alerts also feed the hardware\ninterlocks, allowing switched supplies to be disabled without waiting for\nfirmware."
-		(exclude_from_sim no)
-		(at 156.21 45.44 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "79348162-46cc-45a7-8382-da9f0a70f28c")
-	)
-	(text "Input bus monitor"
-		(exclude_from_sim no)
-		(at 21.59 27.94 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-				(thickness 0.15)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "9121e71e-0e89-47dd-8901-3eacb4d665d9")
-	)
-	(text "SHEET GUIDE / Input and System Sense"
-		(exclude_from_sim no)
-		(at 156.21 19.24 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-				(thickness 0.15)
-				(color 86 96 108 1)
-			)
-			(justify left top)
-		)
-		(uuid "9abe3f02-7f8b-40fd-87de-372a02de7fba")
-	)
-	(text "Purpose and role"
-		(exclude_from_sim no)
-		(at 156.21 40.64 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "a1bada49-3632-4d72-ba33-fe3367a278a7")
-	)
-	(text "U490003 senses BUS24_PRE_SHUNT to BUS24. U490004-U490002 sense AON_RAW/AON,\nUSB_RAW/USB5 and SYS_RAW/SYS3V3. MON_I_* and MON_V_* feed the telemetry\nmultiplexers; MON_V_USB also feeds the analog power-good comparator. All\nmonitors use AON and GND."
-		(exclude_from_sim no)
-		(at 156.21 68.3 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "ad253d45-1b53-460d-b0c4-f34eb90d223c")
-	)
-	(text "Protection and fault response"
-		(exclude_from_sim no)
-		(at 156.21 132.08 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "b307e926-33bd-4383-8ec8-c08183a06ec6")
-	)
-	(text "Input, AON, USB and system monitoring"
-		(exclude_from_sim no)
-		(at 156.21 26.24 0)
-		(effects
-			(font
-				(size 2.05 2.05)
-				(thickness 0.18)
-				(bold yes)
-				(color 25 47 72 1)
-			)
-			(justify left top)
-		)
-		(uuid "b4d3df5b-8a6a-412d-ac08-55c67c51f5d4")
-	)
-	(text "USB rail monitor"
-		(exclude_from_sim no)
-		(at 20.32 113.03 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-				(thickness 0.15)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "bb9ee649-9d05-4887-b868-cec3f97b1d5e")
-	)
-	(text "Input and System Sense"
-		(exclude_from_sim no)
-		(at 20.32 19.05 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-				(thickness 0.15)
-				(color 86 96 108 1)
-			)
-			(justify left top)
-		)
-		(uuid "bcc292ce-bc81-45b4-8be2-2b2423ce5719")
-	)
-	(text "INA301 ALERT outputs share OC_OK_N: a low level signals an overcurrent. RESET is\ngrounded, selecting transparent mode; fault memory is on the interlock sheet.\nU490003 provides input-current telemetry without a hardware alert."
-		(exclude_from_sim no)
-		(at 156.21 91.16 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "e33dba9e-4fd6-4979-b5e0-a4c97fe4cb72")
-	)
-	(text "0.05 Ohm: 1 V/A. Nominal trip 0.8 A."
-		(exclude_from_sim no)
-		(at 20.32 119.03 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-				(thickness 0.15)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "ef60e0c5-d2a0-4cfd-9743-39a30eb42eca")
-	)
-	(text "Timing and settings"
-		(exclude_from_sim no)
-		(at 156.21 109.22 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "f09429dd-79d1-4131-8180-ee24aa698a93")
-	)
-	(text "External 0.02 Ohm: 0.4 V/A. Voltage divided by 16."
-		(exclude_from_sim no)
-		(at 21.59 31.75 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-				(thickness 0.15)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "f5e1bde1-bffc-4f0f-96e9-2cffe9cbccdd")
-	)
-	(junction
-		(at 100.33 168.91)
+(title_block (title "Input and System Sense") (rev "C-review") (company "MIRA"))
+(paper "User" 210 275)
+(junction
+		(at 113.03 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "03f51d11-8599-414f-b7ce-53cf0de40522")
 	)
-	(junction
-		(at 100.33 97.79)
+(junction
+		(at 113.03 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0530daf4-65ba-4135-8314-7988372ab4eb")
 	)
-	(junction
-		(at 38.1 78.74)
+(junction
+		(at 50.8 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0b4ea030-6cdc-42ce-81a8-e6f3624dd7c8")
 	)
-	(junction
-		(at 64.77 66.04)
+(junction
+		(at 77.47 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1876f3ef-47e7-422e-8f0b-6aa4ed5fdc48")
 	)
-	(junction
-		(at 110.49 163.83)
+(junction
+		(at 123.19 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "23933624-95b3-4be2-8eeb-d2d45ac95140")
 	)
-	(junction
-		(at 26.67 91.44)
+(junction
+		(at 39.37 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "241fd3dc-d7a4-4b22-8f74-2f49fdbe4162")
 	)
-	(junction
-		(at 76.2 163.83)
+(junction
+		(at 88.9 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "26c286a3-e8bb-49e8-bfbc-b77569a7419d")
 	)
-	(junction
-		(at 25.4 168.91)
+(junction
+		(at 38.1 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27cf1e97-3082-4adb-ade7-9be2e4d36bde")
 	)
-	(junction
-		(at 64.77 163.83)
+(junction
+		(at 77.47 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30935f15-16d2-4eb9-8d19-32275826693b")
 	)
-	(junction
-		(at 88.9 97.79)
+(junction
+		(at 101.6 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "32c0d6f4-c004-4986-84b4-5422caffd28f")
 	)
-	(junction
-		(at 88.9 83.82)
+(junction
+		(at 101.6 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "40723624-d5e1-42c0-bd03-356d2334554d")
 	)
-	(junction
-		(at 100.33 83.82)
+(junction
+		(at 113.03 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "49280e69-cc2e-43fc-a25d-2c20876dfd45")
 	)
-	(junction
-		(at 88.9 168.91)
+(junction
+		(at 101.6 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "49695e6f-dc0d-4974-a021-ccb160cc2e8a")
 	)
-	(junction
-		(at 36.83 168.91)
+(junction
+		(at 49.53 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4be12f06-1d36-490f-b52a-ed6caa260036")
 	)
-	(junction
-		(at 46.99 163.83)
+(junction
+		(at 59.69 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5103850c-96b7-4d38-a6c7-4a1463419d4b")
 	)
-	(junction
-		(at 25.4 140.97)
+(junction
+		(at 38.1 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "568188f2-da5c-461b-a29c-6172254b78fd")
 	)
-	(junction
-		(at 88.9 182.88)
+(junction
+		(at 101.6 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "57fdc547-81d0-428a-8780-3dbbfd20c422")
 	)
-	(junction
-		(at 110.49 83.82)
+(junction
+		(at 123.19 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5c3bdcd4-8195-4a71-afea-fde9aabb2421")
 	)
-	(junction
-		(at 100.33 182.88)
+(junction
+		(at 113.03 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "66aa7efd-3a4e-4133-8af5-39ab65a12d3a")
 	)
-	(junction
-		(at 110.49 168.91)
+(junction
+		(at 123.19 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d43247d-661f-4186-9ccc-b8dbe95eb5fd")
 	)
-	(junction
-		(at 46.99 125.73)
+(junction
+		(at 59.69 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e029bc9-f5e5-4fce-9ef2-022ad6108660")
 	)
-	(junction
-		(at 26.67 78.74)
+(junction
+		(at 39.37 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "73f1f98a-2206-40f6-9337-250d356a6373")
 	)
-	(junction
-		(at 128.27 163.83)
+(junction
+		(at 140.97 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7a920c1c-4402-418e-90af-e2bdd8438ca0")
 	)
-	(junction
-		(at 139.7 163.83)
+(junction
+		(at 152.4 170.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "846cc255-55d2-4466-8020-dc7e65f61262")
 	)
-	(junction
-		(at 110.49 40.64)
+(junction
+		(at 123.19 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "86759df6-ce0f-4d87-a413-e609cf0d1226")
 	)
-	(junction
-		(at 26.67 55.88)
+(junction
+		(at 39.37 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8b0a5946-cc23-4fce-a6a7-6c1ea319af43")
 	)
-	(junction
-		(at 38.1 91.44)
+(junction
+		(at 50.8 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "90dde70a-2f5a-4e56-b518-0bab035f1ddf")
 	)
-	(junction
-		(at 46.99 168.91)
+(junction
+		(at 59.69 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9851be22-7205-44f7-85de-ec61267b1146")
 	)
-	(junction
-		(at 139.7 78.74)
+(junction
+		(at 152.4 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4aa3d3a-c054-4db2-9b3d-eb34aca84647")
 	)
-	(junction
-		(at 88.9 140.97)
+(junction
+		(at 101.6 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa564275-d2e7-4a23-958c-c88e24abf269")
 	)
-	(junction
-		(at 25.4 182.88)
+(junction
+		(at 38.1 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa615a5a-959c-4534-bb1e-55b065b2e40d")
 	)
-	(junction
-		(at 36.83 182.88)
+(junction
+		(at 49.53 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bec6fe36-6ff7-48b3-a813-a68e660bbf15")
 	)
-	(junction
-		(at 45.72 66.04)
+(junction
+		(at 58.42 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bfed51b1-5f1c-4339-8c4c-7d5263f2e79c")
 	)
-	(junction
-		(at 128.27 78.74)
+(junction
+		(at 140.97 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1e62e74-2f66-4bf9-924a-72d7c4e04534")
 	)
-	(junction
-		(at 88.9 55.88)
+(junction
+		(at 101.6 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c67bb6e8-9d43-4036-9b9e-725286283e7c")
 	)
-	(junction
-		(at 110.49 78.74)
+(junction
+		(at 123.19 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c82475af-468b-407a-bacb-f0911b31c801")
 	)
-	(junction
-		(at 110.49 125.73)
+(junction
+		(at 123.19 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef37bd37-82d7-4e2c-98ee-f882aa8d3097")
 	)
-	(junction
-		(at 45.72 40.64)
+(junction
+		(at 58.42 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb6a9233-2e9a-4ee9-b0e6-46ced23931b7")
 	)
-	(wire
+(wire
 		(pts
-			(xy 100.33 95.25) (xy 100.33 97.79)
+			(xy 113.03 101.6) (xy 113.03 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2214,9 +1910,9 @@
 		)
 		(uuid "0010123d-0b5b-42e2-8d39-dd21023905bc")
 	)
-	(wire
+(wire
 		(pts
-			(xy 25.4 140.97) (xy 29.21 140.97)
+			(xy 38.1 147.32) (xy 41.91 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2224,9 +1920,9 @@
 		)
 		(uuid "01921750-c675-4bfb-a99a-a8c6e27cab42")
 	)
-	(wire
+(wire
 		(pts
-			(xy 128.27 50.8) (xy 139.7 50.8)
+			(xy 140.97 57.15) (xy 152.4 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2234,9 +1930,9 @@
 		)
 		(uuid "03f2887f-1fc7-4ed1-a8e7-2e068d8d5786")
 	)
-	(wire
+(wire
 		(pts
-			(xy 139.7 50.8) (xy 139.7 54.61)
+			(xy 152.4 57.15) (xy 152.4 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2244,9 +1940,9 @@
 		)
 		(uuid "0430ff03-fcec-486c-89ac-3b16820f09ec")
 	)
-	(wire
+(wire
 		(pts
-			(xy 46.99 125.73) (xy 49.53 125.73)
+			(xy 59.69 132.08) (xy 62.23 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2254,9 +1950,9 @@
 		)
 		(uuid "05d31328-7120-4050-b9cb-10ce6ea98bc2")
 	)
-	(wire
+(wire
 		(pts
-			(xy 110.49 83.82) (xy 100.33 83.82)
+			(xy 123.19 90.17) (xy 113.03 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2264,10 +1960,9 @@
 		)
 		(uuid "05ecdf4f-df7d-43bc-a261-460a2e475520")
 	)
-
-	(wire
+(wire
 		(pts
-			(xy 48.26 73.66) (xy 38.1 73.66)
+			(xy 60.96 80.01) (xy 50.8 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2275,9 +1970,9 @@
 		)
 		(uuid "09f354cc-702e-46f7-b0eb-3f5d5390157c")
 	)
-	(wire
+(wire
 		(pts
-			(xy 26.67 78.74) (xy 26.67 80.01)
+			(xy 39.37 85.09) (xy 39.37 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2285,9 +1980,9 @@
 		)
 		(uuid "0ce86ed9-a74b-46b5-b63b-17270777ca38")
 	)
-	(wire
+(wire
 		(pts
-			(xy 43.18 40.64) (xy 45.72 40.64)
+			(xy 55.88 46.99) (xy 58.42 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2295,9 +1990,9 @@
 		)
 		(uuid "0ddb0b2a-d553-41ee-bfae-7e757f50e730")
 	)
-	(wire
+(wire
 		(pts
-			(xy 36.83 180.34) (xy 36.83 182.88)
+			(xy 49.53 186.69) (xy 49.53 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2305,9 +2000,9 @@
 		)
 		(uuid "104551d5-1da3-40e9-a477-25b6d4a4f3c6")
 	)
-	(wire
+(wire
 		(pts
-			(xy 139.7 78.74) (xy 139.7 82.55)
+			(xy 152.4 85.09) (xy 152.4 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2315,9 +2010,9 @@
 		)
 		(uuid "10658ea2-37e2-4e0b-a0b3-0f2a95bf82fb")
 	)
-	(wire
+(wire
 		(pts
-			(xy 36.83 168.91) (xy 36.83 170.18)
+			(xy 49.53 175.26) (xy 49.53 176.53)
 		)
 		(stroke
 			(width 0)
@@ -2325,9 +2020,9 @@
 		)
 		(uuid "10f9067a-8ba9-4f89-92b0-39eee434e54c")
 	)
-	(wire
+(wire
 		(pts
-			(xy 38.1 90.17) (xy 38.1 91.44)
+			(xy 50.8 96.52) (xy 50.8 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2335,9 +2030,9 @@
 		)
 		(uuid "137a5ed8-b747-4c04-9c86-0e299693ec4d")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 182.88) (xy 88.9 184.15)
+			(xy 101.6 189.23) (xy 101.6 190.5)
 		)
 		(stroke
 			(width 0)
@@ -2345,9 +2040,9 @@
 		)
 		(uuid "15c92bd3-efec-4ef0-8935-ab6509952c36")
 	)
-	(wire
+(wire
 		(pts
-			(xy 110.49 125.73) (xy 113.03 125.73)
+			(xy 123.19 132.08) (xy 125.73 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2355,9 +2050,9 @@
 		)
 		(uuid "178cefb0-b724-43ac-a5b1-92e4e9ba3559")
 	)
-	(wire
+(wire
 		(pts
-			(xy 91.44 50.8) (xy 92.71 50.8)
+			(xy 104.14 57.15) (xy 105.41 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2365,9 +2060,9 @@
 		)
 		(uuid "17f7260c-e2ff-4c28-b780-3850aa45e182")
 	)
-	(wire
+(wire
 		(pts
-			(xy 25.4 152.4) (xy 25.4 168.91)
+			(xy 38.1 158.75) (xy 38.1 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2375,9 +2070,9 @@
 		)
 		(uuid "18cf2c81-32d8-46f9-9298-a53708af47be")
 	)
-	(wire
+(wire
 		(pts
-			(xy 44.45 125.73) (xy 46.99 125.73)
+			(xy 57.15 132.08) (xy 59.69 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2385,9 +2080,9 @@
 		)
 		(uuid "1a9159b4-7261-45b2-8145-f42f0ff04eed")
 	)
-	(wire
+(wire
 		(pts
-			(xy 76.2 163.83) (xy 74.93 163.83)
+			(xy 88.9 170.18) (xy 87.63 170.18)
 		)
 		(stroke
 			(width 0)
@@ -2395,9 +2090,9 @@
 		)
 		(uuid "1bf7a9b2-0175-4960-ad43-d22253b61912")
 	)
-	(wire
+(wire
 		(pts
-			(xy 69.85 151.13) (xy 69.85 157.48)
+			(xy 82.55 157.48) (xy 82.55 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2405,9 +2100,9 @@
 		)
 		(uuid "1bfb0b7a-fde2-4643-95e4-566e10f138d9")
 	)
-	(wire
+(wire
 		(pts
-			(xy 58.42 40.64) (xy 59.69 40.64)
+			(xy 71.12 46.99) (xy 72.39 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2415,9 +2110,9 @@
 		)
 		(uuid "1d306c14-32df-4a2f-b196-12008095f844")
 	)
-	(wire
+(wire
 		(pts
-			(xy 59.69 125.73) (xy 60.96 125.73)
+			(xy 72.39 132.08) (xy 73.66 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2425,9 +2120,9 @@
 		)
 		(uuid "1e140895-c989-45d5-857a-7f2b985e9746")
 	)
-	(wire
+(wire
 		(pts
-			(xy 26.67 90.17) (xy 26.67 91.44)
+			(xy 39.37 96.52) (xy 39.37 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2435,9 +2130,9 @@
 		)
 		(uuid "1f2cb9fd-6a57-44ad-a90e-0bd037201379")
 	)
-	(wire
+(wire
 		(pts
-			(xy 100.33 83.82) (xy 100.33 85.09)
+			(xy 113.03 90.17) (xy 113.03 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2445,9 +2140,9 @@
 		)
 		(uuid "2311c6a9-a606-482d-b8e8-57caf4e0a1f9")
 	)
-	(wire
+(wire
 		(pts
-			(xy 64.77 66.04) (xy 63.5 66.04)
+			(xy 77.47 72.39) (xy 76.2 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2455,9 +2150,9 @@
 		)
 		(uuid "24b48468-db74-4f33-ad0d-bfdccf0249a0")
 	)
-	(wire
+(wire
 		(pts
-			(xy 128.27 66.04) (xy 128.27 67.31)
+			(xy 140.97 72.39) (xy 140.97 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2465,9 +2160,9 @@
 		)
 		(uuid "2688ba8f-57e4-401e-a12f-a57746e2a7df")
 	)
-	(wire
+(wire
 		(pts
-			(xy 110.49 76.2) (xy 110.49 78.74)
+			(xy 123.19 82.55) (xy 123.19 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2475,9 +2170,9 @@
 		)
 		(uuid "2c9b20c2-433c-49be-92b9-4038a73abd73")
 	)
-	(wire
+(wire
 		(pts
-			(xy 100.33 97.79) (xy 102.87 97.79)
+			(xy 113.03 104.14) (xy 115.57 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2485,9 +2180,9 @@
 		)
 		(uuid "311846c0-3225-4629-ab7f-61cef54d3bac")
 	)
-	(wire
+(wire
 		(pts
-			(xy 100.33 180.34) (xy 100.33 182.88)
+			(xy 113.03 186.69) (xy 113.03 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2495,9 +2190,9 @@
 		)
 		(uuid "31e240fd-3840-443d-b7a5-3e25db45a5ad")
 	)
-	(wire
+(wire
 		(pts
-			(xy 25.4 140.97) (xy 25.4 142.24)
+			(xy 38.1 147.32) (xy 38.1 148.59)
 		)
 		(stroke
 			(width 0)
@@ -2505,9 +2200,9 @@
 		)
 		(uuid "354c04a7-3028-4e1f-8008-b9975690813b")
 	)
-	(wire
+(wire
 		(pts
-			(xy 64.77 63.5) (xy 64.77 66.04)
+			(xy 77.47 69.85) (xy 77.47 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2515,9 +2210,9 @@
 		)
 		(uuid "371de984-4b79-4476-bed6-7d51a09d3a07")
 	)
-	(wire
+(wire
 		(pts
-			(xy 46.99 168.91) (xy 36.83 168.91)
+			(xy 59.69 175.26) (xy 49.53 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2525,9 +2220,9 @@
 		)
 		(uuid "3b40a1a8-afae-43c5-8f98-e260d44dca46")
 	)
-	(wire
+(wire
 		(pts
-			(xy 48.26 168.91) (xy 46.99 168.91)
+			(xy 60.96 175.26) (xy 59.69 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2535,9 +2230,9 @@
 		)
 		(uuid "3c204d4b-8c1b-4df3-ba07-69f590926be9")
 	)
-	(wire
+(wire
 		(pts
-			(xy 110.49 92.71) (xy 110.49 83.82)
+			(xy 123.19 99.06) (xy 123.19 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2545,9 +2240,9 @@
 		)
 		(uuid "3e3e529b-c914-4648-af0b-df4b29ef60ed")
 	)
-	(wire
+(wire
 		(pts
-			(xy 24.13 140.97) (xy 25.4 140.97)
+			(xy 36.83 147.32) (xy 38.1 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2555,9 +2250,9 @@
 		)
 		(uuid "4233c872-4440-4026-bc6c-4ecb3bf135a8")
 	)
-	(wire
+(wire
 		(pts
-			(xy 38.1 73.66) (xy 38.1 78.74)
+			(xy 50.8 80.01) (xy 50.8 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2565,9 +2260,9 @@
 		)
 		(uuid "44931084-70ca-48b0-9d11-77adb3325c94")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 140.97) (xy 92.71 140.97)
+			(xy 101.6 147.32) (xy 105.41 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2575,9 +2270,9 @@
 		)
 		(uuid "45d12f87-456b-4c53-af1a-1263b7962dd0")
 	)
-	(wire
+(wire
 		(pts
-			(xy 25.4 168.91) (xy 25.4 170.18)
+			(xy 38.1 175.26) (xy 38.1 176.53)
 		)
 		(stroke
 			(width 0)
@@ -2585,9 +2280,9 @@
 		)
 		(uuid "4ac2ef87-fb2d-4bf0-a070-f16b190f1161")
 	)
-	(wire
+(wire
 		(pts
-			(xy 139.7 78.74) (xy 138.43 78.74)
+			(xy 152.4 85.09) (xy 151.13 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2595,9 +2290,9 @@
 		)
 		(uuid "4eefaaa2-1abd-41b3-9188-979d893ad35d")
 	)
-	(wire
+(wire
 		(pts
-			(xy 25.4 180.34) (xy 25.4 182.88)
+			(xy 38.1 186.69) (xy 38.1 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2605,9 +2300,9 @@
 		)
 		(uuid "546eaa48-1f97-45bd-873b-88e2322e481f")
 	)
-	(wire
+(wire
 		(pts
-			(xy 64.77 66.04) (xy 64.77 69.85)
+			(xy 77.47 72.39) (xy 77.47 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2615,9 +2310,9 @@
 		)
 		(uuid "5ad8db2c-2640-4d04-963f-a85ab7cd00e7")
 	)
-	(wire
+(wire
 		(pts
-			(xy 100.33 83.82) (xy 88.9 83.82)
+			(xy 113.03 90.17) (xy 101.6 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2625,9 +2320,9 @@
 		)
 		(uuid "5d39f819-1014-4d08-9fd1-f9c2715ff799")
 	)
-	(wire
+(wire
 		(pts
-			(xy 63.5 53.34) (xy 64.77 53.34)
+			(xy 76.2 59.69) (xy 77.47 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2635,9 +2330,9 @@
 		)
 		(uuid "5dab7fd7-27c1-4fcf-98b1-0ebdd1dcdf14")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 180.34) (xy 88.9 182.88)
+			(xy 101.6 186.69) (xy 101.6 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2645,9 +2340,9 @@
 		)
 		(uuid "5fe21e3f-19f0-4c58-82c3-8dbfe4625bd4")
 	)
-	(wire
+(wire
 		(pts
-			(xy 111.76 168.91) (xy 110.49 168.91)
+			(xy 124.46 175.26) (xy 123.19 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2655,9 +2350,9 @@
 		)
 		(uuid "6181d757-eb44-4b1a-9532-c30443662872")
 	)
-	(wire
+(wire
 		(pts
-			(xy 45.72 66.04) (xy 53.34 66.04)
+			(xy 58.42 72.39) (xy 66.04 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2665,9 +2360,9 @@
 		)
 		(uuid "629a5725-0c05-4c39-964b-64f213291d54")
 	)
-	(wire
+(wire
 		(pts
-			(xy 139.7 163.83) (xy 138.43 163.83)
+			(xy 152.4 170.18) (xy 151.13 170.18)
 		)
 		(stroke
 			(width 0)
@@ -2675,9 +2370,9 @@
 		)
 		(uuid "635966e8-3dfc-471e-902d-5b6e164cfffa")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 140.97) (xy 88.9 142.24)
+			(xy 101.6 147.32) (xy 101.6 148.59)
 		)
 		(stroke
 			(width 0)
@@ -2685,9 +2380,9 @@
 		)
 		(uuid "660305e9-13c9-49c0-b90a-5e9f261eb01d")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 83.82) (xy 88.9 85.09)
+			(xy 101.6 90.17) (xy 101.6 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2695,9 +2390,9 @@
 		)
 		(uuid "66dda021-44e1-461b-a53e-fae162067bcc")
 	)
-	(wire
+(wire
 		(pts
-			(xy 36.83 182.88) (xy 39.37 182.88)
+			(xy 49.53 189.23) (xy 52.07 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2705,9 +2400,9 @@
 		)
 		(uuid "67496073-3aa5-4813-982c-79449b8f7d0f")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 152.4) (xy 88.9 168.91)
+			(xy 101.6 158.75) (xy 101.6 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2715,9 +2410,9 @@
 		)
 		(uuid "67d54183-a566-47ed-944f-65a5ddf32374")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 67.31) (xy 88.9 83.82)
+			(xy 101.6 73.66) (xy 101.6 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2725,9 +2420,9 @@
 		)
 		(uuid "72a02401-1071-409f-885d-59fa04e728ce")
 	)
-	(wire
+(wire
 		(pts
-			(xy 128.27 151.13) (xy 128.27 152.4)
+			(xy 140.97 157.48) (xy 140.97 158.75)
 		)
 		(stroke
 			(width 0)
@@ -2735,9 +2430,9 @@
 		)
 		(uuid "7537219d-2891-414c-ba80-e39c9d48c028")
 	)
-	(wire
+(wire
 		(pts
-			(xy 128.27 163.83) (xy 110.49 163.83)
+			(xy 140.97 170.18) (xy 123.19 170.18)
 		)
 		(stroke
 			(width 0)
@@ -2745,9 +2440,9 @@
 		)
 		(uuid "76ecd376-928e-4b31-aff5-3a7f9572e523")
 	)
-	(wire
+(wire
 		(pts
-			(xy 110.49 40.64) (xy 113.03 40.64)
+			(xy 123.19 46.99) (xy 125.73 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2755,9 +2450,9 @@
 		)
 		(uuid "77fa6ef4-8177-4913-b4dc-ee73f1972e25")
 	)
-	(wire
+(wire
 		(pts
-			(xy 26.67 55.88) (xy 27.94 55.88)
+			(xy 39.37 62.23) (xy 40.64 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2765,9 +2460,9 @@
 		)
 		(uuid "7e356c43-f2f4-4d16-8551-a90b42f8bf29")
 	)
-	(wire
+(wire
 		(pts
-			(xy 110.49 168.91) (xy 100.33 168.91)
+			(xy 123.19 175.26) (xy 113.03 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2775,9 +2470,9 @@
 		)
 		(uuid "7fc558c9-6f4f-47b9-adff-89d0068eb7b5")
 	)
-	(wire
+(wire
 		(pts
-			(xy 26.67 78.74) (xy 26.67 77.47)
+			(xy 39.37 85.09) (xy 39.37 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2785,9 +2480,9 @@
 		)
 		(uuid "8008f7fa-c5d6-46a8-9e96-665702cf69d5")
 	)
-	(wire
+(wire
 		(pts
-			(xy 25.4 55.88) (xy 26.67 55.88)
+			(xy 38.1 62.23) (xy 39.37 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2795,9 +2490,9 @@
 		)
 		(uuid "8193ef9f-f502-436d-80c7-7d2e2c407ca0")
 	)
-	(wire
+(wire
 		(pts
-			(xy 128.27 77.47) (xy 128.27 78.74)
+			(xy 140.97 83.82) (xy 140.97 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2805,9 +2500,9 @@
 		)
 		(uuid "81a9be4b-4293-4a13-9426-4755e7575d45")
 	)
-	(wire
+(wire
 		(pts
-			(xy 139.7 64.77) (xy 139.7 78.74)
+			(xy 152.4 71.12) (xy 152.4 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2815,9 +2510,9 @@
 		)
 		(uuid "81e0ecea-1159-4c6c-9c9e-bb105d585607")
 	)
-	(wire
+(wire
 		(pts
-			(xy 36.83 168.91) (xy 25.4 168.91)
+			(xy 49.53 175.26) (xy 38.1 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2825,9 +2520,9 @@
 		)
 		(uuid "84835d77-f454-4a49-83aa-c0a64191c590")
 	)
-	(wire
+(wire
 		(pts
-			(xy 128.27 78.74) (xy 110.49 78.74)
+			(xy 140.97 85.09) (xy 123.19 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2835,10 +2530,9 @@
 		)
 		(uuid "87ac44a0-0530-4211-8c14-8fcb4c50b8a4")
 	)
-
-	(wire
+(wire
 		(pts
-			(xy 88.9 95.25) (xy 88.9 97.79)
+			(xy 101.6 101.6) (xy 101.6 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2846,9 +2540,9 @@
 		)
 		(uuid "8a68e790-482a-4c65-b3ec-6166b643f81b")
 	)
-	(wire
+(wire
 		(pts
-			(xy 139.7 163.83) (xy 139.7 167.64)
+			(xy 152.4 170.18) (xy 152.4 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2856,9 +2550,9 @@
 		)
 		(uuid "947a463f-4cb6-411d-bd02-07eb1d36dff4")
 	)
-	(wire
+(wire
 		(pts
-			(xy 64.77 162.56) (xy 64.77 163.83)
+			(xy 77.47 168.91) (xy 77.47 170.18)
 		)
 		(stroke
 			(width 0)
@@ -2866,9 +2560,9 @@
 		)
 		(uuid "9875e7d8-39a8-46d0-ac3d-112d679ae0b5")
 	)
-	(wire
+(wire
 		(pts
-			(xy 45.72 40.64) (xy 48.26 40.64)
+			(xy 58.42 46.99) (xy 60.96 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2876,9 +2570,9 @@
 		)
 		(uuid "98bd3ccb-28a5-475d-8411-4913c729e709")
 	)
-	(wire
+(wire
 		(pts
-			(xy 69.85 157.48) (xy 76.2 157.48)
+			(xy 82.55 163.83) (xy 88.9 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2886,10 +2580,9 @@
 		)
 		(uuid "98d3d8b8-4a72-4f59-b8c3-62ca989a08ec")
 	)
-
-	(wire
+(wire
 		(pts
-			(xy 100.33 168.91) (xy 88.9 168.91)
+			(xy 113.03 175.26) (xy 101.6 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2897,9 +2590,9 @@
 		)
 		(uuid "a130c29b-6e12-4464-bdbc-ee525848619b")
 	)
-	(wire
+(wire
 		(pts
-			(xy 26.67 57.15) (xy 26.67 55.88)
+			(xy 39.37 63.5) (xy 39.37 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2907,9 +2600,9 @@
 		)
 		(uuid "a48277af-7ebc-4476-920d-45adac27b2e4")
 	)
-	(wire
+(wire
 		(pts
-			(xy 123.19 125.73) (xy 124.46 125.73)
+			(xy 135.89 132.08) (xy 137.16 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2917,9 +2610,9 @@
 		)
 		(uuid "a6991c6f-8c80-4341-a2b3-06eb5b622399")
 	)
-	(wire
+(wire
 		(pts
-			(xy 69.85 135.89) (xy 69.85 140.97)
+			(xy 82.55 142.24) (xy 82.55 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2927,9 +2620,9 @@
 		)
 		(uuid "a92d6e03-6107-442f-9604-3e3eafb48578")
 	)
-	(wire
+(wire
 		(pts
-			(xy 38.1 91.44) (xy 40.64 91.44)
+			(xy 50.8 97.79) (xy 53.34 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2937,9 +2630,9 @@
 		)
 		(uuid "a9e6bd1c-d4b1-477e-8f17-a6b4938f469d")
 	)
-	(wire
+(wire
 		(pts
-			(xy 91.44 135.89) (xy 92.71 135.89)
+			(xy 104.14 142.24) (xy 105.41 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2947,9 +2640,9 @@
 		)
 		(uuid "ab0f2485-c972-47de-bc26-809a055eb82b")
 	)
-	(wire
+(wire
 		(pts
-			(xy 111.76 83.82) (xy 110.49 83.82)
+			(xy 124.46 90.17) (xy 123.19 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2957,9 +2650,9 @@
 		)
 		(uuid "ab756f58-0175-4117-ac93-75374eb48c45")
 	)
-	(wire
+(wire
 		(pts
-			(xy 64.77 151.13) (xy 64.77 152.4)
+			(xy 77.47 157.48) (xy 77.47 158.75)
 		)
 		(stroke
 			(width 0)
@@ -2967,9 +2660,9 @@
 		)
 		(uuid "b4f48c8a-30b4-4969-a3cb-3717d7ed2ea1")
 	)
-	(wire
+(wire
 		(pts
-			(xy 100.33 182.88) (xy 102.87 182.88)
+			(xy 113.03 189.23) (xy 115.57 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2977,9 +2670,9 @@
 		)
 		(uuid "b5b7d05a-408f-472a-9b9a-2653c2ad7b67")
 	)
-	(wire
+(wire
 		(pts
-			(xy 87.63 140.97) (xy 88.9 140.97)
+			(xy 100.33 147.32) (xy 101.6 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2987,9 +2680,9 @@
 		)
 		(uuid "b75eecbb-fe71-49d5-9675-6fe67e385c96")
 	)
-	(wire
+(wire
 		(pts
-			(xy 27.94 135.89) (xy 29.21 135.89)
+			(xy 40.64 142.24) (xy 41.91 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2997,9 +2690,9 @@
 		)
 		(uuid "b86978d4-faa9-4929-b427-da15f8270af0")
 	)
-	(wire
+(wire
 		(pts
-			(xy 76.2 157.48) (xy 76.2 163.83)
+			(xy 88.9 163.83) (xy 88.9 170.18)
 		)
 		(stroke
 			(width 0)
@@ -3007,9 +2700,9 @@
 		)
 		(uuid "b86b2689-3fb6-4cd4-be23-adf0f1a413b4")
 	)
-	(wire
+(wire
 		(pts
-			(xy 87.63 55.88) (xy 88.9 55.88)
+			(xy 100.33 62.23) (xy 101.6 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3017,10 +2710,9 @@
 		)
 		(uuid "bd0f9667-f024-40a7-a59c-d4be622c0d2c")
 	)
-
-	(wire
+(wire
 		(pts
-			(xy 128.27 162.56) (xy 128.27 163.83)
+			(xy 140.97 168.91) (xy 140.97 170.18)
 		)
 		(stroke
 			(width 0)
@@ -3028,9 +2720,9 @@
 		)
 		(uuid "c43b58ef-1aaa-43a3-8430-15b1911f10e9")
 	)
-	(wire
+(wire
 		(pts
-			(xy 100.33 168.91) (xy 100.33 170.18)
+			(xy 113.03 175.26) (xy 113.03 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3038,9 +2730,9 @@
 		)
 		(uuid "c5a59e84-015d-4101-aecd-b71d0cbbcd73")
 	)
-	(wire
+(wire
 		(pts
-			(xy 128.27 135.89) (xy 139.7 135.89)
+			(xy 140.97 142.24) (xy 152.4 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3048,9 +2740,9 @@
 		)
 		(uuid "c9ef5aa7-1f04-4af0-b35b-1f3bee25932f")
 	)
-	(wire
+(wire
 		(pts
-			(xy 139.7 135.89) (xy 139.7 139.7)
+			(xy 152.4 142.24) (xy 152.4 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3058,9 +2750,9 @@
 		)
 		(uuid "cbf7d439-800e-45bb-9d5b-a1caa87c1137")
 	)
-	(wire
+(wire
 		(pts
-			(xy 64.77 163.83) (xy 46.99 163.83)
+			(xy 77.47 170.18) (xy 59.69 170.18)
 		)
 		(stroke
 			(width 0)
@@ -3068,9 +2760,9 @@
 		)
 		(uuid "cf58f025-2998-4ade-85a3-e6d590122674")
 	)
-	(wire
+(wire
 		(pts
-			(xy 25.4 182.88) (xy 25.4 184.15)
+			(xy 38.1 189.23) (xy 38.1 190.5)
 		)
 		(stroke
 			(width 0)
@@ -3078,20 +2770,9 @@
 		)
 		(uuid "d2eca1d8-7318-485c-ae0b-a5648d4c77c8")
 	)
-	(polyline
+(wire
 		(pts
-			(xy 156.21 35.56) (xy 278.13 35.56)
-		)
-		(stroke
-			(width 0.18)
-			(type solid)
-			(color 0 100 110 1)
-		)
-		(uuid "d329e44a-2e3d-4838-998a-6d6cec67e6a3")
-	)
-	(wire
-		(pts
-			(xy 64.77 135.89) (xy 69.85 135.89)
+			(xy 77.47 142.24) (xy 82.55 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3099,9 +2780,9 @@
 		)
 		(uuid "d508486f-50e2-4707-a96c-14bfeee71e26")
 	)
-	(wire
+(wire
 		(pts
-			(xy 107.95 40.64) (xy 110.49 40.64)
+			(xy 120.65 46.99) (xy 123.19 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3109,9 +2790,9 @@
 		)
 		(uuid "d7f843a6-e192-43ea-993d-b7355a694af8")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 97.79) (xy 88.9 99.06)
+			(xy 101.6 104.14) (xy 101.6 105.41)
 		)
 		(stroke
 			(width 0)
@@ -3119,9 +2800,9 @@
 		)
 		(uuid "d8bc13af-a34e-411f-93f2-ab03a6f2e073")
 	)
-	(wire
+(wire
 		(pts
-			(xy 25.4 50.8) (xy 27.94 50.8)
+			(xy 38.1 57.15) (xy 40.64 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3129,9 +2810,9 @@
 		)
 		(uuid "d9c788a7-18cd-4010-8b94-70a4a001c81b")
 	)
-	(wire
+(wire
 		(pts
-			(xy 38.1 78.74) (xy 26.67 78.74)
+			(xy 50.8 85.09) (xy 39.37 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3139,9 +2820,9 @@
 		)
 		(uuid "de9d0f06-5395-4631-9e89-faebc79f7ea7")
 	)
-	(wire
+(wire
 		(pts
-			(xy 123.19 40.64) (xy 124.46 40.64)
+			(xy 135.89 46.99) (xy 137.16 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3149,9 +2830,9 @@
 		)
 		(uuid "dfc68f9d-3031-4fdc-8045-3b5d4dcf5035")
 	)
-	(wire
+(wire
 		(pts
-			(xy 26.67 91.44) (xy 38.1 91.44)
+			(xy 39.37 97.79) (xy 50.8 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3159,9 +2840,9 @@
 		)
 		(uuid "e2b0b641-e7a8-470e-b4a5-36ca86a30ab8")
 	)
-	(wire
+(wire
 		(pts
-			(xy 46.99 161.29) (xy 46.99 163.83)
+			(xy 59.69 167.64) (xy 59.69 170.18)
 		)
 		(stroke
 			(width 0)
@@ -3169,9 +2850,9 @@
 		)
 		(uuid "e392ba38-6a82-461b-ae16-708ac8836388")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 97.79) (xy 100.33 97.79)
+			(xy 101.6 104.14) (xy 113.03 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3179,9 +2860,9 @@
 		)
 		(uuid "e40d59c3-4419-4788-b9b2-6407fc9e8021")
 	)
-	(wire
+(wire
 		(pts
-			(xy 76.2 163.83) (xy 76.2 167.64)
+			(xy 88.9 170.18) (xy 88.9 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3189,9 +2870,9 @@
 		)
 		(uuid "e446ab0b-98b1-45f9-b7f9-ecf070919a9f")
 	)
-	(wire
+(wire
 		(pts
-			(xy 26.67 91.44) (xy 26.67 92.71)
+			(xy 39.37 97.79) (xy 39.37 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3199,9 +2880,9 @@
 		)
 		(uuid "e9be06e6-42b3-422c-af29-22b0060d7e59")
 	)
-	(wire
+(wire
 		(pts
-			(xy 54.61 182.88) (xy 55.88 182.88)
+			(xy 67.31 189.23) (xy 68.58 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3209,9 +2890,9 @@
 		)
 		(uuid "ea6b68cd-77be-4d7a-b15c-5ec5ffd8dd25")
 	)
-	(wire
+(wire
 		(pts
-			(xy 139.7 149.86) (xy 139.7 163.83)
+			(xy 152.4 156.21) (xy 152.4 170.18)
 		)
 		(stroke
 			(width 0)
@@ -3219,9 +2900,9 @@
 		)
 		(uuid "eba78218-e9d3-489c-818b-dd21ff70b4fc")
 	)
-	(wire
+(wire
 		(pts
-			(xy 118.11 182.88) (xy 119.38 182.88)
+			(xy 130.81 189.23) (xy 132.08 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3229,9 +2910,9 @@
 		)
 		(uuid "ec869709-0847-47dc-a92f-a13dbb97f5ae")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 168.91) (xy 88.9 170.18)
+			(xy 101.6 175.26) (xy 101.6 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3239,9 +2920,9 @@
 		)
 		(uuid "ee061c3d-77ac-40e6-8358-19c2e87c6f3f")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 182.88) (xy 100.33 182.88)
+			(xy 101.6 189.23) (xy 113.03 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3249,9 +2930,9 @@
 		)
 		(uuid "eea95400-52c4-4722-b8d6-31ca19acddaf")
 	)
-	(wire
+(wire
 		(pts
-			(xy 25.4 182.88) (xy 36.83 182.88)
+			(xy 38.1 189.23) (xy 49.53 189.23)
 		)
 		(stroke
 			(width 0)
@@ -3259,9 +2940,9 @@
 		)
 		(uuid "eee41a49-ba90-4329-935a-cf7cf91b7af2")
 	)
-	(wire
+(wire
 		(pts
-			(xy 38.1 78.74) (xy 38.1 80.01)
+			(xy 50.8 85.09) (xy 50.8 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3269,9 +2950,9 @@
 		)
 		(uuid "f63510ca-71d4-483d-b57f-2933824badee")
 	)
-	(wire
+(wire
 		(pts
-			(xy 110.49 161.29) (xy 110.49 163.83)
+			(xy 123.19 167.64) (xy 123.19 170.18)
 		)
 		(stroke
 			(width 0)
@@ -3279,9 +2960,9 @@
 		)
 		(uuid "f8f41db6-d8f9-4cd3-8f0f-2d6c4e07b9d5")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 55.88) (xy 92.71 55.88)
+			(xy 101.6 62.23) (xy 105.41 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3289,9 +2970,9 @@
 		)
 		(uuid "f9aa3f93-502f-42d7-9070-6a393539774d")
 	)
-	(wire
+(wire
 		(pts
-			(xy 107.95 125.73) (xy 110.49 125.73)
+			(xy 120.65 132.08) (xy 123.19 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3299,9 +2980,9 @@
 		)
 		(uuid "fa95456d-959b-4d4f-8a52-a05c9d3095a5")
 	)
-	(wire
+(wire
 		(pts
-			(xy 118.11 97.79) (xy 119.38 97.79)
+			(xy 130.81 104.14) (xy 132.08 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3309,9 +2990,9 @@
 		)
 		(uuid "fc7bde29-8012-47c9-813c-348ca2524366")
 	)
-	(wire
+(wire
 		(pts
-			(xy 88.9 55.88) (xy 88.9 57.15)
+			(xy 101.6 62.23) (xy 101.6 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3319,9 +3000,9 @@
 		)
 		(uuid "fd16fb26-37d8-47de-a1a4-b754f96ea956")
 	)
-	(global_label "AON_RAW"
+(global_label "AON_RAW"
 		(shape input)
-		(at 91.44 50.8 180)
+		(at 104.14 57.15 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3330,7 +3011,7 @@
 		)
 		(uuid "084c273b-1283-426e-8211-a42c5309c095")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.44 50.8 0)
+			(at 104.14 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3341,9 +3022,9 @@
 			)
 		)
 	)
-	(global_label "SYS3V3"
+(global_label "SYS3V3"
 		(shape input)
-		(at 87.63 140.97 180)
+		(at 100.33 147.32 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3352,7 +3033,7 @@
 		)
 		(uuid "1255df19-5a55-4948-bcc3-740d4a81fa11")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 87.63 140.97 0)
+			(at 100.33 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3363,9 +3044,9 @@
 			)
 		)
 	)
-	(global_label "MON_I_USB"
+(global_label "MON_I_USB"
 		(shape input)
-		(at 76.2 167.64 270)
+		(at 88.9 173.99 270)
 		(effects
 			(font
 				(size 1 1)
@@ -3374,7 +3055,7 @@
 		)
 		(uuid "12fb1b50-f858-4792-89eb-a6cbe34e2be2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.2 167.64 90)
+			(at 88.9 173.99 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3385,9 +3066,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 44.45 125.73 180)
+		(at 57.15 132.08 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3396,7 +3077,7 @@
 		)
 		(uuid "18bb619d-38e6-4ccb-b26a-83b9f31f1a21")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.45 125.73 90)
+			(at 57.15 132.08 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3407,9 +3088,9 @@
 			)
 		)
 	)
-	(global_label "MON_V_AON"
+(global_label "MON_V_AON"
 		(shape input)
-		(at 111.76 83.82 0)
+		(at 124.46 90.17 0)
 		(effects
 			(font
 				(size 1 1)
@@ -3418,7 +3099,7 @@
 		)
 		(uuid "36052fc3-a57e-4f90-bfeb-2a47b3300d2e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.76 83.82 0)
+			(at 124.46 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3429,9 +3110,9 @@
 			)
 		)
 	)
-	(global_label "MON_I_SYS"
+(global_label "MON_I_SYS"
 		(shape input)
-		(at 139.7 167.64 270)
+		(at 152.4 173.99 270)
 		(effects
 			(font
 				(size 1 1)
@@ -3440,7 +3121,7 @@
 		)
 		(uuid "4eba6e6f-e981-494a-9a0f-0fdd2a3b8190")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.7 167.64 90)
+			(at 152.4 173.99 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3451,9 +3132,9 @@
 			)
 		)
 	)
-	(global_label "USB5"
+(global_label "USB5"
 		(shape input)
-		(at 24.13 140.97 180)
+		(at 36.83 147.32 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3462,7 +3143,7 @@
 		)
 		(uuid "5b850bd9-535b-4a4f-a083-298fccdeceb5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 24.13 140.97 0)
+			(at 36.83 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3473,9 +3154,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 87.63 55.88 180)
+		(at 100.33 62.23 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3484,7 +3165,7 @@
 		)
 		(uuid "5cef937a-e9b2-4212-b73c-88e072b914db")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 87.63 55.88 0)
+			(at 100.33 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3495,9 +3176,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 55.88 91.44 0)
+		(at 68.58 97.79 0)
 		(effects
 			(font
 				(size 1 1)
@@ -3506,7 +3187,7 @@
 		)
 		(uuid "5d15e5be-f791-4176-8031-2059ffc90b38")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.88 91.44 90)
+			(at 68.58 97.79 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3517,9 +3198,9 @@
 			)
 		)
 	)
-	(global_label "USB_RAW"
+(global_label "USB_RAW"
 		(shape input)
-		(at 27.94 135.89 180)
+		(at 40.64 142.24 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3528,7 +3209,7 @@
 		)
 		(uuid "5e4b12ad-b71d-4bb3-851a-48ad46d02dad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 27.94 135.89 0)
+			(at 40.64 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3539,9 +3220,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 43.18 40.64 180)
+		(at 55.88 46.99 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3550,7 +3231,7 @@
 		)
 		(uuid "60fda5a2-1e3f-40e2-8b20-f062ae3366f1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 43.18 40.64 90)
+			(at 55.88 46.99 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3561,9 +3242,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 119.38 182.88 0)
+		(at 132.08 189.23 0)
 		(effects
 			(font
 				(size 1 1)
@@ -3572,7 +3253,7 @@
 		)
 		(uuid "6d39994c-7ad2-4f36-96f7-4089fa9d4ebe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 119.38 182.88 90)
+			(at 132.08 189.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3583,9 +3264,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 107.95 40.64 180)
+		(at 120.65 46.99 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3594,7 +3275,7 @@
 		)
 		(uuid "746e2a0c-d84b-432d-89b6-78e134873cfc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.95 40.64 90)
+			(at 120.65 46.99 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3605,9 +3286,9 @@
 			)
 		)
 	)
-	(global_label "OC_OK_N"
+(global_label "OC_OK_N"
 		(shape input)
-		(at 64.77 140.97 270)
+		(at 77.47 147.32 270)
 		(effects
 			(font
 				(size 1 1)
@@ -3616,7 +3297,7 @@
 		)
 		(uuid "864e2ab9-7c96-4a0a-a990-834afa9e433e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.77 140.97 90)
+			(at 77.47 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3627,9 +3308,9 @@
 			)
 		)
 	)
-	(global_label "MON_I_AON"
+(global_label "MON_I_AON"
 		(shape input)
-		(at 139.7 82.55 270)
+		(at 152.4 88.9 270)
 		(effects
 			(font
 				(size 1 1)
@@ -3638,7 +3319,7 @@
 		)
 		(uuid "8911be93-393f-4d12-be7c-43effb71f935")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.7 82.55 90)
+			(at 152.4 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3649,9 +3330,9 @@
 			)
 		)
 	)
-	(global_label "SYS_RAW"
+(global_label "SYS_RAW"
 		(shape input)
-		(at 91.44 135.89 180)
+		(at 104.14 142.24 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3660,7 +3341,7 @@
 		)
 		(uuid "8c9a645c-943b-41b5-bf98-9870aed6b6c6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.44 135.89 0)
+			(at 104.14 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3671,9 +3352,9 @@
 			)
 		)
 	)
-	(global_label "MON_V_USB"
+(global_label "MON_V_USB"
 		(shape input)
-		(at 48.26 168.91 0)
+		(at 60.96 175.26 0)
 		(effects
 			(font
 				(size 1 1)
@@ -3682,7 +3363,7 @@
 		)
 		(uuid "94004995-e6ea-4e4b-905b-9e5756133471")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.26 168.91 0)
+			(at 60.96 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3693,9 +3374,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 107.95 125.73 180)
+		(at 120.65 132.08 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3704,7 +3385,7 @@
 		)
 		(uuid "a0de6a4e-a3e1-4f3c-88b3-6ccced7a19a2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.95 125.73 90)
+			(at 120.65 132.08 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3715,9 +3396,9 @@
 			)
 		)
 	)
-	(global_label "MON_V_SYS"
+(global_label "MON_V_SYS"
 		(shape input)
-		(at 111.76 168.91 0)
+		(at 124.46 175.26 0)
 		(effects
 			(font
 				(size 1 1)
@@ -3726,7 +3407,7 @@
 		)
 		(uuid "a5a5b480-f8f8-4c70-9b7e-aecdb0a10a0f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.76 168.91 0)
+			(at 124.46 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3737,9 +3418,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 119.38 97.79 0)
+		(at 132.08 104.14 0)
 		(effects
 			(font
 				(size 1 1)
@@ -3748,7 +3429,7 @@
 		)
 		(uuid "ab2175a1-f32c-4d66-9e7c-ee3aee77a302")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 119.38 97.79 90)
+			(at 132.08 104.14 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3759,9 +3440,9 @@
 			)
 		)
 	)
-	(global_label "MON_V_INPUT"
+(global_label "MON_V_INPUT"
 		(shape input)
-		(at 48.26 73.66 0)
+		(at 60.96 80.01 0)
 		(effects
 			(font
 				(size 1 1)
@@ -3770,7 +3451,7 @@
 		)
 		(uuid "be219159-546f-4ec4-8358-1d32d1964a6d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.26 73.66 0)
+			(at 60.96 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3781,9 +3462,9 @@
 			)
 		)
 	)
-	(global_label "OC_OK_N"
+(global_label "OC_OK_N"
 		(shape input)
-		(at 128.27 140.97 270)
+		(at 140.97 147.32 270)
 		(effects
 			(font
 				(size 1 1)
@@ -3792,7 +3473,7 @@
 		)
 		(uuid "c2ddf11f-0f64-4936-a865-3174455e27b4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.27 140.97 90)
+			(at 140.97 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3803,9 +3484,9 @@
 			)
 		)
 	)
-	(global_label "OC_OK_N"
+(global_label "OC_OK_N"
 		(shape input)
-		(at 128.27 55.88 270)
+		(at 140.97 62.23 270)
 		(effects
 			(font
 				(size 1 1)
@@ -3814,7 +3495,7 @@
 		)
 		(uuid "d2f10666-f5ae-48d3-a5a6-aac27f4e591e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.27 55.88 90)
+			(at 140.97 62.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3825,9 +3506,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 55.88 182.88 0)
+		(at 68.58 189.23 0)
 		(effects
 			(font
 				(size 1 1)
@@ -3836,7 +3517,7 @@
 		)
 		(uuid "d6d10725-c44c-4beb-8bc8-72564be8e4d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.88 182.88 90)
+			(at 68.58 189.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3847,9 +3528,9 @@
 			)
 		)
 	)
-	(global_label "BUS24"
+(global_label "BUS24"
 		(shape input)
-		(at 25.4 55.88 180)
+		(at 38.1 62.23 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3858,7 +3539,7 @@
 		)
 		(uuid "dd6ea7de-60aa-40a4-ac5f-8c942343e188")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 25.4 55.88 0)
+			(at 38.1 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3869,9 +3550,9 @@
 			)
 		)
 	)
-	(global_label "MON_I_INPUT"
+(global_label "MON_I_INPUT"
 		(shape input)
-		(at 64.77 69.85 270)
+		(at 77.47 76.2 270)
 		(effects
 			(font
 				(size 1 1)
@@ -3880,7 +3561,7 @@
 		)
 		(uuid "f2429e28-8d15-4b01-909e-535864c3e019")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.77 69.85 90)
+			(at 77.47 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3891,9 +3572,9 @@
 			)
 		)
 	)
-	(global_label "BUS24_PRE_SHUNT"
+(global_label "BUS24_PRE_SHUNT"
 		(shape input)
-		(at 25.4 50.8 90)
+		(at 38.1 57.15 90)
 		(effects
 			(font
 				(size 1 1)
@@ -3902,7 +3583,7 @@
 		)
 		(uuid "f33b6971-c290-4c29-ac3c-3a3a55357461")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 25.4 50.8 90)
+			(at 38.1 57.15 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3913,9 +3594,9 @@
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R71A103KA01D")
-		(at 133.35 78.74 180)
+		(at 146.05 85.09 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3924,8 +3605,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1355d9e6-5244-41f0-957f-17a61b1c3b6e")
-		(property "Reference" "C490001"
-			(at 139.7 77.47 0)
+		(property "Reference" "C450001"
+			(at 152.4 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3936,7 +3617,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 138.43 80.01 0)
+			(at 151.13 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3947,7 +3628,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 133.35 78.74 0)
+			(at 146.05 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3958,7 +3639,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 78.74 0)
+			(at 146.05 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3969,7 +3650,7 @@
 			)
 		)
 		(property "Description" "MLCC, 10nF, 10V, X7R, 0201"
-			(at 133.35 78.74 0)
+			(at 146.05 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3980,7 +3661,7 @@
 			)
 		)
 		(property "MPN" "GRM033R71A103KA01D"
-			(at 133.35 78.74 0)
+			(at 146.05 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3991,7 +3672,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 133.35 78.74 0)
+			(at 146.05 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4002,7 +3683,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 133.35 78.74 0)
+			(at 146.05 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4013,7 +3694,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 133.35 78.74 0)
+			(at 146.05 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4024,7 +3705,7 @@
 			)
 		)
 		(property "dielectric" "X7R"
-			(at 133.35 78.74 0)
+			(at 146.05 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4043,15 +3724,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "C490001")
+					(reference "C450001")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:D_BAT54S_215")
-		(at 110.49 182.88 0)
+		(at 123.19 189.23 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -4061,8 +3742,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "13813d06-5a00-4986-bd72-2c3138c7b8b4")
-		(property "Reference" "D490001"
-			(at 111.76 176.53 0)
+		(property "Reference" "D450001"
+			(at 124.46 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4073,7 +3754,7 @@
 			)
 		)
 		(property "Value" "BAT54S"
-			(at 111.76 179.07 0)
+			(at 124.46 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4084,7 +3765,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:SOT-23"
-			(at 110.49 182.88 0)
+			(at 123.19 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4095,7 +3776,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54S.pdf"
-			(at 110.49 182.88 0)
+			(at 123.19 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4106,7 +3787,7 @@
 			)
 		)
 		(property "Description" "Dual series Schottky clamp for INPUT voltage sense, 30 V, SOT-23"
-			(at 110.49 182.88 0)
+			(at 123.19 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4117,7 +3798,7 @@
 			)
 		)
 		(property "MPN" "BAT54S,215"
-			(at 110.49 182.88 0)
+			(at 123.19 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4128,7 +3809,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
-			(at 110.49 182.88 0)
+			(at 123.19 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4139,7 +3820,7 @@
 			)
 		)
 		(property "role" "voltage_mux_input_clamp"
-			(at 110.49 182.88 0)
+			(at 123.19 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4150,7 +3831,7 @@
 			)
 		)
 		(property "channel_tag" "INPUT"
-			(at 110.49 182.88 0)
+			(at 123.19 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4172,15 +3853,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "D490001")
+					(reference "D450001")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R71A103KA01D")
-		(at 69.85 163.83 180)
+		(at 82.55 170.18 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4189,8 +3870,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "19284019-1724-47cd-b876-546c3b7722ea")
-		(property "Reference" "C490002"
-			(at 76.2 162.56 0)
+		(property "Reference" "C450002"
+			(at 88.9 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4201,7 +3882,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 74.93 165.1 0)
+			(at 87.63 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4212,7 +3893,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 69.85 163.83 0)
+			(at 82.55 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4223,7 +3904,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 163.83 0)
+			(at 82.55 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4234,7 +3915,7 @@
 			)
 		)
 		(property "Description" "MLCC, 10nF, 10V, X7R, 0201"
-			(at 69.85 163.83 0)
+			(at 82.55 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4245,7 +3926,7 @@
 			)
 		)
 		(property "MPN" "GRM033R71A103KA01D"
-			(at 69.85 163.83 0)
+			(at 82.55 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4256,7 +3937,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 69.85 163.83 0)
+			(at 82.55 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4267,7 +3948,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 69.85 163.83 0)
+			(at 82.55 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4278,7 +3959,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 69.85 163.83 0)
+			(at 82.55 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4289,7 +3970,7 @@
 			)
 		)
 		(property "dielectric" "X7R"
-			(at 69.85 163.83 0)
+			(at 82.55 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4308,15 +3989,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "C490002")
+					(reference "C450002")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
-		(at 88.9 90.17 270)
+		(at 101.6 96.52 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4325,8 +4006,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1b17732b-e622-47ff-aea5-236f332acb66")
-		(property "Reference" "R490001"
-			(at 90.17 88.9 90)
+		(property "Reference" "R450001"
+			(at 102.87 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4337,7 +4018,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 90.17 91.44 90)
+			(at 102.87 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4348,7 +4029,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 88.9 90.17 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4359,7 +4040,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 90.17 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4370,7 +4051,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
-			(at 88.9 90.17 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4381,7 +4062,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1002C"
-			(at 88.9 90.17 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4392,7 +4073,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 88.9 90.17 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4403,7 +4084,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 88.9 90.17 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4414,7 +4095,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 88.9 90.17 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4433,15 +4114,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490001")
+					(reference "R450001")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
-		(at 88.9 62.23 90)
+		(at 101.6 68.58 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4450,8 +4131,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1d34ec6a-351e-43e2-b278-3201e1694d5f")
-		(property "Reference" "R490002"
-			(at 92.7567 61.2872 90)
+		(property "Reference" "R450002"
+			(at 105.4567 67.6372 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4461,7 +4142,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 92.71 63.5 90)
+			(at 105.41 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4471,7 +4152,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 88.9 62.23 0)
+			(at 101.6 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4482,7 +4163,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 62.23 0)
+			(at 101.6 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4493,7 +4174,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
-			(at 88.9 62.23 0)
+			(at 101.6 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4504,7 +4185,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1002C"
-			(at 88.9 62.23 0)
+			(at 101.6 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4515,7 +4196,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 88.9 62.23 0)
+			(at 101.6 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4526,7 +4207,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 88.9 62.23 0)
+			(at 101.6 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4537,7 +4218,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 88.9 62.23 0)
+			(at 101.6 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4556,15 +4237,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490002")
+					(reference "R450002")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R61A104KE15D")
-		(at 53.34 40.64 0)
+		(at 66.04 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4573,8 +4254,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "23f86414-e9f6-4280-93e9-2c49f3f6cb8b")
-		(property "Reference" "C490003"
-			(at 57.15 39.37 0)
+		(property "Reference" "C450003"
+			(at 69.85 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4584,7 +4265,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 57.15 41.91 0)
+			(at 69.85 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4594,7 +4275,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 53.34 40.64 0)
+			(at 66.04 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4605,7 +4286,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 40.64 0)
+			(at 66.04 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4616,7 +4297,7 @@
 			)
 		)
 		(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
-			(at 53.34 40.64 0)
+			(at 66.04 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4627,7 +4308,7 @@
 			)
 		)
 		(property "MPN" "GRM033R61A104KE15D"
-			(at 53.34 40.64 0)
+			(at 66.04 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4638,7 +4319,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 53.34 40.64 0)
+			(at 66.04 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4649,7 +4330,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 53.34 40.64 0)
+			(at 66.04 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4660,7 +4341,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 53.34 40.64 0)
+			(at 66.04 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4671,7 +4352,7 @@
 			)
 		)
 		(property "dielectric" "X5R"
-			(at 53.34 40.64 0)
+			(at 66.04 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4690,15 +4371,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "C490003")
+					(reference "C450003")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:U_INA301A1IDGKR")
-		(at 46.99 143.51 0)
+		(at 59.69 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4707,8 +4388,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "267ac15b-ca87-4763-83c7-93fe853d52df")
-		(property "Reference" "U490001"
-			(at 36.83 129.54 0)
+		(property "Reference" "U450001"
+			(at 49.53 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4718,7 +4399,7 @@
 			)
 		)
 		(property "Value" "INA301A1IDGKR"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4728,7 +4409,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:VSSOP-8_3.0x3.0mm_P0.65mm"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4739,7 +4420,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina301.pdf"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4750,7 +4431,7 @@
 			)
 		)
 		(property "Description" "Current-sense amplifier with hardware comparator, gain 20 V/V, VSSOP-8"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4761,7 +4442,7 @@
 			)
 		)
 		(property "MPN" "INA301A1IDGKR"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4772,7 +4453,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4783,7 +4464,7 @@
 			)
 		)
 		(property "channel" "1"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4794,7 +4475,7 @@
 			)
 		)
 		(property "tag" "AON"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4805,7 +4486,7 @@
 			)
 		)
 		(property "shunt_ohm" "0.1"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4816,7 +4497,7 @@
 			)
 		)
 		(property "limit_resistor_ohm" "10000.0"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4827,7 +4508,7 @@
 			)
 		)
 		(property "nominal_trip_A" "0.4"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4838,7 +4519,7 @@
 			)
 		)
 		(property "current_scale_V_per_A" "2.0"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4849,7 +4530,7 @@
 			)
 		)
 		(property "output_floor_max_equivalent_A" "0.015"
-			(at 46.99 143.51 0)
+			(at 59.69 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4886,15 +4567,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "U490001")
+					(reference "U450001")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R71A103KA01D")
-		(at 100.33 90.17 270)
+		(at 113.03 96.52 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4903,8 +4584,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "27e45069-b04e-4e22-a46a-7f2c9b8798ab")
-		(property "Reference" "C490004"
-			(at 103.85 88.74 90)
+		(property "Reference" "C450004"
+			(at 116.55 95.09 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4915,7 +4596,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 103.85 91.28 90)
+			(at 116.55 97.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4926,7 +4607,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 100.33 90.17 0)
+			(at 113.03 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4937,7 +4618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 90.17 0)
+			(at 113.03 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4948,7 +4629,7 @@
 			)
 		)
 		(property "Description" "MLCC, 10nF, 10V, X7R, 0201"
-			(at 100.33 90.17 0)
+			(at 113.03 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4959,7 +4640,7 @@
 			)
 		)
 		(property "MPN" "GRM033R71A103KA01D"
-			(at 100.33 90.17 0)
+			(at 113.03 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4970,7 +4651,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 100.33 90.17 0)
+			(at 113.03 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4981,7 +4662,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 100.33 90.17 0)
+			(at 113.03 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4992,7 +4673,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 100.33 90.17 0)
+			(at 113.03 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5003,7 +4684,7 @@
 			)
 		)
 		(property "dielectric" "X7R"
-			(at 100.33 90.17 0)
+			(at 113.03 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5022,15 +4703,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "C490004")
+					(reference "C450004")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R61A104KE15D")
-		(at 118.11 125.73 0)
+		(at 130.81 132.08 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5039,8 +4720,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b04a51c-f389-4066-b313-14fa5a7d6a24")
-		(property "Reference" "C490005"
-			(at 121.92 124.46 0)
+		(property "Reference" "C450005"
+			(at 134.62 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5050,7 +4731,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 121.92 127 0)
+			(at 134.62 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5060,7 +4741,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 118.11 125.73 0)
+			(at 130.81 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5071,7 +4752,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 125.73 0)
+			(at 130.81 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5082,7 +4763,7 @@
 			)
 		)
 		(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
-			(at 118.11 125.73 0)
+			(at 130.81 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5093,7 +4774,7 @@
 			)
 		)
 		(property "MPN" "GRM033R61A104KE15D"
-			(at 118.11 125.73 0)
+			(at 130.81 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5104,7 +4785,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 118.11 125.73 0)
+			(at 130.81 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5115,7 +4796,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 118.11 125.73 0)
+			(at 130.81 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5126,7 +4807,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 118.11 125.73 0)
+			(at 130.81 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5137,7 +4818,7 @@
 			)
 		)
 		(property "dielectric" "X5R"
-			(at 118.11 125.73 0)
+			(at 130.81 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5156,15 +4837,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "C490005")
+					(reference "C450005")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 124.46 125.73 90)
+		(at 137.16 132.08 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5173,8 +4854,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2c1e8fbd-1017-455b-9b8d-5b58563d71d3")
-		(property "Reference" "#PWR490001"
-			(at 124.46 125.73 0)
+		(property "Reference" "#PWR450001"
+			(at 137.16 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5185,7 +4866,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 125.73 0)
+			(at 140.97 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5195,7 +4876,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 125.73 0)
+			(at 137.16 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5205,7 +4886,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 125.73 0)
+			(at 137.16 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5215,7 +4896,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 125.73 0)
+			(at 137.16 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5230,15 +4911,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490001")
+					(reference "#PWR450001")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
-		(at 26.67 85.09 270)
+		(at 39.37 91.44 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5247,8 +4928,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "330b5fbe-e629-4f51-82e9-bccfffd1bbbc")
-		(property "Reference" "R490003"
-			(at 27.94 83.82 90)
+		(property "Reference" "R450003"
+			(at 40.64 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5259,7 +4940,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 27.94 86.36 90)
+			(at 40.64 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5270,7 +4951,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 26.67 85.09 0)
+			(at 39.37 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5281,7 +4962,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 85.09 0)
+			(at 39.37 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5292,7 +4973,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
-			(at 26.67 85.09 0)
+			(at 39.37 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5303,7 +4984,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1002C"
-			(at 26.67 85.09 0)
+			(at 39.37 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5314,7 +4995,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 26.67 85.09 0)
+			(at 39.37 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5325,7 +5006,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 26.67 85.09 0)
+			(at 39.37 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5336,7 +5017,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 26.67 85.09 0)
+			(at 39.37 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5355,15 +5036,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490003")
+					(reference "R450003")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF7502C")
-		(at 26.67 62.23 90)
+		(at 39.37 68.58 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5372,8 +5053,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "35c56cb9-fddf-4378-a992-08d4b1cf25cb")
-		(property "Reference" "R490004"
-			(at 30.48 60.96 90)
+		(property "Reference" "R450004"
+			(at 43.18 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5383,7 +5064,7 @@
 			)
 		)
 		(property "Value" "75k"
-			(at 30.48 63.5 90)
+			(at 43.18 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5393,7 +5074,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 26.67 62.23 0)
+			(at 39.37 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5404,7 +5085,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 62.23 0)
+			(at 39.37 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5415,7 +5096,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 75k Ohm, +/-1%, 0201"
-			(at 26.67 62.23 0)
+			(at 39.37 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5426,7 +5107,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF7502C"
-			(at 26.67 62.23 0)
+			(at 39.37 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5437,7 +5118,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 26.67 62.23 0)
+			(at 39.37 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5448,7 +5129,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 26.67 62.23 0)
+			(at 39.37 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5459,7 +5140,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 26.67 62.23 0)
+			(at 39.37 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5478,15 +5159,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490004")
+					(reference "R450004")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF7502C")
-		(at 26.67 72.39 270)
+		(at 39.37 78.74 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5495,8 +5176,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "377c6bac-e966-41f4-9345-099924af7974")
-		(property "Reference" "R490005"
-			(at 30.48 71.12 90)
+		(property "Reference" "R450005"
+			(at 43.18 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5506,7 +5187,7 @@
 			)
 		)
 		(property "Value" "75k"
-			(at 30.48 73.66 90)
+			(at 43.18 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5516,7 +5197,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 26.67 72.39 0)
+			(at 39.37 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5527,7 +5208,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 72.39 0)
+			(at 39.37 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5538,7 +5219,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 75k Ohm, +/-1%, 0201"
-			(at 26.67 72.39 0)
+			(at 39.37 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5549,7 +5230,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF7502C"
-			(at 26.67 72.39 0)
+			(at 39.37 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5560,7 +5241,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 26.67 72.39 0)
+			(at 39.37 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5571,7 +5252,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 26.67 72.39 0)
+			(at 39.37 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5582,7 +5263,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 26.67 72.39 0)
+			(at 39.37 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5601,15 +5282,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490005")
+					(reference "R450005")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 110.49 78.74 270)
+		(at 123.19 85.09 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5618,8 +5299,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "49ecbb0d-c0e8-4213-8c8c-96672e921d88")
-		(property "Reference" "#PWR490002"
-			(at 110.49 78.74 0)
+		(property "Reference" "#PWR450002"
+			(at 123.19 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5630,7 +5311,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 78.74 0)
+			(at 119.38 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5640,7 +5321,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 78.74 0)
+			(at 123.19 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5650,7 +5331,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 78.74 0)
+			(at 123.19 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5660,7 +5341,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 110.49 78.74 0)
+			(at 123.19 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5675,15 +5356,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490002")
+					(reference "#PWR450002")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 25.4 184.15 0)
+		(at 38.1 190.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5692,8 +5373,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4fb9b69a-3e58-4ab2-acff-135ee01d18ca")
-		(property "Reference" "#PWR490003"
-			(at 25.4 184.15 0)
+		(property "Reference" "#PWR450003"
+			(at 38.1 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5704,7 +5385,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 187.96 0)
+			(at 38.1 194.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5714,7 +5395,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 184.15 0)
+			(at 38.1 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5724,7 +5405,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 184.15 0)
+			(at 38.1 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5734,7 +5415,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 25.4 184.15 0)
+			(at 38.1 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5749,15 +5430,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490003")
+					(reference "#PWR450003")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 88.9 184.15 0)
+		(at 101.6 190.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5766,8 +5447,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "53b33172-665d-4dc6-bf80-b1c210cc7a6b")
-		(property "Reference" "#PWR490004"
-			(at 88.9 184.15 0)
+		(property "Reference" "#PWR450004"
+			(at 101.6 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5778,7 +5459,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 88.9 187.96 0)
+			(at 101.6 194.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5788,7 +5469,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 184.15 0)
+			(at 101.6 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5798,7 +5479,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 184.15 0)
+			(at 101.6 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5808,7 +5489,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 88.9 184.15 0)
+			(at 101.6 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5823,15 +5504,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490004")
+					(reference "#PWR450004")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:U_INA301A1IDGKR")
-		(at 110.49 143.51 0)
+		(at 123.19 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5840,8 +5521,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5858da51-5141-491a-9e62-6763575a605c")
-		(property "Reference" "U490002"
-			(at 100.33 129.54 0)
+		(property "Reference" "U450002"
+			(at 113.03 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5851,7 +5532,7 @@
 			)
 		)
 		(property "Value" "INA301A1IDGKR"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5861,7 +5542,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:VSSOP-8_3.0x3.0mm_P0.65mm"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5872,7 +5553,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina301.pdf"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5883,7 +5564,7 @@
 			)
 		)
 		(property "Description" "Current-sense amplifier with hardware comparator, gain 20 V/V, VSSOP-8"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5894,7 +5575,7 @@
 			)
 		)
 		(property "MPN" "INA301A1IDGKR"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5905,7 +5586,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5916,7 +5597,7 @@
 			)
 		)
 		(property "channel" "1"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5927,7 +5608,7 @@
 			)
 		)
 		(property "tag" "AON"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5938,7 +5619,7 @@
 			)
 		)
 		(property "shunt_ohm" "0.1"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5949,7 +5630,7 @@
 			)
 		)
 		(property "limit_resistor_ohm" "10000.0"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5960,7 +5641,7 @@
 			)
 		)
 		(property "nominal_trip_A" "0.4"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5971,7 +5652,7 @@
 			)
 		)
 		(property "current_scale_V_per_A" "2.0"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5982,7 +5663,7 @@
 			)
 		)
 		(property "output_floor_max_equivalent_A" "0.015"
-			(at 110.49 143.51 0)
+			(at 123.19 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6019,15 +5700,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "U490002")
+					(reference "U450002")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
-		(at 64.77 157.48 270)
+		(at 77.47 163.83 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6036,8 +5717,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "669026c5-de6f-4996-a979-3d2f26f55e42")
-		(property "Reference" "R490006"
-			(at 58.42 158.75 90)
+		(property "Reference" "R450006"
+			(at 71.12 165.1 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6048,7 +5729,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 59.69 161.29 90)
+			(at 72.39 167.64 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6059,7 +5740,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 64.77 157.48 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6070,7 +5751,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 157.48 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6081,7 +5762,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
-			(at 64.77 157.48 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6092,7 +5773,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1002C"
-			(at 64.77 157.48 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6103,7 +5784,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 64.77 157.48 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6114,7 +5795,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 64.77 157.48 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6125,7 +5806,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 64.77 157.48 0)
+			(at 77.47 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6144,15 +5825,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490006")
+					(reference "R450006")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 92.71 151.13 0)
+		(at 105.41 157.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6161,8 +5842,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66bf8cfe-9716-4c52-9103-e852143029e3")
-		(property "Reference" "#PWR490005"
-			(at 92.71 151.13 0)
+		(property "Reference" "#PWR450005"
+			(at 105.41 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6173,7 +5854,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 154.94 0)
+			(at 106.68 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6183,7 +5864,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 151.13 0)
+			(at 105.41 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6193,7 +5874,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 151.13 0)
+			(at 105.41 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6203,7 +5884,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.71 151.13 0)
+			(at 105.41 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6218,15 +5899,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490005")
+					(reference "#PWR450005")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R71A103KA01D")
-		(at 58.42 66.04 180)
+		(at 71.12 72.39 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6235,8 +5916,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66fcf103-94e6-45bb-a8e3-2290c302e365")
-		(property "Reference" "C490006"
-			(at 57.15 64.77 0)
+		(property "Reference" "C450006"
+			(at 69.85 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6247,7 +5928,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 57.15 67.31 0)
+			(at 69.85 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6258,7 +5939,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 58.42 66.04 0)
+			(at 71.12 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6269,7 +5950,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 66.04 0)
+			(at 71.12 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6280,7 +5961,7 @@
 			)
 		)
 		(property "Description" "MLCC, 10nF, 10V, X7R, 0201"
-			(at 58.42 66.04 0)
+			(at 71.12 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6291,7 +5972,7 @@
 			)
 		)
 		(property "MPN" "GRM033R71A103KA01D"
-			(at 58.42 66.04 0)
+			(at 71.12 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6302,7 +5983,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 58.42 66.04 0)
+			(at 71.12 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6313,7 +5994,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 58.42 66.04 0)
+			(at 71.12 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6324,7 +6005,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 58.42 66.04 0)
+			(at 71.12 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6335,7 +6016,7 @@
 			)
 		)
 		(property "dielectric" "X7R"
-			(at 58.42 66.04 0)
+			(at 71.12 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6354,15 +6035,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "C490006")
+					(reference "C450006")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R61A104KE15D")
-		(at 118.11 40.64 0)
+		(at 130.81 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6371,8 +6052,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6ac605f6-2b3c-428f-afa4-bf1165bf41c4")
-		(property "Reference" "C490007"
-			(at 121.92 39.37 0)
+		(property "Reference" "C450007"
+			(at 134.62 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6382,7 +6063,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 121.92 41.91 0)
+			(at 134.62 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6392,7 +6073,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 118.11 40.64 0)
+			(at 130.81 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6403,7 +6084,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 40.64 0)
+			(at 130.81 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6414,7 +6095,7 @@
 			)
 		)
 		(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
-			(at 118.11 40.64 0)
+			(at 130.81 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6425,7 +6106,7 @@
 			)
 		)
 		(property "MPN" "GRM033R61A104KE15D"
-			(at 118.11 40.64 0)
+			(at 130.81 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6436,7 +6117,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 118.11 40.64 0)
+			(at 130.81 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6447,7 +6128,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 118.11 40.64 0)
+			(at 130.81 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6458,7 +6139,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 118.11 40.64 0)
+			(at 130.81 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6469,7 +6150,7 @@
 			)
 		)
 		(property "dielectric" "X5R"
-			(at 118.11 40.64 0)
+			(at 130.81 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6488,15 +6169,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "C490007")
+					(reference "C450007")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R71A103KA01D")
-		(at 100.33 175.26 270)
+		(at 113.03 181.61 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6505,8 +6186,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6b9001de-728c-45a0-84ac-0c2c0348edb9")
-		(property "Reference" "C490008"
-			(at 103.85 173.83 90)
+		(property "Reference" "C450008"
+			(at 116.55 180.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6517,7 +6198,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 103.85 176.37 90)
+			(at 116.55 182.72 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6528,7 +6209,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 100.33 175.26 0)
+			(at 113.03 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6539,7 +6220,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 175.26 0)
+			(at 113.03 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6550,7 +6231,7 @@
 			)
 		)
 		(property "Description" "MLCC, 10nF, 10V, X7R, 0201"
-			(at 100.33 175.26 0)
+			(at 113.03 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6561,7 +6242,7 @@
 			)
 		)
 		(property "MPN" "GRM033R71A103KA01D"
-			(at 100.33 175.26 0)
+			(at 113.03 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6572,7 +6253,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 100.33 175.26 0)
+			(at 113.03 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6583,7 +6264,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 100.33 175.26 0)
+			(at 113.03 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6594,7 +6275,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 100.33 175.26 0)
+			(at 113.03 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6605,7 +6286,7 @@
 			)
 		)
 		(property "dielectric" "X7R"
-			(at 100.33 175.26 0)
+			(at 113.03 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6624,15 +6305,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "C490008")
+					(reference "C450008")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:D_BAT54S_215")
-		(at 46.99 182.88 0)
+		(at 59.69 189.23 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -6642,8 +6323,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "72b32168-31c3-4ed5-bd13-ae7a48b9f0d6")
-		(property "Reference" "D490002"
-			(at 48.26 176.53 0)
+		(property "Reference" "D450002"
+			(at 60.96 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6654,7 +6335,7 @@
 			)
 		)
 		(property "Value" "BAT54S"
-			(at 48.26 179.07 0)
+			(at 60.96 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6665,7 +6346,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:SOT-23"
-			(at 46.99 182.88 0)
+			(at 59.69 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6676,7 +6357,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54S.pdf"
-			(at 46.99 182.88 0)
+			(at 59.69 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6687,7 +6368,7 @@
 			)
 		)
 		(property "Description" "Dual series Schottky clamp for INPUT voltage sense, 30 V, SOT-23"
-			(at 46.99 182.88 0)
+			(at 59.69 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6698,7 +6379,7 @@
 			)
 		)
 		(property "MPN" "BAT54S,215"
-			(at 46.99 182.88 0)
+			(at 59.69 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6709,7 +6390,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
-			(at 46.99 182.88 0)
+			(at 59.69 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6720,7 +6401,7 @@
 			)
 		)
 		(property "role" "voltage_mux_input_clamp"
-			(at 46.99 182.88 0)
+			(at 59.69 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6731,7 +6412,7 @@
 			)
 		)
 		(property "channel_tag" "INPUT"
-			(at 46.99 182.88 0)
+			(at 59.69 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6753,15 +6434,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "D490002")
+					(reference "D450002")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
-		(at 128.27 157.48 270)
+		(at 140.97 163.83 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6770,8 +6451,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "72d95874-9f99-4841-98bb-c85d171706f3")
-		(property "Reference" "R490007"
-			(at 121.92 158.75 90)
+		(property "Reference" "R450007"
+			(at 134.62 165.1 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6782,7 +6463,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 123.19 161.29 90)
+			(at 135.89 167.64 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6793,7 +6474,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 128.27 157.48 0)
+			(at 140.97 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6804,7 +6485,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 157.48 0)
+			(at 140.97 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6815,7 +6496,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
-			(at 128.27 157.48 0)
+			(at 140.97 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6826,7 +6507,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1002C"
-			(at 128.27 157.48 0)
+			(at 140.97 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6837,7 +6518,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 128.27 157.48 0)
+			(at 140.97 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6848,7 +6529,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 128.27 157.48 0)
+			(at 140.97 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6859,7 +6540,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 128.27 157.48 0)
+			(at 140.97 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6878,15 +6559,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490007")
+					(reference "R450007")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 110.49 163.83 270)
+		(at 123.19 170.18 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6895,8 +6576,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "78b9dd58-665e-4d30-ae67-948b4e06d8a5")
-		(property "Reference" "#PWR490006"
-			(at 110.49 163.83 0)
+		(property "Reference" "#PWR450006"
+			(at 123.19 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6907,7 +6588,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 163.83 0)
+			(at 119.38 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6917,7 +6598,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 163.83 0)
+			(at 123.19 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6927,7 +6608,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 163.83 0)
+			(at 123.19 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6937,7 +6618,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 110.49 163.83 0)
+			(at 123.19 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6952,15 +6633,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490006")
+					(reference "#PWR450006")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 46.99 163.83 270)
+		(at 59.69 170.18 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6969,8 +6650,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "82703d3e-ef1c-4583-b028-4d99b39817de")
-		(property "Reference" "#PWR490007"
-			(at 46.99 163.83 0)
+		(property "Reference" "#PWR450007"
+			(at 59.69 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6981,7 +6662,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 43.18 163.83 0)
+			(at 55.88 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6991,7 +6672,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 46.99 163.83 0)
+			(at 59.69 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7001,7 +6682,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 163.83 0)
+			(at 59.69 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7011,7 +6692,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 46.99 163.83 0)
+			(at 59.69 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7026,15 +6707,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490007")
+					(reference "#PWR450007")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:U_INA293A1IDBVR")
-		(at 45.72 53.34 0)
+		(at 58.42 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7043,8 +6724,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "87f03663-5673-4104-a30a-85e93e8b752d")
-		(property "Reference" "U490003"
-			(at 35.56 44.45 0)
+		(property "Reference" "U450003"
+			(at 48.26 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7054,7 +6735,7 @@
 			)
 		)
 		(property "Value" "INA293A1IDBVR"
-			(at 45.72 54.61 0)
+			(at 58.42 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7064,7 +6745,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:SOT-23-5"
-			(at 45.72 53.34 0)
+			(at 58.42 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7075,7 +6756,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina293.pdf"
-			(at 45.72 53.34 0)
+			(at 58.42 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7086,7 +6767,7 @@
 			)
 		)
 		(property "Description" "110 V common-mode current-sense amplifier, gain 20 V/V, SOT-23-5"
-			(at 45.72 53.34 0)
+			(at 58.42 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7097,7 +6778,7 @@
 			)
 		)
 		(property "MPN" "INA293A1IDBVR"
-			(at 45.72 53.34 0)
+			(at 58.42 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7108,7 +6789,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 45.72 53.34 0)
+			(at 58.42 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7119,7 +6800,7 @@
 			)
 		)
 		(property "channel" "0"
-			(at 45.72 53.34 0)
+			(at 58.42 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7130,7 +6811,7 @@
 			)
 		)
 		(property "tag" "INPUT"
-			(at 45.72 53.34 0)
+			(at 58.42 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7141,7 +6822,7 @@
 			)
 		)
 		(property "shunt_ohm" "0.02"
-			(at 45.72 53.34 0)
+			(at 58.42 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7152,7 +6833,7 @@
 			)
 		)
 		(property "current_scale_V_per_A" "0.4"
-			(at 45.72 53.34 0)
+			(at 58.42 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7180,15 +6861,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "U490003")
+					(reference "U450003")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
-		(at 88.9 147.32 90)
+		(at 101.6 153.67 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7197,8 +6878,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "93885bce-6229-4e37-9b16-8c478b1cafe9")
-		(property "Reference" "R490008"
-			(at 92.7567 146.3772 90)
+		(property "Reference" "R450008"
+			(at 105.4567 152.7272 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7208,7 +6889,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 92.71 148.59 90)
+			(at 105.41 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7218,7 +6899,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 88.9 147.32 0)
+			(at 101.6 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7229,7 +6910,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 147.32 0)
+			(at 101.6 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7240,7 +6921,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
-			(at 88.9 147.32 0)
+			(at 101.6 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7251,7 +6932,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1002C"
-			(at 88.9 147.32 0)
+			(at 101.6 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7262,7 +6943,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 88.9 147.32 0)
+			(at 101.6 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7273,7 +6954,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 88.9 147.32 0)
+			(at 101.6 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7284,7 +6965,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 88.9 147.32 0)
+			(at 101.6 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7303,15 +6984,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490008")
+					(reference "R450008")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R71A103KA01D")
-		(at 133.35 163.83 180)
+		(at 146.05 170.18 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7320,8 +7001,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "94875677-29b8-4e5f-8de0-ab1072774f4a")
-		(property "Reference" "C490009"
-			(at 139.7 162.56 0)
+		(property "Reference" "C450009"
+			(at 152.4 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7332,7 +7013,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 138.43 165.1 0)
+			(at 151.13 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7343,7 +7024,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 133.35 163.83 0)
+			(at 146.05 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7354,7 +7035,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 163.83 0)
+			(at 146.05 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7365,7 +7046,7 @@
 			)
 		)
 		(property "Description" "MLCC, 10nF, 10V, X7R, 0201"
-			(at 133.35 163.83 0)
+			(at 146.05 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7376,7 +7057,7 @@
 			)
 		)
 		(property "MPN" "GRM033R71A103KA01D"
-			(at 133.35 163.83 0)
+			(at 146.05 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7387,7 +7068,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 133.35 163.83 0)
+			(at 146.05 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7398,7 +7079,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 133.35 163.83 0)
+			(at 146.05 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7409,7 +7090,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 133.35 163.83 0)
+			(at 146.05 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7420,7 +7101,7 @@
 			)
 		)
 		(property "dielectric" "X7R"
-			(at 133.35 163.83 0)
+			(at 146.05 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7439,15 +7120,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "C490009")
+					(reference "C450009")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 59.69 40.64 90)
+		(at 72.39 46.99 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7456,8 +7137,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "94876dd3-9388-4d28-9c6b-5fbae85834a7")
-		(property "Reference" "#PWR490008"
-			(at 59.69 40.64 0)
+		(property "Reference" "#PWR450008"
+			(at 72.39 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7468,7 +7149,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 40.64 0)
+			(at 76.2 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7478,7 +7159,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 40.64 0)
+			(at 72.39 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7488,7 +7169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 40.64 0)
+			(at 72.39 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7498,7 +7179,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 40.64 0)
+			(at 72.39 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7513,15 +7194,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490008")
+					(reference "#PWR450008")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 124.46 40.64 90)
+		(at 137.16 46.99 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7530,8 +7211,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9e42fd98-95b0-466e-b089-b8be66f51e16")
-		(property "Reference" "#PWR490009"
-			(at 124.46 40.64 0)
+		(property "Reference" "#PWR450009"
+			(at 137.16 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7542,7 +7223,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 40.64 0)
+			(at 140.97 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7552,7 +7233,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 40.64 0)
+			(at 137.16 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7562,7 +7243,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 40.64 0)
+			(at 137.16 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7572,7 +7253,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 40.64 0)
+			(at 137.16 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7587,15 +7268,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490009")
+					(reference "#PWR450009")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
-		(at 25.4 147.32 90)
+		(at 38.1 153.67 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7604,8 +7285,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a69f5441-faf0-4a68-9574-6000eed9b22a")
-		(property "Reference" "R490009"
-			(at 29.2567 146.3772 90)
+		(property "Reference" "R450009"
+			(at 41.9567 152.7272 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7615,7 +7296,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 29.21 148.59 90)
+			(at 41.91 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7625,7 +7306,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 25.4 147.32 0)
+			(at 38.1 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7636,7 +7317,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 147.32 0)
+			(at 38.1 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7647,7 +7328,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
-			(at 25.4 147.32 0)
+			(at 38.1 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7658,7 +7339,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1002C"
-			(at 25.4 147.32 0)
+			(at 38.1 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7669,7 +7350,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 25.4 147.32 0)
+			(at 38.1 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7680,7 +7361,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 25.4 147.32 0)
+			(at 38.1 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7691,7 +7372,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 25.4 147.32 0)
+			(at 38.1 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7710,15 +7391,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490009")
+					(reference "R450009")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 26.67 92.71 0)
+		(at 39.37 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7727,8 +7408,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ac0c78af-901e-4982-b901-607fe8be263f")
-		(property "Reference" "#PWR490010"
-			(at 26.67 92.71 0)
+		(property "Reference" "#PWR450010"
+			(at 39.37 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7739,7 +7420,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 26.67 96.52 0)
+			(at 39.37 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7749,7 +7430,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 92.71 0)
+			(at 39.37 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7759,7 +7440,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 92.71 0)
+			(at 39.37 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7769,7 +7450,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 26.67 92.71 0)
+			(at 39.37 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7784,15 +7465,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490010")
+					(reference "#PWR450010")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 88.9 99.06 0)
+		(at 101.6 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7801,8 +7482,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "afc24c49-536b-4d7d-8ea0-b896bf7295f1")
-		(property "Reference" "#PWR490011"
-			(at 88.9 99.06 0)
+		(property "Reference" "#PWR450011"
+			(at 101.6 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7813,7 +7494,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 88.9 102.87 0)
+			(at 101.6 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7823,7 +7504,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 99.06 0)
+			(at 101.6 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7833,7 +7514,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 99.06 0)
+			(at 101.6 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7843,7 +7524,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 88.9 99.06 0)
+			(at 101.6 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7858,15 +7539,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490011")
+					(reference "#PWR450011")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
-		(at 128.27 72.39 270)
+		(at 140.97 78.74 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7875,8 +7556,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b0511030-3438-4e13-ba56-f775b6b53890")
-		(property "Reference" "R490010"
-			(at 121.92 73.66 90)
+		(property "Reference" "R450010"
+			(at 134.62 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7887,7 +7568,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 123.19 76.2 90)
+			(at 135.89 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7898,7 +7579,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 128.27 72.39 0)
+			(at 140.97 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7909,7 +7590,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 72.39 0)
+			(at 140.97 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7920,7 +7601,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
-			(at 128.27 72.39 0)
+			(at 140.97 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7931,7 +7612,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1002C"
-			(at 128.27 72.39 0)
+			(at 140.97 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7942,7 +7623,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 128.27 72.39 0)
+			(at 140.97 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7953,7 +7634,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 128.27 72.39 0)
+			(at 140.97 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7964,7 +7645,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 128.27 72.39 0)
+			(at 140.97 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7983,15 +7664,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490010")
+					(reference "R450010")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 92.71 66.04 0)
+		(at 105.41 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8000,8 +7681,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b85fd60e-7809-4ba1-b91d-c17952f39e0f")
-		(property "Reference" "#PWR490012"
-			(at 92.71 66.04 0)
+		(property "Reference" "#PWR450012"
+			(at 105.41 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8012,7 +7693,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 69.85 0)
+			(at 106.68 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8022,7 +7703,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 66.04 0)
+			(at 105.41 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8032,7 +7713,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 66.04 0)
+			(at 105.41 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8042,7 +7723,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.71 66.04 0)
+			(at 105.41 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8057,15 +7738,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490012")
+					(reference "#PWR450012")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R61A104KE15D")
-		(at 54.61 125.73 0)
+		(at 67.31 132.08 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8074,8 +7755,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bd2cce29-ec0b-488f-8081-3e74e19afae3")
-		(property "Reference" "C490010"
-			(at 58.42 124.46 0)
+		(property "Reference" "C450010"
+			(at 71.12 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8085,7 +7766,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 58.42 127 0)
+			(at 71.12 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8095,7 +7776,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 54.61 125.73 0)
+			(at 67.31 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8106,7 +7787,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 125.73 0)
+			(at 67.31 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8117,7 +7798,7 @@
 			)
 		)
 		(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
-			(at 54.61 125.73 0)
+			(at 67.31 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8128,7 +7809,7 @@
 			)
 		)
 		(property "MPN" "GRM033R61A104KE15D"
-			(at 54.61 125.73 0)
+			(at 67.31 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8139,7 +7820,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 54.61 125.73 0)
+			(at 67.31 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8150,7 +7831,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 54.61 125.73 0)
+			(at 67.31 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8161,7 +7842,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 54.61 125.73 0)
+			(at 67.31 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8172,7 +7853,7 @@
 			)
 		)
 		(property "dielectric" "X5R"
-			(at 54.61 125.73 0)
+			(at 67.31 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8191,15 +7872,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "C490010")
+					(reference "C450010")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:D_BAT54S_215")
-		(at 110.49 97.79 0)
+		(at 123.19 104.14 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -8209,8 +7890,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bde34f01-2275-4323-88db-2b21053457ac")
-		(property "Reference" "D490003"
-			(at 111.76 91.44 0)
+		(property "Reference" "D450003"
+			(at 124.46 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8221,7 +7902,7 @@
 			)
 		)
 		(property "Value" "BAT54S"
-			(at 111.76 93.98 0)
+			(at 124.46 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8232,7 +7913,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:SOT-23"
-			(at 110.49 97.79 0)
+			(at 123.19 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8243,7 +7924,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54S.pdf"
-			(at 110.49 97.79 0)
+			(at 123.19 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8254,7 +7935,7 @@
 			)
 		)
 		(property "Description" "Dual series Schottky clamp for INPUT voltage sense, 30 V, SOT-23"
-			(at 110.49 97.79 0)
+			(at 123.19 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8265,7 +7946,7 @@
 			)
 		)
 		(property "MPN" "BAT54S,215"
-			(at 110.49 97.79 0)
+			(at 123.19 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8276,7 +7957,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
-			(at 110.49 97.79 0)
+			(at 123.19 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8287,7 +7968,7 @@
 			)
 		)
 		(property "role" "voltage_mux_input_clamp"
-			(at 110.49 97.79 0)
+			(at 123.19 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8298,7 +7979,7 @@
 			)
 		)
 		(property "channel_tag" "INPUT"
-			(at 110.49 97.79 0)
+			(at 123.19 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8320,15 +8001,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "D490003")
+					(reference "D450003")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1001C")
-		(at 139.7 59.69 270)
+		(at 152.4 66.04 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -8338,8 +8019,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c5c635e1-9ac7-4a6f-9a46-78f23f60f184")
-		(property "Reference" "R490011"
-			(at 143.51 58.42 90)
+		(property "Reference" "R450011"
+			(at 156.21 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8349,7 +8030,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 142.24 60.96 90)
+			(at 154.94 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8359,7 +8040,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 139.7 59.69 0)
+			(at 152.4 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8370,7 +8051,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 59.69 0)
+			(at 152.4 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8381,7 +8062,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 1k Ohm, +/-1%, 0201"
-			(at 139.7 59.69 0)
+			(at 152.4 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8392,7 +8073,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1001C"
-			(at 139.7 59.69 0)
+			(at 152.4 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8403,7 +8084,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 139.7 59.69 0)
+			(at 152.4 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8414,7 +8095,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 139.7 59.69 0)
+			(at 152.4 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8425,7 +8106,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 139.7 59.69 0)
+			(at 152.4 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8444,15 +8125,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490011")
+					(reference "R450011")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 45.72 66.04 270)
+		(at 58.42 72.39 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8461,8 +8142,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d01944af-1670-4721-a82d-c8492981bfcb")
-		(property "Reference" "#PWR490013"
-			(at 45.72 66.04 0)
+		(property "Reference" "#PWR450013"
+			(at 58.42 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8473,7 +8154,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 41.91 66.04 0)
+			(at 54.61 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8483,7 +8164,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 66.04 0)
+			(at 58.42 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8493,7 +8174,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 66.04 0)
+			(at 58.42 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8503,7 +8184,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 66.04 0)
+			(at 58.42 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8518,15 +8199,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490013")
+					(reference "#PWR450013")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:D_BAT54S_215")
-		(at 48.26 91.44 0)
+		(at 60.96 97.79 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -8536,8 +8217,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d64a27c0-c91f-440a-97b8-1c1fd9b86043")
-		(property "Reference" "D490004"
-			(at 50.8 85.09 0)
+		(property "Reference" "D450004"
+			(at 63.5 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8548,7 +8229,7 @@
 			)
 		)
 		(property "Value" "BAT54S"
-			(at 50.8 87.63 0)
+			(at 63.5 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8559,7 +8240,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:SOT-23"
-			(at 48.26 91.44 0)
+			(at 60.96 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8570,7 +8251,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54S.pdf"
-			(at 48.26 91.44 0)
+			(at 60.96 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8581,7 +8262,7 @@
 			)
 		)
 		(property "Description" "Dual series Schottky clamp for INPUT voltage sense, 30 V, SOT-23"
-			(at 48.26 91.44 0)
+			(at 60.96 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8592,7 +8273,7 @@
 			)
 		)
 		(property "MPN" "BAT54S,215"
-			(at 48.26 91.44 0)
+			(at 60.96 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8603,7 +8284,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
-			(at 48.26 91.44 0)
+			(at 60.96 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8614,7 +8295,7 @@
 			)
 		)
 		(property "role" "voltage_mux_input_clamp"
-			(at 48.26 91.44 0)
+			(at 60.96 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8625,7 +8306,7 @@
 			)
 		)
 		(property "channel_tag" "INPUT"
-			(at 48.26 91.44 0)
+			(at 60.96 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8647,15 +8328,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "D490004")
+					(reference "D450004")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 29.21 151.13 0)
+		(at 41.91 157.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8664,8 +8345,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d694be3a-a044-4bcf-860e-6aef03f2f0f2")
-		(property "Reference" "#PWR490014"
-			(at 29.21 151.13 0)
+		(property "Reference" "#PWR450014"
+			(at 41.91 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8676,7 +8357,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 30.48 154.94 0)
+			(at 43.18 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8686,7 +8367,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 151.13 0)
+			(at 41.91 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8696,7 +8377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 151.13 0)
+			(at 41.91 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8706,7 +8387,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 29.21 151.13 0)
+			(at 41.91 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8721,15 +8402,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490014")
+					(reference "#PWR450014")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1001C")
-		(at 64.77 58.42 270)
+		(at 77.47 64.77 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8738,8 +8419,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "db697838-7945-406f-8488-085fd56ec0d1")
-		(property "Reference" "R490012"
-			(at 67.31 58.42 0)
+		(property "Reference" "R450012"
+			(at 80.01 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8749,7 +8430,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 62.23 58.42 0)
+			(at 74.93 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8759,7 +8440,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 64.77 58.42 0)
+			(at 77.47 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8770,7 +8451,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 58.42 0)
+			(at 77.47 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8781,7 +8462,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 1k Ohm, +/-1%, 0201"
-			(at 64.77 58.42 0)
+			(at 77.47 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8792,7 +8473,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1001C"
-			(at 64.77 58.42 0)
+			(at 77.47 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8803,7 +8484,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 64.77 58.42 0)
+			(at 77.47 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8814,7 +8495,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 64.77 58.42 0)
+			(at 77.47 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8825,7 +8506,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 64.77 58.42 0)
+			(at 77.47 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8844,15 +8525,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490012")
+					(reference "R450012")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R71A103KA01D")
-		(at 36.83 175.26 270)
+		(at 49.53 181.61 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8861,8 +8542,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e6e0c493-fb70-418a-86fc-11a26f10b435")
-		(property "Reference" "C490011"
-			(at 40.35 173.83 90)
+		(property "Reference" "C450011"
+			(at 53.05 180.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8873,7 +8554,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 40.35 176.37 90)
+			(at 53.05 182.72 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8884,7 +8565,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 36.83 175.26 0)
+			(at 49.53 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8895,7 +8576,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 175.26 0)
+			(at 49.53 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8906,7 +8587,7 @@
 			)
 		)
 		(property "Description" "MLCC, 10nF, 10V, X7R, 0201"
-			(at 36.83 175.26 0)
+			(at 49.53 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8917,7 +8598,7 @@
 			)
 		)
 		(property "MPN" "GRM033R71A103KA01D"
-			(at 36.83 175.26 0)
+			(at 49.53 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8928,7 +8609,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 36.83 175.26 0)
+			(at 49.53 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8939,7 +8620,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 36.83 175.26 0)
+			(at 49.53 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8950,7 +8631,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 36.83 175.26 0)
+			(at 49.53 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8961,7 +8642,7 @@
 			)
 		)
 		(property "dielectric" "X7R"
-			(at 36.83 175.26 0)
+			(at 49.53 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8980,15 +8661,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "C490011")
+					(reference "C450011")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 60.96 125.73 90)
+		(at 73.66 132.08 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8997,8 +8678,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ea5958a4-4d9a-4199-a557-6b70702a6097")
-		(property "Reference" "#PWR490015"
-			(at 60.96 125.73 0)
+		(property "Reference" "#PWR450015"
+			(at 73.66 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9009,7 +8690,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 125.73 0)
+			(at 77.47 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9019,7 +8700,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 125.73 0)
+			(at 73.66 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9029,7 +8710,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 125.73 0)
+			(at 73.66 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9039,7 +8720,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 60.96 125.73 0)
+			(at 73.66 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9054,15 +8735,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "#PWR490015")
+					(reference "#PWR450015")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
-		(at 25.4 175.26 270)
+		(at 38.1 181.61 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9071,8 +8752,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ed4320fe-5b30-4afb-87c6-03a6f6b9e0d2")
-		(property "Reference" "R490013"
-			(at 26.67 173.99 90)
+		(property "Reference" "R450013"
+			(at 39.37 180.34 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9083,7 +8764,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 26.67 176.53 90)
+			(at 39.37 182.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9094,7 +8775,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 25.4 175.26 0)
+			(at 38.1 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9105,7 +8786,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 175.26 0)
+			(at 38.1 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9116,7 +8797,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
-			(at 25.4 175.26 0)
+			(at 38.1 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9127,7 +8808,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1002C"
-			(at 25.4 175.26 0)
+			(at 38.1 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9138,7 +8819,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 25.4 175.26 0)
+			(at 38.1 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9149,7 +8830,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 25.4 175.26 0)
+			(at 38.1 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9160,7 +8841,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 25.4 175.26 0)
+			(at 38.1 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9179,15 +8860,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490013")
+					(reference "R450013")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1001C")
-		(at 139.7 144.78 270)
+		(at 152.4 151.13 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -9197,8 +8878,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ee4e956f-59ae-4e65-b6de-52d135f1c267")
-		(property "Reference" "R490014"
-			(at 143.51 143.51 90)
+		(property "Reference" "R450014"
+			(at 156.21 149.86 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9208,7 +8889,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 142.24 146.05 90)
+			(at 154.94 152.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9218,7 +8899,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 139.7 144.78 0)
+			(at 152.4 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9229,7 +8910,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 144.78 0)
+			(at 152.4 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9240,7 +8921,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 1k Ohm, +/-1%, 0201"
-			(at 139.7 144.78 0)
+			(at 152.4 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9251,7 +8932,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1001C"
-			(at 139.7 144.78 0)
+			(at 152.4 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9262,7 +8943,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 139.7 144.78 0)
+			(at 152.4 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9273,7 +8954,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 139.7 144.78 0)
+			(at 152.4 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9284,7 +8965,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 139.7 144.78 0)
+			(at 152.4 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9303,15 +8984,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490014")
+					(reference "R450014")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R71A103KA01D")
-		(at 38.1 85.09 270)
+		(at 50.8 91.44 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9320,8 +9001,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f6d01e7e-45a9-471e-9727-568c3ccc8747")
-		(property "Reference" "C490012"
-			(at 40.64 83.82 90)
+		(property "Reference" "C450012"
+			(at 53.34 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9332,7 +9013,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 40.64 86.36 90)
+			(at 53.34 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9343,7 +9024,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 38.1 85.09 0)
+			(at 50.8 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9354,7 +9035,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 85.09 0)
+			(at 50.8 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9365,7 +9046,7 @@
 			)
 		)
 		(property "Description" "MLCC, 10nF, 10V, X7R, 0201"
-			(at 38.1 85.09 0)
+			(at 50.8 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9376,7 +9057,7 @@
 			)
 		)
 		(property "MPN" "GRM033R71A103KA01D"
-			(at 38.1 85.09 0)
+			(at 50.8 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9387,7 +9068,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 38.1 85.09 0)
+			(at 50.8 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9398,7 +9079,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 38.1 85.09 0)
+			(at 50.8 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9409,7 +9090,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 38.1 85.09 0)
+			(at 50.8 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9420,7 +9101,7 @@
 			)
 		)
 		(property "dielectric" "X7R"
-			(at 38.1 85.09 0)
+			(at 50.8 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9439,15 +9120,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "C490012")
+					(reference "C450012")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1002C")
-		(at 88.9 175.26 270)
+		(at 101.6 181.61 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9456,8 +9137,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f8de3048-a25c-45b6-a9a7-c2e9d07f5a81")
-		(property "Reference" "R490015"
-			(at 90.17 173.99 90)
+		(property "Reference" "R450015"
+			(at 102.87 180.34 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9468,7 +9149,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 90.17 176.53 90)
+			(at 102.87 182.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9479,7 +9160,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 88.9 175.26 0)
+			(at 101.6 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9490,7 +9171,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 175.26 0)
+			(at 101.6 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9501,7 +9182,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 10k Ohm, +/-1%, 0201"
-			(at 88.9 175.26 0)
+			(at 101.6 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9512,7 +9193,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1002C"
-			(at 88.9 175.26 0)
+			(at 101.6 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9523,7 +9204,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 88.9 175.26 0)
+			(at 101.6 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9534,7 +9215,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 88.9 175.26 0)
+			(at 101.6 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9545,7 +9226,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 88.9 175.26 0)
+			(at 101.6 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9564,15 +9245,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490015")
+					(reference "R450015")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:R_ERJ1GNF1001C")
-		(at 69.85 146.05 270)
+		(at 82.55 152.4 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -9582,8 +9263,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fdf61ea0-68b9-4bcd-ba00-a187d8ea57bb")
-		(property "Reference" "R490016"
-			(at 73.66 144.78 90)
+		(property "Reference" "R450016"
+			(at 86.36 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9593,7 +9274,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 72.39 147.32 90)
+			(at 85.09 153.67 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9603,7 +9284,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30"
-			(at 69.85 146.05 0)
+			(at 82.55 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9614,7 +9295,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 146.05 0)
+			(at 82.55 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9625,7 +9306,7 @@
 			)
 		)
 		(property "Description" "Chip resistor, 1k Ohm, +/-1%, 0201"
-			(at 69.85 146.05 0)
+			(at 82.55 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9636,7 +9317,7 @@
 			)
 		)
 		(property "MPN" "ERJ1GNF1001C"
-			(at 69.85 146.05 0)
+			(at 82.55 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9647,7 +9328,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 69.85 146.05 0)
+			(at 82.55 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9658,7 +9339,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 69.85 146.05 0)
+			(at 82.55 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9669,7 +9350,7 @@
 			)
 		)
 		(property "tolerance" "1%"
-			(at 69.85 146.05 0)
+			(at 82.55 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9688,15 +9369,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "R490016")
+					(reference "R450016")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:U_INA301A1IDGKR")
-		(at 110.49 58.42 0)
+		(at 123.19 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9705,8 +9386,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fe0430a1-a2c1-44a3-aac4-65b1865d4cdd")
-		(property "Reference" "U490004"
-			(at 100.33 44.45 0)
+		(property "Reference" "U450004"
+			(at 113.03 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9716,7 +9397,7 @@
 			)
 		)
 		(property "Value" "INA301A1IDGKR"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9726,7 +9407,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:VSSOP-8_3.0x3.0mm_P0.65mm"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9737,7 +9418,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina301.pdf"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9748,7 +9429,7 @@
 			)
 		)
 		(property "Description" "Current-sense amplifier with hardware comparator, gain 20 V/V, VSSOP-8"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9759,7 +9440,7 @@
 			)
 		)
 		(property "MPN" "INA301A1IDGKR"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9770,7 +9451,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9781,7 +9462,7 @@
 			)
 		)
 		(property "channel" "1"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9792,7 +9473,7 @@
 			)
 		)
 		(property "tag" "AON"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9803,7 +9484,7 @@
 			)
 		)
 		(property "shunt_ohm" "0.1"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9814,7 +9495,7 @@
 			)
 		)
 		(property "limit_resistor_ohm" "10000.0"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9825,7 +9506,7 @@
 			)
 		)
 		(property "nominal_trip_A" "0.4"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9836,7 +9517,7 @@
 			)
 		)
 		(property "current_scale_V_per_A" "2.0"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9847,7 +9528,7 @@
 			)
 		)
 		(property "output_floor_max_equivalent_A" "0.015"
-			(at 110.49 58.42 0)
+			(at 123.19 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9884,20 +9565,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/7012dd88-9690-455a-888e-cf31ea9d07cf"
-					(reference "U490004")
+					(reference "U450004")
 					(unit 1)
 				)
 			)
 		)
 	)
-
-(global_label "MON_V_INPUT_SAFE" (shape input) (at 48.26 86.36 180) (effects (font (size 0.8 0.8)) (justify right)) (uuid "4e17524e-4fa4-4d01-98e0-d87cfd039aae"))
-(global_label "MON_V_SYS_SAFE" (shape input) (at 110.49 177.8 180) (effects (font (size 0.8 0.8)) (justify right)) (uuid "a33050ca-23f8-477e-a911-7ba61e32a2c2"))
-(global_label "MON_V_USB_SAFE" (shape input) (at 46.99 177.8 180) (effects (font (size 0.8 0.8)) (justify right)) (uuid "0c7f3e78-833c-4817-9166-4a49e788d038"))
-
-
-
-
-
-(title_block (title "Input and System Sense") (rev "C-review") (company "MIRA"))
+(global_label "MON_V_INPUT_SAFE" (shape input) (at 60.96 92.71 180) (effects (font (size 0.8 0.8)) (justify right)) (uuid "4e17524e-4fa4-4d01-98e0-d87cfd039aae"))
+(global_label "MON_V_SYS_SAFE" (shape input) (at 123.19 184.15 180) (effects (font (size 0.8 0.8)) (justify right)) (uuid "a33050ca-23f8-477e-a911-7ba61e32a2c2"))
+(global_label "MON_V_USB_SAFE" (shape input) (at 59.69 184.15 180) (effects (font (size 0.8 0.8)) (justify right)) (uuid "0c7f3e78-833c-4817-9166-4a49e788d038"))
+(text "The 10 kOhm LIMIT resistors set 0.8 V, giving\nnominal trips of 0.4 A, 0.8 A and 4 A.\nNominal trip 0.4 A.\nNominal trip 4 A." (at 20 214.63 0) (effects (font (size 1.0 1.0)) (justify left top)) (uuid "e3902235-1b31-5c32-8acb-daaad9244aa9"))
+(text "Input and System Sense" (at 20 15 0) (effects (font (size 1.6 1.6)) (justify left top)) (uuid "d411b9b4-9b8f-56e5-a46d-2d5de9247da9"))
 )

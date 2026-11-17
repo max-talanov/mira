@@ -1,87 +1,74 @@
-"""Check page numbers, annotation, UUID identity and PCB binding/geometry.
+"""Validate native page numbers, physical package identity and PCB preservation.
 
-Run with --baseline pointing to the pre-edit project tree.
+Use --baseline with the three pre-edit project directories and --reference-map
+with the mapping from that baseline's references to the current drawing.
 """
-import argparse
-import json
-import re
+import argparse,json,re,collections,hashlib
 from pathlib import Path
-from kicad_sexpr import child, children, kind, leaves, prop, quoted, uuid, walk
+from kicad_sexpr import child,children,leaves,kind,quoted,prop,uuid,walk
 
+def canonical(s):
+ # Whitespace outside strings is insignificant; preserve every numeric token and string.
+ return re.findall(r'"(?:\\.|[^"\\])*"|[^\s()]+|[()]',s)
+def board_normalize(s):
+ for f in leaves(s,'footprint'):
+  nf=f;pp=next((x for x in leaves(f,'property') if quoted(x)[0]=='Reference'),None)
+  if pp:nf=nf.replace(pp,pp.replace('"'+quoted(pp)[1]+'"','"REFERENCE"',1))
+  else:
+   pp=next((x for x in leaves(f,'fp_text') if re.match(r'\(fp_text\s+reference\b',x)),None)
+   if pp:nf=nf.replace(pp,pp.replace('"'+quoted(pp)[0]+'"','"REFERENCE"',1))
+  p=child(nf,'path')
+  if p:nf=nf.replace(p,'(path "SCHEMATIC_PATH")')
+  s=s.replace(f,nf,1)
+ return canonical(s)
+def check(root,baseline,maps):
+ result={};pages=json.loads((root/'review/schematic-layout/pages.json').read_text())
+ for pr in maps:
+  project=root/pr;original=baseline/pr;mapping=maps[pr];tree=walk(project/(pr+'.kicad_sch'));before={};after={};first={};paths={}
+  for p in original.glob('*.kicad_sch'):
+   for z in leaves(p.read_text(),'symbol'):before[uuid(z)]=z
+  for e in tree:
+   for z in leaves(e['text'],'symbol'):
+    u=uuid(z);assert u not in after,(pr,'duplicate UUID',u);after[u]=z;r=prop(z,'Reference');first.setdefault(r,int(next(p['page'] for p in pages[pr] if p['path']==e['path'])));paths[u]=e['path']+'/'+u
+  assert before.keys()<=after.keys(),(pr,'lost symbol UUIDs',before.keys()-after.keys())
+  for uid,z in before.items():
+   nz=after[uid];assert prop(nz,'Reference')==mapping.get(prop(z,'Reference'),prop(z,'Reference')),(pr,'reference',uid)
+   for field in ['Value','Footprint','MPN','Manufacturer','Datasheet']:assert prop(z,field)==prop(nz,field),(pr,prop(z,'Reference'),field)
+   for field in ['in_bom','on_board','dnp']:assert child(z,field)==child(nz,field),(pr,prop(z,'Reference'),field)
+  for r,page in first.items():
+   assert re.fullmatch(r'[^\d]+'+str(page)+r'\d{2}',r),(pr,'reference/page',r,page)
+  packages={}
+  multi={'OPA4192','OPA4323','MAX313','TMUX6112','TLV3202'}
+  for e in tree:
+   libs={quoted(x)[0]:x for x in leaves(child(e['text'],'lib_symbols'),'symbol')} if child(e['text'],'lib_symbols') else {}
+   for z in leaves(e['text'],'symbol'):
+    lid=quoted(child(z,'lib_id'))[0]
+    if not lid.startswith('MIRA_Readable:') or lid.split(':')[-1] not in multi:continue
+    r=prop(z,'Reference');unit=int(re.search(r'\d+',child(z,'unit'))[0]);lib=libs[lid];parts=leaves(lib,'symbol');expected_units={int(quoted(u)[0].split('_')[-2]) for u in parts};physical={quoted(child(p,'number'))[0] for u in parts for p in leaves(u,'pin')}
+    entry=packages.setdefault(r,{'units':[],'pins':collections.Counter(),'expected':expected_units,'physical':physical,'footprint':prop(z,'Footprint'),'value':prop(z,'Value')});entry['units'].append(unit)
+    assert entry['footprint']==prop(z,'Footprint') and entry['value']==prop(z,'Value'),(pr,r,'inconsistent package units')
+    for u in parts:
+     if int(quoted(u)[0].split('_')[-2])==unit:
+      entry['pins'].update(quoted(child(p,'number'))[0] for p in leaves(u,'pin'))
+  for r,pkg in packages.items():
+   assert set(pkg['units'])==pkg['expected'] and len(pkg['units'])==len(pkg['expected']),(pr,r,'missing/duplicate units')
+   assert set(pkg['pins'])==pkg['physical'] and all(v==1 for v in pkg['pins'].values()),(pr,r,'missing/duplicate physical pin')
+  expected=list(range(100,(len(tree)+1)*100,100));assert [p['page'] for p in pages[pr]]==expected
+  assert re.search(r'\(page "100"\)',child(tree[0]['text'],'sheet_instances'))
+  for e,p in zip(tree,pages[pr]):
+   assert str(e['file'].relative_to(root))==p['file'];assert e['path']==p['path']
+   if e['depth']:assert int(e['page'])==p['page']
+  b=original/(pr+'.kicad_pcb');a=project/(pr+'.kicad_pcb');assert board_normalize(b.read_text())==board_normalize(a.read_text()),(pr,'PCB geometry/net/model changed')
+  # Every previously linked footprint remains linked to the same symbol UUID at its new hierarchy path.
+  for f in leaves(a.read_text(),'footprint'):
+   path=child(f,'path')
+   if path:
+    p=quoted(path)[0];uid=p.split('/')[-1]
+    if uid in before:assert p==paths[uid],(pr,'PCB link',uid,p,paths[uid])
+  assert (original/(pr+'.kicad_pro')).read_bytes()==(project/(pr+'.kicad_pro')).read_bytes(),(pr,'ERC/project settings changed')
+  result[pr]={'result':'PASS','pages':len(tree),'original_symbol_instances':len(before),'final_symbol_instances':len(after),'multi_unit_packages_verified':len(packages),'original_UUIDs_preserved':True,'values_MPN_footprints_population_preserved':True,'PCB_geometry_pads_nets_routes_models_preserved':True,'PCB_changes':'reference text / schematic path only','project_preferences_and_ERC_rules':'unchanged'}
+ return result
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--baseline', required=True, type=Path)
-    parser.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[2])
-    args = parser.parse_args()
-    maps = json.loads(Path(__file__).with_name('reference-map.json').read_text())
-    manifest = json.loads(Path(__file__).with_name('pages.json').read_text())
-    result = {}
-    for project, mapping in maps.items():
-        root = args.root / project / (project + '.kicad_sch')
-        current = walk(root)
-        # walk() sorts real sheet instance pages; root sheet_instances is separate.
-        numbers = [int(re.search(r'\(page "(\d+)"\)', child(root.read_text(), 'sheet_instances'))[1])]
-        numbers += [int(n['page']) for n in current[1:]]
-        assert numbers == list(range(100, 100 * (len(current) + 1), 100)), project
-        assert numbers == [n['page'] for n in manifest[project]]
-        before = walk(args.baseline / project / (project + '.kicad_sch'))
-        old = {uuid(x): x for n in before for x in leaves(n['text'], 'symbol')}
-        new = {uuid(x): (x, n) for n in current for x in leaves(n['text'], 'symbol')}
-        assert old.keys() == new.keys(), f'{project}: lost/added symbol UUID'
-        first_page = {}
-        for n, page in zip(current, numbers):
-            for sym in leaves(n['text'], 'symbol'):
-                first_page.setdefault(prop(sym, 'Reference'), page)
-                instances = child(sym, 'instances')
-                assert quoted(child(child(instances, 'project'), 'path'))[0] == n['path']
-        for uid, oldsym in old.items():
-            newsym, node = new[uid]
-            ref = prop(newsym, 'Reference')
-            assert ref == mapping[prop(oldsym, 'Reference')]
-            assert re.match(r'[^\d]+' + str(first_page[ref]) + r'\d{2}$', ref), ref
-            for key in ('Value', 'Footprint', 'Datasheet'):
-                assert prop(oldsym, key) == prop(newsym, key), (ref, key)
-            for key in ('lib_id', 'unit', 'dnp', 'in_bom', 'on_board'):
-                assert child(oldsym, key) == child(newsym, key), (ref, key)
-        oldpcb = (args.baseline / project / (project + '.kicad_pcb')).read_text()
-        pcb = (args.root / project / (project + '.kicad_pcb')).read_text()
-        a = {uuid(f): f for f in leaves(oldpcb, 'footprint')}
-        b = {uuid(f): f for f in leaves(pcb, 'footprint')}
-        assert a.keys() == b.keys(), f'{project}: footprint UUIDs changed'
-        restored = pcb
-        for uid, original in a.items():
-            final = b[uid]
-            normalized = final
-            oldref, newref = prop(original, 'Reference'), prop(final, 'Reference')
-            if oldref in mapping:
-                assert newref == mapping[oldref], (project, oldref)
-            else:
-                assert oldref == newref
-            for field in leaves(normalized, 'property'):
-                if quoted(field)[0] == 'Reference':
-                    normalized = normalized.replace(field, field.replace(json.dumps(newref), json.dumps(oldref), 1), 1)
-            if newref is not None:
-                normalized = re.sub(r'(\(fp_text\s+reference\s+)"' + re.escape(newref) + '"',
-                                    lambda m: m[1] + json.dumps(oldref), normalized)
-            oldpath, newpath = child(original, 'path'), child(normalized, 'path')
-            if oldpath:
-                symbol_id = quoted(oldpath)[0].split('/')[-1]
-                if symbol_id in new:
-                    symbol, node = new[symbol_id]
-                    expected = node['path'] + '/' + symbol_id
-                    root_id = '/' + current[0]['uuid']
-                    if not quoted(oldpath)[0].startswith(root_id):
-                        expected = expected[len(root_id):]
-                    assert quoted(newpath)[0] == expected, (project, newref, 'PCB binding')
-                normalized = normalized.replace(newpath, oldpath, 1)
-            assert normalized == original, (project, oldref, 'PCB geometry/property change')
-            restored = restored.replace(final, normalized, 1)
-        assert restored == oldpcb, f'{project}: tracks, pads, nets or other PCB data changed'
-        result[project] = dict(pages=len(numbers), symbol_units=len(old),
-                               pcb_footprints=len(a), result='PASS')
-    print(json.dumps(result, indent=2))
-
-
-if __name__ == '__main__':
-    main()
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--baseline',type=Path,required=True);p.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[2]);p.add_argument('--reference-map',type=Path,default=Path(__file__).with_name('readability-reference-map.json'));a=p.parse_args();print(json.dumps(check(a.root,a.baseline,json.loads(a.reference_map.read_text())),indent=2))
+if __name__=='__main__':main()

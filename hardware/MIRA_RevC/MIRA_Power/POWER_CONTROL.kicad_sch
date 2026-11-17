@@ -1,135 +1,16 @@
 (kicad_sch
-	(version 20260306)
-	(generator "eeschema")
-	(generator_version "10.0")
-	(uuid "c752c978-e1db-4dca-86c8-f6bcb0c9f0eb")
-	(paper "A3")
-	(lib_symbols)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	(sheet
-		(at 152.4000 223.5200)
-		(size 116.84 12.7)
+(version 20260306)
+(generator "eeschema")
+(generator_version "10.0")
+(uuid "c752c978-e1db-4dca-86c8-f6bcb0c9f0eb")
+(lib_symbols)
+(title_block (title "Power Sequencing") (rev "C-review") (company "MIRA"))
+(paper "User" 410 240)
+(text "Power Sequencing" (at 15 15 0) (effects (font (size 1.8 1.8)) (justify left top)) (uuid "d8412ee4-fca5-5c33-b2db-81db904f6a09"))
+(text "Open a block to follow the signal path." (at 15 25 0) (effects (font (size 1.1 1.1)) (justify left top)) (uuid "cabeadc4-9801-5fc6-b528-b6ffe8be00da"))
+(sheet
+		(at 15 45)
+		(size 115 15)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -142,9 +23,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "084a524d-ae7e-4075-8103-d9a0161d4e87")
-		(property "Sheetname" "Negative Overcurrent"
-			(at 152.4 222.24999999999997 0)
+		(uuid "368701d5-087c-4eeb-b302-0af74145b641")
+		(property "Sheetname" "Power Manager MCU"
+			(at 18 50 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -155,8 +36,8 @@
 				)
 			)
 		)
-		(property "Sheetfile" "3200_PM_NEGATIVE_OVERCURRENT.kicad_sch"
-			(at 152.4 237.51999999999998 0)
+		(property "Sheetfile" "2400_PM_CONTROLLER.kicad_sch"
+			(at 18 56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -170,14 +51,14 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
-					(page "4500")
+					(page "2600")
 				)
 			)
 		)
 	)
-	(sheet
-		(at 25.4000 71.1200)
-		(size 116.84 12.7)
+(sheet
+		(at 140 45)
+		(size 115 15)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -192,7 +73,7 @@
 		)
 		(uuid "0a36b77b-05e6-45f3-a77e-d4367afeda23")
 		(property "Sheetname" "Supply Watchdogs"
-			(at 25.4 69.85000000000001 0)
+			(at 143 50 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -204,7 +85,58 @@
 			)
 		)
 		(property "Sheetfile" "2500_PM_WATCHDOGS.kicad_sch"
-			(at 25.4 85.12 0)
+			(at 143 56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.58 0.58)
+					(thickness 0.09)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
+					(page "2700")
+				)
+			)
+		)
+	)
+(sheet (at 265 45) (size 115 15) (stroke (width 0.1524) (type default)) (fill (color 0 0 0 0)) (uuid "cf97dafc-bba8-4324-839a-1294d02bf1f1") (property "Sheetname" "Host Link Watchdog" (at 268 50 0) (effects (font (size 0.8 0.8)) (justify left))) (property "Sheetfile" "5400_HOST_LINK_WATCHDOG.kicad_sch" (at 268 56 0) (effects (font (size 0.8 0.8)) (justify left)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "2800")))))
+(sheet (at 15 77) (size 115 15) (stroke (width 0.1524) (type default)) (fill (color 0 0 0 0)) (uuid "e9c1d851-48a0-4cda-842b-38c563404601") (property "Sheetname" "Host Input Isolation" (at 18 82 0) (effects (font (size 0.8 0.8)) (justify left))) (property "Sheetfile" "5500_AON_HOST_INPUT_ISOLATION.kicad_sch" (at 18 88 0) (effects (font (size 0.8 0.8)) (justify left)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "2900")))))
+(sheet (at 140 77) (size 115 15) (stroke (width 0.1524) (type default)) (fill (color 0 0 0 0)) (uuid "15e01ab2-ec00-4dc3-9f05-3c593ed4e69a") (property "Sheetname" "Startup Qualifier" (at 143 82 0) (effects (font (size 0.8 0.8)) (justify left))) (property "Sheetfile" "5200_PM_STARTUP_QUALIFIER.kicad_sch" (at 143 88 0) (effects (font (size 0.8 0.8)) (justify left)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "3000")))))
+(sheet
+		(at 265 77)
+		(size 115 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "58374aae-7426-4e49-8230-83aa532a478b")
+		(property "Sheetname" "Permit Interlocks"
+			(at 268 82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.65 0.65)
+					(thickness 0.09)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "2600_PM_PERMIT_INTERLOCKS.kicad_sch"
+			(at 268 88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -223,201 +155,9 @@
 			)
 		)
 	)
-	(sheet
-		(at 279.4000 45.7200)
-		(size 116.84 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.18)
-			(type solid)
-			(color 0 0 0 1)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "0d4f67d9-465c-429b-9cae-b3678a9d67c4")
-		(property "Sheetname" "PM Debug and Host"
-			(at 279.4 44.449999999999996 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.65 0.65)
-					(thickness 0.09)
-					(color 85 85 85 1)
-				)
-			)
-		)
-		(property "Sheetfile" "3300_PM_DEBUG_HOST_INTERFACE.kicad_sch"
-			(at 279.4 59.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.58 0.58)
-					(thickness 0.09)
-					(color 85 85 85 1)
-				)
-			)
-		 (hide yes))
-		(instances
-			(project "MIRA_Power"
-				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
-					(page "4600")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 25.4000 45.7200)
-		(size 116.84 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.18)
-			(type solid)
-			(color 0 0 0 1)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "368701d5-087c-4eeb-b302-0af74145b641")
-		(property "Sheetname" "Power Manager MCU"
-			(at 25.4 44.449999999999996 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.65 0.65)
-					(thickness 0.09)
-					(color 85 85 85 1)
-				)
-			)
-		)
-		(property "Sheetfile" "2400_PM_CONTROLLER.kicad_sch"
-			(at 25.4 59.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.58 0.58)
-					(thickness 0.09)
-					(color 85 85 85 1)
-				)
-			)
-		 (hide yes))
-		(instances
-			(project "MIRA_Power"
-				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
-					(page "3000")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 25.4000 223.5200)
-		(size 116.84 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.18)
-			(type solid)
-			(color 0 0 0 1)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "3db1c0d1-31da-4f1a-9a0c-3e5bcb553f57")
-		(property "Sheetname" "Aux Enable Gates"
-			(at 25.4 222.24999999999997 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.65 0.65)
-					(thickness 0.09)
-					(color 85 85 85 1)
-				)
-			)
-		)
-		(property "Sheetfile" "2800_PM_ENABLE_GATES_AUXILIARY.kicad_sch"
-			(at 25.4 237.51999999999998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.58 0.58)
-					(thickness 0.09)
-					(color 85 85 85 1)
-				)
-			)
-		 (hide yes))
-		(instances
-			(project "MIRA_Power"
-				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
-					(page "3700")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 152.4000 172.7200)
-		(size 116.84 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.18)
-			(type solid)
-			(color 0 0 0 1)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "447aeb79-4346-462c-8215-acf683ad33e7")
-		(property "Sheetname" "Rail Ready"
-			(at 152.4 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.65 0.65)
-					(thickness 0.09)
-					(color 85 85 85 1)
-				)
-			)
-		)
-		(property "Sheetfile" "3000_PM_RAIL_READY.kicad_sch"
-			(at 152.4 186.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.58 0.58)
-					(thickness 0.09)
-					(color 85 85 85 1)
-				)
-			)
-		 (hide yes))
-		(instances
-			(project "MIRA_Power"
-				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
-					(page "4300")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 25.4000 198.1200)
-		(size 116.84 12.7)
+(sheet
+		(at 15 109)
+		(size 115 15)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -432,7 +172,7 @@
 		)
 		(uuid "5340af23-13be-4816-ba9a-a90b0bfec07e")
 		(property "Sheetname" "Primary Enable Gates"
-			(at 25.4 196.84999999999997 0)
+			(at 18 114 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -444,7 +184,7 @@
 			)
 		)
 		(property "Sheetfile" "2700_PM_ENABLE_GATES_PRIMARY.kicad_sch"
-			(at 25.4 212.11999999999998 0)
+			(at 18 120 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -458,14 +198,14 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
-					(page "3600")
+					(page "3200")
 				)
 			)
 		)
 	)
-	(sheet
-		(at 25.4000 172.7200)
-		(size 116.84 12.7)
+(sheet
+		(at 140 109)
+		(size 115 15)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -478,9 +218,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "58374aae-7426-4e49-8230-83aa532a478b")
-		(property "Sheetname" "Permit Interlocks"
-			(at 25.4 171.45 0)
+		(uuid "3db1c0d1-31da-4f1a-9a0c-3e5bcb553f57")
+		(property "Sheetname" "Aux Enable Gates"
+			(at 143 114 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -491,8 +231,8 @@
 				)
 			)
 		)
-		(property "Sheetfile" "2600_PM_PERMIT_INTERLOCKS.kicad_sch"
-			(at 25.4 186.72 0)
+		(property "Sheetfile" "2800_PM_ENABLE_GATES_AUXILIARY.kicad_sch"
+			(at 143 120 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -506,14 +246,18 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
-					(page "3500")
+					(page "3300")
 				)
 			)
 		)
 	)
-	(sheet
-		(at 152.4000 147.3200)
-		(size 116.84 12.7)
+(sheet (at 265 109) (size 115 15) (stroke (width 0.1524) (type default)) (fill (color 0 0 0 0)) (uuid "b09f8789-4e03-408f-9b11-5a26f5c53e38") (property "Sheetname" "Startup Output Gates" (at 268 114 0) (effects (font (size 0.8 0.8)) (justify left))) (property "Sheetfile" "5300_PM_STARTUP_OUTPUTS.kicad_sch" (at 268 120 0) (effects (font (size 0.8 0.8)) (justify left)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "3400")))))
+(sheet (at 15 141) (size 115 15) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "1eae761d-ce36-4a24-9375-da4718c8e864") (property "Sheetname" "VIN Enables 1" (at 18 146 0) (effects (font (size 0.8 0.8)) (justify left bottom))) (property "Sheetfile" "5800_VIN_REFERENCED_ENABLES.kicad_sch" (at 18 152 0) (effects (font (size 0.8 0.8)) (justify left top)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "3500")))))
+(sheet (at 140 141) (size 115 15) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "46a72d8f-32a9-4587-88a2-bdda2c2e1b7d") (property "Sheetname" "VIN Enables 2" (at 143 146 0) (effects (font (size 0.8 0.8)) (justify left bottom))) (property "Sheetfile" "5900_VIN_REFERENCED_ENABLES.kicad_sch" (at 143 152 0) (effects (font (size 0.8 0.8)) (justify left top)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "3600")))))
+(sheet (at 265 141) (size 115 15) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "d9d7f796-b97f-46dd-b030-12d5a0c6a3a4") (property "Sheetname" "FPGA Aux Interlock" (at 268 146 0) (effects (font (size 0.8 0.8)) (justify left bottom))) (property "Sheetfile" "6000_FPGA_AUX_IO_INTERLOCK.kicad_sch" (at 268 152 0) (effects (font (size 0.8 0.8)) (justify left top)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "3700")))))
+(sheet
+		(at 15 173)
+		(size 115 15)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -528,7 +272,7 @@
 		)
 		(uuid "f3faabc0-bff0-4aac-9609-1eb0a44b6eb3")
 		(property "Sheetname" "Analog Power Good"
-			(at 152.4 146.04999999999998 0)
+			(at 18 178 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -540,7 +284,199 @@
 			)
 		)
 		(property "Sheetfile" "2900_PM_ANALOG_POWER_GOOD.kicad_sch"
-			(at 152.4 161.32 0)
+			(at 18 184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.58 0.58)
+					(thickness 0.09)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
+					(page "3800")
+				)
+			)
+		)
+	)
+(sheet
+		(at 140 173)
+		(size 115 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "447aeb79-4346-462c-8215-acf683ad33e7")
+		(property "Sheetname" "Rail Ready"
+			(at 143 178 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.65 0.65)
+					(thickness 0.09)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "3000_PM_RAIL_READY.kicad_sch"
+			(at 143 184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.58 0.58)
+					(thickness 0.09)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
+					(page "3900")
+				)
+			)
+		)
+	)
+(sheet
+		(at 265 173)
+		(size 115 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f8b32888-4db7-4947-8448-3bb145a533f3")
+		(property "Sheetname" "Command Ready"
+			(at 268 178 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.65 0.65)
+					(thickness 0.09)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "3100_PM_COMMAND_READY.kicad_sch"
+			(at 268 184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.58 0.58)
+					(thickness 0.09)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
+					(page "4000")
+				)
+			)
+		)
+	)
+(sheet
+		(at 15 205)
+		(size 115 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "084a524d-ae7e-4075-8103-d9a0161d4e87")
+		(property "Sheetname" "Negative Overcurrent"
+			(at 18 210 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.65 0.65)
+					(thickness 0.09)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "3200_PM_NEGATIVE_OVERCURRENT.kicad_sch"
+			(at 18 216 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.58 0.58)
+					(thickness 0.09)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
+					(page "4100")
+				)
+			)
+		)
+	)
+(sheet
+		(at 140 205)
+		(size 115 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0d4f67d9-465c-429b-9cae-b3678a9d67c4")
+		(property "Sheetname" "PM Debug and Host"
+			(at 143 210 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.65 0.65)
+					(thickness 0.09)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "3300_PM_DEBUG_HOST_INTERFACE.kicad_sch"
+			(at 143 216 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -559,112 +495,4 @@
 			)
 		)
 	)
-	(sheet
-		(at 152.4000 198.1200)
-		(size 116.84 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.18)
-			(type solid)
-			(color 0 0 0 1)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "f8b32888-4db7-4947-8448-3bb145a533f3")
-		(property "Sheetname" "Command Ready"
-			(at 152.4 196.84999999999997 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.65 0.65)
-					(thickness 0.09)
-					(color 85 85 85 1)
-				)
-			)
-		)
-		(property "Sheetfile" "3100_PM_COMMAND_READY.kicad_sch"
-			(at 152.4 212.11999999999998 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.58 0.58)
-					(thickness 0.09)
-					(color 85 85 85 1)
-				)
-			)
-		 (hide yes))
-		(instances
-			(project "MIRA_Power"
-				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0"
-					(page "4400")
-				)
-			)
-		)
-	)
-
-
-
-
-
-
-
-(sheet (at 25.4000 147.3200) (size 116.84 12.7) (stroke (width 0.1524) (type default)) (fill (color 0 0 0 0)) (uuid "15e01ab2-ec00-4dc3-9f05-3c593ed4e69a") (property "Sheetname" "Startup Qualifier" (at 25.4 146.04999999999998 0) (effects (font (size 0.8 0.8)) (justify left))) (property "Sheetfile" "5200_PM_STARTUP_QUALIFIER.kicad_sch" (at 25.4 161.32 0) (effects (font (size 0.8 0.8)) (justify left)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "3400")))))
-
-(sheet (at 152.4000 45.7200) (size 116.84 12.7) (stroke (width 0.1524) (type default)) (fill (color 0 0 0 0)) (uuid "b09f8789-4e03-408f-9b11-5a26f5c53e38") (property "Sheetname" "Startup Output Gates" (at 152.4 44.449999999999996 0) (effects (font (size 0.8 0.8)) (justify left))) (property "Sheetfile" "5300_PM_STARTUP_OUTPUTS.kicad_sch" (at 152.4 59.72 0) (effects (font (size 0.8 0.8)) (justify left)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "3800")))))
-
-(sheet (at 25.4000 96.5200) (size 116.84 12.7) (stroke (width 0.1524) (type default)) (fill (color 0 0 0 0)) (uuid "cf97dafc-bba8-4324-839a-1294d02bf1f1") (property "Sheetname" "Host Link Watchdog" (at 25.4 95.25 0) (effects (font (size 0.8 0.8)) (justify left))) (property "Sheetfile" "5400_HOST_LINK_WATCHDOG.kicad_sch" (at 25.4 110.52 0) (effects (font (size 0.8 0.8)) (justify left)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "3200")))))
-
-(sheet (at 25.4000 121.9200) (size 116.84 12.7) (stroke (width 0.1524) (type default)) (fill (color 0 0 0 0)) (uuid "e9c1d851-48a0-4cda-842b-38c563404601") (property "Sheetname" "Host Input Isolation" (at 25.4 120.64999999999999 0) (effects (font (size 0.8 0.8)) (justify left))) (property "Sheetfile" "5500_AON_HOST_INPUT_ISOLATION.kicad_sch" (at 25.4 135.92 0) (effects (font (size 0.8 0.8)) (justify left)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "3300")))))
-
-(sheet (at 152.4000 71.1200) (size 116.84 12.7) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "1eae761d-ce36-4a24-9375-da4718c8e864") (property "Sheetname" "VIN Enables 1" (at 152.4 69.85000000000001 0) (effects (font (size 0.8 0.8)) (justify left bottom))) (property "Sheetfile" "5800_VIN_REFERENCED_ENABLES.kicad_sch" (at 152.4 85.12 0) (effects (font (size 0.8 0.8)) (justify left top)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "3900")))))
-
-(sheet (at 152.4000 96.5200) (size 116.84 12.7) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "46a72d8f-32a9-4587-88a2-bdda2c2e1b7d") (property "Sheetname" "VIN Enables 2" (at 152.4 95.25 0) (effects (font (size 0.8 0.8)) (justify left bottom))) (property "Sheetfile" "5900_VIN_REFERENCED_ENABLES.kicad_sch" (at 152.4 110.52 0) (effects (font (size 0.8 0.8)) (justify left top)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "4000")))))
-
-(sheet (at 152.4000 121.9200) (size 116.84 12.7) (stroke (width 0.1524) (type solid)) (fill (color 0 0 0 0)) (uuid "d9d7f796-b97f-46dd-b030-12d5a0c6a3a4") (property "Sheetname" "FPGA Aux Interlock" (at 152.4 120.64999999999999 0) (effects (font (size 0.8 0.8)) (justify left bottom))) (property "Sheetfile" "6000_FPGA_AUX_IO_INTERLOCK.kicad_sch" (at 152.4 135.92 0) (effects (font (size 0.8 0.8)) (justify left top)) (hide yes)) (instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0" (page "4100")))))
-
-(title_block (title "Power Sequencing") (rev "C-review") (company "MIRA"))
-
-(text "3000" (at 27.939999999999998 49.72 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "1bfbb6e8-fad2-590a-a1f7-b1a6dd70942d"))
-
-(text "3100" (at 27.939999999999998 75.12 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "202285e8-7401-5966-a573-222a672b45aa"))
-
-(text "3200" (at 27.939999999999998 100.52 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "4c8fe01b-cb4c-5d05-9155-3d0574586645"))
-
-(text "3300" (at 27.939999999999998 125.91999999999999 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "65266664-2079-5b3b-bb66-6c7b535ce0b9"))
-
-(text "3400" (at 27.939999999999998 151.32 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "29232dbd-33ee-54b0-a1bf-02c9f0d75030"))
-
-(text "3500" (at 27.939999999999998 176.72 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "a66a89c8-ecdd-5d36-acaa-1b8576f43130"))
-
-(text "3600" (at 27.939999999999998 202.11999999999998 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "66afb3b8-6791-53d5-bc88-fad2a44166c6"))
-
-(text "3700" (at 27.939999999999998 227.51999999999998 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "6b7ecb4e-eedf-5443-8ddf-ea6762d45015"))
-
-(text "3800" (at 154.94 49.72 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "01839d8b-1d1e-5aaf-b75b-0b50aee216ee"))
-
-(text "3900" (at 154.94 75.12 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "2f5f572f-7556-5b96-8e15-285d4fec921d"))
-
-(text "4000" (at 154.94 100.52 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "83220e60-32f2-5832-87e4-16642097832d"))
-
-(text "4100" (at 154.94 125.91999999999999 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "e6525a8a-b229-5c64-82fc-d162a0dabca0"))
-
-(text "4200" (at 154.94 151.32 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "b1d6c528-514d-5e84-84d1-c778b84af602"))
-
-(text "4300" (at 154.94 176.72 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "41704060-aaa4-5a97-b1ad-9e1c08d56b60"))
-
-(text "4400" (at 154.94 202.11999999999998 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "53f0de3f-63c0-556f-be20-b7adabb11455"))
-
-(text "4500" (at 154.94 227.51999999999998 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "4a450771-1945-5333-b0a0-0123a56ea22c"))
-
-(text "4600" (at 281.94 49.72 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "ca5fe53f-249d-53c1-812f-6dd1b6f68606"))
-
-(text "Power Sequencing" (at 20.32 15.24 0) (effects (font (size 2.2 2.2)) (justify left top)) (uuid "91cfd372-0278-52da-929c-93e7d4ee7e13"))
-
-(text "Read in page order. Each section opens the signal path and its local support circuitry." (at 20.32 24.13 0) (effects (font (size 1 1)) (justify left top)) (uuid "a1781efb-767c-5e81-b0d6-08d8c2d1d3a5"))
 )

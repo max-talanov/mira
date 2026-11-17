@@ -1,321 +1,996 @@
 {
   "kicad_version": "10.0.5",
-  "baseline_head": "45fe79b5e7059a2ecc25c6bcb042687217c2d1f3",
+  "baseline_head": "56f9a9507ec219c7f7b0caf28189b47882f63a45",
+  "ERC": {
+    "MIRA_Control": {
+      "before": 0,
+      "after": 0
+    },
+    "MIRA_Power": {
+      "before": 0,
+      "after": 0
+    },
+    "MIRA_Crossbar": {
+      "before": 0,
+      "after": 0
+    }
+  },
   "connectivity": {
-    "after": {
-      "MIRA_Control": {
-        "project": "MIRA_Control",
-        "components": 2189,
-        "pins": 9266,
-        "nets": 2191,
-        "result": "PASS"
-      },
-      "MIRA_Power": {
-        "project": "MIRA_Power",
-        "components": 793,
-        "pins": 2571,
-        "nets": 446,
-        "result": "PASS"
-      },
-      "MIRA_Crossbar": {
-        "project": "MIRA_Crossbar",
-        "components": 6,
-        "pins": 300,
-        "nets": 197,
-        "result": "PASS"
-      },
-      "ch48": "PASS: 48 electrode nets, 96 ADC inputs, 48 DAC outputs, 144 forming taps, 48 bleed controls, 168 mating positions and 64 socket pins."
-    },
-    "candidate": {
-      "MIRA_Control": {
-        "project": "MIRA_Control",
-        "components": 2189,
-        "pins": 9266,
-        "nets": 2191,
-        "result": "PASS"
-      },
-      "MIRA_Power": {
-        "project": "MIRA_Power",
-        "components": 793,
-        "pins": 2571,
-        "nets": 446,
-        "result": "PASS"
-      },
-      "MIRA_Crossbar": {
-        "project": "MIRA_Crossbar",
-        "components": 5,
-        "pins": 236,
-        "nets": 133,
-        "result": "PASS"
-      },
-      "ch48": "PASS: 48 electrode nets, 96 ADC inputs, 48 DAC outputs, 144 forming taps, 48 bleed controls, 168 mating positions and 64 socket pins."
-    },
-    "negative_comparison": "PASS"
-  },
-  "identity_and_pcb_working": {
     "MIRA_Control": {
-      "pages": 62,
-      "symbol_units": 2328,
-      "pcb_footprints": 2337,
-      "result": "PASS"
-    },
-    "MIRA_Crossbar": {
-      "pages": 1,
-      "symbol_units": 6,
-      "pcb_footprints": 6,
-      "result": "PASS"
+      "project": "MIRA_Control",
+      "components": 2189,
+      "pins": 9266,
+      "nets": 2191,
+      "result": "PASS",
+      "component_values_MPN_footprints_population_and_physical_pin_definitions": "unchanged",
+      "electrical_partitions": "identical_with_reference_map",
+      "meaningful_names": "preserved_or_localized_with_same_suffix",
+      "effective_net_classes": "unchanged"
     },
     "MIRA_Power": {
-      "pages": 57,
-      "symbol_units": 1096,
-      "pcb_footprints": 793,
-      "result": "PASS"
-    }
-  },
-  "identity_and_pcb_commit": {
-    "MIRA_Control": {
-      "pages": 62,
-      "symbol_units": 2328,
-      "pcb_footprints": 2337,
-      "result": "PASS"
+      "project": "MIRA_Power",
+      "components": 793,
+      "pins": 2571,
+      "nets": 446,
+      "result": "PASS",
+      "component_values_MPN_footprints_population_and_physical_pin_definitions": "unchanged",
+      "electrical_partitions": "identical_with_reference_map",
+      "meaningful_names": "preserved_or_localized_with_same_suffix",
+      "effective_net_classes": "unchanged"
     },
     "MIRA_Crossbar": {
-      "pages": 1,
-      "symbol_units": 5,
-      "pcb_footprints": 5,
-      "result": "PASS"
+      "project": "MIRA_Crossbar",
+      "components": 6,
+      "pins": 300,
+      "nets": 197,
+      "result": "PASS",
+      "component_values_MPN_footprints_population_and_physical_pin_definitions": "unchanged",
+      "electrical_partitions": "identical_with_reference_map",
+      "meaningful_names": "preserved_or_localized_with_same_suffix",
+      "effective_net_classes": "unchanged"
+    }
+  },
+  "identity_and_PCB_preservation": {
+    "MIRA_Control": {
+      "result": "PASS",
+      "pages": 58,
+      "original_symbol_instances": 2328,
+      "final_symbol_instances": 2760,
+      "multi_unit_packages_verified": 132,
+      "original_UUIDs_preserved": true,
+      "values_MPN_footprints_population_preserved": true,
+      "PCB_geometry_pads_nets_routes_models_preserved": true,
+      "PCB_changes": "reference text / schematic path only",
+      "project_preferences_and_ERC_rules": "unchanged"
     },
     "MIRA_Power": {
-      "pages": 57,
-      "symbol_units": 1096,
-      "pcb_footprints": 793,
-      "result": "PASS"
+      "result": "PASS",
+      "pages": 53,
+      "original_symbol_instances": 1096,
+      "final_symbol_instances": 1096,
+      "multi_unit_packages_verified": 0,
+      "original_UUIDs_preserved": true,
+      "values_MPN_footprints_population_preserved": true,
+      "PCB_geometry_pads_nets_routes_models_preserved": true,
+      "PCB_changes": "reference text / schematic path only",
+      "project_preferences_and_ERC_rules": "unchanged"
+    },
+    "MIRA_Crossbar": {
+      "result": "PASS",
+      "pages": 1,
+      "original_symbol_instances": 6,
+      "final_symbol_instances": 6,
+      "multi_unit_packages_verified": 0,
+      "original_UUIDs_preserved": true,
+      "values_MPN_footprints_population_preserved": true,
+      "PCB_geometry_pads_nets_routes_models_preserved": true,
+      "PCB_changes": "reference text / schematic path only",
+      "project_preferences_and_ERC_rules": "unchanged"
     }
   },
-  "pdf": {
-    "working": {
-      "MIRA_Control": {
-        "pages": 62,
-        "native_title_block_page_ids": "PASS",
-        "page_bounds": "PASS"
-      },
-      "MIRA_Power": {
-        "pages": 57,
-        "native_title_block_page_ids": "PASS",
-        "page_bounds": "PASS"
-      },
-      "MIRA_Crossbar": {
-        "pages": 1,
-        "native_title_block_page_ids": "PASS",
-        "page_bounds": "PASS"
-      }
-    },
-    "candidate": {
-      "MIRA_Control": {
-        "pages": 62,
-        "native_title_block_page_ids": "PASS",
-        "page_bounds": "PASS"
-      },
-      "MIRA_Power": {
-        "pages": 57,
-        "native_title_block_page_ids": "PASS",
-        "page_bounds": "PASS"
-      },
-      "MIRA_Crossbar": {
-        "pages": 1,
-        "native_title_block_page_ids": "PASS",
-        "page_bounds": "PASS"
-      }
-    }
-  },
-  "erc_working": [
-    {
-      "project": "MIRA_Control",
-      "command": [
-        "sch",
-        "export",
-        "netlist"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Control",
-      "command": [
-        "sch",
-        "export",
-        "pdf"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Control",
-      "command": [
-        "sch",
-        "erc",
-        "--exit-code-violations"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Power",
-      "command": [
-        "sch",
-        "export",
-        "netlist"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Power",
-      "command": [
-        "sch",
-        "export",
-        "pdf"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Power",
-      "command": [
-        "sch",
-        "erc",
-        "--exit-code-violations"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Crossbar",
-      "command": [
-        "sch",
-        "export",
-        "netlist"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Crossbar",
-      "command": [
-        "sch",
-        "export",
-        "pdf"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Crossbar",
-      "command": [
-        "sch",
-        "erc",
-        "--exit-code-violations"
-      ],
-      "exit_code": 0
-    }
-  ],
-  "erc_commit": [
-    {
-      "project": "MIRA_Control",
-      "command": [
-        "sch",
-        "export",
-        "netlist"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Control",
-      "command": [
-        "sch",
-        "export",
-        "pdf"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Control",
-      "command": [
-        "sch",
-        "erc",
-        "--exit-code-violations"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Power",
-      "command": [
-        "sch",
-        "export",
-        "netlist"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Power",
-      "command": [
-        "sch",
-        "export",
-        "pdf"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Power",
-      "command": [
-        "sch",
-        "erc",
-        "--exit-code-violations"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Crossbar",
-      "command": [
-        "sch",
-        "export",
-        "netlist"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Crossbar",
-      "command": [
-        "sch",
-        "export",
-        "pdf"
-      ],
-      "exit_code": 0
-    },
-    {
-      "project": "MIRA_Crossbar",
-      "command": [
-        "sch",
-        "erc",
-        "--exit-code-violations"
-      ],
-      "exit_code": 0
-    }
-  ],
-  "visual_review": {
-    "channel_pages": [
-      2600,
-      2700,
-      2800,
-      2900,
-      3000,
-      3100,
-      3200,
-      3300,
-      3400,
-      3500,
-      3600,
-      3700
-    ],
-    "power_input_page": 300,
+  "CH48": {
     "result": "PASS",
-    "notes": "All 12 merged channel pages, complete input path, output interface, converter example and Crossbar rendered and inspected. Native page IDs checked on all pages; input-note text checked against panel bounds."
+    "ambiguous_local_alias_negative_check": "PASS"
   },
-  "baseline_netlists_sha256": {
-    "MIRA_Control": "dd2073efed7ba3dfe222cbbe12c33f0774b856160eaff2950d111136ba083f80",
-    "MIRA_Power": "068dedc21b1d73e4530788094d35f87e2a2b8adaa85cde1c5731636dfa054d5e",
-    "MIRA_Crossbar": "c7a58799dc99025afd131b97d4dbe6e45bf693b07fb8c11b29a986981d3880f7"
+  "PDF": {
+    "MIRA_Control": {
+      "result": "PASS",
+      "pages": 58,
+      "page_checks": [
+        {
+          "page": 100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 200,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 300,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 400,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 500,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 600,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 700,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 800,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 900,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1000,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1200,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1300,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1400,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1500,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1600,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1700,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1800,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1900,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2000,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2200,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2300,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2400,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2500,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2600,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2700,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2800,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2900,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3000,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3200,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3300,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3400,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3500,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3600,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3700,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3800,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3900,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4000,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4200,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4300,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4400,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4500,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4600,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4700,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4800,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4900,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5000,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5200,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5300,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5400,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5500,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5600,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5700,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5800,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        }
+      ]
+    },
+    "MIRA_Power": {
+      "result": "PASS",
+      "pages": 53,
+      "page_checks": [
+        {
+          "page": 100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 200,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 300,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 400,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 500,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 600,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 700,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 800,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 900,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1000,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1200,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1300,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1400,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1500,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1600,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1700,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1800,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 1900,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2000,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2200,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2300,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2400,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2500,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2600,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2700,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2800,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 2900,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3000,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3200,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3300,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3400,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3500,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3600,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3700,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3800,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 3900,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4000,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4200,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4300,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4400,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4500,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4600,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4700,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4800,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 4900,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5000,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5200,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        },
+        {
+          "page": 5300,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        }
+      ]
+    },
+    "MIRA_Crossbar": {
+      "result": "PASS",
+      "pages": 1,
+      "page_checks": [
+        {
+          "page": 100,
+          "native_title_block": "PASS",
+          "text_within_page": "PASS"
+        }
+      ]
+    }
+  },
+  "visual_review": {
+    "method": "Native KiCad PDF rendered with pdftoppm and inspected; overview of all pages and enlarged changed functional blocks. No interactive GUI session claimed.",
+    "result": "PASS",
+    "detail_pages": {
+      "MIRA_Control": [
+        1500,
+        1600,
+        1800,
+        1900,
+        2100,
+        2600,
+        3900,
+        4800
+      ],
+      "MIRA_Power": [
+        300,
+        500,
+        700,
+        1100,
+        1400,
+        1500,
+        1700
+      ],
+      "MIRA_Crossbar": [
+        100
+      ]
+    }
+  },
+  "native_commands": [
+    {
+      "project": "MIRA_Control",
+      "command": [
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "/tmp/mira-readable/MIRA_Control-after.xml",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/MIRA_Control/MIRA_Control.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Control",
+      "command": [
+        "sch",
+        "erc",
+        "--exit-code-violations",
+        "--format",
+        "json",
+        "-o",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/review/schematic-layout/erc/MIRA_Control.json",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/MIRA_Control/MIRA_Control.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Control",
+      "command": [
+        "sch",
+        "erc",
+        "--exit-code-violations",
+        "-o",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/review/schematic-layout/erc/MIRA_Control.rpt",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/MIRA_Control/MIRA_Control.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Control",
+      "command": [
+        "sch",
+        "export",
+        "pdf",
+        "-o",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/review/schematic-layout/PDF/MIRA_Control.pdf",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/MIRA_Control/MIRA_Control.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Power",
+      "command": [
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "/tmp/mira-readable/MIRA_Power-after.xml",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/MIRA_Power/MIRA_Power.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Power",
+      "command": [
+        "sch",
+        "erc",
+        "--exit-code-violations",
+        "--format",
+        "json",
+        "-o",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/review/schematic-layout/erc/MIRA_Power.json",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/MIRA_Power/MIRA_Power.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Power",
+      "command": [
+        "sch",
+        "erc",
+        "--exit-code-violations",
+        "-o",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/review/schematic-layout/erc/MIRA_Power.rpt",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/MIRA_Power/MIRA_Power.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Power",
+      "command": [
+        "sch",
+        "export",
+        "pdf",
+        "-o",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/review/schematic-layout/PDF/MIRA_Power.pdf",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/MIRA_Power/MIRA_Power.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "command": [
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "/tmp/mira-readable/MIRA_Crossbar-after.xml",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/MIRA_Crossbar/MIRA_Crossbar.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "command": [
+        "sch",
+        "erc",
+        "--exit-code-violations",
+        "--format",
+        "json",
+        "-o",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/review/schematic-layout/erc/MIRA_Crossbar.json",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/MIRA_Crossbar/MIRA_Crossbar.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "command": [
+        "sch",
+        "erc",
+        "--exit-code-violations",
+        "-o",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/review/schematic-layout/erc/MIRA_Crossbar.rpt",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/MIRA_Crossbar/MIRA_Crossbar.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "command": [
+        "sch",
+        "export",
+        "pdf",
+        "-o",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/review/schematic-layout/PDF/MIRA_Crossbar.pdf",
+        "/home/dima54/Projects/mira/hardware/MIRA_RevC/MIRA_Crossbar/MIRA_Crossbar.kicad_sch"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "MIRA_Control/C_USB_C.kicad_sch": "ee0aedd1296c7b56a1f0b44a1694116f9004a326d64194bc3aeef8f90cf78c2d",
+    "MIRA_Control/C_WL12.kicad_sch": "b9fcc48485bc82b32d52ee43728db6b6fa63a8abf383ed4060615af64aec60d3",
+    "MIRA_Control/C_AFE_BL12_BL15.kicad_sch": "aad6b387fb1a6768761e9d54313fe465a764cfeab751f98cd06a2cd81a6449c1",
+    "MIRA_Control/MIRA_Control.kicad_pcb": "1e4ef2c6a1b8b2ee9e284650a708c93e0ce0f9b9134995d5792e19c7befc94cf",
+    "MIRA_Control/C_AFE_NL4_NL7.kicad_sch": "15307c2374de06157ca640b4be60163458b170316f65f23e6609a15fbc84dd75",
+    "MIRA_Control/C_AFE_BL0_BL3.kicad_sch": "20f5bdfe0be368ea6380bccc2e6283a8af2779d9a9c1e5effac87ca825e4a101",
+    "MIRA_Control/C_Decoupling.kicad_sch": "ed2a6ce07aabad2e9b0ce1e5e82e79e074cd8e10a8c4204f2da792ed005c1f66",
+    "MIRA_Control/200_MCU_FMC_AND_SDRAM.kicad_sch": "ad521451825dbf90aa80f6239d4344e4e9c3376db1c77cdd449b7b0fad6da908",
+    "MIRA_Control/MIRA_Control.kicad_pro": "5d057358304aae3c47a8ca1922ac995977270eea0b2a1969d58ade5b995c27f6",
+    "MIRA_Control/C_GROUP_USB.kicad_sch": "f4c72a0889859cd6f1c025b8f54a1936632b59e3e4e6078835880eb3a59acf66",
+    "MIRA_Control/C_GROUP_CONVERTERS.kicad_sch": "ff10b1378da71c430f7f24c18603a4f3d8c45f7df50ab2182195fb38443215f8",
+    "MIRA_Control/C_Mode.kicad_sch": "d25ed430f6f46d6fbb7e5ec2843084f567bddecac3c1f7b16b8b4f214b6cc998",
+    "MIRA_Control/C_GROUP_MODULE.kicad_sch": "95f940d0af2fa9f41f2efb1e0cb26fbd28b3a73a02f588a2eda705ab481a5869",
+    "MIRA_Control/C_AFE_NL0_NL3.kicad_sch": "1545d72379b577435cd087fe0da96988f1bad9987e00329c35c74e7808bdf159",
+    "MIRA_Control/C_AFE_BL4_BL7.kicad_sch": "f7d5281da9f1df8b4c7f343dfc399db840b153ded71919050bcd65234cb44fff",
+    "MIRA_Control/CH48_Form_BL.kicad_sch": "bac6ac2470948e642be7a6f67f7052ddb80294ad0361ded5afa485c73068daae",
+    "MIRA_Control/C_SOC2.kicad_sch": "faa6bf3411ad03c09f0562d61473cfcd1a30e21d99bcff41ed1662bdf53573a5",
+    "MIRA_Control/C_Global.kicad_sch": "d26d4f447e637ed936865135eb4f28763c4efc517a899ccd69b411cbb94c8680",
+    "MIRA_Control/C_Bank0.kicad_sch": "47cab0d5799e30bf0af48514a7330e29f8e3b080651c91aaa47dd11e048bc64e",
+    "MIRA_Control/C_Service.kicad_sch": "da680749cbb767b96904a404d0935b03df6cfde9aef2dd6b8a0bfe8e038e8e28",
+    "MIRA_Control/C_Crossbar.kicad_sch": "ff07d70521f8e4140351a02df2846fc953916473179a444fb499764a42b43ad1",
+    "MIRA_Control/C_GROUP_LINES.kicad_sch": "879748ef802d447fb453437089c748388a0413a5343d2d4bc73c2c50236a42d0",
+    "MIRA_Control/C_Mask5.kicad_sch": "648d8fd0228f762c6bb31038dbf6d6cb2d3c4e8d264b21ecd0441240e81eb4ea",
+    "MIRA_Control/C_LogicPower0.kicad_sch": "e7ae4245eb6227a12ab11221e42f9161c12466648db5e7cdc8e19d18bd180064",
+    "MIRA_Control/420_DISTRIBUTED_ANALOG_POWER.kicad_sch": "25299b0c930c6e9fd781380d4229686386b2584878d7011ac1d54b47081782c8",
+    "MIRA_Control/CH48_Form_Isolation.kicad_sch": "31d99a3da98529a84031c96ed38fe9f1350fd065c112cb81b048a7a64bf1a85a",
+    "MIRA_Control/C_Mask4.kicad_sch": "652028ad4b00fa046bae29f1e9af8421948586c25090bf9f0be4fe4d6e2babf8",
+    "MIRA_Control/C_AFE_BL16_BL19.kicad_sch": "0c2803de96b7d6023bc627e7ffdeeb97b90e071c68915bb69d6f432e338627b6",
+    "MIRA_Control/C_AFE_NL8_NL11.kicad_sch": "9e57e5967b005179214884442618b2d164cd2aafc27b3e72006ac78c1983c8e2",
+    "MIRA_Control/C_AFE_NL12_NL15.kicad_sch": "0d0b63f2422819322513f008e7238a5f06820b875a051ccf25cbf95506215fa9",
+    "MIRA_Control/C_FX20.kicad_sch": "47afc153597fa41eb5ea407bc0086a14e2693b0f017881dfde16ac8b4ce79f73",
+    "MIRA_Control/CH48_Form_WL.kicad_sch": "ae255dc8e5a364d7d42269fca1720e3272f3bc1b788935675f357898d6a65c3f",
+    "MIRA_Control/C_SOC0.kicad_sch": "e353f60d5b79b24a2e8518ed0f73c0f9426c286103996b7121d31986f7d637f0",
+    "MIRA_Control/C_GROUP_SAFETY.kicad_sch": "8aa54f12c20469fd35b613b18ec87a94613f59346083e296db2de27f6e098e9b",
+    "MIRA_Control/C_GROUP_ZYNQ.kicad_sch": "89a30ce1630e48cd18b153e4907c96482fd67e89cc078fcfa5d1f3d0ab92be66",
+    "MIRA_Control/C_Mask0.kicad_sch": "86e899c22bb48d65a34546c4987f602455547658893a66644933959077b538b3",
+    "MIRA_Control/C_Bank1.kicad_sch": "0e7937cd578a9436d5a4bec12652816b81fc1482aa593faf6019079e3a7a8f3e",
+    "MIRA_Control/C_FormAddress.kicad_sch": "d9ccb2499c0282ed692d873c5ac96e105545f745de08e410c9abcedec3f6192e",
+    "MIRA_Control/CH48_Form_NL.kicad_sch": "43a212491d8b3fe51aeafad637a7331bca09c439f4c6b395a2c473f89b9fc968",
+    "MIRA_Control/410_DISTRIBUTED_DIGITAL_POWER.kicad_sch": "0273fa6df4c18e3a237ef2539c4e57c34a0091ee31370597f6a1b7cbb40e4dfa",
+    "MIRA_Control/C_Bank2.kicad_sch": "0317d60fe2388b4b579d970bd919a7021e620378df10c302e3fb203f56e347f4",
+    "MIRA_Control/C_AFE_BL8_BL11.kicad_sch": "0ca675f54622895fcc64deb47637c82db28764a1a82fb43cb93c803d6a4325d0",
+    "MIRA_Control/C_Boot.kicad_sch": "a74be6ea2ee2d1988eacdc5d5672ce93aa98021d4bf84d0e5b155dcbc580681f",
+    "MIRA_Control/MCU.kicad_sch": "09b9d0c35db21c24de2e9661a2a4f349f3caa68c528d162870b829aa29c5afec",
+    "MIRA_Control/C_GROUP_WORDLINES.kicad_sch": "6e708350ee5fd460100c53344c8239043f621ec74a814b4f93522dc63f3bcbd8",
+    "MIRA_Control/INTERCONNECT.kicad_sch": "3ab1704b9b25724d6535e86f6b0ed6d78d0137f7b8fe26ea527f136b1eb70643",
+    "MIRA_Control/300_MCU_QSPI_MICROSD_AND_CONTROL.kicad_sch": "a09882a5e46f4bcd6deaeef1e7c782241818a0b3dffceddf1d7d4e9cecb03ab9",
+    "MIRA_Control/C_AFE_BL20_BL23.kicad_sch": "12928898c231142f4a87507cad6fe06c5e207a55475325824eb1a8a4d2eb2799",
+    "MIRA_Control/C_AFE_BL24_BL27.kicad_sch": "4501231917f06efa8fcde9ac8bedf8ae8ab4e7f7541d680f6cb19b0a682009d8",
+    "MIRA_Control/100_MCU_POWER_CLOCKS_AND_DEBUG.kicad_sch": "b59d7b37a13842b68b9834b759df3257003685bfc66f9bc530638ef2ee70c013",
+    "MIRA_Control/C_ChannelGuide.kicad_sch": "cb726f1fff7065541dc0ee6ed90c7a51d5922ee4e77a8ea334d3204412df0e0e",
+    "MIRA_Control/C_Mask2.kicad_sch": "a19e3df93f07a7d8661f74eb6e0f09a60ac7239a7bc94882cbccb41593ea5d08",
+    "MIRA_Control/MIRA_Control.kicad_sch": "1e44ee228c6d145f28c574de391433b2e6cdf397775d7daf18cb6925a6e6a5a4",
+    "MIRA_Control/C_Mask1.kicad_sch": "74638071b72ec103f7a110344e0ac8b1ddacb29ea95ee1b157973279e8779e54",
+    "MIRA_Control/C_AFE_BL28_BL31.kicad_sch": "496fea62590cd6d4fddf8bb4561919b49ecf735e94366731145a6e7a90f3ec29",
+    "MIRA_Control/C_SOC1.kicad_sch": "ce7f177a55c6ef31fb361a6202e5bfcb424b9e005d306b741e99374087efe025",
+    "MIRA_Control/C_Mask3.kicad_sch": "e36e5aa629871d2752f7e0ead4e47c37d52e7ceee99aec42105f68d9d3777b56",
+    "MIRA_Control/CH48_Interlock.kicad_sch": "aec8d4c167ed9a7e33ef74534bdfb89919444c045aa1408695102c439f97af0d",
+    "MIRA_Control/C_DDR.kicad_sch": "bf7de0917f5808c663365cb5f2f55ce58cd1e16816f917a18c9f10c48c1bed6c",
+    "MIRA_Control/400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch": "5e6f97767e26e79d1ea292506e2fe201b6039d0a5b9b58d64281a65859ed3c3b",
+    "MIRA_Control/libraries/MIRA_C.kicad_sym": "a3a12697d32d6cac4acff7825e43e6f0b9ae2e9c383759156efb659538362ac7",
+    "MIRA_Control/libraries/MIRA_Readable.kicad_sym": "8858c975499ddcb5bccb62318c6d5279f967080f6e023f548c2b2f088c02a416",
+    "MIRA_Control/libraries/MIRA_RevA.kicad_sym": "1a91830f29ccfdb18ee5b5feb1c6dce37d233ac1355fbb3e41405bab832b745f",
+    "MIRA_Control/libraries/power.kicad_sym": "2d0d3432db7abbc9b3d872dc1d1aad197f2f0bb24d1aa999a4854e2a205a1106",
+    "MIRA_Control/libraries/MIRA48.kicad_sym": "3c5fafd97c703af117204fc876cc49b7747c22136ca4480b822fdc06d6deaaa2",
+    "MIRA_Power/5400_HOST_LINK_WATCHDOG.kicad_sch": "5271ab69bf99f741b6c72f40714d23c40e76b4ed31430f101d69af93314fc1c7",
+    "MIRA_Power/600_USB_5V.kicad_sch": "ba5ec5e527214361a864dabfb1a120835a3f555be76306fa736378e4882b1dd7",
+    "MIRA_Power/800_FPGA_INTERMEDIATE_5V5.kicad_sch": "e8a6cbe6d64188fc546736b9c38a97f6e9b0856fc9aedb2d1d67b9b9507d8790",
+    "MIRA_Power/3000_PM_RAIL_READY.kicad_sch": "3277e902ded3087e364ec1fe8ed4c0ee1ed00a4e2b7cefa94454b1aa4203a5da",
+    "MIRA_Power/2600_PM_PERMIT_INTERLOCKS.kicad_sch": "26e536628869e2767171696c88fd1f4b0b097f0cb146a4536d75f015b3fced2e",
+    "MIRA_Power/700_SYS_3V3.kicad_sch": "ca72b291250b2b86fdddbfc010e1513d55800fe77d6d8818cb4f52390bff9ae2",
+    "MIRA_Power/PROGRAM_SWITCHES.kicad_sch": "1bb3269928e4d786719ffba8426bb7aae9f8192d8177be6984d9de6e2c7372e9",
+    "MIRA_Power/2700_PM_ENABLE_GATES_PRIMARY.kicad_sch": "0eb1425f6ffc4562bf32e58660b5fae95ff8b45fae9440a4740718e84e92ed48",
+    "MIRA_Power/1700_IO_1V8.kicad_sch": "532a94acd8c6dcdb90b0963b4d2868cdfa5f97161495d4e79f9c46c9889c6a2d",
+    "MIRA_Power/SECONDARY_POWER.kicad_sch": "67db23d98674eafd06d13aa29b0cf50be51cb44932438505536df4e9482b7295",
+    "MIRA_Power/500_AON_3V3_BUCK.kicad_sch": "81e310230bae1c9511e2ffda6f71b52a31a1625c2b01f19e035186d9b832bb07",
+    "MIRA_Power/5200_PM_STARTUP_QUALIFIER.kicad_sch": "f7cac2a751b971cc7aa2bb5698dca028694d8410a2ca09b5aa8bfe49f9d9c412",
+    "MIRA_Power/MIRA_Power.kicad_pro": "095f382118c2727f9e435f1ce00a9626c955daadcb1f711581c06e148b1a2b91",
+    "MIRA_Power/2300_PROGRAM_INTERFACE.kicad_sch": "771819204245e4cec2910c733fc8cf65d3a2197027355068692632f987d3acc7",
+    "MIRA_Power/POWER_INPUT.kicad_sch": "a8fed19c8b9a29f753156ae1e894c18003cc038cd3ca12abdb3280cab86c9eb6",
+    "MIRA_Power/5500_AON_HOST_INPUT_ISOLATION.kicad_sch": "80bb285be9866e2d2dbdc86f94b0fda4422cafb113c9bd4a6f51f7df607318cb",
+    "MIRA_Power/1900_ANALOG_5V.kicad_sch": "0d014f91bd34a2e70328d0c4521ab0e9a0891a0997d398fbb5605ad40df2d918",
+    "MIRA_Power/1200_POWER_MONITOR.kicad_sch": "84f1fbfc17e705acbcf43dc82f4b2fe01d9bb62133a693598bd07cf3dc46da2c",
+    "MIRA_Power/2100_PROGRAM_POSITIVE.kicad_sch": "aa83af09c3ea89177b4594409117c711abb5d8e3d3a41fe5b20e44e8edd2e3d1",
+    "MIRA_Power/3300_PM_DEBUG_HOST_INTERFACE.kicad_sch": "836d8f40f6e403d5051fcce4c328b0501bb3edc4bf1b8f79e4a0be17ae0242b3",
+    "MIRA_Power/5000_DISTRIBUTED_DIGITAL_POWER.kicad_sch": "e625fbbad2df52cec06e5f38d76bf0aa22687b92b0d9ac125377b08c17ca098f",
+    "MIRA_Power/6000_FPGA_AUX_IO_INTERLOCK.kicad_sch": "012248a7d8cf2c3c95f065a6d45fdb8d6645506891efb0cabd1640feb203c24c",
+    "MIRA_Power/MIRA_Power.kicad_sch": "d4a0f21b3d96937ae379e6cd8c5350b6ef55d5d47ab920032508eb3e53c19faa",
+    "MIRA_Power/3100_PM_COMMAND_READY.kicad_sch": "4e8455da7c42ffba451f8708359ab638c1d6dcffbeb7ad5009506c361b39d10f",
+    "MIRA_Power/3800_MONITOR_DDR_IO_ANALOG.kicad_sch": "c22f2ccf6e16fade9806bfbccf94a3988f7858e79d7acefcb4b7e9a88240b247",
+    "MIRA_Power/POWER_CONTROL.kicad_sch": "cf3fc198842d4e4247e4eb58b0ee265f011bb6bf299289eaafb314fbf81e0618",
+    "MIRA_Power/2400_PM_CONTROLLER.kicad_sch": "845887673db1b9a4f5339918b974377024bd4d3bce05316740b68a66074950a2",
+    "MIRA_Power/5900_VIN_REFERENCED_ENABLES.kicad_sch": "9ff1c5f02e69bcf6a615a739263118ce176c64c64b33bc123a1e4bdcaeadba42",
+    "MIRA_Power/3600_MONITOR_FPGA_ANA_AFE.kicad_sch": "0518f1650c5be0f280160ba8670922e5baa5b46885ab619beb10ee733490427e",
+    "MIRA_Power/5300_PM_STARTUP_OUTPUTS.kicad_sch": "a7b84477b1325d6af8514abdaee078536b19c1c6f6be3407687b8a1231d77e08",
+    "MIRA_Power/3900_TELEMETRY_MULTIPLEXERS.kicad_sch": "f27dff7a03156f4e6215bb8d633510beebd31cd608c5fa45146357088f2ebca9",
+    "MIRA_Power/1100_AFE_NEGATIVE_15V.kicad_sch": "ea625a4a550badb66d4af7e833cb2adcd50f219ebaa3791dc474f9b0930856c1",
+    "MIRA_Power/3200_PM_NEGATIVE_OVERCURRENT.kicad_sch": "a8d1fc9d5e66cd35a322c04a6ed9c3bf59e59caf16bf1e701da8522cc5f93585",
+    "MIRA_Power/5100_DISTRIBUTED_ANALOG_POWER.kicad_sch": "e5574141fb5c6a95b17fb10363a3cfcad49949d0c862b294104a089288e7bfe5",
+    "MIRA_Power/6100_AON_MONITOR_ENABLE_BUFFER.kicad_sch": "be3e77947cdbcd0f6dabc428569c2a47d1be244e63dc3e638be221a43669ceac",
+    "MIRA_Power/900_ANALOG_PREREGULATOR_6V.kicad_sch": "0323366bc38cd7f4ce6dc364797b37eaa709d6ee4c3e5ec982422a15df276183",
+    "MIRA_Power/1000_AFE_POSITIVE_15V.kicad_sch": "70c1809c7575be389a90978b0e99a223d6f5ff4c6036f5c1503c838762d1ffdd",
+    "MIRA_Power/PRIMARY_POWER.kicad_sch": "e346aee77a8ca0dd047a28c92a4c8c8a900e0ca6f860311b5aaaaf8d3db8765c",
+    "MIRA_Power/4900_POWER_CONTROL_INTERFACE.kicad_sch": "f1da112f0ffc024e6096d23b40ba3df6fac0b82ca853d11f2ea71884ce4d4ef5",
+    "MIRA_Power/3500_MONITOR_INPUT_AON_USB_SYS.kicad_sch": "debadbd289c54bd69f9c8355c98c10725dd2e4571d9826a19013186b34a627de",
+    "MIRA_Power/3400_NEGATIVE_RAIL_MONITOR.kicad_sch": "c1af56786e2331a613ffec0a323bf1fe990cd3601e9d10464c63bba79f4882e5",
+    "MIRA_Power/3700_MONITOR_FPGA_CORE_AUX_IO.kicad_sch": "bda537accc949468785325c5ea6b5d438ff3b8e10204968da454342b7ac1ee71",
+    "MIRA_Power/4000_TELEMETRY_ADC_BUFFERS.kicad_sch": "7a50ceefc9c9218ff588f9cb81b7506d8d6bd0cb37fe3a0b0c3a5e477f53dabe",
+    "MIRA_Power/5800_VIN_REFERENCED_ENABLES.kicad_sch": "ba7fdec958ec002ed6c4de942d57f7b89daca2aa3720956931ff4a2fc70856f0",
+    "MIRA_Power/1300_FPGA_AUX_1V8.kicad_sch": "cbf5552a80876cbb04701f80935705c3582d24f6a7a9552fcef02076042dc453",
+    "MIRA_Power/2900_PM_ANALOG_POWER_GOOD.kicad_sch": "d916d5b02164e5737f027019f17ae2a600b0fabf6eddb65c2eac2b203a5f4419",
+    "MIRA_Power/POWER_SYSTEM.kicad_sch": "33da5b8e87a3c4ac2658e060709db59d6fdff4c1c2aae37073e70a31a3f8c642",
+    "MIRA_Power/2500_PM_WATCHDOGS.kicad_sch": "0bd0e748185fc2095d60a8c86d5b97e9be72dfb39a5720ef7424106b295a3a42",
+    "MIRA_Power/MIRA_Power.kicad_pcb": "78008db978633f560c9e5c417dc2984bb397386bc55c22b24939447593300b78",
+    "MIRA_Power/2800_PM_ENABLE_GATES_AUXILIARY.kicad_sch": "8c0df6c5ad906e2aad478a713a7da78e73ab692b7cb7b08b50e6e67b0a16fef0",
+    "MIRA_Power/POWER_MONITOR.kicad_sch": "3dabb4a5e35e7b59b5e312208247b2e9e2f7d242d258188261d48ff1ec1899ea",
+    "MIRA_Power/1600_DDR_1V35.kicad_sch": "022b16c26e2d134d38ddca46928643b74b81bd1513be6033cb1440d81bb65a8c",
+    "MIRA_Power/5700_AON_ANALOG_INPUT_ISOLATION.kicad_sch": "93a7d564f615187b891187639b267ced46898d308d4ae7dcae7dcb593d6c8e86",
+    "MIRA_Power/5600_AON_ANALOG_INPUT_ISOLATION.kicad_sch": "bdbd66733120562848a1f4fe39100be9a95c749a32d3b5d5cb8aae8bbaaa8a69",
+    "MIRA_Power/2200_PROGRAM_NEGATIVE.kicad_sch": "59b3f2606bbb8a971908d9979b17de36583b9aa506b1d7f3a89b24b9b1954848",
+    "MIRA_Power/libraries/MIRA_RevA.kicad_sym": "ef8109b2a2814e92fa1924a5281ce9c6ad523985e3f7ccca4092936554b5db5f",
+    "MIRA_Power/libraries/standard/Jumper.kicad_sym": "a202258ba7a757db8a9bdaeb96839f4694a72d93de4664a968591dfcd647c517",
+    "MIRA_Power/libraries/standard/Device.kicad_sym": "89cceb7f1d61ec14a71a8a2b37cb073452c416703b3ae10aa9da1487a9af978c",
+    "MIRA_Power/libraries/standard/power.kicad_sym": "5e5d643694a41ee23c33eeed58dee20d517e0ae789c71bb261a489abf118d223",
+    "MIRA_Crossbar/MIRA_Crossbar.kicad_pcb": "3912da6416ef55211988c04dd717e63a102e6bef0462a7b60deb04fe65a50fbe",
+    "MIRA_Crossbar/MIRA_Crossbar.kicad_pro": "2f03ece29b19bd509b49c70c158f48a2a980dc12dedd6db5098a4efc7d2ff463",
+    "MIRA_Crossbar/MIRA_Crossbar.kicad_sch": "7885578f6789bd2b71c1bf4379ee320cf42216a720054d1fe29329f261ab6d71",
+    "MIRA_Crossbar/libraries/MIRA_Module.kicad_sym": "17af5f4ed92685cb3df8d87cae13ce71d94e91b7021c222f33765a0b8379ff47"
+  },
+  "PDF_sha256": {
+    "MIRA_Control": "d8d62162c95e6216a1209fa8deda0d9cd5da2245cddaec884427466061f47c41",
+    "MIRA_Power": "812ee77b9930d85b7b5c767b1596f576f1ba3badad6b4040da1cc3615a552132",
+    "MIRA_Crossbar": "22b849e5dcbcc65115a45c9c1fd95cb10901937d26c6c14f14f9d03190b2d2fd"
   }
 }

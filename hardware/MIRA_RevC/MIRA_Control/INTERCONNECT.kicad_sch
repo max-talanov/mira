@@ -1,26 +1,20 @@
 (kicad_sch
-	(version 20260306)
-	(generator "eeschema")
-	(generator_version "10.0")
-	(uuid "9977b6af-f19e-4ddd-959d-ea0a8638b2b6")
-	(paper "A3")
-	(title_block
+(version 20260306)
+(generator "eeschema")
+(generator_version "10.0")
+(uuid "9977b6af-f19e-4ddd-959d-ea0a8638b2b6")
+(title_block
 		(title "Power Interface")
 		(rev "B")
 		(company "MIRA")
 	)
-	(lib_symbols)
-
-
-
-
-
-
-
-
-	(sheet
-		(at 25.4000 45.7200)
-		(size 116.84 12.7)
+(lib_symbols)
+(paper "A4")
+(text "Power Interface" (at 15 15 0) (effects (font (size 1.8 1.8)) (justify left top)) (uuid "c65f8f59-9b3f-5996-9dfb-0140bd6fda87"))
+(text "Open a block to follow the signal path." (at 15 25 0) (effects (font (size 1.1 1.1)) (justify left top)) (uuid "cabeadc4-9801-5fc6-b528-b6ffe8be00da"))
+(sheet
+		(at 15 45)
+		(size 125 15)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -34,7 +28,7 @@
 		)
 		(uuid "877d6aee-4761-48d7-9357-3a336e8ce272")
 		(property "Sheetname" "Supervisor Interface"
-			(at 25.4 44.449999999999996 0)
+			(at 18 50 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -45,7 +39,7 @@
 			)
 		)
 		(property "Sheetfile" "400_SYSTEM_POWER_AND_SUPERVISION_INTERFACE.kicad_sch"
-			(at 25.4 59.72 0)
+			(at 18 56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -64,32 +58,14 @@
 			)
 		)
 	)
-
-(sheet (at 25.4000 71.1200) (size 116.84 12.7) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+(sheet (at 160 45) (size 125 15) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
  (stroke (width .254) (type solid)) (fill (color 0 0 0 0)) (uuid "a40e793d-3473-4bf5-958c-a2b55d9cfdf6")
- (property "Sheetname" "Digital Power Entry" (at 25.4 69.85000000000001 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
- (property "Sheetfile" "410_DISTRIBUTED_DIGITAL_POWER.kicad_sch" (at 25.4 85.12 0) (effects (font (size 1.016 1.016)) (justify left top) (hide yes)))
+ (property "Sheetname" "Digital Power Entry" (at 163 50 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
+ (property "Sheetfile" "410_DISTRIBUTED_DIGITAL_POWER.kicad_sch" (at 163 56 0) (effects (font (size 1.016 1.016)) (justify left top) (hide yes)))
  (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/256d926f-b75a-42ae-a223-730b777ed784" (page "800")))))
-
-(sheet (at 25.4000 96.5200) (size 116.84 12.7) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
+(sheet (at 15 77) (size 125 15) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
  (stroke (width .254) (type solid)) (fill (color 0 0 0 0)) (uuid "3c873a11-7277-4333-b26e-1e17efecdc4b")
- (property "Sheetname" "Analog Power Entry" (at 25.4 95.25 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
- (property "Sheetfile" "420_DISTRIBUTED_ANALOG_POWER.kicad_sch" (at 25.4 110.52 0) (effects (font (size 1.016 1.016)) (justify left top) (hide yes)))
+ (property "Sheetname" "Analog Power Entry" (at 18 82 0) (effects (font (size 1.27 1.27)) (justify left bottom)))
+ (property "Sheetfile" "420_DISTRIBUTED_ANALOG_POWER.kicad_sch" (at 18 88 0) (effects (font (size 1.016 1.016)) (justify left top) (hide yes)))
  (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/256d926f-b75a-42ae-a223-730b777ed784" (page "900")))))
-
-
-
-
-
-
-
-(text "700" (at 27.939999999999998 49.72 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "54cb58e2-5ff6-52a8-9e84-d3557362d39b"))
-
-(text "800" (at 27.939999999999998 75.12 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "9fcaf6f7-f4a8-562e-ad29-c18a996c1452"))
-
-(text "900" (at 27.939999999999998 100.52 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "f366726d-2cf1-59f4-aa6a-acb02bf6830a"))
-
-(text "Power Interface" (at 20.32 15.24 0) (effects (font (size 2.2 2.2)) (justify left top)) (uuid "50959cfa-b9ed-57ad-99e0-fdfd9ca16a77"))
-
-(text "Read in page order. Each section opens the signal path and its local support circuitry." (at 20.32 24.13 0) (effects (font (size 1 1)) (justify left top)) (uuid "a1781efb-767c-5e81-b0d6-08d8c2d1d3a5"))
 )

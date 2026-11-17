@@ -1,77 +1,39 @@
-"""Compare electrical pin partitions after hierarchy/annotation changes.
-
-python3 compare_netlists.py PROJECT BEFORE.xml AFTER.xml [--reference-map MAP.json]
-Net names and sheet paths are deliberately excluded from connectivity identity.
-"""
-import argparse
-import gzip
-import json
-import xml.etree.ElementTree as ET
+"""Compare physical pin partitions and per-component attributes across drawing/annotation changes."""
+import argparse,json,gzip,xml.etree.ElementTree as E
 from pathlib import Path
 
+def load(path,aliases):
+ with (gzip.open(path,'rb') if path.suffix=='.gz' else path.open('rb')) as f:root=E.parse(f)
+ defs={(p.get('lib'),p.get('part')):sorted(tuple(sorted(n.attrib.items())) for n in p.findall('pins/pin')) for p in root.findall('libparts/libpart')}
+ components={}
+ for c in root.findall('components/comp'):
+  r=aliases.get(c.get('ref'),c.get('ref'));lib=c.find('libsource');assert r not in components
+  components[r]={'value':c.findtext('value'),'footprint':c.findtext('footprint'),'datasheet':c.findtext('datasheet'),'MPN':next((f.text or '' for f in c.findall('fields/field') if f.get('name')=='MPN'),''),'Manufacturer':next((f.text or '' for f in c.findall('fields/field') if f.get('name')=='Manufacturer'),''),'population':sorted(tuple(sorted(x.attrib.items())) for x in c.findall('property') if x.get('name') in ['dnp','exclude_from_bom','exclude_from_board']),'physical_pins':defs[lib.get('lib'),lib.get('part')]}
+ groups={};pins=set()
+ for net in root.findall('nets/net'):
+  group=frozenset((aliases.get(n.get('ref'),n.get('ref')),n.get('pin')) for n in net.findall('node'));assert not group & pins; pins|=group;groups[group]=net.get('name')
+ return components,groups,pins
 
-def load(path, aliases):
-    with (gzip.open(path, "rb") if path.suffix == ".gz" else path.open("rb")) as source:
-        root = ET.parse(source)
-    components = {}
-    sources = {}
-    for comp in root.findall('components/comp'):
-        ref = aliases.get(comp.get('ref'), comp.get('ref'))
-        assert ref not in components, f'duplicate component {ref}'
-        lib = comp.find('libsource')
-        sources[comp.get('ref')] = (lib.get('lib'), lib.get('part'))
-        components[ref] = {
-            'value': comp.findtext('value'),
-            'footprint': comp.findtext('footprint'),
-            'datasheet': comp.findtext('datasheet'),
-            'libsource': dict(lib.attrib),
-            'pins': sorted(pin.get('num') for pin in comp.findall('units/unit/pins/pin')),
-            'population': sorted((p.get('name'), p.get('value'))
-                                 for p in comp.findall('property')
-                                 if p.get('name') in ('dnp', 'exclude_from_bom', 'exclude_from_board')),
-        }
-    definitions = {
-        (part.get('lib'), part.get('part')):
-            sorted(tuple(sorted(pin.attrib.items())) for pin in part.findall('pins/pin'))
-        for part in root.findall('libparts/libpart')
-    }
-    pins = set()
-    groups = set()
-    for net in root.findall('nets/net'):
-        group = frozenset((aliases.get(node.get('ref'), node.get('ref')), node.get('pin'))
-                          for node in net.findall('node'))
-        assert group and not (pins & group), f'pin assigned more than once: {group}'
-        pins |= group
-        groups.add(group)
-    return components, definitions, groups, pins
+def netclasses(path,aliases):
+ with (gzip.open(path,'rb') if path.suffix=='.gz' else path.open('rb')) as f:root=E.parse(f)
+ return {frozenset((aliases.get(n.get('ref'),n.get('ref')),n.get('pin')) for n in net.findall('node')):net.get('class','Default') for net in root.findall('nets/net')}
 
-
+def compare(pr,before,after,mapping):
+ aliases={v:k for k,v in mapping.items()};assert len(aliases)==len(mapping)
+ a,an,ap=load(before,{});b,bn,bp=load(after,aliases)
+ assert netclasses(before,{})==netclasses(after,aliases), 'effective net classes changed'
+ changed=[r for r in a.keys()|b.keys() if a.get(r)!=b.get(r)];assert not changed,('component attributes / physical pin definitions',changed[:20],[(r,a.get(r),b.get(r)) for r in changed[:1]])
+ assert ap==bp,('pin identities',sorted(ap-bp)[:20], sorted(bp-ap)[:20]);assert an.keys()==bn.keys(),('net partition difference',len(an.keys()-bn.keys()),len(bn.keys()-an.keys()))
+ # All externally meaningful, non-hierarchical names retain the same complete physical pin set.
+ external={name:g for g,name in an.items() if not name.startswith(('/', 'Net-','unconnected-'))}
+ named_after={name:g for g,name in bn.items()}
+ # An internal global label may become a local label. Its suffix and partition must still identify it.
+ lost=[]
+ for name,g in external.items():
+  newname=bn[g]
+  if newname!=name and not newname.endswith('/'+name):lost.append((name,newname))
+ assert not lost,('meaningful net names',lost[:30])
+ return dict(project=pr,components=len(a),pins=len(ap),nets=len(an),result='PASS',component_values_MPN_footprints_population_and_physical_pin_definitions='unchanged',electrical_partitions='identical_with_reference_map',meaningful_names='preserved_or_localized_with_same_suffix',effective_net_classes='unchanged')
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('project')
-    parser.add_argument('before', type=Path)
-    parser.add_argument('after', type=Path)
-    parser.add_argument('--reference-map', type=Path,
-                        default=Path(__file__).with_name('reference-map.json'))
-    args = parser.parse_args()
-    mapping = json.loads(args.reference_map.read_text())[args.project]
-    assert len(mapping) == len(set(mapping.values())), 'annotation is not bijective'
-    before = load(args.before, {})
-    after = load(args.after, {new: old for old, new in mapping.items()})
-    labels = ['component attributes / pin numbers', 'symbol pin definitions',
-              'electrical pin partitions', 'connected pin identities']
-    for label, a, b in zip(labels, before, after):
-        if a != b:
-            if isinstance(a, dict):
-                changed = [k for k in a.keys() | b.keys() if a.get(k) != b.get(k)]
-                print(label, 'changed keys:', changed[:20])
-            else:
-                print(label, 'removed:', list(a - b)[:5], 'added:', list(b - a)[:5])
-            raise SystemExit('FAIL: ' + label)
-    result = dict(project=args.project, components=len(before[0]),
-                  pins=len(before[3]), nets=len(before[2]), result='PASS')
-    print(json.dumps(result))
-
-
-if __name__ == '__main__':
-    main()
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('project');p.add_argument('before',type=Path);p.add_argument('after',type=Path);p.add_argument('--reference-map',type=Path,default=Path(__file__).with_name('reference-map.json'));a=p.parse_args();print(json.dumps(compare(a.project,a.before,a.after,json.loads(a.reference_map.read_text())[a.project]),indent=2))
+if __name__=='__main__':main()

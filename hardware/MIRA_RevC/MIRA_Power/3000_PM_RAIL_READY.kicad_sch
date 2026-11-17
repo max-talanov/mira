@@ -1,10 +1,9 @@
 (kicad_sch
-	(version 20260306)
-	(generator "eeschema")
-	(generator_version "10.0")
-	(uuid "8a2c4642-adc4-4e80-88e0-5b9052eb3a6d")
-	(paper "A4")
-	(lib_symbols
+(version 20260306)
+(generator "eeschema")
+(generator_version "10.0")
+(uuid "8a2c4642-adc4-4e80-88e0-5b9052eb3a6d")
+(lib_symbols
 		(symbol "MIRA_RevA:C_GRM033R61A104KE15D"
 			(pin_numbers
 				(hide yes)
@@ -657,341 +656,75 @@
 			(embedded_fonts no)
 		)
 	)
-	(rectangle
-		(start 151.13 15.24)
-		(end 283.21 161.29)
-		(stroke
-			(width 0.13)
-			(type solid)
-			(color 120 128 138 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "10a9d110-b076-4efe-abd2-507be772fdb9")
-	)
-	(rectangle
-		(start 15.24 15.24)
-		(end 148.59 161.29)
-		(stroke
-			(width 0.13)
-			(type solid)
-			(color 120 128 138 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "aede1eea-475c-47fe-b09b-9d51cd902183")
-	)
-	(text "Protection and fault response"
-		(exclude_from_sim no)
-		(at 156.21 132.08 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "0f56b098-e315-4b02-bc56-630fe9ac1db1")
-	)
-	(text "SHEET GUIDE / Rail Ready"
-		(exclude_from_sim no)
-		(at 156.21 19.24 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-				(thickness 0.15)
-				(color 86 96 108 1)
-			)
-			(justify left top)
-		)
-		(uuid "1e4653d0-4375-46e9-bf57-a3a03447909c")
-	)
-	(text "Live status; no settling timer or fault memory."
-		(exclude_from_sim no)
-		(at 21.59 151.13 0)
-		(effects
-			(font
-				(size 0.92 0.92)
-				(thickness 0.15)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "273a5941-7097-4bfe-9b70-43e895a08115")
-	)
-	(text "Four local groups -> ALL_RAILS_PG"
-		(exclude_from_sim no)
-		(at 88.9 65.2 0)
-		(effects
-			(font
-				(size 0.92 0.92)
-				(thickness 0.15)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "334aaebb-3eb8-4081-a6a9-83646b0c4727")
-	)
-	(text "Any included status going LOW deasserts ALL_RAILS_PG and removes one condition\nfor matrix operation. The permit and fault-memory circuitry determines shutdown\nbehavior. Intentionally disabling any included supply also removes readiness;\nthis tree provides no per-rail bypass."
-		(exclude_from_sim no)
-		(at 156.21 136.88 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "38ff88bf-8298-437e-9d26-e94d42df4578")
-	)
-	(text "The tree receives PG_SYS, PG_FPGA, PG_ANA, PG_P15, PG_N15 and nine PGR\nsignals for the secondary rails. ALL_RAILS_PG is an active-high, push-pull\noutput. All three SN74HCS21 devices use AON; C430001, C430002 and C430003 provide 100\nnF bypassing."
-		(exclude_from_sim no)
-		(at 156.21 68.3 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "556c47d1-bebb-4ec5-9f29-16a090db5d4f")
-	)
-	(text "Rail Ready"
-		(exclude_from_sim no)
-		(at 20.32 19.05 0)
-		(effects
-			(font
-				(size 1.25 1.25)
-				(thickness 0.15)
-				(color 86 96 108 1)
-			)
-			(justify left top)
-		)
-		(uuid "6145bb62-4046-4629-8834-b342a0c49488")
-	)
-	(text "All fifteen PG / PGR signals are required."
-		(exclude_from_sim no)
-		(at 21.59 32.26 0)
-		(effects
-			(font
-				(size 0.92 0.92)
-				(thickness 0.15)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "7d158232-9c3f-4af9-9f35-3c9ebb06524b")
-	)
-	(text "Purpose and role"
-		(exclude_from_sim no)
-		(at 156.21 40.64 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "966f6aeb-2d4b-464d-99e3-c641cf93076b")
-	)
-	(text "Inputs and outputs"
-		(exclude_from_sim no)
-		(at 156.21 63.5 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "96751489-c027-4a15-ae86-7b798ee0bf26")
-	)
-	(text "Timing and settings"
-		(exclude_from_sim no)
-		(at 156.21 109.22 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "a16c14c7-147f-4c3c-aed4-dc0f16f17692")
-	)
-	(text "Measured rail readiness"
-		(exclude_from_sim no)
-		(at 21.59 27.94 0)
-		(effects
-			(font
-				(size 1.05 1.05)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "b959d489-9b40-4951-82e1-067709eb82f7")
-	)
-	(text "Control logic"
-		(exclude_from_sim no)
-		(at 156.21 86.36 0)
-		(effects
-			(font
-				(size 1.8 1.8)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 100 110 1)
-			)
-			(justify left top)
-		)
-		(uuid "cb03a556-81fd-497a-8e0a-209b85bf102a")
-	)
-	(text "Final AND stage"
-		(exclude_from_sim no)
-		(at 88.9 61 0)
-		(effects
-			(font
-				(size 1.05 1.05)
-				(thickness 0.18)
-				(bold yes)
-				(color 0 70 190 1)
-			)
-			(justify left top)
-		)
-		(uuid "cdedec40-24d0-48bb-a950-52a77a58ddc1")
-	)
-	(text "There is no resistor-set threshold, timer or latch on this sheet. The aggregate\nchanges after two logic stages when a status changes. Schmitt inputs accept\nslower status transitions. The unused U430003 gate has its inputs tied to GND and\nits output left unconnected."
-		(exclude_from_sim no)
-		(at 156.21 114.02 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "d19e232b-82ef-4f94-9786-b4532a54be7a")
-	)
-	(text "Combined rail power-good logic"
-		(exclude_from_sim no)
-		(at 156.21 26.24 0)
-		(effects
-			(font
-				(size 2.05 2.05)
-				(thickness 0.18)
-				(bold yes)
-				(color 25 47 72 1)
-			)
-			(justify left top)
-		)
-		(uuid "e1a4a35b-87b0-4a4b-b957-8ec3033f2600")
-	)
-	(text "U430001 combines USB/SYS/FPGA/ANA and P15/N15/CORE/AUX18. U3002 combines\nAUX25/IO33/DDR/IO18 and VTT/ANA5/ANA33. AON fixes the fourth input of the last\ngroup HIGH. U3003 ANDs PG_GROUP_0-PG_GROUP_3; every one of the fifteen status\ninputs must be HIGH."
-		(exclude_from_sim no)
-		(at 156.21 91.16 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "f50dbe3d-ca0d-4d33-9f0e-46883359d146")
-	)
-	(text "This block combines MIRA's measured rail status into ALL_RAILS_PG. It tells the\npower controller, matrix interlock and host interface that every included supply\nreports ready. It works with the separate command aggregate so an enable request\nalone cannot establish supply readiness."
-		(exclude_from_sim no)
-		(at 156.21 45.44 0)
-		(effects
-			(font
-				(size 1.45 1.45)
-				(thickness 0.15)
-				(color 33 43 55 1)
-			)
-			(justify left top)
-		)
-		(uuid "fd989a5a-794f-4e5d-ba66-b0e3241707a9")
-	)
-	(junction
-		(at 91.44 110.49)
+(title_block (title "Rail Ready") (rev "C-review") (company "MIRA"))
+(paper "User" 210 230)
+(junction
+		(at 72.39 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0f495b0a-cfd2-4eb9-869d-22f0eb7c98ab")
 	)
-	(junction
-		(at 91.44 107.95)
+(junction
+		(at 72.39 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1246f844-fc51-435b-befb-e45988f1ddf9")
 	)
-	(junction
-		(at 91.44 113.03)
+(junction
+		(at 72.39 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16a1b879-fddd-4995-bdad-b866781bd572")
 	)
-	(junction
-		(at 58.42 95.25)
+(junction
+		(at 39.37 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "823a35af-de00-431e-98aa-12f32e031111")
 	)
-	(junction
-		(at 110.49 74.93)
+(junction
+		(at 91.44 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "884c4ec2-b347-4179-94ad-d46e4bbfa3a3")
 	)
-	(junction
-		(at 58.42 40.64)
+(junction
+		(at 39.37 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d09ee57f-6ad6-4cc6-9043-c7e2c5ab810e")
 	)
-	(no_connect
-		(at 53.34 142.24)
+(no_connect
+		(at 34.29 148.59)
 		(uuid "1281f186-0637-4e18-bf11-1a2913522ec9")
 	)
-	(no_connect
-		(at 63.5 142.24)
+(no_connect
+		(at 44.45 148.59)
 		(uuid "35758df1-f165-4d0f-8675-a55468ef1bcb")
 	)
-	(no_connect
-		(at 128.27 109.22)
+(no_connect
+		(at 109.22 115.57)
 		(uuid "3cc308cb-72e6-48a2-a1a1-965be6773178")
 	)
-	(no_connect
-		(at 53.34 87.63)
+(no_connect
+		(at 34.29 93.98)
 		(uuid "86489a49-dbd7-4d51-959b-f5bbc01f9569")
 	)
-	(no_connect
-		(at 115.57 123.19)
+(no_connect
+		(at 96.52 129.54)
 		(uuid "9b0d7bae-d83c-413d-a682-03a7e3236c93")
 	)
-	(no_connect
-		(at 63.5 87.63)
+(no_connect
+		(at 44.45 93.98)
 		(uuid "b41258a1-afb7-4537-ab85-ce424a090861")
 	)
-	(no_connect
-		(at 105.41 123.19)
+(no_connect
+		(at 86.36 129.54)
 		(uuid "bbf25643-43a7-49f5-a56c-e78223bc0329")
 	)
-	(wire
+(wire
 		(pts
-			(xy 78.74 92.71) (xy 78.74 110.49)
+			(xy 59.69 99.06) (xy 59.69 116.84)
 		)
 		(stroke
 			(width 0)
@@ -999,9 +732,9 @@
 		)
 		(uuid "03c2974f-aa72-488e-a22b-814b187cba4a")
 	)
-	(wire
+(wire
 		(pts
-			(xy 39.37 59.69) (xy 40.64 59.69)
+			(xy 20.32 66.04) (xy 21.59 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1009,9 +742,9 @@
 		)
 		(uuid "0869d549-6699-4c79-9538-a03c8bcf65eb")
 	)
-	(wire
+(wire
 		(pts
-			(xy 91.44 105.41) (xy 92.71 105.41)
+			(xy 72.39 111.76) (xy 73.66 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1019,9 +752,9 @@
 		)
 		(uuid "0b8282eb-e555-4482-9b91-8d0a847a66bf")
 	)
-	(wire
+(wire
 		(pts
-			(xy 39.37 52.07) (xy 40.64 52.07)
+			(xy 20.32 58.42) (xy 21.59 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1029,9 +762,9 @@
 		)
 		(uuid "167c7e75-d794-485e-ae96-6f6614555687")
 	)
-	(wire
+(wire
 		(pts
-			(xy 110.49 74.93) (xy 113.03 74.93)
+			(xy 91.44 81.28) (xy 93.98 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1039,9 +772,9 @@
 		)
 		(uuid "16841a39-cd86-4a62-a2a4-5327a20da235")
 	)
-	(wire
+(wire
 		(pts
-			(xy 81.28 55.88) (xy 81.28 87.63)
+			(xy 62.23 62.23) (xy 62.23 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1049,9 +782,9 @@
 		)
 		(uuid "1faafe48-0ced-4ddc-bf66-14ca69543cc7")
 	)
-	(wire
+(wire
 		(pts
-			(xy 39.37 77.47) (xy 40.64 77.47)
+			(xy 20.32 83.82) (xy 21.59 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1059,9 +792,9 @@
 		)
 		(uuid "225374f1-5dac-45d9-b00d-3afd5b79ac11")
 	)
-	(wire
+(wire
 		(pts
-			(xy 110.49 123.19) (xy 110.49 132.08)
+			(xy 91.44 129.54) (xy 91.44 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1069,9 +802,9 @@
 		)
 		(uuid "2430caca-673e-442e-8963-a551b2342f12")
 	)
-	(wire
+(wire
 		(pts
-			(xy 91.44 113.03) (xy 92.71 113.03)
+			(xy 72.39 119.38) (xy 73.66 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1079,9 +812,9 @@
 		)
 		(uuid "27d15631-39b8-4e92-af92-a8026435644d")
 	)
-	(wire
+(wire
 		(pts
-			(xy 110.49 72.39) (xy 110.49 74.93)
+			(xy 91.44 78.74) (xy 91.44 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1089,9 +822,9 @@
 		)
 		(uuid "33cb0770-ad47-4fb5-82a9-8bd232f32984")
 	)
-	(wire
+(wire
 		(pts
-			(xy 39.37 74.93) (xy 40.64 74.93)
+			(xy 20.32 81.28) (xy 21.59 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1099,9 +832,9 @@
 		)
 		(uuid "37def906-ddd9-4c9e-a5c5-db16a9de3555")
 	)
-	(wire
+(wire
 		(pts
-			(xy 91.44 107.95) (xy 92.71 107.95)
+			(xy 72.39 114.3) (xy 73.66 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1109,9 +842,9 @@
 		)
 		(uuid "38950dd0-fa6f-421e-af07-bf1f7b3eb0d9")
 	)
-	(wire
+(wire
 		(pts
-			(xy 81.28 95.25) (xy 92.71 95.25)
+			(xy 62.23 101.6) (xy 73.66 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1119,9 +852,9 @@
 		)
 		(uuid "3b0e2a82-1f73-4356-9846-a6aeae72ad80")
 	)
-	(wire
+(wire
 		(pts
-			(xy 76.2 110.49) (xy 78.74 110.49)
+			(xy 57.15 116.84) (xy 59.69 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1129,9 +862,9 @@
 		)
 		(uuid "4a832531-54fe-411c-8414-94364fd96292")
 	)
-	(wire
+(wire
 		(pts
-			(xy 71.12 95.25) (xy 72.39 95.25)
+			(xy 52.07 101.6) (xy 53.34 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1139,9 +872,9 @@
 		)
 		(uuid "51f53ad1-1ce5-4ec3-baf3-213363719560")
 	)
-	(wire
+(wire
 		(pts
-			(xy 78.74 73.66) (xy 78.74 90.17)
+			(xy 59.69 80.01) (xy 59.69 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1149,9 +882,9 @@
 		)
 		(uuid "53e6c623-f8b7-4cf1-9096-820e487990b3")
 	)
-	(wire
+(wire
 		(pts
-			(xy 76.2 55.88) (xy 81.28 55.88)
+			(xy 57.15 62.23) (xy 62.23 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1159,9 +892,9 @@
 		)
 		(uuid "65de0895-3685-43b5-bff4-630b0ee6aa47")
 	)
-	(wire
+(wire
 		(pts
-			(xy 39.37 54.61) (xy 40.64 54.61)
+			(xy 20.32 60.96) (xy 21.59 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1169,9 +902,9 @@
 		)
 		(uuid "667958a2-f64a-4f24-8a74-44992374d819")
 	)
-	(wire
+(wire
 		(pts
-			(xy 128.27 91.44) (xy 130.81 91.44)
+			(xy 109.22 97.79) (xy 111.76 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1179,9 +912,9 @@
 		)
 		(uuid "6973b0d7-9a87-40a0-b565-d24fe04dd93b")
 	)
-	(wire
+(wire
 		(pts
-			(xy 54.61 40.64) (xy 58.42 40.64)
+			(xy 35.56 46.99) (xy 39.37 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1189,9 +922,9 @@
 		)
 		(uuid "8409f489-21f4-4e8a-9f1f-8db055d63580")
 	)
-	(wire
+(wire
 		(pts
-			(xy 91.44 110.49) (xy 91.44 113.03)
+			(xy 72.39 116.84) (xy 72.39 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1199,9 +932,9 @@
 		)
 		(uuid "8edcd6b8-2bc0-45ba-bfc1-a9eb60418cc1")
 	)
-	(wire
+(wire
 		(pts
-			(xy 39.37 69.85) (xy 40.64 69.85)
+			(xy 20.32 76.2) (xy 21.59 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1209,9 +942,9 @@
 		)
 		(uuid "8fc436f2-9b69-423b-8a29-3fdf3f224d38")
 	)
-	(wire
+(wire
 		(pts
-			(xy 91.44 110.49) (xy 92.71 110.49)
+			(xy 72.39 116.84) (xy 73.66 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1219,9 +952,9 @@
 		)
 		(uuid "9124fbdd-4e07-45f0-9149-c4bf8fa0ad9f")
 	)
-	(wire
+(wire
 		(pts
-			(xy 39.37 57.15) (xy 40.64 57.15)
+			(xy 20.32 63.5) (xy 21.59 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1229,9 +962,9 @@
 		)
 		(uuid "927fe64b-a5c6-44b7-a866-53bdd11f4dd5")
 	)
-	(wire
+(wire
 		(pts
-			(xy 58.42 40.64) (xy 60.96 40.64)
+			(xy 39.37 46.99) (xy 41.91 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1239,9 +972,9 @@
 		)
 		(uuid "96fdece0-9adf-466e-aa3d-be640ceea261")
 	)
-	(wire
+(wire
 		(pts
-			(xy 91.44 105.41) (xy 91.44 107.95)
+			(xy 72.39 111.76) (xy 72.39 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1249,20 +982,9 @@
 		)
 		(uuid "9a38c815-8139-44dd-aaf9-80100d72403a")
 	)
-	(polyline
+(wire
 		(pts
-			(xy 156.21 35.56) (xy 278.13 35.56)
-		)
-		(stroke
-			(width 0.18)
-			(type solid)
-			(color 0 100 110 1)
-		)
-		(uuid "9a44f838-2a94-4af3-b8cb-cfaba0579120")
-	)
-	(wire
-		(pts
-			(xy 123.19 74.93) (xy 124.46 74.93)
+			(xy 104.14 81.28) (xy 105.41 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1270,9 +992,9 @@
 		)
 		(uuid "9dfed580-6a82-478a-a423-6c20c187ef27")
 	)
-	(wire
+(wire
 		(pts
-			(xy 58.42 40.64) (xy 58.42 41.91)
+			(xy 39.37 46.99) (xy 39.37 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1280,9 +1002,9 @@
 		)
 		(uuid "9e3f1af8-a67f-40ad-a2bd-077580e0a7fc")
 	)
-	(wire
+(wire
 		(pts
-			(xy 76.2 128.27) (xy 81.28 128.27)
+			(xy 57.15 134.62) (xy 62.23 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1290,9 +1012,9 @@
 		)
 		(uuid "9e8c1ae0-0e47-4502-85d6-464e199430d3")
 	)
-	(wire
+(wire
 		(pts
-			(xy 71.12 40.64) (xy 72.39 40.64)
+			(xy 52.07 46.99) (xy 53.34 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1300,9 +1022,9 @@
 		)
 		(uuid "a08de6f5-5094-4dbf-a156-7f675caf280b")
 	)
-	(wire
+(wire
 		(pts
-			(xy 76.2 73.66) (xy 78.74 73.66)
+			(xy 57.15 80.01) (xy 59.69 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1310,9 +1032,9 @@
 		)
 		(uuid "a494a617-6653-4b82-8b90-810077cda8dd")
 	)
-	(wire
+(wire
 		(pts
-			(xy 58.42 95.25) (xy 60.96 95.25)
+			(xy 39.37 101.6) (xy 41.91 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1320,9 +1042,9 @@
 		)
 		(uuid "ad85db91-5467-4c3b-b1c4-611c22713ac2")
 	)
-	(wire
+(wire
 		(pts
-			(xy 81.28 95.25) (xy 81.28 128.27)
+			(xy 62.23 101.6) (xy 62.23 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1330,9 +1052,9 @@
 		)
 		(uuid "b6b284ed-6bc1-4c0d-9f28-650ad316ae5d")
 	)
-	(wire
+(wire
 		(pts
-			(xy 91.44 113.03) (xy 91.44 124.46)
+			(xy 72.39 119.38) (xy 72.39 130.81)
 		)
 		(stroke
 			(width 0)
@@ -1340,9 +1062,9 @@
 		)
 		(uuid "c572b045-b32b-44b1-90fa-f41581ba6296")
 	)
-	(wire
+(wire
 		(pts
-			(xy 78.74 92.71) (xy 92.71 92.71)
+			(xy 59.69 99.06) (xy 73.66 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1350,9 +1072,9 @@
 		)
 		(uuid "c774902c-e942-4097-abba-ec69400ad150")
 	)
-	(wire
+(wire
 		(pts
-			(xy 54.61 95.25) (xy 58.42 95.25)
+			(xy 35.56 101.6) (xy 39.37 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1360,9 +1082,9 @@
 		)
 		(uuid "cd6c71c5-298b-4823-ae01-ff2766c4dcc1")
 	)
-	(wire
+(wire
 		(pts
-			(xy 58.42 95.25) (xy 58.42 96.52)
+			(xy 39.37 101.6) (xy 39.37 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1370,9 +1092,9 @@
 		)
 		(uuid "de0a3197-e7c3-4385-99f1-20e52812a57e")
 	)
-	(wire
+(wire
 		(pts
-			(xy 110.49 74.93) (xy 110.49 77.47)
+			(xy 91.44 81.28) (xy 91.44 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1380,9 +1102,9 @@
 		)
 		(uuid "e225be1d-82e6-47d5-b490-a3f75a4125ef")
 	)
-	(wire
+(wire
 		(pts
-			(xy 81.28 87.63) (xy 92.71 87.63)
+			(xy 62.23 93.98) (xy 73.66 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1390,9 +1112,9 @@
 		)
 		(uuid "e3f0974c-0002-48b3-8e95-fb32db95364b")
 	)
-	(wire
+(wire
 		(pts
-			(xy 91.44 107.95) (xy 91.44 110.49)
+			(xy 72.39 114.3) (xy 72.39 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1400,9 +1122,9 @@
 		)
 		(uuid "ece45594-c316-42eb-be3c-8148e064fd87")
 	)
-	(wire
+(wire
 		(pts
-			(xy 78.74 90.17) (xy 92.71 90.17)
+			(xy 59.69 96.52) (xy 73.66 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1410,9 +1132,9 @@
 		)
 		(uuid "ef29d530-382f-4e4e-8455-d3b46bc68a47")
 	)
-	(wire
+(wire
 		(pts
-			(xy 39.37 72.39) (xy 40.64 72.39)
+			(xy 20.32 78.74) (xy 21.59 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1420,8 +1142,8 @@
 		)
 		(uuid "f2dfb4f0-eae3-42c3-91ea-60c1649898ca")
 	)
-	(label "PG_GROUP_0"
-		(at 82.55 87.63 0)
+(label "PG_GROUP_0"
+		(at 63.5 93.98 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1430,8 +1152,8 @@
 		)
 		(uuid "31d2625c-ebb4-403e-9f4b-c97b10fdfe4e")
 	)
-	(label "PG_GROUP_2"
-		(at 82.55 92.71 0)
+(label "PG_GROUP_2"
+		(at 63.5 99.06 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1440,8 +1162,8 @@
 		)
 		(uuid "569033bf-a4fd-416c-b407-523ea2d4734a")
 	)
-	(label "PG_GROUP_1"
-		(at 82.55 90.17 0)
+(label "PG_GROUP_1"
+		(at 63.5 96.52 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1450,8 +1172,8 @@
 		)
 		(uuid "69fa98c5-242a-48c8-931a-d07f5a68ed8c")
 	)
-	(label "PG_GROUP_3"
-		(at 82.55 95.25 0)
+(label "PG_GROUP_3"
+		(at 63.5 101.6 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1460,9 +1182,9 @@
 		)
 		(uuid "8a7d8059-40fe-417e-8d21-3d50c0167ec4")
 	)
-	(global_label "PGR_DDR"
+(global_label "PGR_DDR"
 		(shape input)
-		(at 40.64 111.76 180)
+		(at 21.59 118.11 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1471,7 +1193,7 @@
 		)
 		(uuid "11d6c06f-f503-4ebc-9037-ce57e03ac88b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 111.76 0)
+			(at 21.59 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1482,9 +1204,9 @@
 			)
 		)
 	)
-	(global_label "PG_N15"
+(global_label "PG_N15"
 		(shape input)
-		(at 39.37 72.39 180)
+		(at 20.32 78.74 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1493,7 +1215,7 @@
 		)
 		(uuid "1dd8466a-5be2-4201-8c38-46e9c86c6b2a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 72.39 0)
+			(at 20.32 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1504,9 +1226,9 @@
 			)
 		)
 	)
-	(global_label "PGR_ANA33"
+(global_label "PGR_ANA33"
 		(shape input)
-		(at 40.64 129.54 180)
+		(at 21.59 135.89 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1515,7 +1237,7 @@
 		)
 		(uuid "2bbda3ea-c17b-4a4c-9d5d-1f98e720beec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 129.54 0)
+			(at 21.59 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1526,9 +1248,9 @@
 			)
 		)
 	)
-	(global_label "PG_SYS"
+(global_label "PG_SYS"
 		(shape input)
-		(at 39.37 54.61 180)
+		(at 20.32 60.96 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1537,7 +1259,7 @@
 		)
 		(uuid "3cb5a266-194a-4f49-a28c-e796e86decc6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 54.61 0)
+			(at 20.32 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1548,9 +1270,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 110.49 72.39 90)
+		(at 91.44 78.74 90)
 		(effects
 			(font
 				(size 1 1)
@@ -1559,7 +1281,7 @@
 		)
 		(uuid "48045644-6a56-453a-bd50-2faad2c58b22")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.49 72.39 0)
+			(at 91.44 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1570,9 +1292,9 @@
 			)
 		)
 	)
-	(global_label "PG_ANA"
+(global_label "PG_ANA"
 		(shape input)
-		(at 39.37 59.69 180)
+		(at 20.32 66.04 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1581,7 +1303,7 @@
 		)
 		(uuid "4a75810e-bf36-4f42-9076-f725c7a35c2f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 59.69 0)
+			(at 20.32 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1592,9 +1314,9 @@
 			)
 		)
 	)
-	(global_label "PGR_ANA5"
+(global_label "PGR_ANA5"
 		(shape input)
-		(at 40.64 127 180)
+		(at 21.59 133.35 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1603,7 +1325,7 @@
 		)
 		(uuid "5230fe8b-b283-48c7-a6ff-fb50ba94d3d6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 127 0)
+			(at 21.59 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1614,9 +1336,9 @@
 			)
 		)
 	)
-	(global_label "PGR_IO33"
+(global_label "PGR_IO33"
 		(shape input)
-		(at 40.64 109.22 180)
+		(at 21.59 115.57 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1625,7 +1347,7 @@
 		)
 		(uuid "54bddadb-90fb-4609-b034-be9f1057dcd0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 109.22 0)
+			(at 21.59 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1636,9 +1358,9 @@
 			)
 		)
 	)
-	(global_label "PG_SYS"
+(global_label "PG_SYS"
 		(shape input)
-		(at 39.37 52.07 180)
+		(at 20.32 58.42 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1647,7 +1369,7 @@
 		)
 		(uuid "54fc9227-3db9-4bd0-b1f4-d8e2f92ecb27")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 52.07 0)
+			(at 20.32 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1658,9 +1380,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 54.61 40.64 180)
+		(at 35.56 46.99 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1669,7 +1391,7 @@
 		)
 		(uuid "719d95b8-fec8-46ee-b133-18416100a995")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.61 40.64 90)
+			(at 35.56 46.99 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1680,9 +1402,9 @@
 			)
 		)
 	)
-	(global_label "PG_P15"
+(global_label "PG_P15"
 		(shape input)
-		(at 39.37 69.85 180)
+		(at 20.32 76.2 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1691,7 +1413,7 @@
 		)
 		(uuid "7a7b79a1-fbae-4765-b33d-f17df67a6dc9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 69.85 0)
+			(at 20.32 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1702,9 +1424,9 @@
 			)
 		)
 	)
-	(global_label "PG_FPGA"
+(global_label "PG_FPGA"
 		(shape input)
-		(at 39.37 57.15 180)
+		(at 20.32 63.5 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1713,7 +1435,7 @@
 		)
 		(uuid "84f81e23-ddf0-48e1-8b24-637bc8bf54fc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 57.15 0)
+			(at 20.32 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1724,9 +1446,9 @@
 			)
 		)
 	)
-	(global_label "PGR_IO18"
+(global_label "PGR_IO18"
 		(shape input)
-		(at 40.64 114.3 180)
+		(at 21.59 120.65 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1735,7 +1457,7 @@
 		)
 		(uuid "8762a4fe-3d43-4426-a638-8f9f819a3b62")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 114.3 0)
+			(at 21.59 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1746,9 +1468,9 @@
 			)
 		)
 	)
-	(global_label "PGR_CORE"
+(global_label "PGR_CORE"
 		(shape input)
-		(at 39.37 74.93 180)
+		(at 20.32 81.28 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1757,7 +1479,7 @@
 		)
 		(uuid "cb6b2768-fb93-494e-9807-bdbc02ae2ca3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 74.93 0)
+			(at 20.32 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1768,9 +1490,9 @@
 			)
 		)
 	)
-	(global_label "ALL_RAILS_PG"
+(global_label "ALL_RAILS_PG"
 		(shape input)
-		(at 130.81 91.44 0)
+		(at 111.76 97.79 0)
 		(effects
 			(font
 				(size 1 1)
@@ -1779,7 +1501,7 @@
 		)
 		(uuid "ce105f37-4c33-465b-b587-43b08a465106")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.81 91.44 0)
+			(at 111.76 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1790,9 +1512,9 @@
 			)
 		)
 	)
-	(global_label "PGR_AUX18"
+(global_label "PGR_AUX18"
 		(shape input)
-		(at 39.37 77.47 180)
+		(at 20.32 83.82 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1801,7 +1523,7 @@
 		)
 		(uuid "d4a8e9a1-6337-43c7-923a-a08318618ba3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.37 77.47 0)
+			(at 20.32 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1812,9 +1534,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 54.61 95.25 180)
+		(at 35.56 101.6 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1823,7 +1545,7 @@
 		)
 		(uuid "dbaf59d7-0511-44ec-858d-3fc2b7123a1c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.61 95.25 90)
+			(at 35.56 101.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1834,9 +1556,9 @@
 			)
 		)
 	)
-	(global_label "AON"
+(global_label "AON"
 		(shape input)
-		(at 40.64 132.08 180)
+		(at 21.59 138.43 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1845,7 +1567,7 @@
 		)
 		(uuid "e726f590-4510-4a4e-820e-43886314d854")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 132.08 0)
+			(at 21.59 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1856,9 +1578,9 @@
 			)
 		)
 	)
-	(global_label "PGR_AUX25"
+(global_label "PGR_AUX25"
 		(shape input)
-		(at 40.64 106.68 180)
+		(at 21.59 113.03 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1867,7 +1589,7 @@
 		)
 		(uuid "ead7a8c1-5d99-4cd0-a04b-3f29e518a7e0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 106.68 0)
+			(at 21.59 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1878,9 +1600,9 @@
 			)
 		)
 	)
-	(global_label "PGR_VTT"
+(global_label "PGR_VTT"
 		(shape input)
-		(at 40.64 124.46 180)
+		(at 21.59 130.81 180)
 		(effects
 			(font
 				(size 1 1)
@@ -1889,7 +1611,7 @@
 		)
 		(uuid "f0034e1d-22f3-4feb-8a92-98dd103bbfeb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.64 124.46 0)
+			(at 21.59 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1900,9 +1622,9 @@
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:U_SN74HCS21PWR")
-		(at 58.42 64.77 0)
+		(at 39.37 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1911,8 +1633,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "09dde205-709d-42a5-b44f-b2328bececc4")
-		(property "Reference" "U430001"
-			(at 58.42 62.23 0)
+		(property "Reference" "U390001"
+			(at 39.37 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1922,7 +1644,7 @@
 			)
 		)
 		(property "Value" "SN74HCS21PWR"
-			(at 58.42 67.31 0)
+			(at 39.37 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1932,7 +1654,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 58.42 64.77 0)
+			(at 39.37 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1943,7 +1665,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74hcs21.pdf"
-			(at 58.42 64.77 0)
+			(at 39.37 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1954,7 +1676,7 @@
 			)
 		)
 		(property "Description" "Dual 4-input Schmitt AND gate, 2-6V, TSSOP-14"
-			(at 58.42 64.77 0)
+			(at 39.37 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1965,7 +1687,7 @@
 			)
 		)
 		(property "MPN" "SN74HCS21PWR"
-			(at 58.42 64.77 0)
+			(at 39.37 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1976,7 +1698,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 58.42 64.77 0)
+			(at 39.37 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1987,7 +1709,7 @@
 			)
 		)
 		(property "logic" "[{'inputs': ['PG_SYS', 'PG_SYS', 'PG_FPGA', 'PG_ANA'], 'output': 'PG_GROUP_0', 'function': 'AND'}, {'inputs': ['PG_P15', 'PG_N15', 'PGR_CORE', 'PGR_AUX18'], 'output': 'PG_GROUP_1', 'function': 'AND'}]"
-			(at 58.42 64.77 0)
+			(at 39.37 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2042,15 +1764,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "U430001")
+					(reference "U390001")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R61A104KE15D")
-		(at 66.04 40.64 0)
+		(at 46.99 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2059,8 +1781,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1d3d076a-7256-4013-aa31-f792aafd2f77")
-		(property "Reference" "C430001"
-			(at 69.85 39.37 0)
+		(property "Reference" "C390001"
+			(at 50.8 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2070,7 +1792,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 69.85 41.91 0)
+			(at 50.8 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2080,7 +1802,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 66.04 40.64 0)
+			(at 46.99 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2091,7 +1813,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 40.64 0)
+			(at 46.99 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2102,7 +1824,7 @@
 			)
 		)
 		(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
-			(at 66.04 40.64 0)
+			(at 46.99 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2113,7 +1835,7 @@
 			)
 		)
 		(property "MPN" "GRM033R61A104KE15D"
-			(at 66.04 40.64 0)
+			(at 46.99 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2124,7 +1846,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 66.04 40.64 0)
+			(at 46.99 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2135,7 +1857,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 66.04 40.64 0)
+			(at 46.99 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2146,7 +1868,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 66.04 40.64 0)
+			(at 46.99 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2157,7 +1879,7 @@
 			)
 		)
 		(property "dielectric" "X5R"
-			(at 66.04 40.64 0)
+			(at 46.99 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2176,15 +1898,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "C430001")
+					(reference "C390001")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:U_SN74HCS21PWR")
-		(at 58.42 119.38 0)
+		(at 39.37 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2193,8 +1915,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "334e9cde-9b49-4845-aef5-9cddabbd18ed")
-		(property "Reference" "U430002"
-			(at 58.42 116.84 0)
+		(property "Reference" "U390002"
+			(at 39.37 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2204,7 +1926,7 @@
 			)
 		)
 		(property "Value" "SN74HCS21PWR"
-			(at 58.42 121.92 0)
+			(at 39.37 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2214,7 +1936,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 58.42 119.38 0)
+			(at 39.37 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2225,7 +1947,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74hcs21.pdf"
-			(at 58.42 119.38 0)
+			(at 39.37 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2236,7 +1958,7 @@
 			)
 		)
 		(property "Description" "Dual 4-input Schmitt AND gate, 2-6V, TSSOP-14"
-			(at 58.42 119.38 0)
+			(at 39.37 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2247,7 +1969,7 @@
 			)
 		)
 		(property "MPN" "SN74HCS21PWR"
-			(at 58.42 119.38 0)
+			(at 39.37 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2258,7 +1980,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 58.42 119.38 0)
+			(at 39.37 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2269,7 +1991,7 @@
 			)
 		)
 		(property "logic" "[{'inputs': ['PGR_AUX25', 'PGR_IO33', 'PGR_DDR', 'PGR_IO18'], 'output': 'PG_GROUP_2', 'function': 'AND'}, {'inputs': ['PGR_VTT', 'PGR_ANA5', 'PGR_ANA33', 'AON'], 'output': 'PG_GROUP_3', 'function': 'AND'}]"
-			(at 58.42 119.38 0)
+			(at 39.37 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2324,15 +2046,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "U430002")
+					(reference "U390002")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 72.39 95.25 90)
+		(at 53.34 101.6 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2341,8 +2063,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "482165f1-fd02-4a9f-b072-854c3f3c41bf")
-		(property "Reference" "#PWR430001"
-			(at 72.39 95.25 0)
+		(property "Reference" "#PWR390001"
+			(at 53.34 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2353,7 +2075,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.2 95.25 0)
+			(at 57.15 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2363,7 +2085,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 95.25 0)
+			(at 53.34 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2373,7 +2095,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 95.25 0)
+			(at 53.34 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2383,7 +2105,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 72.39 95.25 0)
+			(at 53.34 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2398,15 +2120,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR430001")
+					(reference "#PWR390001")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 58.42 87.63 0)
+		(at 39.37 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2415,8 +2137,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "63e32e3e-c9e3-4ac1-a368-fc22dd282e14")
-		(property "Reference" "#PWR430002"
-			(at 58.42 87.63 0)
+		(property "Reference" "#PWR390002"
+			(at 39.37 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2427,7 +2149,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 91.44 0)
+			(at 39.37 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2437,7 +2159,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 87.63 0)
+			(at 39.37 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2447,7 +2169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 87.63 0)
+			(at 39.37 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2457,7 +2179,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 58.42 87.63 0)
+			(at 39.37 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2472,15 +2194,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR430002")
+					(reference "#PWR390002")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:U_SN74HCS21PWR")
-		(at 110.49 100.33 0)
+		(at 91.44 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2489,8 +2211,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7059a6f0-a150-4cef-962b-5efaec409752")
-		(property "Reference" "U430003"
-			(at 110.49 97.79 0)
+		(property "Reference" "U390003"
+			(at 91.44 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2500,7 +2222,7 @@
 			)
 		)
 		(property "Value" "SN74HCS21PWR"
-			(at 110.49 102.87 0)
+			(at 91.44 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2510,7 +2232,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 110.49 100.33 0)
+			(at 91.44 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2521,7 +2243,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74hcs21.pdf"
-			(at 110.49 100.33 0)
+			(at 91.44 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2532,7 +2254,7 @@
 			)
 		)
 		(property "Description" "Dual 4-input Schmitt AND gate, 2-6V, TSSOP-14"
-			(at 110.49 100.33 0)
+			(at 91.44 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2543,7 +2265,7 @@
 			)
 		)
 		(property "MPN" "SN74HCS21PWR"
-			(at 110.49 100.33 0)
+			(at 91.44 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2554,7 +2276,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 110.49 100.33 0)
+			(at 91.44 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2565,7 +2287,7 @@
 			)
 		)
 		(property "logic" "[{'inputs': ['PG_GROUP_0', 'PG_GROUP_1', 'PG_GROUP_2', 'PG_GROUP_3'], 'output': 'ALL_RAILS_PG', 'function': 'AND'}]"
-			(at 110.49 100.33 0)
+			(at 91.44 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2620,15 +2342,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "U430003")
+					(reference "U390003")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 72.39 40.64 90)
+		(at 53.34 46.99 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2637,8 +2359,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77fe4000-12aa-4995-879d-eae57a30cd39")
-		(property "Reference" "#PWR430003"
-			(at 72.39 40.64 0)
+		(property "Reference" "#PWR390003"
+			(at 53.34 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2649,7 +2371,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 76.2 40.64 0)
+			(at 57.15 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2659,7 +2381,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 40.64 0)
+			(at 53.34 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2669,7 +2391,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 40.64 0)
+			(at 53.34 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2679,7 +2401,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 72.39 40.64 0)
+			(at 53.34 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2694,15 +2416,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR430003")
+					(reference "#PWR390003")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 91.44 124.46 0)
+		(at 72.39 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2711,8 +2433,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba4500ce-4cfa-4b92-85ea-0b16d0e284a9")
-		(property "Reference" "#PWR430004"
-			(at 91.44 124.46 0)
+		(property "Reference" "#PWR390004"
+			(at 72.39 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2723,7 +2445,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 91.44 128.27 0)
+			(at 72.39 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2733,7 +2455,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 124.46 0)
+			(at 72.39 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2743,7 +2465,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 124.46 0)
+			(at 72.39 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2753,7 +2475,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 91.44 124.46 0)
+			(at 72.39 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2768,15 +2490,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR430004")
+					(reference "#PWR390004")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 58.42 142.24 0)
+		(at 39.37 148.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2785,8 +2507,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ce0d057b-b372-423b-aa6a-e14f567fb844")
-		(property "Reference" "#PWR430005"
-			(at 58.42 142.24 0)
+		(property "Reference" "#PWR390005"
+			(at 39.37 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2797,7 +2519,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 146.05 0)
+			(at 39.37 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2807,7 +2529,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 142.24 0)
+			(at 39.37 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2817,7 +2539,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 142.24 0)
+			(at 39.37 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2827,7 +2549,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 58.42 142.24 0)
+			(at 39.37 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2842,15 +2564,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR430005")
+					(reference "#PWR390005")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 110.49 132.08 0)
+		(at 91.44 138.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2859,8 +2581,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e2b95065-b5da-44ca-8fec-6810bd130f74")
-		(property "Reference" "#PWR430006"
-			(at 110.49 132.08 0)
+		(property "Reference" "#PWR390006"
+			(at 91.44 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2871,7 +2593,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.49 135.89 0)
+			(at 91.44 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2881,7 +2603,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 132.08 0)
+			(at 91.44 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2891,7 +2613,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 132.08 0)
+			(at 91.44 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2901,7 +2623,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 110.49 132.08 0)
+			(at 91.44 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2916,15 +2638,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR430006")
+					(reference "#PWR390006")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R61A104KE15D")
-		(at 66.04 95.25 0)
+		(at 46.99 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2933,8 +2655,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fb3c8896-9cef-4abc-a20b-5a033f2153c9")
-		(property "Reference" "C430002"
-			(at 69.85 93.98 0)
+		(property "Reference" "C390002"
+			(at 50.8 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2944,7 +2666,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 69.85 96.52 0)
+			(at 50.8 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2954,7 +2676,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 66.04 95.25 0)
+			(at 46.99 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2965,7 +2687,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 95.25 0)
+			(at 46.99 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2976,7 +2698,7 @@
 			)
 		)
 		(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
-			(at 66.04 95.25 0)
+			(at 46.99 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2987,7 +2709,7 @@
 			)
 		)
 		(property "MPN" "GRM033R61A104KE15D"
-			(at 66.04 95.25 0)
+			(at 46.99 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2998,7 +2720,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 66.04 95.25 0)
+			(at 46.99 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3009,7 +2731,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 66.04 95.25 0)
+			(at 46.99 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3020,7 +2742,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 66.04 95.25 0)
+			(at 46.99 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3031,7 +2753,7 @@
 			)
 		)
 		(property "dielectric" "X5R"
-			(at 66.04 95.25 0)
+			(at 46.99 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3050,15 +2772,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "C430002")
+					(reference "C390002")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "power:GND")
-		(at 124.46 74.93 90)
+		(at 105.41 81.28 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3067,8 +2789,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fb4f51e9-8a60-4bd2-bf7f-41735183e46f")
-		(property "Reference" "#PWR430007"
-			(at 124.46 74.93 0)
+		(property "Reference" "#PWR390007"
+			(at 105.41 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3079,7 +2801,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 74.93 0)
+			(at 109.22 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3089,7 +2811,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 74.93 0)
+			(at 105.41 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3099,7 +2821,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 74.93 0)
+			(at 105.41 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3109,7 +2831,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 74.93 0)
+			(at 105.41 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3124,15 +2846,15 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR430007")
+					(reference "#PWR390007")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
+(symbol
 		(lib_id "MIRA_RevA:C_GRM033R61A104KE15D")
-		(at 118.11 74.93 0)
+		(at 99.06 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3141,8 +2863,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fbcd67bd-f7de-4cfd-9c8a-824158ba3951")
-		(property "Reference" "C430003"
-			(at 121.92 69.85 0)
+		(property "Reference" "C390003"
+			(at 102.87 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3152,7 +2874,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 121.92 72.39 0)
+			(at 102.87 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3162,7 +2884,7 @@
 			)
 		)
 		(property "Footprint" "MIRA_RevA:C_0201_Murata_GRM03_Gap0.25"
-			(at 118.11 74.93 0)
+			(at 99.06 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3173,7 +2895,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 74.93 0)
+			(at 99.06 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3184,7 +2906,7 @@
 			)
 		)
 		(property "Description" "MLCC, 100nF, 10V, X5R, 0201"
-			(at 118.11 74.93 0)
+			(at 99.06 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3195,7 +2917,7 @@
 			)
 		)
 		(property "MPN" "GRM033R61A104KE15D"
-			(at 118.11 74.93 0)
+			(at 99.06 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3206,7 +2928,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 118.11 74.93 0)
+			(at 99.06 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3217,7 +2939,7 @@
 			)
 		)
 		(property "package" "0201"
-			(at 118.11 74.93 0)
+			(at 99.06 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3228,7 +2950,7 @@
 			)
 		)
 		(property "voltage" "10V"
-			(at 118.11 74.93 0)
+			(at 99.06 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3239,7 +2961,7 @@
 			)
 		)
 		(property "dielectric" "X5R"
-			(at 118.11 74.93 0)
+			(at 99.06 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3258,18 +2980,11 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "C430003")
+					(reference "C390003")
 					(unit 1)
 				)
 			)
 		)
 	)
-
-
-
-
-
-
-
-(title_block (title "Rail Ready") (rev "C-review") (company "MIRA"))
+(text "Rail Ready" (at 20 15 0) (effects (font (size 1.6 1.6)) (justify left top)) (uuid "9b55b4f8-54f5-5ac5-b715-d1662c149834"))
 )

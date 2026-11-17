@@ -5,6 +5,7 @@ Usage: python3 verify_ch48.py CONTROL.xml MODULE.xml
 import argparse
 import csv
 import json
+import re
 import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
@@ -35,6 +36,14 @@ class Netlist:
         self.by_net = {}
         for net in tree.findall("nets/net"):
             name = net.attrib["name"]
+            # Local channel labels may move between sheets during drawing cleanup.
+            # Normalize only contract-specific CH0..CH47 names, rejecting duplicate
+            # scoped aliases rather than silently joining independent electrical nets.
+            local = name.rsplit("/", 1)[-1]
+            if name.startswith("/") and re.fullmatch(r"CH(?:[0-9]|[1-3][0-9]|4[0-7])_[A-Za-z0-9_]+", local):
+                name = local
+            if name in self.by_net:
+                raise ValueError(f"Ambiguous channel net after local-name normalization: {name}")
             nodes = self.by_net[name] = []
             for node in net.findall("node"):
                 key = (node.attrib["ref"], node.attrib["pin"])
