@@ -1,0 +1,2969 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-17T18:00:43",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [
+        {
+            "description": "Pad net (BL0) doesn't match net given by schematic (CH0)",
+            "items": [
+                {
+                    "description": "Pad 1 [BL0] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 111.75
+                    },
+                    "uuid": "402f4e23-f1e1-4b35-9791-85b1f18a3ec6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL1) doesn't match net given by schematic (CH1)",
+            "items": [
+                {
+                    "description": "Pad 2 [BL1] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 111.25
+                    },
+                    "uuid": "c4fa92e8-9c65-4a5a-b94d-17f772454f80"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL2) doesn't match net given by schematic (CH2)",
+            "items": [
+                {
+                    "description": "Pad 4 [BL2] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 110.25
+                    },
+                    "uuid": "048c4da3-7e02-4e2b-942f-d30ab37c80b6"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL3) doesn't match net given by schematic (CH3)",
+            "items": [
+                {
+                    "description": "Pad 5 [BL3] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 109.75
+                    },
+                    "uuid": "52bea03a-8862-4219-a329-88c37c804848"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL4) doesn't match net given by schematic (CH4)",
+            "items": [
+                {
+                    "description": "Pad 7 [BL4] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 108.75
+                    },
+                    "uuid": "d5fb1570-f65c-42af-a8c9-70c5d9e671e1"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL5) doesn't match net given by schematic (CH5)",
+            "items": [
+                {
+                    "description": "Pad 8 [BL5] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 108.25
+                    },
+                    "uuid": "cacc1970-2eb6-4306-aecc-95c588819636"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL6) doesn't match net given by schematic (CH6)",
+            "items": [
+                {
+                    "description": "Pad 10 [BL6] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 107.25
+                    },
+                    "uuid": "d971b8a1-caf5-4141-bcdf-54f5aeb63c7c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL7) doesn't match net given by schematic (CH7)",
+            "items": [
+                {
+                    "description": "Pad 11 [BL7] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 106.75
+                    },
+                    "uuid": "f9682512-bcce-4ce3-834c-68c0bdc20386"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL8) doesn't match net given by schematic (CH8)",
+            "items": [
+                {
+                    "description": "Pad 13 [BL8] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 105.75
+                    },
+                    "uuid": "f765431c-27f6-4be9-a760-57db879a3006"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL9) doesn't match net given by schematic (CH9)",
+            "items": [
+                {
+                    "description": "Pad 14 [BL9] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 105.25
+                    },
+                    "uuid": "6ab0fece-35a8-4fdf-b261-c2a39646f4f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL10) doesn't match net given by schematic (CH10)",
+            "items": [
+                {
+                    "description": "Pad 16 [BL10] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 104.25
+                    },
+                    "uuid": "a368df7e-bd02-4a27-903e-53378a48063a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL11) doesn't match net given by schematic (CH11)",
+            "items": [
+                {
+                    "description": "Pad 17 [BL11] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 103.75
+                    },
+                    "uuid": "da7fb488-7fa7-4570-907d-9b71b6cfc979"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL12) doesn't match net given by schematic (CH12)",
+            "items": [
+                {
+                    "description": "Pad 19 [BL12] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 102.75
+                    },
+                    "uuid": "f9d62dc1-7be7-4f0e-bcff-b8242b8396d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL13) doesn't match net given by schematic (CH13)",
+            "items": [
+                {
+                    "description": "Pad 20 [BL13] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 102.25
+                    },
+                    "uuid": "4f6d5c24-5a67-4aa2-a293-d684be996119"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL14) doesn't match net given by schematic (CH14)",
+            "items": [
+                {
+                    "description": "Pad 22 [BL14] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 101.25
+                    },
+                    "uuid": "e3c7983d-bbcd-4830-804e-1029ffe35f65"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL15) doesn't match net given by schematic (CH15)",
+            "items": [
+                {
+                    "description": "Pad 23 [BL15] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 100.75
+                    },
+                    "uuid": "8c2a555e-1046-458b-a2cf-1d3a5725050e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL16) doesn't match net given by schematic (CH16)",
+            "items": [
+                {
+                    "description": "Pad 25 [BL16] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 99.75
+                    },
+                    "uuid": "5bbd6b1f-f263-4d04-9043-9abc573fa7db"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL17) doesn't match net given by schematic (CH17)",
+            "items": [
+                {
+                    "description": "Pad 26 [BL17] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 99.25
+                    },
+                    "uuid": "1e0513c5-dd48-43f8-a83c-fae077aeea9a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL18) doesn't match net given by schematic (CH18)",
+            "items": [
+                {
+                    "description": "Pad 28 [BL18] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 98.25
+                    },
+                    "uuid": "51ff31cf-4ff1-45f0-b5d6-95f1855a953b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL19) doesn't match net given by schematic (CH19)",
+            "items": [
+                {
+                    "description": "Pad 29 [BL19] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 97.75
+                    },
+                    "uuid": "58ef1e34-6a84-4aca-a70e-19755930c439"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL20) doesn't match net given by schematic (CH20)",
+            "items": [
+                {
+                    "description": "Pad 31 [BL20] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 96.75
+                    },
+                    "uuid": "1346def1-4143-4141-a56e-727802a12d88"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL21) doesn't match net given by schematic (CH21)",
+            "items": [
+                {
+                    "description": "Pad 32 [BL21] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 96.25
+                    },
+                    "uuid": "1e0c8d5c-0dda-4afa-974d-5cc11c622452"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL22) doesn't match net given by schematic (CH22)",
+            "items": [
+                {
+                    "description": "Pad 34 [BL22] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 95.25
+                    },
+                    "uuid": "1d2be966-55d8-40ab-81eb-3f80a419ed1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL23) doesn't match net given by schematic (CH23)",
+            "items": [
+                {
+                    "description": "Pad 35 [BL23] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 94.75
+                    },
+                    "uuid": "21a68f03-f7d1-4ecf-af92-f8c267d6627a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL24) doesn't match net given by schematic (CH24)",
+            "items": [
+                {
+                    "description": "Pad 37 [BL24] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 93.75
+                    },
+                    "uuid": "41607f86-e4f6-409e-96fa-315295aa6324"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL25) doesn't match net given by schematic (CH25)",
+            "items": [
+                {
+                    "description": "Pad 38 [BL25] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 93.25
+                    },
+                    "uuid": "489dce9d-fd5a-48fc-9e2f-0c0cbd44ad0f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL26) doesn't match net given by schematic (CH26)",
+            "items": [
+                {
+                    "description": "Pad 40 [BL26] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 92.25
+                    },
+                    "uuid": "ee1a7bd3-2959-4ecd-86a4-99efc71ae561"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL27) doesn't match net given by schematic (CH27)",
+            "items": [
+                {
+                    "description": "Pad 41 [BL27] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 111.75
+                    },
+                    "uuid": "b9c4ea85-c02a-4696-b19a-4dc1ba6514a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL28) doesn't match net given by schematic (CH28)",
+            "items": [
+                {
+                    "description": "Pad 43 [BL28] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 110.75
+                    },
+                    "uuid": "1b9b2f49-c77b-4745-9374-35524f550bb4"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL29) doesn't match net given by schematic (CH29)",
+            "items": [
+                {
+                    "description": "Pad 44 [BL29] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 110.25
+                    },
+                    "uuid": "ca62049b-9898-4f8d-800c-18c01442732e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL30) doesn't match net given by schematic (CH30)",
+            "items": [
+                {
+                    "description": "Pad 46 [BL30] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 109.25
+                    },
+                    "uuid": "7511d0c0-9348-40c4-a164-a6d1c32b7aee"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (BL31) doesn't match net given by schematic (CH31)",
+            "items": [
+                {
+                    "description": "Pad 47 [BL31] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 108.75
+                    },
+                    "uuid": "e9455543-838d-4b32-8cf7-d7aec829e992"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL0) doesn't match net given by schematic (unconnected-(J10001-Pad49))",
+            "items": [
+                {
+                    "description": "Pad 49 [WL0] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 107.75
+                    },
+                    "uuid": "d3409d16-7c3a-4f50-9005-8af5dd381bd1"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL1) doesn't match net given by schematic (unconnected-(J10001-Pad50))",
+            "items": [
+                {
+                    "description": "Pad 50 [WL1] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 107.25
+                    },
+                    "uuid": "46bf5d12-1c03-4b36-b371-df2b3e5ed501"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL2) doesn't match net given by schematic (unconnected-(J10001-Pad52))",
+            "items": [
+                {
+                    "description": "Pad 52 [WL2] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 106.25
+                    },
+                    "uuid": "7758ac67-9a36-4a2b-afe0-c828700516c5"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL3) doesn't match net given by schematic (unconnected-(J10001-Pad53))",
+            "items": [
+                {
+                    "description": "Pad 53 [WL3] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 105.75
+                    },
+                    "uuid": "236d6d9b-e34a-4e3f-926e-bfd1fca61e51"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL4) doesn't match net given by schematic (unconnected-(J10001-Pad55))",
+            "items": [
+                {
+                    "description": "Pad 55 [WL4] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 104.75
+                    },
+                    "uuid": "8a910127-c27b-4c04-a4e4-3d790fd66b44"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL5) doesn't match net given by schematic (unconnected-(J10001-Pad56))",
+            "items": [
+                {
+                    "description": "Pad 56 [WL5] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 104.25
+                    },
+                    "uuid": "8ccde3fc-e027-4811-a810-78fec8692271"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL6) doesn't match net given by schematic (unconnected-(J10001-Pad58))",
+            "items": [
+                {
+                    "description": "Pad 58 [WL6] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 103.25
+                    },
+                    "uuid": "ca81c6a8-7674-4a3d-b099-af2d35bf3c06"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL7) doesn't match net given by schematic (unconnected-(J10001-Pad59))",
+            "items": [
+                {
+                    "description": "Pad 59 [WL7] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 102.75
+                    },
+                    "uuid": "2b13a150-6e87-4db4-a757-dff50ff481ab"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL8) doesn't match net given by schematic (unconnected-(J10001-Pad61))",
+            "items": [
+                {
+                    "description": "Pad 61 [WL8] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 101.75
+                    },
+                    "uuid": "352c4f23-3f30-4f3d-bf1b-dc57a554ef3f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL9) doesn't match net given by schematic (unconnected-(J10001-Pad62))",
+            "items": [
+                {
+                    "description": "Pad 62 [WL9] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 101.25
+                    },
+                    "uuid": "3a72e00e-cf8c-4177-9e7b-7bfbc87e3a5a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL10) doesn't match net given by schematic (unconnected-(J10001-Pad64))",
+            "items": [
+                {
+                    "description": "Pad 64 [WL10] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 100.25
+                    },
+                    "uuid": "eef21971-656e-4c8d-a21c-a63d48678e0e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL11) doesn't match net given by schematic (unconnected-(J10001-Pad65))",
+            "items": [
+                {
+                    "description": "Pad 65 [WL11] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 99.75
+                    },
+                    "uuid": "9717b4e6-4196-4805-90b4-9eab5c0392e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL12) doesn't match net given by schematic (unconnected-(J10001-Pad67))",
+            "items": [
+                {
+                    "description": "Pad 67 [WL12] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 98.75
+                    },
+                    "uuid": "c674cbd7-efac-4f07-903e-7434d851e100"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL13) doesn't match net given by schematic (unconnected-(J10001-Pad68))",
+            "items": [
+                {
+                    "description": "Pad 68 [WL13] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 98.25
+                    },
+                    "uuid": "e599880a-05b0-4404-90ea-c629bdab8fc8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL14) doesn't match net given by schematic (unconnected-(J10001-Pad69))",
+            "items": [
+                {
+                    "description": "Pad 69 [WL14] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 97.75
+                    },
+                    "uuid": "e1eb80dc-1670-44fe-a322-c7f1042ff0a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL15) doesn't match net given by schematic (unconnected-(J10001-Pad70))",
+            "items": [
+                {
+                    "description": "Pad 70 [WL15] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 97.25
+                    },
+                    "uuid": "9e92f09d-498d-461d-aff6-c2ac29205086"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J1-Pad71)) doesn't match net given by schematic (unconnected-(J10001-Pad71))",
+            "items": [
+                {
+                    "description": "Pad 71 [unconnected-(J1-Pad71)] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 96.75
+                    },
+                    "uuid": "a5c65491-d4d8-4c21-8f36-760ec6d71a42"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J1-Pad72)) doesn't match net given by schematic (unconnected-(J10001-Pad72))",
+            "items": [
+                {
+                    "description": "Pad 72 [unconnected-(J1-Pad72)] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 96.25
+                    },
+                    "uuid": "5e4e31fa-02a1-4661-b547-752cc1ee3918"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J1-Pad73)) doesn't match net given by schematic (unconnected-(J10001-Pad73))",
+            "items": [
+                {
+                    "description": "Pad 73 [unconnected-(J1-Pad73)] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 95.75
+                    },
+                    "uuid": "2ec3ed4a-d28c-46a2-86a8-77a230db492d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J1-Pad74)) doesn't match net given by schematic (unconnected-(J10001-Pad74))",
+            "items": [
+                {
+                    "description": "Pad 74 [unconnected-(J1-Pad74)] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 95.25
+                    },
+                    "uuid": "b760b821-4de3-4343-a140-6d86ddadaa19"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J1-Pad75)) doesn't match net given by schematic (unconnected-(J10001-Pad75))",
+            "items": [
+                {
+                    "description": "Pad 75 [unconnected-(J1-Pad75)] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 94.75
+                    },
+                    "uuid": "47f3a27b-be50-472e-a8b1-83f1fb75f28b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J1-Pad76)) doesn't match net given by schematic (unconnected-(J10001-Pad76))",
+            "items": [
+                {
+                    "description": "Pad 76 [unconnected-(J1-Pad76)] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 94.25
+                    },
+                    "uuid": "5e835c1e-2299-4da3-a1b0-cf6ca61eb200"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J1-Pad77)) doesn't match net given by schematic (unconnected-(J10001-Pad77))",
+            "items": [
+                {
+                    "description": "Pad 77 [unconnected-(J1-Pad77)] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 93.75
+                    },
+                    "uuid": "c22597eb-297e-4c15-bbdd-730dfdee5748"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J1-Pad78)) doesn't match net given by schematic (unconnected-(J10001-Pad78))",
+            "items": [
+                {
+                    "description": "Pad 78 [unconnected-(J1-Pad78)] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 93.25
+                    },
+                    "uuid": "64858c1e-d938-4960-bef5-da43ee2fcd63"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J1-Pad79)) doesn't match net given by schematic (unconnected-(J10001-Pad79))",
+            "items": [
+                {
+                    "description": "Pad 79 [unconnected-(J1-Pad79)] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 92.75
+                    },
+                    "uuid": "aa165489-e6b3-45d7-96f6-e9c05fdcf2f1"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J1-Pad80)) doesn't match net given by schematic (unconnected-(J10001-Pad80))",
+            "items": [
+                {
+                    "description": "Pad 80 [unconnected-(J1-Pad80)] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 92.25
+                    },
+                    "uuid": "ac72f34b-27b9-4e9c-9508-057380ffac72"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL0) doesn't match net given by schematic (CH32)",
+            "items": [
+                {
+                    "description": "Pad 1 [NL0] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 115.75
+                    },
+                    "uuid": "390eda05-803b-4d22-a796-0a50953f25a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL1) doesn't match net given by schematic (CH33)",
+            "items": [
+                {
+                    "description": "Pad 2 [NL1] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 115.25
+                    },
+                    "uuid": "614845ad-5b74-4fd9-9331-a97219772f32"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL2) doesn't match net given by schematic (CH34)",
+            "items": [
+                {
+                    "description": "Pad 4 [NL2] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 114.25
+                    },
+                    "uuid": "b0b08494-c256-4dc3-b9b9-8a9437c5e549"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL3) doesn't match net given by schematic (CH35)",
+            "items": [
+                {
+                    "description": "Pad 5 [NL3] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 113.75
+                    },
+                    "uuid": "612e8fef-e514-41d6-a0aa-18fa645fd50e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL4) doesn't match net given by schematic (CH36)",
+            "items": [
+                {
+                    "description": "Pad 7 [NL4] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 112.75
+                    },
+                    "uuid": "fe780086-2735-400f-a243-97fa2f6fc267"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL5) doesn't match net given by schematic (CH37)",
+            "items": [
+                {
+                    "description": "Pad 8 [NL5] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 112.25
+                    },
+                    "uuid": "84ed29be-fe91-49c5-bea3-d27805d792a8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL6) doesn't match net given by schematic (CH38)",
+            "items": [
+                {
+                    "description": "Pad 10 [NL6] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 111.25
+                    },
+                    "uuid": "28220189-fa95-42f4-917f-2adc36703df7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL7) doesn't match net given by schematic (CH39)",
+            "items": [
+                {
+                    "description": "Pad 11 [NL7] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 110.75
+                    },
+                    "uuid": "d804b5ae-39e5-4b93-bc74-28bb7c5dbcd7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL8) doesn't match net given by schematic (CH40)",
+            "items": [
+                {
+                    "description": "Pad 13 [NL8] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 109.75
+                    },
+                    "uuid": "cdda606c-a1f2-4856-b079-6bc6137a8a89"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL9) doesn't match net given by schematic (CH41)",
+            "items": [
+                {
+                    "description": "Pad 14 [NL9] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 109.25
+                    },
+                    "uuid": "6ea5b2ae-8248-487d-aed7-f0671a06cb7d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL10) doesn't match net given by schematic (CH42)",
+            "items": [
+                {
+                    "description": "Pad 16 [NL10] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 108.25
+                    },
+                    "uuid": "4bccb385-ec3d-47b3-bc92-e437711b75ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL11) doesn't match net given by schematic (CH43)",
+            "items": [
+                {
+                    "description": "Pad 17 [NL11] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 107.75
+                    },
+                    "uuid": "f978f3e2-836e-4752-a9bc-1b1eed61dd8b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL12) doesn't match net given by schematic (CH44)",
+            "items": [
+                {
+                    "description": "Pad 19 [NL12] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 106.75
+                    },
+                    "uuid": "dbc61763-d74f-43bf-a2dc-1f4bf660467b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL13) doesn't match net given by schematic (CH45)",
+            "items": [
+                {
+                    "description": "Pad 20 [NL13] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 106.25
+                    },
+                    "uuid": "cdae3294-450a-4b01-92e7-2db77925223d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL14) doesn't match net given by schematic (CH46)",
+            "items": [
+                {
+                    "description": "Pad 22 [NL14] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 105.25
+                    },
+                    "uuid": "005be4e1-3d12-4c25-8286-d3906d8108b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL15) doesn't match net given by schematic (CH47)",
+            "items": [
+                {
+                    "description": "Pad 23 [NL15] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 104.75
+                    },
+                    "uuid": "959c244b-dd4b-44b3-8c9e-8b0031af14ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL16) doesn't match net given by schematic (unconnected-(J10002-Pad25))",
+            "items": [
+                {
+                    "description": "Pad 25 [NL16] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 103.75
+                    },
+                    "uuid": "4dfd2370-42ae-424f-9a87-4c5cf7772ebf"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL17) doesn't match net given by schematic (unconnected-(J10002-Pad26))",
+            "items": [
+                {
+                    "description": "Pad 26 [NL17] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 103.25
+                    },
+                    "uuid": "e84fc9b3-fe53-4bc4-893a-bf07a129568c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL18) doesn't match net given by schematic (unconnected-(J10002-Pad28))",
+            "items": [
+                {
+                    "description": "Pad 28 [NL18] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 102.25
+                    },
+                    "uuid": "28f93b1e-eb10-4d7d-8b2e-36e9eec1f9d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL19) doesn't match net given by schematic (unconnected-(J10002-Pad29))",
+            "items": [
+                {
+                    "description": "Pad 29 [NL19] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 101.75
+                    },
+                    "uuid": "1a9be672-6efe-4892-a1b7-5b56be0be3b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL20) doesn't match net given by schematic (unconnected-(J10002-Pad31))",
+            "items": [
+                {
+                    "description": "Pad 31 [NL20] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 100.75
+                    },
+                    "uuid": "9943ddf3-0567-406e-90c5-e3e79a8f0d8b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL21) doesn't match net given by schematic (unconnected-(J10002-Pad32))",
+            "items": [
+                {
+                    "description": "Pad 32 [NL21] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 100.25
+                    },
+                    "uuid": "6b3f8ff7-0e99-4c15-aede-f052861a1d7a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL22) doesn't match net given by schematic (unconnected-(J10002-Pad34))",
+            "items": [
+                {
+                    "description": "Pad 34 [NL22] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 99.25
+                    },
+                    "uuid": "1d0579a6-b3fa-4cb2-8c8f-7b790fb6625d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL23) doesn't match net given by schematic (unconnected-(J10002-Pad35))",
+            "items": [
+                {
+                    "description": "Pad 35 [NL23] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 98.75
+                    },
+                    "uuid": "f5fa83e4-30ac-40e0-81e6-df96fed79788"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL24) doesn't match net given by schematic (unconnected-(J10002-Pad37))",
+            "items": [
+                {
+                    "description": "Pad 37 [NL24] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 97.75
+                    },
+                    "uuid": "cfe11b63-7b7f-4c98-9de1-f7c62edc75f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL25) doesn't match net given by schematic (unconnected-(J10002-Pad38))",
+            "items": [
+                {
+                    "description": "Pad 38 [NL25] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 97.25
+                    },
+                    "uuid": "c5a5e252-e1ce-4359-8c76-28defa112220"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL26) doesn't match net given by schematic (unconnected-(J10002-Pad40))",
+            "items": [
+                {
+                    "description": "Pad 40 [NL26] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 96.25
+                    },
+                    "uuid": "3b677411-3982-4b7c-a5de-64c26a5b5fd7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL27) doesn't match net given by schematic (unconnected-(J10002-Pad41))",
+            "items": [
+                {
+                    "description": "Pad 41 [NL27] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 115.75
+                    },
+                    "uuid": "b861ec3e-e984-4c9c-a676-7088fcf21f33"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL28) doesn't match net given by schematic (unconnected-(J10002-Pad43))",
+            "items": [
+                {
+                    "description": "Pad 43 [NL28] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 114.75
+                    },
+                    "uuid": "89e9bdf2-1cee-44f6-ada9-3cfb019798b9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL29) doesn't match net given by schematic (unconnected-(J10002-Pad44))",
+            "items": [
+                {
+                    "description": "Pad 44 [NL29] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 114.25
+                    },
+                    "uuid": "2d56b4c3-4396-4efd-b1a0-58f322373f36"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL30) doesn't match net given by schematic (unconnected-(J10002-Pad46))",
+            "items": [
+                {
+                    "description": "Pad 46 [NL30] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 113.25
+                    },
+                    "uuid": "8b2c8e48-61f9-4c26-8bb1-5ed6fed49e63"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (NL31) doesn't match net given by schematic (unconnected-(J10002-Pad47))",
+            "items": [
+                {
+                    "description": "Pad 47 [NL31] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 112.75
+                    },
+                    "uuid": "c8affe6e-0d49-479f-bb6d-1e5fb5034af9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL16) doesn't match net given by schematic (unconnected-(J10002-Pad49))",
+            "items": [
+                {
+                    "description": "Pad 49 [WL16] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 111.75
+                    },
+                    "uuid": "91006d96-4e29-4249-8988-eda38f6c03cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL17) doesn't match net given by schematic (unconnected-(J10002-Pad50))",
+            "items": [
+                {
+                    "description": "Pad 50 [WL17] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 111.25
+                    },
+                    "uuid": "cccd1fca-a059-4c65-9bbd-dbc8717b2192"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL18) doesn't match net given by schematic (unconnected-(J10002-Pad52))",
+            "items": [
+                {
+                    "description": "Pad 52 [WL18] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 110.25
+                    },
+                    "uuid": "76c36910-79b7-429b-a3a3-f8e5d86e9110"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL19) doesn't match net given by schematic (unconnected-(J10002-Pad53))",
+            "items": [
+                {
+                    "description": "Pad 53 [WL19] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 109.75
+                    },
+                    "uuid": "0a247955-9f38-4d9d-b45f-f407c9ec666e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL20) doesn't match net given by schematic (unconnected-(J10002-Pad55))",
+            "items": [
+                {
+                    "description": "Pad 55 [WL20] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 108.75
+                    },
+                    "uuid": "7e821d25-4017-40c7-bd8d-23ccf0cd1428"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL21) doesn't match net given by schematic (unconnected-(J10002-Pad56))",
+            "items": [
+                {
+                    "description": "Pad 56 [WL21] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 108.25
+                    },
+                    "uuid": "8d4f8efc-b08d-4a31-bc56-370653b033af"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL22) doesn't match net given by schematic (unconnected-(J10002-Pad58))",
+            "items": [
+                {
+                    "description": "Pad 58 [WL22] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 107.25
+                    },
+                    "uuid": "bd5646ca-89a0-432a-a9f2-7929bd75fad3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL23) doesn't match net given by schematic (unconnected-(J10002-Pad59))",
+            "items": [
+                {
+                    "description": "Pad 59 [WL23] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 106.75
+                    },
+                    "uuid": "56007bcd-284b-4342-baaa-14c1fc229c3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL24) doesn't match net given by schematic (unconnected-(J10002-Pad61))",
+            "items": [
+                {
+                    "description": "Pad 61 [WL24] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 105.75
+                    },
+                    "uuid": "1c686690-a6da-4f3f-9135-27d374962949"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL25) doesn't match net given by schematic (unconnected-(J10002-Pad62))",
+            "items": [
+                {
+                    "description": "Pad 62 [WL25] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 105.25
+                    },
+                    "uuid": "f3ed649c-5dec-4beb-ace8-866a8dcd7fcd"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL26) doesn't match net given by schematic (unconnected-(J10002-Pad64))",
+            "items": [
+                {
+                    "description": "Pad 64 [WL26] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 104.25
+                    },
+                    "uuid": "108b3344-d10d-4898-9521-a752aa23b06b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL27) doesn't match net given by schematic (unconnected-(J10002-Pad65))",
+            "items": [
+                {
+                    "description": "Pad 65 [WL27] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 103.75
+                    },
+                    "uuid": "64d3f006-d52d-4ecf-99b6-8f822ba94d4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL28) doesn't match net given by schematic (unconnected-(J10002-Pad67))",
+            "items": [
+                {
+                    "description": "Pad 67 [WL28] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 102.75
+                    },
+                    "uuid": "0696d5c4-933a-48fd-98f6-3abb5df1df2c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL29) doesn't match net given by schematic (unconnected-(J10002-Pad68))",
+            "items": [
+                {
+                    "description": "Pad 68 [WL29] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 102.25
+                    },
+                    "uuid": "dfcf1cf4-cdcb-4047-9861-4bf08e22d238"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL30) doesn't match net given by schematic (unconnected-(J10002-Pad69))",
+            "items": [
+                {
+                    "description": "Pad 69 [WL30] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 101.75
+                    },
+                    "uuid": "9badb53d-aa6a-4ca7-879a-6b75282297dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (WL31) doesn't match net given by schematic (unconnected-(J10002-Pad70))",
+            "items": [
+                {
+                    "description": "Pad 70 [WL31] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 101.25
+                    },
+                    "uuid": "6a0fce6d-e67e-4769-9ac8-0083574cde78"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J2-Pad71)) doesn't match net given by schematic (unconnected-(J10002-Pad71))",
+            "items": [
+                {
+                    "description": "Pad 71 [unconnected-(J2-Pad71)] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 100.75
+                    },
+                    "uuid": "4d57e678-d650-4d1c-849b-9d8b1ebc4abc"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J2-Pad72)) doesn't match net given by schematic (unconnected-(J10002-Pad72))",
+            "items": [
+                {
+                    "description": "Pad 72 [unconnected-(J2-Pad72)] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 100.25
+                    },
+                    "uuid": "028dea56-d7e6-4563-bd21-bf824b43380e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J2-Pad73)) doesn't match net given by schematic (unconnected-(J10002-Pad73))",
+            "items": [
+                {
+                    "description": "Pad 73 [unconnected-(J2-Pad73)] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 99.75
+                    },
+                    "uuid": "3106403a-b281-487c-a305-8eff90788127"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J2-Pad74)) doesn't match net given by schematic (unconnected-(J10002-Pad74))",
+            "items": [
+                {
+                    "description": "Pad 74 [unconnected-(J2-Pad74)] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 99.25
+                    },
+                    "uuid": "1ec20a5b-fde0-497f-a1c6-4ba6cef414f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J2-Pad75)) doesn't match net given by schematic (unconnected-(J10002-Pad75))",
+            "items": [
+                {
+                    "description": "Pad 75 [unconnected-(J2-Pad75)] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 98.75
+                    },
+                    "uuid": "836803c1-d45f-4efd-bf15-72977137c85c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J2-Pad76)) doesn't match net given by schematic (unconnected-(J10002-Pad76))",
+            "items": [
+                {
+                    "description": "Pad 76 [unconnected-(J2-Pad76)] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 98.25
+                    },
+                    "uuid": "0f4f3f80-67e1-4978-9f4c-f7081497296e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J2-Pad77)) doesn't match net given by schematic (unconnected-(J10002-Pad77))",
+            "items": [
+                {
+                    "description": "Pad 77 [unconnected-(J2-Pad77)] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 97.75
+                    },
+                    "uuid": "bfeb5861-8e57-4100-b27c-d255c4458a55"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J2-Pad78)) doesn't match net given by schematic (unconnected-(J10002-Pad78))",
+            "items": [
+                {
+                    "description": "Pad 78 [unconnected-(J2-Pad78)] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 97.25
+                    },
+                    "uuid": "35dce685-baf5-4a8e-a6ad-3dbf76384f28"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J2-Pad79)) doesn't match net given by schematic (unconnected-(J10002-Pad79))",
+            "items": [
+                {
+                    "description": "Pad 79 [unconnected-(J2-Pad79)] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 96.75
+                    },
+                    "uuid": "a8324554-1a65-4fbd-a98e-204a2eb130b7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (unconnected-(J2-Pad80)) doesn't match net given by schematic (unconnected-(J10002-Pad80))",
+            "items": [
+                {
+                    "description": "Pad 80 [unconnected-(J2-Pad80)] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 96.25
+                    },
+                    "uuid": "cc372469-beed-4c9a-bf7b-b01c71ec356e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Missing footprint R10001 (0R fitted)",
+            "items": [],
+            "severity": "warning",
+            "type": "missing_footprint"
+        },
+        {
+            "description": "Missing footprint R10002 (0R fitted)",
+            "items": [],
+            "severity": "warning",
+            "type": "missing_footprint"
+        },
+        {
+            "description": "Missing footprint U10001 (ICS-CQFP64-1830-1830-100-1)",
+            "items": [],
+            "severity": "warning",
+            "type": "missing_footprint"
+        }
+    ],
+    "source": "MIRA_Crossbar.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 39 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 92.75
+                    },
+                    "uuid": "4d2c7d51-053c-4fb8-b7ba-73591589333d"
+                },
+                {
+                    "description": "Pad 36 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 94.25
+                    },
+                    "uuid": "1304790e-49c3-4797-8c66-af582042c39a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 36 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 94.25
+                    },
+                    "uuid": "1304790e-49c3-4797-8c66-af582042c39a"
+                },
+                {
+                    "description": "Pad 33 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 95.75
+                    },
+                    "uuid": "73729f9e-3035-43fb-b082-8730d00f58ae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 33 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 95.75
+                    },
+                    "uuid": "73729f9e-3035-43fb-b082-8730d00f58ae"
+                },
+                {
+                    "description": "Pad 30 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 97.25
+                    },
+                    "uuid": "d7adccc8-61f3-4956-a503-7de9b47d7f55"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 30 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 97.25
+                    },
+                    "uuid": "d7adccc8-61f3-4956-a503-7de9b47d7f55"
+                },
+                {
+                    "description": "Pad 27 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 98.75
+                    },
+                    "uuid": "b4355a7f-e34b-4831-bb6a-a4731455eac7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 27 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 98.75
+                    },
+                    "uuid": "b4355a7f-e34b-4831-bb6a-a4731455eac7"
+                },
+                {
+                    "description": "Pad 24 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 100.25
+                    },
+                    "uuid": "8a0b18be-31ba-4ec7-b00e-0641ff72bb2c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 24 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 100.25
+                    },
+                    "uuid": "8a0b18be-31ba-4ec7-b00e-0641ff72bb2c"
+                },
+                {
+                    "description": "Pad 21 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 101.75
+                    },
+                    "uuid": "006e8ddc-fa27-44f4-bf6a-05dde09d5ae9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 21 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 101.75
+                    },
+                    "uuid": "006e8ddc-fa27-44f4-bf6a-05dde09d5ae9"
+                },
+                {
+                    "description": "Pad 18 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 103.25
+                    },
+                    "uuid": "474f220a-824b-4efc-b18e-e9b4ccc6a9f1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 18 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 103.25
+                    },
+                    "uuid": "474f220a-824b-4efc-b18e-e9b4ccc6a9f1"
+                },
+                {
+                    "description": "Pad 15 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 104.75
+                    },
+                    "uuid": "f11a0197-e429-471c-96d2-354395453046"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 15 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 104.75
+                    },
+                    "uuid": "f11a0197-e429-471c-96d2-354395453046"
+                },
+                {
+                    "description": "Pad 12 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 106.25
+                    },
+                    "uuid": "af1eff18-c47e-484d-9105-32aa91c8d624"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 12 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 106.25
+                    },
+                    "uuid": "af1eff18-c47e-484d-9105-32aa91c8d624"
+                },
+                {
+                    "description": "Pad 9 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 107.75
+                    },
+                    "uuid": "00398f1b-7c07-4a56-a9ae-e9d619f88d2f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 9 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 107.75
+                    },
+                    "uuid": "00398f1b-7c07-4a56-a9ae-e9d619f88d2f"
+                },
+                {
+                    "description": "Pad 6 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 109.25
+                    },
+                    "uuid": "93fc66ae-4105-48ee-b71e-118a5c0e2a27"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 109.25
+                    },
+                    "uuid": "93fc66ae-4105-48ee-b71e-118a5c0e2a27"
+                },
+                {
+                    "description": "Pad 3 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 110.75
+                    },
+                    "uuid": "459d7361-6343-43a4-9a97-a2868064d379"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 110.75
+                    },
+                    "uuid": "459d7361-6343-43a4-9a97-a2868064d379"
+                },
+                {
+                    "description": "PTH pad P3 [GND] of J10001",
+                    "pos": {
+                        "x": 137.625,
+                        "y": 114.25
+                    },
+                    "uuid": "d62bf742-0181-40e6-96ff-a13f92f4f6d3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad P4 [GND] of J10001",
+                    "pos": {
+                        "x": 137.625,
+                        "y": 89.75
+                    },
+                    "uuid": "3eddd4cd-a940-4e64-a008-6dc1d04ac02e"
+                },
+                {
+                    "description": "Pad 39 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 136.85,
+                        "y": 92.75
+                    },
+                    "uuid": "4d2c7d51-053c-4fb8-b7ba-73591589333d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad P2 [GND] of J10001",
+                    "pos": {
+                        "x": 142.375,
+                        "y": 89.75
+                    },
+                    "uuid": "2ee569ca-f0e7-4af0-b96e-0230c657a5bf"
+                },
+                {
+                    "description": "PTH pad P4 [GND] of J10001",
+                    "pos": {
+                        "x": 137.625,
+                        "y": 89.75
+                    },
+                    "uuid": "3eddd4cd-a940-4e64-a008-6dc1d04ac02e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad P1 [GND] of J10001",
+                    "pos": {
+                        "x": 142.375,
+                        "y": 114.25
+                    },
+                    "uuid": "1ddb2002-4758-492c-83a7-e94c7714c348"
+                },
+                {
+                    "description": "PTH pad P3 [GND] of J10001",
+                    "pos": {
+                        "x": 137.625,
+                        "y": 114.25
+                    },
+                    "uuid": "d62bf742-0181-40e6-96ff-a13f92f4f6d3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 66 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 99.25
+                    },
+                    "uuid": "c08c038d-47aa-48ed-9bd3-fff054dbbbed"
+                },
+                {
+                    "description": "Pad 63 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 100.75
+                    },
+                    "uuid": "1946a920-6ba0-4536-9220-591dd53e0126"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 63 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 100.75
+                    },
+                    "uuid": "1946a920-6ba0-4536-9220-591dd53e0126"
+                },
+                {
+                    "description": "Pad 60 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 102.25
+                    },
+                    "uuid": "b3fdc961-1da1-4ec9-9ef4-b720e6497677"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 60 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 102.25
+                    },
+                    "uuid": "b3fdc961-1da1-4ec9-9ef4-b720e6497677"
+                },
+                {
+                    "description": "Pad 57 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 103.75
+                    },
+                    "uuid": "0da7337d-ba87-4942-862a-7355ebb9b7ff"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 57 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 103.75
+                    },
+                    "uuid": "0da7337d-ba87-4942-862a-7355ebb9b7ff"
+                },
+                {
+                    "description": "Pad 54 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 105.25
+                    },
+                    "uuid": "1b86bd70-c35b-43fd-bebf-3e03bdb20172"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 54 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 105.25
+                    },
+                    "uuid": "1b86bd70-c35b-43fd-bebf-3e03bdb20172"
+                },
+                {
+                    "description": "Pad 51 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 106.75
+                    },
+                    "uuid": "c2897c69-e003-4186-8936-69775f870ab0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 51 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 106.75
+                    },
+                    "uuid": "c2897c69-e003-4186-8936-69775f870ab0"
+                },
+                {
+                    "description": "Pad 48 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 108.25
+                    },
+                    "uuid": "0114a56c-0999-475e-acc8-0712f84fe94f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 48 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 108.25
+                    },
+                    "uuid": "0114a56c-0999-475e-acc8-0712f84fe94f"
+                },
+                {
+                    "description": "Pad 45 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 109.75
+                    },
+                    "uuid": "342cd16a-6994-4bc6-a180-525e559673e1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 42 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 111.25
+                    },
+                    "uuid": "90af6ca7-c0cc-4cc7-9f32-87ad9cf7853e"
+                },
+                {
+                    "description": "Pad 45 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 109.75
+                    },
+                    "uuid": "342cd16a-6994-4bc6-a180-525e559673e1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 42 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 111.25
+                    },
+                    "uuid": "90af6ca7-c0cc-4cc7-9f32-87ad9cf7853e"
+                },
+                {
+                    "description": "PTH pad P1 [GND] of J10001",
+                    "pos": {
+                        "x": 142.375,
+                        "y": 114.25
+                    },
+                    "uuid": "1ddb2002-4758-492c-83a7-e94c7714c348"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 36 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 98.25
+                    },
+                    "uuid": "ce3a88d7-d5bb-4865-9b6e-4613e189cfc6"
+                },
+                {
+                    "description": "Pad 39 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 96.75
+                    },
+                    "uuid": "58089617-5d59-4370-b910-a7af8b17864b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 33 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 99.75
+                    },
+                    "uuid": "1e1427a5-d9e3-4c09-b9c0-3612c3f9a5b5"
+                },
+                {
+                    "description": "Pad 36 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 98.25
+                    },
+                    "uuid": "ce3a88d7-d5bb-4865-9b6e-4613e189cfc6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 30 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 101.25
+                    },
+                    "uuid": "477deb44-9858-4229-bde4-f10cb699143f"
+                },
+                {
+                    "description": "Pad 33 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 99.75
+                    },
+                    "uuid": "1e1427a5-d9e3-4c09-b9c0-3612c3f9a5b5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 27 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 102.75
+                    },
+                    "uuid": "e21a4d7b-78c4-4b22-a11f-d0e7424b91ae"
+                },
+                {
+                    "description": "Pad 30 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 101.25
+                    },
+                    "uuid": "477deb44-9858-4229-bde4-f10cb699143f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 24 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 104.25
+                    },
+                    "uuid": "1ef2920e-822a-4562-a31a-5c01016750a3"
+                },
+                {
+                    "description": "Pad 27 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 102.75
+                    },
+                    "uuid": "e21a4d7b-78c4-4b22-a11f-d0e7424b91ae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 21 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 105.75
+                    },
+                    "uuid": "2c31de3f-0171-4b7f-bd6d-c8d40ba41ab5"
+                },
+                {
+                    "description": "Pad 24 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 104.25
+                    },
+                    "uuid": "1ef2920e-822a-4562-a31a-5c01016750a3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 18 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 107.25
+                    },
+                    "uuid": "6c6b2bc3-844a-4042-974e-780a197110eb"
+                },
+                {
+                    "description": "Pad 21 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 105.75
+                    },
+                    "uuid": "2c31de3f-0171-4b7f-bd6d-c8d40ba41ab5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 15 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 108.75
+                    },
+                    "uuid": "32f7d2a7-9ae7-4883-98de-3f05cbb88245"
+                },
+                {
+                    "description": "Pad 18 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 107.25
+                    },
+                    "uuid": "6c6b2bc3-844a-4042-974e-780a197110eb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 12 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 110.25
+                    },
+                    "uuid": "1c8da047-49c4-401d-9e97-e89709d56b7e"
+                },
+                {
+                    "description": "Pad 15 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 108.75
+                    },
+                    "uuid": "32f7d2a7-9ae7-4883-98de-3f05cbb88245"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 9 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 111.75
+                    },
+                    "uuid": "a8e777a9-4281-415d-a92d-5e0a6a037787"
+                },
+                {
+                    "description": "Pad 12 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 110.25
+                    },
+                    "uuid": "1c8da047-49c4-401d-9e97-e89709d56b7e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 9 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 111.75
+                    },
+                    "uuid": "a8e777a9-4281-415d-a92d-5e0a6a037787"
+                },
+                {
+                    "description": "Pad 42 [GND] of J10001 on B.Cu",
+                    "pos": {
+                        "x": 143.15,
+                        "y": 111.25
+                    },
+                    "uuid": "90af6ca7-c0cc-4cc7-9f32-87ad9cf7853e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 113.25
+                    },
+                    "uuid": "0cc4e99e-7ca9-4f7d-bd38-6f25a18b1f23"
+                },
+                {
+                    "description": "Pad 9 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 111.75
+                    },
+                    "uuid": "a8e777a9-4281-415d-a92d-5e0a6a037787"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 113.25
+                    },
+                    "uuid": "0cc4e99e-7ca9-4f7d-bd38-6f25a18b1f23"
+                },
+                {
+                    "description": "Pad 3 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 114.75
+                    },
+                    "uuid": "a9827c42-a487-4af2-be97-401a6f6f5375"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad P4 [GND] of J10002",
+                    "pos": {
+                        "x": 201.625,
+                        "y": 93.75
+                    },
+                    "uuid": "bed9d1b9-bbc0-4d97-a458-4bc2e07158c1"
+                },
+                {
+                    "description": "Pad 39 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 96.75
+                    },
+                    "uuid": "58089617-5d59-4370-b910-a7af8b17864b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad P3 [GND] of J10002",
+                    "pos": {
+                        "x": 201.625,
+                        "y": 118.25
+                    },
+                    "uuid": "b02ae47d-a077-4e8a-ae96-f534382006d1"
+                },
+                {
+                    "description": "Pad 3 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 200.85,
+                        "y": 114.75
+                    },
+                    "uuid": "a9827c42-a487-4af2-be97-401a6f6f5375"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad P3 [GND] of J10002",
+                    "pos": {
+                        "x": 201.625,
+                        "y": 118.25
+                    },
+                    "uuid": "b02ae47d-a077-4e8a-ae96-f534382006d1"
+                },
+                {
+                    "description": "PTH pad P1 [GND] of J10002",
+                    "pos": {
+                        "x": 206.375,
+                        "y": 118.25
+                    },
+                    "uuid": "993b0d18-bece-47a7-b505-6e1dd18aed13"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad P2 [GND] of J10002",
+                    "pos": {
+                        "x": 206.375,
+                        "y": 93.75
+                    },
+                    "uuid": "582cd4ba-720d-4434-87b9-88a98c026aee"
+                },
+                {
+                    "description": "PTH pad P4 [GND] of J10002",
+                    "pos": {
+                        "x": 201.625,
+                        "y": 93.75
+                    },
+                    "uuid": "bed9d1b9-bbc0-4d97-a458-4bc2e07158c1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad P1 [GND] of J10002",
+                    "pos": {
+                        "x": 206.375,
+                        "y": 118.25
+                    },
+                    "uuid": "993b0d18-bece-47a7-b505-6e1dd18aed13"
+                },
+                {
+                    "description": "Pad 42 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 115.25
+                    },
+                    "uuid": "7ead2cf2-f585-4442-bea4-94130f0a6649"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 63 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 104.75
+                    },
+                    "uuid": "46a2912c-b04b-4fa0-af35-09bb753d119d"
+                },
+                {
+                    "description": "Pad 66 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 103.25
+                    },
+                    "uuid": "ee5ed2f7-ce72-46be-b5ca-a1fa017720d5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 60 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 106.25
+                    },
+                    "uuid": "fcd9990d-3387-4565-b7d6-324ee9786fc0"
+                },
+                {
+                    "description": "Pad 63 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 104.75
+                    },
+                    "uuid": "46a2912c-b04b-4fa0-af35-09bb753d119d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 57 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 107.75
+                    },
+                    "uuid": "c598d2d9-d853-4d23-98f1-7a479b4c59c9"
+                },
+                {
+                    "description": "Pad 60 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 106.25
+                    },
+                    "uuid": "fcd9990d-3387-4565-b7d6-324ee9786fc0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 54 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 109.25
+                    },
+                    "uuid": "dd50ba0f-667d-4410-883f-d0e5bd8885b9"
+                },
+                {
+                    "description": "Pad 57 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 107.75
+                    },
+                    "uuid": "c598d2d9-d853-4d23-98f1-7a479b4c59c9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 51 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 110.75
+                    },
+                    "uuid": "5dfb9e4b-dc12-49c3-97c7-fa86a9c4f37a"
+                },
+                {
+                    "description": "Pad 54 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 109.25
+                    },
+                    "uuid": "dd50ba0f-667d-4410-883f-d0e5bd8885b9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 48 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 112.25
+                    },
+                    "uuid": "35b0f0f9-34ab-4d7e-8e3c-6152366ddb65"
+                },
+                {
+                    "description": "Pad 51 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 110.75
+                    },
+                    "uuid": "5dfb9e4b-dc12-49c3-97c7-fa86a9c4f37a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 45 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 113.75
+                    },
+                    "uuid": "47fc33ae-c2d0-4bde-8b9e-af4296c4566e"
+                },
+                {
+                    "description": "Pad 48 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 112.25
+                    },
+                    "uuid": "35b0f0f9-34ab-4d7e-8e3c-6152366ddb65"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 42 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 115.25
+                    },
+                    "uuid": "7ead2cf2-f585-4442-bea4-94130f0a6649"
+                },
+                {
+                    "description": "Pad 45 [GND] of J10002 on B.Cu",
+                    "pos": {
+                        "x": 207.15,
+                        "y": 113.75
+                    },
+                    "uuid": "47fc33ae-c2d0-4bde-8b9e-af4296c4566e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

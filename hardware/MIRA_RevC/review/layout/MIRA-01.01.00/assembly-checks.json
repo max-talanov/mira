@@ -1,0 +1,1064 @@
+{
+  "datums_mm": {
+    "MIRA_Control": {
+      "top": 1.6,
+      "bottom": 0
+    },
+    "MIRA_Power": {
+      "top": -12,
+      "bottom": -13.6
+    },
+    "MIRA_Crossbar": {
+      "top": 11.2,
+      "bottom": 9.6
+    }
+  },
+  "placed_model_instances": 54,
+  "interfaces": [
+    {
+      "a": "J580001",
+      "b": "J10001",
+      "xy_error_mm": 0.0,
+      "angle_error_deg": 0.0,
+      "gap_mm": 8.0,
+      "status": "nominal_axes_match"
+    },
+    {
+      "a": "J580002",
+      "b": "J10002",
+      "xy_error_mm": 0.0,
+      "angle_error_deg": 0.0,
+      "gap_mm": 8.0,
+      "status": "nominal_axes_match"
+    },
+    {
+      "a": "J70001",
+      "b": "J220001",
+      "xy_error_mm": 0.0,
+      "gap_mm": 12.0,
+      "status": "nominal_axes_match"
+    },
+    {
+      "a": "J80001",
+      "b": "J230001",
+      "xy_error_mm": 0.0,
+      "gap_mm": 12.0,
+      "status": "nominal_axes_match"
+    },
+    {
+      "a": "J80002",
+      "b": "J230002",
+      "xy_error_mm": 0.0,
+      "gap_mm": 12.0,
+      "status": "nominal_axes_match"
+    },
+    {
+      "a": "J80003",
+      "b": "J230003",
+      "xy_error_mm": 0.0,
+      "gap_mm": 12.0,
+      "status": "nominal_axes_match"
+    },
+    {
+      "a": "J80004",
+      "b": "J230004",
+      "xy_error_mm": 0.0,
+      "gap_mm": 12.0,
+      "status": "nominal_axes_match"
+    },
+    {
+      "a": "J160001",
+      "b": "J230005",
+      "xy_error_mm": 0.0,
+      "gap_mm": 12.0,
+      "status": "nominal_axes_match"
+    },
+    {
+      "a": "J90001",
+      "b": "J240001",
+      "xy_error_mm": 0.0,
+      "gap_mm": 12.0,
+      "status": "nominal_axes_match"
+    },
+    {
+      "a": "J90002",
+      "b": "J240002",
+      "xy_error_mm": 0.0,
+      "gap_mm": 12.0,
+      "status": "nominal_axes_match"
+    }
+  ],
+  "component_intersections": [
+    {
+      "a": "MIRA_Control/J580002",
+      "b": "MIRA_Crossbar/J10002",
+      "status": "expected_mating_envelope_overlap",
+      "overlap_xyz_mm": [
+        6.810000000000031,
+        33.7,
+        4.65
+      ],
+      "next_action": "Obtain exact mating CAD/physical fit; solid envelopes have no contact cavities."
+    },
+    {
+      "a": "MIRA_Control/J580001",
+      "b": "MIRA_Crossbar/J10001",
+      "status": "expected_mating_envelope_overlap",
+      "overlap_xyz_mm": [
+        6.810000000000031,
+        33.7,
+        4.65
+      ],
+      "next_action": "Obtain exact mating CAD/physical fit; solid envelopes have no contact cavities."
+    },
+    {
+      "a": "MIRA_Control/J80004",
+      "b": "MIRA_Power/J230004",
+      "status": "expected_mating_envelope_overlap",
+      "overlap_xyz_mm": [
+        4.950002800000007,
+        10.159999999999997,
+        4.900004300000001
+      ],
+      "next_action": "Obtain exact mating CAD/physical fit; solid envelopes have no contact cavities."
+    },
+    {
+      "a": "MIRA_Control/J90002",
+      "b": "MIRA_Power/J240002",
+      "status": "expected_mating_envelope_overlap",
+      "overlap_xyz_mm": [
+        4.950002799999993,
+        15.240000000000009,
+        4.900004300000001
+      ],
+      "next_action": "Obtain exact mating CAD/physical fit; solid envelopes have no contact cavities."
+    },
+    {
+      "a": "MIRA_Control/J80002",
+      "b": "MIRA_Power/J230002",
+      "status": "expected_mating_envelope_overlap",
+      "overlap_xyz_mm": [
+        4.950002800000007,
+        17.78,
+        4.900004300000001
+      ],
+      "next_action": "Obtain exact mating CAD/physical fit; solid envelopes have no contact cavities."
+    },
+    {
+      "a": "MIRA_Control/J90001",
+      "b": "MIRA_Power/J240001",
+      "status": "expected_mating_envelope_overlap",
+      "overlap_xyz_mm": [
+        4.950002799999993,
+        22.86,
+        4.900004300000003
+      ],
+      "next_action": "Obtain exact mating CAD/physical fit; solid envelopes have no contact cavities."
+    },
+    {
+      "a": "MIRA_Control/J160001",
+      "b": "MIRA_Power/J230005",
+      "status": "expected_mating_envelope_overlap",
+      "overlap_xyz_mm": [
+        4.950002800000007,
+        12.700000000000003,
+        4.900004300000001
+      ],
+      "next_action": "Obtain exact mating CAD/physical fit; solid envelopes have no contact cavities."
+    },
+    {
+      "a": "MIRA_Control/J80003",
+      "b": "MIRA_Power/J230003",
+      "status": "expected_mating_envelope_overlap",
+      "overlap_xyz_mm": [
+        4.950002800000007,
+        12.70000000000001,
+        4.900004300000001
+      ],
+      "next_action": "Obtain exact mating CAD/physical fit; solid envelopes have no contact cavities."
+    },
+    {
+      "a": "MIRA_Control/J70001",
+      "b": "MIRA_Power/J220001",
+      "status": "expected_mating_envelope_overlap",
+      "overlap_xyz_mm": [
+        4.9500028,
+        25.4,
+        4.900004300000003
+      ],
+      "next_action": "Obtain exact mating CAD/physical fit; solid envelopes have no contact cavities."
+    },
+    {
+      "a": "MIRA_Control/J80001",
+      "b": "MIRA_Power/J230001",
+      "status": "expected_mating_envelope_overlap",
+      "overlap_xyz_mm": [
+        4.9500028,
+        33.02000000000001,
+        4.900004300000003
+      ],
+      "next_action": "Obtain exact mating CAD/physical fit; solid envelopes have no contact cavities."
+    }
+  ],
+  "component_board_intersections": [],
+  "cincon": {
+    "reference": "MIRA_Power/U110001",
+    "bounds_mm": [
+      14.999999999999998,
+      -105.8,
+      -16.8,
+      40.4,
+      -55.0,
+      0.6999999999999993
+    ],
+    "clearance_to_control_left_edge_mm": 9.600000000000001,
+    "above_control_BCu_mm": 0.6999999999999993,
+    "status": "no_XY_overlap_with_Control",
+    "next_action": "Keep the left exposed strip clear; verify airflow and cables on the selected converter sample."
+  },
+  "key": {
+    "control": "H1802",
+    "module": "H3",
+    "diameter_mm": 2.0,
+    "hole_mm": 2.2,
+    "radial_clearance_mm": 0.1,
+    "projection_mm": 14.0,
+    "protrusion_above_module_mm": 4.4,
+    "guaranteed": false,
+    "next_action": "Select fixed pin/holder and check chamfer, tilt and tolerance against 13.25 mm housing bound."
+  },
+  "access": {
+    "grip_windows_mm": [
+      [
+        152,
+        60,
+        192,
+        70
+      ],
+      [
+        152,
+        144,
+        192,
+        154
+      ]
+    ],
+    "usb_slot_width_mm": 0.0,
+    "socket_closed_height_mm": 11.2,
+    "socket_height_confirmed": false,
+    "removal_required_until_key_clears_mm": 6.0,
+    "next_action": "Obtain exact socket closed/open/latch/under-board fastener drawing; test grip, mating force and cable bend space.",
+    "source": "Key top15.6 minus module B9.6; add hardware/tilt tolerance"
+  },
+  "parts": [
+    {
+      "project": "MIRA_Control",
+      "reference": "J580002",
+      "side": "F.Cu",
+      "model": "Hirose_FX23L_80S_SV_ENVELOPE.step",
+      "kind": "dimensioned_connector_envelope",
+      "bounds_mm": [
+        198.75,
+        -124.0,
+        1.6,
+        209.25,
+        -88.0,
+        7.4
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "U190001",
+      "side": "F.Cu",
+      "model": "TI_DMX0003A_simplified.step",
+      "kind": "dimensioned_simplified",
+      "bounds_mm": [
+        68.7,
+        -124.3,
+        1.6,
+        69.7,
+        -123.7,
+        2.0
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "U40001",
+      "side": "F.Cu",
+      "model": "TSOP-II-54_22.2x10.16mm_P0.8mm.step",
+      "kind": "standard_package",
+      "bounds_mm": [
+        101.17,
+        -62.1000001,
+        1.5999999999999999,
+        112.83,
+        -39.8999999,
+        3.2000001
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "C190007",
+      "side": "F.Cu",
+      "model": "C_0603_1608Metric.step",
+      "kind": "standard_package",
+      "bounds_mm": [
+        113.2,
+        -125.9,
+        1.6,
+        114.8,
+        -125.1,
+        2.4000000000000004
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "C190002",
+      "side": "F.Cu",
+      "model": "C_0603_1608Metric.step",
+      "kind": "standard_package",
+      "bounds_mm": [
+        93.2,
+        -139.9,
+        1.6,
+        94.8,
+        -139.1,
+        2.4000000000000004
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "Y190001",
+      "side": "F.Cu",
+      "model": "ECS_ECX2236_simplified.step",
+      "kind": "dimensioned_simplified",
+      "bounds_mm": [
+        110.75,
+        -132.0,
+        1.6,
+        113.25,
+        -130.0,
+        2.1500000000000004
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "C190008",
+      "side": "F.Cu",
+      "model": "C_0603_1608Metric.step",
+      "kind": "standard_package",
+      "bounds_mm": [
+        114.2,
+        -137.4,
+        1.6,
+        115.8,
+        -136.6,
+        2.4000000000000004
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "H1802",
+      "side": "F.Cu",
+      "model": "KEY_D2_14mm_PROVISIONAL.step",
+      "kind": "provisional_hardware",
+      "bounds_mm": [
+        207.0,
+        -67.0,
+        1.6,
+        209.0,
+        -65.0,
+        15.6
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "U180001",
+      "side": "F.Cu",
+      "model": "Infineon_FCA169_10x10_0p75_simplified.step",
+      "kind": "dimensioned_simplified",
+      "bounds_mm": [
+        74.0,
+        -135.0,
+        1.6,
+        84.0,
+        -125.0,
+        2.8000000000000003
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "C190001",
+      "side": "F.Cu",
+      "model": "C_0603_1608Metric.step",
+      "kind": "standard_package",
+      "bounds_mm": [
+        93.2,
+        -135.4,
+        1.6,
+        94.8,
+        -134.6,
+        2.4000000000000004
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "J580001",
+      "side": "F.Cu",
+      "model": "Hirose_FX23L_80S_SV_ENVELOPE.step",
+      "kind": "dimensioned_connector_envelope",
+      "bounds_mm": [
+        134.75,
+        -120.0,
+        1.6,
+        145.25,
+        -84.0,
+        7.4
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "U30001",
+      "side": "F.Cu",
+      "model": "LQFP-176_24x24mm_P0.5mm.step",
+      "kind": "standard_package",
+      "bounds_mm": [
+        64.0,
+        -60.0,
+        1.6,
+        90.0,
+        -34.0,
+        3.1000001000000004
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "U140001",
+      "side": "F.Cu",
+      "model": "Micron_FBGA-96_8x14mm_Layout9x16_P0.8mm_Drawing_Model.step",
+      "kind": "provisional_existing",
+      "bounds_mm": [
+        73.5,
+        -101.0,
+        1.6,
+        81.5,
+        -87.0,
+        2.7
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "U190003",
+      "side": "F.Cu",
+      "model": "TI_DMX0003A_simplified.step",
+      "kind": "dimensioned_simplified",
+      "bounds_mm": [
+        58.7,
+        -120.3,
+        1.6,
+        59.7,
+        -119.7,
+        2.0
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "U150001",
+      "side": "F.Cu",
+      "model": "WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm_Drawing_Model.step",
+      "kind": "provisional_existing",
+      "bounds_mm": [
+        101.0,
+        -118.0,
+        1.6,
+        109.0,
+        -112.0,
+        2.35
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "J50001",
+      "side": "F.Cu",
+      "model": "microSD_HC_Hirose_DM3AT-SF-PEJM5.step",
+      "kind": "standard_package",
+      "bounds_mm": [
+        108.07499999999999,
+        -37.325,
+        1.5999999999999104,
+        121.92500000000001,
+        -21.17499999999861,
+        3.280000100169275
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "J190001",
+      "side": "F.Cu",
+      "model": "USB_C_Receptacle_Amphenol_12401610E4-2A.step",
+      "kind": "standard_package",
+      "bounds_mm": [
+        49.97,
+        -134.60000000000002,
+        0.6999999,
+        60.47,
+        -125.39999999999999,
+        4.880000000000002
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "U50001",
+      "side": "F.Cu",
+      "model": "WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm_Drawing_Model.step",
+      "kind": "provisional_existing",
+      "bounds_mm": [
+        101.0,
+        -73.0,
+        1.6,
+        109.0,
+        -67.0,
+        2.35
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "C190003",
+      "side": "F.Cu",
+      "model": "C_0603_1608Metric.step",
+      "kind": "standard_package",
+      "bounds_mm": [
+        103.2,
+        -135.4,
+        1.6,
+        104.8,
+        -134.6,
+        2.4000000000000004
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "H1800",
+      "side": "F.Cu",
+      "model": "M2_SPACER_8mm_PROVISIONAL.step",
+      "kind": "provisional_hardware",
+      "bounds_mm": [
+        134.0,
+        -68.0,
+        1.6,
+        138.0,
+        -64.0,
+        9.6
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "U110001",
+      "side": "F.Cu",
+      "model": "AMD_CLG484_19x19_0p8_simplified.step",
+      "kind": "dimensioned_simplified",
+      "bounds_mm": [
+        90.5,
+        -104.5,
+        1.6,
+        109.5,
+        -85.5,
+        3.0700000000000003
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "H1801",
+      "side": "F.Cu",
+      "model": "M2_SPACER_8mm_PROVISIONAL.step",
+      "kind": "provisional_hardware",
+      "bounds_mm": [
+        204.0,
+        -151.0,
+        1.6,
+        208.0,
+        -147.0,
+        9.6
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "U190004",
+      "side": "F.Cu",
+      "model": "TI_DMX0003A_simplified.step",
+      "kind": "dimensioned_simplified",
+      "bounds_mm": [
+        58.7,
+        -140.3,
+        1.6,
+        59.7,
+        -139.7,
+        2.0
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "U190002",
+      "side": "F.Cu",
+      "model": "TI_DMX0003A_simplified.step",
+      "kind": "dimensioned_simplified",
+      "bounds_mm": [
+        63.7,
+        -136.3,
+        1.6,
+        64.7,
+        -135.7,
+        2.0
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "C190004",
+      "side": "F.Cu",
+      "model": "C_0603_1608Metric.step",
+      "kind": "standard_package",
+      "bounds_mm": [
+        103.2,
+        -139.9,
+        1.6,
+        104.8,
+        -139.1,
+        2.4000000000000004
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "J80004",
+      "side": "B.Cu",
+      "model": "HTSW-104-07-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        118.19,
+        -112.89,
+        -8.380006100000001,
+        123.27,
+        -102.73,
+        2.54
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "J90002",
+      "side": "B.Cu",
+      "model": "HTSW-106-07-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        211.19,
+        -145.97,
+        -8.380006100000001,
+        216.27,
+        -130.73,
+        2.54
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "J80002",
+      "side": "B.Cu",
+      "model": "HTSW-107-07-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        75.19,
+        -124.51,
+        -8.380006100000001,
+        80.27,
+        -106.73,
+        2.54
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "J90001",
+      "side": "B.Cu",
+      "model": "HTSW-109-07-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        211.19,
+        -124.59,
+        -8.380006100000003,
+        216.27,
+        -101.73,
+        2.54
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "J160001",
+      "side": "B.Cu",
+      "model": "HTSW-105-07-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        118.19,
+        -137.43,
+        -8.380006100000001,
+        123.27,
+        -124.73,
+        2.54
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "J80003",
+      "side": "B.Cu",
+      "model": "HTSW-105-07-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        89.19,
+        -76.43,
+        -8.380006100000001,
+        94.27,
+        -63.73,
+        2.54
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "J70001",
+      "side": "B.Cu",
+      "model": "HTSW-110-07-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        61.19,
+        -89.13,
+        -8.380006100000003,
+        66.27,
+        -63.73,
+        2.54
+      ]
+    },
+    {
+      "project": "MIRA_Control",
+      "reference": "J80001",
+      "side": "B.Cu",
+      "model": "HTSW-113-07-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        61.19,
+        -134.75,
+        -8.380006100000003,
+        66.27,
+        -101.72999999999999,
+        2.54
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "J220001",
+      "side": "F.Cu",
+      "model": "SSW-110-01-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        61.2549986,
+        -89.3850033,
+        -14.640012500000001,
+        66.2050014,
+        -63.47499669999999,
+        -3.4800018
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "J30001",
+      "side": "F.Cu",
+      "model": "DG126_5mm_2P_UserModel.step",
+      "kind": "provisional_existing",
+      "bounds_mm": [
+        13.969999999999999,
+        -158.0000001,
+        -15.85000009999133,
+        25.03,
+        -150.0,
+        -1.0499999000000004
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "J240002",
+      "side": "F.Cu",
+      "model": "SSW-106-01-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        211.2549986,
+        -146.2250033,
+        -14.640012500000001,
+        216.2050014,
+        -130.4749967,
+        -3.4800018
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "J230005",
+      "side": "F.Cu",
+      "model": "SSW-105-01-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        118.2549986,
+        -137.6850033,
+        -14.640012500000001,
+        123.2050014,
+        -124.4749967,
+        -3.4800018
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "U110001",
+      "side": "F.Cu",
+      "model": "Cincon_ECB40W18_no_bus_simplified.step",
+      "kind": "dimensioned_simplified",
+      "bounds_mm": [
+        14.999999999999998,
+        -105.8,
+        -16.8,
+        40.4,
+        -55.0,
+        0.6999999999999993
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "J230001",
+      "side": "F.Cu",
+      "model": "SSW-113-01-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        61.2549986,
+        -135.0050033,
+        -14.640012500000001,
+        66.2050014,
+        -101.47499669999999,
+        -3.4800018
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "J230002",
+      "side": "F.Cu",
+      "model": "SSW-107-01-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        75.2549986,
+        -124.7650033,
+        -14.640012500000001,
+        80.2050014,
+        -106.4749967,
+        -3.4800018
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "J240001",
+      "side": "F.Cu",
+      "model": "SSW-109-01-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        211.2549986,
+        -124.8450033,
+        -14.640012500000001,
+        216.2050014,
+        -101.4749967,
+        -3.4800018
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "J230004",
+      "side": "F.Cu",
+      "model": "SSW-104-01-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        118.2549986,
+        -113.1450033,
+        -14.640012500000001,
+        123.2050014,
+        -102.47499669999999,
+        -3.4800018
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "J230003",
+      "side": "F.Cu",
+      "model": "SSW-105-01-S-D_Envelope_converted.step",
+      "kind": "existing_envelope_converted",
+      "bounds_mm": [
+        89.2549986,
+        -76.6850033,
+        -14.640012500000001,
+        94.2050014,
+        -63.4749967,
+        -3.4800018
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "H9101",
+      "side": "F.Cu",
+      "model": "M3_SPACER_12mm_LAYOUT_PROVISIONAL.step",
+      "kind": "nominal_hardware_NOT_selected",
+      "bounds_mm": [
+        52.0,
+        -28.0,
+        -12.0,
+        58.0,
+        -22.0,
+        0.0
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "H9102",
+      "side": "F.Cu",
+      "model": "M3_SPACER_12mm_LAYOUT_PROVISIONAL.step",
+      "kind": "nominal_hardware_NOT_selected",
+      "bounds_mm": [
+        222.0,
+        -28.0,
+        -12.0,
+        228.0,
+        -22.0,
+        0.0
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "H9103",
+      "side": "F.Cu",
+      "model": "M3_SPACER_12mm_LAYOUT_PROVISIONAL.step",
+      "kind": "nominal_hardware_NOT_selected",
+      "bounds_mm": [
+        52.0,
+        -153.0,
+        -12.0,
+        58.0,
+        -147.0,
+        0.0
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "H9104",
+      "side": "F.Cu",
+      "model": "M3_SPACER_12mm_LAYOUT_PROVISIONAL.step",
+      "kind": "nominal_hardware_NOT_selected",
+      "bounds_mm": [
+        222.0,
+        -153.0,
+        -12.0,
+        228.0,
+        -147.0,
+        0.0
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "H9201",
+      "side": "F.Cu",
+      "model": "M2_SPACER_12mm_LAYOUT_PROVISIONAL.step",
+      "kind": "nominal_hardware_NOT_selected",
+      "bounds_mm": [
+        133.5,
+        -68.5,
+        -12.0,
+        138.5,
+        -63.5,
+        0.0
+      ]
+    },
+    {
+      "project": "MIRA_Power",
+      "reference": "H9202",
+      "side": "F.Cu",
+      "model": "M2_SPACER_12mm_LAYOUT_PROVISIONAL.step",
+      "kind": "nominal_hardware_NOT_selected",
+      "bounds_mm": [
+        203.5,
+        -151.5,
+        -12.0,
+        208.5,
+        -146.5,
+        0.0
+      ]
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "reference": "J10001",
+      "side": "B.Cu",
+      "model": "Hirose_FX23L_80P_SV8_ENVELOPE.step",
+      "kind": "dimensioned_connector_envelope",
+      "bounds_mm": [
+        136.54999999999998,
+        -118.85,
+        2.75,
+        143.36,
+        -85.14999999999999,
+        9.6
+      ]
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "reference": "J10002",
+      "side": "B.Cu",
+      "model": "Hirose_FX23L_80P_SV8_ENVELOPE.step",
+      "kind": "dimensioned_connector_envelope",
+      "bounds_mm": [
+        200.54999999999998,
+        -122.85,
+        2.75,
+        207.36,
+        -89.14999999999999,
+        9.6
+      ]
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "reference": "H1",
+      "side": "F.Cu",
+      "model": "M2_SCREW_HEAD_PROVISIONAL.step",
+      "kind": "provisional_hardware",
+      "bounds_mm": [
+        134.1,
+        -67.9,
+        11.2,
+        137.9,
+        -64.1,
+        13.2
+      ]
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "reference": "H2",
+      "side": "F.Cu",
+      "model": "M2_SCREW_HEAD_PROVISIONAL.step",
+      "kind": "provisional_hardware",
+      "bounds_mm": [
+        204.1,
+        -150.9,
+        11.2,
+        207.9,
+        -147.1,
+        13.2
+      ]
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "reference": "J10003",
+      "side": "F.Cu",
+      "model": "ICS-CQFP64-1830-1830-100-1_APPROX.step",
+      "kind": "provisional_existing",
+      "bounds_mm": [
+        152.0,
+        -132.0,
+        11.2,
+        192.0,
+        -76.05,
+        22.400000000000002
+      ]
+    }
+  ]
+}

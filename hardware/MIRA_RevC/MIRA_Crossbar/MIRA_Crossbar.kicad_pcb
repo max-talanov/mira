@@ -251,7 +251,7 @@
 
 (model "${KIPRJMOD}/../libraries/3d/Hirose_FX23L_80P_SV8_ENVELOPE.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )
-(gr_text "FX23L A: J1" (at 140.0 78.0) (layer "Dwgs.User") (uuid "12027294-6ecd-511d-b557-15576f2e44fc") (effects (font (size 0.8 0.8) (thickness .12))))
+
 (footprint "MIRA_Module:Hirose_FX23L-80P-0.5SV8"
 
 (layer "B.Cu")
@@ -352,20 +352,20 @@
 
 (model "${KIPRJMOD}/../libraries/3d/Hirose_FX23L_80P_SV8_ENVELOPE.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )
-(gr_text "FX23L B: J2" (at 204.0 82.0) (layer "Dwgs.User") (uuid "59fdee4f-a22d-5918-aa8b-de9f0b606b40") (effects (font (size 0.8 0.8) (thickness .12))))
+
 (footprint "" (layer "F.Cu") (at 136.0 66.0) (uuid "9c53cd5d-91ac-5f05-869d-eec8fa8db0f0") (attr board_only exclude_from_pos_files exclude_from_bom) (property "Reference" "H1" (at 0 0 0) (layer "F.Fab") (hide yes) (effects (font (size .8 .8) (thickness .12))))(property "Value" "M2 spacer8mm / D2.2" (at 0 0 0) (layer "F.Fab") (hide yes) (effects (font (size .8 .8) (thickness .12))))(pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask"))(fp_rect (start -2.5 -2.5) (end 2.5 2.5) (stroke (width .1) (type default)) (fill none) (layer "F.CrtYd"))(fp_rect (start -2.5 -2.5) (end 2.5 2.5) (stroke (width .1) (type default)) (fill none) (layer "B.CrtYd"))
 (model "${KIPRJMOD}/../libraries/3d/M2_SCREW_HEAD_PROVISIONAL.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
-)(gr_text "H1 M2" (at 136.0 69.3) (layer "Dwgs.User") (uuid "5f8b3714-2c79-5f62-8e3a-448358e19187") (effects (font (size 0.65 0.65) (thickness .12))))
+)
 (footprint "" (layer "F.Cu") (at 206.0 149.0) (uuid "27e0a818-d70f-5916-9f38-fd67400198e8") (attr board_only exclude_from_pos_files exclude_from_bom) (property "Reference" "H2" (at 0 0 0) (layer "F.Fab") (hide yes) (effects (font (size .8 .8) (thickness .12))))(property "Value" "M2 spacer8mm / D2.2" (at 0 0 0) (layer "F.Fab") (hide yes) (effects (font (size .8 .8) (thickness .12))))(pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask"))(fp_rect (start -2.5 -2.5) (end 2.5 2.5) (stroke (width .1) (type default)) (fill none) (layer "F.CrtYd"))(fp_rect (start -2.5 -2.5) (end 2.5 2.5) (stroke (width .1) (type default)) (fill none) (layer "B.CrtYd"))
 (model "${KIPRJMOD}/../libraries/3d/M2_SCREW_HEAD_PROVISIONAL.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
-)(gr_text "H2 M2" (at 206.0 152.3) (layer "Dwgs.User") (uuid "052d7df8-bda6-570d-a85a-652874b7974c") (effects (font (size 0.65 0.65) (thickness .12))))
+)
 (footprint "" (layer "F.Cu") (at 208.0 66.0) (uuid "f44310ca-7032-52e9-86ae-4a420fa1f5ca") (attr board_only exclude_from_pos_files exclude_from_bom) (property "Reference" "H3" (at 0 0 0) (layer "F.Fab") (hide yes) (effects (font (size .8 .8) (thickness .12))))(property "Value" "KEY receive D2.2" (at 0 0 0) (layer "F.Fab") (hide yes) (effects (font (size .8 .8) (thickness .12))))(pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask"))(fp_rect (start -2.5 -2.5) (end 2.5 2.5) (stroke (width .1) (type default)) (fill none) (layer "F.CrtYd"))(fp_rect (start -2.5 -2.5) (end 2.5 2.5) (stroke (width .1) (type default)) (fill none) (layer "B.CrtYd"))
 
-)(gr_text "H3 KEY" (at 208.0 69.3) (layer "Dwgs.User") (uuid "ab207731-d084-5728-88e7-7f99d37a169d") (effects (font (size 0.65 0.65) (thickness .12))))
-(gr_text "Вид сверху: X вправо, Y вниз; размеры мм" (at 102 15) (layer "Dwgs.User") (uuid "177ee050-2b9b-5c22-8d5a-e315257697d0") (effects (font (size 1 1) (thickness .12))))
+)
+
 (gr_rect (start 132.0 60.0) (end 212.0 154.0) (stroke (width .15) (type default)) (fill none) (layer "Edge.Cuts") (uuid "c8d44238-3ce3-55e6-a9c8-99efbaf647a4"))
-(gr_rect (start 152.0 60.0) (end 192.0 70.0) (stroke (width .15) (type default)) (fill none) (layer "Dwgs.User") (uuid "ffb9aae8-50d9-5d8b-9e0c-b0e4d93954f8"))(gr_text "ЗАХВАТ: снять вверх +Z" (at 172.0 65.0) (layer "Dwgs.User") (uuid "821a881d-76cc-55ca-b4db-008bdf61e0e5") (effects (font (size 0.8 0.8) (thickness .12))))
-(gr_rect (start 152.0 144.0) (end 192.0 154.0) (stroke (width .15) (type default)) (fill none) (layer "Dwgs.User") (uuid "abf98516-e18f-5e14-b524-9bb3ba2ed10d"))(gr_text "ЗАХВАТ: снять вверх +Z" (at 172.0 149.0) (layer "Dwgs.User") (uuid "4e933fde-b6cd-569b-8aec-e247857a2e0b") (effects (font (size 0.8 0.8) (thickness .12))))
+
+
 (footprint "MIRA_Module:ICS-CQFP64-1830-1830-100-1"
 
 
@@ -473,7 +473,29 @@
 (model "${KIPRJMOD}/../libraries/3d/ICS-CQFP64-1830-1830-100-1_APPROX.step" (offset (xyz 0.0 0.0 0.0)) (scale (xyz 1.0 1.0 1.0)) (rotate (xyz 0.0 0.0 0.0)))
 )
 
-(gr_rect (start 148.0 72.0) (end 196.0 143.0) (stroke (width .15) (type default)) (fill none) (layer "Dwgs.User") (uuid "8a924158-eb7c-5b8a-86a9-70b5d98fb832"))(gr_text "Крышка / защёлка: оценка STEP, TBD" (at 172.0 107.5) (layer "Dwgs.User") (uuid "d9a6d79c-0e33-5f86-81f9-a4befd521035") (effects (font (size 0.8 0.8) (thickness .12))))
-(gr_text "J3 сокет ICS-CQFP64 / 64 контакта" (at 172 156) (layer "Dwgs.User") (uuid "1ff953ca-78a1-5fce-83b1-033a2f1fa8c3") (effects (font (size 0.8 0.8) (thickness .12))))
-(gr_text "BL/NL/WL -> J3: TBD, матрица не подтверждена" (at 172 159) (layer "Dwgs.User") (uuid "e9daeaee-460e-5a5d-ae3d-0b1132dbb4aa") (effects (font (size 0.8 0.8) (thickness .12))))
+
+
+
+
+(gr_line (start 148 72) (end 196 72) (stroke (width 0.15) (type default)) (layer "Dwgs.User") (uuid "c68a7575-0d8e-4a3d-8ec2-b1c138120a94"))
+(gr_line (start 196 72) (end 196 143) (stroke (width 0.15) (type default)) (layer "Dwgs.User") (uuid "c2b59b20-e072-4e47-b0a2-a6bf3437b045"))
+(gr_line (start 196 143) (end 148 143) (stroke (width 0.15) (type default)) (layer "Dwgs.User") (uuid "e77c46f0-8e86-4455-bfef-1e5989071502"))
+(gr_line (start 148 143) (end 148 72) (stroke (width 0.15) (type default)) (layer "Dwgs.User") (uuid "7d1d5e1b-cf39-4e23-9da8-be4056409d54"))
+(gr_text "#2 LID / OPEN 105deg APPROX" (at 172.0 74.5) (layer "Dwgs.User") (uuid "9a2694a1-a7d8-4848-9f44-7f94becf8c4c") (effects (font (size 0.85 0.85) (thickness .13))))
+(gr_line (start 152 60) (end 192 60) (stroke (width 0.15) (type default)) (layer "Dwgs.User") (uuid "d19e24d1-4591-4597-b165-c72b7dac933b"))
+(gr_line (start 192 60) (end 192 70) (stroke (width 0.15) (type default)) (layer "Dwgs.User") (uuid "6db52350-470a-4a57-88bc-4a90abda42ae"))
+(gr_line (start 192 70) (end 152 70) (stroke (width 0.15) (type default)) (layer "Dwgs.User") (uuid "1214ad4e-f3c2-4786-a168-e7edbb5c51b8"))
+(gr_line (start 152 70) (end 152 60) (stroke (width 0.15) (type default)) (layer "Dwgs.User") (uuid "7b5591af-9f4b-4a30-b6bd-9a699bc5a99a"))
+(gr_text "GRIP / REMOVE +Z" (at 172.0 62.5) (layer "Dwgs.User") (uuid "e1329784-be85-4cc9-a587-ff6229969b39") (effects (font (size 0.85 0.85) (thickness .13))))
+(gr_line (start 152 144) (end 192 144) (stroke (width 0.15) (type default)) (layer "Dwgs.User") (uuid "afda36fd-9afd-42fb-8086-1e46e1d30ab2"))
+(gr_line (start 192 144) (end 192 154) (stroke (width 0.15) (type default)) (layer "Dwgs.User") (uuid "bd721ed3-99a1-4364-9b55-f6d374a257df"))
+(gr_line (start 192 154) (end 152 154) (stroke (width 0.15) (type default)) (layer "Dwgs.User") (uuid "123bd95f-e32f-438d-9b8d-86fa298f7bdf"))
+(gr_line (start 152 154) (end 152 144) (stroke (width 0.15) (type default)) (layer "Dwgs.User") (uuid "fa3a34cd-e025-4ceb-95e3-567876aaa74c"))
+(gr_text "GRIP / REMOVE +Z" (at 172.0 146.5) (layer "Dwgs.User") (uuid "d2fbe3ce-b196-45eb-8222-6c1df6a6ae8b") (effects (font (size 0.85 0.85) (thickness .13))))
+(gr_text "J10003 ICS-CQFP64 | 32 BL + 8 NL + 8 WL" (at 172 73) (layer "Dwgs.User") (uuid "fe828ca5-bb0a-4732-a051-3fcea9e596d3") (effects (font (size 0.8 0.8) (thickness .13))))
+(gr_text "#1 PIN MAP / UUID ECO PENDING" (at 172 137) (layer "Dwgs.User") (uuid "fe8a1ee1-db6d-43a2-8a58-6f39c105821c") (effects (font (size 0.85 0.85) (thickness .13))))
+(gr_text "PIN 1 (161.5,99.5)" (at 172 99.5) (layer "Dwgs.User") (uuid "51cced95-a10e-43b4-9918-38d5b7ba7ef0") (effects (font (size 0.7 0.7) (thickness .13))))
+(gr_text "B.Cu J10001 A" (at 140 123) (layer "Dwgs.User") (uuid "536362fe-ebaf-43ce-b901-f5457365353d") (effects (font (size 0.7 0.7) (thickness .13))))
+(gr_text "B.Cu J10002 B" (at 204 127) (layer "Dwgs.User") (uuid "39e8c56f-1f04-4430-a44d-7b52add3b716") (effects (font (size 0.7 0.7) (thickness .13))))
+(gr_text "TOP F.Cu / common XY; BOTTOM mirror X" (at 172 56) (layer "Dwgs.User") (uuid "54419f70-dfa1-47b8-8f56-61d565227bdb") (effects (font (size 0.8 0.8) (thickness .13))))
 )

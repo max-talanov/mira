@@ -1,0 +1,78 @@
+{
+  "task": "MIRA-01.01.00",
+  "baseline_SHA": "6158448d7fe936fbaaacb449b26b87000c3ad2a5",
+  "kicad": "10.0.5",
+  "coordinate_system": "Common XY=local KiCad XY for all boards; X right,Y down,Z towards Control F viewer. CAD/STEP Y=-KiCadY. Back display X=344-X only for module view.",
+  "Z_mm": {
+    "Power_B": -13.6,
+    "Power_F": -12,
+    "Control_B": 0,
+    "Control_F": 1.6,
+    "Crossbar_B": 9.6,
+    "Crossbar_F": 11.2
+  },
+  "checks": {
+    "MIRA_Control": {
+      "DRC_before": 8,
+      "DRC_after": 8,
+      "new_violations": 0,
+      "types": {
+        "clearance": 6,
+        "copper_edge_clearance": 2
+      },
+      "schematic_parity_before": 762,
+      "schematic_parity_after": 762,
+      "unconnected_before": 499,
+      "unconnected_after": 499,
+      "closed_outline": true,
+      "pcb_sha256": "e6985bfcbc0d658ecb06b6bc1574a65a671f0f03ad514b52d06bb73292ad3640"
+    },
+    "MIRA_Power": {
+      "DRC_before": 18,
+      "DRC_after": 18,
+      "new_violations": 0,
+      "types": {
+        "drill_out_of_range": 18
+      },
+      "schematic_parity_before": 199,
+      "schematic_parity_after": 199,
+      "unconnected_before": 499,
+      "unconnected_after": 499,
+      "closed_outline": true,
+      "pcb_sha256": "7f40edd3a09e6a08afc3e976da7f9838a692b4f34cd1e7cfc2937e78f4682f81"
+    },
+    "MIRA_Crossbar": {
+      "DRC_before": 0,
+      "DRC_after": 0,
+      "new_violations": 0,
+      "types": {},
+      "schematic_parity_before": 119,
+      "schematic_parity_after": 119,
+      "unconnected_before": 51,
+      "unconnected_after": 51,
+      "closed_outline": true,
+      "pcb_sha256": "885a5f42f99c0eb9425a78e084a359b9f765c27888e14b1603ff2b9045818750"
+    }
+  },
+  "schematic_PCB_summary": {
+    "MIRA_Control": {
+      "both": 1364,
+      "schematic_only": 825,
+      "PCB_only": 979
+    },
+    "MIRA_Power": {
+      "both": 793,
+      "PCB_only": 6
+    },
+    "MIRA_Crossbar": {
+      "PCB_only": 3,
+      "both": 3,
+      "schematic_only": 3
+    }
+  },
+  "CH48": "PASS current native exports; schematic files unchanged",
+  "socket": "32 BL+8 NL+8 WL; sole physical J10003, logical U10001, UUID/ECO unresolved",
+  "interactive_GUI": "Not claimed: native KiCad reload, DRC, STEP and offscreen CAD/PDF inspection",
+  "schematics_project_settings_unrelated_local_work_preserved": true,
+  "DRC_signature_comparison": "No new violations by type, severity and physical item UUIDs"
+}
