@@ -905,7 +905,7 @@
 		)
 		(uuid "4bfb7f0d-4258-4952-a6de-9997cbc0ad8f")
 	)
-	(text "3900_TELEMETRY_MULTIPLEXERS"
+	(text "Telemetry Selectors"
 		(exclude_from_sim no)
 		(at 20.32 19.05 0)
 		(effects
@@ -918,7 +918,7 @@
 		)
 		(uuid "50b5e359-eb72-4db0-8bd3-3cbf5cc5b43a")
 	)
-	(text "Voltage monitor selection\nU3902 / same channel order"
+	(text "Voltage monitor selection\nU560001 / same channel order"
 		(exclude_from_sim no)
 		(at 21.59 95.25 0)
 		(effects
@@ -944,7 +944,7 @@
 		)
 		(uuid "6d6d49b5-4540-42f5-b901-d8b8fa588964")
 	)
-	(text "Current monitor selection\nU3901 / 16 supply domains"
+	(text "Current monitor selection\nU560002 / 16 supply domains"
 		(exclude_from_sim no)
 		(at 21.59 27.94 0)
 		(effects
@@ -999,7 +999,7 @@
 		)
 		(uuid "ae8ee7b8-005d-4350-bc2c-61579d34d528")
 	)
-	(text "SHEET GUIDE / 3900_TELEMETRY_MULTIPLEXERS"
+	(text "SHEET GUIDE / Telemetry Selectors"
 		(exclude_from_sim no)
 		(at 156.21 19.24 0)
 		(effects
@@ -1026,7 +1026,7 @@
 		)
 		(uuid "cf672e40-1223-437d-8ab7-3cef314ef1bd")
 	)
-	(text "U3901 selects MON_I_* current signals; U3902 selects matching MON_V_* voltage\nsignals. Their outputs, MUX_I_COM and MUX_V_COM, feed the ADC buffers. Channel\norder runs from INPUT and AON to ANA5 and ANA33."
+	(text "U560002 selects MON_I_* current signals; U560001 selects matching MON_V_* voltage\nsignals. Their outputs, MUX_I_COM and MUX_V_COM, feed the ADC buffers. Channel\norder runs from INPUT and AON to ANA5 and ANA33."
 		(exclude_from_sim no)
 		(at 156.21 68.3 0)
 		(effects
@@ -1052,7 +1052,7 @@
 		)
 		(uuid "e2798af6-a3f0-4bc2-abc6-083bc44c3890")
 	)
-	(text "C3901 and C3902 bypass the AON supply with 100 nF each. Firmware should disable\nthe selectors, change the address, enable them and allow the source, buffer and\nADC to settle before accepting either sample."
+	(text "C560001 and C560002 bypass the AON supply with 100 nF each. Firmware should disable\nthe selectors, change the address, enable them and allow the source, buffer and\nADC to settle before accepting either sample."
 		(exclude_from_sim no)
 		(at 156.21 114.02 0)
 		(effects
@@ -1877,7 +1877,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "075e51a4-f90a-41b5-b218-6dffff247c44")
-		(property "Reference" "#PWR03901"
+		(property "Reference" "#PWR560001"
 			(at 76.2 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -1934,7 +1934,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/e7dbd345-57f8-4b81-96c1-c0406ce18a64"
-					(reference "#PWR03901")
+					(reference "#PWR560001")
 					(unit 1)
 				)
 			)
@@ -1951,7 +1951,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "27d0673f-e4cd-4616-84c7-190155d270e1")
-		(property "Reference" "C3901"
+		(property "Reference" "C560001"
 			(at 87.63 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2068,7 +2068,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/e7dbd345-57f8-4b81-96c1-c0406ce18a64"
-					(reference "C3901")
+					(reference "C560001")
 					(unit 1)
 				)
 			)
@@ -2085,7 +2085,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "767de16b-ffe3-4a4a-9213-d9366bc422f1")
-		(property "Reference" "C3902"
+		(property "Reference" "C560002"
 			(at 87.63 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2202,7 +2202,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/e7dbd345-57f8-4b81-96c1-c0406ce18a64"
-					(reference "C3902")
+					(reference "C560002")
 					(unit 1)
 				)
 			)
@@ -2219,7 +2219,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8ef8b989-dff2-49d5-b2be-8c4c7d405641")
-		(property "Reference" "#PWR03904"
+		(property "Reference" "#PWR560002"
 			(at 90.17 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -2276,7 +2276,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/e7dbd345-57f8-4b81-96c1-c0406ce18a64"
-					(reference "#PWR03904")
+					(reference "#PWR560002")
 					(unit 1)
 				)
 			)
@@ -2293,7 +2293,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "92a6c909-e32e-45ea-84f5-2bbdb2537e69")
-		(property "Reference" "U3902"
+		(property "Reference" "U560001"
 			(at 63.5 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2454,7 +2454,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/e7dbd345-57f8-4b81-96c1-c0406ce18a64"
-					(reference "U3902")
+					(reference "U560001")
 					(unit 1)
 				)
 			)
@@ -2471,7 +2471,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ab5bd98d-5628-4128-878a-3f613b3ced73")
-		(property "Reference" "#PWR03902"
+		(property "Reference" "#PWR560003"
 			(at 76.2 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -2528,7 +2528,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/e7dbd345-57f8-4b81-96c1-c0406ce18a64"
-					(reference "#PWR03902")
+					(reference "#PWR560003")
 					(unit 1)
 				)
 			)
@@ -2545,7 +2545,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dc32a6a3-8243-4862-a833-48ccb14e41e1")
-		(property "Reference" "#PWR03903"
+		(property "Reference" "#PWR560004"
 			(at 90.17 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -2602,7 +2602,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/e7dbd345-57f8-4b81-96c1-c0406ce18a64"
-					(reference "#PWR03903")
+					(reference "#PWR560004")
 					(unit 1)
 				)
 			)
@@ -2619,7 +2619,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fe3fda88-5863-4cad-9a43-4a5031cb3130")
-		(property "Reference" "U3901"
+		(property "Reference" "U560002"
 			(at 63.5 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2780,7 +2780,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/64dbbbb3-0789-4a1e-a3f9-0c9df62d7a93/e7dbd345-57f8-4b81-96c1-c0406ce18a64"
-					(reference "U3901")
+					(reference "U560002")
 					(unit 1)
 				)
 			)
@@ -2792,4 +2792,6 @@
 
 
 
+
+(title_block (title "Telemetry Selectors") (rev "C-review") (company "MIRA"))
 )

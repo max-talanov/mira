@@ -697,7 +697,7 @@
 		)
 		(uuid "0f56b098-e315-4b02-bc56-630fe9ac1db1")
 	)
-	(text "SHEET GUIDE / 3000_PM_RAIL_READY"
+	(text "SHEET GUIDE / Rail Ready"
 		(exclude_from_sim no)
 		(at 156.21 19.24 0)
 		(effects
@@ -749,7 +749,7 @@
 		)
 		(uuid "38ff88bf-8298-437e-9d26-e94d42df4578")
 	)
-	(text "The tree receives PG_SYS, PG_FPGA, PG_ANA, PG_P15, PG_N15 and nine PGR\nsignals for the secondary rails. ALL_RAILS_PG is an active-high, push-pull\noutput. All three SN74HCS21 devices use AON; C3001, C3002 and C3003 provide 100\nnF bypassing."
+	(text "The tree receives PG_SYS, PG_FPGA, PG_ANA, PG_P15, PG_N15 and nine PGR\nsignals for the secondary rails. ALL_RAILS_PG is an active-high, push-pull\noutput. All three SN74HCS21 devices use AON; C430001, C430002 and C430003 provide 100\nnF bypassing."
 		(exclude_from_sim no)
 		(at 156.21 68.3 0)
 		(effects
@@ -762,7 +762,7 @@
 		)
 		(uuid "556c47d1-bebb-4ec5-9f29-16a090db5d4f")
 	)
-	(text "3000_PM_RAIL_READY"
+	(text "Rail Ready"
 		(exclude_from_sim no)
 		(at 20.32 19.05 0)
 		(effects
@@ -872,7 +872,7 @@
 		)
 		(uuid "cdedec40-24d0-48bb-a950-52a77a58ddc1")
 	)
-	(text "There is no resistor-set threshold, timer or latch on this sheet. The aggregate\nchanges after two logic stages when a status changes. Schmitt inputs accept\nslower status transitions. The unused U3018 gate has its inputs tied to GND and\nits output left unconnected."
+	(text "There is no resistor-set threshold, timer or latch on this sheet. The aggregate\nchanges after two logic stages when a status changes. Schmitt inputs accept\nslower status transitions. The unused U430003 gate has its inputs tied to GND and\nits output left unconnected."
 		(exclude_from_sim no)
 		(at 156.21 114.02 0)
 		(effects
@@ -899,7 +899,7 @@
 		)
 		(uuid "e1a4a35b-87b0-4a4b-b957-8ec3033f2600")
 	)
-	(text "U3001 combines USB/SYS/FPGA/ANA and P15/N15/CORE/AUX18. U3002 combines\nAUX25/IO33/DDR/IO18 and VTT/ANA5/ANA33. AON fixes the fourth input of the last\ngroup HIGH. U3003 ANDs PG_GROUP_0-PG_GROUP_3; every one of the fifteen status\ninputs must be HIGH."
+	(text "U430001 combines USB/SYS/FPGA/ANA and P15/N15/CORE/AUX18. U3002 combines\nAUX25/IO33/DDR/IO18 and VTT/ANA5/ANA33. AON fixes the fourth input of the last\ngroup HIGH. U3003 ANDs PG_GROUP_0-PG_GROUP_3; every one of the fifteen status\ninputs must be HIGH."
 		(exclude_from_sim no)
 		(at 156.21 91.16 0)
 		(effects
@@ -1911,7 +1911,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "09dde205-709d-42a5-b44f-b2328bececc4")
-		(property "Reference" "U3001"
+		(property "Reference" "U430001"
 			(at 58.42 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2042,7 +2042,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "U3001")
+					(reference "U430001")
 					(unit 1)
 				)
 			)
@@ -2059,7 +2059,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1d3d076a-7256-4013-aa31-f792aafd2f77")
-		(property "Reference" "C3001"
+		(property "Reference" "C430001"
 			(at 69.85 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2176,7 +2176,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "C3001")
+					(reference "C430001")
 					(unit 1)
 				)
 			)
@@ -2193,7 +2193,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "334e9cde-9b49-4845-aef5-9cddabbd18ed")
-		(property "Reference" "U3017"
+		(property "Reference" "U430002"
 			(at 58.42 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2324,7 +2324,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "U3017")
+					(reference "U430002")
 					(unit 1)
 				)
 			)
@@ -2341,7 +2341,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "482165f1-fd02-4a9f-b072-854c3f3c41bf")
-		(property "Reference" "#PWR03004"
+		(property "Reference" "#PWR430001"
 			(at 72.39 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -2398,7 +2398,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR03004")
+					(reference "#PWR430001")
 					(unit 1)
 				)
 			)
@@ -2415,7 +2415,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "63e32e3e-c9e3-4ac1-a368-fc22dd282e14")
-		(property "Reference" "#PWR03001"
+		(property "Reference" "#PWR430002"
 			(at 58.42 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2472,7 +2472,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR03001")
+					(reference "#PWR430002")
 					(unit 1)
 				)
 			)
@@ -2489,7 +2489,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7059a6f0-a150-4cef-962b-5efaec409752")
-		(property "Reference" "U3018"
+		(property "Reference" "U430003"
 			(at 110.49 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2620,7 +2620,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "U3018")
+					(reference "U430003")
 					(unit 1)
 				)
 			)
@@ -2637,7 +2637,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77fe4000-12aa-4995-879d-eae57a30cd39")
-		(property "Reference" "#PWR03003"
+		(property "Reference" "#PWR430003"
 			(at 72.39 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -2694,7 +2694,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR03003")
+					(reference "#PWR430003")
 					(unit 1)
 				)
 			)
@@ -2711,7 +2711,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba4500ce-4cfa-4b92-85ea-0b16d0e284a9")
-		(property "Reference" "#PWR03005"
+		(property "Reference" "#PWR430004"
 			(at 91.44 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -2768,7 +2768,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR03005")
+					(reference "#PWR430004")
 					(unit 1)
 				)
 			)
@@ -2785,7 +2785,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ce0d057b-b372-423b-aa6a-e14f567fb844")
-		(property "Reference" "#PWR03002"
+		(property "Reference" "#PWR430005"
 			(at 58.42 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -2842,7 +2842,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR03002")
+					(reference "#PWR430005")
 					(unit 1)
 				)
 			)
@@ -2859,7 +2859,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e2b95065-b5da-44ca-8fec-6810bd130f74")
-		(property "Reference" "#PWR03006"
+		(property "Reference" "#PWR430006"
 			(at 110.49 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -2916,7 +2916,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR03006")
+					(reference "#PWR430006")
 					(unit 1)
 				)
 			)
@@ -2933,7 +2933,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fb3c8896-9cef-4abc-a20b-5a033f2153c9")
-		(property "Reference" "C3002"
+		(property "Reference" "C430002"
 			(at 69.85 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3050,7 +3050,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "C3002")
+					(reference "C430002")
 					(unit 1)
 				)
 			)
@@ -3067,7 +3067,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fb4f51e9-8a60-4bd2-bf7f-41735183e46f")
-		(property "Reference" "#PWR03007"
+		(property "Reference" "#PWR430007"
 			(at 124.46 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -3124,7 +3124,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "#PWR03007")
+					(reference "#PWR430007")
 					(unit 1)
 				)
 			)
@@ -3141,7 +3141,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fbcd67bd-f7de-4cfd-9c8a-824158ba3951")
-		(property "Reference" "C3003"
+		(property "Reference" "C430003"
 			(at 121.92 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3258,7 +3258,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/447aeb79-4346-462c-8215-acf683ad33e7"
-					(reference "C3003")
+					(reference "C430003")
 					(unit 1)
 				)
 			)
@@ -3270,4 +3270,6 @@
 
 
 
+
+(title_block (title "Rail Ready") (rev "C-review") (company "MIRA"))
 )

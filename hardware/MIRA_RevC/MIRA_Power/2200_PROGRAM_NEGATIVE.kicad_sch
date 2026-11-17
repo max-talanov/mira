@@ -2572,7 +2572,7 @@
 		)
 		(uuid "9466a119-bddd-4d93-9e55-c5185f7a8196")
 	)
-	(text "Q2204 discharges through R2210 || R2211 = 340 Ohm.\nU2203 disables discharge; R2205 bleeds residual charge."
+	(text "Q240001 discharges through R240011 || R240009 = 340 Ohm.\nU240001 disables discharge; R240004 bleeds residual charge."
 		(exclude_from_sim no)
 		(at 23 139.2 0)
 		(effects
@@ -2598,7 +2598,7 @@
 		)
 		(uuid "1f760ce3-854c-4d92-8a73-27a51ff379fa")
 	)
-	(text "Without optocoupler drive, Q2203 equalizes pass G-S.\nU2202 releases this clamp during authorized operation."
+	(text "Without optocoupler drive, Q240003 equalizes pass G-S.\nU240003 releases this clamp during authorized operation."
 		(exclude_from_sim no)
 		(at 23 88 0)
 		(effects
@@ -2611,7 +2611,7 @@
 		)
 		(uuid "28c8784b-6107-4f97-af7a-c55cbf486086")
 	)
-	(text "N15 is the negative power input; AON supplies the control side. Sinking\nMATRIX_OPTO_K lights U2201-U2203 through R2201, R2206 and R2208 (300 Ohm\neach). U2201 raises the pass gates through R2203 (330 kOhm), U2202 releases\nthe OFF clamp and U2203 disables output discharge."
+	(text "N15 is the negative power input; AON supplies the control side. Sinking\nMATRIX_OPTO_K lights U240002-U240001 through R240003, R240005 and R240002 (300 Ohm\neach). U240002 raises the pass gates through R240010 (330 kOhm), U240003 releases\nthe OFF clamp and U240001 disables output discharge."
 		(exclude_from_sim no)
 		(at 156.21 65.3 0)
 		(effects
@@ -2638,7 +2638,7 @@
 		)
 		(uuid "44f4968f-2da7-46aa-9aea-bfdb687c3267")
 	)
-	(text "Without optocoupler drive, Q2203 equalizes the pass gates and sources. Q2204\ndischarges the output through R2210 || R2211 = 340 Ohm; R2205 (100 kOhm)\nbleeds the remaining charge. D2201, D2203 and D2204 clamp VGS; D2202 clamps\npositive output excursions. Verify actual OFF and discharge timing."
+	(text "Without optocoupler drive, Q240003 equalizes the pass gates and sources. Q240001\ndischarges the output through R240011 || R240009 = 340 Ohm; R240004 (100 kOhm)\nbleeds the remaining charge. D240003, D240002 and D240001 clamp VGS; D240004 clamps\npositive output excursions. Verify actual OFF and discharge timing."
 		(exclude_from_sim no)
 		(at 156.21 141 0)
 		(effects
@@ -2705,7 +2705,7 @@
 		)
 		(uuid "73f0d965-2c91-42d0-a929-091e58be86b4")
 	)
-	(text "Q2201 and Q2202 (AO3400A) form an opposed NMOS pair with common sources and\njoined gates. Their body diodes block both current directions while the pair\nis off. C2202 (4.7 uF nominal) stores and filters the output. R2204 (680 Ohm)\nand C2201 (47 nF) shape gate/output transitions."
+	(text "Q240002 and Q240004 (AO3400A) form an opposed NMOS pair with common sources and\njoined gates. Their body diodes block both current directions while the pair\nis off. C240003 (4.7 uF nominal) stores and filters the output. R240006 (680 Ohm)\nand C240002 (47 nF) shape gate/output transitions."
 		(exclude_from_sim no)
 		(at 156.21 90.5 0)
 		(effects
@@ -2718,7 +2718,7 @@
 		)
 		(uuid "7cbe073f-ae57-4ad5-8f47-d9b100c3545b")
 	)
-	(text "SHEET GUIDE / 2200_PROGRAM_NEGATIVE"
+	(text "SHEET GUIDE / Program Negative"
 		(exclude_from_sim no)
 		(at 156.21 19.24 0)
 		(effects
@@ -2745,7 +2745,7 @@
 		)
 		(uuid "898b711a-6266-4f6a-ab69-cd7cd0ed2269")
 	)
-	(text "2200_PROGRAM_NEGATIVE"
+	(text "Program Negative"
 		(exclude_from_sim no)
 		(at 20.32 19.05 0)
 		(effects
@@ -4198,7 +4198,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "02c22cf9-f6ae-41ba-b720-bcdea2ff4a92")
-		(property "Reference" "R2202"
+		(property "Reference" "R240001"
 			(at 47.625 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4306,7 +4306,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "R2202")
+					(reference "R240001")
 					(unit 1)
 				)
 			)
@@ -4323,7 +4323,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "07463d0c-875c-4bac-b1c1-54b46f741a88")
-		(property "Reference" "#PWR02202"
+		(property "Reference" "#PWR240001"
 			(at 77.47 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -4380,7 +4380,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "#PWR02202")
+					(reference "#PWR240001")
 					(unit 1)
 				)
 			)
@@ -4397,7 +4397,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b205d14-ace0-4985-bb85-ab71934993a0")
-		(property "Reference" "Q2204"
+		(property "Reference" "Q240001"
 			(at 116.84 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4517,7 +4517,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "Q2204")
+					(reference "Q240001")
 					(unit 1)
 				)
 			)
@@ -4534,7 +4534,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "17d68f9a-9d55-4431-b3ad-2be10849c732")
-		(property "Reference" "R2208"
+		(property "Reference" "R240002"
 			(at 34.29 167.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4642,7 +4642,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "R2208")
+					(reference "R240002")
 					(unit 1)
 				)
 			)
@@ -4659,7 +4659,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "18d1f596-65ae-46d7-bab6-823e408d0887")
-		(property "Reference" "D2204"
+		(property "Reference" "D240001"
 			(at 83.185 176.53 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4778,7 +4778,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "D2204")
+					(reference "D240001")
 					(unit 1)
 				)
 			)
@@ -4795,7 +4795,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1eb238bb-f479-43a4-9f05-5dd9ec09e55d")
-		(property "Reference" "U2203"
+		(property "Reference" "U240001"
 			(at 55.88 168.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4907,7 +4907,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "U2203")
+					(reference "U240001")
 					(unit 1)
 				)
 			)
@@ -4924,7 +4924,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "24f4064a-fd39-47c4-8994-a7186746975a")
-		(property "Reference" "R2201"
+		(property "Reference" "R240003"
 			(at 25.4 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5032,7 +5032,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "R2201")
+					(reference "R240003")
 					(unit 1)
 				)
 			)
@@ -5049,7 +5049,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2586a9dd-b2b2-485a-9150-08404255145b")
-		(property "Reference" "R2205"
+		(property "Reference" "R240004"
 			(at 116.84 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5157,7 +5157,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "R2205")
+					(reference "R240004")
 					(unit 1)
 				)
 			)
@@ -5174,7 +5174,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "37414bcc-388d-41ee-8093-3e991b844c40")
-		(property "Reference" "R2206"
+		(property "Reference" "R240005"
 			(at 32.0603 94.8123 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5282,7 +5282,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "R2206")
+					(reference "R240005")
 					(unit 1)
 				)
 			)
@@ -5299,7 +5299,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "393a3495-aff0-47f0-a572-3f1dc2c43c2f")
-		(property "Reference" "D2203"
+		(property "Reference" "D240002"
 			(at 87.63 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5416,7 +5416,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "D2203")
+					(reference "D240002")
 					(unit 1)
 				)
 			)
@@ -5433,7 +5433,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "39c1553b-bc08-439d-94dc-058a9afb6c30")
-		(property "Reference" "U2201"
+		(property "Reference" "U240002"
 			(at 52.07 56.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5545,7 +5545,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "U2201")
+					(reference "U240002")
 					(unit 1)
 				)
 			)
@@ -5562,7 +5562,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e08dde6-09d3-4f55-b27b-3e02005bafba")
-		(property "Reference" "R2204"
+		(property "Reference" "R240006"
 			(at 80.01 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5690,7 +5690,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "R2204")
+					(reference "R240006")
 					(unit 1)
 				)
 			)
@@ -5707,7 +5707,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4367ea55-109b-41c2-ae62-bea96ba0b549")
-		(property "Reference" "C2203"
+		(property "Reference" "C240001"
 			(at 102.87 176.53 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5826,7 +5826,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "C2203")
+					(reference "C240001")
 					(unit 1)
 				)
 			)
@@ -5843,7 +5843,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5fb7c312-fadb-471d-aafc-bc7e3bc4c05a")
-		(property "Reference" "Q2201"
+		(property "Reference" "Q240002"
 			(at 36.83 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5963,7 +5963,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "Q2201")
+					(reference "Q240002")
 					(unit 1)
 				)
 			)
@@ -5980,7 +5980,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "64950f50-e5f9-4249-9644-33b9bdae2815")
-		(property "Reference" "R2209"
+		(property "Reference" "R240007"
 			(at 101.6 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6088,7 +6088,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "R2209")
+					(reference "R240007")
 					(unit 1)
 				)
 			)
@@ -6105,7 +6105,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "79a6a82e-1c69-44cd-95ee-ca9500005bff")
-		(property "Reference" "U2202"
+		(property "Reference" "U240003"
 			(at 59.69 92.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6217,7 +6217,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "U2202")
+					(reference "U240003")
 					(unit 1)
 				)
 			)
@@ -6234,7 +6234,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8818dc44-dc3f-43e1-8035-836ad050c9fa")
-		(property "Reference" "#PWR02203"
+		(property "Reference" "#PWR240002"
 			(at 111.76 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -6291,7 +6291,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "#PWR02203")
+					(reference "#PWR240002")
 					(unit 1)
 				)
 			)
@@ -6308,7 +6308,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8af003d9-7fee-4e0c-a2f7-64ba587e07f4")
-		(property "Reference" "R2207"
+		(property "Reference" "R240008"
 			(at 78.74 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6438,7 +6438,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "R2207")
+					(reference "R240008")
 					(unit 1)
 				)
 			)
@@ -6455,7 +6455,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bdb4c4d-23e5-4470-bc29-2c7f65f0730f")
-		(property "Reference" "#PWR02201"
+		(property "Reference" "#PWR240003"
 			(at 105.41 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6512,7 +6512,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "#PWR02201")
+					(reference "#PWR240003")
 					(unit 1)
 				)
 			)
@@ -6529,7 +6529,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "95a2a885-95c3-43d6-85f0-ccf8300ec023")
-		(property "Reference" "R2211"
+		(property "Reference" "R240009"
 			(at 124.46 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6670,7 +6670,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "R2211")
+					(reference "R240009")
 					(unit 1)
 				)
 			)
@@ -6687,7 +6687,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9b7a46c9-4bd4-4df8-8813-894ed7e9097d")
-		(property "Reference" "D2201"
+		(property "Reference" "D240003"
 			(at 57.785 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6806,7 +6806,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "D2201")
+					(reference "D240003")
 					(unit 1)
 				)
 			)
@@ -6824,7 +6824,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ab367d15-9229-47b5-9cd8-0e562a3f80f3")
-		(property "Reference" "Q2203"
+		(property "Reference" "Q240003"
 			(at 107.95 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6944,7 +6944,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "Q2203")
+					(reference "Q240003")
 					(unit 1)
 				)
 			)
@@ -6961,7 +6961,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b4cad22c-4e9e-43a5-842d-3f0c6459f1f2")
-		(property "Reference" "R2203"
+		(property "Reference" "R240010"
 			(at 78.74 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7067,7 +7067,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "R2203")
+					(reference "R240010")
 					(unit 1)
 				)
 			)
@@ -7084,7 +7084,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b637d54d-dc11-41c5-8c4d-8954bccb4dca")
-		(property "Reference" "R2210"
+		(property "Reference" "R240011"
 			(at 113.03 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7225,7 +7225,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "R2210")
+					(reference "R240011")
 					(unit 1)
 				)
 			)
@@ -7243,7 +7243,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d84e1cea-547c-4e96-a0d2-7db4e3de15a6")
-		(property "Reference" "Q2202"
+		(property "Reference" "Q240004"
 			(at 77.47 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7363,7 +7363,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "Q2202")
+					(reference "Q240004")
 					(unit 1)
 				)
 			)
@@ -7380,7 +7380,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d8c6b4a9-6280-4324-ae40-f9babe88e976")
-		(property "Reference" "D2202"
+		(property "Reference" "D240004"
 			(at 127.635 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7466,7 +7466,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "D2202")
+					(reference "D240004")
 					(unit 1)
 				)
 			)
@@ -7483,7 +7483,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ec9fd9d1-0323-4f61-b2a0-9a09b2dd1303")
-		(property "Reference" "C2201"
+		(property "Reference" "C240002"
 			(at 92.71 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7633,7 +7633,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "C2201")
+					(reference "C240002")
 					(unit 1)
 				)
 			)
@@ -7650,7 +7650,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fcc5a959-bfae-4997-8781-b64d6ddb0fb8")
-		(property "Reference" "C2202"
+		(property "Reference" "C240003"
 			(at 108.55 44.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7769,7 +7769,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/07026a3a-1b65-4cd1-b63a-f3032436b6b4"
-					(reference "C2202")
+					(reference "C240003")
 					(unit 1)
 				)
 			)
@@ -7781,4 +7781,6 @@
 
 
 
+
+(title_block (title "Program Negative") (rev "C-review") (company "MIRA"))
 )

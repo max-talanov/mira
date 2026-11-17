@@ -2742,7 +2742,7 @@
 		)
 		(uuid "f0373b49-3639-40ec-9932-d41628c744bb")
 	)
-	(text "L1201 (1 uH) and C1207-C1212 (6 x 47 uF) filter CORE_RAW.\nC1205 (100 nF) is the bootstrap capacitor; C1206 (4.7 uF) bypasses VREG5.\nR1207 (200 kOhm) / R1208 (10 kOhm) select 400 kHz FCCM and ILIM.\nC1203 (22 nF) sets about 2.2 ms soft start. The 8 A IC capability\nrequires sufficient input power and verified board thermal performance."
+	(text "L130001 (1 uH) and C130004-C130001 (6 x 47 uF) filter CORE_RAW.\nC130012 (100 nF) is the bootstrap capacitor; C130002 (4.7 uF) bypasses VREG5.\nR130008 (200 kOhm) / R130003 (10 kOhm) select 400 kHz FCCM and ILIM.\nC130005 (22 nF) sets about 2.2 ms soft start. The 8 A IC capability\nrequires sufficient input power and verified board thermal performance."
 		(exclude_from_sim no)
 		(at 156.21 90.5 0)
 		(effects
@@ -2796,7 +2796,7 @@
 		)
 		(uuid "43adabf8-ec25-40f8-ad1f-426496480d8c")
 	)
-	(text "1200_POWER_MONITOR / FPGA core supply"
+	(text "FPGA Core 1 V / FPGA core supply"
 		(exclude_from_sim no)
 		(at 20.32 19.05 0)
 		(effects
@@ -2837,7 +2837,7 @@
 		)
 		(uuid "4d20e884-fe93-4349-ad81-32cd5058b31a")
 	)
-	(text "R1205 remains a 2 mOhm current shunt; its voltage drop is\ninside the positive-sense loop when J4902.17 is connected.\nGround-return drop is NOT compensated: target <=3 mOhm.\nPGR_CORE reports regulation at FB, not remote ground.\nVerify loop stability, load release and cable faults on prototype."
+	(text "R130004 remains a 2 mOhm current shunt; its voltage drop is\ninside the positive-sense loop when J270001.17 is connected.\nGround-return drop is NOT compensated: target <=3 mOhm.\nPGR_CORE reports regulation at FB, not remote ground.\nVerify loop stability, load release and cable faults on prototype."
 		(exclude_from_sim no)
 		(at 156.21 141 0)
 		(effects
@@ -2850,7 +2850,7 @@
 		)
 		(uuid "67d4d47d-7b69-40ab-b350-1809e352106e")
 	)
-	(text "1.008 V at positive sense node.\nC1203: about 2.2 ms soft start."
+	(text "1.008 V at positive sense node.\nC130005: about 2.2 ms soft start."
 		(exclude_from_sim no)
 		(at 57 64.2 0)
 		(effects
@@ -2877,7 +2877,7 @@
 		)
 		(uuid "74b23d95-94c4-447f-9e63-9ac1558800f3")
 	)
-	(text "CMD_CORE drives Q1201.\nFPGA5V5 must be available.\nR1201 pulls EN_CORE low."
+	(text "CMD_CORE drives Q130001.\nFPGA5V5 must be available.\nR130005 pulls EN_CORE low."
 		(exclude_from_sim no)
 		(at 66 31.2 0)
 		(effects
@@ -2904,7 +2904,7 @@
 		)
 		(uuid "84ab7502-ae50-430f-81fb-9ad460664c84")
 	)
-	(text "U1201 (TPS568215RNNR) converts FPGA5V5 into the core supply.\nCMD_CORE drives Q1201; R1201 (100 kOhm) pulls EN_CORE low.\nThe source follower allows enable only with the input rail available;\nthe command driver must provide a defined state and enough EN margin.\nC1201/C1202 (47 uF each) and C1204 (100 nF) bypass the input."
+	(text "U130001 (TPS568215RNNR) converts FPGA5V5 into the core supply.\nCMD_CORE drives Q130001; R130005 (100 kOhm) pulls EN_CORE low.\nThe source follower allows enable only with the input rail available;\nthe command driver must provide a defined state and enough EN margin.\nC130007/C130006 (47 uF each) and C130010 (100 nF) bypass the input."
 		(exclude_from_sim no)
 		(at 156.21 65.3 0)
 		(effects
@@ -2931,7 +2931,7 @@
 		)
 		(uuid "93afd1da-d6c3-48ec-a34a-9d314bbfcc97")
 	)
-	(text "FB: CORE_SENSE_P via J4902.17.\nKelvin trace at FPGA; local GND reference."
+	(text "FB: CORE_SENSE_P via J270001.17.\nKelvin trace at FPGA; local GND reference."
 		(exclude_from_sim no)
 		(at 101 136.2 0)
 		(effects
@@ -2944,7 +2944,7 @@
 		)
 		(uuid "940d5da6-a98e-43e8-b188-a6ff0c2d14e9")
 	)
-	(text "R1203 (10.2 kOhm) / R1204 (15 kOhm) regulate CORE_SENSE_P:\nV(sense) = 0.6 V x (1 + R1203 / R1204) = 1.008 V.\nR1210 (100 Ohm) provides a local path if the sense wire opens:\nlocal no-load nominal becomes 1.012 V. Open sense may cause\nundervoltage under load; this fallback is not fault-tolerant OVP."
+	(text "R130006 (10.2 kOhm) / R130002 (15 kOhm) regulate CORE_SENSE_P:\nV(sense) = 0.6 V x (1 + R130006 / R130002) = 1.008 V.\nR130009 (100 Ohm) provides a local path if the sense wire opens:\nlocal no-load nominal becomes 1.012 V. Open sense may cause\nundervoltage under load; this fallback is not fault-tolerant OVP."
 		(exclude_from_sim no)
 		(at 156.21 116 0)
 		(effects
@@ -2984,7 +2984,7 @@
 		)
 		(uuid "a0849a89-b928-46af-bb4f-353fdd54c8f3")
 	)
-	(text "SHEET GUIDE / 1200_POWER_MONITOR"
+	(text "SHEET GUIDE / FPGA Core 1 V"
 		(exclude_from_sim no)
 		(at 156.21 19.24 0)
 		(effects
@@ -4428,7 +4428,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "01742a99-c084-428a-8817-0a7692795a6b")
-		(property "Reference" "#PWR01204"
+		(property "Reference" "#PWR130001"
 			(at 40.64 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -4485,7 +4485,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "#PWR01204")
+					(reference "#PWR130001")
 					(unit 1)
 				)
 			)
@@ -4502,7 +4502,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "033e1c9a-dfce-4990-8dd0-ef03187f8618")
-		(property "Reference" "C1212"
+		(property "Reference" "C130001"
 			(at 118.11 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4621,7 +4621,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "C1212")
+					(reference "C130001")
 					(unit 1)
 				)
 			)
@@ -4638,7 +4638,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "03a7f8eb-c0a0-48be-9722-d0e59f1b18d6")
-		(property "Reference" "R1202"
+		(property "Reference" "R130001"
 			(at 95.25 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4746,7 +4746,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "R1202")
+					(reference "R130001")
 					(unit 1)
 				)
 			)
@@ -4763,7 +4763,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "08c810ea-862e-4be1-92e1-5bc52f8a8ffa")
-		(property "Reference" "Q1201"
+		(property "Reference" "Q130001"
 			(at 46.99 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4850,7 +4850,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "Q1201")
+					(reference "Q130001")
 					(unit 1)
 				)
 			)
@@ -4867,7 +4867,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0bedf623-015c-409a-aa6a-dd5fab1ddfdf")
-		(property "Reference" "C1206"
+		(property "Reference" "C130002"
 			(at 92.71 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4986,7 +4986,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "C1206")
+					(reference "C130002")
 					(unit 1)
 				)
 			)
@@ -5003,7 +5003,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0f6ab073-b776-496f-a599-85f946bf1b51")
-		(property "Reference" "R1204"
+		(property "Reference" "R130002"
 			(at 127 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5111,7 +5111,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "R1204")
+					(reference "R130002")
 					(unit 1)
 				)
 			)
@@ -5128,7 +5128,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1b2979ca-16eb-4ef7-9430-0dbfacb6faf2")
-		(property "Reference" "#PWR01207"
+		(property "Reference" "#PWR130002"
 			(at 101.6 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -5185,7 +5185,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "#PWR01207")
+					(reference "#PWR130002")
 					(unit 1)
 				)
 			)
@@ -5202,7 +5202,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2a7889a3-e590-4ffc-86e9-2b54e8e11f7c")
-		(property "Reference" "R1208"
+		(property "Reference" "R130003"
 			(at 59.69 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5310,7 +5310,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "R1208")
+					(reference "R130003")
 					(unit 1)
 				)
 			)
@@ -5327,7 +5327,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "313342c9-9ead-4c01-a302-362f3a128107")
-		(property "Reference" "R1205"
+		(property "Reference" "R130004"
 			(at 133.35 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5455,7 +5455,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "R1205")
+					(reference "R130004")
 					(unit 1)
 				)
 			)
@@ -5472,7 +5472,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "356cf134-6efc-4efb-b712-19066f982a97")
-		(property "Reference" "C1210"
+		(property "Reference" "C130003"
 			(at 110.49 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5591,7 +5591,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "C1210")
+					(reference "C130003")
 					(unit 1)
 				)
 			)
@@ -5608,7 +5608,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ff15276-9c6a-4456-8b7a-bff21c930905")
-		(property "Reference" "C1207"
+		(property "Reference" "C130004"
 			(at 102.87 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5727,7 +5727,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "C1207")
+					(reference "C130004")
 					(unit 1)
 				)
 			)
@@ -5744,7 +5744,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4b8ca43b-7774-4208-8d4d-333b5cc60c9a")
-		(property "Reference" "C1203"
+		(property "Reference" "C130005"
 			(at 43.18 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5863,7 +5863,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "C1203")
+					(reference "C130005")
 					(unit 1)
 				)
 			)
@@ -5880,7 +5880,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "588623f0-6bf4-458a-ae48-977705c62678")
-		(property "Reference" "R1201"
+		(property "Reference" "R130005"
 			(at 41.91 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5988,7 +5988,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "R1201")
+					(reference "R130005")
 					(unit 1)
 				)
 			)
@@ -6005,7 +6005,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5edb160f-460e-47ea-a78b-0517e04ea46c")
-		(property "Reference" "R1203"
+		(property "Reference" "R130006"
 			(at 127 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6113,7 +6113,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "R1203")
+					(reference "R130006")
 					(unit 1)
 				)
 			)
@@ -6131,7 +6131,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "63baf55b-ea92-44cb-b3ee-5fcec3cb16ec")
-		(property "Reference" "C1202"
+		(property "Reference" "C130006"
 			(at 26.67 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6250,7 +6250,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "C1202")
+					(reference "C130006")
 					(unit 1)
 				)
 			)
@@ -6267,7 +6267,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "69f4fede-ad07-43dc-9a55-b10332d7a167")
-		(property "Reference" "#PWR01206"
+		(property "Reference" "#PWR130003"
 			(at 101.6 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -6324,7 +6324,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "#PWR01206")
+					(reference "#PWR130003")
 					(unit 1)
 				)
 			)
@@ -6341,7 +6341,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6ed703b7-735a-477f-be10-0e7803e677db")
-		(property "Reference" "U1201"
+		(property "Reference" "U130001"
 			(at 63.5 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6473,7 +6473,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "U1201")
+					(reference "U130001")
 					(unit 1)
 				)
 			)
@@ -6490,7 +6490,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7892f991-69e1-4da4-b0bc-9c74b2f1c319")
-		(property "Reference" "R1206"
+		(property "Reference" "R130007"
 			(at 142.24 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6598,7 +6598,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "R1206")
+					(reference "R130007")
 					(unit 1)
 				)
 			)
@@ -6616,7 +6616,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7e0d6916-5a38-4c57-8fe9-fa36df7d373f")
-		(property "Reference" "C1201"
+		(property "Reference" "C130007"
 			(at 26.67 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6735,7 +6735,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "C1201")
+					(reference "C130007")
 					(unit 1)
 				)
 			)
@@ -6752,7 +6752,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7fafe49f-bc3e-4999-8f1d-115407dd1d11")
-		(property "Reference" "C1209"
+		(property "Reference" "C130008"
 			(at 110.49 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6871,7 +6871,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "C1209")
+					(reference "C130008")
 					(unit 1)
 				)
 			)
@@ -6888,7 +6888,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8a6e1743-53bd-4d43-b73e-0248c45e2ae8")
-		(property "Reference" "#PWR01209"
+		(property "Reference" "#PWR130004"
 			(at 140.97 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -6945,7 +6945,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "#PWR01209")
+					(reference "#PWR130004")
 					(unit 1)
 				)
 			)
@@ -6962,7 +6962,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8d43d223-97dc-45b1-b237-c42ed80f1a14")
-		(property "Reference" "L1201"
+		(property "Reference" "L130001"
 			(at 93.98 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7046,7 +7046,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "L1201")
+					(reference "L130001")
 					(unit 1)
 				)
 			)
@@ -7063,7 +7063,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "95f00247-c5c3-4c0f-93c2-c9d55e244805")
-		(property "Reference" "C1208"
+		(property "Reference" "C130009"
 			(at 102.87 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7182,7 +7182,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "C1208")
+					(reference "C130009")
 					(unit 1)
 				)
 			)
@@ -7199,7 +7199,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ac0ac3b7-a9ce-4e38-b4f6-3bd35777ea7d")
-		(property "Reference" "#PWR01205"
+		(property "Reference" "#PWR130005"
 			(at 91.44 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7256,7 +7256,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "#PWR01205")
+					(reference "#PWR130005")
 					(unit 1)
 				)
 			)
@@ -7274,7 +7274,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ac1cd9a5-aafd-4292-8e65-d650d0ce295b")
-		(property "Reference" "C1204"
+		(property "Reference" "C130010"
 			(at 40.64 73.66 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7393,7 +7393,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "C1204")
+					(reference "C130010")
 					(unit 1)
 				)
 			)
@@ -7410,7 +7410,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cdc89ad2-b9b4-4e71-9b9f-e2306a875c9f")
-		(property "Reference" "#PWR01203"
+		(property "Reference" "#PWR130006"
 			(at 29.21 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -7467,7 +7467,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "#PWR01203")
+					(reference "#PWR130006")
 					(unit 1)
 				)
 			)
@@ -7484,7 +7484,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d56c4f1e-ff8a-4a64-9d6e-6a969f3647ec")
-		(property "Reference" "#PWR01208"
+		(property "Reference" "#PWR130007"
 			(at 125.73 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -7541,7 +7541,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "#PWR01208")
+					(reference "#PWR130007")
 					(unit 1)
 				)
 			)
@@ -7558,7 +7558,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d796ffd1-46ba-4e21-a79a-7eb97d628f2a")
-		(property "Reference" "C1211"
+		(property "Reference" "C130011"
 			(at 118.11 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7677,7 +7677,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "C1211")
+					(reference "C130011")
 					(unit 1)
 				)
 			)
@@ -7694,7 +7694,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e88b6eb5-694f-45d8-bfca-e8169214a0ff")
-		(property "Reference" "#PWR01210"
+		(property "Reference" "#PWR130008"
 			(at 68.58 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -7751,7 +7751,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "#PWR01210")
+					(reference "#PWR130008")
 					(unit 1)
 				)
 			)
@@ -7768,7 +7768,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f04c19a8-d890-4b7b-ab69-6eae75cdfe4f")
-		(property "Reference" "C1205"
+		(property "Reference" "C130012"
 			(at 92.71 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7887,7 +7887,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "C1205")
+					(reference "C130012")
 					(unit 1)
 				)
 			)
@@ -7905,7 +7905,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f33d3065-b82d-4c3a-b8dc-a59d17f617c0")
-		(property "Reference" "#PWR01202"
+		(property "Reference" "#PWR130009"
 			(at 29.21 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -7962,7 +7962,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "#PWR01202")
+					(reference "#PWR130009")
 					(unit 1)
 				)
 			)
@@ -7979,7 +7979,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f73b7932-399b-4b16-a99b-ad8d4a7ed5e2")
-		(property "Reference" "#PWR01201"
+		(property "Reference" "#PWR130010"
 			(at 40.64 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -8036,7 +8036,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "#PWR01201")
+					(reference "#PWR130010")
 					(unit 1)
 				)
 			)
@@ -8053,7 +8053,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f7c383db-c349-469c-a02f-a09d1f774295")
-		(property "Reference" "R1207"
+		(property "Reference" "R130008"
 			(at 40.64 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8161,7 +8161,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6"
-					(reference "R1207")
+					(reference "R130008")
 					(unit 1)
 				)
 			)
@@ -8173,19 +8173,21 @@
 
 (global_label "CORE_SENSE_P" (shape input) (at 147.32 73.66 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "6ffd6bd9-4611-4d1d-b103-1d7e9c5d0d4a"))
 
-(symbol (lib_id "MIRA_RevA:R_ERJ1GNF1000C") (at 111.76 170.18 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "256e427b-340c-41af-a277-4bd416490d52")(property "Reference" "R1210" (at 111.76 163.83 0) (effects (font (size 1.016 1.016))))(property "Value" "100" (at 111.76 166.37 0) (effects (font (size 1.016 1.016))))(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30" (at 111.76 170.18 0) (effects (font (size 1.016 1.016)) (hide yes)))(property "Datasheet" "" (at 111.76 170.18 0) (effects (font (size 1.016 1.016)) (hide yes)))(property "MPN" "ERJ1GNF1000C" (at 111.76 170.18 0) (effects (font (size 1.016 1.016)) (hide yes)))(property "Manufacturer" "Panasonic" (at 111.76 170.18 0) (effects (font (size 1.016 1.016)) (hide yes)))(property "Description" "100 ohm local feedback fallback; open sense setpoint approx 1.012 V nominal" (at 111.76 170.18 0) (effects (font (size 1.016 1.016)) (hide yes)))(pin "1" (uuid "7bc0b42b-07ed-4d42-9d13-808490688657"))(pin "2" (uuid "c1ebc1ef-171b-45ce-8d4c-903aa54179bb"))(instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6" (reference "R1210") (unit 1)))))
+(symbol (lib_id "MIRA_RevA:R_ERJ1GNF1000C") (at 111.76 170.18 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "256e427b-340c-41af-a277-4bd416490d52")(property "Reference" "R130009" (at 111.76 163.83 0) (effects (font (size 1.016 1.016))))(property "Value" "100" (at 111.76 166.37 0) (effects (font (size 1.016 1.016))))(property "Footprint" "MIRA_RevA:R_0201_Panasonic_ERJ1G_Gap0.30" (at 111.76 170.18 0) (effects (font (size 1.016 1.016)) (hide yes)))(property "Datasheet" "" (at 111.76 170.18 0) (effects (font (size 1.016 1.016)) (hide yes)))(property "MPN" "ERJ1GNF1000C" (at 111.76 170.18 0) (effects (font (size 1.016 1.016)) (hide yes)))(property "Manufacturer" "Panasonic" (at 111.76 170.18 0) (effects (font (size 1.016 1.016)) (hide yes)))(property "Description" "100 ohm local feedback fallback; open sense setpoint approx 1.012 V nominal" (at 111.76 170.18 0) (effects (font (size 1.016 1.016)) (hide yes)))(pin "1" (uuid "7bc0b42b-07ed-4d42-9d13-808490688657"))(pin "2" (uuid "c1ebc1ef-171b-45ce-8d4c-903aa54179bb"))(instances (project "MIRA_Power" (path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/5b06af46-1a6a-4c65-b5c8-c47041a827c6" (reference "R130009") (unit 1)))))
 (wire (pts (xy 106.68 170.18) (xy 99.06 170.18)) (stroke (width 0) (type default)) (uuid "1d5507d2-0fd8-49e9-83d0-d3e3840ff6ea"))
 (global_label "CORE_RAW" (shape input) (at 99.06 170.18 180) (effects (font (size 1.016 1.016)) (justify right)) (uuid "d7380bf6-4380-42a9-be93-671e5bc4e56a"))
 (wire (pts (xy 116.84 170.18) (xy 124.46 170.18)) (stroke (width 0) (type default)) (uuid "f0205f19-4e73-4feb-b8c0-f4f0410d3b84"))
 (global_label "CORE_SENSE_P" (shape input) (at 124.46 170.18 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "ec809b61-6ad0-47ab-8e88-1bf495594c54"))
 
-(text "Positive sense: J4902.17 -> J401.17 -> FPGA CORE decoupling. GND is not remotely sensed." (at 25.4 187.96 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "78a69a6f-2d17-4b00-88c1-330467f8bd9f"))
+(text "Positive sense: J270001.17 -> J80001.17 -> FPGA CORE decoupling. GND is not remotely sensed." (at 25.4 187.96 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "78a69a6f-2d17-4b00-88c1-330467f8bd9f"))
 
-(text "R1210 fallback: sense open -> local nominal 1.012 V. Validate loop response before PCB release." (at 25.4 196.85 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "38d82b3b-6551-4bed-9291-df1350a96c92"))
-
-
+(text "R130009 fallback: sense open -> local nominal 1.012 V. Validate loop response before PCB release." (at 25.4 196.85 0) (effects (font (size 1.016 1.016)) (justify left bottom)) (uuid "38d82b3b-6551-4bed-9291-df1350a96c92"))
 
 
 
 
+
+
+
+(title_block (title "FPGA Core 1 V") (rev "C-review") (company "MIRA"))
 )

@@ -5,7 +5,7 @@
 	(uuid "ccf83d0e-238c-472f-bad4-e005f7332b1d")
 	(paper "A3")
 	(title_block
-		(title "STM32 supply, clocks, reset and debug")
+		(title "MCU Power and Debug")
 		(date "2026-10-18")
 		(rev "B")
 		(company "MIRA")
@@ -4856,7 +4856,7 @@
 		)
 		(uuid "0fa2a1c9-4732-4ffc-b25b-631339c8b654")
 	)
-	(text "Y100 provides a 25 MHz external clock through the 33 ohm R101 to\nMCU_HSE_CLK. Y101 is the 32.768 kHz LSE crystal, with 12 pF load capacitors\nC130 and C131. These two clock networks have different purposes and must be\nconfigured accordingly in firmware."
+	(text "Y30002 provides a 25 MHz external clock through the 33 ohm R30002 to\nMCU_HSE_CLK. Y30001 is the 32.768 kHz LSE crystal, with 12 pF load capacitors\nC30020 and C30019. These two clock networks have different purposes and must be\nconfigured accordingly in firmware."
 		(exclude_from_sim no)
 		(at 315 102.239 0)
 		(effects
@@ -4893,7 +4893,7 @@
 		)
 		(uuid "2813c7bd-52b3-4249-8503-fa56a8deee1f")
 	)
-	(text "U100 is the STM32H745 host processor. SYS3V3 supplies VDD, VDDLDO, VBAT and\nthe shown USB supply pins. R100 is a 0 ohm link feeding MCU_VDDA for VDDA\nand VREF+. The separate MCU units on the other sheets belong to this same\nphysical package."
+	(text "U30001 is the STM32H745 host processor. SYS3V3 supplies VDD, VDDLDO, VBAT and\nthe shown USB supply pins. R30006 is a 0 ohm link feeding MCU_VDDA for VDDA\nand VREF+. The separate MCU units on the other sheets belong to this same\nphysical package."
 		(exclude_from_sim no)
 		(at 315 42.34 0)
 		(effects
@@ -4905,7 +4905,7 @@
 		)
 		(uuid "367c949c-bf17-44f2-a5c8-cdb6402f6986")
 	)
-	(text "The three VCAP pins share MCU_VCAP, with C119 and C120 providing two 2.2 uF\ncapacitors to ground. This net is the internal regulator reservoir, not an external\nsupply output. VDDSMPS, VFBSMPS and VSSSMPS are grounded; VLXSMPS is left\nopen in the drawn LDO supply configuration."
+	(text "The three VCAP pins share MCU_VCAP, with C30015 and C30021 providing two 2.2 uF\ncapacitors to ground. This net is the internal regulator reservoir, not an external\nsupply output. VDDSMPS, VFBSMPS and VSSSMPS are grounded; VLXSMPS is left\nopen in the drawn LDO supply configuration."
 		(exclude_from_sim no)
 		(at 315 62.306 0)
 		(effects
@@ -5058,7 +5058,7 @@
 		)
 		(uuid "cec3295f-616d-4f97-a5dc-6f284cb6d4da")
 	)
-	(text "R106 and C132 bias and filter HOST_RESET_N; SW100 pulls it low. R102 holds\nBOOT0 low, while J101 permits a high strap. J100 exposes SWD, SWO, reset and\nthe supply reference. R103 and R104 are 33 ohm series resistors in SWD.\nPC6 (pin 122) receives FPGA_DONE_MCU and PC7 (pin 123) receives\nFPGA_INIT_N_MCU through the SYS3V3-powered U901 return buffer."
+	(text "R30004 and C30029 bias and filter HOST_RESET_N; SW30001 pulls it low. R30001 holds\nBOOT0 low, while J30002 permits a high strap. J30001 exposes SWD, SWO, reset and\nthe supply reference. R30007 and R30005 are 33 ohm series resistors in SWD.\nPC6 (pin 122) receives FPGA_DONE_MCU and PC7 (pin 123) receives\nFPGA_INIT_N_MCU through the SYS3V3-powered U150003 return buffer."
 		(exclude_from_sim no)
 		(at 315 122.205 0)
 		(effects
@@ -8654,7 +8654,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02d295a3-f380-4d68-89e1-b12a9522acae")
-		(property "Reference" "#PWR5"
+		(property "Reference" "#PWR30001"
 			(at 22.86 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -8715,7 +8715,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR5")
+					(reference "#PWR30001")
 					(unit 1)
 				)
 			)
@@ -8733,7 +8733,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b095335-d1be-44be-9e92-61a58aeb502b")
-		(property "Reference" "#PWR6"
+		(property "Reference" "#PWR30002"
 			(at 99.06 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -8794,7 +8794,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR6")
+					(reference "#PWR30002")
 					(unit 1)
 				)
 			)
@@ -8811,7 +8811,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b3f04dd-872b-4fe4-9fbc-c834acfc9988")
-		(property "Reference" "C106"
+		(property "Reference" "C30001"
 			(at 69.85 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8886,7 +8886,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 71\nVDD"
+		(property "Pin assignment" "U30001 pin 71\nVDD"
 			(at 67.31 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8905,7 +8905,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C106")
+					(reference "C30001")
 					(unit 1)
 				)
 			)
@@ -8923,7 +8923,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d1a87c0-b96e-43cc-9625-5fa6359d295c")
-		(property "Reference" "#PWR9"
+		(property "Reference" "#PWR30003"
 			(at 157.48 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -8984,7 +8984,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR9")
+					(reference "#PWR30003")
 					(unit 1)
 				)
 			)
@@ -9001,7 +9001,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2078a248-df0d-44fc-a7ea-57a177eb0267")
-		(property "Reference" "C100"
+		(property "Reference" "C30002"
 			(at 31.75 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9076,7 +9076,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 7\nVDD"
+		(property "Pin assignment" "U30001 pin 7\nVDD"
 			(at 29.21 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9095,7 +9095,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C100")
+					(reference "C30002")
 					(unit 1)
 				)
 			)
@@ -9112,7 +9112,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "22ff7537-f07f-4dfe-b4a2-454eaad91a3b")
-		(property "Reference" "C102"
+		(property "Reference" "C30003"
 			(at 44.45 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9187,7 +9187,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 25\nVDD"
+		(property "Pin assignment" "U30001 pin 25\nVDD"
 			(at 41.91 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9206,7 +9206,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C102")
+					(reference "C30003")
 					(unit 1)
 				)
 			)
@@ -9223,7 +9223,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "276b289e-02ba-42bf-8140-cca3267b8143")
-		(property "Reference" "R102"
+		(property "Reference" "R30001"
 			(at 165.29 182.95 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9298,7 +9298,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 167"
+		(property "Pin assignment" "U30001 pin 167"
 			(at 158.75 181.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9317,7 +9317,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "R102")
+					(reference "R30001")
 					(unit 1)
 				)
 			)
@@ -9334,7 +9334,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "29077c95-df30-4286-a503-967ade675498")
-		(property "Reference" "C118"
+		(property "Reference" "C30004"
 			(at 46.01 174.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9409,7 +9409,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pins 82,135,175\nVDDLDO bulk"
+		(property "Pin assignment" "U30001 pins 82,135,175\nVDDLDO bulk"
 			(at 41.91 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9428,7 +9428,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C118")
+					(reference "C30004")
 					(unit 1)
 				)
 			)
@@ -9445,7 +9445,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2a09d98c-0f74-4c9b-9cdf-4fd090611fcb")
-		(property "Reference" "U100"
+		(property "Reference" "U30001"
 			(at 224.79 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10051,7 +10051,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "U100")
+					(reference "U30001")
 					(unit 4)
 				)
 			)
@@ -10068,7 +10068,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2cf11938-8a1b-4f47-ac4b-828820dccfe1")
-		(property "Reference" "C124"
+		(property "Reference" "C30005"
 			(at 134.91 106.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10143,7 +10143,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 40\nVDDA"
+		(property "Pin assignment" "U30001 pin 40\nVDDA"
 			(at 133.81 117.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10162,7 +10162,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C124")
+					(reference "C30005")
 					(unit 1)
 				)
 			)
@@ -10180,7 +10180,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "318c6687-390f-4134-a990-e5fa29efa6c7")
-		(property "Reference" "#PWR1"
+		(property "Reference" "#PWR30004"
 			(at 22.86 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -10241,7 +10241,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR1")
+					(reference "#PWR30004")
 					(unit 1)
 				)
 			)
@@ -10258,7 +10258,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "34ca2442-0638-43e9-8b46-08e6c04f5cfe")
-		(property "Reference" "C121"
+		(property "Reference" "C30006"
 			(at 77.76 106.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10333,7 +10333,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 39\nVREF+"
+		(property "Pin assignment" "U30001 pin 39\nVREF+"
 			(at 76.66 117.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10352,7 +10352,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C121")
+					(reference "C30006")
 					(unit 1)
 				)
 			)
@@ -10369,7 +10369,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "376775b7-a5cd-4228-8641-10fd33034e0d")
-		(property "Reference" "R101"
+		(property "Reference" "R30002"
 			(at 195.58 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10444,7 +10444,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 31 / HSE"
+		(property "Pin assignment" "U30001 pin 31 / HSE"
 			(at 203.2 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -10464,7 +10464,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "R101")
+					(reference "R30002")
 					(unit 1)
 				)
 			)
@@ -10481,7 +10481,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3c2a1e92-34ca-46bd-bf1d-ed755b52aaad")
-		(property "Reference" "R105"
+		(property "Reference" "R30003"
 			(at 269.24 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10556,7 +10556,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 138"
+		(property "Pin assignment" "U30001 pin 138"
 			(at 256.54 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10576,7 +10576,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "R105")
+					(reference "R30003")
 					(unit 1)
 				)
 			)
@@ -10593,7 +10593,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d5770bb-45af-4907-a149-1d87d59837da")
-		(property "Reference" "C113"
+		(property "Reference" "C30007"
 			(at 114.3 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10668,7 +10668,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 136\nVDD"
+		(property "Pin assignment" "U30001 pin 136\nVDD"
 			(at 111.76 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10687,7 +10687,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C113")
+					(reference "C30007")
 					(unit 1)
 				)
 			)
@@ -10705,7 +10705,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e389eb0-d4ef-46d6-b44b-56a59d8c3f59")
-		(property "Reference" "#PWR3"
+		(property "Reference" "#PWR30005"
 			(at 111.76 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -10766,7 +10766,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR3")
+					(reference "#PWR30005")
 					(unit 1)
 				)
 			)
@@ -10783,7 +10783,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "41b3bba3-a89d-4c95-b348-c4ee38d7cc98")
-		(property "Reference" "C105"
+		(property "Reference" "C30008"
 			(at 63.5 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10858,7 +10858,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 65\nVDD"
+		(property "Pin assignment" "U30001 pin 65\nVDD"
 			(at 60.96 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10877,7 +10877,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C105")
+					(reference "C30008")
 					(unit 1)
 				)
 			)
@@ -10894,7 +10894,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "456c5511-7e0d-4dd2-b5cf-4b3cf1727a19")
-		(property "Reference" "C129"
+		(property "Reference" "C30009"
 			(at 161.29 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10969,7 +10969,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "Y100 pin 4\nVDD"
+		(property "Pin assignment" "Y30002 pin 4\nVDD"
 			(at 166.83 119.62 0)
 			(hide yes)
 			(show_name no)
@@ -10989,7 +10989,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C129")
+					(reference "C30009")
 					(unit 1)
 				)
 			)
@@ -11006,7 +11006,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "45bb05ea-c3f5-4374-8e7a-d685bb8536c2")
-		(property "Reference" "#PWR13"
+		(property "Reference" "#PWR30006"
 			(at 161.29 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -11066,7 +11066,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR13")
+					(reference "#PWR30006")
 					(unit 1)
 				)
 			)
@@ -11083,7 +11083,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a3f3114-053c-4ba1-ac5a-2260f74db627")
-		(property "Reference" "C111"
+		(property "Reference" "C30010"
 			(at 101.6 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11158,7 +11158,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 113\nVDD"
+		(property "Pin assignment" "U30001 pin 113\nVDD"
 			(at 99.06 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11177,7 +11177,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C111")
+					(reference "C30010")
 					(unit 1)
 				)
 			)
@@ -11194,7 +11194,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5fe2198c-4f28-46d9-ae54-c58694cbfd57")
-		(property "Reference" "#FLG100"
+		(property "Reference" "#FLG30001"
 			(at 50.8 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -11298,7 +11298,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#FLG100")
+					(reference "#FLG30001")
 					(unit 1)
 				)
 			)
@@ -11315,7 +11315,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "656ad5b9-09b7-4f45-99a4-93ab030446a6")
-		(property "Reference" "#PWR14"
+		(property "Reference" "#PWR30007"
 			(at 236.22 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -11375,7 +11375,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR14")
+					(reference "#PWR30007")
 					(unit 1)
 				)
 			)
@@ -11392,7 +11392,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6b7a261a-1c55-4065-8d76-3fe1579ac139")
-		(property "Reference" "C110"
+		(property "Reference" "C30011"
 			(at 95.25 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11467,7 +11467,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 105\nVDD"
+		(property "Pin assignment" "U30001 pin 105\nVDD"
 			(at 92.71 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11486,7 +11486,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C110")
+					(reference "C30011")
 					(unit 1)
 				)
 			)
@@ -11503,7 +11503,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f14cb3d-9d4f-4ddd-87e9-cb7d01372eb2")
-		(property "Reference" "R106"
+		(property "Reference" "R30004"
 			(at 218.44 177.8 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11578,7 +11578,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 33"
+		(property "Pin assignment" "U30001 pin 33"
 			(at 224.79 172.72 90)
 			(hide yes)
 			(show_name no)
@@ -11598,7 +11598,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "R106")
+					(reference "R30004")
 					(unit 1)
 				)
 			)
@@ -11615,7 +11615,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7028f601-a48c-4a57-b842-37decda70d61")
-		(property "Reference" "C107"
+		(property "Reference" "C30012"
 			(at 76.2 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11690,7 +11690,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 84\nVDD"
+		(property "Pin assignment" "U30001 pin 84\nVDD"
 			(at 73.66 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11709,7 +11709,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C107")
+					(reference "C30012")
 					(unit 1)
 				)
 			)
@@ -11726,7 +11726,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "70a0aef7-4e14-4ac8-b408-6de8e208d8e5")
-		(property "Reference" "C112"
+		(property "Reference" "C30013"
 			(at 107.95 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11801,7 +11801,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 126\nVDD"
+		(property "Pin assignment" "U30001 pin 126\nVDD"
 			(at 105.41 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11820,7 +11820,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C112")
+					(reference "C30013")
 					(unit 1)
 				)
 			)
@@ -11838,7 +11838,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75ccf97c-138c-4558-a765-27060d47f05c")
-		(property "Reference" "#PWR8"
+		(property "Reference" "#PWR30008"
 			(at 121.92 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -11899,7 +11899,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR8")
+					(reference "#PWR30008")
 					(unit 1)
 				)
 			)
@@ -11916,7 +11916,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "795ec62f-39b6-44b0-852f-dce83271f560")
-		(property "Reference" "C101"
+		(property "Reference" "C30014"
 			(at 38.1 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11991,7 +11991,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 13\nVDD"
+		(property "Pin assignment" "U30001 pin 13\nVDD"
 			(at 35.56 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12010,7 +12010,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C101")
+					(reference "C30014")
 					(unit 1)
 				)
 			)
@@ -12027,7 +12027,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7965de6b-9542-41fa-af73-a88d2ad7c685")
-		(property "Reference" "#PWR17"
+		(property "Reference" "#PWR30009"
 			(at 265.43 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -12087,7 +12087,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR17")
+					(reference "#PWR30009")
 					(unit 1)
 				)
 			)
@@ -12104,7 +12104,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c3d6c99-55c9-4709-84e3-10d2235e5a4f")
-		(property "Reference" "C119"
+		(property "Reference" "C30015"
 			(at 33.31 106.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12179,7 +12179,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 80\nVCAP"
+		(property "Pin assignment" "U30001 pin 80\nVCAP"
 			(at 32.21 117.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12198,7 +12198,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C119")
+					(reference "C30015")
 					(unit 1)
 				)
 			)
@@ -12215,7 +12215,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c50518c-1d7b-432e-8b18-5acb6716685c")
-		(property "Reference" "C122"
+		(property "Reference" "C30016"
 			(at 90.46 106.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12290,7 +12290,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 39\nVREF+"
+		(property "Pin assignment" "U30001 pin 39\nVREF+"
 			(at 89.36 117.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12309,7 +12309,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C122")
+					(reference "C30016")
 					(unit 1)
 				)
 			)
@@ -12326,7 +12326,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "804b1887-4767-4ed4-b757-6aba11a3f162")
-		(property "Reference" "C104"
+		(property "Reference" "C30017"
 			(at 57.15 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12401,7 +12401,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 48\nVDD"
+		(property "Pin assignment" "U30001 pin 48\nVDD"
 			(at 54.61 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12420,7 +12420,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C104")
+					(reference "C30017")
 					(unit 1)
 				)
 			)
@@ -12437,7 +12437,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "80997808-b20c-4a7c-b396-c7b0b73a7084")
-		(property "Reference" "C123"
+		(property "Reference" "C30018"
 			(at 122.21 106.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12512,7 +12512,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 40\nVDDA"
+		(property "Pin assignment" "U30001 pin 40\nVDDA"
 			(at 121.11 117.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12531,7 +12531,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C123")
+					(reference "C30018")
 					(unit 1)
 				)
 			)
@@ -12549,7 +12549,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8125828e-71d5-48f6-a88e-7255d39f98eb")
-		(property "Reference" "C131"
+		(property "Reference" "C30019"
 			(at 185.42 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12624,7 +12624,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 10\nLSE_IN / Y101 pin 1"
+		(property "Pin assignment" "U30001 pin 10\nLSE_IN / Y30001 pin 1"
 			(at 177.34 76.44 0)
 			(hide yes)
 			(show_name no)
@@ -12644,7 +12644,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C131")
+					(reference "C30019")
 					(unit 1)
 				)
 			)
@@ -12662,7 +12662,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8a25e2c9-8771-4d46-9bfe-42fb158baaf3")
-		(property "Reference" "C130"
+		(property "Reference" "C30020"
 			(at 185.42 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12737,7 +12737,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 10\nLSE_IN / Y101 pin 1"
+		(property "Pin assignment" "U30001 pin 10\nLSE_IN / Y30001 pin 1"
 			(at 183.34 36.59 0)
 			(hide yes)
 			(show_name no)
@@ -12757,7 +12757,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C130")
+					(reference "C30020")
 					(unit 1)
 				)
 			)
@@ -12774,7 +12774,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "94c1908e-f2e1-4d69-9841-8ddd1f6bffef")
-		(property "Reference" "J100"
+		(property "Reference" "J30001"
 			(at 241.3 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12882,7 +12882,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "J100")
+					(reference "J30001")
 					(unit 1)
 				)
 			)
@@ -12899,7 +12899,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "95ad76bc-b5b4-4128-9a86-3a9df7671ee8")
-		(property "Reference" "C120"
+		(property "Reference" "C30021"
 			(at 46.01 106.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12974,7 +12974,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pins 133,172\nVCAP group"
+		(property "Pin assignment" "U30001 pins 133,172\nVCAP group"
 			(at 44.91 117.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12993,7 +12993,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C120")
+					(reference "C30021")
 					(unit 1)
 				)
 			)
@@ -13010,7 +13010,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "981ca21f-55e1-431b-89af-4cb52b2a8305")
-		(property "Reference" "C109"
+		(property "Reference" "C30022"
 			(at 88.9 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13085,7 +13085,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 99\nVDD"
+		(property "Pin assignment" "U30001 pin 99\nVDD"
 			(at 86.36 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13104,7 +13104,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C109")
+					(reference "C30022")
 					(unit 1)
 				)
 			)
@@ -13121,7 +13121,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9aacc34b-2993-4e50-ab13-21f44c108fda")
-		(property "Reference" "C128"
+		(property "Reference" "C30023"
 			(at 134.91 174.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13196,7 +13196,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 121\nVDD33_USB"
+		(property "Pin assignment" "U30001 pin 121\nVDD33_USB"
 			(at 133.81 184.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13215,7 +13215,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C128")
+					(reference "C30023")
 					(unit 1)
 				)
 			)
@@ -13232,7 +13232,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a05ab1eb-276f-4c3c-aa71-316a0c5aad43")
-		(property "Reference" "#PWR16"
+		(property "Reference" "#PWR30010"
 			(at 53.34 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -13293,7 +13293,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR16")
+					(reference "#PWR30010")
 					(unit 1)
 				)
 			)
@@ -13310,7 +13310,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a13770bb-eb94-4e5b-9778-b34186da7c55")
-		(property "Reference" "#PWR7"
+		(property "Reference" "#PWR30011"
 			(at 53.34 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -13371,7 +13371,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR7")
+					(reference "#PWR30011")
 					(unit 1)
 				)
 			)
@@ -13388,7 +13388,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a5d8ea0c-0c8f-43d8-842c-24aa318e7f24")
-		(property "Reference" "R104"
+		(property "Reference" "R30005"
 			(at 278.13 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13463,7 +13463,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 138"
+		(property "Pin assignment" "U30001 pin 138"
 			(at 280.02 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -13483,7 +13483,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "R104")
+					(reference "R30005")
 					(unit 1)
 				)
 			)
@@ -13500,7 +13500,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a8ed87c1-93be-40a7-806d-a58dbb2cf386")
-		(property "Reference" "C117"
+		(property "Reference" "C30024"
 			(at 33.31 174.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13575,7 +13575,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 VDD\nBulk reservoir"
+		(property "Pin assignment" "U30001 VDD\nBulk reservoir"
 			(at 32.21 184.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13594,7 +13594,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C117")
+					(reference "C30024")
 					(unit 1)
 				)
 			)
@@ -13611,7 +13611,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa8724c6-a0c0-45f4-ab4b-9668975a806a")
-		(property "Reference" "C115"
+		(property "Reference" "C30025"
 			(at 127 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13686,7 +13686,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 160\nVDD"
+		(property "Pin assignment" "U30001 pin 160\nVDD"
 			(at 124.46 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13705,7 +13705,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C115")
+					(reference "C30025")
 					(unit 1)
 				)
 			)
@@ -13722,7 +13722,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ab7b73f4-9e9f-469e-bed2-0ea3c298c2bc")
-		(property "Reference" "Y101"
+		(property "Reference" "Y30001"
 			(at 184.15 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13807,7 +13807,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "Y101")
+					(reference "Y30001")
 					(unit 1)
 				)
 			)
@@ -13824,7 +13824,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad0ac8cd-f65a-47cf-a0be-733b3626cf9a")
-		(property "Reference" "#PWR15"
+		(property "Reference" "#PWR30012"
 			(at 222.25 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -13884,7 +13884,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR15")
+					(reference "#PWR30012")
 					(unit 1)
 				)
 			)
@@ -13901,7 +13901,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b3903a0e-5f6f-47c3-87aa-4f44705a6c2f")
-		(property "Reference" "C114"
+		(property "Reference" "C30026"
 			(at 120.65 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13976,7 +13976,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 152\nVDD"
+		(property "Pin assignment" "U30001 pin 152\nVDD"
 			(at 118.11 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13995,7 +13995,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C114")
+					(reference "C30026")
 					(unit 1)
 				)
 			)
@@ -14012,7 +14012,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b9b7b21e-0974-461f-a469-d6648447ccae")
-		(property "Reference" "C127"
+		(property "Reference" "C30027"
 			(at 122.21 174.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14087,7 +14087,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pins 120,121\nUSB supply"
+		(property "Pin assignment" "U30001 pins 120,121\nUSB supply"
 			(at 121.11 184.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14106,7 +14106,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C127")
+					(reference "C30027")
 					(unit 1)
 				)
 			)
@@ -14124,7 +14124,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bb8fab4c-2e84-49b4-9f6d-553d78be9521")
-		(property "Reference" "#PWR11"
+		(property "Reference" "#PWR30013"
 			(at 180.34 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -14184,7 +14184,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR11")
+					(reference "#PWR30013")
 					(unit 1)
 				)
 			)
@@ -14201,7 +14201,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bcb8bce7-7525-4f16-b30c-57b7cd63fd0e")
-		(property "Reference" "C125"
+		(property "Reference" "C30028"
 			(at 58.71 174.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14276,7 +14276,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pins 82,135,175\nVDDLDO bypass"
+		(property "Pin assignment" "U30001 pins 82,135,175\nVDDLDO bypass"
 			(at 54.61 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14295,7 +14295,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C125")
+					(reference "C30028")
 					(unit 1)
 				)
 			)
@@ -14312,7 +14312,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c1f12df5-6f46-411a-9690-69c8161ea1e2")
-		(property "Reference" "#PWR10"
+		(property "Reference" "#PWR30014"
 			(at 163.83 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -14372,7 +14372,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR10")
+					(reference "#PWR30014")
 					(unit 1)
 				)
 			)
@@ -14389,7 +14389,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c395ed2d-9b3f-41ea-969a-819bfe66bf40")
-		(property "Reference" "C132"
+		(property "Reference" "C30029"
 			(at 240.22 184.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14464,7 +14464,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 33"
+		(property "Pin assignment" "U30001 pin 33"
 			(at 241.3 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14483,7 +14483,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C132")
+					(reference "C30029")
 					(unit 1)
 				)
 			)
@@ -14501,7 +14501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c58015b1-3859-4cca-b786-43da596699cb")
-		(property "Reference" "#PWR4"
+		(property "Reference" "#PWR30015"
 			(at 22.86 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -14562,7 +14562,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR4")
+					(reference "#PWR30015")
 					(unit 1)
 				)
 			)
@@ -14580,7 +14580,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c73b666d-5bd3-4218-a438-40dd489410a8")
-		(property "Reference" "#PWR2"
+		(property "Reference" "#PWR30016"
 			(at 67.31 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -14641,7 +14641,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR2")
+					(reference "#PWR30016")
 					(unit 1)
 				)
 			)
@@ -14658,7 +14658,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ccf07b40-9041-4824-a71f-f7bb9924a704")
-		(property "Reference" "J101"
+		(property "Reference" "J30002"
 			(at 181.61 183.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14742,7 +14742,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "J101")
+					(reference "J30002")
 					(unit 1)
 				)
 			)
@@ -14759,7 +14759,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d1db2bd4-3749-4ad1-b323-b03ea0966116")
-		(property "Reference" "C126"
+		(property "Reference" "C30030"
 			(at 109.51 174.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14834,7 +14834,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 8\nVBAT"
+		(property "Pin assignment" "U30001 pin 8\nVBAT"
 			(at 108.41 184.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14853,7 +14853,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C126")
+					(reference "C30030")
 					(unit 1)
 				)
 			)
@@ -14870,7 +14870,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "debc3133-67fb-4063-a88f-10bdbbc090ea")
-		(property "Reference" "R100"
+		(property "Reference" "R30006"
 			(at 49.53 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14954,7 +14954,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "R100")
+					(reference "R30006")
 					(unit 1)
 				)
 			)
@@ -14971,7 +14971,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e0bd328e-8426-4d0b-94af-689038bedc21")
-		(property "Reference" "R103"
+		(property "Reference" "R30007"
 			(at 255.27 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15046,7 +15046,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 132"
+		(property "Pin assignment" "U30001 pin 132"
 			(at 262.89 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -15066,7 +15066,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "R103")
+					(reference "R30007")
 					(unit 1)
 				)
 			)
@@ -15084,7 +15084,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e35878e6-f22f-4891-a6b4-fb91f11c73eb")
-		(property "Reference" "#PWR12"
+		(property "Reference" "#PWR30017"
 			(at 180.34 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -15144,7 +15144,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "#PWR12")
+					(reference "#PWR30017")
 					(unit 1)
 				)
 			)
@@ -15161,7 +15161,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e708fedf-c083-4008-944c-79b541d16ed5")
-		(property "Reference" "C103"
+		(property "Reference" "C30031"
 			(at 50.8 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15236,7 +15236,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 44\nVDD"
+		(property "Pin assignment" "U30001 pin 44\nVDD"
 			(at 48.26 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15255,7 +15255,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C103")
+					(reference "C30031")
 					(unit 1)
 				)
 			)
@@ -15272,7 +15272,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e81a8598-5a8b-4a8d-b21f-c0f931678b99")
-		(property "Reference" "U100"
+		(property "Reference" "U30001"
 			(at 67.31 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15878,7 +15878,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "U100")
+					(reference "U30001")
 					(unit 1)
 				)
 			)
@@ -15895,7 +15895,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eabac4a7-9849-41f3-9d39-b9ef0faca264")
-		(property "Reference" "SW100"
+		(property "Reference" "SW30001"
 			(at 245.11 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15979,7 +15979,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "SW100")
+					(reference "SW30001")
 					(unit 1)
 				)
 			)
@@ -15996,7 +15996,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eb349bd6-b228-42ea-91aa-73eb0510e6b4")
-		(property "Reference" "C108"
+		(property "Reference" "C30032"
 			(at 82.55 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16071,7 +16071,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 92\nVDD"
+		(property "Pin assignment" "U30001 pin 92\nVDD"
 			(at 80.01 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16090,7 +16090,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C108")
+					(reference "C30032")
 					(unit 1)
 				)
 			)
@@ -16107,7 +16107,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ebd595a5-e92c-4b64-8bd5-db430521add3")
-		(property "Reference" "C116"
+		(property "Reference" "C30033"
 			(at 133.35 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16182,7 +16182,7 @@
 				)
 			)
 		)
-		(property "Pin assignment" "U100 pin 176\nVDD"
+		(property "Pin assignment" "U30001 pin 176\nVDD"
 			(at 130.81 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16201,7 +16201,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "C116")
+					(reference "C30033")
 					(unit 1)
 				)
 			)
@@ -16218,7 +16218,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f3580a5a-d5b3-4f86-8605-bf5c236567f9")
-		(property "Reference" "U100"
+		(property "Reference" "U30001"
 			(at 189.23 242.57 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16824,7 +16824,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "U100")
+					(reference "U30001")
 					(unit 5)
 				)
 			)
@@ -16841,7 +16841,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fc2165bc-dd42-44bd-84df-2ebe15aff5f4")
-		(property "Reference" "Y100"
+		(property "Reference" "Y30002"
 			(at 168.91 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16931,7 +16931,7 @@
 		(instances
 			(project "MIRA_Control"
 				(path "/ad010b50-c509-466c-b833-d1667dfb0702/d0e7db08-6b76-44c1-8f66-e5b45a7321d5/ef73b321-fdc6-4643-b13d-184374a26533"
-					(reference "Y100")
+					(reference "Y30002")
 					(unit 1)
 				)
 			)

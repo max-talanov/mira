@@ -2343,7 +2343,7 @@
 		)
 		(uuid "09c028ee-4676-4d1f-8249-5e9f4ffb2721")
 	)
-	(text "FPGA5V5 -> IO18_RAW; L1701 + C1704 filter the output.\nVOS and feedback sense RAW before R1705."
+	(text "FPGA5V5 -> IO18_RAW; L180001 + C180002 filter the output.\nVOS and feedback sense RAW before R180006."
 		(exclude_from_sim no)
 		(at 22 81.2 0)
 		(effects
@@ -2370,7 +2370,7 @@
 		)
 		(uuid "19f5fb93-7aed-4832-b549-6320709e5500")
 	)
-	(text "1700_IO_1V8"
+	(text "I-O 1.8 V"
 		(exclude_from_sim no)
 		(at 20.32 19.05 0)
 		(effects
@@ -2383,7 +2383,7 @@
 		)
 		(uuid "288696ba-fdd7-4eba-b510-39e30f648131")
 	)
-	(text "CMD_IO18 drives Q1701; R1701 pulls EN low."
+	(text "CMD_IO18 drives Q180001; R180005 pulls EN low."
 		(exclude_from_sim no)
 		(at 22 31.2 0)
 		(effects
@@ -2396,7 +2396,7 @@
 		)
 		(uuid "2e04226a-2d6a-41e3-83b0-93ea35b73ecb")
 	)
-	(text "R1703 (20 kOhm) and R1704 (16 kOhm) set the RAW voltage:\nV(IO18_RAW)=0.8 V x (1+R1703/R1704) = 1.8 V.\nTo change it: R1703 = R1704 x (VRAW / 0.8 V - 1). Increasing R1703 raises the\nvoltage. DEF is grounded; the +5% margin is disabled."
+	(text "R180002 (20 kOhm) and R180001 (16 kOhm) set the RAW voltage:\nV(IO18_RAW)=0.8 V x (1+R180002/R180001) = 1.8 V.\nTo change it: R180002 = R180001 x (VRAW / 0.8 V - 1). Increasing R180002 raises the\nvoltage. DEF is grounded; the +5% margin is disabled."
 		(exclude_from_sim no)
 		(at 156.21 116 0)
 		(effects
@@ -2451,7 +2451,7 @@
 		)
 		(uuid "8167a9a1-daf9-4b00-b06a-8348372fc364")
 	)
-	(text "R1705 (0.02 Ohm) drops 20 mV/A outside feedback. At 3 A, IO1V8 is about\n1.740 V. R1706 (10 kOhm) bleeds the output. PGR_IO18 is open drain, pulled to\nAON by R1702 (10 kOhm); use its RAW status only with FPGA5V5 present. The IC\nsupports up to 3 A, subject to thermal and shared-input limits. Current and\nthermal protection are internal."
+	(text "R180006 (0.02 Ohm) drops 20 mV/A outside feedback. At 3 A, IO1V8 is about\n1.740 V. R180003 (10 kOhm) bleeds the output. PGR_IO18 is open drain, pulled to\nAON by R180004 (10 kOhm); use its RAW status only with FPGA5V5 present. The IC\nsupports up to 3 A, subject to thermal and shared-input limits. Current and\nthermal protection are internal."
 		(exclude_from_sim no)
 		(at 156.21 141 0)
 		(effects
@@ -2464,7 +2464,7 @@
 		)
 		(uuid "91ecbede-1c4a-428f-aad2-598b44399fbe")
 	)
-	(text "SHEET GUIDE / 1700_IO_1V8"
+	(text "SHEET GUIDE / I-O 1.8 V"
 		(exclude_from_sim no)
 		(at 156.21 19.24 0)
 		(effects
@@ -2519,7 +2519,7 @@
 		)
 		(uuid "cf4acee7-d346-4bd0-a1b6-0df6456cfd2d")
 	)
-	(text "L1701 and C1704 filter the output. Verify the control mode, transient\nresponse and effective capacitance at the new 1.8 V setpoint."
+	(text "L180001 and C180002 filter the output. Verify the control mode, transient\nresponse and effective capacitance at the new 1.8 V setpoint."
 		(exclude_from_sim no)
 		(at 156.21 90.5 0)
 		(effects
@@ -2573,7 +2573,7 @@
 		)
 		(uuid "eac8f90e-5fc4-4929-b202-ed96a317e6a0")
 	)
-	(text "U1701 (TPS62130A) receives FPGA5V5 at AVIN and both PVIN pins. C1702 (10 uF)\nand C1703 (100 nF) bypass the input. CMD_IO18 drives Q1701; a high command\nenables EN_IO18. R1701 (100 kOhm) pulls EN low when Q1701 is off. FPGA5V5 must\nbe available first."
+	(text "U180001 (TPS62130A) receives FPGA5V5 at AVIN and both PVIN pins. C180004 (10 uF)\nand C180001 (100 nF) bypass the input. CMD_IO18 drives Q180001; a high command\nenables EN_IO18. R180005 (100 kOhm) pulls EN low when Q180001 is off. FPGA5V5 must\nbe available first."
 		(exclude_from_sim no)
 		(at 156.21 65.3 0)
 		(effects
@@ -3589,7 +3589,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "057d7f44-85e3-4f74-be6d-89c85a93d724")
-		(property "Reference" "#PWR01705"
+		(property "Reference" "#PWR180001"
 			(at 106.68 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -3646,7 +3646,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "#PWR01705")
+					(reference "#PWR180001")
 					(unit 1)
 				)
 			)
@@ -3664,7 +3664,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "235ef65e-d509-4945-aa01-40c31d3835c2")
-		(property "Reference" "C1703"
+		(property "Reference" "C180001"
 			(at 50.8 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3783,7 +3783,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "C1703")
+					(reference "C180001")
 					(unit 1)
 				)
 			)
@@ -3800,7 +3800,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2473567d-92cc-47fc-95db-19b37b98c249")
-		(property "Reference" "#PWR01704"
+		(property "Reference" "#PWR180002"
 			(at 46.99 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -3857,7 +3857,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "#PWR01704")
+					(reference "#PWR180002")
 					(unit 1)
 				)
 			)
@@ -3874,7 +3874,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e948ee6-21a3-4cb3-a28c-7b8fe0adea2f")
-		(property "Reference" "R1704"
+		(property "Reference" "R180001"
 			(at 119.38 142.24 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3982,7 +3982,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "R1704")
+					(reference "R180001")
 					(unit 1)
 				)
 			)
@@ -3999,7 +3999,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "44884dff-458d-4f63-b695-59ad52d5c2a3")
-		(property "Reference" "Q1701"
+		(property "Reference" "Q180001"
 			(at 50.8 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4086,7 +4086,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "Q1701")
+					(reference "Q180001")
 					(unit 1)
 				)
 			)
@@ -4103,7 +4103,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "44bd8707-de64-4fd9-97f7-09c6ccb4df8e")
-		(property "Reference" "C1704"
+		(property "Reference" "C180002"
 			(at 109.22 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4222,7 +4222,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "C1704")
+					(reference "C180002")
 					(unit 1)
 				)
 			)
@@ -4239,7 +4239,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "49731c11-fd0a-44e2-8986-7a5c13214dfc")
-		(property "Reference" "R1703"
+		(property "Reference" "R180002"
 			(at 119.38 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4347,7 +4347,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "R1703")
+					(reference "R180002")
 					(unit 1)
 				)
 			)
@@ -4364,7 +4364,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5bfcee04-a872-4f7d-adbe-0c1b1e015a8e")
-		(property "Reference" "R1706"
+		(property "Reference" "R180003"
 			(at 135.89 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4472,7 +4472,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "R1706")
+					(reference "R180003")
 					(unit 1)
 				)
 			)
@@ -4489,7 +4489,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6105fbcb-1310-4fbb-9d00-2411d4113c27")
-		(property "Reference" "C1701"
+		(property "Reference" "C180003"
 			(at 38.1 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4608,7 +4608,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "C1701")
+					(reference "C180003")
 					(unit 1)
 				)
 			)
@@ -4626,7 +4626,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "65891538-50d3-4675-97f9-365bb6f12e84")
-		(property "Reference" "C1702"
+		(property "Reference" "C180004"
 			(at 40.64 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4745,7 +4745,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "C1702")
+					(reference "C180004")
 					(unit 1)
 				)
 			)
@@ -4762,7 +4762,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9a944682-5359-4f11-a31d-d34d59c42d14")
-		(property "Reference" "#PWR01701"
+		(property "Reference" "#PWR180003"
 			(at 44.45 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -4819,7 +4819,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "#PWR01701")
+					(reference "#PWR180003")
 					(unit 1)
 				)
 			)
@@ -4836,7 +4836,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9ecad236-594e-45b0-a64b-d72c2aaf0578")
-		(property "Reference" "#PWR01702"
+		(property "Reference" "#PWR180004"
 			(at 25.4 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -4893,7 +4893,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "#PWR01702")
+					(reference "#PWR180004")
 					(unit 1)
 				)
 			)
@@ -4910,7 +4910,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b5d361a5-ced0-432a-8bf5-945200036196")
-		(property "Reference" "R1702"
+		(property "Reference" "R180004"
 			(at 91.44 138.43 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5018,7 +5018,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "R1702")
+					(reference "R180004")
 					(unit 1)
 				)
 			)
@@ -5035,7 +5035,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bbb0d46c-7603-4eb7-8201-d0ceb4466559")
-		(property "Reference" "L1701"
+		(property "Reference" "L180001"
 			(at 99.06 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5119,7 +5119,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "L1701")
+					(reference "L180001")
 					(unit 1)
 				)
 			)
@@ -5136,7 +5136,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bc135f61-e65c-41ab-9391-8e8b63b9ef96")
-		(property "Reference" "R1701"
+		(property "Reference" "R180005"
 			(at 45.72 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5244,7 +5244,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "R1701")
+					(reference "R180005")
 					(unit 1)
 				)
 			)
@@ -5262,7 +5262,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cb4e8c1b-28be-46b3-ad84-8f016cc45de8")
-		(property "Reference" "#PWR01703"
+		(property "Reference" "#PWR180005"
 			(at 33.02 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5319,7 +5319,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "#PWR01703")
+					(reference "#PWR180005")
 					(unit 1)
 				)
 			)
@@ -5336,7 +5336,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e01516bf-1143-42bc-b309-fe7c8bc14d73")
-		(property "Reference" "R1705"
+		(property "Reference" "R180006"
 			(at 125.73 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5464,7 +5464,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "R1705")
+					(reference "R180006")
 					(unit 1)
 				)
 			)
@@ -5481,7 +5481,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e809a6a0-25af-45a0-8436-1fe20f9fcdc9")
-		(property "Reference" "#PWR01707"
+		(property "Reference" "#PWR180006"
 			(at 134.62 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5538,7 +5538,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "#PWR01707")
+					(reference "#PWR180006")
 					(unit 1)
 				)
 			)
@@ -5555,7 +5555,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f49dafcb-800e-4be0-a2b2-b8e846562196")
-		(property "Reference" "#PWR01706"
+		(property "Reference" "#PWR180007"
 			(at 118.11 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -5612,7 +5612,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "#PWR01706")
+					(reference "#PWR180007")
 					(unit 1)
 				)
 			)
@@ -5629,7 +5629,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fbf4d8bd-3f9d-48bc-b87b-befafe0fb652")
-		(property "Reference" "U1701"
+		(property "Reference" "U180001"
 			(at 69.85 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5758,7 +5758,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323/66eb7541-46e7-491d-9b58-6fba2f149585"
-					(reference "U1701")
+					(reference "U180001")
 					(unit 1)
 				)
 			)
@@ -5770,4 +5770,6 @@
 
 
 
+
+(title_block (title "I-O 1.8 V") (rev "C-review") (company "MIRA"))
 )

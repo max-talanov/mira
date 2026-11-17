@@ -1135,7 +1135,7 @@
 		)
 		(uuid "26c2bcaf-d1b4-4dd0-84a2-b72be81d7947")
 	)
-	(text "R2301 (47 kOhm) and R2302 (10 kOhm) attenuate the positive rail. R2303 (10\nkOhm) limits ADC-node source current; C2301 (100 nF) filters PROG_V_P15.\nIncluding the divider resistance, tau is about 1.82 ms. This path monitors\nthe rail level and averages short programming pulses."
+	(text "R250003 (47 kOhm) and R250001 (10 kOhm) attenuate the positive rail. R250002 (10\nkOhm) limits ADC-node source current; C250001 (100 nF) filters PROG_V_P15.\nIncluding the divider resistance, tau is about 1.82 ms. This path monitors\nthe rail level and averages short programming pulses."
 		(exclude_from_sim no)
 		(at 156.21 90.5 0)
 		(effects
@@ -1148,7 +1148,7 @@
 		)
 		(uuid "22308b80-8904-4893-ae2a-d6efc2dc0427")
 	)
-	(text "SHEET GUIDE / 2300_PROGRAM_INTERFACE"
+	(text "SHEET GUIDE / Program Interface"
 		(exclude_from_sim no)
 		(at 156.21 19.24 0)
 		(effects
@@ -1175,7 +1175,7 @@
 		)
 		(uuid "2491872b-ccec-450e-9b1d-16ff65dcb567")
 	)
-	(text "The divider measures voltage; it does not set the programming rails.\nV(PROG_V_P15) = V(PROG_P15) x R2302 / (R2301 + R2302) = V(PROG_P15) / 5.7. A\n15 V positive output gives about 2.632 V. Update the ADC conversion scale if\neither divider value changes."
+	(text "The divider measures voltage; it does not set the programming rails.\nV(PROG_V_P15) = V(PROG_P15) x R250001 / (R250003 + R250001) = V(PROG_P15) / 5.7. A\n15 V positive output gives about 2.632 V. Update the ADC conversion scale if\neither divider value changes."
 		(exclude_from_sim no)
 		(at 156.21 116 0)
 		(effects
@@ -1256,7 +1256,7 @@
 		)
 		(uuid "4c652494-4485-4fd2-bd2d-15451408884a")
 	)
-	(text "D2301 (BAT54S) clamps PROG_V_P15 toward GND and AON: pin 1 = GND, pin 2 =\nAON, pin 3 = monitor node. The upper clamp can inject current into AON during\nfaults or power-off. Rail switching and power protection remain upstream;\nthis sheet measures only the positive output."
+	(text "D250001 (BAT54S) clamps PROG_V_P15 toward GND and AON: pin 1 = GND, pin 2 =\nAON, pin 3 = monitor node. The upper clamp can inject current into AON during\nfaults or power-off. Rail switching and power protection remain upstream;\nthis sheet measures only the positive output."
 		(exclude_from_sim no)
 		(at 156.21 141 0)
 		(effects
@@ -1296,7 +1296,7 @@
 		)
 		(uuid "83db5ebb-0181-4a3e-b97f-cf73a0409d9f")
 	)
-	(text "2300_PROGRAM_INTERFACE"
+	(text "Program Interface"
 		(exclude_from_sim no)
 		(at 20.32 19.05 0)
 		(effects
@@ -1337,7 +1337,7 @@
 		)
 		(uuid "c7111324-4348-4387-b390-ff2649cd7a52")
 	)
-	(text "PROG_P15 and PROG_N15 are generated and enabled on the upstream\nprogramming-switch sheets. This interface contains no local enable logic.\nJ2301 exports pin 1 = PROG_P15, pin 2 = GND, pin 3 = PROG_N15. The actual\nvoltage follows the upstream sources, switches and load."
+	(text "PROG_P15 and PROG_N15 are generated and enabled on the upstream\nprogramming-switch sheets. This interface contains no local enable logic.\nJ250001 exports pin 1 = PROG_P15, pin 2 = GND, pin 3 = PROG_N15. The actual\nvoltage follows the upstream sources, switches and load."
 		(exclude_from_sim no)
 		(at 156.21 65.3 0)
 		(effects
@@ -1364,7 +1364,7 @@
 		)
 		(uuid "f52b21eb-bec8-4cfa-bd06-585f34d6a4ed")
 	)
-	(text "This sheet brings MIRA's switched positive and negative programming rails to\nJ2301 and provides a scaled monitor of the positive output. It links the\nprogramming power switches to the matrix-drive hardware, allowing the power\ncontroller to check rail availability before a programming operation."
+	(text "This sheet brings MIRA's switched positive and negative programming rails to\nJ250001 and provides a scaled monitor of the positive output. It links the\nprogramming power switches to the matrix-drive hardware, allowing the power\ncontroller to check rail availability before a programming operation."
 		(exclude_from_sim no)
 		(at 156.21 45.44 0)
 		(effects
@@ -1723,7 +1723,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3097b92c-ca3f-465d-99ee-0f4ebed5bb6a")
-		(property "Reference" "R2302"
+		(property "Reference" "R250001"
 			(at 38.1 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1831,7 +1831,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/92066e9d-e19c-4a6f-82f8-9ea75b58d34c"
-					(reference "R2302")
+					(reference "R250001")
 					(unit 1)
 				)
 			)
@@ -1848,7 +1848,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "40efca65-2c52-496e-b655-b872e53fd36b")
-		(property "Reference" "R2303"
+		(property "Reference" "R250002"
 			(at 44.45 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1954,7 +1954,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/92066e9d-e19c-4a6f-82f8-9ea75b58d34c"
-					(reference "R2303")
+					(reference "R250002")
 					(unit 1)
 				)
 			)
@@ -1971,7 +1971,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77ce16b0-235a-47cf-9fdc-89a8c3aafced")
-		(property "Reference" "#PWR02302"
+		(property "Reference" "#PWR250001"
 			(at 105.41 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -2028,7 +2028,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/92066e9d-e19c-4a6f-82f8-9ea75b58d34c"
-					(reference "#PWR02302")
+					(reference "#PWR250001")
 					(unit 1)
 				)
 			)
@@ -2045,7 +2045,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7a8ca46c-36b8-4c73-a0a2-fe7b7f56e517")
-		(property "Reference" "#PWR02301"
+		(property "Reference" "#PWR250002"
 			(at 36.83 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -2102,7 +2102,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/92066e9d-e19c-4a6f-82f8-9ea75b58d34c"
-					(reference "#PWR02301")
+					(reference "#PWR250002")
 					(unit 1)
 				)
 			)
@@ -2120,7 +2120,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8c71ae1c-1faa-405a-a31f-6ffb9fc85854")
-		(property "Reference" "D2301"
+		(property "Reference" "D250001"
 			(at 67.31 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2209,7 +2209,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/92066e9d-e19c-4a6f-82f8-9ea75b58d34c"
-					(reference "D2301")
+					(reference "D250001")
 					(unit 1)
 				)
 			)
@@ -2226,7 +2226,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca40a5c4-b9d5-4998-9a59-c82ffcc8fe9a")
-		(property "Reference" "R2301"
+		(property "Reference" "R250003"
 			(at 38.1 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2334,7 +2334,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/92066e9d-e19c-4a6f-82f8-9ea75b58d34c"
-					(reference "R2301")
+					(reference "R250003")
 					(unit 1)
 				)
 			)
@@ -2351,7 +2351,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e943d5a8-3e16-4cab-82b6-bfced606d863")
-		(property "Reference" "C2301"
+		(property "Reference" "C250001"
 			(at 54.61 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2470,7 +2470,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/92066e9d-e19c-4a6f-82f8-9ea75b58d34c"
-					(reference "C2301")
+					(reference "C250001")
 					(unit 1)
 				)
 			)
@@ -2487,7 +2487,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f29ec338-8f4d-4cde-81d3-3586cfa72944")
-		(property "Reference" "J2301"
+		(property "Reference" "J250001"
 			(at 118.11 51.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2574,7 +2574,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654/92066e9d-e19c-4a6f-82f8-9ea75b58d34c"
-					(reference "J2301")
+					(reference "J250001")
 					(unit 1)
 				)
 			)
@@ -2586,4 +2586,6 @@
 
 
 
+
+(title_block (title "Program Interface") (rev "C-review") (company "MIRA"))
 )

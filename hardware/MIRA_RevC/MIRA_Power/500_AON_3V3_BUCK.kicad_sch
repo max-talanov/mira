@@ -1822,7 +1822,7 @@
 		)
 		(uuid "d6cc408f-a9a8-4b6c-9a64-96d78958afc2")
 	)
-	(text "500_AON_3V3_BUCK"
+	(text "AON 3.3 V"
 		(exclude_from_sim no)
 		(at 20.32 19.05 0)
 		(effects
@@ -1905,7 +1905,7 @@
 		)
 		(uuid "4fd25a1c-7f8e-47e5-b500-5a5b280ace5c")
 	)
-	(text "U501 operates at 400 kHz with PFM at light load. L501 (33 uH) and C504/C505\n(47 uF each) filter AON_RAW. C502 (100 nF) is the CB-to-SW bootstrap\ncapacitor."
+	(text "U50001 operates at 400 kHz with PFM at light load. L50001 (33 uH) and C50004/C50005\n(47 uF each) filter AON_RAW. C50001 (100 nF) is the CB-to-SW bootstrap\ncapacitor."
 		(exclude_from_sim no)
 		(at 156.21 90.5 0)
 		(effects
@@ -1918,7 +1918,7 @@
 		)
 		(uuid "5049b33d-16a9-4a19-ba02-43a52c0847c5")
 	)
-	(text "R503 (0.1 Ohm) causes a 100 mV/A drop: AON is about 3.18 V at 1 A. Feedback\nis before the shunt. U501 is a 1 A IC with internal current, short-circuit\nand thermal protection. D501 indicates rail presence; R503 does not set the\ncurrent limit."
+	(text "R50003 (0.1 Ohm) causes a 100 mV/A drop: AON is about 3.18 V at 1 A. Feedback\nis before the shunt. U50001 is a 1 A IC with internal current, short-circuit\nand thermal protection. D50001 indicates rail presence; R50003 does not set the\ncurrent limit."
 		(exclude_from_sim no)
 		(at 156.21 141 0)
 		(effects
@@ -1945,7 +1945,7 @@
 		)
 		(uuid "77e148d7-51c7-4308-8f1b-4cf28e9a066d")
 	)
-	(text "R501/R502: 3.28 V before R503.\nR503 causes a 100 mV/A drop."
+	(text "R50001/R50004: 3.28 V before R50003.\nR50003 causes a 100 mV/A drop."
 		(exclude_from_sim no)
 		(at 88 66.2 0)
 		(effects
@@ -1958,7 +1958,7 @@
 		)
 		(uuid "940260d4-af74-4e96-9548-cba3c3fb827d")
 	)
-	(text "BUS24 feeds U501 (LMR51610XDBVR) VIN and EN directly. No separate enable\ncommand is required. C501 (100 nF) and C503 (4.7 uF) bypass the input."
+	(text "BUS24 feeds U50001 (LMR51610XDBVR) VIN and EN directly. No separate enable\ncommand is required. C50003 (100 nF) and C50002 (4.7 uF) bypass the input."
 		(exclude_from_sim no)
 		(at 156.21 65.3 0)
 		(effects
@@ -1971,7 +1971,7 @@
 		)
 		(uuid "945321a2-13e9-4d91-9776-6f627e49640c")
 	)
-	(text "Starts automatically while BUS24 is present.\nU501 operates at 400 kHz; PFM at light load."
+	(text "Starts automatically while BUS24 is present.\nU50001 operates at 400 kHz; PFM at light load."
 		(exclude_from_sim no)
 		(at 23 34.2 0)
 		(effects
@@ -1984,7 +1984,7 @@
 		)
 		(uuid "99241a34-e520-42bd-989a-028ff592dae7")
 	)
-	(text "R501 (62 kOhm) and R502 (20 kOhm) set AON_RAW:\nVRAW = 0.8 V x (1 + R501/R502) = 3.28 V.\nTo change the voltage: R501 = R502 x (VRAW/0.8 V - 1). Increasing the upper\nresistor raises VRAW."
+	(text "R50001 (62 kOhm) and R50004 (20 kOhm) set AON_RAW:\nVRAW = 0.8 V x (1 + R50001/R50004) = 3.28 V.\nTo change the voltage: R50001 = R50004 x (VRAW/0.8 V - 1). Increasing the upper\nresistor raises VRAW."
 		(exclude_from_sim no)
 		(at 156.21 116 0)
 		(effects
@@ -2025,7 +2025,7 @@
 		)
 		(uuid "ca4b65fe-6b8b-4aa8-827e-76c8502f202d")
 	)
-	(text "SHEET GUIDE / 500_AON_3V3_BUCK"
+	(text "SHEET GUIDE / AON 3.3 V"
 		(exclude_from_sim no)
 		(at 156.21 19.24 0)
 		(effects
@@ -2679,7 +2679,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0530e665-5f3e-45e8-8bfe-fe3f13d0e497")
-		(property "Reference" "R501"
+		(property "Reference" "R50001"
 			(at 125.73 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2751,7 +2751,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "R501")
+					(reference "R50001")
 					(unit 1)
 				)
 			)
@@ -2769,7 +2769,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d8bcb10-60f6-4136-bb1d-0224b2d90e5d")
-		(property "Reference" "#PWR0501"
+		(property "Reference" "#PWR50001"
 			(at 21.59 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -2830,7 +2830,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "#PWR0501")
+					(reference "#PWR50001")
 					(unit 1)
 				)
 			)
@@ -2847,7 +2847,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "16f811f4-392c-4018-b8af-c5576bfdd7cd")
-		(property "Reference" "C502"
+		(property "Reference" "C50001"
 			(at 82.55 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2919,7 +2919,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "C502")
+					(reference "C50001")
 					(unit 1)
 				)
 			)
@@ -2936,7 +2936,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2155d783-84f7-47c7-bd6f-162b09910c81")
-		(property "Reference" "C503"
+		(property "Reference" "C50002"
 			(at 88.9 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3008,7 +3008,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "C503")
+					(reference "C50002")
 					(unit 1)
 				)
 			)
@@ -3025,7 +3025,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "307a6d6f-329d-4171-9cd2-ccd384e2f06c")
-		(property "Reference" "R504"
+		(property "Reference" "R50002"
 			(at 141.605 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3111,7 +3111,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "R504")
+					(reference "R50002")
 					(unit 1)
 				)
 			)
@@ -3128,7 +3128,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "34219991-9a5a-4b07-b22c-71f8a44b5432")
-		(property "Reference" "R503"
+		(property "Reference" "R50003"
 			(at 130.81 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3200,7 +3200,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "R503")
+					(reference "R50003")
 					(unit 1)
 				)
 			)
@@ -3218,7 +3218,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50df3926-2079-4bd8-b7dd-e3af0151b6f5")
-		(property "Reference" "#PWR0504"
+		(property "Reference" "#PWR50002"
 			(at 105.41 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -3278,7 +3278,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "#PWR0504")
+					(reference "#PWR50002")
 					(unit 1)
 				)
 			)
@@ -3296,7 +3296,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "58f46715-f404-4366-b0ea-182e8f1b43e2")
-		(property "Reference" "D501"
+		(property "Reference" "D50001"
 			(at 132.08 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3391,7 +3391,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "D501")
+					(reference "D50001")
 					(unit 1)
 				)
 			)
@@ -3408,7 +3408,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5af7320f-5ff0-410b-876c-6f1fdfa0c373")
-		(property "Reference" "C501"
+		(property "Reference" "C50003"
 			(at 78.74 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3480,7 +3480,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "C501")
+					(reference "C50003")
 					(unit 1)
 				)
 			)
@@ -3497,7 +3497,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7128bd69-1ad5-42ac-ac3f-18be7a14ad74")
-		(property "Reference" "R502"
+		(property "Reference" "R50004"
 			(at 125.84 120.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3569,7 +3569,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "R502")
+					(reference "R50004")
 					(unit 1)
 				)
 			)
@@ -3586,7 +3586,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "755893f1-adf5-41ae-ae46-de85224680f1")
-		(property "Reference" "L501"
+		(property "Reference" "L50001"
 			(at 85.09 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3658,7 +3658,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "L501")
+					(reference "L50001")
 					(unit 1)
 				)
 			)
@@ -3675,7 +3675,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "79ac97f9-b8b3-44b0-ac96-4d8ec3cf7940")
-		(property "Reference" "C504"
+		(property "Reference" "C50004"
 			(at 99.06 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3747,7 +3747,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "C504")
+					(reference "C50004")
 					(unit 1)
 				)
 			)
@@ -3764,7 +3764,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8dc5fda4-7f97-4ca3-a981-88d21eb6cc8a")
-		(property "Reference" "C505"
+		(property "Reference" "C50005"
 			(at 110.49 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3836,7 +3836,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "C505")
+					(reference "C50005")
 					(unit 1)
 				)
 			)
@@ -3854,7 +3854,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c2c3a64-cb73-4634-859c-e69ebea6eb6a")
-		(property "Reference" "#PWR0506"
+		(property "Reference" "#PWR50003"
 			(at 138.43 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -3914,7 +3914,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "#PWR0506")
+					(reference "#PWR50003")
 					(unit 1)
 				)
 			)
@@ -3932,7 +3932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca905a3d-52ee-4201-9cb6-485198527e6f")
-		(property "Reference" "#PWR0503"
+		(property "Reference" "#PWR50004"
 			(at 93.98 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -3992,7 +3992,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "#PWR0503")
+					(reference "#PWR50004")
 					(unit 1)
 				)
 			)
@@ -4010,7 +4010,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dce87d2d-6469-4c74-8f3a-7f21be74e845")
-		(property "Reference" "#PWR0502"
+		(property "Reference" "#PWR50005"
 			(at 83.82 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4070,7 +4070,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "#PWR0502")
+					(reference "#PWR50005")
 					(unit 1)
 				)
 			)
@@ -4088,7 +4088,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5d4ee95-5ba2-4d8d-9181-a56cd0a3f5ec")
-		(property "Reference" "#PWR0505"
+		(property "Reference" "#PWR50006"
 			(at 121.92 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -4148,7 +4148,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "#PWR0505")
+					(reference "#PWR50006")
 					(unit 1)
 				)
 			)
@@ -4165,7 +4165,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ec21c066-a544-4e29-979b-eb3bf1ad5e75")
-		(property "Reference" "U501"
+		(property "Reference" "U50001"
 			(at 45.72 89.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4249,7 +4249,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/40768b7d-b2a0-4ee5-8ac3-d2e0081edf5f"
-					(reference "U501")
+					(reference "U50001")
 					(unit 1)
 				)
 			)
@@ -4261,4 +4261,6 @@
 
 
 
+
+(title_block (title "AON 3.3 V") (rev "C-review") (company "MIRA"))
 )

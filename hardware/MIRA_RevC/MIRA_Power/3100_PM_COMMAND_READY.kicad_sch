@@ -751,7 +751,7 @@
 		)
 		(uuid "21e237bd-a1ef-46da-ad83-a8ebcc17bc6e")
 	)
-	(text "U3101 combines USB/SYS/FPGA/ANA and P15/N15/CORE/AUX18 commands. U3102 combines\nAUX25/IO33/DDR/IO18 and VTT/ANA5/ANA33 commands. AON fixes the unused fourth\ngroup input HIGH. U3103 ANDs all four local groups; all fifteen commands must be\nHIGH."
+	(text "U440002 combines USB/SYS/FPGA/ANA and P15/N15/CORE/AUX18 commands. U440003 combines\nAUX25/IO33/DDR/IO18 and VTT/ANA5/ANA33 commands. AON fixes the unused fourth\ngroup input HIGH. U440001 ANDs all four local groups; all fifteen commands must be\nHIGH."
 		(exclude_from_sim no)
 		(at 156.21 91.16 0)
 		(effects
@@ -778,7 +778,7 @@
 		)
 		(uuid "283b49f3-2daf-41f8-840f-0fdf548f08da")
 	)
-	(text "The inputs are CMD_SYS, CMD_FPGA, CMD_ANA, CMD_P15, CMD_N15 and nine\nsecondary-rail CMD signals. ALL_COMMANDS_ON is active HIGH and feeds the permit\nlogic. U3101-U3103 use AON; C3101-C3103 provide 100 nF bypassing."
+	(text "The inputs are CMD_SYS, CMD_FPGA, CMD_ANA, CMD_P15, CMD_N15 and nine\nsecondary-rail CMD signals. ALL_COMMANDS_ON is active HIGH and feeds the permit\nlogic. U440002-U440001 use AON; C440002-C440001 provide 100 nF bypassing."
 		(exclude_from_sim no)
 		(at 156.21 68.3 0)
 		(effects
@@ -791,7 +791,7 @@
 		)
 		(uuid "284c7153-5236-4c30-8bd7-3addc0f3f51e")
 	)
-	(text "The circuit is a live, two-stage AND tree with Schmitt inputs. It contains no\nstartup delay or command memory. The unused U3103 gate inputs are tied to GND\nand its output is unconnected. Rail sequencing and the times between commands\nare set by the power controller."
+	(text "The circuit is a live, two-stage AND tree with Schmitt inputs. It contains no\nstartup delay or command memory. The unused U440001 gate inputs are tied to GND\nand its output is unconnected. Rail sequencing and the times between commands\nare set by the power controller."
 		(exclude_from_sim no)
 		(at 156.21 114.02 0)
 		(effects
@@ -872,7 +872,7 @@
 		)
 		(uuid "63aa852b-4c09-49f1-8a28-44c0b90037d7")
 	)
-	(text "3100_PM_COMMAND_READY"
+	(text "Command Ready"
 		(exclude_from_sim no)
 		(at 20.32 19.05 0)
 		(effects
@@ -912,7 +912,7 @@
 		)
 		(uuid "da9fc776-874c-4e83-ae87-b35fd6093276")
 	)
-	(text "SHEET GUIDE / 3100_PM_COMMAND_READY"
+	(text "SHEET GUIDE / Command Ready"
 		(exclude_from_sim no)
 		(at 156.21 19.24 0)
 		(effects
@@ -1831,7 +1831,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "179a074d-f850-43c3-bd35-b5a93ea59be1")
-		(property "Reference" "C3103"
+		(property "Reference" "C440001"
 			(at 121.92 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1948,7 +1948,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "C3103")
+					(reference "C440001")
 					(unit 1)
 				)
 			)
@@ -1965,7 +1965,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "275d166a-1421-4186-b994-b819b5a8f31b")
-		(property "Reference" "C3101"
+		(property "Reference" "C440002"
 			(at 69.85 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2082,7 +2082,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "C3101")
+					(reference "C440002")
 					(unit 1)
 				)
 			)
@@ -2099,7 +2099,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "286cbfae-1dc2-4bb1-8e7f-55efaccaec70")
-		(property "Reference" "#PWR03102"
+		(property "Reference" "#PWR440001"
 			(at 58.42 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -2156,7 +2156,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "#PWR03102")
+					(reference "#PWR440001")
 					(unit 1)
 				)
 			)
@@ -2173,7 +2173,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3cf628c0-7080-4c14-aff9-687d743baff2")
-		(property "Reference" "#PWR03103"
+		(property "Reference" "#PWR440002"
 			(at 72.39 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -2230,7 +2230,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "#PWR03103")
+					(reference "#PWR440002")
 					(unit 1)
 				)
 			)
@@ -2247,7 +2247,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "57d8e055-cc4f-43f1-98cd-dc7e74766d6e")
-		(property "Reference" "U3103"
+		(property "Reference" "U440001"
 			(at 110.49 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2378,7 +2378,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "U3103")
+					(reference "U440001")
 					(unit 1)
 				)
 			)
@@ -2395,7 +2395,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "69c24efa-bf0b-4a47-b65a-7768518080a0")
-		(property "Reference" "U3101"
+		(property "Reference" "U440002"
 			(at 58.42 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2526,7 +2526,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "U3101")
+					(reference "U440002")
 					(unit 1)
 				)
 			)
@@ -2543,7 +2543,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6b392653-b47e-479a-aa45-93253850fab7")
-		(property "Reference" "#PWR03107"
+		(property "Reference" "#PWR440003"
 			(at 124.46 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -2600,7 +2600,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "#PWR03107")
+					(reference "#PWR440003")
 					(unit 1)
 				)
 			)
@@ -2617,7 +2617,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6efb8452-c9c1-4b61-89f1-da4bd99fe156")
-		(property "Reference" "#PWR03104"
+		(property "Reference" "#PWR440004"
 			(at 72.39 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -2674,7 +2674,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "#PWR03104")
+					(reference "#PWR440004")
 					(unit 1)
 				)
 			)
@@ -2691,7 +2691,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "702d5d78-980a-4ce2-832c-919d19d568f9")
-		(property "Reference" "#PWR03101"
+		(property "Reference" "#PWR440005"
 			(at 58.42 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2748,7 +2748,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "#PWR03101")
+					(reference "#PWR440005")
 					(unit 1)
 				)
 			)
@@ -2765,7 +2765,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b30d58bd-7254-4d72-ac65-babf1f5997f7")
-		(property "Reference" "C3102"
+		(property "Reference" "C440003"
 			(at 69.85 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2882,7 +2882,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "C3102")
+					(reference "C440003")
 					(unit 1)
 				)
 			)
@@ -2899,7 +2899,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c0039b48-1666-41d4-860b-8fb012ed719c")
-		(property "Reference" "#PWR03106"
+		(property "Reference" "#PWR440006"
 			(at 110.49 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -2956,7 +2956,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "#PWR03106")
+					(reference "#PWR440006")
 					(unit 1)
 				)
 			)
@@ -2973,7 +2973,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eaf851e9-8970-4104-ad2e-d523ff5e7196")
-		(property "Reference" "#PWR03105"
+		(property "Reference" "#PWR440007"
 			(at 91.44 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -3030,7 +3030,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "#PWR03105")
+					(reference "#PWR440007")
 					(unit 1)
 				)
 			)
@@ -3047,7 +3047,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f40f1e5b-be02-4566-a436-733c57a85ea6")
-		(property "Reference" "U3102"
+		(property "Reference" "U440003"
 			(at 58.42 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3178,7 +3178,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/1ddd1680-ab79-442d-b4cf-1407afa6a6c0/f8b32888-4db7-4947-8448-3bb145a533f3"
-					(reference "U3102")
+					(reference "U440003")
 					(unit 1)
 				)
 			)
@@ -3190,4 +3190,6 @@
 
 
 
+
+(title_block (title "Command Ready") (rev "C-review") (company "MIRA"))
 )

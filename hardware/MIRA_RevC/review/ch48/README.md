@@ -46,7 +46,7 @@ kicad-cli sch erc --exit-code-violations -o /tmp/mira-control-erc.rpt MIRA_Contr
 kicad-cli sch erc --exit-code-violations -o /tmp/mira-module-erc.rpt MIRA_Crossbar/MIRA_Crossbar.kicad_sch
 kicad-cli sch export netlist --format kicadxml -o /tmp/mira-control.xml MIRA_Control/MIRA_Control.kicad_sch
 kicad-cli sch export netlist --format kicadxml -o /tmp/mira-module.xml MIRA_Crossbar/MIRA_Crossbar.kicad_sch
-python3 review/ch48/verify_ch48.py /tmp/mira-control.xml /tmp/mira-module.xml
+python3 review/ch48/verify_ch48.py /tmp/mira-control.xml /tmp/mira-module.xml --reference-map review/schematic-layout/reference-map.json
 ```
 
 ## До трассировки
@@ -63,3 +63,5 @@ python3 review/ch48/verify_ch48.py /tmp/mira-control.xml /tmp/mira-module.xml
 - [TMUX7208 — выбор канала FORMING](https://www.ti.com/lit/ds/symlink/tmux7208.pdf)
 - [TMUX6112 — обратная связь, изоляция и разряд](https://www.ti.com/lit/ds/symlink/tmux6112.pdf)
 - [AD4696 — АЦП](https://www.analog.com/en/products/ad4696.html)
+
+После реорганизации листов и аннотации по страницам см. [актуальный список страниц и PDF](../schematic-layout/README.md). Карта `reference-map.json` позволяет проверять контракт CH48 с новыми обозначениями компонентов.

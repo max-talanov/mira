@@ -1,0 +1,321 @@
+{
+  "kicad_version": "10.0.5",
+  "baseline_head": "45fe79b5e7059a2ecc25c6bcb042687217c2d1f3",
+  "connectivity": {
+    "after": {
+      "MIRA_Control": {
+        "project": "MIRA_Control",
+        "components": 2189,
+        "pins": 9266,
+        "nets": 2191,
+        "result": "PASS"
+      },
+      "MIRA_Power": {
+        "project": "MIRA_Power",
+        "components": 793,
+        "pins": 2571,
+        "nets": 446,
+        "result": "PASS"
+      },
+      "MIRA_Crossbar": {
+        "project": "MIRA_Crossbar",
+        "components": 6,
+        "pins": 300,
+        "nets": 197,
+        "result": "PASS"
+      },
+      "ch48": "PASS: 48 electrode nets, 96 ADC inputs, 48 DAC outputs, 144 forming taps, 48 bleed controls, 168 mating positions and 64 socket pins."
+    },
+    "candidate": {
+      "MIRA_Control": {
+        "project": "MIRA_Control",
+        "components": 2189,
+        "pins": 9266,
+        "nets": 2191,
+        "result": "PASS"
+      },
+      "MIRA_Power": {
+        "project": "MIRA_Power",
+        "components": 793,
+        "pins": 2571,
+        "nets": 446,
+        "result": "PASS"
+      },
+      "MIRA_Crossbar": {
+        "project": "MIRA_Crossbar",
+        "components": 5,
+        "pins": 236,
+        "nets": 133,
+        "result": "PASS"
+      },
+      "ch48": "PASS: 48 electrode nets, 96 ADC inputs, 48 DAC outputs, 144 forming taps, 48 bleed controls, 168 mating positions and 64 socket pins."
+    },
+    "negative_comparison": "PASS"
+  },
+  "identity_and_pcb_working": {
+    "MIRA_Control": {
+      "pages": 62,
+      "symbol_units": 2328,
+      "pcb_footprints": 2337,
+      "result": "PASS"
+    },
+    "MIRA_Crossbar": {
+      "pages": 1,
+      "symbol_units": 6,
+      "pcb_footprints": 6,
+      "result": "PASS"
+    },
+    "MIRA_Power": {
+      "pages": 57,
+      "symbol_units": 1096,
+      "pcb_footprints": 793,
+      "result": "PASS"
+    }
+  },
+  "identity_and_pcb_commit": {
+    "MIRA_Control": {
+      "pages": 62,
+      "symbol_units": 2328,
+      "pcb_footprints": 2337,
+      "result": "PASS"
+    },
+    "MIRA_Crossbar": {
+      "pages": 1,
+      "symbol_units": 5,
+      "pcb_footprints": 5,
+      "result": "PASS"
+    },
+    "MIRA_Power": {
+      "pages": 57,
+      "symbol_units": 1096,
+      "pcb_footprints": 793,
+      "result": "PASS"
+    }
+  },
+  "pdf": {
+    "working": {
+      "MIRA_Control": {
+        "pages": 62,
+        "native_title_block_page_ids": "PASS",
+        "page_bounds": "PASS"
+      },
+      "MIRA_Power": {
+        "pages": 57,
+        "native_title_block_page_ids": "PASS",
+        "page_bounds": "PASS"
+      },
+      "MIRA_Crossbar": {
+        "pages": 1,
+        "native_title_block_page_ids": "PASS",
+        "page_bounds": "PASS"
+      }
+    },
+    "candidate": {
+      "MIRA_Control": {
+        "pages": 62,
+        "native_title_block_page_ids": "PASS",
+        "page_bounds": "PASS"
+      },
+      "MIRA_Power": {
+        "pages": 57,
+        "native_title_block_page_ids": "PASS",
+        "page_bounds": "PASS"
+      },
+      "MIRA_Crossbar": {
+        "pages": 1,
+        "native_title_block_page_ids": "PASS",
+        "page_bounds": "PASS"
+      }
+    }
+  },
+  "erc_working": [
+    {
+      "project": "MIRA_Control",
+      "command": [
+        "sch",
+        "export",
+        "netlist"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Control",
+      "command": [
+        "sch",
+        "export",
+        "pdf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Control",
+      "command": [
+        "sch",
+        "erc",
+        "--exit-code-violations"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Power",
+      "command": [
+        "sch",
+        "export",
+        "netlist"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Power",
+      "command": [
+        "sch",
+        "export",
+        "pdf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Power",
+      "command": [
+        "sch",
+        "erc",
+        "--exit-code-violations"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "command": [
+        "sch",
+        "export",
+        "netlist"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "command": [
+        "sch",
+        "export",
+        "pdf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "command": [
+        "sch",
+        "erc",
+        "--exit-code-violations"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "erc_commit": [
+    {
+      "project": "MIRA_Control",
+      "command": [
+        "sch",
+        "export",
+        "netlist"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Control",
+      "command": [
+        "sch",
+        "export",
+        "pdf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Control",
+      "command": [
+        "sch",
+        "erc",
+        "--exit-code-violations"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Power",
+      "command": [
+        "sch",
+        "export",
+        "netlist"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Power",
+      "command": [
+        "sch",
+        "export",
+        "pdf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Power",
+      "command": [
+        "sch",
+        "erc",
+        "--exit-code-violations"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "command": [
+        "sch",
+        "export",
+        "netlist"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "command": [
+        "sch",
+        "export",
+        "pdf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "project": "MIRA_Crossbar",
+      "command": [
+        "sch",
+        "erc",
+        "--exit-code-violations"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "visual_review": {
+    "channel_pages": [
+      2600,
+      2700,
+      2800,
+      2900,
+      3000,
+      3100,
+      3200,
+      3300,
+      3400,
+      3500,
+      3600,
+      3700
+    ],
+    "power_input_page": 300,
+    "result": "PASS",
+    "notes": "All 12 merged channel pages, complete input path, output interface, converter example and Crossbar rendered and inspected. Native page IDs checked on all pages; input-note text checked against panel bounds."
+  },
+  "baseline_netlists_sha256": {
+    "MIRA_Control": "dd2073efed7ba3dfe222cbbe12c33f0774b856160eaff2950d111136ba083f80",
+    "MIRA_Power": "068dedc21b1d73e4530788094d35f87e2a2b8adaa85cde1c5731636dfa054d5e",
+    "MIRA_Crossbar": "c7a58799dc99025afd131b97d4dbe6e45bf693b07fb8c11b29a986981d3880f7"
+  }
+}

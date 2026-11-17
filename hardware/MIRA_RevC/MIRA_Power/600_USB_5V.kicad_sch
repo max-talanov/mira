@@ -2295,7 +2295,7 @@
 		)
 		(uuid "f3aac3ef-9922-4e7c-8d5f-18bec85f0f20")
 	)
-	(text "R604 (0.05 Ohm) causes a 50 mV/A drop: USB5 is about 4.95 V at 1 A. Feedback\nis before the shunt. U601 is a 1 A IC with internal current, short-circuit\nand thermal protection. D601 indicates rail presence; R604 does not set the\ncurrent limit."
+	(text "R60004 (0.05 Ohm) causes a 50 mV/A drop: USB5 is about 4.95 V at 1 A. Feedback\nis before the shunt. U60001 is a 1 A IC with internal current, short-circuit\nand thermal protection. D60001 indicates rail presence; R60004 does not set the\ncurrent limit."
 		(exclude_from_sim no)
 		(at 156.21 141 0)
 		(effects
@@ -2336,7 +2336,7 @@
 		)
 		(uuid "1dd89047-11e8-4a89-ab64-b5a903846177")
 	)
-	(text "SHEET GUIDE / 600_USB_5V"
+	(text "SHEET GUIDE / USB 5 V"
 		(exclude_from_sim no)
 		(at 156.21 19.24 0)
 		(effects
@@ -2349,7 +2349,7 @@
 		)
 		(uuid "26e079a7-80dc-46b8-8422-4cdd352ee05d")
 	)
-	(text "BUS24 feeds U601 (LMR51610XDBVR). CMD_USB drives Q601 as an active-high\nsource follower. R601 (100 kOhm) pulls EN_USB low when Q601 is off. The\ncommand must not float; verify its high-level margin."
+	(text "BUS24 feeds U60001 (LMR51610XDBVR). CMD_USB drives Q60001 as an active-high\nsource follower. R60002 (100 kOhm) pulls EN_USB low when Q60001 is off. The\ncommand must not float; verify its high-level margin."
 		(exclude_from_sim no)
 		(at 156.21 65.3 0)
 		(effects
@@ -2376,7 +2376,7 @@
 		)
 		(uuid "45245406-0065-4f4e-a234-f279299841d8")
 	)
-	(text "U601 operates at 400 kHz with PFM at light load. L601 (33 uH) and C604/C605\n(47 uF each) filter USB_RAW. C601/C603 bypass the input; C602 (100 nF) is the\nCB-to-SW bootstrap capacitor."
+	(text "U60001 operates at 400 kHz with PFM at light load. L60001 (33 uH) and C60003/C60002\n(47 uF each) filter USB_RAW. C60004/C60001 bypass the input; C60005 (100 nF) is the\nCB-to-SW bootstrap capacitor."
 		(exclude_from_sim no)
 		(at 156.21 90.5 0)
 		(effects
@@ -2417,7 +2417,7 @@
 		)
 		(uuid "610fe8a0-cd79-48a9-a9a7-a9e85aefd1fa")
 	)
-	(text "R602 (105 kOhm) and R603 (20 kOhm) set USB_RAW:\nVRAW = 0.8 V x (1 + R602/R603) = 5.00 V.\nTo change the voltage: R602 = R603 x (VRAW/0.8 V - 1). Increasing the upper\nresistor raises VRAW."
+	(text "R60005 (105 kOhm) and R60003 (20 kOhm) set USB_RAW:\nVRAW = 0.8 V x (1 + R60005/R60003) = 5.00 V.\nTo change the voltage: R60005 = R60003 x (VRAW/0.8 V - 1). Increasing the upper\nresistor raises VRAW."
 		(exclude_from_sim no)
 		(at 156.21 116 0)
 		(effects
@@ -2485,7 +2485,7 @@
 		)
 		(uuid "9dfa94f0-f325-4ce7-9593-fac87d5a9b24")
 	)
-	(text "R602/R603: 5.00 V before R604.\nR604 causes a 50 mV/A drop."
+	(text "R60005/R60003: 5.00 V before R60004.\nR60004 causes a 50 mV/A drop."
 		(exclude_from_sim no)
 		(at 86 69.2 0)
 		(effects
@@ -2512,7 +2512,7 @@
 		)
 		(uuid "e2c59a9f-f840-450f-9577-f51b2df46fb8")
 	)
-	(text "CMD_USB drives Q601 as a source follower.\nR601 pulls EN low when Q601 is off.\nThe command must have a defined level."
+	(text "CMD_USB drives Q60001 as a source follower.\nR60002 pulls EN low when Q60001 is off.\nThe command must have a defined level."
 		(exclude_from_sim no)
 		(at 23 31.2 0)
 		(effects
@@ -2538,7 +2538,7 @@
 		)
 		(uuid "f91e1015-5548-4948-abc8-bdfa64daa77b")
 	)
-	(text "600_USB_5V"
+	(text "USB 5 V"
 		(exclude_from_sim no)
 		(at 20.32 19.05 0)
 		(effects
@@ -2663,7 +2663,7 @@
 		)
 		(uuid "0fdd2aa9-bd01-47d7-a105-0bcceb4c27bf")
 	)
-	
+
 	(wire
 		(pts
 			(xy 121.92 127) (xy 121.92 128.27)
@@ -2875,7 +2875,7 @@
 		)
 		(uuid "60cb5eb8-9a6e-4f22-8bcf-f3911b623bdb")
 	)
-	
+
 	(wire
 		(pts
 			(xy 63.5 85.09) (xy 66.04 85.09)
@@ -3340,7 +3340,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "000ef938-68c4-4b86-94ab-ed3793224db7")
-		(property "Reference" "#PWR0603"
+		(property "Reference" "#PWR60001"
 			(at 83.82 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -3400,7 +3400,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "#PWR0603")
+					(reference "#PWR60001")
 					(unit 1)
 				)
 			)
@@ -3418,7 +3418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "096a1416-6a4f-456e-8384-f61fe2ce421b")
-		(property "Reference" "#PWR0606"
+		(property "Reference" "#PWR60002"
 			(at 121.92 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -3478,7 +3478,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "#PWR0606")
+					(reference "#PWR60002")
 					(unit 1)
 				)
 			)
@@ -3495,7 +3495,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "17317eb4-5fcc-41bf-9d1d-ce0d5df65703")
-		(property "Reference" "R605"
+		(property "Reference" "R60001"
 			(at 141.605 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3581,7 +3581,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "R605")
+					(reference "R60001")
 					(unit 1)
 				)
 			)
@@ -3598,7 +3598,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "24e9efcb-4e45-4a50-836b-3de3524bd179")
-		(property "Reference" "R601"
+		(property "Reference" "R60002"
 			(at 49.53 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3670,7 +3670,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "R601")
+					(reference "R60002")
 					(unit 1)
 				)
 			)
@@ -3687,7 +3687,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2584c6a6-bb44-427a-afb7-a35eb7d6b040")
-		(property "Reference" "R603"
+		(property "Reference" "R60003"
 			(at 125.84 120.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3759,7 +3759,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "R603")
+					(reference "R60003")
 					(unit 1)
 				)
 			)
@@ -3777,7 +3777,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2cbaf885-c9cb-4932-8c80-32bcf339ae06")
-		(property "Reference" "#PWR0604"
+		(property "Reference" "#PWR60003"
 			(at 93.98 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -3837,7 +3837,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "#PWR0604")
+					(reference "#PWR60003")
 					(unit 1)
 				)
 			)
@@ -3854,7 +3854,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d971273-0a82-45a2-bab8-5a6fbaa51f5a")
-		(property "Reference" "Q601"
+		(property "Reference" "Q60001"
 			(at 50.8 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3929,7 +3929,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "Q601")
+					(reference "Q60001")
 					(unit 1)
 				)
 			)
@@ -3947,7 +3947,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f67eefe-c4d0-4351-b459-c475db0b2011")
-		(property "Reference" "#PWR0605"
+		(property "Reference" "#PWR60004"
 			(at 105.41 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -4007,7 +4007,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "#PWR0605")
+					(reference "#PWR60004")
 					(unit 1)
 				)
 			)
@@ -4025,7 +4025,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34a5d4b4-46d5-452b-9620-803097140b7c")
-		(property "Reference" "#PWR0602"
+		(property "Reference" "#PWR60005"
 			(at 45.72 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -4085,7 +4085,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "#PWR0602")
+					(reference "#PWR60005")
 					(unit 1)
 				)
 			)
@@ -4103,7 +4103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34e46290-2c24-4bf2-8a0e-0d45b29f74ef")
-		(property "Reference" "#PWR0601"
+		(property "Reference" "#PWR60006"
 			(at 21.59 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4164,7 +4164,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "#PWR0601")
+					(reference "#PWR60006")
 					(unit 1)
 				)
 			)
@@ -4181,7 +4181,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4e34e8a8-5170-4683-9b72-974a02200e65")
-		(property "Reference" "C603"
+		(property "Reference" "C60001"
 			(at 88.9 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4253,7 +4253,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "C603")
+					(reference "C60001")
 					(unit 1)
 				)
 			)
@@ -4270,7 +4270,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f39d5f4-c552-437b-bd5c-5465906dfb3f")
-		(property "Reference" "C605"
+		(property "Reference" "C60002"
 			(at 110.49 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4342,7 +4342,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "C605")
+					(reference "C60002")
 					(unit 1)
 				)
 			)
@@ -4359,7 +4359,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6ab9338d-01c1-426e-bd51-9c1fc8f02037")
-		(property "Reference" "C604"
+		(property "Reference" "C60003"
 			(at 99.06 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4431,7 +4431,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "C604")
+					(reference "C60003")
 					(unit 1)
 				)
 			)
@@ -4448,7 +4448,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9f49742e-41be-4da9-9a9b-9f1a1fcc61be")
-		(property "Reference" "R604"
+		(property "Reference" "R60004"
 			(at 130.81 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4520,7 +4520,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "R604")
+					(reference "R60004")
 					(unit 1)
 				)
 			)
@@ -4538,7 +4538,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a28a1e67-f576-4fbd-af73-1d84d213ebb0")
-		(property "Reference" "D601"
+		(property "Reference" "D60001"
 			(at 132.08 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4633,7 +4633,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "D601")
+					(reference "D60001")
 					(unit 1)
 				)
 			)
@@ -4650,7 +4650,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "baff86e5-108b-44b7-b355-ad1e3c956b33")
-		(property "Reference" "C601"
+		(property "Reference" "C60004"
 			(at 78.74 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4722,7 +4722,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "C601")
+					(reference "C60004")
 					(unit 1)
 				)
 			)
@@ -4739,7 +4739,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c6f15adf-8f87-450e-b991-fa0b5c4133a3")
-		(property "Reference" "C602"
+		(property "Reference" "C60005"
 			(at 82.55 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4811,7 +4811,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "C602")
+					(reference "C60005")
 					(unit 1)
 				)
 			)
@@ -4828,7 +4828,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cdbd4089-c702-40cc-82f4-802e941f592f")
-		(property "Reference" "U601"
+		(property "Reference" "U60001"
 			(at 45.72 89.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4912,7 +4912,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "U601")
+					(reference "U60001")
 					(unit 1)
 				)
 			)
@@ -4930,7 +4930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4dcd721-97a3-448c-9d9e-2fbb1fc342a6")
-		(property "Reference" "#PWR0406"
+		(property "Reference" "#PWR60007"
 			(at 138.43 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -4990,7 +4990,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "#PWR0406")
+					(reference "#PWR60007")
 					(unit 1)
 				)
 			)
@@ -5007,7 +5007,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e862a7e7-923b-4a74-8399-7c2d68b73498")
-		(property "Reference" "L601"
+		(property "Reference" "L60001"
 			(at 85.09 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5079,7 +5079,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "L601")
+					(reference "L60001")
 					(unit 1)
 				)
 			)
@@ -5096,7 +5096,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f1fc38a8-1621-4dda-8863-ec751096a67e")
-		(property "Reference" "R602"
+		(property "Reference" "R60005"
 			(at 125.84 107.46 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5168,7 +5168,7 @@
 		(instances
 			(project "MIRA_Power"
 				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/41dd67bd-0f6d-4d61-9e06-55d120dd3542/4261bead-0478-4e05-ac3e-c3603da8ea3f"
-					(reference "R602")
+					(reference "R60005")
 					(unit 1)
 				)
 			)
@@ -5180,4 +5180,6 @@
 
 
 
+
+(title_block (title "USB 5 V") (rev "C-review") (company "MIRA"))
 )

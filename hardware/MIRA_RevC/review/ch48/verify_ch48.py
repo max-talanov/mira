@@ -4,14 +4,20 @@ Usage: python3 verify_ch48.py CONTROL.xml MODULE.xml
 """
 import argparse
 import csv
+import json
 import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
 
 
 class Netlist:
-    def __init__(self, xml):
+    def __init__(self, xml, reference_map=None):
         tree = ET.parse(xml)
+        # Normalize the page-based annotation back to the CH48 contract names.
+        aliases = {new: old for old, new in (reference_map or {}).items()}
+        for item in tree.findall("components/comp") + tree.findall("nets/net/node"):
+            ref = item.get("ref")
+            item.set("ref", aliases.get(ref, ref))
         self.values = {c.attrib["ref"]: c.findtext("value") for c in tree.findall("components/comp")}
         # KiCad 10 may qualify node pinfunction with _<pin number>.
         # Resolve through libparts, accepting only the exact matching spelling.
@@ -62,8 +68,12 @@ def main():
     arg = argparse.ArgumentParser(description=__doc__)
     arg.add_argument("control")
     arg.add_argument("module")
+    arg.add_argument("--reference-map", type=Path,
+                     help="JSON map from original to page-based references")
     args = arg.parse_args()
-    ctrl, mod = Netlist(args.control), Netlist(args.module)
+    maps = json.loads(args.reference_map.read_text()) if args.reference_map else {}
+    ctrl = Netlist(args.control, maps.get("MIRA_Control"))
+    mod = Netlist(args.module, maps.get("MIRA_Crossbar"))
     counts = Counter(ctrl.values.values())
     expected = {"DAC81416": 3, "AD4696BCPZ": 6, "INA821IDR": 48, "MAX313EUE+": 12,
                 "OPA4323IPWR": 24, "TMUX7208": 18, "TMUX6112": 36, "OPA192IDR": 12}
