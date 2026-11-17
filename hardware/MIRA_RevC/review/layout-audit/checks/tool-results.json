@@ -1,0 +1,83 @@
+[
+  {
+    "project": "MIRA_Control",
+    "command": [
+      "pcb",
+      "drc",
+      "--schematic-parity"
+    ],
+    "exit_code": 0
+  },
+  {
+    "project": "MIRA_Control",
+    "command": [
+      "sch",
+      "erc",
+      "--exit-code-violations"
+    ],
+    "exit_code": 0
+  },
+  {
+    "project": "MIRA_Control",
+    "command": [
+      "sch",
+      "export",
+      "netlist"
+    ],
+    "exit_code": 0
+  },
+  {
+    "project": "MIRA_Power",
+    "command": [
+      "pcb",
+      "drc",
+      "--schematic-parity"
+    ],
+    "exit_code": 0
+  },
+  {
+    "project": "MIRA_Power",
+    "command": [
+      "sch",
+      "erc",
+      "--exit-code-violations"
+    ],
+    "exit_code": 0
+  },
+  {
+    "project": "MIRA_Power",
+    "command": [
+      "sch",
+      "export",
+      "netlist"
+    ],
+    "exit_code": 0
+  },
+  {
+    "project": "MIRA_Crossbar",
+    "command": [
+      "pcb",
+      "drc",
+      "--schematic-parity"
+    ],
+    "exit_code": 0
+  },
+  {
+    "project": "MIRA_Crossbar",
+    "command": [
+      "sch",
+      "erc",
+      "--exit-code-violations"
+    ],
+    "exit_code": 0
+  },
+  {
+    "project": "MIRA_Crossbar",
+    "command": [
+      "sch",
+      "export",
+      "netlist"
+    ],
+    "exit_code": 0
+  }
+]

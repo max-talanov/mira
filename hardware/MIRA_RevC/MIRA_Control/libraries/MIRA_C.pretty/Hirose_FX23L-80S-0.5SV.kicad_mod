@@ -96,4 +96,6 @@
 (fp_rect (start -10.2 -1.8) (end -9.6 -1.4) (stroke (width .1) (type default)) (fill none) (layer "F.SilkS"))
 (zone (layer "F.Cu") (uuid "5c027898-439f-5024-965c-d7a71d8cd3cf") (name "FX23L floating copper exclusion") (hatch edge .5) (connect_pads (clearance 0)) (min_thickness .1) (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed)) (fill (thermal_gap .5) (thermal_bridge_width .5)) (polygon (pts (xy -16.1 -3.85) (xy -9.9 -3.85) (xy -9.9 3.85) (xy -16.1 3.85))))
 (zone (layer "F.Cu") (uuid "658f1f0f-bcaa-5a81-ba23-2667a4b419a6") (name "FX23L floating copper exclusion") (hatch edge .5) (connect_pads (clearance 0)) (min_thickness .1) (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed)) (fill (thermal_gap .5) (thermal_bridge_width .5)) (polygon (pts (xy 9.9 -3.85) (xy 16.1 -3.85) (xy 16.1 3.85) (xy 9.9 3.85))))
+
+(model "${KIPRJMOD}/../libraries/3d/Hirose_FX23L_80S_SV_ENVELOPE.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
 )
