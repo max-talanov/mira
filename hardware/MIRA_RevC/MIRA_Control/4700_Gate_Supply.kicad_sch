@@ -46,7 +46,7 @@
 (wire (pts (xy 255.27 57.15) (xy 252.73 57.15)) (stroke (width 0) (type default)) (uuid "85cfb00a-d330-5301-bf53-d1c631348031"))
 (global_label "VWL_PRE12" (shape bidirectional) (at 252.73 57.15 180) (effects (font (size 0.85 0.85)) (justify right)) (uuid "53343cfe-40e9-5071-a6a2-cdd1f4e8c315"))
 (wire (pts (xy 265.43 57.15) (xy 267.97 57.15)) (stroke (width 0) (type default)) (uuid "9d5b78b5-2277-5eff-b60d-2864079bbd19"))
-(global_label "WL12_FB" (shape bidirectional) (at 267.97 57.15 0) (effects (font (size 0.85 0.85)) (justify left)) (uuid "b9f2e37d-49e9-54fd-a819-27cd6c3e7105"))
+
 (symbol (lib_id "MIRA_C:R") (at 260.35 76.2 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "cb781385-000e-5855-85e9-034fd8ef550b") (property "Reference" "R470002" (at 260.35 70.93 0) (effects (font (size 0.95 0.95))))(property "Value" "10k" (at 260.35 72.68 0) (effects (font (size 0.95 0.95))))(property "Footprint" "MIRA_RevA:R_0603_1608Metric" (at 260.35 76.2 0) (hide yes) (effects (font (size 0.95 0.95)))) (instances (project "MIRA_Control" (path "/ad010b50-c509-466c-b833-d1667dfb0702/8e401249-41e4-5943-a9e6-3113260b126f/0f3a1197-a439-5000-9697-44d31af9dd3d" (reference "R470002") (unit 1)))))
 (wire (pts (xy 255.27 76.2) (xy 252.73 76.2)) (stroke (width 0) (type default)) (uuid "b33d06a8-89d7-5ef2-96a5-c94e2e539303"))
 (global_label "WL12_FB" (shape bidirectional) (at 252.73 76.2 180) (effects (font (size 0.85 0.85)) (justify right)) (uuid "24ef9404-6261-537a-813d-7ee48b5736cb"))
@@ -79,4 +79,8 @@
 (global_label "WL_ENABLE_REQ" (shape bidirectional) (at 99.06 167.64 180) (effects (font (size 0.85 0.85)) (justify right)) (uuid "043fc356-5f29-51de-852b-1121c3380441"))
 (wire (pts (xy 129.54 165.1) (xy 132.08 165.1)) (stroke (width 0) (type default)) (uuid "1d228c81-87e1-5b5e-9ff2-c17e4a37cf86"))
 (global_label "VWL_ENABLE" (shape bidirectional) (at 132.08 165.1 0) (effects (font (size 0.85 0.85)) (justify left)) (uuid "0937bc7a-c5e1-5343-940e-5980cbb8a4a2"))
-(embedded_fonts no))
+(embedded_fonts no)
+(wire (pts (xy 267.97 57.15) (xy 267.97 74.93)) (stroke (width 0) (type default)) (uuid "ed8cb313-655b-5e39-831f-c93e8ba3401c"))
+(wire (pts (xy 267.97 74.93) (xy 252.73 74.93)) (stroke (width 0) (type default)) (uuid "8e47a9f9-2c1f-5245-9a07-7567d098d32c"))
+(wire (pts (xy 252.73 74.93) (xy 252.73 76.2)) (stroke (width 0) (type default)) (uuid "4be76d05-3b2f-5192-a3e9-ec3e3b320750"))
+)

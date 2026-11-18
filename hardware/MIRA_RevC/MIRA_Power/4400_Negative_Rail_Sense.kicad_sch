@@ -2407,28 +2407,7 @@
 			)
 		)
 	)
-(global_label "N15_RAW"
-		(shape input)
-		(at 30.48 66.04 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right)
-		)
-		(uuid "6176692d-7793-4ab3-ab3d-5e222ab6c734")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 30.48 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-	)
+
 (global_label "AON"
 		(shape input)
 		(at 73.66 53.34 180)
@@ -5098,4 +5077,9 @@
 	)
 (text "With the 3200 threshold AON/5.7, the nominal trip is 0.288 A\n20 x (N15 - N15_RAW), or nominally 2.0 V/A of return current." (at 20 138.43 0) (effects (font (size 1.0 1.0)) (justify left top)) (uuid "12dff489-fd38-51b0-977f-6935a74d4c26"))
 (text "Negative Rail Sense" (at 20 15 0) (effects (font (size 1.6 1.6)) (justify left top)) (uuid "7d8b2bc2-260c-5d31-bd60-f7e3b824e922"))
+(wire (pts (xy 72.39 104.14) (xy 72.39 97.79)) (stroke (width 0) (type default)) (uuid "eed735bd-7a77-5615-8c13-313b6751767d"))
+(wire (pts (xy 72.39 97.79) (xy 55.88 97.79)) (stroke (width 0) (type default)) (uuid "8a8cd60c-7ebf-53e5-a98c-52f30e9cae49"))
+(wire (pts (xy 55.88 97.79) (xy 55.88 67.31)) (stroke (width 0) (type default)) (uuid "1ec5e149-932b-5257-a1bb-5e0a73159654"))
+(wire (pts (xy 55.88 67.31) (xy 30.48 67.31)) (stroke (width 0) (type default)) (uuid "128f92a0-6a4e-55af-90be-d993efa3ee0f"))
+(wire (pts (xy 30.48 67.31) (xy 30.48 66.04)) (stroke (width 0) (type default)) (uuid "8955c04c-438b-5d4e-9358-3cd0457d8c3a"))
 )

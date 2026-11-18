@@ -1368,28 +1368,7 @@
 			)
 		)
 	)
-(global_label "PROG_P15"
-		(shape input)
-		(at 38.1 49.53 90)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "50659a14-a896-48a3-a168-67a00709ec37")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.1 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-	)
+
 (global_label "AON"
 		(shape input)
 		(at 66.04 54.61 90)
@@ -2304,4 +2283,8 @@
 	)
 (text "15 V positive output gives about 2.632 V." (at 20 101.6 0) (effects (font (size 1.0 1.0)) (justify left top)) (uuid "24a1c5f4-67f6-5d24-9b1a-2dab85a967c1"))
 (text "Program Interface" (at 20 15 0) (effects (font (size 1.6 1.6)) (justify left top)) (uuid "64304ef6-07ff-5ba9-9df4-9c4182233184"))
+(wire (pts (xy 106.68 44.45) (xy 106.68 45.72)) (stroke (width 0) (type default)) (uuid "6087d68b-5e68-5ae9-90f7-c1c26c1cc910"))
+(wire (pts (xy 106.68 45.72) (xy 39.37 45.72)) (stroke (width 0) (type default)) (uuid "f136ab51-6bb4-5be1-b09f-4c841092cdaa"))
+(wire (pts (xy 39.37 45.72) (xy 39.37 49.53)) (stroke (width 0) (type default)) (uuid "1db24246-1f96-509b-8d05-397722259d5b"))
+(wire (pts (xy 39.37 49.53) (xy 38.1 49.53)) (stroke (width 0) (type default)) (uuid "305a687d-e0d1-589d-97ec-42c433f95e54"))
 )

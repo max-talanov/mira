@@ -2052,28 +2052,6 @@
 		)
 	)
 
-	(global_label "MATRIX_PERMIT_POWER"
-		(shape passive)
-		(at 170.18 199.39 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "9598a1e8-7f09-4929-8f13-b16fb83203d9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 170.18 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 
 	(global_label "ALL_RAILS_PG_HOST"
 		(shape passive)
@@ -4256,4 +4234,7 @@
 
 (text "Power entry locations follow the consumers:\n410: Zynq / DDR / shared SYS3V3 / USB.\n420: DAC + matrix / ADC + analog front end.\n\nShared rails keep their existing names and source.\nPlace each local input beside its target decoupling.\nProvide adjacent GND contacts and a continuous return plane." (at 304.8 175.26 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1be77722-2636-4d47-9585-8021c3e52311"))
 (no_connect (at 227.33 101.6) (uuid "a0715a8e-a8c7-57b6-847d-d1461777ea6b"))
+(wire (pts (xy 207.01 162.56) (xy 207.01 180.34)) (stroke (width 0) (type default)) (uuid "0f7b348a-d116-52a7-8dcc-23af2b65d973"))
+(wire (pts (xy 207.01 180.34) (xy 170.18 180.34)) (stroke (width 0) (type default)) (uuid "de45af42-1ffd-5ce3-a062-e98f63caef7a"))
+(wire (pts (xy 170.18 180.34) (xy 170.18 199.39)) (stroke (width 0) (type default)) (uuid "682598ad-92d4-5ad9-9037-abfcece3a051"))
 )

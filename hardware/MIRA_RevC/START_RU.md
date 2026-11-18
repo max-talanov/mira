@@ -10,4 +10,6 @@
 
 [Оглавление листов](review/layout/reconciled/sheets.csv) · [Перенумерация и UUID](review/layout/reconciled/renumbering.csv) · [Проверки и сравнение](review/layout/reconciled/README.md).
 
+[Оформление схем по листам и примеры до/после](review/layout/reconciled/schematic-finish/README.md).
+
 Материалы review/prelayout, review/schematic-layout и прежние снимки сборки отражают исторические редакции.

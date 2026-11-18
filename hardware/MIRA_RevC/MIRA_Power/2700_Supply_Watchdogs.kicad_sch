@@ -2366,28 +2366,7 @@
 			)
 		)
 	)
-(global_label "PM_WDO_N"
-		(shape input)
-		(at 95.25 93.98 90)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "5f8f4d59-1784-448d-94cc-05496a1d8520")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.25 93.98 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-	)
+
 (global_label "AON"
 		(shape input)
 		(at 81.28 69.85 180)
@@ -5337,4 +5316,8 @@
 (global_label "SYS3V3" (shape input) (at 147.32 132.08 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "fbfc5540-1fa2-4dee-8265-b25330092a34"))
 (text "Reset release delay and WDO low pulse are 200 ms nominal." (at 20 182.88 0) (effects (font (size 1.0 1.0)) (justify left top)) (uuid "e83f8430-3299-59ec-86e6-c9f9439b4e89"))
 (text "Supply Watchdogs" (at 20 15 0) (effects (font (size 1.6 1.6)) (justify left top)) (uuid "9885c469-8bbb-5e63-a2a6-2fa3867b7189"))
+(wire (pts (xy 95.25 93.98) (xy 102.87 93.98)) (stroke (width 0) (type default)) (uuid "6c2d3feb-e9f1-51c7-bd12-02748868e5e2"))
+(wire (pts (xy 102.87 93.98) (xy 102.87 74.93)) (stroke (width 0) (type default)) (uuid "48018634-24fe-555b-9db7-aa607ddabd9c"))
+(wire (pts (xy 102.87 74.93) (xy 135.89 74.93)) (stroke (width 0) (type default)) (uuid "676c98c1-acf6-51e2-ba20-600c12ce0627"))
+(wire (pts (xy 135.89 74.93) (xy 135.89 62.23)) (stroke (width 0) (type default)) (uuid "316f75ca-1392-5c4e-a728-8fe6297be2da"))
 )
