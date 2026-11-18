@@ -1,0 +1,139 @@
+{
+  "base": "6c26ffbfccfecf92f10e6e1a9ecfd9df19e5c72d",
+  "kicad": "10.0.5",
+  "PCB_sha256": "94f75f5c9341f63471cde5ac67601c683e32e95296c8a9c566d96589f3a44fa3",
+  "footprints": 2343,
+  "placement": 318,
+  "moved": 313,
+  "B_Cu": 156,
+  "models": 315,
+  "subgroup_counts": {
+    "FX20 clock / reset": {
+      "F.Cu": 3,
+      "B.Cu": 2
+    },
+    "FX20 power / boot": {
+      "F.Cu": 10,
+      "B.Cu": 48
+    },
+    "H745 FMC SDRAM": {
+      "F.Cu": 14,
+      "B.Cu": 20
+    },
+    "H745 QSPI": {
+      "F.Cu": 11,
+      "B.Cu": 0
+    },
+    "H745 power / clock / debug": {
+      "F.Cu": 25,
+      "B.Cu": 21
+    },
+    "H745–Zynq / supervision": {
+      "F.Cu": 9,
+      "B.Cu": 0
+    },
+    "Power–Control supervision": {
+      "F.Cu": 12,
+      "B.Cu": 1
+    },
+    "USB CC / VBUS / shield": {
+      "F.Cu": 10,
+      "B.Cu": 0
+    },
+    "USB data / ESD": {
+      "F.Cu": 10,
+      "B.Cu": 0
+    },
+    "Zynq PS DDR3L": {
+      "F.Cu": 5,
+      "B.Cu": 19
+    },
+    "Zynq boot / clock / reset": {
+      "F.Cu": 30,
+      "B.Cu": 0
+    },
+    "Zynq power / test": {
+      "F.Cu": 3,
+      "B.Cu": 45
+    },
+    "Zynq-7020": {
+      "F.Cu": 1,
+      "B.Cu": 0
+    },
+    "microSD / SDIO": {
+      "F.Cu": 19,
+      "B.Cu": 0
+    }
+  },
+  "tracks": 0,
+  "checks": {
+    "before": {
+      "violations": {
+        "clearance": 6,
+        "copper_edge_clearance": 2
+      },
+      "violations_digital": {
+        "copper_edge_clearance": 2
+      },
+      "unconnected_items": {
+        "unconnected_items": 499
+      },
+      "unconnected_items_digital": {
+        "unconnected_items": 260
+      },
+      "schematic_parity": {
+        "footprint_symbol_field_mismatch": 93,
+        "net_conflict": 199,
+        "footprint_symbol_mismatch": 72,
+        "missing_footprint": 199,
+        "extra_footprint": 199
+      },
+      "schematic_parity_digital": {
+        "footprint_symbol_field_mismatch": 93,
+        "net_conflict": 199
+      }
+    },
+    "final": {
+      "violations": {
+        "clearance": 6,
+        "copper_edge_clearance": 2
+      },
+      "violations_digital": {
+        "copper_edge_clearance": 2
+      },
+      "unconnected_items": {
+        "unconnected_items": 499
+      },
+      "unconnected_items_digital": {
+        "unconnected_items": 423
+      },
+      "schematic_parity": {
+        "net_conflict": 199,
+        "footprint_symbol_mismatch": 72,
+        "missing_footprint": 199,
+        "extra_footprint": 199
+      },
+      "schematic_parity_digital": {}
+    }
+  },
+  "assembly": {
+    "Control_to_Power_surface_gap_mm": 12,
+    "Control_to_Crossbar_surface_gap_mm": 8,
+    "new_back_passives": 154,
+    "new_back_passive_to_Power_front_courtyard_overlaps": 0,
+    "front_to_Crossbar_extraction_window_mm": 0.905,
+    "front_to_Crossbar_edge_mm": 6.905,
+    "step_export_KiCad": true
+  },
+  "probe": {
+    "F_Cu_track_width_mm": 0.2,
+    "new_clearance_violations": 0,
+    "partial_track_drc": {
+      "clearance": 6,
+      "copper_edge_clearance": 2,
+      "skew_out_of_range": 1,
+      "track_dangling": 3
+    },
+    "tracks_in_delivery": 0
+  }
+}
