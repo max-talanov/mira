@@ -911,7 +911,7 @@
 (property "MountSide" "B.Cu" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
 (property "StackGap" "12.00 mm between facing board surfaces" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
 (property "PlacementZone" "SUPERVISION" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
-(property "PlacementTarget" "MCU / supervisor boundary" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "PlacementTarget" "Zynq / power supervisor" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
 (property "DesignStatus" "Schematic selected; coordinate matching, routing, thermal and mechanical qualification pending" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
 (symbol "HTSW_110_07_S_D_DIST_SUPERVISION_0_1" (rectangle (start -10.16 25.4) (end 10.16 -25.4) (stroke (width .254) (type default)) (fill (type background)))
 (text "SUPERVISION" (at 0 0 90) (effects (font (size 1.016 1.016)))))
@@ -1034,7 +1034,7 @@
 		)
 		(uuid "8936ad07-e381-4d40-8e37-15cfb659034a")
 	)
-	(text "U70001 uses SYS3V3 for the MCU-side power-good, permit and UART\nsignals. U70002 uses IO3V3 for the matrix logic. Both Nexperia\ndevices specify Ioff, so an AON-powered supervisor does not\ndrive a disabled receiver domain through its outputs."
+	(text "U70001 uses SYS3V3 for the local power-good, permit and UART\nsignals. U70002 uses IO3V3 for the matrix logic. Both Nexperia\ndevices specify Ioff, so an AON-powered supervisor does not\ndrive a disabled receiver domain through its outputs."
 		(exclude_from_sim no)
 		(at 315 67.5 0)
 		(effects
@@ -1274,16 +1274,7 @@
 		(uuid "6088d067-f543-4655-9caa-77ea958ff8d5")
 	)
 
-	(wire
-		(pts
-			(xy 227.33 101.6) (xy 234.95 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66527aa7-b943-4562-bc66-0a937d1a4ecc")
-	)
+
 	(wire
 		(pts
 			(xy 227.33 77.47) (xy 234.95 77.47)
@@ -1585,7 +1576,7 @@
 		)
 	)
 
-	(global_label "HOST_ALIVE"
+	(global_label "Z_HEARTBEAT"
 		(shape passive)
 		(at 104.14 228.6 180)
 		(effects
@@ -1675,7 +1666,7 @@
 		)
 	)
 
-	(global_label "MATRIX_PERMIT_POWER"
+	(global_label "GND"
 		(shape passive)
 		(at 207.01 101.6 180)
 		(effects
@@ -2016,7 +2007,7 @@
 		)
 	)
 
-	(global_label "SYS3V3"
+	(global_label "GND"
 		(shape passive)
 		(at 236.22 246.38 180)
 		(effects
@@ -2107,7 +2098,7 @@
 		)
 	)
 
-	(global_label "HOST_WDI"
+	(global_label "Z_WDI"
 		(shape passive)
 		(at 170.18 228.6 180)
 		(effects
@@ -2129,7 +2120,7 @@
 			)
 		)
 	)
-	(global_label "HOST_UART_TX"
+	(global_label "Z_PM_TX"
 		(shape passive)
 		(at 236.22 228.6 180)
 		(effects
@@ -2332,28 +2323,7 @@
 		)
 	)
 
-	(global_label "MATRIX_PERMIT_HOST"
-		(shape passive)
-		(at 234.95 101.6 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify left)
-		)
-		(uuid "e64bb92b-bf85-4fde-a924-7d2a564cf804")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 234.95 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
+
 
 	(global_label "MATRIX_INHIBIT_N"
 		(shape passive)
@@ -4220,7 +4190,7 @@
 (property "MountSide" "B.Cu" (at 90.17 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
 (property "StackGap" "12.00 mm between facing board surfaces" (at 90.17 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
 (property "PlacementZone" "SUPERVISION" (at 90.17 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
-(property "PlacementTarget" "MCU / supervisor boundary" (at 90.17 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
+(property "PlacementTarget" "Zynq / power supervisor" (at 90.17 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
 (property "DesignStatus" "Schematic selected; coordinate matching, routing, thermal and mechanical qualification pending" (at 90.17 132.08 0) (effects (font (size 1.27 1.27)) (hide yes)))
 (pin "1" (uuid "6475ac1a-c5ab-4534-9da7-fea80f417458"))
 (pin "2" (uuid "356b7a3b-9459-4011-a3cb-65b710a34844"))
@@ -4284,11 +4254,6 @@
 (wire (pts (xy 105.41 154.94) (xy 115.57 154.94)) (stroke (width 0) (type default)) (uuid "0ddc042e-e006-4c95-bb43-c3f4f2cb3ce0"))
 (global_label "GND" (shape input) (at 115.57 154.94 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "b42f2eb0-a776-4473-82ef-6e964e69564f"))
 
-(text "Power entry locations follow the consumers:\n410: FPGA / DDR / MCU / USB.\n420: DAC + matrix / ADC + analog front end.\n\nShared rails keep their existing names and source.\nPlace each local input beside its target decoupling.\nProvide adjacent GND contacts and a continuous return plane." (at 304.8 175.26 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1be77722-2636-4d47-9585-8021c3e52311"))
-
-
-
-
-
-
+(text "Power entry locations follow the consumers:\n410: Zynq / DDR / shared SYS3V3 / USB.\n420: DAC + matrix / ADC + analog front end.\n\nShared rails keep their existing names and source.\nPlace each local input beside its target decoupling.\nProvide adjacent GND contacts and a continuous return plane." (at 304.8 175.26 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1be77722-2636-4d47-9585-8021c3e52311"))
+(no_connect (at 227.33 101.6) (uuid "a0715a8e-a8c7-57b6-847d-d1461777ea6b"))
 )

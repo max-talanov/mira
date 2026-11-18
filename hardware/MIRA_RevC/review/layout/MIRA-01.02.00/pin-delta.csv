@@ -1,0 +1,39 @@
+reference,pin,before,after,reason
+C150004,1,SYS3V3,IO3V3,Decoupling of IO3V3 receiver U150003
+C150005,1,IO3V3,SYS3V3,Decoupling of SYS3V3 transmitter U150002
+R70001,1,HOST_ALIVE,Z_HEARTBEAT,Startup bias of outbound buffer input
+R70005,1,HOST_UART_TX,Z_PM_TX,Startup bias of outbound buffer input
+R70005,2,SYS3V3,GND,Startup bias of outbound buffer input
+R70008,1,HOST_WDI,Z_WDI,Startup bias of outbound buffer input
+U110001,J17,unconnected-(U110001C-IO_L2N_T0_34-PadJ17),Z_GLOBAL_PERMIT,Power interface at PL Bank 34
+U110001,J20,FPGA_SCK,Z_WDI,Power interface at PL Bank 34
+U110001,K19,FPGA_MISO,Z_PM_RX,Power interface at PL Bank 34
+U110001,K20,Z_IRQ,Z_POWER_RESET_N,Power interface at PL Bank 34
+U110001,K21,FPGA_MOSI,Z_HEARTBEAT,Power interface at PL Bank 34
+U110001,L16,FPGA_CS_N,Z_PM_TX,Power interface at PL Bank 34
+U110001,L17,unconnected-(U110001C-IO_L4P_T0_34-PadL17),Z_RAILS_PG,Power interface at PL Bank 34
+U110001,N17,unconnected-(U110001C-IO_L5P_T0_34-PadN17),MATRIX_PERMIT,Power interface at PL Bank 34
+U110001,P16,unconnected-(U110001C-IO_L24P_T3_34-PadP16),Z_MATRIX_RELEASE,Power interface at PL Bank 34
+U150002,13,IO3V3,SYS3V3,SYS3V3 host outputs to Power
+U150002,14,IO3V3,SYS3V3,SYS3V3 host outputs to Power
+U150002,2,MCU_FPGA_SCK,Z_WDI,SYS3V3 host outputs to Power
+U150002,3,FPGA_SCK,HOST_WDI,SYS3V3 host outputs to Power
+U150002,5,MCU_FPGA_MOSI,Z_HEARTBEAT,SYS3V3 host outputs to Power
+U150002,6,FPGA_MOSI,HOST_ALIVE,SYS3V3 host outputs to Power
+U150002,8,FPGA_CS_N,HOST_UART_TX,SYS3V3 host outputs to Power
+U150002,9,MCU_FPGA_CS_N,Z_PM_TX,SYS3V3 host outputs to Power
+U150003,11,FPGA_INIT_N_MCU,Z_RAILS_PG,IO3V3 status and UART receiver
+U150003,12,Z_INIT_N,ALL_RAILS_PG_HOST,IO3V3 status and UART receiver
+U150003,14,SYS3V3,IO3V3,IO3V3 status and UART receiver
+U150003,2,FPGA_MISO,PM_UART_TX_HOST,IO3V3 status and UART receiver
+U150003,3,MCU_FPGA_MISO,Z_PM_RX,IO3V3 status and UART receiver
+U150003,5,Z_IRQ,HOST_RESET_N,IO3V3 status and UART receiver
+U150003,6,FPGA_IRQ,Z_POWER_RESET_N,IO3V3 status and UART receiver
+U150003,8,FPGA_DONE_MCU,Z_GLOBAL_PERMIT,IO3V3 status and UART receiver
+U150003,9,Z_DONE,GLOBAL_PWR_PERMIT_HOST,IO3V3 status and UART receiver
+U150005,2,MCU_RESET_FPGA_N,Z_MATRIX_RELEASE,Open-drain matrix inhibit instead of external PS reset
+U150005,4,PS_SRST_N,MATRIX_INHIBIT_N,Open-drain matrix inhibit instead of external PS reset
+U70001,8,MATRIX_PERMIT_HOST,unconnected-(U70001C-Y-Pad8),Unused duplicate MATRIX_PERMIT receiver
+U70001,9,MATRIX_PERMIT_POWER,GND,Unused duplicate MATRIX_PERMIT receiver
+R150021,1,,Z_MATRIX_RELEASE,Matrix inhibit fail-safe pulldown
+R150021,2,,GND,Matrix inhibit fail-safe pulldown

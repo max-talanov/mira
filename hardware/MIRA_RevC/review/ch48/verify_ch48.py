@@ -149,8 +149,6 @@ def main():
     for ref, value in ctrl.values.items():
         if value == "MAX313EUE+":
             ctrl.expect(ref,12,"ANA5")
-    for ref in ("C300","C301"):
-        ctrl.expect(ref,1,"SYS3V3")
     print("PASS: 48 electrode nets, 96 ADC inputs, 48 DAC outputs, 144 forming taps, "
           "48 bleed controls, 168 mating positions and 64 socket pins.")
 

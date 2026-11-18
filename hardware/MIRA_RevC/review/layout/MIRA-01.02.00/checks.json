@@ -1,139 +1,81 @@
 {
-  "base": "6c26ffbfccfecf92f10e6e1a9ecfd9df19e5c72d",
-  "kicad": "10.0.5",
-  "PCB_sha256": "94f75f5c9341f63471cde5ac67601c683e32e95296c8a9c566d96589f3a44fa3",
-  "footprints": 2343,
-  "placement": 318,
-  "moved": 313,
-  "B_Cu": 156,
-  "models": 315,
-  "subgroup_counts": {
-    "FX20 clock / reset": {
-      "F.Cu": 3,
-      "B.Cu": 2
-    },
-    "FX20 power / boot": {
-      "F.Cu": 10,
-      "B.Cu": 48
-    },
-    "H745 FMC SDRAM": {
-      "F.Cu": 14,
-      "B.Cu": 20
-    },
-    "H745 QSPI": {
-      "F.Cu": 11,
-      "B.Cu": 0
-    },
-    "H745 power / clock / debug": {
-      "F.Cu": 25,
-      "B.Cu": 21
-    },
-    "H745–Zynq / supervision": {
-      "F.Cu": 9,
-      "B.Cu": 0
-    },
-    "Power–Control supervision": {
-      "F.Cu": 12,
-      "B.Cu": 1
-    },
-    "USB CC / VBUS / shield": {
-      "F.Cu": 10,
-      "B.Cu": 0
-    },
-    "USB data / ESD": {
-      "F.Cu": 10,
-      "B.Cu": 0
-    },
-    "Zynq PS DDR3L": {
-      "F.Cu": 5,
-      "B.Cu": 19
-    },
-    "Zynq boot / clock / reset": {
-      "F.Cu": 30,
-      "B.Cu": 0
-    },
-    "Zynq power / test": {
-      "F.Cu": 3,
-      "B.Cu": 45
-    },
-    "Zynq-7020": {
-      "F.Cu": 1,
-      "B.Cu": 0
-    },
-    "microSD / SDIO": {
-      "F.Cu": 19,
-      "B.Cu": 0
-    }
+  "base": "bcb12d16b89445bca505ae55a7efd1461a0262df",
+  "KiCad": "10.0.5",
+  "Control_inventory": {
+    "PCB-only": 970,
+    "Schematic-only": 825,
+    "MPN/footprint mismatch": 60,
+    "board_only_mounting_holes": 9
   },
-  "tracks": 0,
-  "checks": {
-    "before": {
-      "violations": {
-        "clearance": 6,
-        "copper_edge_clearance": 2
+  "Control": {
+    "schematic_components_before": 2189,
+    "schematic_components_after": 2077,
+    "footprints_before": 2343,
+    "footprints_after": 2231,
+    "sha256": "ab5314cb751a4713974bfb98cf5fdc89f983fb121fe869f745c7e89476b1e6aa",
+    "reports": {
+      "before": {
+        "erc": {},
+        "drc": {
+          "clearance": 6,
+          "copper_edge_clearance": 2
+        },
+        "KiCad_unconnected_listing": 499,
+        "KiCad_parity_listing": 669,
+        "KiCad_parity_messages_in_scope": 0
       },
-      "violations_digital": {
-        "copper_edge_clearance": 2
-      },
-      "unconnected_items": {
-        "unconnected_items": 499
-      },
-      "unconnected_items_digital": {
-        "unconnected_items": 260
-      },
-      "schematic_parity": {
-        "footprint_symbol_field_mismatch": 93,
-        "net_conflict": 199,
-        "footprint_symbol_mismatch": 72,
-        "missing_footprint": 199,
-        "extra_footprint": 199
-      },
-      "schematic_parity_digital": {
-        "footprint_symbol_field_mismatch": 93,
-        "net_conflict": 199
+      "after": {
+        "erc": {},
+        "drc": {
+          "clearance": 6,
+          "copper_edge_clearance": 2
+        },
+        "KiCad_unconnected_listing": 499,
+        "KiCad_parity_listing": 669,
+        "KiCad_parity_messages_in_scope": 0
       }
-    },
-    "final": {
-      "violations": {
-        "clearance": 6,
-        "copper_edge_clearance": 2
-      },
-      "violations_digital": {
-        "copper_edge_clearance": 2
-      },
-      "unconnected_items": {
-        "unconnected_items": 499
-      },
-      "unconnected_items_digital": {
-        "unconnected_items": 423
-      },
-      "schematic_parity": {
-        "net_conflict": 199,
-        "footprint_symbol_mismatch": 72,
-        "missing_footprint": 199,
-        "extra_footprint": 199
-      },
-      "schematic_parity_digital": {}
     }
   },
-  "assembly": {
-    "Control_to_Power_surface_gap_mm": 12,
-    "Control_to_Crossbar_surface_gap_mm": 8,
-    "new_back_passives": 154,
-    "new_back_passive_to_Power_front_courtyard_overlaps": 0,
-    "front_to_Crossbar_extraction_window_mm": 0.905,
-    "front_to_Crossbar_edge_mm": 6.905,
-    "step_export_KiCad": true
+  "Power": {
+    "schematic_components_before": 793,
+    "schematic_components_after": 793,
+    "footprints_before": 799,
+    "footprints_after": 799,
+    "sha256": "1d86bae5971e34d3f7e78e1a7c98bfe45b060d3e4426d0bb53ce8def030cc7b3",
+    "reports": {
+      "before": {
+        "erc": {},
+        "drc": {
+          "drill_out_of_range": 18
+        },
+        "KiCad_unconnected_listing": 499,
+        "KiCad_parity_listing": 199,
+        "KiCad_parity_messages_in_scope": 0
+      },
+      "after": {
+        "erc": {},
+        "drc": {
+          "drill_out_of_range": 18
+        },
+        "KiCad_unconnected_listing": 499,
+        "KiCad_parity_listing": 199,
+        "KiCad_parity_messages_in_scope": 0
+      }
+    }
   },
-  "probe": {
-    "F_Cu_track_width_mm": 0.2,
-    "new_clearance_violations": 0,
-    "partial_track_drc": {
-      "clearance": 6,
-      "copper_edge_clearance": 2,
-      "skew_out_of_range": 1,
-      "track_dangling": 3
-    },
-    "tracks_in_delivery": 0
+  "digital": {
+    "placed": 206,
+    "F.Cu": 91,
+    "B.Cu": 115,
+    "removed": 113,
+    "reused_buffers": [
+      "U150002",
+      "U150003",
+      "U150005"
+    ],
+    "added": [
+      "R150021"
+    ],
+    "interboard_PC1_pad_names": "20/20 identical"
   }
 }

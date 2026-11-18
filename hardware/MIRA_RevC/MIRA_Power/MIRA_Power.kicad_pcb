@@ -167344,7 +167344,7 @@
 				)
 			)
 		)
-		(property "Description" "MCU: distributed inter-board connection; external power-source pin types model the separate Power board on Control"
+		(property "Description" "SYS3V3: distributed inter-board connection; external power-source pin types model the separate Power board on Control"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -167427,7 +167427,7 @@
 				)
 			)
 		)
-		(property "PlacementZone" "MCU"
+		(property "PlacementZone" "SYS3V3"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -167439,7 +167439,7 @@
 				)
 			)
 		)
-		(property "PlacementTarget" "U100 MCU, U200 SDRAM, U300 Flash / microSD"
+		(property "PlacementTarget" "Shared SYS3V3 and IO3V3 consumers"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -167614,10 +167614,18 @@
 			(uuid "e68ba006-75e9-5b40-9a11-140de77714f5")
 		)
 		(embedded_fonts no)
-
-
-(model "${KIPRJMOD}/../libraries/3d/SSW-105-01-S-D_Envelope_converted.step" (offset (xyz 0.0 0.0 0.0)) (scale (xyz 1.0 1.0 1.0)) (rotate (xyz 0.0 0.0 0.0)))
-)
+		(model "${KIPRJMOD}/../libraries/3d/SSW-105-01-S-D_Envelope_converted.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "MIRA_RevA:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "e293849a-72c4-5094-bb9f-7255b2dfe4f2")
