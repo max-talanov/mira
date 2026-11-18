@@ -1,7 +1,13 @@
 # MIRA RevC · актуальные исходники
 
-Архитектура MIRA-01.02.00 включает Zynq-7020, PS DDR3L и FX20 на Control, STM32G0 на Power и 48 универсальных аналоговых каналов. Рабочие файлы находятся в проектах [Control](MIRA_Control/MIRA_Control.kicad_pro), [Power](MIRA_Power/MIRA_Power.kicad_pro) и [Crossbar](MIRA_Crossbar/MIRA_Crossbar.kicad_pro).
+[Архитектура PL, PS, FX20 и Power](ARCHITECTURE_RU.md) · [MIRA-01.01.00 — общая компоновка](review/layout/MIRA-01.01.00/README.md) · [MIRA-01.02.00 — цифровая часть](review/layout/MIRA-01.02.00/README.md)
 
-[Компоновка, обмен с Power и проверки MIRA-01.02.00](review/layout/MIRA-01.02.00/README.md) · [Карта CH48](review/ch48/README.md) · [Кандидат назначений Zynq](pinplan/README.txt).
+| Проект | KiCad | PDF |
+|---|---|---|
+| Control | [Проект](MIRA_Control/MIRA_Control.kicad_pro) | [Схема](PDF/MIRA_Control_C.pdf) |
+| Power | [Проект](MIRA_Power/MIRA_Power.kicad_pro) | [Схема](PDF/MIRA_Power_C.pdf) |
+| Crossbar | [Проект](MIRA_Crossbar/MIRA_Crossbar.kicad_pro) | [Схема](PDF/MIRA_Crossbar_C.pdf) |
 
-Материалы PDF/ и прежние отчёты review/prelayout/ сохраняют предыдущие редакции. Допуски механики, перенос CH48 в аналоговую PCB и трассировка остаются открытыми.
+[Оглавление листов](review/layout/reconciled/sheets.csv) · [Перенумерация и UUID](review/layout/reconciled/renumbering.csv) · [Проверки и сравнение](review/layout/reconciled/README.md).
+
+Материалы review/prelayout, review/schematic-layout и прежние снимки сборки отражают исторические редакции.

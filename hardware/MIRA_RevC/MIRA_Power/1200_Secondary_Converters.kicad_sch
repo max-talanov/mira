@@ -1,0 +1,251 @@
+(kicad_sch
+(version 20260306)
+(generator "eeschema")
+(generator_version "10.0")
+(uuid "77585e72-b0c2-4957-bfe3-8fbc1b63cd88")
+(lib_symbols)
+(title_block (title "Secondary Converters") (rev "C-review") (company "MIRA"))
+(paper "A4")
+(text "Secondary Converters" (at 15 15 0) (effects (font (size 1.8 1.8)) (justify left top)) (uuid "cef970ff-9efe-5390-9a90-75404feaea4f"))
+(text "Open a block to follow the signal path." (at 15 25 0) (effects (font (size 1.1 1.1)) (justify left top)) (uuid "cabeadc4-9801-5fc6-b528-b6ffe8be00da"))
+(sheet
+		(at 15 45)
+		(size 125 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5b06af46-1a6a-4c65-b5c8-c47041a827c6")
+		(property "Sheetname" "FPGA Core 1 V"
+			(at 18 50 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.82 0.82)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "1300_FPGA_Core_1_V.kicad_sch"
+			(at 18 56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323"
+					(page "1300")
+				)
+			)
+		)
+	)
+(sheet
+		(at 160 45)
+		(size 125 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e44be13d-f01e-42f0-8e1a-efad65e68af0")
+		(property "Sheetname" "FPGA Auxiliary Rails"
+			(at 163 50 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.82 0.82)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "1400_FPGA_Auxiliary_Rails.kicad_sch"
+			(at 163 56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323"
+					(page "1400")
+				)
+			)
+		)
+	)
+(sheet
+		(at 15 77)
+		(size 125 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "75f4833a-8ffe-4826-9b4f-9624f0891516")
+		(property "Sheetname" "DDR Supply and Termination"
+			(at 18 82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.82 0.82)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "1500_DDR_Supply_and_Termination.kicad_sch"
+			(at 18 88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323"
+					(page "1500")
+				)
+			)
+		)
+	)
+(sheet
+		(at 160 77)
+		(size 125 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "66eb7541-46e7-491d-9b58-6fba2f149585")
+		(property "Sheetname" "I-O 1.8 V"
+			(at 163 82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.82 0.82)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "1600_I_O_1_8_V.kicad_sch"
+			(at 163 88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323"
+					(page "1600")
+				)
+			)
+		)
+	)
+(sheet
+		(at 15 109)
+		(size 125 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "279f931e-243b-4881-9f3e-a2333335d827")
+		(property "Sheetname" "Analog LDO Rails"
+			(at 18 114 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.82 0.82)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "1700_Analog_LDO_Rails.kicad_sch"
+			(at 18 120 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.7 0.7)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/6cb14cfc-03f1-4f84-bc3d-825185ed9323"
+					(page "1700")
+				)
+			)
+		)
+	)
+)

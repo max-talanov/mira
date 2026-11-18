@@ -1,83 +1,13 @@
 [
   {
     "pair": "PC1",
+    "control_ref": "J30001",
+    "mate_ref": "J220001",
     "pins": [
       {
         "pin": "1",
         "control_net": "HOST_WDI",
         "mate_net": "HOST_WDI",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "2",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "3",
-        "control_net": "HOST_ALIVE",
-        "mate_net": "HOST_ALIVE",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "4",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "5",
-        "control_net": "HOST_UART_TX",
-        "mate_net": "HOST_UART_TX",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "6",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "7",
-        "control_net": "PM_UART_TX_POWER",
-        "mate_net": "PM_UART_TX_POWER",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "8",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "9",
-        "control_net": "ALL_RAILS_PG_POWER",
-        "mate_net": "ALL_RAILS_PG_POWER",
         "pad_delta_mm": [
           0.0,
           0.0
@@ -174,29 +104,6 @@
         ]
       },
       {
-        "pin": "20",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      }
-    ]
-  },
-  {
-    "pair": "PC2",
-    "pins": [
-      {
-        "pin": "1",
-        "control_net": "CORE1V0",
-        "mate_net": "CORE1V0",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
         "pin": "2",
         "control_net": "GND",
         "mate_net": "GND",
@@ -206,9 +113,18 @@
         ]
       },
       {
+        "pin": "20",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
         "pin": "3",
-        "control_net": "CORE1V0",
-        "mate_net": "CORE1V0",
+        "control_net": "HOST_ALIVE",
+        "mate_net": "HOST_ALIVE",
         "pad_delta_mm": [
           0.0,
           0.0
@@ -225,8 +141,8 @@
       },
       {
         "pin": "5",
-        "control_net": "CORE1V0",
-        "mate_net": "CORE1V0",
+        "control_net": "HOST_UART_TX",
+        "mate_net": "HOST_UART_TX",
         "pad_delta_mm": [
           0.0,
           0.0
@@ -243,8 +159,8 @@
       },
       {
         "pin": "7",
-        "control_net": "CORE1V0",
-        "mate_net": "CORE1V0",
+        "control_net": "PM_UART_TX_POWER",
+        "mate_net": "PM_UART_TX_POWER",
         "pad_delta_mm": [
           0.0,
           0.0
@@ -261,6 +177,22 @@
       },
       {
         "pin": "9",
+        "control_net": "ALL_RAILS_PG_POWER",
+        "mate_net": "ALL_RAILS_PG_POWER",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "pair": "PC2",
+    "control_ref": "J40001",
+    "mate_ref": "J230001",
+    "pins": [
+      {
+        "pin": "1",
         "control_net": "CORE1V0",
         "mate_net": "CORE1V0",
         "pad_delta_mm": [
@@ -359,6 +291,15 @@
         ]
       },
       {
+        "pin": "2",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
         "pin": "20",
         "control_net": "GND",
         "mate_net": "GND",
@@ -420,16 +361,126 @@
           0.0,
           0.0
         ]
+      },
+      {
+        "pin": "3",
+        "control_net": "CORE1V0",
+        "mate_net": "CORE1V0",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "4",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "5",
+        "control_net": "CORE1V0",
+        "mate_net": "CORE1V0",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "6",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "7",
+        "control_net": "CORE1V0",
+        "mate_net": "CORE1V0",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "8",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "9",
+        "control_net": "CORE1V0",
+        "mate_net": "CORE1V0",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
       }
     ]
   },
   {
     "pair": "PC3",
+    "control_ref": "J40002",
+    "mate_ref": "J230002",
     "pins": [
       {
         "pin": "1",
         "control_net": "DDR1V35",
         "mate_net": "DDR1V35",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "10",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "11",
+        "control_net": "DDR_VREF",
+        "mate_net": "DDR_VREF",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "12",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "13",
+        "control_net": "IO3V3",
+        "mate_net": "IO3V3",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "14",
+        "control_net": "GND",
+        "mate_net": "GND",
         "pad_delta_mm": [
           0.0,
           0.0
@@ -506,61 +557,27 @@
           0.0,
           0.0
         ]
-      },
-      {
-        "pin": "10",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "11",
-        "control_net": "DDR_VREF",
-        "mate_net": "DDR_VREF",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "12",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "13",
-        "control_net": "IO3V3",
-        "mate_net": "IO3V3",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "14",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
       }
     ]
   },
   {
     "pair": "PC4",
+    "control_ref": "J40003",
+    "mate_ref": "J230003",
     "pins": [
       {
         "pin": "1",
         "control_net": "SYS3V3",
         "mate_net": "SYS3V3",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "10",
+        "control_net": "GND",
+        "mate_net": "GND",
         "pad_delta_mm": [
           0.0,
           0.0
@@ -637,20 +654,13 @@
           0.0,
           0.0
         ]
-      },
-      {
-        "pin": "10",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
       }
     ]
   },
   {
     "pair": "PC5",
+    "control_ref": "J40004",
+    "mate_ref": "J230004",
     "pins": [
       {
         "pin": "1",
@@ -728,83 +738,13 @@
   },
   {
     "pair": "PC6",
+    "control_ref": "J120001",
+    "mate_ref": "J230005",
     "pins": [
       {
         "pin": "1",
         "control_net": "IO1V8",
         "mate_net": "IO1V8",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "2",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "3",
-        "control_net": "IO1V8",
-        "mate_net": "IO1V8",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "4",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "5",
-        "control_net": "IO3V3",
-        "mate_net": "IO3V3",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "6",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "7",
-        "control_net": "IO3V3",
-        "mate_net": "IO3V3",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "8",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "9",
-        "control_net": "IO3V3",
-        "mate_net": "IO3V3",
         "pad_delta_mm": [
           0.0,
           0.0
@@ -818,20 +758,6 @@
           0.0,
           0.0
         ]
-      }
-    ]
-  },
-  {
-    "pair": "PC7",
-    "pins": [
-      {
-        "pin": "1",
-        "control_net": "P15",
-        "mate_net": "P15",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
       },
       {
         "pin": "2",
@@ -844,8 +770,8 @@
       },
       {
         "pin": "3",
-        "control_net": "P15",
-        "mate_net": "P15",
+        "control_net": "IO1V8",
+        "mate_net": "IO1V8",
         "pad_delta_mm": [
           0.0,
           0.0
@@ -862,8 +788,8 @@
       },
       {
         "pin": "5",
-        "control_net": "N15",
-        "mate_net": "N15",
+        "control_net": "IO3V3",
+        "mate_net": "IO3V3",
         "pad_delta_mm": [
           0.0,
           0.0
@@ -880,8 +806,8 @@
       },
       {
         "pin": "7",
-        "control_net": "N15",
-        "mate_net": "N15",
+        "control_net": "IO3V3",
+        "mate_net": "IO3V3",
         "pad_delta_mm": [
           0.0,
           0.0
@@ -898,8 +824,24 @@
       },
       {
         "pin": "9",
-        "control_net": "ANA5",
-        "mate_net": "ANA5",
+        "control_net": "IO3V3",
+        "mate_net": "IO3V3",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  {
+    "pair": "PC7",
+    "control_ref": "J50001",
+    "mate_ref": "J240001",
+    "pins": [
+      {
+        "pin": "1",
+        "control_net": "P15",
+        "mate_net": "P15",
         "pad_delta_mm": [
           0.0,
           0.0
@@ -985,16 +927,117 @@
           0.0,
           0.0
         ]
+      },
+      {
+        "pin": "2",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "3",
+        "control_net": "P15",
+        "mate_net": "P15",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "4",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "5",
+        "control_net": "N15",
+        "mate_net": "N15",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "6",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "7",
+        "control_net": "N15",
+        "mate_net": "N15",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "8",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "9",
+        "control_net": "ANA5",
+        "mate_net": "ANA5",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
       }
     ]
   },
   {
     "pair": "PC8",
+    "control_ref": "J50002",
+    "mate_ref": "J240002",
     "pins": [
       {
         "pin": "1",
         "control_net": "P15",
         "mate_net": "P15",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "10",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "11",
+        "control_net": "AON",
+        "mate_net": "AON",
+        "pad_delta_mm": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "pin": "12",
+        "control_net": "GND",
+        "mate_net": "GND",
         "pad_delta_mm": [
           0.0,
           0.0
@@ -1071,135 +1114,38 @@
           0.0,
           0.0
         ]
-      },
-      {
-        "pin": "10",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "11",
-        "control_net": "AON",
-        "mate_net": "AON",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
-      },
-      {
-        "pin": "12",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          0.0,
-          0.0
-        ]
       }
     ]
   },
   {
     "pair": "A",
+    "control_ref": "J540001",
+    "mate_ref": "J10001",
     "pins": [
       {
         "pin": "1",
-        "control_net": "BL0",
-        "mate_net": "BL0",
+        "control_net": "CH0",
+        "mate_net": "CH0",
         "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "2",
-        "control_net": "BL1",
-        "mate_net": "BL1",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "3",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "4",
-        "control_net": "BL2",
-        "mate_net": "BL2",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "5",
-        "control_net": "BL3",
-        "mate_net": "BL3",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "6",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "7",
-        "control_net": "BL4",
-        "mate_net": "BL4",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "8",
-        "control_net": "BL5",
-        "mate_net": "BL5",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "9",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "10",
-        "control_net": "BL6",
-        "mate_net": "BL6",
+        "control_net": "CH6",
+        "mate_net": "CH6",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "11",
-        "control_net": "BL7",
-        "mate_net": "BL7",
+        "control_net": "CH7",
+        "mate_net": "CH7",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -1208,25 +1154,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "13",
-        "control_net": "BL8",
-        "mate_net": "BL8",
+        "control_net": "CH8",
+        "mate_net": "CH8",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "14",
-        "control_net": "BL9",
-        "mate_net": "BL9",
+        "control_net": "CH9",
+        "mate_net": "CH9",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -1235,25 +1181,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "16",
-        "control_net": "BL10",
-        "mate_net": "BL10",
+        "control_net": "CH10",
+        "mate_net": "CH10",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "17",
-        "control_net": "BL11",
-        "mate_net": "BL11",
+        "control_net": "CH11",
+        "mate_net": "CH11",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -1262,25 +1208,34 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "19",
-        "control_net": "BL12",
-        "mate_net": "BL12",
+        "control_net": "CH12",
+        "mate_net": "CH12",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "2",
+        "control_net": "CH1",
+        "mate_net": "CH1",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
       {
         "pin": "20",
-        "control_net": "BL13",
-        "mate_net": "BL13",
+        "control_net": "CH13",
+        "mate_net": "CH13",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -1289,25 +1244,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "22",
-        "control_net": "BL14",
-        "mate_net": "BL14",
+        "control_net": "CH14",
+        "mate_net": "CH14",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "23",
-        "control_net": "BL15",
-        "mate_net": "BL15",
+        "control_net": "CH15",
+        "mate_net": "CH15",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -1316,25 +1271,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "25",
-        "control_net": "BL16",
-        "mate_net": "BL16",
+        "control_net": "CH16",
+        "mate_net": "CH16",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "26",
-        "control_net": "BL17",
-        "mate_net": "BL17",
+        "control_net": "CH17",
+        "mate_net": "CH17",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -1343,25 +1298,34 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "28",
-        "control_net": "BL18",
-        "mate_net": "BL18",
+        "control_net": "CH18",
+        "mate_net": "CH18",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "29",
-        "control_net": "BL19",
-        "mate_net": "BL19",
+        "control_net": "CH19",
+        "mate_net": "CH19",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "3",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
@@ -1370,25 +1334,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "31",
-        "control_net": "BL20",
-        "mate_net": "BL20",
+        "control_net": "CH20",
+        "mate_net": "CH20",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "32",
-        "control_net": "BL21",
-        "mate_net": "BL21",
+        "control_net": "CH21",
+        "mate_net": "CH21",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -1397,25 +1361,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "34",
-        "control_net": "BL22",
-        "mate_net": "BL22",
+        "control_net": "CH22",
+        "mate_net": "CH22",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "35",
-        "control_net": "BL23",
-        "mate_net": "BL23",
+        "control_net": "CH23",
+        "mate_net": "CH23",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -1424,25 +1388,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "37",
-        "control_net": "BL24",
-        "mate_net": "BL24",
+        "control_net": "CH24",
+        "mate_net": "CH24",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "38",
-        "control_net": "BL25",
-        "mate_net": "BL25",
+        "control_net": "CH25",
+        "mate_net": "CH25",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -1451,25 +1415,34 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "4",
+        "control_net": "CH2",
+        "mate_net": "CH2",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
       {
         "pin": "40",
-        "control_net": "BL26",
-        "mate_net": "BL26",
+        "control_net": "CH26",
+        "mate_net": "CH26",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "41",
-        "control_net": "BL27",
-        "mate_net": "BL27",
+        "control_net": "CH27",
+        "mate_net": "CH27",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -1478,25 +1451,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "43",
-        "control_net": "BL28",
-        "mate_net": "BL28",
+        "control_net": "CH28",
+        "mate_net": "CH28",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "44",
-        "control_net": "BL29",
-        "mate_net": "BL29",
+        "control_net": "CH29",
+        "mate_net": "CH29",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -1505,25 +1478,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "46",
-        "control_net": "BL30",
-        "mate_net": "BL30",
+        "control_net": "CH30",
+        "mate_net": "CH30",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "47",
-        "control_net": "BL31",
-        "mate_net": "BL31",
+        "control_net": "CH31",
+        "mate_net": "CH31",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -1532,25 +1505,34 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "49",
-        "control_net": "WL0",
-        "mate_net": "WL0",
+        "control_net": "unconnected-(J540001-Pad49)",
+        "mate_net": "unconnected-(J10001-Pad49)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "5",
+        "control_net": "CH3",
+        "mate_net": "CH3",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
       {
         "pin": "50",
-        "control_net": "WL1",
-        "mate_net": "WL1",
+        "control_net": "unconnected-(J540001-Pad50)",
+        "mate_net": "unconnected-(J10001-Pad50)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -1559,25 +1541,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "52",
-        "control_net": "WL2",
-        "mate_net": "WL2",
+        "control_net": "unconnected-(J540001-Pad52)",
+        "mate_net": "unconnected-(J10001-Pad52)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "53",
-        "control_net": "WL3",
-        "mate_net": "WL3",
+        "control_net": "unconnected-(J540001-Pad53)",
+        "mate_net": "unconnected-(J10001-Pad53)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -1586,25 +1568,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "55",
-        "control_net": "WL4",
-        "mate_net": "WL4",
+        "control_net": "unconnected-(J540001-Pad55)",
+        "mate_net": "unconnected-(J10001-Pad55)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "56",
-        "control_net": "WL5",
-        "mate_net": "WL5",
+        "control_net": "unconnected-(J540001-Pad56)",
+        "mate_net": "unconnected-(J10001-Pad56)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -1613,25 +1595,34 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "58",
-        "control_net": "WL6",
-        "mate_net": "WL6",
+        "control_net": "unconnected-(J540001-Pad58)",
+        "mate_net": "unconnected-(J10001-Pad58)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "59",
-        "control_net": "WL7",
-        "mate_net": "WL7",
+        "control_net": "unconnected-(J540001-Pad59)",
+        "mate_net": "unconnected-(J10001-Pad59)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "6",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
@@ -1640,25 +1631,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "61",
-        "control_net": "WL8",
-        "mate_net": "WL8",
+        "control_net": "unconnected-(J540001-Pad61)",
+        "mate_net": "unconnected-(J10001-Pad61)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "62",
-        "control_net": "WL9",
-        "mate_net": "WL9",
+        "control_net": "unconnected-(J540001-Pad62)",
+        "mate_net": "unconnected-(J10001-Pad62)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -1667,25 +1658,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "64",
-        "control_net": "WL10",
-        "mate_net": "WL10",
+        "control_net": "unconnected-(J540001-Pad64)",
+        "mate_net": "unconnected-(J10001-Pad64)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "65",
-        "control_net": "WL11",
-        "mate_net": "WL11",
+        "control_net": "unconnected-(J540001-Pad65)",
+        "mate_net": "unconnected-(J10001-Pad65)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -1694,133 +1685,160 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "67",
-        "control_net": "WL12",
-        "mate_net": "WL12",
+        "control_net": "unconnected-(J540001-Pad67)",
+        "mate_net": "unconnected-(J10001-Pad67)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "68",
-        "control_net": "WL13",
-        "mate_net": "WL13",
+        "control_net": "unconnected-(J540001-Pad68)",
+        "mate_net": "unconnected-(J10001-Pad68)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "69",
-        "control_net": "WL14",
-        "mate_net": "WL14",
+        "control_net": "unconnected-(J540001-Pad69)",
+        "mate_net": "unconnected-(J10001-Pad69)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "7",
+        "control_net": "CH4",
+        "mate_net": "CH4",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
       {
         "pin": "70",
-        "control_net": "WL15",
-        "mate_net": "WL15",
+        "control_net": "unconnected-(J540001-Pad70)",
+        "mate_net": "unconnected-(J10001-Pad70)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "71",
-        "control_net": "unconnected-(J1800-Pad71)",
-        "mate_net": "unconnected-(J1-Pad71)",
+        "control_net": "unconnected-(J540001-Pad71)",
+        "mate_net": "unconnected-(J10001-Pad71)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "72",
-        "control_net": "unconnected-(J1800-Pad72)",
-        "mate_net": "unconnected-(J1-Pad72)",
+        "control_net": "unconnected-(J540001-Pad72)",
+        "mate_net": "unconnected-(J10001-Pad72)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "73",
-        "control_net": "unconnected-(J1800-Pad73)",
-        "mate_net": "unconnected-(J1-Pad73)",
+        "control_net": "unconnected-(J540001-Pad73)",
+        "mate_net": "unconnected-(J10001-Pad73)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "74",
-        "control_net": "unconnected-(J1800-Pad74)",
-        "mate_net": "unconnected-(J1-Pad74)",
+        "control_net": "unconnected-(J540001-Pad74)",
+        "mate_net": "unconnected-(J10001-Pad74)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "75",
-        "control_net": "unconnected-(J1800-Pad75)",
-        "mate_net": "unconnected-(J1-Pad75)",
+        "control_net": "unconnected-(J540001-Pad75)",
+        "mate_net": "unconnected-(J10001-Pad75)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "76",
-        "control_net": "unconnected-(J1800-Pad76)",
-        "mate_net": "unconnected-(J1-Pad76)",
+        "control_net": "unconnected-(J540001-Pad76)",
+        "mate_net": "unconnected-(J10001-Pad76)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "77",
-        "control_net": "unconnected-(J1800-Pad77)",
-        "mate_net": "unconnected-(J1-Pad77)",
+        "control_net": "unconnected-(J540001-Pad77)",
+        "mate_net": "unconnected-(J10001-Pad77)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "78",
-        "control_net": "unconnected-(J1800-Pad78)",
-        "mate_net": "unconnected-(J1-Pad78)",
+        "control_net": "unconnected-(J540001-Pad78)",
+        "mate_net": "unconnected-(J10001-Pad78)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "79",
-        "control_net": "unconnected-(J1800-Pad79)",
-        "mate_net": "unconnected-(J1-Pad79)",
+        "control_net": "unconnected-(J540001-Pad79)",
+        "mate_net": "unconnected-(J10001-Pad79)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "8",
+        "control_net": "CH5",
+        "mate_net": "CH5",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
       {
         "pin": "80",
-        "control_net": "unconnected-(J1800-Pad80)",
-        "mate_net": "unconnected-(J1-Pad80)",
+        "control_net": "unconnected-(J540001-Pad80)",
+        "mate_net": "unconnected-(J10001-Pad80)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "9",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
@@ -1829,7 +1847,7 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -2.3000000000000114,
+          -2.3,
           0.0
         ]
       },
@@ -1838,7 +1856,7 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -2.3000000000000114,
+          -2.3,
           0.0
         ]
       },
@@ -1847,7 +1865,7 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          2.3000000000000114,
+          2.3,
           0.0
         ]
       },
@@ -1856,7 +1874,7 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          2.3000000000000114,
+          2.3,
           0.0
         ]
       }
@@ -1864,103 +1882,33 @@
   },
   {
     "pair": "B",
+    "control_ref": "J540002",
+    "mate_ref": "J10002",
     "pins": [
       {
         "pin": "1",
-        "control_net": "NL0",
-        "mate_net": "NL0",
+        "control_net": "CH32",
+        "mate_net": "CH32",
         "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "2",
-        "control_net": "NL1",
-        "mate_net": "NL1",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "3",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "4",
-        "control_net": "NL2",
-        "mate_net": "NL2",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "5",
-        "control_net": "NL3",
-        "mate_net": "NL3",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "6",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "7",
-        "control_net": "NL4",
-        "mate_net": "NL4",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "8",
-        "control_net": "NL5",
-        "mate_net": "NL5",
-        "pad_delta_mm": [
-          1.5999999999999943,
-          0.0
-        ]
-      },
-      {
-        "pin": "9",
-        "control_net": "GND",
-        "mate_net": "GND",
-        "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "10",
-        "control_net": "NL6",
-        "mate_net": "NL6",
+        "control_net": "CH38",
+        "mate_net": "CH38",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "11",
-        "control_net": "NL7",
-        "mate_net": "NL7",
+        "control_net": "CH39",
+        "mate_net": "CH39",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -1969,25 +1917,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "13",
-        "control_net": "NL8",
-        "mate_net": "NL8",
+        "control_net": "CH40",
+        "mate_net": "CH40",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "14",
-        "control_net": "NL9",
-        "mate_net": "NL9",
+        "control_net": "CH41",
+        "mate_net": "CH41",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -1996,25 +1944,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "16",
-        "control_net": "NL10",
-        "mate_net": "NL10",
+        "control_net": "CH42",
+        "mate_net": "CH42",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "17",
-        "control_net": "NL11",
-        "mate_net": "NL11",
+        "control_net": "CH43",
+        "mate_net": "CH43",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -2023,25 +1971,34 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "19",
-        "control_net": "NL12",
-        "mate_net": "NL12",
+        "control_net": "CH44",
+        "mate_net": "CH44",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "2",
+        "control_net": "CH33",
+        "mate_net": "CH33",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
       {
         "pin": "20",
-        "control_net": "NL13",
-        "mate_net": "NL13",
+        "control_net": "CH45",
+        "mate_net": "CH45",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -2050,25 +2007,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "22",
-        "control_net": "NL14",
-        "mate_net": "NL14",
+        "control_net": "CH46",
+        "mate_net": "CH46",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "23",
-        "control_net": "NL15",
-        "mate_net": "NL15",
+        "control_net": "CH47",
+        "mate_net": "CH47",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -2077,25 +2034,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "25",
-        "control_net": "NL16",
-        "mate_net": "NL16",
+        "control_net": "unconnected-(J540002-Pad25)",
+        "mate_net": "unconnected-(J10002-Pad25)",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "26",
-        "control_net": "NL17",
-        "mate_net": "NL17",
+        "control_net": "unconnected-(J540002-Pad26)",
+        "mate_net": "unconnected-(J10002-Pad26)",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -2104,25 +2061,34 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "28",
-        "control_net": "NL18",
-        "mate_net": "NL18",
+        "control_net": "unconnected-(J540002-Pad28)",
+        "mate_net": "unconnected-(J10002-Pad28)",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "29",
-        "control_net": "NL19",
-        "mate_net": "NL19",
+        "control_net": "unconnected-(J540002-Pad29)",
+        "mate_net": "unconnected-(J10002-Pad29)",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "3",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
@@ -2131,25 +2097,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "31",
-        "control_net": "NL20",
-        "mate_net": "NL20",
+        "control_net": "unconnected-(J540002-Pad31)",
+        "mate_net": "unconnected-(J10002-Pad31)",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "32",
-        "control_net": "NL21",
-        "mate_net": "NL21",
+        "control_net": "unconnected-(J540002-Pad32)",
+        "mate_net": "unconnected-(J10002-Pad32)",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -2158,25 +2124,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "34",
-        "control_net": "NL22",
-        "mate_net": "NL22",
+        "control_net": "unconnected-(J540002-Pad34)",
+        "mate_net": "unconnected-(J10002-Pad34)",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "35",
-        "control_net": "NL23",
-        "mate_net": "NL23",
+        "control_net": "unconnected-(J540002-Pad35)",
+        "mate_net": "unconnected-(J10002-Pad35)",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -2185,25 +2151,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "37",
-        "control_net": "NL24",
-        "mate_net": "NL24",
+        "control_net": "unconnected-(J540002-Pad37)",
+        "mate_net": "unconnected-(J10002-Pad37)",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "38",
-        "control_net": "NL25",
-        "mate_net": "NL25",
+        "control_net": "unconnected-(J540002-Pad38)",
+        "mate_net": "unconnected-(J10002-Pad38)",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
@@ -2212,25 +2178,34 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "4",
+        "control_net": "CH34",
+        "mate_net": "CH34",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
       {
         "pin": "40",
-        "control_net": "NL26",
-        "mate_net": "NL26",
+        "control_net": "unconnected-(J540002-Pad40)",
+        "mate_net": "unconnected-(J10002-Pad40)",
         "pad_delta_mm": [
-          1.5999999999999943,
+          1.6,
           0.0
         ]
       },
       {
         "pin": "41",
-        "control_net": "NL27",
-        "mate_net": "NL27",
+        "control_net": "unconnected-(J540002-Pad41)",
+        "mate_net": "unconnected-(J10002-Pad41)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -2239,25 +2214,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "43",
-        "control_net": "NL28",
-        "mate_net": "NL28",
+        "control_net": "unconnected-(J540002-Pad43)",
+        "mate_net": "unconnected-(J10002-Pad43)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "44",
-        "control_net": "NL29",
-        "mate_net": "NL29",
+        "control_net": "unconnected-(J540002-Pad44)",
+        "mate_net": "unconnected-(J10002-Pad44)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -2266,25 +2241,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "46",
-        "control_net": "NL30",
-        "mate_net": "NL30",
+        "control_net": "unconnected-(J540002-Pad46)",
+        "mate_net": "unconnected-(J10002-Pad46)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "47",
-        "control_net": "NL31",
-        "mate_net": "NL31",
+        "control_net": "unconnected-(J540002-Pad47)",
+        "mate_net": "unconnected-(J10002-Pad47)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -2293,25 +2268,34 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "49",
-        "control_net": "WL16",
-        "mate_net": "WL16",
+        "control_net": "unconnected-(J540002-Pad49)",
+        "mate_net": "unconnected-(J10002-Pad49)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "5",
+        "control_net": "CH35",
+        "mate_net": "CH35",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
       {
         "pin": "50",
-        "control_net": "WL17",
-        "mate_net": "WL17",
+        "control_net": "unconnected-(J540002-Pad50)",
+        "mate_net": "unconnected-(J10002-Pad50)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -2320,25 +2304,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "52",
-        "control_net": "WL18",
-        "mate_net": "WL18",
+        "control_net": "unconnected-(J540002-Pad52)",
+        "mate_net": "unconnected-(J10002-Pad52)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "53",
-        "control_net": "WL19",
-        "mate_net": "WL19",
+        "control_net": "unconnected-(J540002-Pad53)",
+        "mate_net": "unconnected-(J10002-Pad53)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -2347,25 +2331,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "55",
-        "control_net": "WL20",
-        "mate_net": "WL20",
+        "control_net": "unconnected-(J540002-Pad55)",
+        "mate_net": "unconnected-(J10002-Pad55)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "56",
-        "control_net": "WL21",
-        "mate_net": "WL21",
+        "control_net": "unconnected-(J540002-Pad56)",
+        "mate_net": "unconnected-(J10002-Pad56)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -2374,25 +2358,34 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "58",
-        "control_net": "WL22",
-        "mate_net": "WL22",
+        "control_net": "unconnected-(J540002-Pad58)",
+        "mate_net": "unconnected-(J10002-Pad58)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "59",
-        "control_net": "WL23",
-        "mate_net": "WL23",
+        "control_net": "unconnected-(J540002-Pad59)",
+        "mate_net": "unconnected-(J10002-Pad59)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "6",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
@@ -2401,25 +2394,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "61",
-        "control_net": "WL24",
-        "mate_net": "WL24",
+        "control_net": "unconnected-(J540002-Pad61)",
+        "mate_net": "unconnected-(J10002-Pad61)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "62",
-        "control_net": "WL25",
-        "mate_net": "WL25",
+        "control_net": "unconnected-(J540002-Pad62)",
+        "mate_net": "unconnected-(J10002-Pad62)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -2428,25 +2421,25 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "64",
-        "control_net": "WL26",
-        "mate_net": "WL26",
+        "control_net": "unconnected-(J540002-Pad64)",
+        "mate_net": "unconnected-(J10002-Pad64)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "65",
-        "control_net": "WL27",
-        "mate_net": "WL27",
+        "control_net": "unconnected-(J540002-Pad65)",
+        "mate_net": "unconnected-(J10002-Pad65)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
@@ -2455,133 +2448,160 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "67",
-        "control_net": "WL28",
-        "mate_net": "WL28",
+        "control_net": "unconnected-(J540002-Pad67)",
+        "mate_net": "unconnected-(J10002-Pad67)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "68",
-        "control_net": "WL29",
-        "mate_net": "WL29",
+        "control_net": "unconnected-(J540002-Pad68)",
+        "mate_net": "unconnected-(J10002-Pad68)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "69",
-        "control_net": "WL30",
-        "mate_net": "WL30",
+        "control_net": "unconnected-(J540002-Pad69)",
+        "mate_net": "unconnected-(J10002-Pad69)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "7",
+        "control_net": "CH36",
+        "mate_net": "CH36",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
       {
         "pin": "70",
-        "control_net": "WL31",
-        "mate_net": "WL31",
+        "control_net": "unconnected-(J540002-Pad70)",
+        "mate_net": "unconnected-(J10002-Pad70)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "71",
-        "control_net": "unconnected-(J1801-Pad71)",
-        "mate_net": "unconnected-(J2-Pad71)",
+        "control_net": "unconnected-(J540002-Pad71)",
+        "mate_net": "unconnected-(J10002-Pad71)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "72",
-        "control_net": "unconnected-(J1801-Pad72)",
-        "mate_net": "unconnected-(J2-Pad72)",
+        "control_net": "unconnected-(J540002-Pad72)",
+        "mate_net": "unconnected-(J10002-Pad72)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "73",
-        "control_net": "unconnected-(J1801-Pad73)",
-        "mate_net": "unconnected-(J2-Pad73)",
+        "control_net": "unconnected-(J540002-Pad73)",
+        "mate_net": "unconnected-(J10002-Pad73)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "74",
-        "control_net": "unconnected-(J1801-Pad74)",
-        "mate_net": "unconnected-(J2-Pad74)",
+        "control_net": "unconnected-(J540002-Pad74)",
+        "mate_net": "unconnected-(J10002-Pad74)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "75",
-        "control_net": "unconnected-(J1801-Pad75)",
-        "mate_net": "unconnected-(J2-Pad75)",
+        "control_net": "unconnected-(J540002-Pad75)",
+        "mate_net": "unconnected-(J10002-Pad75)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "76",
-        "control_net": "unconnected-(J1801-Pad76)",
-        "mate_net": "unconnected-(J2-Pad76)",
+        "control_net": "unconnected-(J540002-Pad76)",
+        "mate_net": "unconnected-(J10002-Pad76)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "77",
-        "control_net": "unconnected-(J1801-Pad77)",
-        "mate_net": "unconnected-(J2-Pad77)",
+        "control_net": "unconnected-(J540002-Pad77)",
+        "mate_net": "unconnected-(J10002-Pad77)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "78",
-        "control_net": "unconnected-(J1801-Pad78)",
-        "mate_net": "unconnected-(J2-Pad78)",
+        "control_net": "unconnected-(J540002-Pad78)",
+        "mate_net": "unconnected-(J10002-Pad78)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
           0.0
         ]
       },
       {
         "pin": "79",
-        "control_net": "unconnected-(J1801-Pad79)",
-        "mate_net": "unconnected-(J2-Pad79)",
+        "control_net": "unconnected-(J540002-Pad79)",
+        "mate_net": "unconnected-(J10002-Pad79)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "8",
+        "control_net": "CH37",
+        "mate_net": "CH37",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
       {
         "pin": "80",
-        "control_net": "unconnected-(J1801-Pad80)",
-        "mate_net": "unconnected-(J2-Pad80)",
+        "control_net": "unconnected-(J540002-Pad80)",
+        "mate_net": "unconnected-(J10002-Pad80)",
         "pad_delta_mm": [
-          -1.5999999999999943,
+          -1.6,
+          0.0
+        ]
+      },
+      {
+        "pin": "9",
+        "control_net": "GND",
+        "mate_net": "GND",
+        "pad_delta_mm": [
+          1.6,
           0.0
         ]
       },
@@ -2590,7 +2610,7 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -2.3000000000000114,
+          -2.3,
           0.0
         ]
       },
@@ -2599,7 +2619,7 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          -2.3000000000000114,
+          -2.3,
           0.0
         ]
       },
@@ -2608,7 +2628,7 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          2.3000000000000114,
+          2.3,
           0.0
         ]
       },
@@ -2617,7 +2637,7 @@
         "control_net": "GND",
         "mate_net": "GND",
         "pad_delta_mm": [
-          2.3000000000000114,
+          2.3,
           0.0
         ]
       }

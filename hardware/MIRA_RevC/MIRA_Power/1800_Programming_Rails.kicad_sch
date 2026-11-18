@@ -1,0 +1,155 @@
+(kicad_sch
+(version 20260306)
+(generator "eeschema")
+(generator_version "10.0")
+(uuid "36e80446-3d41-417e-b9d6-6226fb8aa379")
+(lib_symbols)
+(title_block (title "Programming Rails") (rev "C-review") (company "MIRA"))
+(paper "A4")
+(text "Programming Rails" (at 15 15 0) (effects (font (size 1.8 1.8)) (justify left top)) (uuid "389a50bb-0c98-537a-95ce-f5ff4ae707a6"))
+(text "Open a block to follow the signal path." (at 15 25 0) (effects (font (size 1.1 1.1)) (justify left top)) (uuid "cabeadc4-9801-5fc6-b528-b6ffe8be00da"))
+(sheet
+		(at 15 45)
+		(size 125 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "36567e76-39e5-4385-bb34-60c34f46c6d0")
+		(property "Sheetname" "Program Positive"
+			(at 18 50 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.88 0.88)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "1900_Program_Positive.kicad_sch"
+			(at 18 56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654"
+					(page "1900")
+				)
+			)
+		)
+	)
+(sheet
+		(at 160 45)
+		(size 125 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "07026a3a-1b65-4cd1-b63a-f3032436b6b4")
+		(property "Sheetname" "Program Negative"
+			(at 163 50 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.88 0.88)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "2000_Program_Negative.kicad_sch"
+			(at 163 56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654"
+					(page "2000")
+				)
+			)
+		)
+	)
+(sheet
+		(at 15 77)
+		(size 125 15)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.18)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "92066e9d-e19c-4a6f-82f8-9ea75b58d34c")
+		(property "Sheetname" "Program Interface"
+			(at 18 82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.88 0.88)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		)
+		(property "Sheetfile" "2100_Program_Interface.kicad_sch"
+			(at 18 88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.75 0.75)
+					(thickness 0.1)
+					(color 85 85 85 1)
+				)
+			)
+		 (hide yes))
+		(instances
+			(project "MIRA_Power"
+				(path "/5c3dfbc0-84d7-4846-b0d0-d1c9bc7280bc/15ac01f5-4fbb-4009-99d1-55ed8240a53b/5bfb296e-f56c-43e1-922c-cafbe6830654"
+					(page "2100")
+				)
+			)
+		)
+	)
+)
