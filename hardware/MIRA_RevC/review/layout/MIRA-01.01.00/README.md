@@ -1,5 +1,7 @@
 # MIRA-01.01.00 — общая компоновка
 
+[Функциональное размещение Power, варианты габаритов Control и 3D-проверка](../reconciled/functional/README.md).
+
 [Вид сверху](../reconciled/assembly-top.png) · [Номинальный вид сбоку](../reconciled/assembly-side.png) · [Карта 10 пар](../connector-map.csv) · [Сверка площадок](pair-pin-checks.json)
 
 Общий KiCad XY, X вправо, Y вниз, вид со стороны Control F.Cu. Z0 — Control B.Cu, Control F.Cu на Z1.6 мм. Power F.Cu −12 мм, Crossbar B.Cu +9.6 мм. PCB толщиной 1.6 мм.

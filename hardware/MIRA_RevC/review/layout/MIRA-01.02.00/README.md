@@ -1,5 +1,7 @@
 # MIRA-01.02.00 — цифровая расстановка
 
+[Функциональная проверка Control и сравнение вариантов контура](../reconciled/functional/README.md).
+
 [Control сверху](control-top.png) · [Control снизу](control-bottom.png) · [Координаты 206 позиций](placement.csv) · [Архитектура](../../../ARCHITECTURE_RU.md)
 
 | Блок | Положение и решение |

@@ -498,17 +498,7 @@
 		)
 		(uuid "ca3a1e7c-f194-4320-bf88-aa77444445e9")
 	)
-	(global_label "HOST_RESET_N"
-		(shape input)
-		(at 55.88 53.34 180)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify right)
-		)
-		(uuid "28d404b7-ce5c-44d8-af93-ecd995fbb100")
-	)
+
 	(wire
 		(pts
 			(xy 87.63 53.34)
@@ -520,17 +510,7 @@
 		)
 		(uuid "5c00d4e2-459f-4772-bf92-b6163c18e22d")
 	)
-	(global_label "HOST_RESET_AON_N"
-		(shape input)
-		(at 106.68 53.34 0)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify left)
-		)
-		(uuid "a7e73486-7840-46b5-a79e-6dcb9b4b0f31")
-	)
+
 	(wire
 		(pts
 			(xy 81.28 46.99)
@@ -869,17 +849,7 @@
 		)
 		(uuid "7b9cb742-6a68-457c-b9be-5abfc7107cd3")
 	)
-	(global_label "PM_UART_RX"
-		(shape input)
-		(at 106.68 115.57 0)
-		(effects
-			(font
-				(size 1.0 1.0)
-			)
-			(justify left)
-		)
-		(uuid "997df5a5-9048-4e8c-b43e-ec0f88bb85b6")
-	)
+
 	(wire
 		(pts
 			(xy 81.28 109.22)
@@ -1344,11 +1314,11 @@
 	)
 	(embedded_fonts no)
 
-
-
-
-
-
-
 (title_block (title "Host Input Isolation") (rev "C-review") (company "MIRA"))
+	(wire (pts (xy 106.68 53.34) (xy 106.68 81.28)) (stroke (width 0) (type default)) (uuid "994e7646-c6c7-5d4b-990b-9de565a73f85"))
+	(wire (pts (xy 106.68 81.28) (xy 107.95 81.28)) (stroke (width 0) (type default)) (uuid "c82b7eca-309a-5d1d-88f8-696fb5c5a7cf"))
+	(wire (pts (xy 55.88 53.34) (xy 44.45 53.34)) (stroke (width 0) (type default)) (uuid "dfe6efdd-4594-560b-965e-7f64e503f052"))
+	(wire (pts (xy 44.45 53.34) (xy 44.45 81.28)) (stroke (width 0) (type default)) (uuid "b79a202b-f48e-5433-88b1-e638db6c42e9"))
+	(wire (pts (xy 106.68 115.57) (xy 106.68 143.51)) (stroke (width 0) (type default)) (uuid "cde49db8-9f44-52bf-931d-b084ee2997fd"))
+	(wire (pts (xy 106.68 143.51) (xy 107.95 143.51)) (stroke (width 0) (type default)) (uuid "455c63a7-29aa-51b5-a213-2cb48ad04e52"))
 )
