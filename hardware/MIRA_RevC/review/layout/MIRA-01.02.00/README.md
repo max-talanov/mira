@@ -1,5 +1,7 @@
 # MIRA-01.02.00 — цифровая расстановка
 
+[Актуальный общий контур и проверка цифровой части](../common-stack/README.md) · [Полная Control F.Cu](../common-stack/control-f.png) · [Полная Control B.Cu](../common-stack/control-b.png).
+
 [Повторная проверка цифровой расстановки и пробные выходы](../recheck/README.md).
 
 [Лист 1000 — Zynq-7020 и DDR3L с локальной обвязкой](ddr3l/README.md).

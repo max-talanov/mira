@@ -1,6 +1,6 @@
 # MIRA-01.01.00 и MIRA-01.02.00 — сверка RevC
 
-[Актуальная повторная проверка RevC и контур 180 × 240 мм](../recheck/README.md).
+[Актуальный общий контур Power и Control 176 × 235 мм](../common-stack/README.md) · [Предыдущая проверка контура Control](../recheck/README.md).
 
 [Продолжение: оформление, функциональное размещение и 3D](functional/README.md).
 
