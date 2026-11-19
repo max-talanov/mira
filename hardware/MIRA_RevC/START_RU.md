@@ -10,7 +10,7 @@
 
 [Оглавление листов](review/layout/reconciled/sheets.csv) · [Перенумерация и UUID](review/layout/reconciled/renumbering.csv) · [Проверки и сравнение](review/layout/reconciled/README.md).
 
-[Актуальная сборка с общим контуром 176 × 235 мм](review/layout/common-stack/README.md).
+[Актуальная сборка с общим контуром 175,5 × 232,6 мм](review/layout/revision-audit/ОТЧЁТ.md).
 
 [Оформление схем по листам и примеры до/после](review/layout/reconciled/schematic-finish/README.md).
 
