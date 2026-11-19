@@ -1,0 +1,28 @@
+(version 1)
+# AN238422. TX is split by AC capacitors. Allocate half the total skew to each side.
+(rule "USB RX pair skew" (condition "A.NetName == 'FX_USB3RX*'") (constraint skew (max 0.12mm) (within_diff_pairs)))
+(rule "USB TX pair skew per AC segment" (condition "A.NetName == 'FX_USB3TX*'") (constraint skew (max 0.06mm) (within_diff_pairs)))
+(rule "USB RX complete route" (condition "A.NetName == 'FX_USB3RX*'") (constraint length (max 76.2mm)))
+# Internal pad-to-pad clearance ONLY. All other features keep their netclass clearance.
+(rule "U470001 DGN thermal pad clearance" (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U470001') && B.memberOfFootprint('U470001')") (constraint clearance (min 0.15mm)))
+# 12401610 rev C, page 2. The slot is part of the connector, not the board perimeter.
+(rule "Normal copper to routed edge" (constraint edge_clearance (min 0.50mm)))
+(rule "J150001 internal locating slot to own contacts"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('J150001') && B.memberOfFootprint('J150001') && (A.Pad_Number == '' || B.Pad_Number == '')")
+  (constraint edge_clearance (min 0.25mm)))
+
+# JLCPCB multilayer / 1+6+1 via trial; production Control rule file is unchanged.
+(rule "Factory fanout copper gap"
+  (condition "((A.NetName == 'PS_DDR_*' || B.NetName == 'PS_DDR_*' || A.NetName == 'FX_*' || B.NetName == 'FX_*') && (A.Type == 'Track' || B.Type == 'Track' || A.Type == 'Via' || B.Type == 'Via'))")
+  (constraint clearance (min 0.09mm)))
+
+(rule "JLC laser land"
+  (condition "A.Via_Type == 'Micro'")
+  (constraint via_diameter (min 0.25mm))
+  (constraint annular_width (min 0.075mm)))
+(rule "JLC blind via drill separation, different nets"
+  (condition "A.NetName != B.NetName && (A.Via_Type == 'Micro' || B.Via_Type == 'Micro') && A.Type == 'Via' && B.Type == 'Via'")
+  (constraint hole_to_hole (min 0.24mm)))
+(rule "JLC HDI via to trace edge"
+  (condition "(A.Type == 'Via' && B.Type == 'Track') || (A.Type == 'Track' && B.Type == 'Via')")
+  (constraint clearance (min 0.1524mm)))
