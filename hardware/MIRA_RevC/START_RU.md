@@ -8,7 +8,7 @@
 | Power | [Проект](MIRA_Power/MIRA_Power.kicad_pro) | [Схема](PDF/MIRA_Power_C.pdf) |
 | Crossbar | [Проект](MIRA_Crossbar/MIRA_Crossbar.kicad_pro) | [Схема](PDF/MIRA_Crossbar_C.pdf) |
 
-[Оглавление листов](review/layout/reconciled/sheets.csv) · [Перенумерация и UUID](review/layout/reconciled/renumbering.csv) · [Проверки и сравнение](review/layout/reconciled/README.md).
+[Оглавление листов](review/layout/reconciled/sheets.csv) · [Короткая нумерация и UUID](review/layout/reference-renumbering.csv) · [Проверки и сравнение](review/layout/reconciled/README.md).
 
 [Актуальная сборка с общим контуром 175,5 × 232,6 мм](review/layout/revision-audit/ОТЧЁТ.md).
 

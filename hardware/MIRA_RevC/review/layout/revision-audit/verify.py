@@ -90,7 +90,7 @@ def support_axes(boards):
         assert xy(next(iter(b.Pads())).GetDrillSize()) == (3.2, 3.2)
         support[ref] = xy(a.GetPosition())
     assert xy(parts["Control"]["H1802"].GetPosition()) == xy(parts["Crossbar"]["H3"].GetPosition())
-    assert parts["Power"]["U110001"].IsFlipped() and parts["Power"]["J30001"].IsFlipped()
+    assert parts["Power"]["U1101"].IsFlipped() and parts["Power"]["J301"].IsFlipped()
     return support
 
 
