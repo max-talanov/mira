@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Корзина карт MIRA</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap">
+<style>
+/* Layout: engineering sheet — a large 3D stage with a narrow specification column, stacked on phones. */
+:root {
+  --paper: #eef1ee;
+  --panel: #f8faf8;
+  --ink: #17201b;
+  --muted: #55625b;
+  --rule: #c9d2cc;
+  --accent: #b5721c;          /* ENIG gold, the one warm note */
+  --stage-top: #f6f8f6;
+  --stage-bottom: #dde4df;
+  --font-display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --step--1: 0.8125rem;
+  --step-0: 0.9375rem;
+  --step-1: 1.125rem;
+  --step-3: 1.75rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #121614;
+    --panel: #181d1a;
+    --ink: #e3e9e5;
+    --muted: #9aa8a0;
+    --rule: #2e3732;
+    --accent: #e0a64f;
+    --stage-top: #1c221f;
+    --stage-bottom: #0e1110;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #121614;
+  --panel: #181d1a;
+  --ink: #e3e9e5;
+  --muted: #9aa8a0;
+  --rule: #2e3732;
+  --accent: #e0a64f;
+  --stage-top: #1c221f;
+  --stage-bottom: #0e1110;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.5;
+}
+.wrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-block: 28px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  gap: 20px;
+}
+header { display: grid; gap: 6px; }
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--step-3);
+  line-height: 1.15;
+  margin: 0;
+  text-wrap: balance;
+}
+.lede { margin: 0; max-width: 70ch; color: var(--muted); }
+
+.main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 20px;
+  align-items: start;
+}
+@media (max-width: 980px) { .main { grid-template-columns: minmax(0, 1fr); } }
+
+.stage {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  min-height: 400px;
+  max-width: 100%;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+  background: linear-gradient(var(--stage-top), var(--stage-bottom));
+}
+.stage canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+.labels { position: absolute; inset: 0; pointer-events: none; }
+.tag {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.25;
+  white-space: nowrap;
+  padding: 3px 6px;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+}
+.tag b { font-weight: 500; }
+.tag small { color: var(--muted); font-size: 10px; display: block; }
+.tag.dim { color: var(--accent); background: transparent; border: 0; font-weight: 500; transform: translate(-50%, -50%); }
+.tag.part { border-color: var(--accent); }
+
+.toolbar {
+  position: absolute;
+  left: 10px; right: 10px; bottom: 10px;
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.toolbar .sep { width: 1px; background: var(--rule); margin: 2px 4px; }
+.toolbar button {
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.toolbar button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+.toolbar button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.hint {
+  position: absolute; top: 10px; right: 12px;
+  font-family: var(--font-mono); font-size: 11px; color: var(--muted);
+}
+
+aside { display: grid; gap: 18px; }
+aside section { display: grid; gap: 8px; }
+h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--step-1);
+  margin: 0;
+}
+.boards { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.board {
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr) auto;
+  gap: 4px 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+}
+.swatch { width: 12px; height: 12px; border-radius: 2px; align-self: center; }
+.board .name { font-weight: 600; }
+.board .size { font-family: var(--font-mono); font-size: var(--step--1); font-variant-numeric: tabular-nums; color: var(--muted); }
+.board .what { grid-column: 2 / 4; color: var(--muted); font-size: var(--step--1); }
+ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
+li { font-size: var(--step--1); }
+.note { font-size: var(--step--1); color: var(--muted); margin: 0; }
+.fallback { position: absolute; inset: 0; display: grid; place-items: center; padding: 24px; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">MIRA 0.0.1 · концепция компоновки</div>
+    <h1>Карты квадратом вокруг сокета</h1>
+    <p class="lede">Сокет кроссбара в центре. Четыре карты AFE по 16 каналов стоят вокруг него, на каждой свой осциллограф тока. Zynq-модуль под сокетом, питание и формовка снаружи квадрата. Размеры — оценка, это ещё не расчёт.</p>
+  </header>
+
+  <div class="main">
+    <div class="stage" id="stage">
+      <canvas id="view" aria-label="3D-модель плат MIRA"></canvas>
+      <div class="labels" id="labels"></div>
+      <div class="hint">тяните — вращать · колесо — масштаб</div>
+      <div class="toolbar" role="toolbar" aria-label="Вид модели">
+        <button id="btn-explode" type="button" aria-pressed="false">Вынуть карты</button>
+        <button id="btn-spare" type="button" aria-pressed="false">AFE4 прозрачная</button>
+        <button id="btn-labels" type="button" aria-pressed="true">Подписи</button>
+        <span class="sep" aria-hidden="true"></span>
+        <button id="btn-iso" type="button">Изометрия</button>
+        <button id="btn-card" type="button">Карта AFE</button>
+        <button id="btn-side" type="button">Сбоку</button>
+        <button id="btn-top" type="button">Сверху</button>
+      </div>
+      <div class="fallback" id="fallback" hidden>3D-вид не запустился в этом браузере. Компоновка описана в колонке справа.</div>
+    </div>
+
+    <aside>
+      <section>
+        <h2>Платы</h2>
+        <div class="boards">
+          <div class="board"><span class="swatch" style="background:#d9d6cc"></span><span class="name">Crossbar в центре</span><span class="size">60 × 60 мм</span><span class="what">Сменная плата с сокетом под конкретный кроссбар. Крышка открывается вверх.</span></div>
+          <div class="board"><span class="swatch" style="background:#1f4f86"></span><span class="name">AFE ×4 по сторонам</span><span class="size">110 × 90 мм</span><span class="what">16 каналов и осциллограф тока на все 16. Всего CH0–63.</span></div>
+          <div class="board"><span class="swatch" style="background:#5b3f8c"></span><span class="name">Zynq-модуль снизу</span><span class="size">60 × 60 мм</span><span class="what">Под сокетом, одинаково далеко до всех карт. Даёт общий запуск импульсов и записи.</span></div>
+          <div class="board"><span class="swatch" style="background:#7a2e2e"></span><span class="name">Формовка</span><span class="size">110 × 80 мм</span><span class="what">До ±10 В с ограничением тока, по одной ячейке. Три шины к сокету.</span></div>
+          <div class="board"><span class="swatch" style="background:#2a2d2c"></span><span class="name">Питание</span><span class="size">120 × 100 мм</span><span class="what">Вход 24 В, защита, промежуточные шины, супервизор, аппаратные разрешения.</span></div>
+          <div class="board"><span class="swatch" style="background:#2f6b45"></span><span class="name">Материнская</span><span class="size">215 × 170 мм</span><span class="what">Слоты, короткие линии к сокету, разъём модуля снизу. Стоит на ножках.</span></div>
+        </div>
+      </section>
+      <section>
+        <h2>Что на карте AFE</h2>
+        <ul>
+          <li><b>Внизу, у разъёма:</b> 16 каналов — уровень ЦАП, драйвер, датчик тока на 3–4 предела, ключ подключения. Отсюда до сокета около 50–60 мм.</li>
+          <li><b>В середине:</b> DAC81416 и медленные точные АЦП, которые по очереди опрашивают 16 каналов.</li>
+          <li><b>Вверху:</b> осциллограф — 16 быстрых усилителей тока, 2 восьмиканальных АЦП на 12 бит и 20–40 MSPS, маленькая FPGA с памятью на окно записи.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Требования, от которых всё считалось</h2>
+        <ul>
+          <li>Рабочий диапазон ±2,5 В, аппаратно до ±5 В. Формовка до ±10 В отдельно.</li>
+          <li>Ток от ~10 нА до ±25 мА, 3–4 предела.</li>
+          <li>Импульсы обычно длиннее 1 мкс, минимум 1 мкс.</li>
+          <li>Подача напряжений на все каналы одновременно, осциллограф тока на всех 64 линиях.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Открытые вопросы</h2>
+        <ul>
+          <li>Свой Zynq-модуль или готовый.</li>
+          <li>Место для крышки сокета внутри стенок высотой 90 мм.</li>
+          <li>Охлаждение внутри квадрата: на каждой карте 2–4 Вт.</li>
+          <li>Проверить, что ±2,5 В хватает для твоих мемристоров.</li>
+        </ul>
+        <p class="note">Цвета маски на модели условные и только различают платы. Корпуса упрощены до коробок.</p>
+      </section>
+    </aside>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+(function () {
+  const stage = document.getElementById('stage');
+  const canvas = document.getElementById('view');
+  const labelLayer = document.getElementById('labels');
+  if (!window.THREE || !THREE.OrbitControls) {
+    document.getElementById('fallback').hidden = false;
+    return;
+  }
+  let renderer;
+  try {
+    renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  } catch (e) {
+    document.getElementById('fallback').hidden = false;
+    return;
+  }
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(32, 1.6, 1, 4000);
+  const controls = new THREE.OrbitControls(camera, canvas);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.08;
+  controls.maxPolarAngle = Math.PI * 0.495;
+  controls.minDistance = 80;
+  controls.maxDistance = 1200;
+
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x8a9a90, 0.75));
+  const sun = new THREE.DirectionalLight(0xffffff, 0.75);
+  sun.position.set(-120, 360, 300);
+  sun.castShadow = true;
+  sun.shadow.mapSize.set(2048, 2048);
+  Object.assign(sun.shadow.camera, { left: -230, right: 230, top: 230, bottom: -230, near: 10, far: 1000 });
+  sun.target.position.set(105, 0, 85);
+  scene.add(sun, sun.target);
+
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(1600, 1600), new THREE.ShadowMaterial({ opacity: 0.18 }));
+  floor.rotation.x = -Math.PI / 2;
+  floor.position.set(105, -0.05, 85);
+  floor.receiveShadow = true;
+  scene.add(floor);
+
+  const mats = {};
+  function mat(color, extra) {
+    const key = color + JSON.stringify(extra || {});
+    if (!mats[key]) mats[key] = new THREE.MeshStandardMaterial(Object.assign({ color, roughness: 0.6, metalness: 0.05 }, extra || {}));
+    return mats[key];
+  }
+  // Box from its minimum corner (x, y, z) in millimetres, in the parent's frame.
+  function box(parent, x, y, z, w, h, d, color, extra) {
+    const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat(color, extra));
+    m.position.set(x + w / 2, y + h / 2, z + d / 2);
+    m.castShadow = true;
+    m.receiveShadow = true;
+    parent.add(m);
+    return m;
+  }
+  function post(parent, x, y0, y1, z, r, color) {
+    const p = new THREE.Mesh(new THREE.CylinderGeometry(r, r, y1 - y0, 16), mat(color, { metalness: 0.5 }));
+    p.position.set(x, (y0 + y1) / 2, z);
+    p.castShadow = true;
+    parent.add(p);
+  }
+  const labels = [];
+  function label(parent, x, y, z, html, cls) {
+    const anchor = new THREE.Object3D();
+    anchor.position.set(x, y, z);
+    parent.add(anchor);
+    const el = document.createElement('div');
+    el.className = 'tag' + (cls ? ' ' + cls : '');
+    el.innerHTML = html;
+    labelLayer.appendChild(el);
+    labels.push({ anchor, el });
+  }
+  const C = {
+    back: 0x2f6b45, afe: 0x1f4f86, pwr: 0x2a2d2c, zynq: 0x5b3f8c, xbar: 0xd9d6cc, form: 0x7a2e2e,
+    chip: 0x1b1d1f, gold: 0xc8962e, conn: 0x262829, steel: 0xb8bcbf, ind: 0x3b3f42, white: 0xe8e6df,
+    pass: 0x7d6a4a, digital: 0x8f7fc4
+  };
+  const goldMat = { metalness: 0.7, roughness: 0.3 };
+  const T = 1.6, connH = 11, cardBase = T + connH - 6;
+  const dimMat = new THREE.LineBasicMaterial({ color: 0xb5721c });
+  function dim(parent, a, b, text, offset) {
+    parent.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([a, b]), dimMat));
+    const m = a.clone().add(b).multiplyScalar(0.5).add(offset || new THREE.Vector3());
+    label(parent, m.x, m.y, m.z, text, 'dim');
+  }
+
+  // Card parts in the card's local frame: thickness along x, width along z (-W/2..W/2).
+  // The front face is at x = +T/2 and faces the socket; the back face is at x = -T/2.
+  function afeParts(g, W, annotate) {
+    const xf = T / 2, xb = -T / 2, z0 = -W / 2, y0 = cardBase + 8;
+    // Bottom band: 16 channels as 4 quad blocks, output stage closest to the connector.
+    const qw = (W - 8) / 4;
+    for (let q = 0; q < 4; q++) {
+      const zq = z0 + 4 + q * qw;
+      for (let r = 0; r < 3; r++) box(g, xf, y0 + 3 + r * 9, zq + 2, 1.2, 5, 8, C.chip);
+      for (let r = 0; r < 3; r++) box(g, xb - 1.0, y0 + 4 + r * 9, zq + 4, 1.0, 4, 6, C.chip);
+      for (let r = 0; r < 5; r++) box(g, xf, y0 + 2 + r * 6, zq + 13, 0.5, 1, 2, C.pass);
+    }
+    // Middle band: precision DAC and the two muxed slow ADCs, plus 16 fast current amplifiers.
+    const ym = y0 + 34;
+    box(g, xf, ym + 4, -4.5, 1.0, 9, 9, C.chip);                    // DAC81416
+    box(g, xf, ym + 6, -W / 4 - 2.5, 0.9, 5, 5, C.chip);            // slow ADC
+    box(g, xf, ym + 6, W / 4 - 2.5, 0.9, 5, 5, C.chip);             // slow ADC
+    for (let i = 0; i < 16; i++) {
+      const zi = z0 + 5 + i * ((W - 10) / 15) - 1.5;
+      if (Math.abs(zi + 1.5) < 7) continue;                         // keep the DAC spot clear
+      box(g, xf, ym, zi, 0.9, 2.5, 3, C.chip);                       // fast current amps
+    }
+    // Top band: oscilloscope — FPGA with buffer memory and two octal fast ADCs.
+    const yt = y0 + 52;
+    box(g, xf, yt + 6, -7, 1.3, 14, 14, C.chip);                    // small FPGA
+    box(g, xf, yt + 8, -W / 2 + 12, 1.0, 9, 9, C.chip);             // octal ADC
+    box(g, xf, yt + 8, W / 2 - 21, 1.0, 9, 9, C.chip);              // octal ADC
+    box(g, xf, yt + 9, 12, 0.8, 3, 5, C.steel, { metalness: 0.5 }); // oscillator
+    box(g, xf, yt + 22, W / 2 - 10, 0.9, 3, 3, C.chip);             // ID EEPROM
+    for (let i = 0; i < 3; i++) box(g, xb - 2.5, yt + 4 + i * 9, z0 + 10 + i * 14, 2.5, 6, 6, C.ind); // local regulators
+    if (annotate) {
+      label(g, xf + 3, yt + 21, 0, '<b>осциллограф</b><small>FPGA + 2 АЦП ×8</small>', 'part');
+      label(g, xf + 3, ym + 14, W / 4, '<b>ЦАП и точные АЦП</b><small>+ 16 быстрых усилителей</small>', 'part');
+      label(g, xf + 3, y0 + 30, -W / 4, '<b>16 каналов</b><small>выходы у разъёма</small>', 'part');
+    }
+  }
+  function pwrParts(g, W) {
+    const xf = T / 2, xb = -T / 2, z0 = -W / 2, y0 = cardBase + 10;
+    box(g, xf, y0 + 8, z0 + 8, 11, 25, 51, 0x1d1f20);               // isolated ±15 V module
+    for (let i = 0; i < 4; i++) box(g, xf, y0 + 44 + (i % 2) * 18, z0 + 10 + Math.floor(i / 2) * 22, 5, 10, 10, C.ind);
+    box(g, xf, y0 + 50, z0 + 70, 1.2, 10, 10, C.chip);              // STM32G0
+    box(g, xf, y0 + 70, z0 + 62, 2.5, 6, 6, C.chip);                // eFuse
+    for (let i = 0; i < 5; i++) box(g, xb - 3, y0 + 6 + i * 13, z0 + 70, 3, 6, 12, C.ind);
+  }
+  function formParts(g, W) {
+    const xf = T / 2, xb = -T / 2, z0 = -W / 2, y0 = cardBase + 8;
+    for (let r = 0; r < 3; r++) for (let i = 0; i < 6; i++) box(g, xf, y0 + 6 + r * 14, z0 + 8 + i * 16, 1.0, 6, 8, C.chip); // TMUX7208 ×18
+    box(g, xf, y0 + 50, -10, 1.2, 8, 8, C.chip);                    // compliance servo
+    box(g, xf, y0 + 50, 6, 2.5, 6, 6, C.chip);                      // pass FET
+    box(g, xb - 4, y0 + 40, z0 + 12, 4, 10, 10, C.ind);
+  }
+
+  // A slot connector (fixed) and a card that can lift out of it.
+  const movers = [];
+  function makeCard(parent, px, pz, rotY, o) {
+    const outer = new THREE.Group();
+    outer.position.set(px, 0, pz);
+    outer.rotation.y = rotY;
+    parent.add(outer);
+    box(outer, -3.75, T, -28, 7.5, connH, 56, C.conn);
+    box(outer, -1.2, T + connH - 0.1, -27, 2.4, 0.2, 54, 0x111213);
+    const inner = new THREE.Group();
+    outer.add(inner);
+    const solid = box(inner, -T / 2, cardBase, -o.w / 2, T, o.h, o.w, o.color);
+    box(inner, -T / 2 - 0.05, cardBase, -27, T + 0.1, 6, 54, C.gold, goldMat);
+    if (o.parts) o.parts(inner, o.w, o.annotate);
+    label(inner, 0, cardBase + o.h + 4, 0, o.label);
+    const c = { obj: inner, lift: 0, up: o.rise || 80, board: solid };
+    movers.push(c);
+    return c;
+  }
+  function lifter(obj, up) { movers.push({ obj, lift: 0, up }); }
+
+  const G = new THREE.Group();
+  scene.add(G);
+  const LEG = 26;                                  // legs leave room for the Zynq module underneath
+  G.position.y = LEG;
+  const cx = 85, cz = 85, R = 62, W = 110, H = 90;
+
+  box(G, 0, 0, 0, 215, T, 170, C.back);
+  for (const [lx, lz] of [[6, 6], [209, 6], [6, 164], [209, 164]]) post(G, lx, -LEG, 0, lz, 3, C.steel);
+  // Channel traces from each wall to the socket area
+  for (let i = -2; i <= 2; i++) {
+    const o = i * 7;
+    box(G, cx - R + 4, T, cz + o, R - 34, 0.08, 0.6, C.gold, goldMat);
+    box(G, cx + 30, T, cz + o, R - 34, 0.08, 0.6, C.gold, goldMat);
+    box(G, cx + o, T, cz - R + 4, 0.6, 0.08, R - 34, C.gold, goldMat);
+    box(G, cx + o, T, cz + 30, 0.6, 0.08, R - 34, C.gold, goldMat);
+  }
+  // Forming buses: three traces from the forming slot to the socket
+  for (let i = 0; i < 3; i++) box(G, cx + 30, T, cz + 38 + i * 3, 168 - cx - 30, 0.08, 0.8, 0xd07a3a, goldMat);
+  // Inputs on the power edge
+  box(G, 205, T, 5, 10, 10, 15, 0x2c7a3f);
+  label(G, 210, 13, 12, '<b>24 В</b>');
+  box(G, 207, T, 150, 9, 3.2, 9, C.steel);
+  label(G, 211, 6, 154, '<b>USB-C</b>');
+  label(G, 105, T + 0.5, 166, '<b>Материнская плата</b><small>215 × 170 мм · 4 слоя · на ножках</small>');
+
+  // Crossbar mezzanine in the centre
+  const xb = new THREE.Group();
+  G.add(xb);
+  const xy = T + 8;
+  box(xb, cx - 22, T, cz - 26, 6, 8, 52, C.conn);
+  box(xb, cx + 16, T, cz - 26, 6, 8, 52, C.conn);
+  box(xb, cx - 30, xy, cz - 30, 60, T, 60, C.xbar);
+  box(xb, cx - 20, xy + T, cz - 25, 40, 11, 50, 0x2b2b2b);                     // ICS socket body
+  box(xb, cx - 9, xy + T + 11, cz - 9, 18, 0.8, 18, C.white);                  // crossbar carrier
+  box(xb, cx - 18, xy + T + 11, cz + 21, 36, 1.5, 3, C.steel, { metalness: 0.6 }); // lid hinge
+  label(xb, cx, xy + T + 16, cz, '<b>Crossbar</b><small>60 × 60 · сокет в центре</small>');
+  lifter(xb, 40);
+
+  // Zynq module underneath, centred under the socket
+  const z = new THREE.Group();
+  G.add(z);
+  const zy = -9 - T;
+  for (const [sx, sz] of [[-27, -27], [27, -27], [-27, 27], [27, 27]]) post(z, cx + sx, -9, 0, cz + sz, 1.6, C.steel);
+  box(z, cx - 22, -9, cz - 28, 22, 9, 5, C.conn);
+  box(z, cx - 30, zy, cz - 30, 60, T, 60, C.zynq);
+  box(z, cx - 15, zy - 2.4, cz - 10, 19, 2.4, 19, C.chip);
+  box(z, cx + 10, zy - 1.2, cz - 12, 9, 1.2, 13, C.chip);
+  box(z, cx + 10, zy - 1.1, cz + 8, 10, 1.1, 10, C.chip);
+  label(z, cx, zy - 6, cz + 34, '<b>Zynq-модуль снизу</b><small>общий запуск для всех карт</small>');
+  lifter(z, -10);
+
+  // Four AFE cards around the socket, front faces inward
+  const afe = (n, px, pz, rot, annotate) => makeCard(G, px, pz, rot, { h: H, w: W, color: C.afe, parts: afeParts, annotate,
+    label: `<b>AFE${n}</b><small>CH${(n - 1) * 16}–${n * 16 - 1} · 110 × 90</small>` });
+  afe(1, cx - R, cz, 0);
+  afe(2, cx, cz - R, -Math.PI / 2, true);
+  afe(3, cx + R, cz, Math.PI);
+  const afe4 = afe(4, cx, cz + R, Math.PI / 2);
+
+  makeCard(G, 168, cz, 0, { h: 80, w: 110, color: C.form, parts: formParts, rise: 70,
+    label: '<b>Формовка</b><small>до ±10 В · 3 шины к сокету</small>' });
+  makeCard(G, 192, cz, Math.PI, { h: 100, w: 120, color: C.pwr, parts: pwrParts, rise: 70,
+    label: '<b>Питание</b><small>24 В → промежуточные шины</small>' });
+
+  dim(G, new THREE.Vector3(0, 0, 180), new THREE.Vector3(215, 0, 180), '215 мм', new THREE.Vector3(0, 0, 6));
+  dim(G, new THREE.Vector3(225, 0, 0), new THREE.Vector3(225, 0, 170), '170 мм', new THREE.Vector3(8, 0, 0));
+  dim(G, new THREE.Vector3(cx - R + 2, T + 22, cz - 40), new THREE.Vector3(cx - 20, T + 22, cz - 40), '≈ 40 мм до сокета', new THREE.Vector3(0, 6, 0));
+  dim(G, new THREE.Vector3(cx - R - 6, cardBase, cz + 60), new THREE.Vector3(cx - R - 6, cardBase + H, cz + 60), '90 мм', new THREE.Vector3(-10, 0, 0));
+
+  // ---------- UI ----------
+  const views = {
+    iso: [new THREE.Vector3(-170, 320, 420), new THREE.Vector3(105, 50, 85)],
+    card: [new THREE.Vector3(85, 120, 190), new THREE.Vector3(85, 75, 23)],
+    side: [new THREE.Vector3(105, 85, 560), new THREE.Vector3(105, 55, 85)],
+    top: [new THREE.Vector3(105, 580, 86), new THREE.Vector3(105, 0, 85)]
+  };
+  let exploded = false, flight = null;
+  const btn = id => document.getElementById(id);
+  function setPressed(b, on) { b.setAttribute('aria-pressed', String(on)); }
+  function go(name, instant) {
+    const [p, t] = views[name];
+    if (instant || reduceMotion) { camera.position.copy(p); controls.target.copy(t); controls.update(); flight = null; return; }
+    flight = { p0: camera.position.clone(), t0: controls.target.clone(), p, t, k: 0 };
+  }
+  btn('btn-explode').addEventListener('click', () => {
+    exploded = !exploded;
+    setPressed(btn('btn-explode'), exploded);
+    btn('btn-explode').textContent = exploded ? 'Вставить карты' : 'Вынуть карты';
+  });
+  const glass = new THREE.MeshStandardMaterial({ color: C.afe, transparent: true, opacity: 0.25, depthWrite: false });
+  btn('btn-spare').addEventListener('click', () => {
+    const on = btn('btn-spare').getAttribute('aria-pressed') !== 'true';
+    setPressed(btn('btn-spare'), on);
+    afe4.obj.traverse(m => {
+      if (!m.isMesh) return;
+      if (!m.userData.solidMat) m.userData.solidMat = m.material;
+      m.material = on ? glass : m.userData.solidMat;
+      m.castShadow = !on;
+    });
+  });
+  btn('btn-labels').addEventListener('click', () => {
+    const on = btn('btn-labels').getAttribute('aria-pressed') !== 'true';
+    setPressed(btn('btn-labels'), on);
+    labelLayer.hidden = !on;
+  });
+  btn('btn-iso').addEventListener('click', () => go('iso'));
+  btn('btn-card').addEventListener('click', () => go('card'));
+  btn('btn-side').addEventListener('click', () => go('side'));
+  btn('btn-top').addEventListener('click', () => go('top'));
+  go('iso', true);
+
+  function resize() {
+    const w = stage.clientWidth, h = stage.clientHeight;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+  new ResizeObserver(resize).observe(stage);
+  resize();
+
+  const v = new THREE.Vector3();
+  function placeLabels() {
+    if (labelLayer.hidden) return;
+    const w = stage.clientWidth, h = stage.clientHeight;
+    for (const l of labels) {
+      l.anchor.getWorldPosition(v);
+      v.project(camera);
+      if (v.z > 1) { l.el.hidden = true; continue; }
+      l.el.hidden = false;
+      l.el.style.left = ((v.x + 1) / 2 * w).toFixed(1) + 'px';
+      l.el.style.top = ((1 - v.y) / 2 * h).toFixed(1) + 'px';
+    }
+  }
+  function ease(a, b) { return reduceMotion ? b : a + (b - a) * 0.12; }
+  function tick() {
+    for (const m of movers) {
+      m.lift = ease(m.lift, exploded ? m.up : 0);
+      m.obj.position.y = m.lift;
+    }
+    if (flight) {
+      flight.k = Math.min(1, flight.k + 0.04);
+      const s = flight.k * flight.k * (3 - 2 * flight.k);
+      camera.position.lerpVectors(flight.p0, flight.p, s);
+      controls.target.lerpVectors(flight.t0, flight.t, s);
+      if (flight.k >= 1) flight = null;
+    }
+    controls.update();
+    renderer.render(scene, camera);
+    placeLabels();
+    requestAnimationFrame(tick);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

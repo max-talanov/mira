@@ -1,0 +1,53 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## What this repository is
+
+MIRA is a hardware research platform for memristor crossbars: reading and programming cells, forming, vector–matrix multiplication (VMM), and spiking models. It is a set of KiCad 10 boards designed together. Cards plug vertically into slots on a motherboard:
+
+- **Mainboard**: the slots, short channel traces to the socket, and the Zynq module connector.
+- **AFE** (×4, one design): 16 channels each plus a current oscilloscope. The oscilloscope is a small FPGA and octal fast ADCs.
+- **Zynq**: a module mounted under the socket. It handles pulse timing, data collection and USB 3.
+- **Crossbar**: a swappable board with the socket for a specific crossbar, mounted in the centre.
+- **Forming**: a ±10 V forming card with current compliance.
+- **Power**: 24 V input, intermediate rails, the STM32G0 supervisor and hardware permits.
+
+The four AFE cards form a square around the socket. The requirements are in `docs/ТЗ.md`, and every item there is marked decided (решено), preliminary (предв.) or open (открыто). Read it before proposing circuitry, and do not silently change a decided item.
+
+All 64 channels are identical and role-free. Each Crossbar board decides which channels are BL, WL or NL, so a 32×8×8 crossbar can sit in a 16×16×16 slot. Do not add role-specific circuitry to individual channels.
+
+This is a new project started on 2026-11-20. Do not bring in or mention material from before that date unless the user asks.
+
+The user is the project manager and works in Russian. Write user-facing docs (README, CHANGELOG, reports) in Russian.
+
+## Layout
+
+- `hardware/<Board>/` holds one KiCad project per board (`MIRA_<Board>.kicad_pro`) and that board's `CHANGELOG.md`.
+- `hardware/libraries` holds the shared `MIRA` symbol library, `MIRA.pretty` and `3d/`. Projects use them through `${KIPRJMOD}/../libraries/...`.
+- `docs/ТЗ.md` holds the requirements, and `docs/concept-3d.html` the standalone 3D layout concept (three.js).
+
+Schematics use hierarchical sheets with pins, and repeated blocks reuse one sheet. For example, the AFE channel sheet is instantiated for all 16 channels.
+
+## Versioning and branches
+
+- **Each board has its own version.** It is stored as the project text variable `VERSION` in that board's `.kicad_pro` and shown as `${VERSION}` in its title blocks. Bump it in that project only, and add an entry to `hardware/<Board>/CHANGELOG.md`.
+- 0.0.x is a small change, 0.x.0 a large change, and 1.0.0 means the board is finished in KiCad. A fabrication release is tracked separately and does not change the version.
+- Tags are per board: `<board>-vX.Y.Z` in lowercase, for example `afe-v0.1.0`.
+- Each board is developed on its own branch `board/<board>`, and finished steps merge into `main` through PRs.
+- Shared files (`hardware/libraries`, `docs/ТЗ.md`) conflict easily across branches. Merge library additions into `main` early, in small steps.
+
+## Tooling
+
+KiCad 10.0.8 is installed system-wide: `/usr/bin/kicad-cli`, and `pcbnew` imports in `/usr/bin/python3`.
+
+```bash
+kicad-cli sch erc --format json --severity-all -o erc.json hardware/AFE/MIRA_AFE.kicad_sch
+kicad-cli pcb drc --format json --severity-all --schematic-parity -o drc.json hardware/AFE/MIRA_AFE.kicad_pcb
+kicad-cli sch export netlist --format kicadxml -o afe.xml hardware/AFE/MIRA_AFE.kicad_sch
+kicad-cli sch export pdf -o afe.pdf hardware/AFE/MIRA_AFE.kicad_sch   # render, then view pages with pdftoppm
+```
+
+- `kicad-cli pcb drc` caps reported unconnected items at 499. Take the full ratsnest count from `pcbnew` instead.
+- When parsing KiCad files as text, accept both S-expression layouts. Script-written files are single-line `(zone (layer …`. GUI-saved files are multi-line `(zone\n\t(layer …`. A save can reorder objects and outline vertices. Cross-check with `pcbnew` before reporting an object as missing.
+- An empty board reports one DRC error, `invalid_outline`, until an Edge.Cuts outline is drawn.
