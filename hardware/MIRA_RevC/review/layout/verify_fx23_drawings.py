@@ -2,7 +2,7 @@
 Expected coordinates transcribed from the individual Hirose PDFs in sources/.
 Installation view = looking at the component from its mounting side.
 """
-import re,json,hashlib
+import re,json,hashlib,math
 from pathlib import Path
 from sexpr_tools import children,reference
 from interface_spec import BASE,OUT,PAIRS
@@ -34,18 +34,25 @@ def check(s,plug,installed=False):
  centre=16.175 if plug else 17.325
  for n,want in zip(sorted(tabs,key=lambda n:values(n,'at')[0]),[-centre,centre]):
   near(values(n,'at'),[want,0]);near(values(n,'size'),[2.45,3.2]);assert ' smd rect' in n
- zones=[n for _,_,n in children(s) if n.startswith('(zone ')]
+ # Library files are single-line "(zone (", GUI-saved boards are multi-line "(zone\n".
+ zones=[n for _,_,n in children(s) if re.match(r'\(zone\s',n)]
  if plug:assert not zones
  else:
   assert len(zones)==2
   origin=values(s,'at') if installed else [0,0]
-  for z,(left,right) in zip(zones,[(-16.1,-9.9),(9.9,16.1)]):
+  angle_match=re.search(r'\(at\s+[-+.\d]+\s+[-+.\d]+\s+([-+.\d]+)\)',s) if installed else None
+  angle=math.radians(float(angle_match[1]) if angle_match else 0)
+  # KiCad may reorder zones and start the outline at another vertex on save: compare as sets.
+  def key(points):return sorted((round(x,6),round(y,6)) for x,y in points)
+  actual=[]
+  for z in zones:
    assert '(layer "F.Cu")' in z
    for kind in ['tracks','vias','pads','copperpour']:assert f'({kind} not_allowed)' in z
    points=[[float(a),float(b)] for a,b in re.findall(r'\(xy\s+([-+.\d]+)\s+([-+.\d]+)\)',z)]
-   expected=[[origin[0]+left,origin[1]-3.85],[origin[0]+right,origin[1]-3.85],[origin[0]+right,origin[1]+3.85],[origin[0]+left,origin[1]+3.85]]
    assert len(points)==4
-   for a,b in zip(points,expected):near(a,b)
+   actual.append(key(points))
+  expected=[key([[origin[0]+x*math.cos(angle)+y*math.sin(angle),origin[1]-x*math.sin(angle)+y*math.cos(angle)] for x,y in [(left,-3.85),(right,-3.85),(right,3.85),(left,3.85)]]) for left,right in [(-16.1,-9.9),(9.9,16.1)]]
+  assert sorted(actual)==sorted(expected),(actual,expected)
  return {'signal_corners_local_mm':corners,'power_contacts_local_mm':power,'power_PTH_drill_mm':1.2,'power_PTH_land_mm':1.6,'retention_tabs':2,'copper_prohibition_regions':len(zones),'passed':True}
 def main():
  report={'sources':{},'correction':'P1/P2 changed from upper to lower row in assembled view; P3/P4 from lower to upper, to match Hirose Power Contact No.1..4. All remain GND.','checks':{}}
@@ -55,8 +62,13 @@ def main():
   project='MIRA_Crossbar' if plug else 'MIRA_Control';lib='MIRA_Module' if plug else 'MIRA_C';part='FX23L-80P-0.5SV8' if plug else 'FX23L-80S-0.5SV'
   path=BASE/project/'libraries'/(lib+'.pretty')/('Hirose_'+part+'.kicad_mod');report['checks'][part+'_library_installation_view']=check(path.read_text(),plug)
   board=(BASE/project/(project+'.kicad_pcb')).read_text()
+  # Locate by library footprint and pair position, not by reference: references change on renumbering.
+  installed=[n for _,_,n in children(board) if n.startswith(f'(footprint "{lib}:Hirose_{part}"')]
+  assert len(installed)==len(PAIRS),(project,part,[reference(n) for n in installed])
   for pair in PAIRS:
-   ref=pair['module' if plug else 'control'];s=next(n for _,_,n in children(board) if n.startswith('(footprint ') and reference(n)==ref)
+   found=[n for n in installed if all(abs(a-b)<1e-6 for a,b in zip(values(n,'at')[:2],[pair['x'],pair['y']]))]
+   assert len(found)==1,(project,pair['pair'],[reference(n) for n in found])
+   s=found[0];ref=reference(s)
    assert '(layer "B.Cu")' in s if plug else '(layer "F.Cu")' in s
    report['checks'][project+'/'+ref+'_common_top_view']=check(s,plug,True)
  report['passed']=True

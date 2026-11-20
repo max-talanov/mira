@@ -1,6 +1,12 @@
 """Update only the current local interface; unaffected PCB S-expressions are preserved.
 KiCad 10 native syntax. Canonical footprints checked against individual Hirose drawings from Downloads.
 """
+# The active socket trial must not be overwritten by the historical first-day builder.
+from pathlib import Path as _GuardPath
+_guard_base=_GuardPath(__file__).resolve().parents[2]
+if '"MIRA_Module:ICS-CQFP64-1830-1830-100-1"' in (_guard_base/'MIRA_Crossbar/MIRA_Crossbar.kicad_pcb').read_text():
+ raise SystemExit('Active ICS socket trial: use review/layout/socket-trial tools; old draft rebuild is intentionally disabled.')
+
 import uuid,re,json,hashlib,xml.etree.ElementTree as ET
 from interface_spec import BASE,OUT,PAIRS,MOUNTS,KEY,POWER_PINS,OUTLINE
 from sexpr_tools import children,reference,quote as q

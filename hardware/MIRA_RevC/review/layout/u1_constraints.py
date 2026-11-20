@@ -1,6 +1,10 @@
 """Measure U1 top-side constraints from the SAVED adapter PCB and re-read pad geometry.
 No physical socket envelope is assumed. Nominal geometric bounds are not design clearances.
 """
+from pathlib import Path as _GuardPath
+if '"MIRA_Module:ICS-CQFP64-1830-1830-100-1"' in (_GuardPath(__file__).resolve().parents[2]/'MIRA_Crossbar/MIRA_Crossbar.kicad_pcb').read_text():
+ raise SystemExit('Socket J3 is installed: the old empty U1-area estimate is historical. See socket-trial/README.md and geometry.json.')
+
 import json,re,hashlib,math
 from interface_spec import BASE,OUT
 from sexpr_tools import children,reference

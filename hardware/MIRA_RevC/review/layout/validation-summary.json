@@ -1,52 +1,41 @@
 {
+  "phase": "socket trial / working copy, no commit",
+  "source_sha": "a1d70381420407bdb75ca0c0fddfa3665ed1eb7a",
   "KiCad": "10.0.5",
-  "lines_verified": 96,
-  "drawing_audit_passed": true,
+  "lines_verified_to_logical_U1": 96,
+  "socket_map": "TBD",
   "PCB": {
     "Control": {
-      "sha256": "6d5b335d80fab0a8a5a7dadc2c2d4ac2f8b6bfb71eefaeae51b95cc351151607",
+      "sha256": "f94333b83dc02b1efebbbbe6b8f14ad33f6e225c9c84b61814278244725b95cf",
       "DRC_input_equals_saved_PCB": true,
       "violations": 0,
       "reported_unconnected": 499
+    },
+    "Crossbar": {
+      "sha256": "1bec9d0c41e4e6a911cf934889804d8461d284e64df378fa5e9047142f3193c0",
+      "DRC_input_equals_saved_PCB": true,
+      "violations": 0,
+      "reported_unconnected": 51
     },
     "Power": {
       "sha256": "a34d09c567b1fafbfe4a70b2e0c0329fc80f2931c9cbd1ae98d68d34fae184a3",
       "DRC_input_equals_saved_PCB": true,
       "violations": 0,
       "reported_unconnected": 499
-    },
-    "Crossbar": {
-      "sha256": "f5fbe3d0ce87be7344dfe923bddb5b8087043cc79d90190797a2531382de7d7d",
-      "DRC_input_equals_saved_PCB": true,
-      "violations": 0,
-      "reported_unconnected": 51
     }
   },
   "ERC": {
     "Control": 0,
     "Crossbar": 0
   },
-  "U1_top_constraints": {
-    "source_PCB_hash_matches": true,
-    "nominal_horizontal_mm": [
-      42.0,
-      10.65
-    ],
-    "planning_horizontal_mm": [
-      41.0,
-      9.65
-    ],
-    "nominal_vertical_mm": [
-      18.9,
-      30.0
-    ],
-    "socket_envelope": "TBD"
-  },
-  "MIRA-01.02.00": "complete: first-day nominal assembly and interface",
+  "local_project_preferences_preserved": true,
   "open_followup": [
-    "key projection / chamfer / tilt tolerances and retention",
-    "8mm spacer tolerances / fastener selection",
-    "two-connector removal force / jamming / extraction clearance",
-    "matrix and socket envelope / pin map TBD"
+    "socket/matrix pin map TBD",
+    "manufacturer socket mechanics / lid and latch",
+    "socket fastener underside clearance",
+    "key and spacer tolerance / retention",
+    "removal force and jamming",
+    "Control lower-wing supports / USB cable fit",
+    "complete routing and other analog-bank capacity"
   ]
 }

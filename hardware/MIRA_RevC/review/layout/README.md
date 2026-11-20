@@ -20,7 +20,9 @@
 `final-control.sexpr.gz` с `MIRA-01.03.00/open-trial.py`.
 
 KiCad 10.0.5 подтвердил после переименования 0 ошибок ERC, DRC и сверки
-схемы с PCB. Полные счётчики ratsnest совпали: Control 6757, Power 2125,
+схемы с PCB. Полные счётчики ratsnest совпали: Control 6757, Power 2124
+(с [2aa6b58](https://github.com/max-talanov/mira/commit/2aa6b589bf4f3ccb4eec3ad6e4da4529c0052452):
+подключён вход предохранителя J301.1–F301.1; до него 2125),
 Crossbar 103, Final-Control 6594. Проверены 90 пар площадок Final-Control
 и 286 контактов десяти межплатных пар. Обратная замена обозначений и
 автоматических имён цепей восстановила исходные PCB побайтно. Экспорты

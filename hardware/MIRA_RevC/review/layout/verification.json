@@ -1,395 +1,49 @@
 {
+  "source_sha": "a1d70381420407bdb75ca0c0fddfa3665ed1eb7a",
   "KiCad": "10.0.5",
-  "boards_readable": true,
+  "all_boards_readable": true,
+  "all_local_project_preferences_preserved": true,
+  "Power_PCB_unchanged": true,
+  "unchanged_Control_footprints": 2248,
+  "AFE_components_placed": 84,
+  "socket_contacts": 64,
+  "socket_NPTH": 6,
+  "socket_source_geometry_equal": true,
+  "socket_BL_NL_WL_assignment": "TBD: 64-contact socket cannot be assumed to expose 96 independent lines",
   "connector_pairs": 10,
-  "lines_verified": 96,
-  "signal_GND_per_pair": 22,
-  "reserve_per_pair": 10,
-  "power_GND_per_pair": 4,
-  "rotation_180_axis_mismatch_mm_when_contour_aligned": 2.0,
-  "key_post_required": true,
-  "key_post_nominal_projection_mm": 14.0,
-  "Control_noninterface_schematic_nets_unchanged": true,
-  "noninterface_placements_preserved": true,
-  "Power_PCB_byte_identical_to_day1": true,
-  "schematic_to_PCB_net_assignments_match": true,
-  "counts": {
+  "lines_verified_to_logical_boundary": 96,
+  "PCB_to_schematic_nets_match": true,
+  "AFE_actual_bbox": [
+    122.445,
+    166.645,
+    169.555,
+    198.855
+  ],
+  "AFE_sum_bbox_area_mm2": 925.3610000000006,
+  "AFE_4_blocks_fit_nominally": true,
+  "AFE_four_tile_courtyard_bbox_fill_fraction": 0.481,
+  "routing_corridors_mm": {
+    "between_tile_columns": 5,
+    "between_tile_rows": 5,
+    "west_bank_exit": 6
+  },
+  "routing_proven": false,
+  "tracks_added": 0,
+  "boards": {
     "Control": {
       "footprints": 2337,
       "pads": 10459,
-      "tracks": 0
+      "sha256": "f94333b83dc02b1efebbbbe6b8f14ad33f6e225c9c84b61814278244725b95cf"
+    },
+    "Crossbar": {
+      "footprints": 6,
+      "pads": 245,
+      "sha256": "1bec9d0c41e4e6a911cf934889804d8461d284e64df378fa5e9047142f3193c0"
     },
     "Power": {
       "footprints": 793,
       "pads": 2700,
-      "tracks": 0
-    },
-    "Crossbar": {
-      "footprints": 5,
-      "pads": 175,
-      "tracks": 0
+      "sha256": "a34d09c567b1fafbfe4a70b2e0c0329fc80f2931c9cbd1ae98d68d34fae184a3"
     }
-  },
-  "pin_1_2_3_common_coordinates": [
-    {
-      "pair": 1,
-      "pin": "1",
-      "control": [
-        65.0,
-        65.0
-      ],
-      "mate": [
-        65.0,
-        65.0
-      ]
-    },
-    {
-      "pair": 1,
-      "pin": "2",
-      "control": [
-        62.46,
-        65.0
-      ],
-      "mate": [
-        62.46,
-        65.0
-      ]
-    },
-    {
-      "pair": 1,
-      "pin": "3",
-      "control": [
-        65.0,
-        67.54
-      ],
-      "mate": [
-        65.0,
-        67.54
-      ]
-    },
-    {
-      "pair": 2,
-      "pin": "1",
-      "control": [
-        65.0,
-        103.0
-      ],
-      "mate": [
-        65.0,
-        103.0
-      ]
-    },
-    {
-      "pair": 2,
-      "pin": "2",
-      "control": [
-        62.46,
-        103.0
-      ],
-      "mate": [
-        62.46,
-        103.0
-      ]
-    },
-    {
-      "pair": 2,
-      "pin": "3",
-      "control": [
-        65.0,
-        105.54
-      ],
-      "mate": [
-        65.0,
-        105.54
-      ]
-    },
-    {
-      "pair": 3,
-      "pin": "1",
-      "control": [
-        79.0,
-        108.0
-      ],
-      "mate": [
-        79.0,
-        108.0
-      ]
-    },
-    {
-      "pair": 3,
-      "pin": "2",
-      "control": [
-        76.46,
-        108.0
-      ],
-      "mate": [
-        76.46,
-        108.0
-      ]
-    },
-    {
-      "pair": 3,
-      "pin": "3",
-      "control": [
-        79.0,
-        110.54
-      ],
-      "mate": [
-        79.0,
-        110.54
-      ]
-    },
-    {
-      "pair": 4,
-      "pin": "1",
-      "control": [
-        93.0,
-        65.0
-      ],
-      "mate": [
-        93.0,
-        65.0
-      ]
-    },
-    {
-      "pair": 4,
-      "pin": "2",
-      "control": [
-        90.46,
-        65.0
-      ],
-      "mate": [
-        90.46,
-        65.0
-      ]
-    },
-    {
-      "pair": 4,
-      "pin": "3",
-      "control": [
-        93.0,
-        67.54
-      ],
-      "mate": [
-        93.0,
-        67.54
-      ]
-    },
-    {
-      "pair": 5,
-      "pin": "1",
-      "control": [
-        122.0,
-        104.0
-      ],
-      "mate": [
-        122.0,
-        104.0
-      ]
-    },
-    {
-      "pair": 5,
-      "pin": "2",
-      "control": [
-        119.46,
-        104.0
-      ],
-      "mate": [
-        119.46,
-        104.0
-      ]
-    },
-    {
-      "pair": 5,
-      "pin": "3",
-      "control": [
-        122.0,
-        106.54
-      ],
-      "mate": [
-        122.0,
-        106.54
-      ]
-    },
-    {
-      "pair": 6,
-      "pin": "1",
-      "control": [
-        122.0,
-        126.0
-      ],
-      "mate": [
-        122.0,
-        126.0
-      ]
-    },
-    {
-      "pair": 6,
-      "pin": "2",
-      "control": [
-        119.46,
-        126.0
-      ],
-      "mate": [
-        119.46,
-        126.0
-      ]
-    },
-    {
-      "pair": 6,
-      "pin": "3",
-      "control": [
-        122.0,
-        128.54
-      ],
-      "mate": [
-        122.0,
-        128.54
-      ]
-    },
-    {
-      "pair": 7,
-      "pin": "1",
-      "control": [
-        215.0,
-        103.0
-      ],
-      "mate": [
-        215.0,
-        103.0
-      ]
-    },
-    {
-      "pair": 7,
-      "pin": "2",
-      "control": [
-        212.46,
-        103.0
-      ],
-      "mate": [
-        212.46,
-        103.0
-      ]
-    },
-    {
-      "pair": 7,
-      "pin": "3",
-      "control": [
-        215.0,
-        105.54
-      ],
-      "mate": [
-        215.0,
-        105.54
-      ]
-    },
-    {
-      "pair": 8,
-      "pin": "1",
-      "control": [
-        215.0,
-        132.0
-      ],
-      "mate": [
-        215.0,
-        132.0
-      ]
-    },
-    {
-      "pair": 8,
-      "pin": "2",
-      "control": [
-        212.46,
-        132.0
-      ],
-      "mate": [
-        212.46,
-        132.0
-      ]
-    },
-    {
-      "pair": 8,
-      "pin": "3",
-      "control": [
-        215.0,
-        134.54
-      ],
-      "mate": [
-        215.0,
-        134.54
-      ]
-    },
-    {
-      "pair": 9,
-      "pin": "1",
-      "control": [
-        166.25,
-        63.75
-      ],
-      "mate": [
-        166.25,
-        65.35
-      ]
-    },
-    {
-      "pair": 9,
-      "pin": "2",
-      "control": [
-        166.75,
-        63.75
-      ],
-      "mate": [
-        166.75,
-        65.35
-      ]
-    },
-    {
-      "pair": 9,
-      "pin": "3",
-      "control": [
-        167.25,
-        63.75
-      ],
-      "mate": [
-        167.25,
-        65.35
-      ]
-    },
-    {
-      "pair": 10,
-      "pin": "1",
-      "control": [
-        170.25,
-        80.75
-      ],
-      "mate": [
-        170.25,
-        82.35
-      ]
-    },
-    {
-      "pair": 10,
-      "pin": "2",
-      "control": [
-        170.75,
-        80.75
-      ],
-      "mate": [
-        170.75,
-        82.35
-      ]
-    },
-    {
-      "pair": 10,
-      "pin": "3",
-      "control": [
-        171.25,
-        80.75
-      ],
-      "mate": [
-        171.25,
-        82.35
-      ]
-    }
-  ]
+  }
 }

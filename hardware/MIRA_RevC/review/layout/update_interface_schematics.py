@@ -1,4 +1,10 @@
 """Replace only the connector interface sheets; U1 is a logical die placeholder."""
+# The active socket trial must not be overwritten by the historical first-day builder.
+from pathlib import Path as _GuardPath
+_guard_base=_GuardPath(__file__).resolve().parents[2]
+if '"MIRA_Module:ICS-CQFP64-1830-1830-100-1"' in (_guard_base/'MIRA_Crossbar/MIRA_Crossbar.kicad_pcb').read_text():
+ raise SystemExit('Active ICS socket trial: use review/layout/socket-trial tools; old draft rebuild is intentionally disabled.')
+
 import uuid,re,csv
 from pathlib import Path
 from interface_spec import BASE,OUT,PAIRS,pinout,POWER_PINS
