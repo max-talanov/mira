@@ -118,7 +118,7 @@ def reference_planes(board):
         if layer not in signals:
             continue
         n = t.GetNetname().rsplit("/", 1)[-1]
-        if not n.startswith(("PS_DDR_", "FX_USB3RX1", "CH0")) and n not in ("CH30", "CH31"):
+        if not n.startswith(("PS_DDR_", "FX_", "CH0")) and n not in ("CH30", "CH31"):
             continue
         start, end = t.GetStart(), t.GetEnd()
         intervals = max(1, math.ceil(math.dist(xy(start), xy(end)) / .25))

@@ -53,3 +53,12 @@ xdg-open MIRA_Architecture_Atlas/index.html
 ```text
 eccb13b2e40f240751a0c36c8c67ab55862b2121fcfbc96f9694e702405b9231
 ```
+
+## Питание RevC
+
+[Скачать Atlas с карточкой RevC](MIRA_Architecture_Atlas_RevC.zip).
+Распакуйте архив и откройте `MIRA_Architecture_Atlas/index.html`. В верхней
+навигации выберите «Питание RevC». Карточка использует Power / J301 и
+Power / F301 с актуального листа 300. Остальные модули иллюстрируют исходный
+архив Atlas 4.3. Кнопки карточки показывают точки измерения, состояние LED
+и экспортируют установившийся сценарий в JSON.
