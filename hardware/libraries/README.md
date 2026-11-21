@@ -18,6 +18,8 @@
 | TLV62569DBV | TI TLV62569DBVR, понижающий преобразователь 2 А | SOT-23-5 | C141836 | TI, Pin Functions |
 | ME6211C25M5G, ME6211C28M5G | Microne ME6211, LDO 2,5 и 2,8 В | SOT-23-5 | C194395, 2,8 В — подобрать | даташит Microne |
 | AMS1117-3.3 | LDO 3,3 В | SOT-223 | C6186 | даташит AMS |
+| LM317M-SOT223 | onsemi LM317MBSTT3G, регулируемый стабилизатор +, 500 мА. Теплоотвод — выход | SOT-223 | C152536 | onsemi LM317M-D |
+| LM337-SOT223 | TI LM337IMP/NOPB, регулируемый стабилизатор −, 1,5 А. Теплоотвод — вход | SOT-223 | C527400 | TI LM337-N, табл. 4-1 |
 | W25Q128JVSIQ | Winbond, flash 128 Мбит для конфигурации FPGA | SOIC-8 208 mil | C97521 | даташит Winbond |
 | AT24C256C | Microchip, EEPROM I2C 256 кбит | SOIC-8 | C6482 | даташит Microchip |
 | 74HC595 | Nexperia 74HC595D, сдвиговый регистр | SO-16 | C5947 | Nexperia 74HC_HCT595 |
